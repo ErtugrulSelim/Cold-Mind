@@ -1,0 +1,206 @@
+{
+  "case_id": "s03",
+  "people": [
+    {
+      "id": "p000",
+      "tier": 1,
+      "contact": {
+        "first_name": "Sander",
+        "last_name": "Merckx",
+        "phone_number": "+32 478 21 55 09",
+        "avatar_color": "#64748B"
+      },
+      "photo_asset": "assets/cases/s03/photos/sander_profile.jpg",
+      "instagram": {
+        "username": "s.merckx",
+        "bio": "Ghent. Mostly reading.",
+        "follower_count": 312,
+        "following_count": 94,
+        "is_private": true,
+        "post_ids": [
+          "post_p000_01",
+          "post_p000_02",
+          "post_p000_03"
+        ]
+      },
+      "age": 18,
+      "home_city": "Ghent",
+      "occupation": "Student",
+      "personality_tags": [
+        "quiet",
+        "reader",
+        "precise"
+      ]
+    },
+    {
+      "id": "p001",
+      "tier": 1,
+      "contact": {
+        "first_name": "Bram",
+        "last_name": "Merckx",
+        "phone_number": "+32 478 21 40 66",
+        "avatar_color": "#B45309"
+      },
+      "photo_asset": "assets/cases/s03/photos/bram_profile.jpg",
+      "age": 52,
+      "home_city": "Ghent",
+      "occupation": "Bookbinder",
+      "personality_tags": [
+        "gentle",
+        "stubborn",
+        "grieving"
+      ]
+    },
+    {
+      "id": "p002",
+      "tier": 1,
+      "contact": {
+        "first_name": "Dieter",
+        "last_name": "Vos",
+        "phone_number": "+32 471 88 30 12",
+        "avatar_color": "#DC2626"
+      },
+      "photo_asset": "assets/cases/s03/photos/vos_profile.jpg",
+      "age": 47,
+      "home_city": "Ghent",
+      "occupation": "Crane Operator",
+      "personality_tags": [
+        "blunt",
+        "relentless",
+        "wrecked"
+      ]
+    },
+    {
+      "id": "p003",
+      "tier": 1,
+      "contact": {
+        "first_name": "Femke",
+        "last_name": "Aerts",
+        "phone_number": "+32 479 55 21 84",
+        "avatar_color": "#22C55E"
+      },
+      "photo_asset": "assets/cases/s03/photos/femke_profile.jpg",
+      "instagram": {
+        "username": "femke.aerts",
+        "bio": "cello / late / sorry",
+        "follower_count": 1120,
+        "following_count": 430,
+        "is_private": false,
+        "post_ids": [
+          "post_p003_01"
+        ]
+      },
+      "age": 17,
+      "home_city": "Ghent",
+      "occupation": "Student",
+      "personality_tags": [
+        "watchful",
+        "kind",
+        "guilty"
+      ]
+    },
+    {
+      "id": "p004",
+      "tier": 3,
+      "contact": {
+        "first_name": "Sanne",
+        "last_name": "Coppens",
+        "phone_number": "+32 472 60 19 47",
+        "avatar_color": "#0EA5E9"
+      },
+      "age": 34,
+      "home_city": "Ghent",
+      "occupation": "School Counsellor",
+      "personality_tags": [
+        "careful",
+        "overloaded"
+      ]
+    },
+    {
+      "id": "p006",
+      "tier": 3,
+      "contact": {
+        "first_name": "+32 484 55 21 09",
+        "last_name": "",
+        "phone_number": "+32 484 55 21 09",
+        "avatar_color": "#475569"
+      },
+      "age": 0,
+      "home_city": "",
+      "occupation": "",
+      "personality_tags": []
+    },
+    {
+      "id": "p005",
+      "tier": 3,
+      "contact": {
+        "first_name": "Ruben",
+        "last_name": "De Smet",
+        "phone_number": "+32 473 12 77 05",
+        "avatar_color": "#8B5CF6"
+      },
+      "age": 46,
+      "home_city": "Ghent",
+      "occupation": "Secondhand Bookseller",
+      "personality_tags": [
+        "warm",
+        "talkative",
+        "unwitting"
+      ]
+    }
+  ],
+  "instagram_posts": [
+    {
+      "id": "post_p000_01",
+      "caption": "The city empties at two and belongs to whoever is still awake.",
+      "location": "Ghent",
+      "like_count": 41,
+      "tags": [
+        "night"
+      ],
+      "comments": [],
+      "person_id": "p000",
+      "timestamp": "2025-11-08T02:14:00",
+      "liked_by_owner": false,
+      "image_asset": "assets/stock/photos/46.jpg"
+    },
+    {
+      "id": "post_p000_02",
+      "caption": "Third read. Still can't see how he does the last twenty pages.",
+      "like_count": 28,
+      "tags": [
+        "books"
+      ],
+      "comments": [],
+      "person_id": "p000",
+      "timestamp": "2025-09-21T23:40:00",
+      "liked_by_owner": false,
+      "image_asset": "assets/stock/photos/26.jpg"
+    },
+    {
+      "id": "post_p000_03",
+      "caption": "Bindery, Saturday. Dad thinks I'm learning the trade.",
+      "location": "Ghent",
+      "like_count": 63,
+      "tags": [
+        "home"
+      ],
+      "comments": [],
+      "person_id": "p000",
+      "timestamp": "2025-06-28T16:05:00",
+      "liked_by_owner": false,
+      "image_asset": "assets/stock/photos/37.jpg"
+    },
+    {
+      "id": "post_p003_01",
+      "caption": "for s. i should have said something out loud. i said it to myself about forty times.",
+      "like_count": 2140,
+      "tags": [],
+      "comments": [],
+      "person_id": "p003",
+      "timestamp": "2025-11-16T21:30:00",
+      "liked_by_owner": false,
+      "image_asset": "assets/stock/photos/52.jpg"
+    }
+  ]
+}

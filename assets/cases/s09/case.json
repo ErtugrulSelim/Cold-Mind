@@ -1,0 +1,6437 @@
+{
+  "schema": 2,
+  "id": "s09",
+  "meta": {
+    "title_key": "s09.meta.title",
+    "difficulty": "hard",
+    "city": {
+      "name": "Maastricht",
+      "lat": 50.8514,
+      "lng": 5.691
+    },
+    "thumbnail": "assets/cases/s09/photos/thumbnail.jpg",
+    "client": {
+      "person_id": "p001",
+      "name": "Ariane Bosch",
+      "photo": "assets/cases/s09/photos/ariane_profile.jpg"
+    },
+    "reveal_total": true
+  },
+  "device": {
+    "owner_name": "Lotte Vervoort",
+    "model": "Meridian A7",
+    "ios_version": "Kite 14",
+    "storage_total_gb": 128,
+    "storage_used_gb": 88,
+    "last_backup": "2026-04-19T03:00:00",
+    "lock_pin": "040326",
+    "wallpaper_asset": "assets/cases/s09/photos/wallpaper.jpg"
+  },
+  "cast": [
+    {
+      "person_id": "p000",
+      "role": "victim",
+      "contact_saved": false
+    },
+    {
+      "person_id": "p001",
+      "role": "other",
+      "contact_saved": true,
+      "relationship_note_key": "s09.relationship.p001.note"
+    },
+    {
+      "person_id": "p002",
+      "role": "colleague",
+      "contact_saved": true,
+      "relationship_note_key": "s09.relationship.p002.note"
+    },
+    {
+      "person_id": "p003",
+      "role": "other",
+      "contact_saved": false
+    },
+    {
+      "person_id": "p004",
+      "role": "colleague",
+      "contact_saved": true,
+      "relationship_note_key": "s09.relationship.p004.note"
+    },
+    {
+      "person_id": "p005",
+      "role": "colleague",
+      "contact_saved": true,
+      "relationship_note_key": "s09.relationship.p005.note"
+    },
+    {
+      "person_id": "p006",
+      "role": "service",
+      "contact_saved": true
+    },
+    {
+      "person_id": "p007",
+      "role": "other",
+      "contact_saved": true,
+      "relationship_note_key": "s09.relationship.p007.note"
+    },
+    {
+      "person_id": "p008",
+      "role": "colleague",
+      "contact_saved": true
+    }
+  ],
+  "contacts": [
+    {
+      "person_id": "p001",
+      "is_saved": true
+    },
+    {
+      "person_id": "p002",
+      "is_saved": true,
+      "custom_label_key": "s09.contact.p002.label"
+    },
+    {
+      "person_id": "p004",
+      "is_saved": true
+    },
+    {
+      "person_id": "p005",
+      "is_saved": true
+    },
+    {
+      "person_id": "p006",
+      "is_saved": true,
+      "custom_label_key": "s09.contact.p006.label"
+    },
+    {
+      "person_id": "p007",
+      "is_saved": true
+    },
+    {
+      "person_id": "p008",
+      "is_saved": true,
+      "custom_label_key": "s09.contact.p008.label"
+    }
+  ],
+  "home": {
+    "grid": [
+      "photos",
+      "gmail",
+      "cloud",
+      "notes",
+      "calendar",
+      "venmo",
+      "maps",
+      "google",
+      "voice_memos",
+      "spotify",
+      "ereader",
+      "rides",
+      "health",
+      "games"
+    ],
+    "dock": [
+      "calls",
+      "sms",
+      "whatsapp",
+      "photos"
+    ],
+    "widget_pages": [
+      [
+        "calendar",
+        "photos",
+        "weather"
+      ]
+    ]
+  },
+  "board": {
+    "center_node_id": "b_case",
+    "nodes": [
+      {
+        "id": "b_case",
+        "type": "polaroid",
+        "title_key": "s09.board.case.title",
+        "subtitle_key": "s09.board.case.sub",
+        "image_asset": "assets/cases/s09/photos/case_four_after.jpg",
+        "is_center": true
+      },
+      {
+        "id": "b_diadem",
+        "type": "polaroid",
+        "title_key": "s09.board.diadem.title",
+        "subtitle_key": "s09.board.diadem.sub",
+        "image_asset": "assets/cases/s09/photos/diadem.jpg"
+      },
+      {
+        "id": "b_lotte",
+        "type": "polaroid",
+        "title_key": "s09.board.lotte.title",
+        "subtitle_key": "s09.board.lotte.sub",
+        "image_asset": "assets/cases/s09/photos/lotte_profile.jpg"
+      },
+      {
+        "id": "b_ariane",
+        "type": "polaroid",
+        "title_key": "s09.board.ariane.title",
+        "subtitle_key": "s09.board.ariane.sub",
+        "image_asset": "assets/cases/s09/photos/ariane_profile.jpg"
+      },
+      {
+        "id": "b_halderman",
+        "type": "map",
+        "title_key": "s09.board.halderman.title",
+        "subtitle_key": "s09.board.halderman.sub",
+        "image_asset": "assets/cases/s09/photos/stand.jpg"
+      },
+      {
+        "id": "b_sem",
+        "type": "polaroid",
+        "title_key": "s09.board.sem.title",
+        "subtitle_key": "s09.board.sem.sub",
+        "image_asset": "assets/cases/s09/photos/sem_profile.jpg"
+      },
+      {
+        "id": "b_clock",
+        "type": "sticky_note",
+        "title_key": "s09.board.clock.title",
+        "subtitle_key": "s09.board.clock.sub"
+      }
+    ],
+    "edges": [
+      {
+        "id": "be_1",
+        "from": "b_case",
+        "to": "b_diadem",
+        "label_key": "s09.board.e1",
+        "curvature": 0.12
+      },
+      {
+        "id": "be_2",
+        "from": "b_lotte",
+        "to": "b_case",
+        "label_key": "s09.board.e2",
+        "curvature": 0.15
+      },
+      {
+        "id": "be_3",
+        "from": "b_case",
+        "to": "b_halderman",
+        "label_key": "s09.board.e3",
+        "curvature": 0.14
+      },
+      {
+        "id": "be_4",
+        "from": "b_sem",
+        "to": "b_case",
+        "label_key": "s09.board.e4",
+        "curvature": 0.19
+      },
+      {
+        "id": "be_5",
+        "from": "b_ariane",
+        "to": "b_diadem",
+        "label_key": "s09.board.e5",
+        "curvature": 0.16
+      },
+      {
+        "id": "be_6",
+        "from": "b_clock",
+        "to": "b_ariane",
+        "label_key": "s09.board.e6",
+        "curvature": 0.2
+      },
+      {
+        "id": "be_7",
+        "from": "b_lotte",
+        "to": "b_halderman",
+        "label_key": "s09.board.e7",
+        "curvature": 0.11
+      },
+      {
+        "id": "be_8",
+        "from": "b_sem",
+        "to": "b_diadem",
+        "label_key": "s09.board.e8",
+        "curvature": 0.13
+      }
+    ]
+  },
+  "chats": {
+    "intro": {
+      "client_person_id": "p001",
+      "messages": [
+        {
+          "id": "cc_001",
+          "sender": "client",
+          "text_key": "s09.client_chat.cc_001",
+          "timestamp": "2026-04-20T08:02:00",
+          "delay_ms": 0
+        },
+        {
+          "id": "cc_002",
+          "sender": "client",
+          "text_key": "s09.client_chat.cc_002",
+          "timestamp": "2026-04-20T08:02:11",
+          "delay_ms": 11000
+        },
+        {
+          "id": "cc_003",
+          "sender": "client",
+          "text_key": "s09.client_chat.cc_003",
+          "timestamp": "2026-04-20T08:02:24",
+          "delay_ms": 13000
+        },
+        {
+          "id": "cc_004",
+          "sender": "client",
+          "text_key": "s09.client_chat.cc_004",
+          "timestamp": "2026-04-20T08:02:38",
+          "delay_ms": 14000
+        },
+        {
+          "id": "cc_005",
+          "sender": "client",
+          "text_key": "s09.client_chat.cc_005",
+          "timestamp": "2026-04-20T08:02:53",
+          "delay_ms": 15000
+        },
+        {
+          "id": "cc_006",
+          "sender": "client",
+          "text_key": "s09.client_chat.cc_006",
+          "timestamp": "2026-04-20T08:03:08",
+          "delay_ms": 15000
+        },
+        {
+          "id": "cc_007",
+          "sender": "client",
+          "text_key": "s09.client_chat.cc_007",
+          "timestamp": "2026-04-20T08:03:17",
+          "delay_ms": 9000,
+          "is_choice": true,
+          "choices": [
+            {
+              "label_key": "s09.client_chat.cc_007.accept",
+              "action": "accept_case"
+            },
+            {
+              "label_key": "s09.client_chat.cc_007.decline",
+              "action": "decline_case"
+            }
+          ]
+        },
+        {
+          "id": "cc_008",
+          "sender": "client",
+          "text_key": "s09.client_chat.cc_008",
+          "timestamp": "2026-04-20T08:03:26",
+          "delay_ms": 9000
+        },
+        {
+          "id": "cc_009",
+          "sender": "client",
+          "text_key": "s09.client_chat.cc_009",
+          "timestamp": "2026-04-20T08:03:38",
+          "delay_ms": 12000
+        }
+      ]
+    },
+    "interstitials": [
+      {
+        "after_question": 5,
+        "client_person_id": "p001",
+        "messages": [
+          {
+            "id": "is1_001",
+            "sender": "client",
+            "text_key": "s09.interstitial.is1_001",
+            "timestamp": "2026-04-22T17:30:00",
+            "delay_ms": 0
+          },
+          {
+            "id": "is1_002",
+            "sender": "client",
+            "text_key": "s09.interstitial.is1_002",
+            "timestamp": "2026-04-22T17:30:18",
+            "delay_ms": 18000
+          },
+          {
+            "id": "is1_003",
+            "sender": "client",
+            "text_key": "s09.interstitial.is1_003",
+            "timestamp": "2026-04-22T17:30:29",
+            "delay_ms": 11000
+          }
+        ]
+      },
+      {
+        "after_question": 8,
+        "client_person_id": "p001",
+        "messages": [
+          {
+            "id": "is2_001",
+            "sender": "client",
+            "text_key": "s09.interstitial.is2_001",
+            "timestamp": "2026-04-25T11:04:00",
+            "delay_ms": 0
+          },
+          {
+            "id": "is2_002",
+            "sender": "client",
+            "text_key": "s09.interstitial.is2_002",
+            "timestamp": "2026-04-25T11:04:17",
+            "delay_ms": 17000
+          },
+          {
+            "id": "is2_003",
+            "sender": "client",
+            "text_key": "s09.interstitial.is2_003",
+            "timestamp": "2026-04-25T11:04:31",
+            "delay_ms": 14000
+          },
+          {
+            "id": "is2_004",
+            "sender": "client",
+            "text_key": "s09.interstitial.is2_004",
+            "timestamp": "2026-04-25T11:04:41",
+            "delay_ms": 10000
+          }
+        ]
+      },
+      {
+        "after_question": 12,
+        "client_person_id": "p001",
+        "messages": [
+          {
+            "id": "is3_001",
+            "sender": "client",
+            "text_key": "s09.interstitial.is3_001",
+            "timestamp": "2026-04-29T15:50:00",
+            "delay_ms": 0
+          },
+          {
+            "id": "is3_002",
+            "sender": "client",
+            "text_key": "s09.interstitial.is3_002",
+            "timestamp": "2026-04-29T15:50:18",
+            "delay_ms": 18000
+          },
+          {
+            "id": "is3_003",
+            "sender": "client",
+            "text_key": "s09.interstitial.is3_003",
+            "timestamp": "2026-04-29T15:50:37",
+            "delay_ms": 19000
+          },
+          {
+            "id": "is3_004",
+            "sender": "client",
+            "text_key": "s09.interstitial.is3_004",
+            "timestamp": "2026-04-29T15:50:47",
+            "delay_ms": 10000
+          }
+        ]
+      }
+    ],
+    "closing": {
+      "client_person_id": "p001",
+      "messages": [
+        {
+          "id": "cl_001",
+          "sender": "client",
+          "text_key": "s09.closing_chat.cl_001",
+          "timestamp": "2026-05-02T07:40:00",
+          "delay_ms": 0
+        },
+        {
+          "id": "cl_002",
+          "sender": "client",
+          "text_key": "s09.closing_chat.cl_002",
+          "timestamp": "2026-05-02T07:40:19",
+          "delay_ms": 19000
+        },
+        {
+          "id": "cl_003",
+          "sender": "client",
+          "text_key": "s09.closing_chat.cl_003",
+          "timestamp": "2026-05-02T07:40:33",
+          "delay_ms": 14000
+        },
+        {
+          "id": "cl_004",
+          "sender": "client",
+          "text_key": "s09.closing_chat.cl_004",
+          "timestamp": "2026-05-02T07:40:45",
+          "delay_ms": 12000
+        },
+        {
+          "id": "cl_005",
+          "sender": "client",
+          "text_key": "s09.closing_chat.cl_005",
+          "timestamp": "2026-05-02T07:40:57",
+          "delay_ms": 12000
+        },
+        {
+          "id": "cl_006",
+          "sender": "client",
+          "text_key": "s09.closing_chat.cl_006",
+          "timestamp": "2026-05-02T07:41:06",
+          "delay_ms": 9000
+        },
+        {
+          "id": "cl_007",
+          "sender": "client",
+          "text_key": "s09.closing_chat.cl_007",
+          "timestamp": "2026-05-02T07:41:27",
+          "delay_ms": 21000
+        },
+        {
+          "id": "cl_008",
+          "sender": "client",
+          "text_key": "s09.closing_chat.cl_008",
+          "timestamp": "2026-05-02T07:41:48",
+          "delay_ms": 21000
+        },
+        {
+          "id": "cl_009",
+          "sender": "client",
+          "text_key": "s09.closing_chat.cl_009",
+          "timestamp": "2026-05-02T07:41:59",
+          "delay_ms": 11000
+        },
+        {
+          "id": "cl_010",
+          "sender": "client",
+          "text_key": "s09.closing_chat.cl_010",
+          "timestamp": "2026-05-02T07:42:19",
+          "delay_ms": 20000
+        },
+        {
+          "id": "cl_011",
+          "sender": "client",
+          "text_key": "s09.closing_chat.cl_011",
+          "timestamp": "2026-05-02T07:42:28",
+          "delay_ms": 9000,
+          "is_choice": true,
+          "choices": [
+            {
+              "label_key": "s09.closing_chat.cl_011.opt1",
+              "action": "none",
+              "branch": "policy"
+            },
+            {
+              "label_key": "s09.closing_chat.cl_011.opt2",
+              "action": "none",
+              "branch": "everything"
+            },
+            {
+              "label_key": "s09.closing_chat.cl_011.opt3",
+              "action": "none",
+              "branch": "lotte"
+            }
+          ]
+        },
+        {
+          "id": "cl_013",
+          "sender": "client",
+          "text_key": "s09.closing_chat.cl_013",
+          "timestamp": "2026-05-02T07:42:36",
+          "delay_ms": 5000,
+          "trigger": "policy"
+        },
+        {
+          "id": "cl_014",
+          "sender": "client",
+          "text_key": "s09.closing_chat.cl_014",
+          "timestamp": "2026-05-02T07:42:52",
+          "delay_ms": 16000,
+          "trigger": "policy"
+        },
+        {
+          "id": "cl_015",
+          "sender": "client",
+          "text_key": "s09.closing_chat.cl_015",
+          "timestamp": "2026-05-02T07:42:36",
+          "delay_ms": 5000,
+          "trigger": "everything"
+        },
+        {
+          "id": "cl_016",
+          "sender": "client",
+          "text_key": "s09.closing_chat.cl_016",
+          "timestamp": "2026-05-02T07:42:52",
+          "delay_ms": 16000,
+          "trigger": "everything"
+        },
+        {
+          "id": "cl_017",
+          "sender": "client",
+          "text_key": "s09.closing_chat.cl_017",
+          "timestamp": "2026-05-02T07:42:36",
+          "delay_ms": 5000,
+          "trigger": "lotte"
+        },
+        {
+          "id": "cl_018",
+          "sender": "client",
+          "text_key": "s09.closing_chat.cl_018",
+          "timestamp": "2026-05-02T07:42:52",
+          "delay_ms": 16000,
+          "trigger": "lotte"
+        },
+        {
+          "id": "cl_019",
+          "sender": "client",
+          "text_key": "s09.closing_chat.cl_019",
+          "timestamp": "2026-05-02T07:43:08",
+          "delay_ms": 16000
+        }
+      ]
+    }
+  },
+  "locks": [
+    {
+      "id": "step_001",
+      "order": 1,
+      "type": "find_code",
+      "note": "Kendi kurulum notu kodu acikca yaziyor: gunun tarihi, gun ve ay — 0403 (4 Mart, kurulum gunu)",
+      "source_app": "notes",
+      "source_item_id": "note_001",
+      "target_app": "photos",
+      "target_item_id": "album_003",
+      "hint_toast_key": "s09.lock.step_001.hint"
+    },
+    {
+      "id": "step_002",
+      "order": 2,
+      "type": "find_code",
+      "note": "Ayni dort hane korumali temas sayfasini aciyor: plintlerde on nesne, cizelgede dokuz",
+      "source_app": "notes",
+      "source_item_id": "note_001",
+      "target_app": "cloud",
+      "target_item_id": "cf_005"
+    },
+    {
+      "id": "step_003",
+      "order": 3,
+      "type": "unlock_note",
+      "note": "Ve kilitli notu: dokuz yazmasinin soylendigi ani kendi kelimeleriyle anlattigi yer",
+      "source_app": "notes",
+      "source_item_id": "note_001",
+      "target_app": "notes",
+      "target_item_id": "note_003"
+    }
+  ],
+  "questions": [
+    {
+      "index": 1,
+      "app": "notes",
+      "kind": "free_text",
+      "title_key": "s09.question.q01.title",
+      "prompt_key": "s09.question.q01.question",
+      "answers_key": "s09.question.q01.answers",
+      "reveal": {
+        "answer_key": "s09.question.q01.opt1",
+        "decoy_keys": [
+          "s09.question.q01.opt0",
+          "s09.question.q01.opt2",
+          "s09.question.q01.opt3"
+        ]
+      }
+    },
+    {
+      "index": 2,
+      "app": "gmail",
+      "kind": "free_text",
+      "title_key": "s09.question.q02.title",
+      "prompt_key": "s09.question.q02.question",
+      "answers_key": "s09.question.q02.answers",
+      "reveal": {
+        "answer_key": "s09.question.q02.opt1",
+        "decoy_keys": [
+          "s09.question.q02.opt0",
+          "s09.question.q02.opt2",
+          "s09.question.q02.opt3"
+        ]
+      }
+    },
+    {
+      "index": 3,
+      "app": "gmail",
+      "kind": "free_text",
+      "title_key": "s09.question.q03.title",
+      "prompt_key": "s09.question.q03.question",
+      "answers_key": "s09.question.q03.answers",
+      "reveal": {
+        "answer_key": "s09.question.q03.opt1",
+        "decoy_keys": [
+          "s09.question.q03.opt0",
+          "s09.question.q03.opt2",
+          "s09.question.q03.opt3"
+        ]
+      }
+    },
+    {
+      "index": 4,
+      "app": "cloud",
+      "kind": "timeline",
+      "title_key": "s09.question.q04.title",
+      "prompt_key": "s09.question.q04.question",
+      "events": [
+        "s09.question.q04.ev0",
+        "s09.question.q04.ev1",
+        "s09.question.q04.ev2",
+        "s09.question.q04.ev3",
+        "s09.question.q04.ev4",
+        "s09.question.q04.ev5"
+      ],
+      "order": [
+        1,
+        5,
+        3,
+        0,
+        4,
+        2
+      ]
+    },
+    {
+      "index": 5,
+      "app": "whatsapp",
+      "kind": "free_text",
+      "title_key": "s09.question.q05.title",
+      "prompt_key": "s09.question.q05.question",
+      "answers_key": "s09.question.q05.answers",
+      "reveal": {
+        "answer_key": "s09.question.q05.opt1",
+        "decoy_keys": [
+          "s09.question.q05.opt0",
+          "s09.question.q05.opt2",
+          "s09.question.q05.opt3"
+        ]
+      }
+    },
+    {
+      "index": 6,
+      "app": "gmail",
+      "kind": "free_text",
+      "title_key": "s09.question.q06.title",
+      "prompt_key": "s09.question.q06.question",
+      "answers_key": "s09.question.q06.answers",
+      "reveal": {
+        "answer_key": "s09.question.q06.opt1",
+        "decoy_keys": [
+          "s09.question.q06.opt0",
+          "s09.question.q06.opt2",
+          "s09.question.q06.opt3"
+        ]
+      }
+    },
+    {
+      "index": 7,
+      "app": "photos",
+      "kind": "free_text",
+      "title_key": "s09.question.q07.title",
+      "prompt_key": "s09.question.q07.question",
+      "answers_key": "s09.question.q07.answers",
+      "reveal": {
+        "answer_key": "s09.question.q07.opt1",
+        "decoy_keys": [
+          "s09.question.q07.opt0",
+          "s09.question.q07.opt2",
+          "s09.question.q07.opt3"
+        ]
+      }
+    },
+    {
+      "index": 8,
+      "app": "photos",
+      "kind": "free_text",
+      "title_key": "s09.question.q08.title",
+      "prompt_key": "s09.question.q08.question",
+      "answers_key": "s09.question.q08.answers",
+      "reveal": {
+        "answer_key": "s09.question.q08.opt1",
+        "decoy_keys": [
+          "s09.question.q08.opt0",
+          "s09.question.q08.opt2",
+          "s09.question.q08.opt3"
+        ]
+      }
+    },
+    {
+      "index": 9,
+      "app": "gmail",
+      "kind": "free_text",
+      "title_key": "s09.question.q09.title",
+      "prompt_key": "s09.question.q09.question",
+      "answers_key": "s09.question.q09.answers",
+      "reveal": {
+        "answer_key": "s09.question.q09.opt1",
+        "decoy_keys": [
+          "s09.question.q09.opt0",
+          "s09.question.q09.opt2",
+          "s09.question.q09.opt3"
+        ]
+      }
+    },
+    {
+      "index": 10,
+      "app": "gmail",
+      "kind": "free_text",
+      "title_key": "s09.question.q10.title",
+      "prompt_key": "s09.question.q10.question",
+      "answers_key": "s09.question.q10.answers",
+      "reveal": {
+        "answer_key": "s09.question.q10.opt1",
+        "decoy_keys": [
+          "s09.question.q10.opt0",
+          "s09.question.q10.opt2",
+          "s09.question.q10.opt3"
+        ]
+      }
+    },
+    {
+      "index": 11,
+      "app": "gmail",
+      "kind": "contradiction",
+      "title_key": "s09.question.q11.title",
+      "prompt_key": "s09.question.q11.question",
+      "snippets": [
+        "s09.question.q11.sn0",
+        "s09.question.q11.sn1",
+        "s09.question.q11.sn2",
+        "s09.question.q11.sn3"
+      ],
+      "lie_index": 1
+    },
+    {
+      "index": 12,
+      "app": "venmo",
+      "kind": "free_text",
+      "title_key": "s09.question.q12.title",
+      "prompt_key": "s09.question.q12.question",
+      "answers_key": "s09.question.q12.answers",
+      "reveal": {
+        "answer_key": "s09.question.q12.opt1",
+        "decoy_keys": [
+          "s09.question.q12.opt0",
+          "s09.question.q12.opt2",
+          "s09.question.q12.opt3"
+        ]
+      }
+    },
+    {
+      "index": 13,
+      "app": "cloud",
+      "kind": "multi_select",
+      "title_key": "s09.question.q13.title",
+      "prompt_key": "s09.question.q13.question",
+      "options": [
+        "s09.question.q13.opt0",
+        "s09.question.q13.opt1",
+        "s09.question.q13.opt2",
+        "s09.question.q13.opt3",
+        "s09.question.q13.opt4",
+        "s09.question.q13.opt5"
+      ],
+      "correct_indices": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "index": 14,
+      "app": "gmail",
+      "kind": "free_text",
+      "title_key": "s09.question.q14.title",
+      "prompt_key": "s09.question.q14.question",
+      "answers_key": "s09.question.q14.answers",
+      "reveal": {
+        "answer_key": "s09.question.q14.opt1",
+        "decoy_keys": [
+          "s09.question.q14.opt0",
+          "s09.question.q14.opt2",
+          "s09.question.q14.opt3"
+        ]
+      }
+    },
+    {
+      "index": 15,
+      "app": "cloud",
+      "kind": "free_text",
+      "title_key": "s09.question.q15.title",
+      "prompt_key": "s09.question.q15.question",
+      "answers_key": "s09.question.q15.answers",
+      "reveal": {
+        "answer_key": "s09.question.q15.opt1",
+        "decoy_keys": [
+          "s09.question.q15.opt0",
+          "s09.question.q15.opt2",
+          "s09.question.q15.opt3"
+        ]
+      }
+    }
+  ],
+  "apps": {
+    "sms": {
+      "conversations": [
+        {
+          "contact_person_id": "p008",
+          "messages": [
+            {
+              "id": "sms_001",
+              "sender": "contact",
+              "text_key": "s09.messages.sms_001",
+              "timestamp": "2026-02-26T10:15:00",
+              "is_deleted": false
+            },
+            {
+              "id": "sms_002",
+              "sender": "user",
+              "text_key": "s09.messages.sms_002",
+              "timestamp": "2026-02-26T10:22:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_101",
+              "sender": "contact",
+              "text_key": "s09.messages.f_sms_101",
+              "timestamp": "2026-01-14T10:00:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_102",
+              "sender": "user",
+              "text_key": "s09.messages.f_sms_102",
+              "timestamp": "2026-01-14T10:22:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_103",
+              "sender": "contact",
+              "text_key": "s09.messages.f_sms_103",
+              "timestamp": "2026-02-02T09:30:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_104",
+              "sender": "user",
+              "text_key": "s09.messages.f_sms_104",
+              "timestamp": "2026-02-02T09:44:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_105",
+              "sender": "contact",
+              "text_key": "s09.messages.f_sms_105",
+              "timestamp": "2026-02-16T14:00:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_106",
+              "sender": "user",
+              "text_key": "s09.messages.f_sms_106",
+              "timestamp": "2026-02-16T14:12:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_107",
+              "sender": "contact",
+              "text_key": "s09.messages.f_sms_107",
+              "timestamp": "2026-03-01T16:40:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_108",
+              "sender": "user",
+              "text_key": "s09.messages.f_sms_108",
+              "timestamp": "2026-03-01T16:50:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_109",
+              "sender": "contact",
+              "text_key": "s09.messages.f_sms_109",
+              "timestamp": "2026-03-02T07:45:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_110",
+              "sender": "user",
+              "text_key": "s09.messages.f_sms_110",
+              "timestamp": "2026-03-04T18:20:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_111",
+              "sender": "contact",
+              "text_key": "s09.messages.f_sms_111",
+              "timestamp": "2026-03-04T18:26:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_112",
+              "sender": "contact",
+              "text_key": "s09.messages.f_sms_112",
+              "timestamp": "2026-03-16T11:00:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_113",
+              "sender": "user",
+              "text_key": "s09.messages.f_sms_113",
+              "timestamp": "2026-03-16T11:30:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_114",
+              "sender": "contact",
+              "text_key": "s09.messages.f_sms_114",
+              "timestamp": "2026-04-09T10:00:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f2_sms_201",
+              "sender": "contact",
+              "text_key": "s09.messages.f2_sms_201",
+              "timestamp": "2026-04-28T10:00:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f2_sms_202",
+              "sender": "user",
+              "text_key": "s09.messages.f2_sms_202",
+              "timestamp": "2026-04-28T10:30:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f2_sms_203",
+              "sender": "contact",
+              "text_key": "s09.messages.f2_sms_203",
+              "timestamp": "2026-04-28T10:34:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f2_sms_204",
+              "sender": "contact",
+              "text_key": "s09.messages.f2_sms_204",
+              "timestamp": "2026-05-01T16:00:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f2_sms_205",
+              "sender": "user",
+              "text_key": "s09.messages.f2_sms_205",
+              "timestamp": "2026-05-01T16:20:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f2_sms_206",
+              "sender": "contact",
+              "text_key": "s09.messages.f2_sms_206",
+              "timestamp": "2026-05-01T16:24:00",
+              "is_deleted": false
+            }
+          ]
+        },
+        {
+          "contact_person_id": "p006",
+          "messages": [
+            {
+              "id": "sms_010",
+              "sender": "contact",
+              "text_key": "s09.messages.sms_010",
+              "timestamp": "2026-02-23T09:40:00",
+              "is_deleted": false
+            },
+            {
+              "id": "sms_011",
+              "sender": "user",
+              "text_key": "s09.messages.sms_011",
+              "timestamp": "2026-02-23T09:52:00",
+              "is_deleted": false
+            },
+            {
+              "id": "sms_012",
+              "sender": "contact",
+              "text_key": "s09.messages.sms_012",
+              "timestamp": "2026-02-23T09:58:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_121",
+              "sender": "contact",
+              "text_key": "s09.messages.f_sms_121",
+              "timestamp": "2026-03-02T11:20:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_122",
+              "sender": "user",
+              "text_key": "s09.messages.f_sms_122",
+              "timestamp": "2026-03-02T11:35:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_123",
+              "sender": "contact",
+              "text_key": "s09.messages.f_sms_123",
+              "timestamp": "2026-03-02T11:40:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_124",
+              "sender": "contact",
+              "text_key": "s09.messages.f_sms_124",
+              "timestamp": "2026-03-03T09:10:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_125",
+              "sender": "user",
+              "text_key": "s09.messages.f_sms_125",
+              "timestamp": "2026-03-03T09:20:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_126",
+              "sender": "contact",
+              "text_key": "s09.messages.f_sms_126",
+              "timestamp": "2026-03-03T09:22:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_127",
+              "sender": "user",
+              "text_key": "s09.messages.f_sms_127",
+              "timestamp": "2026-03-14T13:00:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_128",
+              "sender": "contact",
+              "text_key": "s09.messages.f_sms_128",
+              "timestamp": "2026-03-14T13:40:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f2_sms_211",
+              "sender": "user",
+              "text_key": "s09.messages.f2_sms_211",
+              "timestamp": "2026-03-30T11:00:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f2_sms_212",
+              "sender": "contact",
+              "text_key": "s09.messages.f2_sms_212",
+              "timestamp": "2026-03-30T11:40:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f2_sms_213",
+              "sender": "user",
+              "text_key": "s09.messages.f2_sms_213",
+              "timestamp": "2026-03-30T11:45:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f2_sms_214",
+              "sender": "contact",
+              "text_key": "s09.messages.f2_sms_214",
+              "timestamp": "2026-03-30T11:47:00",
+              "is_deleted": false
+            }
+          ]
+        },
+        {
+          "contact_person_id": "p005",
+          "messages": [
+            {
+              "id": "sms_020",
+              "sender": "user",
+              "text_key": "s09.messages.sms_020",
+              "timestamp": "2026-03-04T11:30:00",
+              "is_deleted": false
+            },
+            {
+              "id": "sms_021",
+              "sender": "contact",
+              "text_key": "s09.messages.sms_021",
+              "timestamp": "2026-03-04T11:44:00",
+              "is_deleted": false
+            },
+            {
+              "id": "sms_022",
+              "sender": "user",
+              "text_key": "s09.messages.sms_022",
+              "timestamp": "2026-03-04T11:46:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_141",
+              "sender": "contact",
+              "text_key": "s09.messages.f_sms_141",
+              "timestamp": "2026-02-10T09:00:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_142",
+              "sender": "user",
+              "text_key": "s09.messages.f_sms_142",
+              "timestamp": "2026-02-10T09:30:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_143",
+              "sender": "contact",
+              "text_key": "s09.messages.f_sms_143",
+              "timestamp": "2026-02-10T09:34:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_144",
+              "sender": "contact",
+              "text_key": "s09.messages.f_sms_144",
+              "timestamp": "2026-03-01T20:10:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_145",
+              "sender": "user",
+              "text_key": "s09.messages.f_sms_145",
+              "timestamp": "2026-03-01T20:25:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_146",
+              "sender": "contact",
+              "text_key": "s09.messages.f_sms_146",
+              "timestamp": "2026-03-03T07:40:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_147",
+              "sender": "user",
+              "text_key": "s09.messages.f_sms_147",
+              "timestamp": "2026-03-03T07:52:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_148",
+              "sender": "contact",
+              "text_key": "s09.messages.f_sms_148",
+              "timestamp": "2026-03-05T19:00:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_149",
+              "sender": "user",
+              "text_key": "s09.messages.f_sms_149",
+              "timestamp": "2026-03-05T19:20:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_150",
+              "sender": "contact",
+              "text_key": "s09.messages.f_sms_150",
+              "timestamp": "2026-03-13T08:15:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_151",
+              "sender": "contact",
+              "text_key": "s09.messages.f_sms_151",
+              "timestamp": "2026-03-28T12:00:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_152",
+              "sender": "contact",
+              "text_key": "s09.messages.f_sms_152",
+              "timestamp": "2026-04-22T18:30:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f2_sms_221",
+              "sender": "contact",
+              "text_key": "s09.messages.f2_sms_221",
+              "timestamp": "2026-05-22T12:00:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f2_sms_222",
+              "sender": "contact",
+              "text_key": "s09.messages.f2_sms_222",
+              "timestamp": "2026-04-02T09:00:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f2_sms_223",
+              "sender": "user",
+              "text_key": "s09.messages.f2_sms_223",
+              "timestamp": "2026-04-02T22:40:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f2_sms_224",
+              "sender": "contact",
+              "text_key": "s09.messages.f2_sms_224",
+              "timestamp": "2026-04-02T22:55:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f2_sms_225",
+              "sender": "user",
+              "text_key": "s09.messages.f2_sms_225",
+              "timestamp": "2026-04-02T23:10:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f2_sms_226",
+              "sender": "contact",
+              "text_key": "s09.messages.f2_sms_226",
+              "timestamp": "2026-04-02T23:12:00",
+              "is_deleted": false
+            }
+          ]
+        }
+      ]
+    },
+    "whatsapp": {
+      "conversations": [
+        {
+          "contact_person_id": "p002",
+          "last_seen": "2026-04-19T22:40:00",
+          "messages": [
+            {
+              "id": "g1_001",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s09.chats.g1_001",
+              "timestamp": "2026-03-04T19:10:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "g1_002",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s09.chats.g1_002",
+              "timestamp": "2026-03-04T19:22:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "g1_010",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s09.chats.g1_010",
+              "timestamp": "2026-03-04T15:40:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "g1_011",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s09.chats.g1_011",
+              "timestamp": "2026-03-04T15:44:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "g1_012",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s09.chats.g1_012",
+              "timestamp": "2026-03-04T15:47:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "g1_013",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s09.chats.g1_013",
+              "timestamp": "2026-03-04T15:49:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "g1_014",
+              "sender": "p002",
+              "type": "voice",
+              "text_key": "s09.chats.g1_014",
+              "asset": "assets/cases/s09/audio/halderman_voice_{lang}.mp3",
+              "audio_langs": [
+                "en"
+              ],
+              "duration_sec": 26,
+              "timestamp": "2026-03-04T15:52:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "g1_015",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s09.chats.g1_015",
+              "timestamp": "2026-03-04T15:58:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "g1_020",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s09.chats.g1_020",
+              "timestamp": "2026-03-12T09:30:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "g1_021",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s09.chats.g1_021",
+              "timestamp": "2026-03-12T09:44:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "g1_022",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s09.chats.g1_022",
+              "timestamp": "2026-03-12T09:51:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "g1_030",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s09.chats.g1_030",
+              "timestamp": "2026-04-19T21:15:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "g1_031",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s09.chats.g1_031",
+              "timestamp": "2026-04-19T22:40:00",
+              "is_read": false,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f_wa_101",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s09.chats.f_wa_101",
+              "timestamp": "2025-07-21T09:00:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f_wa_102",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s09.chats.f_wa_102",
+              "timestamp": "2025-07-21T09:14:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f_wa_103",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s09.chats.f_wa_103",
+              "timestamp": "2025-07-21T09:16:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f_wa_104",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s09.chats.f_wa_104",
+              "timestamp": "2025-09-08T17:30:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f_wa_105",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s09.chats.f_wa_105",
+              "timestamp": "2025-09-08T17:44:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f_wa_106",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s09.chats.f_wa_106",
+              "timestamp": "2025-09-08T17:46:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f_wa_107",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s09.chats.f_wa_107",
+              "timestamp": "2025-11-03T12:00:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f_wa_108",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s09.chats.f_wa_108",
+              "timestamp": "2025-11-03T12:20:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f_wa_109",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s09.chats.f_wa_109",
+              "timestamp": "2025-11-03T12:22:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f_wa_110",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s09.chats.f_wa_110",
+              "timestamp": "2025-12-19T18:00:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f_wa_111",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s09.chats.f_wa_111",
+              "timestamp": "2025-12-19T18:30:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f_wa_112",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s09.chats.f_wa_112",
+              "timestamp": "2026-01-27T10:00:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f_wa_113",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s09.chats.f_wa_113",
+              "timestamp": "2026-01-27T10:11:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f_wa_114",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s09.chats.f_wa_114",
+              "timestamp": "2026-02-11T15:00:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f_wa_115",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s09.chats.f_wa_115",
+              "timestamp": "2026-02-11T15:20:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f_wa_116",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s09.chats.f_wa_116",
+              "timestamp": "2026-02-11T15:22:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f2_wa_201",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s09.chats.f2_wa_201",
+              "timestamp": "2026-03-15T08:00:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f2_wa_202",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s09.chats.f2_wa_202",
+              "timestamp": "2026-03-15T08:40:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f2_wa_203",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s09.chats.f2_wa_203",
+              "timestamp": "2026-03-15T08:42:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f2_wa_204",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s09.chats.f2_wa_204",
+              "timestamp": "2026-03-19T17:00:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f2_wa_205",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s09.chats.f2_wa_205",
+              "timestamp": "2026-03-19T18:30:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f2_wa_206",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s09.chats.f2_wa_206",
+              "timestamp": "2026-04-08T12:00:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f2_wa_207",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s09.chats.f2_wa_207",
+              "timestamp": "2026-04-21T19:00:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f2_wa_208",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s09.chats.f2_wa_208",
+              "timestamp": "2026-05-02T22:10:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            }
+          ]
+        },
+        {
+          "contact_person_id": "p001",
+          "last_seen": "2026-04-20T08:05:00",
+          "messages": [
+            {
+              "id": "a1_001",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s09.chats.a1_001",
+              "timestamp": "2026-04-20T07:52:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "a1_002",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s09.chats.a1_002",
+              "timestamp": "2026-04-20T07:55:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "a1_003",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s09.chats.a1_003",
+              "timestamp": "2026-04-20T07:56:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "a1_004",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s09.chats.a1_004",
+              "timestamp": "2026-04-20T07:58:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "a1_005",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s09.chats.a1_005",
+              "timestamp": "2026-04-20T07:58:30",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "a1_006",
+              "sender": "p001",
+              "type": "voice",
+              "text_key": "s09.chats.a1_006",
+              "asset": "assets/cases/s09/audio/ariane_voice_{lang}.mp3",
+              "audio_langs": [
+                "en"
+              ],
+              "duration_sec": 34,
+              "timestamp": "2026-04-24T18:20:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f_wa_151",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s09.chats.f_wa_151",
+              "timestamp": "2026-03-23T09:00:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f_wa_152",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s09.chats.f_wa_152",
+              "timestamp": "2026-03-23T09:40:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f_wa_153",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s09.chats.f_wa_153",
+              "timestamp": "2026-03-23T09:42:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f_wa_154",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s09.chats.f_wa_154",
+              "timestamp": "2026-04-02T14:00:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f_wa_155",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s09.chats.f_wa_155",
+              "timestamp": "2026-04-02T14:30:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f_wa_156",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s09.chats.f_wa_156",
+              "timestamp": "2026-04-02T14:33:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f_wa_157",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s09.chats.f_wa_157",
+              "timestamp": "2026-04-27T11:00:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f_wa_158",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s09.chats.f_wa_158",
+              "timestamp": "2026-04-27T11:44:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f_wa_159",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s09.chats.f_wa_159",
+              "timestamp": "2026-04-27T11:46:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f_wa_160",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s09.chats.f_wa_160",
+              "timestamp": "2026-05-04T08:00:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f2_wa_221",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s09.chats.f2_wa_221",
+              "timestamp": "2026-03-30T09:00:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f2_wa_222",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s09.chats.f2_wa_222",
+              "timestamp": "2026-03-30T09:20:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f2_wa_223",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s09.chats.f2_wa_223",
+              "timestamp": "2026-03-30T09:24:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f2_wa_224",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s09.chats.f2_wa_224",
+              "timestamp": "2026-04-11T03:20:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f2_wa_225",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s09.chats.f2_wa_225",
+              "timestamp": "2026-04-11T07:00:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f2_wa_226",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s09.chats.f2_wa_226",
+              "timestamp": "2026-04-11T07:15:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f2_wa_227",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s09.chats.f2_wa_227",
+              "timestamp": "2026-04-11T07:18:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f2_wa_228",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s09.chats.f2_wa_228",
+              "timestamp": "2026-04-24T16:00:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            }
+          ]
+        },
+        {
+          "contact_person_id": "p004",
+          "last_seen": "2026-03-20T18:00:00",
+          "messages": [
+            {
+              "id": "n1_001",
+              "sender": "p004",
+              "type": "text",
+              "text_key": "s09.chats.n1_001",
+              "timestamp": "2026-03-16T14:20:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "n1_002",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s09.chats.n1_002",
+              "timestamp": "2026-03-16T14:31:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "n1_003",
+              "sender": "p004",
+              "type": "text",
+              "text_key": "s09.chats.n1_003",
+              "timestamp": "2026-03-16T14:33:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "n1_004",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s09.chats.n1_004",
+              "timestamp": "2026-03-16T14:40:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "n1_005",
+              "sender": "p004",
+              "type": "text",
+              "text_key": "s09.chats.n1_005",
+              "timestamp": "2026-03-16T14:44:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f_wa_131",
+              "sender": "p004",
+              "type": "text",
+              "text_key": "s09.chats.f_wa_131",
+              "timestamp": "2026-03-06T23:40:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f_wa_132",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s09.chats.f_wa_132",
+              "timestamp": "2026-03-06T23:52:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f_wa_133",
+              "sender": "p004",
+              "type": "text",
+              "text_key": "s09.chats.f_wa_133",
+              "timestamp": "2026-03-09T22:10:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f_wa_134",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s09.chats.f_wa_134",
+              "timestamp": "2026-03-09T22:30:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f_wa_135",
+              "sender": "p004",
+              "type": "text",
+              "text_key": "s09.chats.f_wa_135",
+              "timestamp": "2026-03-21T20:00:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f_wa_136",
+              "sender": "p004",
+              "type": "text",
+              "text_key": "s09.chats.f_wa_136",
+              "timestamp": "2026-04-14T21:15:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f2_wa_241",
+              "sender": "p004",
+              "type": "text",
+              "text_key": "s09.chats.f2_wa_241",
+              "timestamp": "2026-05-01T21:00:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f2_wa_242",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s09.chats.f2_wa_242",
+              "timestamp": "2026-05-01T21:30:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f2_wa_243",
+              "sender": "p004",
+              "type": "text",
+              "text_key": "s09.chats.f2_wa_243",
+              "timestamp": "2026-05-01T21:33:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f2_wa_244",
+              "sender": "p004",
+              "type": "text",
+              "text_key": "s09.chats.f2_wa_244",
+              "timestamp": "2026-05-01T21:34:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            }
+          ]
+        }
+      ],
+      "groups": [],
+      "statuses": []
+    },
+    "gmail": {
+      "account_email": "l.vervoort@halderman-art.nl",
+      "login_required": false,
+      "password": null,
+      "inbox": [
+        {
+          "id": "gm_001",
+          "from": {
+            "display_name": "Havenkring — Underwriting",
+            "email": "specified@havenkring.nl",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.gm_001.subject",
+          "body_key": "s09.mail.gm_001.body",
+          "timestamp": "2026-03-05T16:40:00",
+          "is_read": true,
+          "is_starred": true,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "gm_002",
+          "from": {
+            "display_name": "Wielart Vitrinebouw",
+            "email": "orders@wielart-vitrine.nl",
+            "person_id": "p006"
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.gm_002.subject",
+          "body_key": "s09.mail.gm_002.body",
+          "timestamp": "2026-02-23T17:05:00",
+          "is_read": true,
+          "is_starred": true,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "gm_003",
+          "from": {
+            "display_name": "Vrijthof Fair — Technical",
+            "email": "tech@vrijthoffair.nl",
+            "person_id": null
+          },
+          "to": [
+            "exhibitors-hallB@vrijthoffair.nl"
+          ],
+          "subject_key": "s09.mail.gm_003.subject",
+          "body_key": "s09.mail.gm_003.body",
+          "timestamp": "2026-03-10T08:20:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "updates"
+        },
+        {
+          "id": "gm_004",
+          "from": {
+            "display_name": "Joachim Prins",
+            "email": "registrar@vrijthoffair.nl",
+            "person_id": "p008"
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl",
+            "g.halderman@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.gm_004.subject",
+          "body_key": "s09.mail.gm_004.body",
+          "timestamp": "2026-03-04T20:15:00",
+          "is_read": true,
+          "is_starred": true,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "gm_005",
+          "from": {
+            "display_name": "Dr Rima Haddad",
+            "email": "r.haddad@muqbila-project.org",
+            "person_id": "p007"
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.gm_005.subject",
+          "body_key": "s09.mail.gm_005.body",
+          "timestamp": "2026-04-18T04:12:00",
+          "is_read": true,
+          "is_starred": true,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "gm_007",
+          "from": {
+            "display_name": "Vrijthof Fair — Security",
+            "email": "security@vrijthoffair.nl",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.gm_007.subject",
+          "body_key": "s09.mail.gm_007.body",
+          "timestamp": "2026-03-13T11:00:00",
+          "is_read": true,
+          "is_starred": true,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_101",
+          "from": {
+            "display_name": "Van Doorn Kunsttransport",
+            "email": "planning@vandoorn-transport.nl",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f_gm_101.subject",
+          "body_key": "s09.mail.f_gm_101.body",
+          "timestamp": "2026-02-05T09:00:00",
+          "is_read": false,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_102",
+          "from": {
+            "display_name": "Van Doorn Kunsttransport",
+            "email": "planning@vandoorn-transport.nl",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f_gm_102.subject",
+          "body_key": "s09.mail.f_gm_102.body",
+          "timestamp": "2026-02-25T09:00:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_103",
+          "from": {
+            "display_name": "Van Doorn Kunsttransport",
+            "email": "planning@vandoorn-transport.nl",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f_gm_103.subject",
+          "body_key": "s09.mail.f_gm_103.body",
+          "timestamp": "2026-03-16T09:00:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_104",
+          "from": {
+            "display_name": "Kamer van Koophandel — ATA",
+            "email": "ata@kvk.nl",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f_gm_104.subject",
+          "body_key": "s09.mail.f_gm_104.body",
+          "timestamp": "2026-02-12T11:00:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_105",
+          "from": {
+            "display_name": "Kamer van Koophandel — ATA",
+            "email": "ata@kvk.nl",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f_gm_105.subject",
+          "body_key": "s09.mail.f_gm_105.body",
+          "timestamp": "2026-03-20T11:00:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_106",
+          "from": {
+            "display_name": "Vrijthof Fair — Exhibitor Services",
+            "email": "exhibitors@vrijthoffair.nl",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f_gm_106.subject",
+          "body_key": "s09.mail.f_gm_106.body",
+          "timestamp": "2026-01-20T08:00:00",
+          "is_read": false,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_107",
+          "from": {
+            "display_name": "Vrijthof Fair — Exhibitor Services",
+            "email": "exhibitors@vrijthoffair.nl",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f_gm_107.subject",
+          "body_key": "s09.mail.f_gm_107.body",
+          "timestamp": "2026-02-18T08:00:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_108",
+          "from": {
+            "display_name": "Vrijthof Fair — Exhibitor Services",
+            "email": "exhibitors@vrijthoffair.nl",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f_gm_108.subject",
+          "body_key": "s09.mail.f_gm_108.body",
+          "timestamp": "2026-03-17T08:00:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_109",
+          "from": {
+            "display_name": "Kistenbouw Limburg",
+            "email": "orders@kistenbouw-limburg.nl",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f_gm_109.subject",
+          "body_key": "s09.mail.f_gm_109.body",
+          "timestamp": "2026-02-06T13:00:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_110",
+          "from": {
+            "display_name": "Kistenbouw Limburg",
+            "email": "orders@kistenbouw-limburg.nl",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f_gm_110.subject",
+          "body_key": "s09.mail.f_gm_110.body",
+          "timestamp": "2026-03-18T13:00:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_111",
+          "from": {
+            "display_name": "Studio Meijer",
+            "email": "studio@meijer-fotografie.nl",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f_gm_111.subject",
+          "body_key": "s09.mail.f_gm_111.body",
+          "timestamp": "2026-02-20T15:00:00",
+          "is_read": false,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_112",
+          "from": {
+            "display_name": "Drukkerij Sint-Servaas",
+            "email": "prepress@sintservaas-druk.nl",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f_gm_112.subject",
+          "body_key": "s09.mail.f_gm_112.body",
+          "timestamp": "2026-02-23T10:00:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_113",
+          "from": {
+            "display_name": "Havenkring Verzekering",
+            "email": "polissen@havenkring.nl",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f_gm_113.subject",
+          "body_key": "s09.mail.f_gm_113.body",
+          "timestamp": "2026-01-30T07:00:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_114",
+          "from": {
+            "display_name": "Regional Museum of History",
+            "email": "loans@rmh.bg",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f_gm_114.subject",
+          "body_key": "s09.mail.f_gm_114.body",
+          "timestamp": "2026-01-23T12:00:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_115",
+          "from": {
+            "display_name": "Regional Museum of History",
+            "email": "loans@rmh.bg",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f_gm_115.subject",
+          "body_key": "s09.mail.f_gm_115.body",
+          "timestamp": "2026-04-07T12:00:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_116",
+          "from": {
+            "display_name": "Art Loss Register",
+            "email": "search@artloss.com",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f_gm_116.subject",
+          "body_key": "s09.mail.f_gm_116.body",
+          "timestamp": "2026-02-13T16:00:00",
+          "is_read": false,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_117",
+          "from": {
+            "display_name": "Reinaerdt & Zn.",
+            "email": "g.reinaerdt@reinaerdt-antiquiteiten.nl",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f_gm_117.subject",
+          "body_key": "s09.mail.f_gm_117.body",
+          "timestamp": "2026-03-31T14:00:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_118",
+          "from": {
+            "display_name": "Universiteit van Amsterdam — Alumni",
+            "email": "alumni@uva.nl",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f_gm_118.subject",
+          "body_key": "s09.mail.f_gm_118.body",
+          "timestamp": "2026-02-28T09:00:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_119",
+          "from": {
+            "display_name": "Rijksmuseum van Oudheden",
+            "email": "vacatures@rmo.nl",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f_gm_119.subject",
+          "body_key": "s09.mail.f_gm_119.body",
+          "timestamp": "2026-04-24T09:00:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_120",
+          "from": {
+            "display_name": "Politie Limburg",
+            "email": "noreply@politie.nl",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f_gm_120.subject",
+          "body_key": "s09.mail.f_gm_120.body",
+          "timestamp": "2026-03-13T15:00:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_121",
+          "from": {
+            "display_name": "Politie Limburg",
+            "email": "noreply@politie.nl",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f_gm_121.subject",
+          "body_key": "s09.mail.f_gm_121.body",
+          "timestamp": "2026-04-16T15:00:00",
+          "is_read": false,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_122",
+          "from": {
+            "display_name": "Halderman Ancient Art",
+            "email": "g.halderman@halderman-art.nl",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f_gm_122.subject",
+          "body_key": "s09.mail.f_gm_122.body",
+          "timestamp": "2026-04-30T18:00:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f2_gm_201",
+          "from": {
+            "display_name": "Kamer van Koophandel — ATA",
+            "email": "ata@kvk.nl",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f2_gm_201.subject",
+          "body_key": "s09.mail.f2_gm_201.body",
+          "timestamp": "2026-04-14T11:00:00",
+          "is_read": false,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f2_gm_202",
+          "from": {
+            "display_name": "Kamer van Koophandel — ATA",
+            "email": "ata@kvk.nl",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f2_gm_202.subject",
+          "body_key": "s09.mail.f2_gm_202.body",
+          "timestamp": "2026-05-01T11:00:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f2_gm_203",
+          "from": {
+            "display_name": "Van Doorn Kunsttransport",
+            "email": "planning@vandoorn-transport.nl",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f2_gm_203.subject",
+          "body_key": "s09.mail.f2_gm_203.body",
+          "timestamp": "2026-04-02T09:00:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f2_gm_204",
+          "from": {
+            "display_name": "Van Doorn Kunsttransport",
+            "email": "planning@vandoorn-transport.nl",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f2_gm_204.subject",
+          "body_key": "s09.mail.f2_gm_204.body",
+          "timestamp": "2026-04-27T09:00:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f2_gm_205",
+          "from": {
+            "display_name": "Kistenbouw Limburg",
+            "email": "orders@kistenbouw-limburg.nl",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f2_gm_205.subject",
+          "body_key": "s09.mail.f2_gm_205.body",
+          "timestamp": "2026-04-21T13:00:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f2_gm_206",
+          "from": {
+            "display_name": "Politie Limburg",
+            "email": "goederen@politie.nl",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f2_gm_206.subject",
+          "body_key": "s09.mail.f2_gm_206.body",
+          "timestamp": "2026-04-09T10:00:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f2_gm_207",
+          "from": {
+            "display_name": "Havenkring Verzekering",
+            "email": "claims@havenkring.nl",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f2_gm_207.subject",
+          "body_key": "s09.mail.f2_gm_207.body",
+          "timestamp": "2026-03-19T09:00:00",
+          "is_read": false,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f2_gm_208",
+          "from": {
+            "display_name": "Havenkring Verzekering",
+            "email": "claims@havenkring.nl",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f2_gm_208.subject",
+          "body_key": "s09.mail.f2_gm_208.body",
+          "timestamp": "2026-04-30T09:00:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f2_gm_209",
+          "from": {
+            "display_name": "Boonen & Partners Advocaten",
+            "email": "exhibitors@boonen-partners.nl",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f2_gm_209.subject",
+          "body_key": "s09.mail.f2_gm_209.body",
+          "timestamp": "2026-03-26T14:00:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f2_gm_210",
+          "from": {
+            "display_name": "Regional Museum of History",
+            "email": "loans@rmh.bg",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f2_gm_210.subject",
+          "body_key": "s09.mail.f2_gm_210.body",
+          "timestamp": "2026-05-02T12:00:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f2_gm_211",
+          "from": {
+            "display_name": "Rijksmuseum van Oudheden",
+            "email": "vacatures@rmo.nl",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f2_gm_211.subject",
+          "body_key": "s09.mail.f2_gm_211.body",
+          "timestamp": "2026-05-01T09:00:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f2_gm_212",
+          "from": {
+            "display_name": "Rijksmuseum van Oudheden",
+            "email": "vacatures@rmo.nl",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f2_gm_212.subject",
+          "body_key": "s09.mail.f2_gm_212.body",
+          "timestamp": "2026-05-04T09:00:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f2_gm_213",
+          "from": {
+            "display_name": "prof. dr. A. Weeninck",
+            "email": "a.weeninck@uva.nl",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f2_gm_213.subject",
+          "body_key": "s09.mail.f2_gm_213.body",
+          "timestamp": "2026-05-04T22:00:00",
+          "is_read": false,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f2_gm_214",
+          "from": {
+            "display_name": "Vastgoed Wyck BV",
+            "email": "huur@vastgoedwyck.nl",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f2_gm_214.subject",
+          "body_key": "s09.mail.f2_gm_214.body",
+          "timestamp": "2026-04-01T08:00:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f2_gm_215",
+          "from": {
+            "display_name": "ING",
+            "email": "noreply@ing.nl",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f2_gm_215.subject",
+          "body_key": "s09.mail.f2_gm_215.body",
+          "timestamp": "2026-04-29T07:00:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f2_gm_216",
+          "from": {
+            "display_name": "Collections Trust",
+            "email": "news@collectionstrust.org.uk",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f2_gm_216.subject",
+          "body_key": "s09.mail.f2_gm_216.body",
+          "timestamp": "2026-04-13T12:00:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        }
+      ],
+      "sent": [
+        {
+          "id": "f_gm_131",
+          "from": {
+            "display_name": "Lotte Vervoort",
+            "email": "l.vervoort@halderman-art.nl",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f_gm_131.subject",
+          "body_key": "s09.mail.f_gm_131.body",
+          "timestamp": "2026-01-21T09:40:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_132",
+          "from": {
+            "display_name": "Lotte Vervoort",
+            "email": "l.vervoort@halderman-art.nl",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f_gm_132.subject",
+          "body_key": "s09.mail.f_gm_132.body",
+          "timestamp": "2026-02-06T14:20:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_133",
+          "from": {
+            "display_name": "Lotte Vervoort",
+            "email": "l.vervoort@halderman-art.nl",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f_gm_133.subject",
+          "body_key": "s09.mail.f_gm_133.body",
+          "timestamp": "2026-02-13T17:00:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_134",
+          "from": {
+            "display_name": "Lotte Vervoort",
+            "email": "l.vervoort@halderman-art.nl",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f_gm_134.subject",
+          "body_key": "s09.mail.f_gm_134.body",
+          "timestamp": "2026-02-25T10:30:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_135",
+          "from": {
+            "display_name": "Lotte Vervoort",
+            "email": "l.vervoort@halderman-art.nl",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f_gm_135.subject",
+          "body_key": "s09.mail.f_gm_135.body",
+          "timestamp": "2026-03-01T21:00:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_136",
+          "from": {
+            "display_name": "Lotte Vervoort",
+            "email": "l.vervoort@halderman-art.nl",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f_gm_136.subject",
+          "body_key": "s09.mail.f_gm_136.body",
+          "timestamp": "2026-03-05T20:00:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_137",
+          "from": {
+            "display_name": "Lotte Vervoort",
+            "email": "l.vervoort@halderman-art.nl",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f_gm_137.subject",
+          "body_key": "s09.mail.f_gm_137.body",
+          "timestamp": "2026-03-17T09:20:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_138",
+          "from": {
+            "display_name": "Lotte Vervoort",
+            "email": "l.vervoort@halderman-art.nl",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f_gm_138.subject",
+          "body_key": "s09.mail.f_gm_138.body",
+          "timestamp": "2026-04-08T13:00:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f2_gm_231",
+          "from": {
+            "display_name": "Lotte Vervoort",
+            "email": "l.vervoort@halderman-art.nl",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f2_gm_231.subject",
+          "body_key": "s09.mail.f2_gm_231.body",
+          "timestamp": "2026-04-14T15:00:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f2_gm_232",
+          "from": {
+            "display_name": "Lotte Vervoort",
+            "email": "l.vervoort@halderman-art.nl",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f2_gm_232.subject",
+          "body_key": "s09.mail.f2_gm_232.body",
+          "timestamp": "2026-04-09T16:20:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f2_gm_233",
+          "from": {
+            "display_name": "Lotte Vervoort",
+            "email": "l.vervoort@halderman-art.nl",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f2_gm_233.subject",
+          "body_key": "s09.mail.f2_gm_233.body",
+          "timestamp": "2026-04-22T10:00:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f2_gm_234",
+          "from": {
+            "display_name": "Lotte Vervoort",
+            "email": "l.vervoort@halderman-art.nl",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f2_gm_234.subject",
+          "body_key": "s09.mail.f2_gm_234.body",
+          "timestamp": "2026-05-01T13:40:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f2_gm_235",
+          "from": {
+            "display_name": "Lotte Vervoort",
+            "email": "l.vervoort@halderman-art.nl",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f2_gm_235.subject",
+          "body_key": "s09.mail.f2_gm_235.body",
+          "timestamp": "2026-05-04T09:30:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f2_gm_236",
+          "from": {
+            "display_name": "Lotte Vervoort",
+            "email": "l.vervoort@halderman-art.nl",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f2_gm_236.subject",
+          "body_key": "s09.mail.f2_gm_236.body",
+          "timestamp": "2026-03-19T20:00:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        }
+      ],
+      "drafts": [
+        {
+          "id": "gm_006",
+          "from": {
+            "display_name": "Lotte Vervoort",
+            "email": "l.vervoort@halderman-art.nl",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.gm_006.subject",
+          "body_key": "s09.mail.gm_006.body",
+          "timestamp": "2026-04-17T23:40:00",
+          "is_read": true,
+          "is_starred": true,
+          "is_deleted": false,
+          "is_draft": true,
+          "must_delete_after_use": false,
+          "category": "primary",
+          "draft_note": "Extract pulled for the accountant in January. Kept."
+        },
+        {
+          "id": "f_gm_141",
+          "from": {
+            "display_name": "Lotte Vervoort",
+            "email": "l.vervoort@halderman-art.nl",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f_gm_141.subject",
+          "body_key": "s09.mail.f_gm_141.body",
+          "timestamp": "2026-03-27T02:40:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": true,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_142",
+          "from": {
+            "display_name": "Lotte Vervoort",
+            "email": "l.vervoort@halderman-art.nl",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f_gm_142.subject",
+          "body_key": "s09.mail.f_gm_142.body",
+          "timestamp": "2026-04-11T03:10:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": true,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_143",
+          "from": {
+            "display_name": "Lotte Vervoort",
+            "email": "l.vervoort@halderman-art.nl",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f_gm_143.subject",
+          "body_key": "s09.mail.f_gm_143.body",
+          "timestamp": "2026-04-26T04:20:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": true,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_144",
+          "from": {
+            "display_name": "Lotte Vervoort",
+            "email": "l.vervoort@halderman-art.nl",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f_gm_144.subject",
+          "body_key": "s09.mail.f_gm_144.body",
+          "timestamp": "2026-05-03T03:35:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": true,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f2_gm_241",
+          "from": {
+            "display_name": "Lotte Vervoort",
+            "email": "l.vervoort@halderman-art.nl",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f2_gm_241.subject",
+          "body_key": "s09.mail.f2_gm_241.body",
+          "timestamp": "2026-04-16T22:40:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": true,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f2_gm_242",
+          "from": {
+            "display_name": "Lotte Vervoort",
+            "email": "l.vervoort@halderman-art.nl",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f2_gm_242.subject",
+          "body_key": "s09.mail.f2_gm_242.body",
+          "timestamp": "2026-04-30T03:00:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": true,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f2_gm_243",
+          "from": {
+            "display_name": "Lotte Vervoort",
+            "email": "l.vervoort@halderman-art.nl",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f2_gm_243.subject",
+          "body_key": "s09.mail.f2_gm_243.body",
+          "timestamp": "2026-05-04T04:10:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": true,
+          "must_delete_after_use": false,
+          "category": "primary"
+        }
+      ],
+      "trash": [
+        {
+          "id": "f2_gm_261",
+          "from": {
+            "display_name": "Vanderveldt Auctioneers",
+            "email": "news@vanderveldt-auctions.nl",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f2_gm_261.subject",
+          "body_key": "s09.mail.f2_gm_261.body",
+          "timestamp": "2025-09-11T08:00:00",
+          "is_read": false,
+          "is_starred": false,
+          "is_deleted": true,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f2_gm_262",
+          "from": {
+            "display_name": "Vanderveldt Auctioneers",
+            "email": "news@vanderveldt-auctions.nl",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f2_gm_262.subject",
+          "body_key": "s09.mail.f2_gm_262.body",
+          "timestamp": "2025-11-06T08:00:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": true,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f2_gm_263",
+          "from": {
+            "display_name": "Vanderveldt Auctioneers",
+            "email": "news@vanderveldt-auctions.nl",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f2_gm_263.subject",
+          "body_key": "s09.mail.f2_gm_263.body",
+          "timestamp": "2026-02-05T08:00:00",
+          "is_read": false,
+          "is_starred": false,
+          "is_deleted": true,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f2_gm_264",
+          "from": {
+            "display_name": "The Trade Weekly",
+            "email": "editor@thetradeweekly.com",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f2_gm_264.subject",
+          "body_key": "s09.mail.f2_gm_264.body",
+          "timestamp": "2025-10-01T07:00:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": true,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f2_gm_265",
+          "from": {
+            "display_name": "The Trade Weekly",
+            "email": "editor@thetradeweekly.com",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f2_gm_265.subject",
+          "body_key": "s09.mail.f2_gm_265.body",
+          "timestamp": "2026-01-07T07:00:00",
+          "is_read": false,
+          "is_starred": false,
+          "is_deleted": true,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f2_gm_266",
+          "from": {
+            "display_name": "The Trade Weekly",
+            "email": "editor@thetradeweekly.com",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f2_gm_266.subject",
+          "body_key": "s09.mail.f2_gm_266.body",
+          "timestamp": "2026-04-01T07:00:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": true,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f2_gm_267",
+          "from": {
+            "display_name": "Antiquities Buyer NL",
+            "email": "contact@antiquities-buyer.nl",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f2_gm_267.subject",
+          "body_key": "s09.mail.f2_gm_267.body",
+          "timestamp": "2025-08-22T15:00:00",
+          "is_read": false,
+          "is_starred": false,
+          "is_deleted": true,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f2_gm_268",
+          "from": {
+            "display_name": "Antiquities Buyer NL",
+            "email": "contact@antiquities-buyer.nl",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f2_gm_268.subject",
+          "body_key": "s09.mail.f2_gm_268.body",
+          "timestamp": "2026-01-16T15:00:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": true,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f2_gm_269",
+          "from": {
+            "display_name": "Salon des Antiquaires",
+            "email": "exposants@salon-antiquaires.fr",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f2_gm_269.subject",
+          "body_key": "s09.mail.f2_gm_269.body",
+          "timestamp": "2025-12-03T10:00:00",
+          "is_read": false,
+          "is_starred": false,
+          "is_deleted": true,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f2_gm_270",
+          "from": {
+            "display_name": "ArtSecure Systems",
+            "email": "sales@artsecure-systems.eu",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f2_gm_270.subject",
+          "body_key": "s09.mail.f2_gm_270.body",
+          "timestamp": "2025-11-19T11:00:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": true,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f2_gm_271",
+          "from": {
+            "display_name": "ArtSecure Systems",
+            "email": "sales@artsecure-systems.eu",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f2_gm_271.subject",
+          "body_key": "s09.mail.f2_gm_271.body",
+          "timestamp": "2026-03-25T11:00:00",
+          "is_read": false,
+          "is_starred": false,
+          "is_deleted": true,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f2_gm_272",
+          "from": {
+            "display_name": "Kunstbeurs Nieuwsbrief",
+            "email": "nieuws@kunstbeurs.nl",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f2_gm_272.subject",
+          "body_key": "s09.mail.f2_gm_272.body",
+          "timestamp": "2026-02-11T09:00:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": true,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f2_gm_273",
+          "from": {
+            "display_name": "Bureau Talent Cultuur",
+            "email": "werving@bureautalentcultuur.nl",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f2_gm_273.subject",
+          "body_key": "s09.mail.f2_gm_273.body",
+          "timestamp": "2026-01-28T13:00:00",
+          "is_read": false,
+          "is_starred": false,
+          "is_deleted": true,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f2_gm_274",
+          "from": {
+            "display_name": "Provenance Forum 2026",
+            "email": "register@provenanceforum.org",
+            "person_id": null
+          },
+          "to": [
+            "l.vervoort@halderman-art.nl"
+          ],
+          "subject_key": "s09.mail.f2_gm_274.subject",
+          "body_key": "s09.mail.f2_gm_274.body",
+          "timestamp": "2026-02-19T10:00:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": true,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        }
+      ]
+    },
+    "maps": {
+      "location_history": [
+        {
+          "id": "loc_001",
+          "name_key": "s09.maps.loc_001.name",
+          "category": "other",
+          "address_key": "s09.maps.loc_001.address",
+          "lat": 50.8483,
+          "lng": 5.6885,
+          "visited_at": "2026-03-04T08:04:00",
+          "duration_minutes": 610,
+          "note_key": "s09.maps.loc_001.note"
+        },
+        {
+          "id": "loc_002",
+          "name_key": "s09.maps.loc_002.name",
+          "category": "other",
+          "address_key": "s09.maps.loc_002.address",
+          "lat": 50.8451,
+          "lng": 5.6912,
+          "visited_at": "2026-04-19T09:00:00",
+          "duration_minutes": 480
+        },
+        {
+          "id": "loc_003",
+          "name_key": "s09.maps.loc_003.name",
+          "category": "other",
+          "address_key": "s09.maps.loc_003.address",
+          "lat": 50.8489,
+          "lng": 5.6871,
+          "visited_at": "2026-03-12T10:20:00",
+          "duration_minutes": 25,
+          "note_key": "s09.maps.loc_003.note"
+        },
+        {
+          "id": "loc_004",
+          "name_key": "s09.maps.loc_004.name",
+          "category": "other",
+          "address_key": "s09.maps.loc_004.address",
+          "lat": 50.8496,
+          "lng": 5.6893,
+          "visited_at": "2026-03-12T10:50:00",
+          "duration_minutes": 15
+        },
+        {
+          "id": "loc_005",
+          "name_key": "s09.maps.loc_005.name",
+          "category": "other",
+          "address_key": "s09.maps.loc_005.address",
+          "lat": 50.8478,
+          "lng": 5.7042,
+          "visited_at": "2026-04-19T19:30:00",
+          "duration_minutes": 720
+        },
+        {
+          "id": "loc_006",
+          "name_key": "s09.maps.loc_006.name",
+          "category": "other",
+          "address_key": "s09.maps.loc_006.address",
+          "lat": 51.905,
+          "lng": 4.478,
+          "visited_at": "2026-04-20T09:40:00",
+          "duration_minutes": 190
+        }
+      ],
+      "saved_places": [
+        {
+          "id": "f_sp_001",
+          "name_key": "s09.maps.f_sp_001.name",
+          "category": "other",
+          "address_key": "s09.maps.f_sp_001.address",
+          "lat": 50.8486,
+          "lng": 5.689
+        },
+        {
+          "id": "f_sp_002",
+          "name_key": "s09.maps.f_sp_002.name",
+          "category": "other",
+          "address_key": "s09.maps.f_sp_002.address",
+          "lat": 50.8513,
+          "lng": 5.706
+        },
+        {
+          "id": "f_sp_003",
+          "name_key": "s09.maps.f_sp_003.name",
+          "category": "other",
+          "address_key": "s09.maps.f_sp_003.address",
+          "lat": 50.8442,
+          "lng": 5.6968
+        },
+        {
+          "id": "f2_sp_004",
+          "name_key": "s09.maps.f2_sp_004.name",
+          "category": "other",
+          "address_key": "s09.maps.f2_sp_004.address",
+          "lat": 50.8395,
+          "lng": 5.687
+        },
+        {
+          "id": "f2_sp_005",
+          "name_key": "s09.maps.f2_sp_005.name",
+          "category": "other",
+          "address_key": "s09.maps.f2_sp_005.address",
+          "lat": 51.9179,
+          "lng": 4.4813
+        }
+      ]
+    },
+    "venmo": {
+      "account_name": "Halderman Ancient Art",
+      "username": "@halderman-art",
+      "transactions": [
+        {
+          "id": "tx_001",
+          "type": "sent",
+          "person_id": "p003",
+          "amount": 3000.0,
+          "note_key": "s09.payments.tx_001.note",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2026-02-19T14:20:00"
+        },
+        {
+          "id": "tx_004",
+          "type": "sent",
+          "person_id": null,
+          "recipient_name": "Wielart Vitrinebouw",
+          "amount": 1840.0,
+          "note_key": "s09.payments.tx_004.note",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2026-02-24T10:05:00"
+        },
+        {
+          "id": "tx_002",
+          "type": "sent",
+          "person_id": "p003",
+          "amount": 3000.0,
+          "note_key": "s09.payments.tx_002.note",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2026-03-02T11:40:00"
+        },
+        {
+          "id": "tx_008",
+          "type": "sent",
+          "person_id": null,
+          "recipient_name": "Drukkerij Meuse",
+          "amount": 4420.0,
+          "note_key": "s09.payments.tx_008.note",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2026-03-04T16:00:00"
+        },
+        {
+          "id": "tx_005",
+          "type": "sent",
+          "person_id": null,
+          "recipient_name": "Vrijthof Fair BV",
+          "amount": 26500.0,
+          "note_key": "s09.payments.tx_005.note",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2026-03-05T09:30:00"
+        },
+        {
+          "id": "tx_007",
+          "type": "sent",
+          "person_id": null,
+          "recipient_name": "Sirks Transport",
+          "amount": 980.0,
+          "note_key": "s09.payments.tx_007.note",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2026-03-06T08:15:00"
+        },
+        {
+          "id": "tx_006",
+          "type": "sent",
+          "person_id": "p000",
+          "amount": 2410.0,
+          "note_key": "s09.payments.tx_006.note",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2026-03-25T09:00:00"
+        },
+        {
+          "id": "tx_003",
+          "type": "sent",
+          "person_id": "p003",
+          "amount": 3000.0,
+          "note_key": "s09.payments.tx_003.note",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2026-03-14T13:10:00"
+        },
+        {
+          "id": "f_tx_101",
+          "type": "sent",
+          "person_id": null,
+          "recipient_name": "Van Doorn Kunsttransport",
+          "amount": 4260.0,
+          "note_key": "s09.payments.f_tx_101.note",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2026-02-05T11:00:00"
+        },
+        {
+          "id": "f_tx_102",
+          "type": "sent",
+          "person_id": null,
+          "recipient_name": "Van Doorn Kunsttransport",
+          "amount": 4260.0,
+          "note_key": "s09.payments.f_tx_102.note",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2026-03-16T11:00:00"
+        },
+        {
+          "id": "f_tx_103",
+          "type": "sent",
+          "person_id": null,
+          "recipient_name": "Kistenbouw Limburg",
+          "amount": 980.0,
+          "note_key": "s09.payments.f_tx_103.note",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2026-02-06T15:00:00"
+        },
+        {
+          "id": "f_tx_104",
+          "type": "sent",
+          "person_id": null,
+          "recipient_name": "Kamer van Koophandel",
+          "amount": 385.0,
+          "note_key": "s09.payments.f_tx_104.note",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2026-02-12T12:00:00"
+        },
+        {
+          "id": "f_tx_105",
+          "type": "sent",
+          "person_id": null,
+          "recipient_name": "Studio Meijer",
+          "amount": 1450.0,
+          "note_key": "s09.payments.f_tx_105.note",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2026-02-20T16:00:00"
+        },
+        {
+          "id": "f_tx_106",
+          "type": "sent",
+          "person_id": null,
+          "recipient_name": "Drukkerij Sint-Servaas",
+          "amount": 2310.0,
+          "note_key": "s09.payments.f_tx_106.note",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2026-02-23T11:00:00"
+        },
+        {
+          "id": "f_tx_107",
+          "type": "sent",
+          "person_id": null,
+          "recipient_name": "Havenkring Verzekering",
+          "amount": 8740.0,
+          "note_key": "s09.payments.f_tx_107.note",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2026-01-30T09:00:00"
+        },
+        {
+          "id": "f_tx_108",
+          "type": "sent",
+          "person_id": null,
+          "recipient_name": "Hotel Beaumont",
+          "amount": 612.0,
+          "note_key": "s09.payments.f_tx_108.note",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2026-03-05T08:00:00"
+        },
+        {
+          "id": "f_tx_109",
+          "type": "sent",
+          "person_id": null,
+          "recipient_name": "Vrijthof Fair",
+          "amount": 1200.0,
+          "note_key": "s09.payments.f_tx_109.note",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2026-02-18T10:00:00"
+        },
+        {
+          "id": "f_tx_110",
+          "type": "sent",
+          "person_id": null,
+          "recipient_name": "L. Vervoort",
+          "amount": 2180.0,
+          "note_key": "s09.payments.f_tx_110.note",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2026-02-27T09:00:00"
+        },
+        {
+          "id": "f_tx_111",
+          "type": "sent",
+          "person_id": null,
+          "recipient_name": "L. Vervoort",
+          "amount": 2180.0,
+          "note_key": "s09.payments.f_tx_111.note",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2026-03-27T09:00:00"
+        },
+        {
+          "id": "f_tx_112",
+          "type": "sent",
+          "person_id": null,
+          "recipient_name": "L. Vervoort",
+          "amount": 2180.0,
+          "note_key": "s09.payments.f_tx_112.note",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2026-04-27T09:00:00"
+        },
+        {
+          "id": "f_tx_113",
+          "type": "sent",
+          "person_id": null,
+          "recipient_name": "Rijksdriehoek Beveiliging",
+          "amount": 1980.0,
+          "note_key": "s09.payments.f_tx_113.note",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2026-03-02T12:00:00"
+        },
+        {
+          "id": "f_tx_114",
+          "type": "sent",
+          "person_id": null,
+          "recipient_name": "Kistenbouw Limburg",
+          "amount": 980.0,
+          "note_key": "s09.payments.f_tx_114.note",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2026-03-18T15:00:00"
+        },
+        {
+          "id": "f2_tx_201",
+          "type": "sent",
+          "person_id": null,
+          "recipient_name": "Vastgoed Tongersestraat",
+          "amount": 3150.0,
+          "note_key": "s09.payments.f2_tx_201.note",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2026-03-01T09:00:00"
+        },
+        {
+          "id": "f2_tx_202",
+          "type": "sent",
+          "person_id": null,
+          "recipient_name": "Vastgoed Tongersestraat",
+          "amount": 3150.0,
+          "note_key": "s09.payments.f2_tx_202.note",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2026-04-01T09:00:00"
+        },
+        {
+          "id": "f2_tx_203",
+          "type": "sent",
+          "person_id": null,
+          "recipient_name": "Vastgoed Tongersestraat",
+          "amount": 3150.0,
+          "note_key": "s09.payments.f2_tx_203.note",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2026-05-01T09:00:00"
+        },
+        {
+          "id": "f2_tx_204",
+          "type": "sent",
+          "person_id": null,
+          "recipient_name": "Beatrixhaven Opslag",
+          "amount": 740.0,
+          "note_key": "s09.payments.f2_tx_204.note",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2026-03-01T09:30:00"
+        },
+        {
+          "id": "f2_tx_205",
+          "type": "sent",
+          "person_id": null,
+          "recipient_name": "Beatrixhaven Opslag",
+          "amount": 740.0,
+          "note_key": "s09.payments.f2_tx_205.note",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2026-04-01T09:30:00"
+        },
+        {
+          "id": "f2_tx_206",
+          "type": "sent",
+          "person_id": null,
+          "recipient_name": "Essent",
+          "amount": 288.4,
+          "note_key": "s09.payments.f2_tx_206.note",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2026-03-10T08:00:00"
+        },
+        {
+          "id": "f2_tx_207",
+          "type": "sent",
+          "person_id": null,
+          "recipient_name": "Boonen & Partners Advocaten",
+          "amount": 5000.0,
+          "note_key": "s09.payments.f2_tx_207.note",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2026-03-27T15:00:00"
+        },
+        {
+          "id": "f2_tx_208",
+          "type": "sent",
+          "person_id": null,
+          "recipient_name": "Kuypers Accountants",
+          "amount": 1450.0,
+          "note_key": "s09.payments.f2_tx_208.note",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2026-04-15T11:00:00"
+        },
+        {
+          "id": "f2_tx_209",
+          "type": "sent",
+          "person_id": null,
+          "recipient_name": "L. Vervoort",
+          "amount": 2180.0,
+          "note_key": "s09.payments.f2_tx_209.note",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2026-05-27T09:00:00"
+        },
+        {
+          "id": "f2_tx_210",
+          "type": "sent",
+          "person_id": null,
+          "recipient_name": "Havenkring Verzekering",
+          "amount": 8740.0,
+          "note_key": "s09.payments.f2_tx_210.note",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2026-04-30T09:00:00"
+        }
+      ]
+    },
+    "calendar": {
+      "events": [
+        {
+          "id": "ev_001",
+          "title_key": "s09.calendar.ev_001",
+          "type": "work",
+          "start": "2026-03-02T08:00:00",
+          "end": "2026-03-04T18:00:00",
+          "notes_key": "s09.calendar.ev_001.notes",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#0E7490",
+          "is_deleted": false
+        },
+        {
+          "id": "ev_002",
+          "title_key": "s09.calendar.ev_002",
+          "type": "work",
+          "start": "2026-03-04T16:00:00",
+          "end": "2026-03-04T17:00:00",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#7C3AED",
+          "is_deleted": false
+        },
+        {
+          "id": "ev_003",
+          "title_key": "s09.calendar.ev_003",
+          "type": "work",
+          "start": "2026-03-06T09:00:00",
+          "end": "2026-03-06T19:00:00",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#78350F",
+          "is_deleted": false
+        },
+        {
+          "id": "ev_004",
+          "title_key": "s09.calendar.ev_004",
+          "type": "work",
+          "start": "2026-02-23T09:00:00",
+          "end": "2026-02-23T12:00:00",
+          "notes_key": "s09.calendar.ev_004.notes",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#475569",
+          "is_deleted": false
+        },
+        {
+          "id": "ev_005",
+          "title_key": "s09.calendar.ev_005",
+          "type": "personal",
+          "start": "2026-04-20T11:00:00",
+          "end": "2026-04-20T13:00:00",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#B91C1C",
+          "is_deleted": false
+        },
+        {
+          "id": "ev_006",
+          "title_key": "s09.calendar.ev_006",
+          "type": "work",
+          "start": "2026-03-16T08:00:00",
+          "end": "2026-03-16T18:00:00",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#0E7490",
+          "is_deleted": true
+        },
+        {
+          "id": "f_ev_101",
+          "title_key": "s09.calendar.f_ev_101",
+          "type": "work",
+          "start": "2026-01-20T10:00:00",
+          "end": "2026-01-20T11:00:00",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#64748B",
+          "is_deleted": false
+        },
+        {
+          "id": "f_ev_102",
+          "title_key": "s09.calendar.f_ev_102",
+          "type": "work",
+          "start": "2026-02-05T09:00:00",
+          "end": "2026-02-05T10:00:00",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#64748B",
+          "is_deleted": false
+        },
+        {
+          "id": "f_ev_103",
+          "title_key": "s09.calendar.f_ev_103",
+          "type": "work",
+          "start": "2026-02-12T11:00:00",
+          "end": "2026-02-12T12:00:00",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#64748B",
+          "is_deleted": false
+        },
+        {
+          "id": "f_ev_104",
+          "title_key": "s09.calendar.f_ev_104",
+          "type": "work",
+          "start": "2026-02-24T09:00:00",
+          "end": "2026-02-24T12:00:00",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#64748B",
+          "is_deleted": false
+        },
+        {
+          "id": "f_ev_105",
+          "title_key": "s09.calendar.f_ev_105",
+          "type": "work",
+          "start": "2026-03-02T08:00:00",
+          "end": "2026-03-02T18:00:00",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#64748B",
+          "is_deleted": false
+        },
+        {
+          "id": "f_ev_106",
+          "title_key": "s09.calendar.f_ev_106",
+          "type": "work",
+          "start": "2026-03-03T08:00:00",
+          "end": "2026-03-03T18:00:00",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#64748B",
+          "is_deleted": false
+        },
+        {
+          "id": "f_ev_107",
+          "title_key": "s09.calendar.f_ev_107",
+          "type": "work",
+          "start": "2026-03-05T10:00:00",
+          "end": "2026-03-05T13:00:00",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#64748B",
+          "is_deleted": false
+        },
+        {
+          "id": "f_ev_108",
+          "title_key": "s09.calendar.f_ev_108",
+          "type": "other",
+          "start": "2026-03-05T18:00:00",
+          "end": "2026-03-05T21:00:00",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#64748B",
+          "is_deleted": false
+        },
+        {
+          "id": "f_ev_109",
+          "title_key": "s09.calendar.f_ev_109",
+          "type": "other",
+          "start": "2026-03-13T10:00:00",
+          "end": "2026-03-13T12:00:00",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#64748B",
+          "is_deleted": false
+        },
+        {
+          "id": "f_ev_110",
+          "title_key": "s09.calendar.f_ev_110",
+          "type": "other",
+          "start": "2026-03-23T10:00:00",
+          "end": "2026-03-23T13:00:00",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#64748B",
+          "is_deleted": false
+        },
+        {
+          "id": "f_ev_111",
+          "title_key": "s09.calendar.f_ev_111",
+          "type": "other",
+          "start": "2026-04-16T15:00:00",
+          "end": "2026-04-16T16:00:00",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#64748B",
+          "is_deleted": false
+        },
+        {
+          "id": "f_ev_112",
+          "title_key": "s09.calendar.f_ev_112",
+          "type": "personal",
+          "start": "2026-05-08T10:00:00",
+          "end": "2026-05-08T11:00:00",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#64748B",
+          "is_deleted": false
+        },
+        {
+          "id": "f_ev_113",
+          "title_key": "s09.calendar.f_ev_113",
+          "type": "personal",
+          "start": "2026-02-28T19:00:00",
+          "end": "2026-02-28T23:00:00",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#64748B",
+          "is_deleted": false
+        },
+        {
+          "id": "f_ev_114",
+          "title_key": "s09.calendar.f_ev_114",
+          "type": "personal",
+          "start": "2026-04-25T14:00:00",
+          "end": "2026-04-25T17:00:00",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#64748B",
+          "is_deleted": false
+        },
+        {
+          "id": "f2_ev_201",
+          "title_key": "s09.calendar.f2_ev_201",
+          "type": "work",
+          "start": "2026-03-19T09:00:00",
+          "end": "2026-03-19T09:30:00",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#64748B",
+          "is_deleted": false
+        },
+        {
+          "id": "f2_ev_202",
+          "title_key": "s09.calendar.f2_ev_202",
+          "type": "work",
+          "start": "2026-04-02T09:00:00",
+          "end": "2026-04-02T09:30:00",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#64748B",
+          "is_deleted": false
+        },
+        {
+          "id": "f2_ev_203",
+          "title_key": "s09.calendar.f2_ev_203",
+          "type": "other",
+          "start": "2026-04-09T10:00:00",
+          "end": "2026-04-09T11:00:00",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#64748B",
+          "is_deleted": false
+        },
+        {
+          "id": "f2_ev_204",
+          "title_key": "s09.calendar.f2_ev_204",
+          "type": "work",
+          "start": "2026-04-14T11:00:00",
+          "end": "2026-04-14T11:30:00",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#64748B",
+          "is_deleted": false
+        },
+        {
+          "id": "f2_ev_205",
+          "title_key": "s09.calendar.f2_ev_205",
+          "type": "work",
+          "start": "2026-04-21T13:00:00",
+          "end": "2026-04-21T13:30:00",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#64748B",
+          "is_deleted": false
+        },
+        {
+          "id": "f2_ev_206",
+          "title_key": "s09.calendar.f2_ev_206",
+          "type": "work",
+          "start": "2026-05-01T11:00:00",
+          "end": "2026-05-01T11:30:00",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#64748B",
+          "is_deleted": false
+        },
+        {
+          "id": "f2_ev_207",
+          "title_key": "s09.calendar.f2_ev_207",
+          "type": "work",
+          "start": "2026-04-03T17:00:00",
+          "end": "2026-04-03T18:30:00",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#64748B",
+          "is_deleted": false
+        },
+        {
+          "id": "f2_ev_208",
+          "title_key": "s09.calendar.f2_ev_208",
+          "type": "personal",
+          "start": "2026-05-11T09:00:00",
+          "end": "2026-05-11T10:00:00",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#64748B",
+          "is_deleted": false
+        },
+        {
+          "id": "f2_ev_209",
+          "title_key": "s09.calendar.f2_ev_209",
+          "type": "personal",
+          "start": "2026-05-15T12:00:00",
+          "end": "2026-05-15T12:30:00",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#64748B",
+          "is_deleted": false
+        },
+        {
+          "id": "f2_ev_210",
+          "title_key": "s09.calendar.f2_ev_210",
+          "type": "personal",
+          "start": "2026-04-06T20:00:00",
+          "end": "2026-04-06T21:00:00",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#64748B",
+          "is_deleted": false
+        }
+      ]
+    },
+    "photos": {
+      "recents": [
+        "ph_020",
+        "ph_021",
+        "ph_005",
+        "ph_006",
+        "ph_007",
+        "ph_022",
+        "ph_023",
+        "ph_024",
+        "ph_025",
+        "ph_026",
+        "ph_027"
+      ],
+      "albums": [
+        {
+          "id": "album_001",
+          "name_key": "s09.photos.album_001",
+          "cover_photo_id": "ph_022",
+          "photo_ids": [
+            "ph_020",
+            "ph_021",
+            "ph_005",
+            "ph_006",
+            "ph_007",
+            "ph_022",
+            "ph_023",
+            "ph_024",
+            "ph_025",
+            "ph_026",
+            "ph_027"
+          ],
+          "is_locked": false
+        },
+        {
+          "id": "album_002",
+          "name_key": "s09.photos.album_002",
+          "cover_photo_id": "ph_005",
+          "photo_ids": [
+            "ph_005",
+            "ph_006",
+            "ph_023",
+            "ph_024"
+          ],
+          "is_locked": false
+        },
+        {
+          "id": "album_003",
+          "name_key": "s09.photos.album_003",
+          "cover_photo_id": "ph_010",
+          "photo_ids": [
+            "ph_010",
+            "ph_011",
+            "ph_012"
+          ],
+          "is_locked": true,
+          "lock_password": "0403"
+        },
+        {
+          "id": "album_004",
+          "name_key": "s09.photos.album_004",
+          "cover_photo_id": "ph_025",
+          "photo_ids": [
+            "ph_025",
+            "ph_026",
+            "ph_027",
+            "ph_020"
+          ],
+          "is_locked": false
+        }
+      ],
+      "hidden": [],
+      "recently_deleted": [],
+      "items": [
+        {
+          "id": "ph_005",
+          "asset": "assets/cases/s09/photos/contact_sheet.jpg",
+          "taken_at": "2026-03-04T16:20:00",
+          "location": "Maastricht",
+          "document_key": "s09.photos.ph_005.document"
+        },
+        {
+          "id": "ph_006",
+          "asset": "assets/cases/s09/photos/condition_report.jpg",
+          "taken_at": "2026-03-04T17:05:00",
+          "document_key": "s09.photos.ph_006.document"
+        },
+        {
+          "id": "ph_007",
+          "asset": "assets/cases/s09/photos/catalogue_proof.jpg",
+          "taken_at": "2026-03-04T20:40:00",
+          "document_key": "s09.photos.ph_007.document"
+        },
+        {
+          "id": "ph_010",
+          "asset": "assets/cases/s09/photos/plaque.jpg",
+          "taken_at": "2026-03-04T16:18:00",
+          "document_key": "s09.photos.ph_010.document"
+        },
+        {
+          "id": "ph_011",
+          "asset": "assets/cases/s09/photos/plinth_ten.jpg",
+          "taken_at": "2026-03-04T16:19:00"
+        },
+        {
+          "id": "ph_012",
+          "asset": "assets/cases/s09/photos/diadem.jpg",
+          "taken_at": "2026-03-04T16:14:00"
+        },
+        {
+          "id": "ph_020",
+          "asset": "assets/cases/s09/photos/case_four_after.jpg",
+          "taken_at": "2026-03-12T10:22:00",
+          "location": "Maastricht"
+        },
+        {
+          "id": "ph_021",
+          "asset": "assets/cases/s09/photos/service_door.jpg",
+          "taken_at": "2026-03-12T10:30:00",
+          "location": "Maastricht"
+        },
+        {
+          "id": "ph_022",
+          "asset": "assets/cases/s09/photos/stand.jpg",
+          "taken_at": "2026-03-06T08:40:00",
+          "location": "Maastricht"
+        },
+        {
+          "id": "ph_023",
+          "asset": "assets/cases/s09/photos/case_four_lit.jpg",
+          "taken_at": "2026-03-04T17:12:00",
+          "location": "Maastricht"
+        },
+        {
+          "id": "ph_024",
+          "asset": "assets/cases/s09/photos/crate.jpg",
+          "taken_at": "2026-03-02T09:30:00",
+          "location": "Maastricht"
+        },
+        {
+          "id": "ph_025",
+          "asset": "assets/cases/s09/photos/hall_b.jpg",
+          "taken_at": "2026-03-06T18:50:00",
+          "location": "Maastricht"
+        },
+        {
+          "id": "ph_026",
+          "asset": "assets/cases/s09/photos/vrijthof.jpg",
+          "taken_at": "2026-03-07T21:10:00",
+          "location": "Maastricht"
+        },
+        {
+          "id": "ph_027",
+          "asset": "assets/cases/s09/photos/loading_bay.jpg",
+          "taken_at": "2026-03-12T10:52:00",
+          "location": "Maastricht"
+        }
+      ]
+    },
+    "notes": {
+      "folders": [
+        {
+          "id": "nf_001",
+          "name_key": "s09.notes.folder_001",
+          "notes": [
+            {
+              "id": "note_001",
+              "title_key": "s09.notes.note_001.title",
+              "created_at": "2026-02-28T18:00:00",
+              "updated_at": "2026-03-02T07:40:00",
+              "is_locked": false,
+              "lock_password": null,
+              "content": {
+                "type": "checklist",
+                "blocks": [
+                  {
+                    "type": "checkbox",
+                    "text_key": "s09.notes.note_001.block_001",
+                    "is_checked": true
+                  },
+                  {
+                    "type": "checkbox",
+                    "text_key": "s09.notes.note_001.block_002",
+                    "is_checked": true
+                  },
+                  {
+                    "type": "checkbox",
+                    "text_key": "s09.notes.note_001.block_003",
+                    "is_checked": true
+                  },
+                  {
+                    "type": "checkbox",
+                    "text_key": "s09.notes.note_001.block_004",
+                    "is_checked": true
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s09.notes.note_001.block_005"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "note_002",
+              "title_key": "s09.notes.note_002.title",
+              "created_at": "2026-03-05T22:10:00",
+              "updated_at": "2026-04-17T23:20:00",
+              "is_locked": false,
+              "lock_password": null,
+              "content": {
+                "type": "text",
+                "blocks": [
+                  {
+                    "type": "text",
+                    "text_key": "s09.notes.note_002.block_001"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s09.notes.note_002.block_002"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s09.notes.note_002.block_003"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s09.notes.note_002.block_004"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "f_note_101",
+              "title_key": "s09.notes.f_note_101.title",
+              "created_at": "2025-08-04T09:00:00",
+              "updated_at": "2026-02-27T09:20:00",
+              "is_locked": false,
+              "lock_password": null,
+              "content": {
+                "type": "text",
+                "blocks": [
+                  {
+                    "type": "text",
+                    "text_key": "s09.notes.f_note_101.block_001"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s09.notes.f_note_101.block_002"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s09.notes.f_note_101.block_003"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s09.notes.f_note_101.block_004"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s09.notes.f_note_101.block_005"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s09.notes.f_note_101.block_006"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "f_note_102",
+              "title_key": "s09.notes.f_note_102.title",
+              "created_at": "2025-10-16T14:00:00",
+              "updated_at": "2026-01-19T14:10:00",
+              "is_locked": false,
+              "lock_password": null,
+              "content": {
+                "type": "text",
+                "blocks": [
+                  {
+                    "type": "text",
+                    "text_key": "s09.notes.f_note_102.block_001"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s09.notes.f_note_102.block_002"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s09.notes.f_note_102.block_003"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s09.notes.f_note_102.block_004"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s09.notes.f_note_102.block_005"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "f_note_103",
+              "title_key": "s09.notes.f_note_103.title",
+              "created_at": "2026-01-08T11:00:00",
+              "updated_at": "2026-03-01T11:15:00",
+              "is_locked": false,
+              "lock_password": null,
+              "content": {
+                "type": "text",
+                "blocks": [
+                  {
+                    "type": "text",
+                    "text_key": "s09.notes.f_note_103.block_001"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s09.notes.f_note_103.block_002"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s09.notes.f_note_103.block_003"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s09.notes.f_note_103.block_004"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s09.notes.f_note_103.block_005"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "f_note_104",
+              "title_key": "s09.notes.f_note_104.title",
+              "created_at": "2025-09-30T16:30:00",
+              "updated_at": "2025-09-30T16:40:00",
+              "is_locked": false,
+              "lock_password": null,
+              "content": {
+                "type": "text",
+                "blocks": [
+                  {
+                    "type": "text",
+                    "text_key": "s09.notes.f_note_104.block_001"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s09.notes.f_note_104.block_002"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s09.notes.f_note_104.block_003"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s09.notes.f_note_104.block_004"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "f2_note_201",
+              "title_key": "s09.notes.f2_note_201.title",
+              "created_at": "2026-03-18T09:00:00",
+              "updated_at": "2026-05-02T09:20:00",
+              "is_locked": false,
+              "lock_password": null,
+              "content": {
+                "type": "text",
+                "blocks": [
+                  {
+                    "type": "text",
+                    "text_key": "s09.notes.f2_note_201.block_001"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s09.notes.f2_note_201.block_002"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s09.notes.f2_note_201.block_003"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s09.notes.f2_note_201.block_004"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s09.notes.f2_note_201.block_005"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s09.notes.f2_note_201.block_006"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "f2_note_202",
+              "title_key": "s09.notes.f2_note_202.title",
+              "created_at": "2026-04-03T14:00:00",
+              "updated_at": "2026-04-30T14:10:00",
+              "is_locked": false,
+              "lock_password": null,
+              "content": {
+                "type": "text",
+                "blocks": [
+                  {
+                    "type": "text",
+                    "text_key": "s09.notes.f2_note_202.block_001"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s09.notes.f2_note_202.block_002"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s09.notes.f2_note_202.block_003"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s09.notes.f2_note_202.block_004"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s09.notes.f2_note_202.block_005"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "f2_note_203",
+              "title_key": "s09.notes.f2_note_203.title",
+              "created_at": "2025-12-02T10:00:00",
+              "updated_at": "2026-02-19T10:20:00",
+              "is_locked": false,
+              "lock_password": null,
+              "content": {
+                "type": "text",
+                "blocks": [
+                  {
+                    "type": "text",
+                    "text_key": "s09.notes.f2_note_203.block_001"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s09.notes.f2_note_203.block_002"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s09.notes.f2_note_203.block_003"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s09.notes.f2_note_203.block_004"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "nf_002",
+          "name_key": "s09.notes.folder_002",
+          "notes": [
+            {
+              "id": "note_003",
+              "title_key": "s09.notes.note_003.title",
+              "created_at": "2026-04-18T01:20:00",
+              "updated_at": "2026-04-20T06:50:00",
+              "is_locked": true,
+              "lock_password": "0403",
+              "content": {
+                "type": "text",
+                "blocks": [
+                  {
+                    "type": "text",
+                    "text_key": "s09.notes.note_003.block_001"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s09.notes.note_003.block_002"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s09.notes.note_003.block_003"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s09.notes.note_003.block_004"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s09.notes.note_003.block_005"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "f_note_111",
+              "title_key": "s09.notes.f_note_111.title",
+              "created_at": "2025-11-27T23:00:00",
+              "updated_at": "2026-02-08T23:20:00",
+              "is_locked": false,
+              "lock_password": null,
+              "content": {
+                "type": "text",
+                "blocks": [
+                  {
+                    "type": "text",
+                    "text_key": "s09.notes.f_note_111.block_001"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s09.notes.f_note_111.block_002"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s09.notes.f_note_111.block_003"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s09.notes.f_note_111.block_004"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s09.notes.f_note_111.block_005"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "f_note_112",
+              "title_key": "s09.notes.f_note_112.title",
+              "created_at": "2026-04-19T03:40:00",
+              "updated_at": "2026-05-01T03:50:00",
+              "is_locked": false,
+              "lock_password": null,
+              "content": {
+                "type": "text",
+                "blocks": [
+                  {
+                    "type": "text",
+                    "text_key": "s09.notes.f_note_112.block_001"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s09.notes.f_note_112.block_002"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s09.notes.f_note_112.block_003"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s09.notes.f_note_112.block_004"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "f2_note_211",
+              "title_key": "s09.notes.f2_note_211.title",
+              "created_at": "2026-04-05T23:00:00",
+              "updated_at": "2026-04-05T23:20:00",
+              "is_locked": false,
+              "lock_password": null,
+              "content": {
+                "type": "text",
+                "blocks": [
+                  {
+                    "type": "text",
+                    "text_key": "s09.notes.f2_note_211.block_001"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s09.notes.f2_note_211.block_002"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s09.notes.f2_note_211.block_003"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s09.notes.f2_note_211.block_004"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "f2_note_212",
+              "title_key": "s09.notes.f2_note_212.title",
+              "created_at": "2026-05-02T02:30:00",
+              "updated_at": "2026-05-04T02:40:00",
+              "is_locked": false,
+              "lock_password": null,
+              "content": {
+                "type": "text",
+                "blocks": [
+                  {
+                    "type": "text",
+                    "text_key": "s09.notes.f2_note_212.block_001"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s09.notes.f2_note_212.block_002"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s09.notes.f2_note_212.block_003"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s09.notes.f2_note_212.block_004"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s09.notes.f2_note_212.block_005"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "calls": {
+      "recent_calls": [
+        {
+          "id": "call_001",
+          "person_id": "p002",
+          "type": "incoming",
+          "duration_seconds": 188,
+          "timestamp": "2026-02-21T14:05:00"
+        },
+        {
+          "id": "call_002",
+          "person_id": "p006",
+          "type": "incoming",
+          "duration_seconds": 74,
+          "timestamp": "2026-02-23T09:38:00"
+        },
+        {
+          "id": "call_003",
+          "person_id": "p005",
+          "type": "outgoing",
+          "duration_seconds": 340,
+          "timestamp": "2026-03-03T16:20:00"
+        },
+        {
+          "id": "call_004",
+          "person_id": "p002",
+          "type": "incoming",
+          "duration_seconds": 41,
+          "timestamp": "2026-03-04T15:38:00"
+        },
+        {
+          "id": "call_005",
+          "person_id": "p008",
+          "type": "outgoing",
+          "duration_seconds": 210,
+          "timestamp": "2026-03-04T20:10:00"
+        },
+        {
+          "id": "call_006",
+          "person_id": "p004",
+          "type": "incoming",
+          "duration_seconds": 612,
+          "timestamp": "2026-03-16T14:50:00"
+        },
+        {
+          "id": "call_007",
+          "person_id": "p001",
+          "type": "outgoing",
+          "duration_seconds": 8,
+          "timestamp": "2026-04-20T07:40:00"
+        },
+        {
+          "id": "call_008",
+          "person_id": "p002",
+          "type": "missed",
+          "duration_seconds": null,
+          "timestamp": "2026-04-19T21:18:00"
+        },
+        {
+          "id": "f_call_101",
+          "person_id": "p005",
+          "type": "incoming",
+          "duration_seconds": 812,
+          "timestamp": "2026-03-01T20:00:00"
+        },
+        {
+          "id": "f_call_102",
+          "person_id": "p008",
+          "type": "incoming",
+          "duration_seconds": 240,
+          "timestamp": "2026-03-02T07:40:00"
+        },
+        {
+          "id": "f_call_103",
+          "person_id": "p006",
+          "type": "outgoing",
+          "duration_seconds": 96,
+          "timestamp": "2026-03-03T09:05:00"
+        },
+        {
+          "id": "f_call_104",
+          "person_id": "p002",
+          "type": "incoming",
+          "duration_seconds": 1440,
+          "timestamp": "2026-02-11T14:50:00"
+        },
+        {
+          "id": "f_call_105",
+          "person_id": "p002",
+          "type": "incoming",
+          "duration_seconds": 0,
+          "timestamp": "2026-03-24T19:10:00"
+        },
+        {
+          "id": "f_call_106",
+          "person_id": "p002",
+          "type": "incoming",
+          "duration_seconds": 0,
+          "timestamp": "2026-03-26T20:40:00"
+        },
+        {
+          "id": "f_call_107",
+          "person_id": "p001",
+          "type": "incoming",
+          "duration_seconds": 2760,
+          "timestamp": "2026-03-23T10:00:00"
+        },
+        {
+          "id": "f_call_108",
+          "person_id": "p005",
+          "type": "incoming",
+          "duration_seconds": 0,
+          "timestamp": "2026-03-28T12:02:00"
+        },
+        {
+          "id": "f_call_109",
+          "person_id": "p004",
+          "type": "outgoing",
+          "duration_seconds": 184,
+          "timestamp": "2026-03-09T22:35:00"
+        },
+        {
+          "id": "f_call_110",
+          "person_id": "p001",
+          "type": "incoming",
+          "duration_seconds": 640,
+          "timestamp": "2026-05-04T08:05:00"
+        },
+        {
+          "id": "f2_call_201",
+          "person_id": "p008",
+          "type": "outgoing",
+          "duration_seconds": 412,
+          "timestamp": "2026-04-28T10:40:00"
+        },
+        {
+          "id": "f2_call_202",
+          "person_id": "p005",
+          "type": "incoming",
+          "duration_seconds": 1980,
+          "timestamp": "2026-04-02T22:20:00"
+        },
+        {
+          "id": "f2_call_203",
+          "person_id": "p002",
+          "type": "incoming",
+          "duration_seconds": 0,
+          "timestamp": "2026-04-08T12:05:00"
+        },
+        {
+          "id": "f2_call_204",
+          "person_id": "p002",
+          "type": "incoming",
+          "duration_seconds": 0,
+          "timestamp": "2026-04-21T19:05:00"
+        },
+        {
+          "id": "f2_call_205",
+          "person_id": "p002",
+          "type": "incoming",
+          "duration_seconds": 0,
+          "timestamp": "2026-05-02T22:12:00"
+        },
+        {
+          "id": "f2_call_206",
+          "person_id": "p001",
+          "type": "incoming",
+          "duration_seconds": 388,
+          "timestamp": "2026-04-11T07:20:00"
+        },
+        {
+          "id": "f2_call_207",
+          "person_id": "p006",
+          "type": "incoming",
+          "duration_seconds": 144,
+          "timestamp": "2026-03-30T11:50:00"
+        },
+        {
+          "id": "f2_call_208",
+          "person_id": "p001",
+          "type": "outgoing",
+          "duration_seconds": 46,
+          "timestamp": "2026-03-13T07:40:00"
+        }
+      ]
+    },
+    "google": {
+      "searches": [
+        {
+          "id": "gs_001",
+          "query_key": "s09.search.gs_001",
+          "timestamp": "2026-03-04T22:30:00"
+        },
+        {
+          "id": "gs_002",
+          "query_key": "s09.search.gs_002",
+          "timestamp": "2026-03-04T22:44:00"
+        },
+        {
+          "id": "gs_003",
+          "query_key": "s09.search.gs_003",
+          "timestamp": "2026-04-17T22:10:00"
+        },
+        {
+          "id": "gs_004",
+          "query_key": "s09.search.gs_004",
+          "timestamp": "2026-04-17T22:50:00"
+        },
+        {
+          "id": "gs_005",
+          "query_key": "s09.search.gs_005",
+          "timestamp": "2026-03-13T01:40:00"
+        },
+        {
+          "id": "gs_006",
+          "query_key": "s09.search.gs_006",
+          "timestamp": "2026-04-18T02:30:00"
+        },
+        {
+          "id": "gs_007",
+          "query_key": "s09.search.gs_007",
+          "timestamp": "2026-04-19T23:05:00"
+        },
+        {
+          "id": "gs_008",
+          "query_key": "s09.search.gs_008",
+          "timestamp": "2026-04-20T06:40:00"
+        },
+        {
+          "id": "f_gs_101",
+          "query_key": "s09.search.f_gs_101",
+          "timestamp": "2025-08-19T21:00:00"
+        },
+        {
+          "id": "f_gs_102",
+          "query_key": "s09.search.f_gs_102",
+          "timestamp": "2025-10-02T20:30:00"
+        },
+        {
+          "id": "f_gs_103",
+          "query_key": "s09.search.f_gs_103",
+          "timestamp": "2025-11-14T22:10:00"
+        },
+        {
+          "id": "f_gs_104",
+          "query_key": "s09.search.f_gs_104",
+          "timestamp": "2026-01-09T18:40:00"
+        },
+        {
+          "id": "f_gs_105",
+          "query_key": "s09.search.f_gs_105",
+          "timestamp": "2026-01-28T13:20:00"
+        },
+        {
+          "id": "f_gs_106",
+          "query_key": "s09.search.f_gs_106",
+          "timestamp": "2026-02-08T19:00:00"
+        },
+        {
+          "id": "f_gs_107",
+          "query_key": "s09.search.f_gs_107",
+          "timestamp": "2026-02-17T11:40:00"
+        },
+        {
+          "id": "f_gs_108",
+          "query_key": "s09.search.f_gs_108",
+          "timestamp": "2026-02-26T23:20:00"
+        },
+        {
+          "id": "f_gs_109",
+          "query_key": "s09.search.f_gs_109",
+          "timestamp": "2026-03-01T22:00:00"
+        },
+        {
+          "id": "f_gs_110",
+          "query_key": "s09.search.f_gs_110",
+          "timestamp": "2026-03-10T12:30:00"
+        },
+        {
+          "id": "f_gs_111",
+          "query_key": "s09.search.f_gs_111",
+          "timestamp": "2026-03-15T02:50:00"
+        },
+        {
+          "id": "f_gs_112",
+          "query_key": "s09.search.f_gs_112",
+          "timestamp": "2026-03-25T03:10:00"
+        },
+        {
+          "id": "f_gs_113",
+          "query_key": "s09.search.f_gs_113",
+          "timestamp": "2026-04-06T21:40:00"
+        },
+        {
+          "id": "f_gs_114",
+          "query_key": "s09.search.f_gs_114",
+          "timestamp": "2026-04-18T02:30:00"
+        },
+        {
+          "id": "f_gs_115",
+          "query_key": "s09.search.f_gs_115",
+          "timestamp": "2026-04-29T23:50:00"
+        },
+        {
+          "id": "f_gs_116",
+          "query_key": "s09.search.f_gs_116",
+          "timestamp": "2026-05-03T03:20:00"
+        },
+        {
+          "id": "f2_gs_201",
+          "query_key": "s09.search.f2_gs_201",
+          "timestamp": "2026-03-17T21:40:00"
+        },
+        {
+          "id": "f2_gs_202",
+          "query_key": "s09.search.f2_gs_202",
+          "timestamp": "2026-03-21T02:20:00"
+        },
+        {
+          "id": "f2_gs_203",
+          "query_key": "s09.search.f2_gs_203",
+          "timestamp": "2026-03-29T23:00:00"
+        },
+        {
+          "id": "f2_gs_204",
+          "query_key": "s09.search.f2_gs_204",
+          "timestamp": "2026-04-04T19:30:00"
+        },
+        {
+          "id": "f2_gs_205",
+          "query_key": "s09.search.f2_gs_205",
+          "timestamp": "2026-04-10T12:00:00"
+        },
+        {
+          "id": "f2_gs_206",
+          "query_key": "s09.search.f2_gs_206",
+          "timestamp": "2026-04-14T16:00:00"
+        },
+        {
+          "id": "f2_gs_207",
+          "query_key": "s09.search.f2_gs_207",
+          "timestamp": "2026-04-17T02:50:00"
+        },
+        {
+          "id": "f2_gs_208",
+          "query_key": "s09.search.f2_gs_208",
+          "timestamp": "2026-04-20T21:10:00"
+        },
+        {
+          "id": "f2_gs_209",
+          "query_key": "s09.search.f2_gs_209",
+          "timestamp": "2026-04-23T13:40:00"
+        },
+        {
+          "id": "f2_gs_210",
+          "query_key": "s09.search.f2_gs_210",
+          "timestamp": "2026-04-26T03:00:00"
+        },
+        {
+          "id": "f2_gs_211",
+          "query_key": "s09.search.f2_gs_211",
+          "timestamp": "2026-05-01T18:20:00"
+        },
+        {
+          "id": "f2_gs_212",
+          "query_key": "s09.search.f2_gs_212",
+          "timestamp": "2026-05-04T03:45:00"
+        }
+      ]
+    },
+    "weather": {
+      "location": "Maastricht",
+      "current": {
+        "timestamp": "2026-05-02T09:00:00",
+        "temp_celsius": 16,
+        "condition": "cloudy",
+        "humidity": 68,
+        "wind_speed": 14
+      },
+      "hourly": [
+        {
+          "timestamp": "2026-05-02T10:00:00",
+          "temp_celsius": 17,
+          "condition": "cloudy",
+          "humidity": 65,
+          "wind_speed": 13
+        },
+        {
+          "timestamp": "2026-05-02T11:00:00",
+          "temp_celsius": 19,
+          "condition": "sunny",
+          "humidity": 60,
+          "wind_speed": 11
+        }
+      ],
+      "daily": [
+        {
+          "timestamp": "2026-05-03T12:00:00",
+          "temp_celsius": 20,
+          "condition": "sunny",
+          "humidity": 58,
+          "wind_speed": 12
+        },
+        {
+          "timestamp": "2026-05-04T12:00:00",
+          "temp_celsius": 17,
+          "condition": "rainy",
+          "humidity": 74,
+          "wind_speed": 19
+        }
+      ]
+    },
+    "spotify": {
+      "recently_played": [
+        {
+          "id": "tr_001",
+          "title": "Vitrine",
+          "artist": "Sanne de Kort",
+          "played_at": "2026-03-11T23:15:00"
+        },
+        {
+          "id": "tr_002",
+          "title": "Nightwatchman",
+          "artist": "Ruben Aalders",
+          "played_at": "2026-03-11T22:40:00"
+        },
+        {
+          "id": "tr_003",
+          "title": "Provenance",
+          "artist": "Fien Coppens",
+          "played_at": "2026-03-10T18:05:00"
+        },
+        {
+          "id": "tr_004",
+          "title": "Sint-Pieter",
+          "artist": "Maas Kwartet",
+          "played_at": "2026-03-08T09:25:00"
+        },
+        {
+          "id": "tr_020",
+          "title": "Ondergrond",
+          "artist": "Merel Bosch",
+          "played_at": "2026-05-03T03:25:00"
+        },
+        {
+          "id": "tr_021",
+          "title": "Vitrine",
+          "artist": "Jonge Zomer",
+          "played_at": "2026-04-29T23:40:00"
+        },
+        {
+          "id": "tr_022",
+          "title": "Sint-Pieter, laat",
+          "artist": "Wies Dekker",
+          "played_at": "2026-04-18T02:35:00"
+        },
+        {
+          "id": "tr_020",
+          "title": "Ondergrond",
+          "artist": "Merel Bosch",
+          "played_at": "2026-03-25T03:15:00"
+        },
+        {
+          "id": "tr_021",
+          "title": "Vitrine",
+          "artist": "Jonge Zomer",
+          "played_at": "2026-03-15T02:55:00"
+        },
+        {
+          "id": "tr_022",
+          "title": "Sint-Pieter, laat",
+          "artist": "Wies Dekker",
+          "played_at": "2026-03-02T07:25:00"
+        },
+        {
+          "id": "tr_020",
+          "title": "Ondergrond",
+          "artist": "Merel Bosch",
+          "played_at": "2026-02-26T22:00:00"
+        },
+        {
+          "id": "tr_021",
+          "title": "Vitrine",
+          "artist": "Jonge Zomer",
+          "played_at": "2026-01-14T18:30:00"
+        },
+        {
+          "id": "tr_023",
+          "title": "Kistenwerk",
+          "artist": "Merel Bosch",
+          "played_at": "2026-05-04T03:50:00"
+        },
+        {
+          "id": "tr_024",
+          "title": "Nachtdienst",
+          "artist": "Wies Dekker",
+          "played_at": "2026-04-26T03:05:00"
+        },
+        {
+          "id": "tr_023",
+          "title": "Kistenwerk",
+          "artist": "Merel Bosch",
+          "played_at": "2026-04-17T02:55:00"
+        },
+        {
+          "id": "tr_024",
+          "title": "Nachtdienst",
+          "artist": "Wies Dekker",
+          "played_at": "2026-03-21T02:25:00"
+        },
+        {
+          "id": "tr_023",
+          "title": "Kistenwerk",
+          "artist": "Merel Bosch",
+          "played_at": "2026-03-14T03:00:00"
+        },
+        {
+          "id": "tr_024",
+          "title": "Nachtdienst",
+          "artist": "Wies Dekker",
+          "played_at": "2026-02-14T17:20:00"
+        }
+      ],
+      "liked_songs": [
+        {
+          "id": "tr_010",
+          "title": "Condition Report",
+          "artist": "Sanne de Kort"
+        },
+        {
+          "id": "tr_011",
+          "title": "Crate and Foam",
+          "artist": "Fien Coppens"
+        },
+        {
+          "id": "tr_012",
+          "title": "Slow Loan",
+          "artist": "Ruben Aalders"
+        },
+        {
+          "id": "tr_020",
+          "title": "Ondergrond",
+          "artist": "Merel Bosch"
+        },
+        {
+          "id": "tr_021",
+          "title": "Vitrine",
+          "artist": "Jonge Zomer"
+        },
+        {
+          "id": "tr_022",
+          "title": "Sint-Pieter, laat",
+          "artist": "Wies Dekker"
+        },
+        {
+          "id": "tr_023",
+          "title": "Kistenwerk",
+          "artist": "Merel Bosch"
+        },
+        {
+          "id": "tr_024",
+          "title": "Nachtdienst",
+          "artist": "Wies Dekker"
+        }
+      ]
+    },
+    "rides": {
+      "trips": [
+        {
+          "id": "rd_001",
+          "pickup": "Vrijthof",
+          "dropoff": "Rechtstraat 18, Wyck",
+          "requested_at": "2026-03-04T17:12:00",
+          "picked_up_at": "2026-03-04T17:18:00",
+          "dropped_off_at": "2026-03-04T17:29:00",
+          "fare": "7.60 €",
+          "driver": "Joris",
+          "distance_km": 3,
+          "duration_min": 11,
+          "status": "completed"
+        },
+        {
+          "id": "rd_002",
+          "pickup": "Sint-Pieter",
+          "dropoff": "Rechtstraat 18, Wyck",
+          "requested_at": "2026-02-27T22:36:00",
+          "picked_up_at": "2026-02-27T22:43:00",
+          "dropped_off_at": "2026-02-27T22:58:00",
+          "fare": "8.20 €",
+          "driver": "Femke",
+          "distance_km": 5,
+          "duration_min": 15,
+          "status": "completed"
+        },
+        {
+          "id": "rd_003",
+          "pickup": "Rechtstraat 18, Wyck",
+          "dropoff": "Station Maastricht Randwyck",
+          "requested_at": "2026-02-20T08:26:00",
+          "picked_up_at": "2026-02-20T08:31:00",
+          "dropped_off_at": "2026-02-20T08:41:00",
+          "fare": "5.40 €",
+          "driver": "Bram",
+          "distance_km": 3,
+          "duration_min": 10,
+          "status": "completed"
+        },
+        {
+          "id": "rd_004",
+          "pickup": "Rechtstraat 18, Wyck",
+          "dropoff": "Vrijthof",
+          "requested_at": "2026-02-11T09:02:00",
+          "fare": "",
+          "driver": "",
+          "status": "cancelled"
+        },
+        {
+          "id": "f_rd_101",
+          "pickup": "Rechtstraat 18, Wyck",
+          "dropoff": "Vrijthof",
+          "requested_at": "2026-03-02T07:20:00",
+          "picked_up_at": "2026-03-02T07:25:00.000",
+          "dropped_off_at": "2026-03-02T07:33:00.000",
+          "fare": "7.60 €",
+          "driver": "Joris",
+          "distance_km": 3,
+          "duration_min": 8,
+          "status": "completed"
+        },
+        {
+          "id": "f_rd_102",
+          "pickup": "Rechtstraat 18, Wyck",
+          "dropoff": "Vrijthof",
+          "requested_at": "2026-03-03T07:15:00",
+          "picked_up_at": "2026-03-03T07:20:00.000",
+          "dropped_off_at": "2026-03-03T07:29:00.000",
+          "fare": "7.60 €",
+          "driver": "Joris",
+          "distance_km": 3,
+          "duration_min": 9,
+          "status": "completed"
+        },
+        {
+          "id": "f_rd_103",
+          "pickup": "Vrijthof",
+          "dropoff": "Rechtstraat 18, Wyck",
+          "requested_at": "2026-03-03T19:04:00",
+          "picked_up_at": "2026-03-03T19:09:00.000",
+          "dropped_off_at": "2026-03-03T19:21:00.000",
+          "fare": "7.60 €",
+          "driver": "Joris",
+          "distance_km": 3,
+          "duration_min": 12,
+          "status": "completed"
+        },
+        {
+          "id": "f_rd_104",
+          "pickup": "Station Maastricht",
+          "dropoff": "Rechtstraat 18, Wyck",
+          "requested_at": "2026-02-26T21:40:00",
+          "picked_up_at": "2026-02-26T21:45:00.000",
+          "dropped_off_at": "2026-02-26T21:52:00.000",
+          "fare": "5.90 €",
+          "driver": "Joris",
+          "distance_km": 2,
+          "duration_min": 7,
+          "status": "completed"
+        },
+        {
+          "id": "f_rd_105",
+          "pickup": "Rechtstraat 18, Wyck",
+          "dropoff": "Havenkring Verzekering, Rotterdam",
+          "requested_at": "2026-03-23T07:00:00",
+          "picked_up_at": "2026-03-23T07:05:00.000",
+          "dropped_off_at": "2026-03-23T09:03:00.000",
+          "fare": "359.50 €",
+          "driver": "Joris",
+          "distance_km": 210,
+          "duration_min": 118,
+          "status": "completed"
+        },
+        {
+          "id": "f_rd_106",
+          "pickup": "Vrijthof",
+          "dropoff": "Politiebureau Maastricht",
+          "requested_at": "2026-03-13T09:30:00",
+          "picked_up_at": "2026-03-13T09:35:00.000",
+          "dropped_off_at": "2026-03-13T09:49:00.000",
+          "fare": "9.30 €",
+          "driver": "Joris",
+          "distance_km": 4,
+          "duration_min": 14,
+          "status": "completed"
+        },
+        {
+          "id": "f2_rd_201",
+          "pickup": "Rechtstraat 18, Wyck",
+          "dropoff": "Politiebureau Maastricht",
+          "requested_at": "2026-04-16T14:20:00",
+          "picked_up_at": "2026-04-16T14:25:00.000",
+          "dropped_off_at": "2026-04-16T14:38:00.000",
+          "fare": "9.30 €",
+          "driver": "Joris",
+          "distance_km": 4,
+          "duration_min": 13,
+          "status": "completed"
+        },
+        {
+          "id": "f2_rd_202",
+          "pickup": "Politiebureau Maastricht",
+          "dropoff": "Rechtstraat 18, Wyck",
+          "requested_at": "2026-04-16T17:40:00",
+          "picked_up_at": "2026-04-16T17:45:00.000",
+          "dropped_off_at": "2026-04-16T18:00:00.000",
+          "fare": "9.30 €",
+          "driver": "Joris",
+          "distance_km": 4,
+          "duration_min": 15,
+          "status": "completed"
+        },
+        {
+          "id": "f2_rd_203",
+          "pickup": "Rechtstraat 18, Wyck",
+          "dropoff": "Station Maastricht",
+          "requested_at": "2026-05-08T07:10:00",
+          "picked_up_at": "2026-05-08T07:15:00.000",
+          "dropped_off_at": "2026-05-08T07:24:00.000",
+          "fare": "5.90 €",
+          "driver": "Joris",
+          "distance_km": 2,
+          "duration_min": 9,
+          "status": "completed"
+        },
+        {
+          "id": "f2_rd_204",
+          "pickup": "Station Maastricht",
+          "dropoff": "Rechtstraat 18, Wyck",
+          "requested_at": "2026-05-08T19:50:00",
+          "picked_up_at": "2026-05-08T19:55:00.000",
+          "dropped_off_at": "2026-05-08T20:06:00.000",
+          "fare": "5.90 €",
+          "driver": "Joris",
+          "distance_km": 2,
+          "duration_min": 11,
+          "status": "completed"
+        },
+        {
+          "id": "f2_rd_205",
+          "pickup": "Beatrixhaven",
+          "dropoff": "Rechtstraat 18, Wyck",
+          "requested_at": "2026-04-03T18:30:00",
+          "picked_up_at": "2026-04-03T18:35:00.000",
+          "dropped_off_at": "2026-04-03T18:53:00.000",
+          "fare": "14.40 €",
+          "driver": "Joris",
+          "distance_km": 7,
+          "duration_min": 18,
+          "status": "completed"
+        },
+        {
+          "id": "f2_rd_206",
+          "pickup": "Rechtstraat 18, Wyck",
+          "dropoff": "Tongersestraat",
+          "requested_at": "2026-03-16T09:20:00",
+          "picked_up_at": "2026-03-16T09:25:00.000",
+          "dropped_off_at": "2026-03-16T09:35:00.000",
+          "fare": "7.60 €",
+          "driver": "Joris",
+          "distance_km": 3,
+          "duration_min": 10,
+          "status": "completed"
+        }
+      ]
+    },
+    "health": {
+      "days": [
+        {
+          "date": "2026-03-12",
+          "steps": 15920,
+          "sleep_hours": 3.2,
+          "resting_bpm": 74
+        },
+        {
+          "date": "2026-03-11",
+          "steps": 11480,
+          "sleep_hours": 6.4,
+          "resting_bpm": 63
+        },
+        {
+          "date": "2026-03-10",
+          "steps": 13250,
+          "sleep_hours": 6.8,
+          "resting_bpm": 61
+        },
+        {
+          "date": "2026-03-09",
+          "steps": 8140,
+          "sleep_hours": 7.9,
+          "resting_bpm": 58
+        },
+        {
+          "date": "2026-03-08",
+          "steps": 7620,
+          "sleep_hours": 8.1,
+          "resting_bpm": 57
+        },
+        {
+          "date": "2026-03-07",
+          "steps": 12930,
+          "sleep_hours": 6.2,
+          "resting_bpm": 62
+        },
+        {
+          "date": "2026-03-06",
+          "steps": 14370,
+          "sleep_hours": 5.9,
+          "resting_bpm": 64
+        },
+        {
+          "date": "2026-03-05",
+          "steps": 13810,
+          "sleep_hours": 6.1,
+          "resting_bpm": 63
+        },
+        {
+          "date": "2026-03-04",
+          "steps": 16240,
+          "sleep_hours": 5.6,
+          "resting_bpm": 66
+        },
+        {
+          "date": "2026-03-03",
+          "steps": 9950,
+          "sleep_hours": 7.2,
+          "resting_bpm": 60
+        },
+        {
+          "date": "2026-03-02",
+          "steps": 16840,
+          "sleep_hours": 6.1,
+          "resting_bpm": 71
+        },
+        {
+          "date": "2026-03-13",
+          "steps": 4120,
+          "sleep_hours": 2.4,
+          "resting_bpm": 88
+        },
+        {
+          "date": "2026-03-14",
+          "steps": 3880,
+          "sleep_hours": 3.1,
+          "resting_bpm": 85
+        },
+        {
+          "date": "2026-03-23",
+          "steps": 6410,
+          "sleep_hours": 4.0,
+          "resting_bpm": 80
+        },
+        {
+          "date": "2026-04-18",
+          "steps": 5240,
+          "sleep_hours": 3.6,
+          "resting_bpm": 82
+        },
+        {
+          "date": "2026-03-15",
+          "steps": 3210,
+          "sleep_hours": 3.4,
+          "resting_bpm": 84
+        },
+        {
+          "date": "2026-03-16",
+          "steps": 5480,
+          "sleep_hours": 4.1,
+          "resting_bpm": 81
+        },
+        {
+          "date": "2026-03-21",
+          "steps": 4020,
+          "sleep_hours": 3.0,
+          "resting_bpm": 86
+        },
+        {
+          "date": "2026-04-11",
+          "steps": 4640,
+          "sleep_hours": 2.9,
+          "resting_bpm": 87
+        },
+        {
+          "date": "2026-04-16",
+          "steps": 5910,
+          "sleep_hours": 4.3,
+          "resting_bpm": 80
+        },
+        {
+          "date": "2026-04-26",
+          "steps": 4380,
+          "sleep_hours": 3.2,
+          "resting_bpm": 85
+        },
+        {
+          "date": "2026-05-03",
+          "steps": 5120,
+          "sleep_hours": 3.5,
+          "resting_bpm": 83
+        },
+        {
+          "date": "2026-02-14",
+          "steps": 9840,
+          "sleep_hours": 7.6,
+          "resting_bpm": 66
+        }
+      ]
+    },
+    "ereader": {
+      "account_label": "Margin — l.vervoort",
+      "books": [
+        {
+          "id": "bk_001",
+          "title": "Object Lessons",
+          "author": "Helene Duflos",
+          "progress_percent": 45,
+          "last_opened_at": "2026-03-09T22:50:00",
+          "open_count": 17
+        },
+        {
+          "id": "bk_002",
+          "title": "The Registrar's Hand",
+          "author": "Wim Bastiaens",
+          "progress_percent": 100,
+          "last_opened_at": "2026-01-30T21:05:00",
+          "open_count": 38
+        },
+        {
+          "id": "bk_003",
+          "title": "The Registrar's Companion",
+          "author": "Collections Trust",
+          "progress_percent": 100,
+          "last_opened_at": "2026-02-27T22:30:00",
+          "open_count": 64
+        },
+        {
+          "id": "bk_004",
+          "title": "Ivories of the Levant",
+          "author": "M. Feldmann",
+          "progress_percent": 41,
+          "last_opened_at": "2026-04-30T23:50:00",
+          "open_count": 17
+        },
+        {
+          "id": "bk_005",
+          "title": "A History of the Vrijthof",
+          "author": "Pieter Cuypers",
+          "progress_percent": 8,
+          "last_opened_at": "2026-01-05T21:10:00",
+          "open_count": 2
+        }
+      ]
+    },
+    "clock": {
+      "alarms": [
+        {
+          "id": "al_001",
+          "time": "06:30",
+          "label_key": "s09.clock.al_001",
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed"
+          ],
+          "is_enabled": false
+        },
+        {
+          "id": "al_002",
+          "time": "17:30",
+          "label_key": "s09.clock.al_002",
+          "days": [],
+          "is_enabled": false
+        },
+        {
+          "id": "f_al_003",
+          "time": "05:45",
+          "label_key": "s09.clock.f_al_003",
+          "days": [],
+          "is_enabled": false
+        }
+      ],
+      "world_clocks": [
+        {
+          "city": "Maastricht",
+          "timezone": "CEST"
+        },
+        {
+          "city": "Plovdiv",
+          "timezone": "EEST"
+        }
+      ]
+    },
+    "settings": {
+      "wifi_history": [
+        {
+          "id": "wf_001",
+          "network_name": "VRIJTHOF-EXHIB",
+          "connected_at": "2026-03-04T08:06:00",
+          "location_hint": "hall B, stand 14"
+        },
+        {
+          "id": "wf_002",
+          "network_name": "HALDERMAN-GAL",
+          "connected_at": "2026-04-19T09:02:00",
+          "location_hint": "gallery"
+        },
+        {
+          "id": "wf_003",
+          "network_name": "Havenkring-Guest",
+          "connected_at": "2026-04-20T09:44:00",
+          "location_hint": "Rotterdam"
+        },
+        {
+          "id": "f_wf_004",
+          "network_name": "HALDERMAN-KANTOOR",
+          "connected_at": "2026-03-16T09:40:00",
+          "location_hint": "the gallery"
+        },
+        {
+          "id": "f_wf_005",
+          "network_name": "Havenkring-Gast",
+          "connected_at": "2026-03-23T10:02:00",
+          "location_hint": "Rotterdam"
+        },
+        {
+          "id": "f_wf_006",
+          "network_name": "VRIJTHOF-EXHIBITOR",
+          "connected_at": "2026-03-04T08:06:00",
+          "location_hint": "hall B"
+        }
+      ],
+      "app_usage": [
+        {
+          "app_name": "Camera",
+          "daily_average_minutes": 64,
+          "this_week": [
+            {
+              "day": "Sun",
+              "minutes": 2
+            },
+            {
+              "day": "Mon",
+              "minutes": 41
+            }
+          ]
+        },
+        {
+          "app_name": "Files",
+          "daily_average_minutes": 38,
+          "this_week": [
+            {
+              "day": "Sun",
+              "minutes": 96
+            },
+            {
+              "day": "Mon",
+              "minutes": 52
+            }
+          ]
+        },
+        {
+          "app_name": "Gmail",
+          "daily_average_minutes": 29,
+          "this_week": [
+            {
+              "day": "Sun",
+              "minutes": 71
+            },
+            {
+              "day": "Mon",
+              "minutes": 33
+            }
+          ]
+        },
+        {
+          "app_name": "Mail",
+          "daily_average_minutes": 41,
+          "this_week": [
+            {
+              "day": "Sun",
+              "minutes": 62
+            },
+            {
+              "day": "Mon",
+              "minutes": 38
+            }
+          ]
+        },
+        {
+          "app_name": "Notes",
+          "daily_average_minutes": 27,
+          "this_week": [
+            {
+              "day": "Sun",
+              "minutes": 44
+            },
+            {
+              "day": "Mon",
+              "minutes": 31
+            }
+          ]
+        },
+        {
+          "app_name": "Tiles",
+          "daily_average_minutes": 19,
+          "this_week": [
+            {
+              "day": "Sun",
+              "minutes": 51
+            },
+            {
+              "day": "Mon",
+              "minutes": 66
+            }
+          ]
+        }
+      ]
+    },
+    "cloud": {
+      "account_label": "Drive — l.vervoort",
+      "folders": [
+        {
+          "id": "cfo_001",
+          "name_key": "s09.cloud.cfo_001",
+          "files": [
+            {
+              "id": "cf_001",
+              "name_key": "s09.cloud.cf_001.name",
+              "created_at": "2026-03-05T16:44:00",
+              "modified_at": "2026-03-05T16:44:00",
+              "size": "88 KB",
+              "body_key": "s09.cloud.cf_001.body"
+            },
+            {
+              "id": "cf_002",
+              "name_key": "s09.cloud.cf_002.name",
+              "created_at": "2026-03-13T02:10:00",
+              "modified_at": "2026-03-13T02:10:00",
+              "size": "2 KB",
+              "body_key": "s09.cloud.cf_002.body"
+            },
+            {
+              "id": "cf_003",
+              "name_key": "s09.cloud.cf_003.name",
+              "created_at": "2026-03-13T11:04:00",
+              "modified_at": "2026-03-13T11:04:00",
+              "size": "6 KB",
+              "body_key": "s09.cloud.cf_003.body"
+            },
+            {
+              "id": "cf_004",
+              "name_key": "s09.cloud.cf_004.name",
+              "created_at": "2026-04-18T04:16:00",
+              "modified_at": "2026-04-18T04:16:00",
+              "size": "412 KB",
+              "body_key": "s09.cloud.cf_004.body"
+            },
+            {
+              "id": "cf_005",
+              "name_key": "s09.cloud.cf_005.name",
+              "created_at": "2026-03-04T17:20:00",
+              "modified_at": "2026-03-04T17:20:00",
+              "size": "1.8 MB",
+              "is_locked": true,
+              "lock_password": "0403",
+              "body_key": "s09.cloud.cf_005.body"
+            }
+          ]
+        }
+      ]
+    },
+    "voice_memos": {
+      "memos": [
+        {
+          "id": "vm_001",
+          "title_key": "s09.memos.vm_001.title",
+          "recorded_at": "2026-03-04T17:14:00",
+          "duration_sec": 52,
+          "transcript_key": "s09.memos.vm_001.transcript",
+          "is_deleted": false
+        },
+        {
+          "id": "vm_002",
+          "title_key": "s09.memos.vm_002.title",
+          "recorded_at": "2026-04-18T03:30:00",
+          "duration_sec": 41,
+          "transcript_key": "s09.memos.vm_002.transcript",
+          "is_deleted": false
+        },
+        {
+          "id": "f_vm_101",
+          "title_key": "s09.memos.f_vm_101.title",
+          "recorded_at": "2025-10-23T17:40:00",
+          "duration_sec": 48,
+          "transcript_key": "s09.memos.f_vm_101.transcript",
+          "is_deleted": false
+        },
+        {
+          "id": "f_vm_102",
+          "title_key": "s09.memos.f_vm_102.title",
+          "recorded_at": "2026-01-16T16:05:00",
+          "duration_sec": 39,
+          "transcript_key": "s09.memos.f_vm_102.transcript",
+          "is_deleted": false
+        },
+        {
+          "id": "f_vm_103",
+          "title_key": "s09.memos.f_vm_103.title",
+          "recorded_at": "2026-03-03T18:50:00",
+          "duration_sec": 44,
+          "transcript_key": "s09.memos.f_vm_103.transcript",
+          "is_deleted": false
+        }
+      ]
+    },
+    "games": {
+      "best_score": 12880,
+      "games_played": 233,
+      "sessions": [
+        {
+          "started_at": "2026-05-02T21:47:00",
+          "duration_min": 24,
+          "score": 2704
+        },
+        {
+          "started_at": "2026-04-29T22:03:00",
+          "duration_min": 33,
+          "score": 9160
+        },
+        {
+          "started_at": "2026-04-25T21:12:00",
+          "duration_min": 18,
+          "score": 5028
+        },
+        {
+          "started_at": "2026-04-24T20:39:00",
+          "duration_min": 15,
+          "score": 3644
+        },
+        {
+          "started_at": "2026-04-22T21:58:00",
+          "duration_min": 41,
+          "score": 12880
+        },
+        {
+          "started_at": "2026-04-18T20:16:00",
+          "duration_min": 9,
+          "score": 1720
+        },
+        {
+          "started_at": "2026-03-14T03:12:00",
+          "duration_min": 41,
+          "score": 5120
+        },
+        {
+          "started_at": "2026-03-14T02:04:00",
+          "duration_min": 28,
+          "score": 3016
+        },
+        {
+          "started_at": "2026-03-16T03:40:00",
+          "duration_min": 19,
+          "score": 1888
+        },
+        {
+          "started_at": "2026-03-25T02:58:00",
+          "duration_min": 36,
+          "score": 6440
+        },
+        {
+          "started_at": "2026-04-11T03:26:00",
+          "duration_min": 22,
+          "score": 2360
+        },
+        {
+          "started_at": "2026-04-18T02:41:00",
+          "duration_min": 47,
+          "score": 8104
+        },
+        {
+          "started_at": "2026-04-27T03:05:00",
+          "duration_min": 31,
+          "score": 4712
+        },
+        {
+          "started_at": "2026-05-03T03:31:00",
+          "duration_min": 26,
+          "score": 3488
+        }
+      ]
+    }
+  }
+}

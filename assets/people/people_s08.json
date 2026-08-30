@@ -1,0 +1,172 @@
+{
+  "case_id": "s08",
+  "people": [
+    {
+      "id": "p000",
+      "tier": 1,
+      "contact": {
+        "first_name": "Zosia",
+        "last_name": "Kaczmarek",
+        "phone_number": "+48 512 660 471",
+        "avatar_color": "#7C3AED"
+      },
+      "photo_asset": "assets/cases/s08/photos/zosia_profile.jpg",
+      "age": 12,
+      "home_city": "Kraków",
+      "occupation": "Szkoła Podstawowa nr 26, class 6b",
+      "personality_tags": [
+        "funny",
+        "careful",
+        "twelve"
+      ]
+    },
+    {
+      "id": "p001",
+      "tier": 1,
+      "contact": {
+        "first_name": "Barbara",
+        "last_name": "Kaczmarek",
+        "phone_number": "+48 604 118 209",
+        "avatar_color": "#B45309"
+      },
+      "photo_asset": "assets/cases/s08/photos/barbara_profile.jpg",
+      "age": 68,
+      "home_city": "Kraków",
+      "occupation": "Retired seamstress",
+      "personality_tags": [
+        "certain",
+        "generous",
+        "has never once asked why"
+      ]
+    },
+    {
+      "id": "p002",
+      "tier": 1,
+      "contact": {
+        "first_name": "Hannah",
+        "last_name": "Ellis",
+        "phone_number": "+48 570 833 126",
+        "avatar_color": "#0F766E"
+      },
+      "photo_asset": "assets/cases/s08/photos/hannah_profile.jpg",
+      "age": 38,
+      "home_city": "Kraków",
+      "occupation": "English teacher, language school",
+      "personality_tags": [
+        "tired",
+        "polite",
+        "withdrew it herself"
+      ]
+    },
+    {
+      "id": "p003",
+      "tier": 1,
+      "contact": {
+        "first_name": "Marek",
+        "last_name": "Kaczmarek",
+        "phone_number": "+48 601 447 350",
+        "avatar_color": "#1E3A5F"
+      },
+      "photo_asset": "assets/cases/s08/photos/marek_profile.jpg",
+      "age": 41,
+      "home_city": "Kraków",
+      "occupation": "Paramedic, ambulance service",
+      "personality_tags": [
+        "calm",
+        "well liked",
+        "knows what gets written down"
+      ]
+    },
+    {
+      "id": "p004",
+      "tier": 2,
+      "contact": {
+        "first_name": "Kalina",
+        "last_name": "Nowak",
+        "phone_number": "+48 500 217 884",
+        "avatar_color": "#DB2777"
+      },
+      "photo_asset": "assets/cases/s08/photos/kalina_profile.jpg",
+      "age": 12,
+      "home_city": "Kraków",
+      "occupation": "Class 6b",
+      "personality_tags": [
+        "loud",
+        "loyal",
+        "still messaging"
+      ]
+    },
+    {
+      "id": "p005",
+      "tier": 2,
+      "contact": {
+        "first_name": "Iga",
+        "last_name": "Wróbel",
+        "phone_number": "+48 533 909 142",
+        "avatar_color": "#0891B2"
+      },
+      "age": 12,
+      "home_city": "Kraków",
+      "occupation": "Class 6b",
+      "personality_tags": [
+        "quieter",
+        "notices things"
+      ]
+    },
+    {
+      "id": "p006",
+      "tier": 2,
+      "contact": {
+        "first_name": "Dorota",
+        "last_name": "Lis",
+        "phone_number": "+48 12 656 4180",
+        "avatar_color": "#166534"
+      },
+      "photo_asset": "assets/cases/s08/photos/dorota_profile.jpg",
+      "age": 44,
+      "home_city": "Kraków",
+      "occupation": "Form teacher, 6b",
+      "personality_tags": [
+        "kind",
+        "wrote it down",
+        "was told to leave it"
+      ]
+    },
+    {
+      "id": "p007",
+      "tier": 2,
+      "contact": {
+        "first_name": "Aneta",
+        "last_name": "Sikora",
+        "phone_number": "+48 12 424 7700",
+        "avatar_color": "#4338CA"
+      },
+      "photo_asset": "assets/cases/s08/photos/aneta_profile.jpg",
+      "age": 39,
+      "home_city": "Kraków",
+      "occupation": "Paediatric A&E, Uniwersytecki Szpital Dziecięcy",
+      "personality_tags": [
+        "opened it",
+        "was overruled"
+      ]
+    },
+    {
+      "id": "p008",
+      "tier": 3,
+      "contact": {
+        "first_name": "Tomasz",
+        "last_name": "Reder",
+        "phone_number": "+48 12 429 3312",
+        "avatar_color": "#475569"
+      },
+      "age": 52,
+      "home_city": "Kraków",
+      "occupation": "Solicitor, family law",
+      "personality_tags": [
+        "efficient",
+        "acting for the applicant"
+      ]
+    }
+  ],
+  "instagram_posts": []
+}

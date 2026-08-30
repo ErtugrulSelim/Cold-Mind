@@ -1,0 +1,324 @@
+{
+  "case_id": "s02",
+  "people": [
+    {
+      "id": "p000",
+      "tier": 1,
+      "contact": {
+        "first_name": "Maya",
+        "last_name": "Sorensen",
+        "phone_number": "+49 151 5550 118",
+        "avatar_color": "#A855F7"
+      },
+      "photo_asset": "assets/cases/s02/photos/maya_profile.jpg",
+      "instagram": {
+        "username": "maya.sorensen",
+        "bio": "Digital work, physical rooms. Berlin. Represented by Halcyon Media.",
+        "follower_count": 412000,
+        "following_count": 188,
+        "is_private": false,
+        "post_ids": [
+          "post_p000_01",
+          "post_p000_02",
+          "post_p000_03"
+        ]
+      },
+      "age": 28,
+      "home_city": "Berlin",
+      "occupation": "Digital Artist",
+      "personality_tags": [
+        "art",
+        "insomnia",
+        "precise"
+      ]
+    },
+    {
+      "id": "p001",
+      "tier": 1,
+      "contact": {
+        "first_name": "Leo",
+        "last_name": "Brandt",
+        "phone_number": "+49 151 5550 204",
+        "avatar_color": "#DC2626"
+      },
+      "photo_asset": "assets/cases/s02/photos/leo_profile.jpg",
+      "instagram": {
+        "username": "leobrandt.mgmt",
+        "bio": "Talent management. I build careers.",
+        "follower_count": 21400,
+        "following_count": 640,
+        "is_private": false,
+        "post_ids": [
+          "post_p001_01"
+        ]
+      },
+      "age": 36,
+      "home_city": "Berlin",
+      "occupation": "Talent Manager",
+      "personality_tags": [
+        "controlling",
+        "charming",
+        "money"
+      ]
+    },
+    {
+      "id": "p002",
+      "tier": 1,
+      "contact": {
+        "first_name": "Ines",
+        "last_name": "Duarte",
+        "phone_number": "+49 151 5550 377",
+        "avatar_color": "#F59E0B"
+      },
+      "photo_asset": "assets/cases/s02/photos/ines_profile.jpg",
+      "instagram": {
+        "username": "ines.duarte.studio",
+        "bio": "Fabrication & installation. Formerly Studio Sorensen.",
+        "follower_count": 3120,
+        "following_count": 890,
+        "is_private": false,
+        "post_ids": [
+          "post_p002_01"
+        ]
+      },
+      "age": 31,
+      "home_city": "Berlin",
+      "occupation": "Studio Assistant",
+      "personality_tags": [
+        "blunt",
+        "loyal",
+        "wronged"
+      ]
+    },
+    {
+      "id": "p003",
+      "tier": 1,
+      "contact": {
+        "first_name": "Juno",
+        "last_name": "Weiss",
+        "phone_number": "+49 151 5550 431",
+        "avatar_color": "#22C55E"
+      },
+      "photo_asset": "assets/cases/s02/photos/juno_profile.jpg",
+      "instagram": {
+        "username": "junoweiss",
+        "bio": "sound design / bad at replying",
+        "follower_count": 1840,
+        "following_count": 512,
+        "is_private": false,
+        "post_ids": [
+          "post_p003_01"
+        ]
+      },
+      "age": 27,
+      "home_city": "Berlin",
+      "occupation": "Sound Designer",
+      "personality_tags": [
+        "warm",
+        "anxious",
+        "devoted"
+      ]
+    },
+    {
+      "id": "p004",
+      "tier": 3,
+      "contact": {
+        "first_name": "Hanna",
+        "last_name": "Vogt",
+        "phone_number": "+49 151 5550 502",
+        "avatar_color": "#0EA5E9"
+      },
+      "age": 47,
+      "home_city": "Berlin",
+      "occupation": "Accountant",
+      "personality_tags": [
+        "precise",
+        "cautious"
+      ]
+    },
+    {
+      "id": "p005",
+      "tier": 3,
+      "contact": {
+        "first_name": "Kasimir",
+        "last_name": "Rohde",
+        "phone_number": "+49 151 5550 655",
+        "avatar_color": "#8B5CF6"
+      },
+      "photo_asset": "assets/cases/s02/photos/rohde_profile.jpg",
+      "age": 54,
+      "home_city": "Berlin",
+      "occupation": "Gallerist",
+      "personality_tags": [
+        "formal",
+        "connected"
+      ]
+    }
+  ],
+  "instagram_posts": [
+    {
+      "id": "post_p000_01",
+      "caption": "VESSEL / iii — final render. Four months. Opens at Rohde on the 21st.",
+      "location": "Berlin",
+      "like_count": 28400,
+      "tags": [
+        "art",
+        "vessel"
+      ],
+      "comments": [],
+      "person_id": "p000",
+      "timestamp": "2025-03-05T19:40:00",
+      "liked_by_owner": false,
+      "image_asset": "assets/stock/photos/7.jpg"
+    },
+    {
+      "id": "post_p000_02",
+      "caption": "The studio at 4am is the only version of it I actually like.",
+      "location": "Uferhallen, Wedding",
+      "like_count": 41200,
+      "tags": [
+        "studio"
+      ],
+      "comments": [],
+      "person_id": "p000",
+      "timestamp": "2025-02-19T04:12:00",
+      "liked_by_owner": false,
+      "image_asset": "assets/stock/photos/14.jpg"
+    },
+    {
+      "id": "post_p000_03",
+      "caption": "Ten years ago I was posting these on a forum under a different name and nobody looked. Keep going. That's the whole advice.",
+      "like_count": 52100,
+      "tags": [
+        "archive"
+      ],
+      "comments": [],
+      "person_id": "p000",
+      "timestamp": "2025-01-11T13:00:00",
+      "liked_by_owner": false,
+      "image_asset": "assets/stock/photos/33.jpg"
+    },
+    {
+      "id": "post_p001_01",
+      "caption": "Proud of my artist. Biggest show of her career opens this month. Some of us build quietly.",
+      "like_count": 980,
+      "tags": [
+        "management"
+      ],
+      "comments": [],
+      "person_id": "p001",
+      "timestamp": "2025-03-01T12:00:00",
+      "liked_by_owner": false,
+      "image_asset": "assets/stock/photos/21.jpg"
+    },
+    {
+      "id": "post_p002_01",
+      "caption": "Taking commissions again. Independent now — every piece leaves my hands finished.",
+      "like_count": 410,
+      "tags": [
+        "fabrication"
+      ],
+      "comments": [],
+      "person_id": "p002",
+      "timestamp": "2025-02-06T10:20:00",
+      "liked_by_owner": true,
+      "image_asset": "assets/stock/photos/29.jpg"
+    },
+    {
+      "id": "post_p003_01",
+      "caption": "please come home",
+      "like_count": 9800,
+      "tags": [],
+      "comments": [],
+      "person_id": "p003",
+      "timestamp": "2025-03-16T23:40:00",
+      "liked_by_owner": false,
+      "image_asset": "assets/stock/photos/41.jpg"
+    },
+    {
+      "id": "post_stock_01",
+      "caption": "Bisque, out and cooling. Six survived, one did not.",
+      "location": "Berlin",
+      "like_count": 412,
+      "tags": [
+        "ceramics",
+        "kiln"
+      ],
+      "comments": [],
+      "person_id": "p003",
+      "timestamp": "2025-02-20T11:00:00",
+      "liked_by_owner": true,
+      "image_asset": "assets/stock/photos/12.jpg"
+    },
+    {
+      "id": "post_stock_02",
+      "caption": "Open day, Uferhallen. Doors from eleven.",
+      "location": "Berlin",
+      "like_count": 1180,
+      "tags": [
+        "studio"
+      ],
+      "comments": [],
+      "person_id": "p005",
+      "timestamp": "2025-02-14T09:30:00",
+      "liked_by_owner": true,
+      "image_asset": "assets/stock/photos/23.jpg"
+    },
+    {
+      "id": "post_stock_03",
+      "caption": "Ash frames, waxed. Twelve years of doing this properly.",
+      "location": "Berlin",
+      "like_count": 96,
+      "tags": [
+        "framing"
+      ],
+      "comments": [],
+      "person_id": "p003",
+      "timestamp": "2025-02-27T16:10:00",
+      "liked_by_owner": false,
+      "image_asset": "assets/stock/photos/31.jpg"
+    },
+    {
+      "id": "post_stock_04",
+      "caption": "Snow on the yard. Everything sounds closer.",
+      "location": "Berlin",
+      "like_count": 240,
+      "tags": [
+        "berlin"
+      ],
+      "comments": [],
+      "person_id": "p005",
+      "timestamp": "2025-01-09T08:05:00",
+      "liked_by_owner": true,
+      "image_asset": "assets/stock/photos/45.jpg"
+    },
+    {
+      "id": "post_stock_05",
+      "caption": "Autumn programme — open call now live.",
+      "location": "Berlin",
+      "like_count": 833,
+      "tags": [
+        "galerie"
+      ],
+      "comments": [],
+      "person_id": "p003",
+      "timestamp": "2025-03-01T12:00:00",
+      "liked_by_owner": false,
+      "image_asset": "assets/stock/photos/8.jpg"
+    },
+    {
+      "id": "post_stock_06",
+      "caption": "Cast glass, second pour. The seam is the whole problem.",
+      "location": "Berlin",
+      "like_count": 155,
+      "tags": [
+        "glass"
+      ],
+      "comments": [],
+      "person_id": "p005",
+      "timestamp": "2025-02-02T18:45:00",
+      "liked_by_owner": true,
+      "image_asset": "assets/stock/photos/17.jpg"
+    }
+  ]
+}

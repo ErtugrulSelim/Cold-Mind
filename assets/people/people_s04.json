@@ -1,0 +1,235 @@
+{
+  "case_id": "s04",
+  "people": [
+    {
+      "id": "p000",
+      "tier": 1,
+      "contact": {
+        "first_name": "Rui",
+        "last_name": "Andrade",
+        "phone_number": "+351 912 044 671",
+        "avatar_color": "#0E7490"
+      },
+      "photo_asset": "assets/cases/s04/photos/rui_profile.jpg",
+      "instagram": {
+        "username": "rui.andrade",
+        "bio": "FAROL. Porto. Building the thing I wish my mother had worn.",
+        "follower_count": 8400,
+        "following_count": 210,
+        "is_private": false,
+        "post_ids": [
+          "post_p000_01",
+          "post_p000_02"
+        ]
+      },
+      "age": 41,
+      "home_city": "Porto",
+      "occupation": "Founder, FAROL",
+      "personality_tags": [
+        "stubborn",
+        "earnest",
+        "sleepless"
+      ]
+    },
+    {
+      "id": "p001",
+      "tier": 1,
+      "contact": {
+        "first_name": "Vasco",
+        "last_name": "Pinto",
+        "phone_number": "+351 916 330 118",
+        "avatar_color": "#B45309"
+      },
+      "photo_asset": "assets/cases/s04/photos/vasco_profile.jpg",
+      "instagram": {
+        "username": "vascopinto",
+        "bio": "Co-founder & CTO, FAROL. Twenty years of building with the same person.",
+        "follower_count": 3100,
+        "following_count": 402,
+        "is_private": false,
+        "post_ids": [
+          "post_p001_01"
+        ]
+      },
+      "age": 43,
+      "home_city": "Porto",
+      "occupation": "Co-founder, FAROL",
+      "personality_tags": [
+        "warm",
+        "impatient",
+        "certain"
+      ]
+    },
+    {
+      "id": "p002",
+      "tier": 1,
+      "contact": {
+        "first_name": "Marta",
+        "last_name": "Andrade",
+        "phone_number": "+351 933 802 559",
+        "avatar_color": "#BE185D"
+      },
+      "photo_asset": "assets/cases/s04/photos/marta_profile.jpg",
+      "instagram": {
+        "username": "marta.andrade",
+        "bio": "Stage. Teatro do Bolhão. Mostly tired.",
+        "follower_count": 2240,
+        "following_count": 380,
+        "is_private": false,
+        "post_ids": [
+          "post_p002_01"
+        ]
+      },
+      "age": 39,
+      "home_city": "Porto",
+      "occupation": "Stage Actor",
+      "personality_tags": [
+        "direct",
+        "raw",
+        "unguarded"
+      ]
+    },
+    {
+      "id": "p003",
+      "tier": 1,
+      "contact": {
+        "first_name": "Beatriz",
+        "last_name": "Lima",
+        "phone_number": "+351 927 415 903",
+        "avatar_color": "#15803D"
+      },
+      "photo_asset": "assets/cases/s04/photos/beatriz_profile.jpg",
+      "age": 28,
+      "home_city": "Porto",
+      "occupation": "Field Engineer, FAROL",
+      "personality_tags": [
+        "precise",
+        "frightened",
+        "right"
+      ]
+    },
+    {
+      "id": "p004",
+      "tier": 3,
+      "contact": {
+        "first_name": "Fátima",
+        "last_name": "Sousa",
+        "phone_number": "+351 962 118 740",
+        "avatar_color": "#7C3AED"
+      },
+      "age": 55,
+      "home_city": "Porto",
+      "occupation": "Housekeeper",
+      "personality_tags": [
+        "kind",
+        "punctual"
+      ]
+    },
+    {
+      "id": "p005",
+      "tier": 3,
+      "contact": {
+        "first_name": "Tiago",
+        "last_name": "Melo",
+        "phone_number": "+351 918 667 012",
+        "avatar_color": "#EA580C"
+      },
+      "age": 50,
+      "home_city": "Porto",
+      "occupation": "Theatre Director",
+      "personality_tags": [
+        "theatrical",
+        "fond",
+        "blunt"
+      ]
+    },
+    {
+      "id": "p007",
+      "tier": 3,
+      "contact": {
+        "first_name": "FAROL",
+        "last_name": "",
+        "phone_number": "+351 800 200 842",
+        "avatar_color": "#0E7490"
+      },
+      "age": 0,
+      "home_city": "",
+      "occupation": "",
+      "personality_tags": []
+    },
+    {
+      "id": "p006",
+      "tier": 3,
+      "contact": {
+        "first_name": "Carla",
+        "last_name": "Nogueira",
+        "phone_number": "+351 939 205 388",
+        "avatar_color": "#0369A1"
+      },
+      "age": 46,
+      "home_city": "Porto",
+      "occupation": "Lawyer",
+      "personality_tags": [
+        "formal",
+        "efficient"
+      ]
+    }
+  ],
+  "instagram_posts": [
+    {
+      "id": "post_p000_01",
+      "caption": "Forty thousand of them out there now. I still check the map every morning like it might have stopped working overnight.",
+      "location": "Porto",
+      "like_count": 1840,
+      "tags": [
+        "farol"
+      ],
+      "comments": [],
+      "person_id": "p000",
+      "timestamp": "2025-09-02T08:40:00",
+      "liked_by_owner": false,
+      "image_asset": "assets/stock/photos/3.jpg"
+    },
+    {
+      "id": "post_p000_02",
+      "caption": "Back row again. Twenty years and she still doesn't know I record these.",
+      "location": "Porto",
+      "like_count": 960,
+      "tags": [
+        "theatre"
+      ],
+      "comments": [],
+      "person_id": "p000",
+      "timestamp": "2025-03-14T22:50:00",
+      "liked_by_owner": false,
+      "image_asset": "assets/stock/photos/17.jpg"
+    },
+    {
+      "id": "post_p001_01",
+      "caption": "Two guys and a soldering iron, 2014. Same two guys, slightly better chairs.",
+      "like_count": 720,
+      "tags": [
+        "farol"
+      ],
+      "comments": [],
+      "person_id": "p001",
+      "timestamp": "2025-09-04T13:10:00",
+      "liked_by_owner": false,
+      "image_asset": "assets/stock/photos/22.jpg"
+    },
+    {
+      "id": "post_p002_01",
+      "caption": "Closing night. Whatever else is true, this room was true.",
+      "location": "Teatro do Bolhão",
+      "like_count": 410,
+      "tags": [
+        "stage"
+      ],
+      "comments": [],
+      "person_id": "p002",
+      "timestamp": "2025-03-15T23:30:00",
+      "liked_by_owner": false,
+      "image_asset": "assets/stock/photos/48.jpg"
+    }
+  ]
+}

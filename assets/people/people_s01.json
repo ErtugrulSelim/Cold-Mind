@@ -1,0 +1,380 @@
+{
+  "case_id": "s01",
+  "people": [
+    {
+      "id": "p000",
+      "tier": 1,
+      "contact": {
+        "first_name": "Nora",
+        "last_name": "Ilves",
+        "phone_number": "+372 5555 0142",
+        "avatar_color": "#0EA5E9"
+      },
+      "photo_asset": "assets/cases/s01/photos/nora_profile.jpg",
+      "instagram": {
+        "username": "n.ilves",
+        "bio": "Security. Chess. Long nights.",
+        "follower_count": 1120,
+        "following_count": 96,
+        "is_private": true,
+        "post_ids": [
+          "post_p000_01",
+          "post_p000_02"
+        ]
+      },
+      "age": 31,
+      "home_city": "Tallinn",
+      "occupation": "Security Engineer",
+      "personality_tags": [
+        "security",
+        "chess",
+        "night owl"
+      ]
+    },
+    {
+      "id": "p001",
+      "tier": 1,
+      "contact": {
+        "first_name": "Viktor",
+        "last_name": "Halme",
+        "phone_number": "+372 5555 0108",
+        "avatar_color": "#DC2626"
+      },
+      "photo_asset": "assets/cases/s01/photos/viktor_profile.jpg",
+      "instagram": {
+        "username": "viktorhalme",
+        "bio": "CEO @ Kestrel Systems. Building trust infrastructure for Europe.",
+        "follower_count": 8940,
+        "following_count": 312,
+        "is_private": false,
+        "post_ids": [
+          "post_p001_01",
+          "post_p001_02"
+        ]
+      },
+      "age": 48,
+      "home_city": "Tallinn",
+      "occupation": "CEO, Kestrel Systems",
+      "personality_tags": [
+        "ambitious",
+        "abrasive",
+        "investors"
+      ]
+    },
+    {
+      "id": "p002",
+      "tier": 1,
+      "contact": {
+        "first_name": "Kilian",
+        "last_name": "Rand",
+        "phone_number": "+372 5555 0177",
+        "avatar_color": "#F59E0B"
+      },
+      "photo_asset": "assets/cases/s01/photos/kilian_profile.jpg",
+      "age": 38,
+      "home_city": "Tartu",
+      "occupation": "Unemployed",
+      "personality_tags": [
+        "debt",
+        "gambling",
+        "desperate"
+      ]
+    },
+    {
+      "id": "p003",
+      "tier": 2,
+      "contact": {
+        "first_name": "Ben",
+        "last_name": "Krüger",
+        "phone_number": "+372 5555 0163",
+        "avatar_color": "#22C55E"
+      },
+      "photo_asset": "assets/cases/s01/photos/ben_profile.jpg",
+      "instagram": {
+        "username": "benkrgr",
+        "bio": "junior dev, senior snacker 🍕",
+        "follower_count": 431,
+        "following_count": 502,
+        "is_private": false,
+        "post_ids": [
+          "post_p003_01",
+          "post_p003_02"
+        ]
+      },
+      "age": 26,
+      "home_city": "Tallinn",
+      "occupation": "Junior Developer",
+      "personality_tags": [
+        "friendly",
+        "gaming",
+        "coffee"
+      ]
+    },
+    {
+      "id": "p004",
+      "tier": 3,
+      "contact": {
+        "first_name": "Piret",
+        "last_name": "Sarv",
+        "phone_number": "+372 5555 0195",
+        "avatar_color": "#8B5CF6"
+      },
+      "age": 44,
+      "home_city": "Tallinn",
+      "occupation": "People Operations, Kestrel Systems",
+      "personality_tags": [
+        "organised",
+        "formal"
+      ]
+    },
+    {
+      "id": "p005",
+      "tier": 2,
+      "contact": {
+        "first_name": "Ema",
+        "last_name": null,
+        "phone_number": "+372 5555 0221",
+        "avatar_color": "#EC4899"
+      },
+      "age": 66,
+      "home_city": "Tartu",
+      "occupation": "Retired teacher",
+      "personality_tags": [
+        "warm",
+        "worries",
+        "garden"
+      ]
+    },
+    {
+      "id": "p006",
+      "tier": 2,
+      "contact": {
+        "first_name": "Jaan",
+        "last_name": "Tamm",
+        "phone_number": "+372 5555 0250",
+        "avatar_color": "#14B8A6"
+      },
+      "instagram": {
+        "username": "jaantamm",
+        "bio": "Backend @ Sorbet. Sauna evangelist.",
+        "follower_count": 688,
+        "following_count": 401,
+        "is_private": false,
+        "post_ids": [
+          "post_p006_01",
+          "post_p006_02"
+        ]
+      },
+      "age": 35,
+      "home_city": "Tallinn",
+      "occupation": "Backend Engineer",
+      "personality_tags": [
+        "sauna",
+        "cycling",
+        "beer"
+      ]
+    },
+    {
+      "id": "p007",
+      "tier": 3,
+      "contact": {
+        "first_name": "Liis",
+        "last_name": "Mägi",
+        "phone_number": "+372 5555 0288",
+        "avatar_color": "#A3E635"
+      },
+      "instagram": {
+        "username": "liis.magi",
+        "bio": "Kalamaja 🌿 ceramics & cats",
+        "follower_count": 1502,
+        "following_count": 890,
+        "is_private": false,
+        "post_ids": [
+          "post_p007_01"
+        ]
+      },
+      "age": 29,
+      "home_city": "Tallinn",
+      "occupation": "Ceramicist",
+      "personality_tags": [
+        "plants",
+        "cats",
+        "crafts"
+      ]
+    },
+    {
+      "id": "p008",
+      "tier": 3,
+      "contact": {
+        "first_name": "Dr. Kask",
+        "last_name": null,
+        "phone_number": "+372 5555 0310",
+        "avatar_color": "#64748B"
+      },
+      "age": 51,
+      "home_city": "Tallinn",
+      "occupation": "Dentist",
+      "personality_tags": [
+        "clinical"
+      ]
+    },
+    {
+      "id": "p009",
+      "tier": 3,
+      "contact": {
+        "first_name": "Toomas",
+        "last_name": "Vaher",
+        "phone_number": "+372 5555 0344",
+        "avatar_color": "#F97316"
+      },
+      "age": 41,
+      "home_city": "Tallinn",
+      "occupation": "Physiotherapist",
+      "personality_tags": [
+        "running",
+        "early riser"
+      ]
+    },
+    {
+      "id": "p010",
+      "tier": 3,
+      "contact": {
+        "first_name": "Anna",
+        "last_name": "Lepik",
+        "phone_number": "+372 5555 0367",
+        "avatar_color": "#6366F1"
+      },
+      "age": 33,
+      "home_city": "Helsinki",
+      "occupation": "Technical Recruiter",
+      "personality_tags": [
+        "persistent",
+        "polished"
+      ]
+    }
+  ],
+  "instagram_posts": [
+    {
+      "id": "post_p000_01",
+      "caption": "Endgame study. Black to move and hold. Took me four days.",
+      "location": "Tallinn",
+      "like_count": 84,
+      "tags": [
+        "chess"
+      ],
+      "comments": [],
+      "person_id": "p000",
+      "timestamp": "2025-02-09T20:14:00",
+      "liked_by_owner": true,
+      "image_asset": "assets/stock/photos/12.jpg"
+    },
+    {
+      "id": "post_p000_02",
+      "caption": "Third coffee. Second incident. First light.",
+      "like_count": 61,
+      "tags": [
+        "work"
+      ],
+      "comments": [],
+      "person_id": "p000",
+      "timestamp": "2025-01-24T06:40:00",
+      "liked_by_owner": false,
+      "image_asset": "assets/stock/photos/27.jpg"
+    },
+    {
+      "id": "post_p001_01",
+      "caption": "Proud to announce Kestrel is shortlisted for the Baltic Trust Award. This team earns everything it gets.",
+      "location": "Tallinn",
+      "like_count": 1204,
+      "tags": [
+        "kestrel",
+        "award"
+      ],
+      "comments": [],
+      "person_id": "p001",
+      "timestamp": "2025-02-21T11:02:00",
+      "liked_by_owner": false,
+      "image_asset": "assets/stock/photos/5.jpg"
+    },
+    {
+      "id": "post_p001_02",
+      "caption": "Closing week. Sleep is a Q3 problem.",
+      "like_count": 640,
+      "tags": [
+        "startup"
+      ],
+      "comments": [],
+      "person_id": "p001",
+      "timestamp": "2025-03-01T22:30:00",
+      "liked_by_owner": false,
+      "image_asset": "assets/stock/photos/31.jpg"
+    },
+    {
+      "id": "post_p003_01",
+      "caption": "the office pizza situation has become unsustainable and I am the problem",
+      "like_count": 97,
+      "tags": [
+        "pizza"
+      ],
+      "comments": [],
+      "person_id": "p003",
+      "timestamp": "2025-02-28T21:10:00",
+      "liked_by_owner": true,
+      "image_asset": "assets/stock/photos/18.jpg"
+    },
+    {
+      "id": "post_p003_02",
+      "caption": "six months at Kestrel and I still can't find the good meeting room",
+      "like_count": 122,
+      "tags": [
+        "work"
+      ],
+      "comments": [],
+      "person_id": "p003",
+      "timestamp": "2025-01-15T17:45:00",
+      "liked_by_owner": true,
+      "image_asset": "assets/stock/photos/44.jpg"
+    },
+    {
+      "id": "post_p006_01",
+      "caption": "-14°C outside, 92°C inside. Balance.",
+      "location": "Viimsi",
+      "like_count": 210,
+      "tags": [
+        "sauna"
+      ],
+      "comments": [],
+      "person_id": "p006",
+      "timestamp": "2025-02-15T19:20:00",
+      "liked_by_owner": true,
+      "image_asset": "assets/stock/photos/9.jpg"
+    },
+    {
+      "id": "post_p006_02",
+      "caption": "60km before work. Regret arrives around km 45 every single time.",
+      "like_count": 154,
+      "tags": [
+        "cycling"
+      ],
+      "comments": [],
+      "person_id": "p006",
+      "timestamp": "2025-02-02T09:05:00",
+      "liked_by_owner": false,
+      "image_asset": "assets/stock/photos/23.jpg"
+    },
+    {
+      "id": "post_p007_01",
+      "caption": "Kiln opened. Two survivors, one casualty. The casualty was my favourite.",
+      "location": "Kalamaja",
+      "like_count": 302,
+      "tags": [
+        "ceramics"
+      ],
+      "comments": [],
+      "person_id": "p007",
+      "timestamp": "2025-02-11T16:30:00",
+      "liked_by_owner": true,
+      "image_asset": "assets/stock/photos/36.jpg"
+    }
+  ]
+}

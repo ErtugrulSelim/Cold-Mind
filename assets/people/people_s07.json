@@ -1,0 +1,170 @@
+{
+  "case_id": "s07",
+  "people": [
+    {
+      "id": "p000",
+      "tier": 1,
+      "contact": {
+        "first_name": "Máire",
+        "last_name": "Conneely",
+        "phone_number": "+353 87 244 1908",
+        "avatar_color": "#155E75"
+      },
+      "photo_asset": "assets/cases/s07/photos/maire_profile.jpg",
+      "age": 63,
+      "home_city": "Connemara",
+      "occupation": "Postmistress, Cloghmore (1995-2017)",
+      "personality_tags": [
+        "exact",
+        "stubborn",
+        "finished arguing"
+      ]
+    },
+    {
+      "id": "p001",
+      "tier": 1,
+      "contact": {
+        "first_name": "Aoife",
+        "last_name": "Conneely",
+        "phone_number": "+353 86 700 3312",
+        "avatar_color": "#9D174D"
+      },
+      "photo_asset": "assets/cases/s07/photos/aoife_profile.jpg",
+      "age": 29,
+      "home_city": "Galway",
+      "occupation": "Physiotherapist",
+      "personality_tags": [
+        "late",
+        "certain now",
+        "was not certain then"
+      ]
+    },
+    {
+      "id": "p002",
+      "tier": 1,
+      "contact": {
+        "first_name": "Declan",
+        "last_name": "Moran",
+        "phone_number": "+353 87 611 4420",
+        "avatar_color": "#7F1D1D"
+      },
+      "photo_asset": "assets/cases/s07/photos/declan_profile.jpg",
+      "age": 51,
+      "home_city": "Galway",
+      "occupation": "Area manager, western region",
+      "personality_tags": [
+        "pleasant",
+        "procedural",
+        "kept his branch"
+      ]
+    },
+    {
+      "id": "p003",
+      "tier": 1,
+      "contact": {
+        "first_name": "Bríd",
+        "last_name": "Sheridan",
+        "phone_number": "+353 87 388 6151",
+        "avatar_color": "#7C2D12"
+      },
+      "photo_asset": "assets/cases/s07/photos/brid_profile.jpg",
+      "age": 58,
+      "home_city": "Letterfrack",
+      "occupation": "Postmistress, Letterfrack",
+      "personality_tags": [
+        "kind",
+        "frightened",
+        "paid it herself"
+      ]
+    },
+    {
+      "id": "p004",
+      "tier": 2,
+      "contact": {
+        "first_name": "Peadar",
+        "last_name": "Conneely",
+        "phone_number": "+353 86 219 7743",
+        "avatar_color": "#166534"
+      },
+      "photo_asset": "assets/cases/s07/photos/peadar_profile.jpg",
+      "age": 66,
+      "home_city": "Cloghmore",
+      "occupation": "Fisherman",
+      "personality_tags": [
+        "paid",
+        "never asked",
+        "stopped calling"
+      ]
+    },
+    {
+      "id": "p005",
+      "tier": 2,
+      "contact": {
+        "first_name": "Fiona",
+        "last_name": "Doyle",
+        "phone_number": "+353 1 662 8800",
+        "avatar_color": "#4338CA"
+      },
+      "photo_asset": "assets/cases/s07/photos/fiona_profile.jpg",
+      "age": 44,
+      "home_city": "Dublin",
+      "occupation": "Branch auditor, head office",
+      "personality_tags": [
+        "thorough",
+        "wrote it down",
+        "was not called"
+      ]
+    },
+    {
+      "id": "p006",
+      "tier": 2,
+      "contact": {
+        "first_name": "Tomás",
+        "last_name": "Geraghty",
+        "phone_number": "+353 85 903 2277",
+        "avatar_color": "#0F766E"
+      },
+      "photo_asset": "assets/cases/s07/photos/tomas_profile.jpg",
+      "age": 39,
+      "home_city": "Dublin",
+      "occupation": "Support engineer, Meridian",
+      "personality_tags": [
+        "logged everything",
+        "logged it eleven times"
+      ]
+    },
+    {
+      "id": "p007",
+      "tier": 3,
+      "contact": {
+        "first_name": "Eibhlín",
+        "last_name": "Ní Chonaill",
+        "phone_number": "+353 89 440 1177",
+        "avatar_color": "#B45309"
+      },
+      "photo_asset": "assets/cases/s07/photos/eibhlin_profile.jpg",
+      "age": 35,
+      "home_city": "Dublin",
+      "occupation": "Reporter",
+      "personality_tags": [
+        "patient",
+        "four years on this"
+      ]
+    },
+    {
+      "id": "p008",
+      "tier": 3,
+      "contact": {
+        "first_name": "Meridian",
+        "last_name": "Service Desk",
+        "phone_number": "+353 1 800 200 141",
+        "avatar_color": "#475569"
+      },
+      "age": 0,
+      "home_city": "",
+      "occupation": "",
+      "personality_tags": []
+    }
+  ],
+  "instagram_posts": []
+}

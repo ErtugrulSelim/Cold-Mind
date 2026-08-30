@@ -1,0 +1,287 @@
+{
+  "case_id": "s10",
+  "people": [
+    {
+      "id": "p000",
+      "tier": 1,
+      "contact": {
+        "first_name": "Elena",
+        "last_name": "Christofi",
+        "phone_number": "+44 7700 118 442",
+        "avatar_color": "#0F766E"
+      },
+      "photo_asset": "assets/cases/s10/photos/elena_profile.jpg",
+      "instagram": {
+        "username": "elena.c.bristol",
+        "bio": "Bristol. Paralegal. Aunt of six. Mostly here for other people's dogs.",
+        "follower_count": 412,
+        "following_count": 388,
+        "is_private": true,
+        "post_ids": [
+          "post_p000_01",
+          "post_p000_02"
+        ]
+      },
+      "age": 38,
+      "home_city": "Bristol",
+      "occupation": "Paralegal, family law",
+      "personality_tags": [
+        "organised",
+        "checks everything",
+        "was checked on"
+      ]
+    },
+    {
+      "id": "p001",
+      "tier": 1,
+      "contact": {
+        "first_name": "Sophia",
+        "last_name": "Christofi",
+        "phone_number": "+44 7700 903 517",
+        "avatar_color": "#BE185D"
+      },
+      "photo_asset": "assets/cases/s10/photos/sophia_profile.jpg",
+      "instagram": {
+        "username": "soph.chr",
+        "bio": "pharmacy tech. bristol. leave me alone x",
+        "follower_count": 209,
+        "following_count": 611,
+        "is_private": true,
+        "post_ids": [
+          "post_p001_01"
+        ]
+      },
+      "age": 27,
+      "home_city": "Bristol",
+      "occupation": "Pharmacy technician",
+      "personality_tags": [
+        "quiet",
+        "helpful",
+        "at every single one"
+      ]
+    },
+    {
+      "id": "p002",
+      "tier": 1,
+      "contact": {
+        "first_name": "Andreas",
+        "last_name": "Solomou",
+        "phone_number": "+44 7700 226 083",
+        "avatar_color": "#1E3A5F"
+      },
+      "photo_asset": "assets/cases/s10/photos/andreas_profile.jpg",
+      "instagram": {
+        "username": "a.solomou",
+        "bio": "Cardiff. Anaesthetics. Two kids, one dog, no time.",
+        "follower_count": 188,
+        "following_count": 96,
+        "is_private": false,
+        "post_ids": [
+          "post_p002_01",
+          "post_p002_02",
+          "post_p002_03"
+        ]
+      },
+      "age": 41,
+      "home_city": "Cardiff",
+      "occupation": "Consultant anaesthetist",
+      "personality_tags": [
+        "real",
+        "married",
+        "has never heard of her"
+      ]
+    },
+    {
+      "id": "p003",
+      "tier": 2,
+      "contact": {
+        "first_name": "Nia",
+        "last_name": "Okonjo",
+        "phone_number": "+44 7700 445 219",
+        "avatar_color": "#B45309"
+      },
+      "photo_asset": "assets/cases/s10/photos/nia_profile.jpg",
+      "age": 36,
+      "home_city": "Bristol",
+      "occupation": "Paralegal, same firm",
+      "personality_tags": [
+        "said it for years",
+        "said it kindly",
+        "was right"
+      ]
+    },
+    {
+      "id": "p004",
+      "tier": 2,
+      "contact": {
+        "first_name": "Marianna",
+        "last_name": "Christofi",
+        "phone_number": "+44 7700 771 604",
+        "avatar_color": "#7C3AED"
+      },
+      "photo_asset": "assets/cases/s10/photos/marianna_profile.jpg",
+      "age": 61,
+      "home_city": "Bristol",
+      "occupation": "Retired",
+      "personality_tags": [
+        "Sophia's mother",
+        "hosts everything",
+        "will have to choose"
+      ]
+    },
+    {
+      "id": "p005",
+      "tier": 2,
+      "contact": {
+        "first_name": "Yiannis",
+        "last_name": "Christofi",
+        "phone_number": "+44 7700 338 970",
+        "avatar_color": "#166534"
+      },
+      "age": 68,
+      "home_city": "Bristol",
+      "occupation": "Retired barber",
+      "personality_tags": [
+        "never asked once",
+        "asked once, in 2024"
+      ]
+    },
+    {
+      "id": "p006",
+      "tier": 3,
+      "contact": {
+        "first_name": "Nadia",
+        "last_name": "Solomou",
+        "phone_number": "+44 7700 512 336",
+        "avatar_color": "#9D174D"
+      },
+      "instagram": {
+        "username": "nadia_solomou_",
+        "bio": "wife. mother. don't message my husband.",
+        "follower_count": 41,
+        "following_count": 12,
+        "is_private": true,
+        "post_ids": []
+      },
+      "age": 39,
+      "home_city": "London",
+      "occupation": "—",
+      "personality_tags": [
+        "does not exist"
+      ]
+    },
+    {
+      "id": "p007",
+      "tier": 3,
+      "contact": {
+        "first_name": "Rachel",
+        "last_name": "Ferris",
+        "phone_number": "+44 7700 640 118",
+        "avatar_color": "#475569"
+      },
+      "age": 52,
+      "home_city": "London",
+      "occupation": "—",
+      "personality_tags": [
+        "does not exist either"
+      ]
+    },
+    {
+      "id": "p008",
+      "tier": 3,
+      "contact": {
+        "first_name": "Hannah",
+        "last_name": "Wexley",
+        "phone_number": "+44 117 928 4400",
+        "avatar_color": "#334155"
+      },
+      "photo_asset": "assets/cases/s10/photos/hannah_profile.jpg",
+      "age": 44,
+      "home_city": "Bristol",
+      "occupation": "Solicitor, civil litigation",
+      "personality_tags": [
+        "blunt",
+        "has read worse",
+        "has not read this"
+      ]
+    }
+  ],
+  "instagram_posts": [
+    {
+      "id": "post_p000_01",
+      "caption": "Six years at the firm today. Nia made me a cake shaped like a lever arch file.",
+      "location": "Bristol",
+      "like_count": 61,
+      "tags": [
+        "work"
+      ],
+      "comments": [],
+      "person_id": "p000",
+      "timestamp": "2024-09-12T18:40:00",
+      "liked_by_owner": false,
+      "image_asset": "assets/cases/s10/photos/harbourside.jpg"
+    },
+    {
+      "id": "post_p000_02",
+      "caption": "Name day at Mum's. Forty of us in a house built for four. Same every year, thank God.",
+      "location": "Bristol",
+      "like_count": 118,
+      "tags": [
+        "family"
+      ],
+      "comments": [],
+      "person_id": "p000",
+      "timestamp": "2025-05-21T21:15:00",
+      "liked_by_owner": false,
+      "image_asset": "assets/cases/s10/photos/name_day.jpg"
+    },
+    {
+      "id": "post_p001_01",
+      "caption": "5 years qualified today 💊",
+      "location": "Bristol",
+      "like_count": 44,
+      "tags": [],
+      "comments": [],
+      "person_id": "p001",
+      "timestamp": "2024-11-04T17:02:00",
+      "liked_by_owner": false,
+      "image_asset": "assets/cases/s10/photos/pharmacy.jpg"
+    },
+    {
+      "id": "post_p002_01",
+      "caption": "Barry Island. Wind: 40mph. Enthusiasm: undimmed.",
+      "location": "Cardiff",
+      "like_count": 52,
+      "tags": [],
+      "comments": [],
+      "person_id": "p002",
+      "timestamp": "2019-08-11T16:20:00",
+      "liked_by_owner": false,
+      "image_asset": "assets/cases/s10/photos/andreas_beach.jpg"
+    },
+    {
+      "id": "post_p002_02",
+      "caption": "Nights. Four down, two to go. Send coffee.",
+      "location": "Cardiff",
+      "like_count": 78,
+      "tags": [],
+      "comments": [],
+      "person_id": "p002",
+      "timestamp": "2021-02-19T06:44:00",
+      "liked_by_owner": false,
+      "image_asset": "assets/cases/s10/photos/andreas_scrubs.jpg"
+    },
+    {
+      "id": "post_p002_03",
+      "caption": "Costas and Eleni finally did it. Cardiff, March, absolutely lashing it down, worth every second.",
+      "location": "Cardiff",
+      "like_count": 143,
+      "tags": [],
+      "comments": [],
+      "person_id": "p002",
+      "timestamp": "2026-03-14T22:50:00",
+      "liked_by_owner": false,
+      "image_asset": "assets/cases/s10/photos/andreas_wedding.jpg"
+    }
+  ]
+}

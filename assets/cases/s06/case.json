@@ -1,0 +1,4390 @@
+{
+  "schema": 2,
+  "id": "s06",
+  "meta": {
+    "title_key": "s06.meta.title",
+    "difficulty": "hard",
+    "city": {
+      "name": "Myawaddy",
+      "lat": 16.687,
+      "lng": 98.509
+    },
+    "thumbnail": "assets/cases/s06/photos/thumbnail.jpg",
+    "client": {
+      "person_id": "p001",
+      "name": "Jonas Halvorsen",
+      "photo": "assets/cases/s06/photos/jonas_profile.jpg"
+    },
+    "reveal_total": true
+  },
+  "device": {
+    "owner_name": "Station 14",
+    "model": "Tamm Note 12",
+    "ios_version": "Kite 13",
+    "storage_total_gb": 128,
+    "storage_used_gb": 41,
+    "last_backup": "2026-03-04T03:00:00",
+    "lock_pin": "140702",
+    "wallpaper_asset": "assets/cases/s06/photos/wallpaper.jpg"
+  },
+  "cast": [
+    {
+      "person_id": "p000",
+      "role": "victim",
+      "contact_saved": false
+    },
+    {
+      "person_id": "p001",
+      "role": "other",
+      "contact_saved": false
+    },
+    {
+      "person_id": "p002",
+      "role": "other",
+      "contact_saved": true,
+      "relationship_note_key": "s06.relationship.p002.note"
+    },
+    {
+      "person_id": "p003",
+      "role": "colleague",
+      "contact_saved": true,
+      "relationship_note_key": "s06.relationship.p003.note"
+    },
+    {
+      "person_id": "p004",
+      "role": "family",
+      "nickname": "Mama",
+      "contact_saved": true,
+      "relationship_note_key": "s06.relationship.p004.note"
+    },
+    {
+      "person_id": "p005",
+      "role": "colleague",
+      "contact_saved": true,
+      "relationship_note_key": "s06.relationship.p005.note"
+    },
+    {
+      "person_id": "p006",
+      "role": "other",
+      "contact_saved": true,
+      "relationship_note_key": "s06.relationship.p006.note"
+    },
+    {
+      "person_id": "p007",
+      "role": "other",
+      "contact_saved": false
+    }
+  ],
+  "contacts": [
+    {
+      "person_id": "p002",
+      "is_saved": true
+    },
+    {
+      "person_id": "p003",
+      "is_saved": true,
+      "custom_label_key": "s06.contact.p003.label"
+    },
+    {
+      "person_id": "p004",
+      "is_saved": true
+    },
+    {
+      "person_id": "p005",
+      "is_saved": true,
+      "custom_label_key": "s06.contact.p005.label"
+    },
+    {
+      "person_id": "p006",
+      "is_saved": true,
+      "custom_label_key": "s06.contact.p006.label"
+    }
+  ],
+  "home": {
+    "grid": [
+      "dating",
+      "whatsapp",
+      "gmail",
+      "slate",
+      "cloud",
+      "notes",
+      "photos",
+      "maps",
+      "vault",
+      "google",
+      "voice_memos",
+      "calendar",
+      "mines"
+    ],
+    "dock": [
+      "calls",
+      "sms",
+      "whatsapp",
+      "dating"
+    ],
+    "widget_pages": [
+      [
+        "slate",
+        "photos",
+        "calendar"
+      ],
+      [
+        "weather"
+      ]
+    ]
+  },
+  "board": {
+    "center_node_id": "b_phone",
+    "nodes": [
+      {
+        "id": "b_phone",
+        "type": "polaroid",
+        "title_key": "s06.board.phone.title",
+        "subtitle_key": "s06.board.phone.sub",
+        "image_asset": "assets/cases/s06/photos/evidence_phone.jpg",
+        "is_center": true
+      },
+      {
+        "id": "b_daniel",
+        "type": "polaroid",
+        "title_key": "s06.board.daniel.title",
+        "subtitle_key": "s06.board.daniel.sub",
+        "image_asset": "assets/cases/s06/photos/kasper_profile.jpg"
+      },
+      {
+        "id": "b_ingrid",
+        "type": "polaroid",
+        "title_key": "s06.board.ingrid.title",
+        "subtitle_key": "s06.board.ingrid.sub",
+        "image_asset": "assets/cases/s06/photos/ingrid_profile.jpg"
+      },
+      {
+        "id": "b_jonas",
+        "type": "polaroid",
+        "title_key": "s06.board.jonas.title",
+        "subtitle_key": "s06.board.jonas.sub",
+        "image_asset": "assets/cases/s06/photos/jonas_profile.jpg"
+      },
+      {
+        "id": "b_park",
+        "type": "map",
+        "title_key": "s06.board.park.title",
+        "subtitle_key": "s06.board.park.sub",
+        "image_asset": "assets/cases/s06/photos/gate.jpg"
+      },
+      {
+        "id": "b_house",
+        "type": "map",
+        "title_key": "s06.board.money.title",
+        "subtitle_key": "s06.board.money.sub",
+        "image_asset": "assets/cases/s06/photos/bergen_house.jpg"
+      },
+      {
+        "id": "b_police",
+        "type": "sticky_note",
+        "title_key": "s06.board.police.title",
+        "subtitle_key": "s06.board.police.sub"
+      }
+    ],
+    "edges": [
+      {
+        "id": "be_1",
+        "from": "b_phone",
+        "to": "b_daniel",
+        "label_key": "s06.board.e1",
+        "curvature": 0.13
+      },
+      {
+        "id": "be_2",
+        "from": "b_ingrid",
+        "to": "b_daniel",
+        "label_key": "s06.board.e2",
+        "curvature": 0.17
+      },
+      {
+        "id": "be_3",
+        "from": "b_jonas",
+        "to": "b_ingrid",
+        "label_key": "s06.board.e3",
+        "curvature": 0.11
+      },
+      {
+        "id": "be_4",
+        "from": "b_phone",
+        "to": "b_park",
+        "label_key": "s06.board.e4",
+        "curvature": 0.15
+      },
+      {
+        "id": "be_5",
+        "from": "b_daniel",
+        "to": "b_house",
+        "label_key": "s06.board.e5",
+        "curvature": 0.19
+      },
+      {
+        "id": "be_6",
+        "from": "b_police",
+        "to": "b_park",
+        "label_key": "s06.board.e6",
+        "curvature": 0.2
+      },
+      {
+        "id": "be_7",
+        "from": "b_jonas",
+        "to": "b_phone",
+        "label_key": "s06.board.e7",
+        "curvature": 0.12
+      },
+      {
+        "id": "be_8",
+        "from": "b_daniel",
+        "to": "b_phone",
+        "label_key": "s06.board.e8",
+        "curvature": 0.22
+      },
+      {
+        "id": "be_9",
+        "from": "b_ingrid",
+        "to": "b_house",
+        "label_key": "s06.board.e5",
+        "curvature": 0.1
+      }
+    ]
+  },
+  "chats": {
+    "intro": {
+      "client_person_id": "p001",
+      "messages": [
+        {
+          "id": "cc_001",
+          "sender": "client",
+          "text_key": "s06.client_chat.cc_001",
+          "timestamp": "2026-06-02T08:15:00",
+          "delay_ms": 0
+        },
+        {
+          "id": "cc_002",
+          "sender": "client",
+          "text_key": "s06.client_chat.cc_002",
+          "timestamp": "2026-06-02T08:15:13",
+          "delay_ms": 13000
+        },
+        {
+          "id": "cc_003",
+          "sender": "client",
+          "text_key": "s06.client_chat.cc_003",
+          "timestamp": "2026-06-02T08:15:26",
+          "delay_ms": 13000
+        },
+        {
+          "id": "cc_004",
+          "sender": "client",
+          "text_key": "s06.client_chat.cc_004",
+          "timestamp": "2026-06-02T08:15:37",
+          "delay_ms": 11000
+        },
+        {
+          "id": "cc_005",
+          "sender": "client",
+          "text_key": "s06.client_chat.cc_005",
+          "timestamp": "2026-06-02T08:15:51",
+          "delay_ms": 14000
+        },
+        {
+          "id": "cc_006",
+          "sender": "client",
+          "text_key": "s06.client_chat.cc_006",
+          "timestamp": "2026-06-02T08:16:04",
+          "delay_ms": 13000
+        },
+        {
+          "id": "cc_007",
+          "sender": "client",
+          "text_key": "s06.client_chat.cc_007",
+          "timestamp": "2026-06-02T08:16:13",
+          "delay_ms": 9000,
+          "is_choice": true,
+          "choices": [
+            {
+              "label_key": "s06.client_chat.cc_007.accept",
+              "action": "accept_case"
+            },
+            {
+              "label_key": "s06.client_chat.cc_007.decline",
+              "action": "decline_case"
+            }
+          ]
+        },
+        {
+          "id": "cc_008",
+          "sender": "client",
+          "text_key": "s06.client_chat.cc_008",
+          "timestamp": "2026-06-02T08:16:22",
+          "delay_ms": 7000
+        },
+        {
+          "id": "cc_009",
+          "sender": "client",
+          "text_key": "s06.client_chat.cc_009",
+          "timestamp": "2026-06-02T08:16:34",
+          "delay_ms": 12000
+        }
+      ]
+    },
+    "interstitials": [
+      {
+        "after_question": 5,
+        "client_person_id": "p001",
+        "messages": [
+          {
+            "id": "is1_001",
+            "sender": "client",
+            "text_key": "s06.interstitial.is1_001",
+            "timestamp": "2026-06-04T21:40:00",
+            "delay_ms": 0
+          },
+          {
+            "id": "is1_002",
+            "sender": "client",
+            "text_key": "s06.interstitial.is1_002",
+            "timestamp": "2026-06-04T21:40:14",
+            "delay_ms": 14000
+          },
+          {
+            "id": "is1_003",
+            "sender": "client",
+            "text_key": "s06.interstitial.is1_003",
+            "timestamp": "2026-06-04T21:40:26",
+            "delay_ms": 12000
+          }
+        ]
+      },
+      {
+        "after_question": 10,
+        "client_person_id": "p001",
+        "messages": [
+          {
+            "id": "is2_001",
+            "sender": "client",
+            "text_key": "s06.interstitial.is2_001",
+            "timestamp": "2026-06-08T23:05:00",
+            "delay_ms": 0
+          },
+          {
+            "id": "is2_002",
+            "sender": "client",
+            "text_key": "s06.interstitial.is2_002",
+            "timestamp": "2026-06-08T23:07:12",
+            "delay_ms": 16000
+          },
+          {
+            "id": "is2_003",
+            "sender": "client",
+            "text_key": "s06.interstitial.is2_003",
+            "timestamp": "2026-06-08T23:07:26",
+            "delay_ms": 14000
+          },
+          {
+            "id": "is2_004",
+            "sender": "client",
+            "text_key": "s06.interstitial.is2_004",
+            "timestamp": "2026-06-08T23:07:38",
+            "delay_ms": 12000
+          }
+        ]
+      },
+      {
+        "after_question": 13,
+        "client_person_id": "p001",
+        "messages": [
+          {
+            "id": "is3_001",
+            "sender": "client",
+            "text_key": "s06.interstitial.is3_001",
+            "timestamp": "2026-06-10T14:20:00",
+            "delay_ms": 0
+          },
+          {
+            "id": "is3_002",
+            "sender": "client",
+            "text_key": "s06.interstitial.is3_002",
+            "timestamp": "2026-06-10T14:20:11",
+            "delay_ms": 11000
+          },
+          {
+            "id": "is3_003",
+            "sender": "client",
+            "text_key": "s06.interstitial.is3_003",
+            "timestamp": "2026-06-10T14:20:24",
+            "delay_ms": 13000
+          },
+          {
+            "id": "is3_004",
+            "sender": "client",
+            "text_key": "s06.interstitial.is3_004",
+            "timestamp": "2026-06-10T14:20:32",
+            "delay_ms": 8000
+          }
+        ]
+      }
+    ],
+    "closing": {
+      "client_person_id": "p001",
+      "messages": [
+        {
+          "id": "cl_001",
+          "sender": "client",
+          "text_key": "s06.closing_chat.cl_001",
+          "timestamp": "2026-06-11T19:00:00",
+          "delay_ms": 0
+        },
+        {
+          "id": "cl_002",
+          "sender": "client",
+          "text_key": "s06.closing_chat.cl_002",
+          "timestamp": "2026-06-11T19:00:14",
+          "delay_ms": 14000
+        },
+        {
+          "id": "cl_003",
+          "sender": "client",
+          "text_key": "s06.closing_chat.cl_003",
+          "timestamp": "2026-06-11T19:00:25",
+          "delay_ms": 11000
+        },
+        {
+          "id": "cl_004",
+          "sender": "client",
+          "text_key": "s06.closing_chat.cl_004",
+          "timestamp": "2026-06-11T19:00:36",
+          "delay_ms": 11000
+        },
+        {
+          "id": "cl_005",
+          "sender": "client",
+          "text_key": "s06.closing_chat.cl_005",
+          "timestamp": "2026-06-11T19:00:52",
+          "delay_ms": 16000
+        },
+        {
+          "id": "cl_006",
+          "sender": "client",
+          "text_key": "s06.closing_chat.cl_006",
+          "timestamp": "2026-06-11T19:01:07",
+          "delay_ms": 15000
+        },
+        {
+          "id": "cl_007",
+          "sender": "client",
+          "text_key": "s06.closing_chat.cl_007",
+          "timestamp": "2026-06-11T19:01:16",
+          "delay_ms": 9000
+        },
+        {
+          "id": "cl_008",
+          "sender": "client",
+          "text_key": "s06.closing_chat.cl_008",
+          "timestamp": "2026-06-11T19:01:29",
+          "delay_ms": 13000
+        },
+        {
+          "id": "cl_009",
+          "sender": "client",
+          "text_key": "s06.closing_chat.cl_009",
+          "timestamp": "2026-06-11T19:01:45",
+          "delay_ms": 16000
+        },
+        {
+          "id": "cl_010",
+          "sender": "client",
+          "text_key": "s06.closing_chat.cl_010",
+          "timestamp": "2026-06-11T19:01:59",
+          "delay_ms": 14000
+        },
+        {
+          "id": "cl_011",
+          "sender": "client",
+          "text_key": "s06.closing_chat.cl_011",
+          "timestamp": "2026-06-11T19:02:08",
+          "delay_ms": 9000,
+          "is_choice": true,
+          "choices": [
+            {
+              "label_key": "s06.closing_chat.cl_011.opt1",
+              "action": "none",
+              "branch": "operator"
+            },
+            {
+              "label_key": "s06.closing_chat.cl_011.opt2",
+              "action": "none",
+              "branch": "floor"
+            },
+            {
+              "label_key": "s06.closing_chat.cl_011.opt3",
+              "action": "none",
+              "branch": "witness"
+            }
+          ]
+        },
+        {
+          "id": "cl_013",
+          "sender": "client",
+          "text_key": "s06.closing_chat.cl_013",
+          "timestamp": "2026-06-11T19:02:16",
+          "delay_ms": 5000,
+          "trigger": "operator"
+        },
+        {
+          "id": "cl_014",
+          "sender": "client",
+          "text_key": "s06.closing_chat.cl_014",
+          "timestamp": "2026-06-11T19:02:29",
+          "delay_ms": 13000,
+          "trigger": "operator"
+        },
+        {
+          "id": "cl_015",
+          "sender": "client",
+          "text_key": "s06.closing_chat.cl_015",
+          "timestamp": "2026-06-11T19:02:16",
+          "delay_ms": 5000,
+          "trigger": "floor"
+        },
+        {
+          "id": "cl_016",
+          "sender": "client",
+          "text_key": "s06.closing_chat.cl_016",
+          "timestamp": "2026-06-11T19:02:29",
+          "delay_ms": 13000,
+          "trigger": "floor"
+        },
+        {
+          "id": "cl_017",
+          "sender": "client",
+          "text_key": "s06.closing_chat.cl_017",
+          "timestamp": "2026-06-11T19:02:16",
+          "delay_ms": 5000,
+          "trigger": "witness"
+        },
+        {
+          "id": "cl_018",
+          "sender": "client",
+          "text_key": "s06.closing_chat.cl_018",
+          "timestamp": "2026-06-11T19:02:29",
+          "delay_ms": 13000,
+          "trigger": "witness"
+        },
+        {
+          "id": "cl_019",
+          "sender": "client",
+          "text_key": "s06.closing_chat.cl_019",
+          "timestamp": "2026-06-11T19:02:44",
+          "delay_ms": 15000
+        }
+      ]
+    }
+  },
+  "locks": [
+    {
+      "id": "step_001",
+      "order": 1,
+      "type": "find_password",
+      "note": "#announcements'taki sabitlenmiş mesaj giriş formülünü yazıyor: istasyon numarası + park baş harfleri + yıl. Station 14 icin 14skp2025",
+      "source_app": "workchat",
+      "source_item_id": "wc_001",
+      "target_app": "vault",
+      "hint_toast_key": "s06.lock.step_001.hint"
+    },
+    {
+      "id": "step_002",
+      "order": 2,
+      "type": "login_app",
+      "note": "Keychain acilir; kilitli albumun, kilitli notun ve kota dosyasinin parolalari burada",
+      "source_app": "workchat",
+      "source_item_id": "wc_001",
+      "target_app": "vault"
+    },
+    {
+      "id": "step_003",
+      "order": 3,
+      "type": "find_code",
+      "note": "Keychain'deki 'Photos — mine' kaydi dogum gununu tasiyor, gun ve ay: 1407. Ayni kod kilitli notu da aciyor",
+      "source_app": "vault",
+      "source_item_id": "v_002",
+      "target_app": "photos",
+      "target_item_id": "album_003",
+      "hint_toast_key": "s06.lock.step_003.hint"
+    },
+    {
+      "id": "step_004",
+      "order": 4,
+      "type": "find_code",
+      "note": "Keychain'deki 'Files — station quota' kaydi kat sorumlusunun imzasi ile istasyon numarasini birlestiriyor: laoban-14. Ceza sutunu ve komisyon sifiri sadece orada gorunuyor",
+      "source_app": "vault",
+      "source_item_id": "v_003",
+      "target_app": "cloud",
+      "target_item_id": "cf_003",
+      "hint_toast_key": "s06.lock.step_004.hint"
+    },
+    {
+      "id": "step_005",
+      "order": 5,
+      "type": "unlock_note",
+      "note": "Ayni 1407 kilitli notu aciyor: 409 gunluk sayim, Ingrid'in adi, ve laoban'in gercek adi",
+      "source_app": "vault",
+      "source_item_id": "v_002",
+      "target_app": "notes",
+      "target_item_id": "note_003"
+    }
+  ],
+  "questions": [
+    {
+      "index": 1,
+      "app": "dating",
+      "kind": "free_text",
+      "title_key": "s06.question.q01.title",
+      "prompt_key": "s06.question.q01.question",
+      "answers_key": "s06.question.q01.answers",
+      "reveal": {
+        "answer_key": "s06.question.q01.opt1",
+        "decoy_keys": [
+          "s06.question.q01.opt0",
+          "s06.question.q01.opt2",
+          "s06.question.q01.opt3"
+        ]
+      }
+    },
+    {
+      "index": 2,
+      "app": "cloud",
+      "kind": "free_text",
+      "title_key": "s06.question.q02.title",
+      "prompt_key": "s06.question.q02.question",
+      "answers_key": "s06.question.q02.answers",
+      "reveal": {
+        "answer_key": "s06.question.q02.opt1",
+        "decoy_keys": [
+          "s06.question.q02.opt0",
+          "s06.question.q02.opt2",
+          "s06.question.q02.opt3"
+        ]
+      }
+    },
+    {
+      "index": 3,
+      "app": "cloud",
+      "kind": "free_text",
+      "title_key": "s06.question.q03.title",
+      "prompt_key": "s06.question.q03.question",
+      "answers_key": "s06.question.q03.answers",
+      "reveal": {
+        "answer_key": "s06.question.q03.opt1",
+        "decoy_keys": [
+          "s06.question.q03.opt0",
+          "s06.question.q03.opt2",
+          "s06.question.q03.opt3"
+        ]
+      }
+    },
+    {
+      "index": 4,
+      "app": "whatsapp",
+      "kind": "free_text",
+      "title_key": "s06.question.q04.title",
+      "prompt_key": "s06.question.q04.question",
+      "answers_key": "s06.question.q04.answers",
+      "reveal": {
+        "answer_key": "s06.question.q04.opt1",
+        "decoy_keys": [
+          "s06.question.q04.opt0",
+          "s06.question.q04.opt2",
+          "s06.question.q04.opt3"
+        ]
+      }
+    },
+    {
+      "index": 5,
+      "app": "slate",
+      "kind": "free_text",
+      "title_key": "s06.question.q05.title",
+      "prompt_key": "s06.question.q05.question",
+      "answers_key": "s06.question.q05.answers",
+      "reveal": {
+        "answer_key": "s06.question.q05.opt1",
+        "decoy_keys": [
+          "s06.question.q05.opt0",
+          "s06.question.q05.opt2",
+          "s06.question.q05.opt3"
+        ]
+      }
+    },
+    {
+      "index": 6,
+      "app": "photos",
+      "kind": "free_text",
+      "title_key": "s06.question.q06.title",
+      "prompt_key": "s06.question.q06.question",
+      "answers_key": "s06.question.q06.answers",
+      "reveal": {
+        "answer_key": "s06.question.q06.opt1",
+        "decoy_keys": [
+          "s06.question.q06.opt0",
+          "s06.question.q06.opt2",
+          "s06.question.q06.opt3"
+        ]
+      }
+    },
+    {
+      "index": 7,
+      "app": "maps",
+      "kind": "free_text",
+      "title_key": "s06.question.q07.title",
+      "prompt_key": "s06.question.q07.question",
+      "answers_key": "s06.question.q07.answers",
+      "reveal": {
+        "answer_key": "s06.question.q07.opt1",
+        "decoy_keys": [
+          "s06.question.q07.opt0",
+          "s06.question.q07.opt2",
+          "s06.question.q07.opt3"
+        ]
+      }
+    },
+    {
+      "index": 8,
+      "app": "gmail",
+      "kind": "free_text",
+      "title_key": "s06.question.q08.title",
+      "prompt_key": "s06.question.q08.question",
+      "answers_key": "s06.question.q08.answers",
+      "reveal": {
+        "answer_key": "s06.question.q08.opt1",
+        "decoy_keys": [
+          "s06.question.q08.opt0",
+          "s06.question.q08.opt2",
+          "s06.question.q08.opt3"
+        ]
+      }
+    },
+    {
+      "index": 9,
+      "app": "cloud",
+      "kind": "multi_select",
+      "title_key": "s06.question.q09.title",
+      "prompt_key": "s06.question.q09.question",
+      "options": [
+        "s06.question.q09.opt0",
+        "s06.question.q09.opt1",
+        "s06.question.q09.opt2",
+        "s06.question.q09.opt3",
+        "s06.question.q09.opt4",
+        "s06.question.q09.opt5"
+      ],
+      "correct_indices": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "index": 10,
+      "app": "gmail",
+      "kind": "free_text",
+      "title_key": "s06.question.q10.title",
+      "prompt_key": "s06.question.q10.question",
+      "answers_key": "s06.question.q10.answers",
+      "reveal": {
+        "answer_key": "s06.question.q10.opt1",
+        "decoy_keys": [
+          "s06.question.q10.opt0",
+          "s06.question.q10.opt2",
+          "s06.question.q10.opt3"
+        ]
+      },
+      "audio": {
+        "asset": "assets/cases/s06/audio/emeka_mama_{lang}.mp3",
+        "langs": [
+          "en"
+        ],
+        "transcript_key": "s06.memos.vm_001.transcript"
+      }
+    },
+    {
+      "index": 11,
+      "app": "cloud",
+      "kind": "free_text",
+      "title_key": "s06.question.q11.title",
+      "prompt_key": "s06.question.q11.question",
+      "answers_key": "s06.question.q11.answers",
+      "reveal": {
+        "answer_key": "s06.question.q11.opt2",
+        "decoy_keys": [
+          "s06.question.q11.opt0",
+          "s06.question.q11.opt1",
+          "s06.question.q11.opt3"
+        ]
+      }
+    },
+    {
+      "index": 12,
+      "app": "gmail",
+      "kind": "timeline",
+      "title_key": "s06.question.q12.title",
+      "prompt_key": "s06.question.q12.question",
+      "events": [
+        "s06.question.q12.ev0",
+        "s06.question.q12.ev1",
+        "s06.question.q12.ev2",
+        "s06.question.q12.ev3",
+        "s06.question.q12.ev4",
+        "s06.question.q12.ev5"
+      ],
+      "order": [
+        2,
+        5,
+        4,
+        0,
+        3,
+        1
+      ]
+    },
+    {
+      "index": 13,
+      "app": "photos",
+      "kind": "free_text",
+      "title_key": "s06.question.q13.title",
+      "prompt_key": "s06.question.q13.question",
+      "answers_key": "s06.question.q13.answers",
+      "reveal": {
+        "answer_key": "s06.question.q13.opt1",
+        "decoy_keys": [
+          "s06.question.q13.opt0",
+          "s06.question.q13.opt2",
+          "s06.question.q13.opt3"
+        ]
+      }
+    },
+    {
+      "index": 14,
+      "app": "gmail",
+      "kind": "free_text",
+      "title_key": "s06.question.q14.title",
+      "prompt_key": "s06.question.q14.question",
+      "answers_key": "s06.question.q14.answers",
+      "reveal": {
+        "answer_key": "s06.question.q14.opt1",
+        "decoy_keys": [
+          "s06.question.q14.opt0",
+          "s06.question.q14.opt2",
+          "s06.question.q14.opt3"
+        ]
+      }
+    },
+    {
+      "index": 15,
+      "app": "slate",
+      "kind": "suspect",
+      "title_key": "s06.question.q15.title",
+      "prompt_key": "s06.question.q15.question",
+      "person_ids": [
+        "p000",
+        "p003",
+        "p006",
+        "p007"
+      ],
+      "correct_person_id": "p003"
+    }
+  ],
+  "apps": {
+    "sms": {
+      "conversations": [
+        {
+          "contact_person_id": "p006",
+          "messages": [
+            {
+              "id": "sms_001",
+              "sender": "contact",
+              "text_key": "s06.messages.sms_001",
+              "timestamp": "2024-11-04T14:20:00",
+              "is_deleted": false
+            },
+            {
+              "id": "sms_002",
+              "sender": "user",
+              "text_key": "s06.messages.sms_002",
+              "timestamp": "2024-11-04T14:44:00",
+              "is_deleted": false
+            },
+            {
+              "id": "sms_003",
+              "sender": "contact",
+              "text_key": "s06.messages.sms_003",
+              "timestamp": "2024-11-04T14:47:00",
+              "is_deleted": false
+            },
+            {
+              "id": "sms_004",
+              "sender": "user",
+              "text_key": "s06.messages.sms_004",
+              "timestamp": "2024-11-30T09:05:00",
+              "is_deleted": false
+            },
+            {
+              "id": "sms_005",
+              "sender": "user",
+              "text_key": "s06.messages.sms_005",
+              "timestamp": "2024-12-06T22:40:00",
+              "is_deleted": false
+            },
+            {
+              "id": "sms_006",
+              "sender": "user",
+              "text_key": "s06.messages.sms_006",
+              "timestamp": "2025-02-11T01:15:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_101",
+              "sender": "user",
+              "text_key": "s06.messages.f_sms_101",
+              "timestamp": "2025-03-19T23:50:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_102",
+              "sender": "user",
+              "text_key": "s06.messages.f_sms_102",
+              "timestamp": "2025-04-27T01:40:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_103",
+              "sender": "user",
+              "text_key": "s06.messages.f_sms_103",
+              "timestamp": "2025-06-08T02:15:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_104",
+              "sender": "user",
+              "text_key": "s06.messages.f_sms_104",
+              "timestamp": "2025-07-14T23:05:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_105",
+              "sender": "user",
+              "text_key": "s06.messages.f_sms_105",
+              "timestamp": "2025-09-02T01:20:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_106",
+              "sender": "user",
+              "text_key": "s06.messages.f_sms_106",
+              "timestamp": "2025-10-11T02:44:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_107",
+              "sender": "user",
+              "text_key": "s06.messages.f_sms_107",
+              "timestamp": "2025-12-25T09:02:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_108",
+              "sender": "user",
+              "text_key": "s06.messages.f_sms_108",
+              "timestamp": "2026-02-20T03:10:00",
+              "is_deleted": false
+            }
+          ]
+        },
+        {
+          "contact_person_id": "p003",
+          "messages": [
+            {
+              "id": "sms_010",
+              "sender": "contact",
+              "text_key": "s06.messages.sms_010",
+              "timestamp": "2025-11-17T22:04:00",
+              "is_deleted": false
+            },
+            {
+              "id": "sms_011",
+              "sender": "user",
+              "text_key": "s06.messages.sms_011",
+              "timestamp": "2025-11-17T22:05:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_121",
+              "sender": "contact",
+              "text_key": "s06.messages.f_sms_121",
+              "timestamp": "2025-06-05T22:10:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_122",
+              "sender": "user",
+              "text_key": "s06.messages.f_sms_122",
+              "timestamp": "2025-06-05T22:11:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_123",
+              "sender": "contact",
+              "text_key": "s06.messages.f_sms_123",
+              "timestamp": "2025-10-28T23:00:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_124",
+              "sender": "user",
+              "text_key": "s06.messages.f_sms_124",
+              "timestamp": "2025-10-28T23:01:00",
+              "is_deleted": false
+            }
+          ]
+        }
+      ]
+    },
+    "whatsapp": {
+      "conversations": [
+        {
+          "contact_person_id": "p002",
+          "last_seen": "2026-06-01T23:40:00",
+          "messages": [
+            {
+              "id": "wa_001",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s06.chats.wa_001",
+              "timestamp": "2025-05-06T10:20:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "wa_002",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s06.chats.wa_002",
+              "timestamp": "2025-05-06T10:31:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "wa_003",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s06.chats.wa_003",
+              "timestamp": "2025-05-06T10:34:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "wa_010",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s06.chats.wa_010",
+              "timestamp": "2025-07-22T03:12:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "wa_011",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s06.chats.wa_011",
+              "timestamp": "2025-07-22T03:14:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "wa_012",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s06.chats.wa_012",
+              "timestamp": "2025-07-22T03:15:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "wa_013",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s06.chats.wa_013",
+              "timestamp": "2025-07-22T03:21:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "wa_020",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s06.chats.wa_020",
+              "timestamp": "2025-09-30T11:02:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "wa_021",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s06.chats.wa_021",
+              "timestamp": "2025-09-30T11:09:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "wa_030",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s06.chats.wa_030",
+              "timestamp": "2025-11-13T15:44:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "wa_031",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s06.chats.wa_031",
+              "timestamp": "2025-11-13T15:58:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "wa_032",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s06.chats.wa_032",
+              "timestamp": "2025-11-13T16:20:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "wa_040",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s06.chats.wa_040",
+              "timestamp": "2025-11-21T06:40:00",
+              "is_read": false,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "wa_041",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s06.chats.wa_041",
+              "timestamp": "2025-11-21T09:12:00",
+              "is_read": false,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f_wa_101",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s06.chats.f_wa_101",
+              "timestamp": "2025-05-14T10:20:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f_wa_102",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s06.chats.f_wa_102",
+              "timestamp": "2025-05-14T10:52:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f_wa_103",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s06.chats.f_wa_103",
+              "timestamp": "2025-06-03T10:20:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f_wa_104",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s06.chats.f_wa_104",
+              "timestamp": "2025-06-03T11:05:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f_wa_105",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s06.chats.f_wa_105",
+              "timestamp": "2025-06-21T10:20:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f_wa_106",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s06.chats.f_wa_106",
+              "timestamp": "2025-06-21T10:40:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f_wa_107",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s06.chats.f_wa_107",
+              "timestamp": "2025-08-09T10:20:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f_wa_108",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s06.chats.f_wa_108",
+              "timestamp": "2025-08-09T10:33:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f_wa_109",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s06.chats.f_wa_109",
+              "timestamp": "2025-08-27T10:20:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f_wa_110",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s06.chats.f_wa_110",
+              "timestamp": "2025-08-27T12:14:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f_wa_111",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s06.chats.f_wa_111",
+              "timestamp": "2025-09-11T10:20:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f_wa_112",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s06.chats.f_wa_112",
+              "timestamp": "2025-09-11T10:26:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f_wa_113",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s06.chats.f_wa_113",
+              "timestamp": "2025-10-08T10:20:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f_wa_114",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s06.chats.f_wa_114",
+              "timestamp": "2025-10-08T10:44:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f_wa_115",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s06.chats.f_wa_115",
+              "timestamp": "2025-10-25T10:20:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f_wa_116",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s06.chats.f_wa_116",
+              "timestamp": "2025-10-25T10:31:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            }
+          ]
+        }
+      ],
+      "groups": [],
+      "statuses": []
+    },
+    "gmail": {
+      "account_email": "emeka.nwachukwu02@gmail.com",
+      "login_required": false,
+      "password": null,
+      "inbox": [
+        {
+          "id": "gm_001",
+          "from": {
+            "display_name": "Bakare Overseas Placements",
+            "email": "placements@bakare-overseas.ng",
+            "person_id": "p006"
+          },
+          "to": [
+            "emeka.nwachukwu02@gmail.com"
+          ],
+          "subject_key": "s06.mail.gm_001.subject",
+          "body_key": "s06.mail.gm_001.body",
+          "timestamp": "2024-11-02T11:40:00",
+          "is_read": true,
+          "is_starred": true,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "gm_002",
+          "from": {
+            "display_name": "Ethiopian Airlines",
+            "email": "no-reply@booking-confirm.net",
+            "person_id": null
+          },
+          "to": [
+            "emeka.nwachukwu02@gmail.com"
+          ],
+          "subject_key": "s06.mail.gm_002.subject",
+          "body_key": "s06.mail.gm_002.body",
+          "timestamp": "2024-11-19T16:05:00",
+          "is_read": true,
+          "is_starred": true,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "updates"
+        },
+        {
+          "id": "gm_003",
+          "from": {
+            "display_name": "Tunde Bakare",
+            "email": "placements@bakare-overseas.ng",
+            "person_id": "p006"
+          },
+          "to": [
+            "emeka.nwachukwu02@gmail.com"
+          ],
+          "subject_key": "s06.mail.gm_003.subject",
+          "body_key": "s06.mail.gm_003.body",
+          "timestamp": "2024-11-22T09:15:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "gm_007",
+          "from": {
+            "display_name": "Spark",
+            "email": "hello@spark-dating.app",
+            "person_id": null
+          },
+          "to": [
+            "d.vestergaard.eng@gmail.com"
+          ],
+          "subject_key": "s06.mail.gm_007.subject",
+          "body_key": "s06.mail.gm_007.body",
+          "timestamp": "2026-05-28T07:00:00",
+          "is_read": false,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "updates"
+        },
+        {
+          "id": "f_gm_101",
+          "from": {
+            "display_name": "Bakare Overseas Placements",
+            "email": "placements@bakare-overseas.ng",
+            "person_id": null
+          },
+          "to": [
+            "emeka.nwachukwu02@gmail.com"
+          ],
+          "subject_key": "s06.mail.f_gm_101.subject",
+          "body_key": "s06.mail.f_gm_101.body",
+          "timestamp": "2024-11-05T10:20:00",
+          "is_read": false,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_102",
+          "from": {
+            "display_name": "Bakare Overseas Placements",
+            "email": "placements@bakare-overseas.ng",
+            "person_id": null
+          },
+          "to": [
+            "emeka.nwachukwu02@gmail.com"
+          ],
+          "subject_key": "s06.mail.f_gm_102.subject",
+          "body_key": "s06.mail.f_gm_102.body",
+          "timestamp": "2024-11-08T15:35:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_103",
+          "from": {
+            "display_name": "Bakare Overseas Placements",
+            "email": "placements@bakare-overseas.ng",
+            "person_id": null
+          },
+          "to": [
+            "emeka.nwachukwu02@gmail.com"
+          ],
+          "subject_key": "s06.mail.f_gm_103.subject",
+          "body_key": "s06.mail.f_gm_103.body",
+          "timestamp": "2024-11-12T12:05:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_104",
+          "from": {
+            "display_name": "Bakare Overseas Placements",
+            "email": "placements@bakare-overseas.ng",
+            "person_id": null
+          },
+          "to": [
+            "emeka.nwachukwu02@gmail.com"
+          ],
+          "subject_key": "s06.mail.f_gm_104.subject",
+          "body_key": "s06.mail.f_gm_104.body",
+          "timestamp": "2024-11-18T17:50:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_105",
+          "from": {
+            "display_name": "Ethiopian Airlines",
+            "email": "no-reply@booking-confirm.net",
+            "person_id": null
+          },
+          "to": [
+            "emeka.nwachukwu02@gmail.com"
+          ],
+          "subject_key": "s06.mail.f_gm_105.subject",
+          "body_key": "s06.mail.f_gm_105.body",
+          "timestamp": "2024-11-25T06:00:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_106",
+          "from": {
+            "display_name": "Ethiopian Airlines",
+            "email": "no-reply@booking-confirm.net",
+            "person_id": null
+          },
+          "to": [
+            "emeka.nwachukwu02@gmail.com"
+          ],
+          "subject_key": "s06.mail.f_gm_106.subject",
+          "body_key": "s06.mail.f_gm_106.body",
+          "timestamp": "2024-11-26T21:15:00",
+          "is_read": false,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_107",
+          "from": {
+            "display_name": "GTBank",
+            "email": "alerts@gtbank.com",
+            "person_id": null
+          },
+          "to": [
+            "emeka.nwachukwu02@gmail.com"
+          ],
+          "subject_key": "s06.mail.f_gm_107.subject",
+          "body_key": "s06.mail.f_gm_107.body",
+          "timestamp": "2024-11-08T15:40:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_108",
+          "from": {
+            "display_name": "GTBank",
+            "email": "alerts@gtbank.com",
+            "person_id": null
+          },
+          "to": [
+            "emeka.nwachukwu02@gmail.com"
+          ],
+          "subject_key": "s06.mail.f_gm_108.subject",
+          "body_key": "s06.mail.f_gm_108.body",
+          "timestamp": "2024-12-01T08:00:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_109",
+          "from": {
+            "display_name": "University of Lagos",
+            "email": "admissions@unilag.edu.ng",
+            "person_id": null
+          },
+          "to": [
+            "emeka.nwachukwu02@gmail.com"
+          ],
+          "subject_key": "s06.mail.f_gm_109.subject",
+          "body_key": "s06.mail.f_gm_109.body",
+          "timestamp": "2024-10-14T09:30:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_110",
+          "from": {
+            "display_name": "University of Lagos",
+            "email": "admissions@unilag.edu.ng",
+            "person_id": null
+          },
+          "to": [
+            "emeka.nwachukwu02@gmail.com"
+          ],
+          "subject_key": "s06.mail.f_gm_110.subject",
+          "body_key": "s06.mail.f_gm_110.body",
+          "timestamp": "2025-09-08T09:30:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_111",
+          "from": {
+            "display_name": "Ngozi Okafor",
+            "email": "ngozi.okafor58@yahoo.com",
+            "person_id": null
+          },
+          "to": [
+            "emeka.nwachukwu02@gmail.com"
+          ],
+          "subject_key": "s06.mail.f_gm_111.subject",
+          "body_key": "s06.mail.f_gm_111.body",
+          "timestamp": "2025-02-25T13:10:00",
+          "is_read": false,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_112",
+          "from": {
+            "display_name": "Ngozi Okafor",
+            "email": "ngozi.okafor58@yahoo.com",
+            "person_id": null
+          },
+          "to": [
+            "emeka.nwachukwu02@gmail.com"
+          ],
+          "subject_key": "s06.mail.f_gm_112.subject",
+          "body_key": "s06.mail.f_gm_112.body",
+          "timestamp": "2026-01-19T13:10:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_113",
+          "from": {
+            "display_name": "Embassy of Nigeria, Yangon",
+            "email": "no-reply@nigeriaembassy-mm.org",
+            "person_id": null
+          },
+          "to": [
+            "emeka.nwachukwu02@gmail.com"
+          ],
+          "subject_key": "s06.mail.f_gm_113.subject",
+          "body_key": "s06.mail.f_gm_113.body",
+          "timestamp": "2025-05-04T02:31:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_114",
+          "from": {
+            "display_name": "Google",
+            "email": "no-reply@accounts.google.com",
+            "person_id": null
+          },
+          "to": [
+            "d.vestergaard.eng@gmail.com"
+          ],
+          "subject_key": "s06.mail.f_gm_114.subject",
+          "body_key": "s06.mail.f_gm_114.body",
+          "timestamp": "2025-03-14T18:02:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_115",
+          "from": {
+            "display_name": "Google",
+            "email": "no-reply@accounts.google.com",
+            "person_id": null
+          },
+          "to": [
+            "d.vestergaard.eng@gmail.com"
+          ],
+          "subject_key": "s06.mail.f_gm_115.subject",
+          "body_key": "s06.mail.f_gm_115.body",
+          "timestamp": "2025-08-07T18:44:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_116",
+          "from": {
+            "display_name": "Spark",
+            "email": "hello@spark-dating.app",
+            "person_id": null
+          },
+          "to": [
+            "d.vestergaard.eng@gmail.com"
+          ],
+          "subject_key": "s06.mail.f_gm_116.subject",
+          "body_key": "s06.mail.f_gm_116.body",
+          "timestamp": "2025-03-14T18:10:00",
+          "is_read": false,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_117",
+          "from": {
+            "display_name": "Spark",
+            "email": "hello@spark-dating.app",
+            "person_id": null
+          },
+          "to": [
+            "d.vestergaard.eng@gmail.com"
+          ],
+          "subject_key": "s06.mail.f_gm_117.subject",
+          "body_key": "s06.mail.f_gm_117.body",
+          "timestamp": "2025-10-02T09:20:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_118",
+          "from": {
+            "display_name": "Spark",
+            "email": "hello@spark-dating.app",
+            "person_id": null
+          },
+          "to": [
+            "d.vestergaard.eng@gmail.com"
+          ],
+          "subject_key": "s06.mail.f_gm_118.subject",
+          "body_key": "s06.mail.f_gm_118.body",
+          "timestamp": "2025-11-06T07:30:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        }
+      ],
+      "sent": [],
+      "drafts": [
+        {
+          "id": "gm_004",
+          "from": {
+            "display_name": "Emeka Nwachukwu",
+            "email": "emeka.nwachukwu02@gmail.com",
+            "person_id": null
+          },
+          "to": [
+            "chidinma.nwachukwu@yahoo.com"
+          ],
+          "subject_key": "s06.mail.gm_004.subject",
+          "body_key": "s06.mail.gm_004.body",
+          "timestamp": "2024-12-14T23:40:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": true,
+          "must_delete_after_use": false,
+          "category": "primary",
+          "draft_note": "Draft 1 of 41. Never sent."
+        },
+        {
+          "id": "gm_005",
+          "from": {
+            "display_name": "Emeka Nwachukwu",
+            "email": "emeka.nwachukwu02@gmail.com",
+            "person_id": null
+          },
+          "to": [
+            "chidinma.nwachukwu@yahoo.com"
+          ],
+          "subject_key": "s06.mail.gm_005.subject",
+          "body_key": "s06.mail.gm_005.body",
+          "timestamp": "2025-04-02T02:10:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": true,
+          "must_delete_after_use": false,
+          "category": "primary",
+          "draft_note": "Draft 19 of 41. Never sent."
+        },
+        {
+          "id": "gm_006",
+          "from": {
+            "display_name": "Emeka Nwachukwu",
+            "email": "emeka.nwachukwu02@gmail.com",
+            "person_id": null
+          },
+          "to": [
+            "chidinma.nwachukwu@yahoo.com"
+          ],
+          "subject_key": "s06.mail.gm_006.subject",
+          "body_key": "s06.mail.gm_006.body",
+          "timestamp": "2025-11-21T04:30:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": true,
+          "must_delete_after_use": false,
+          "category": "primary",
+          "draft_note": "Draft 41 of 41. The last one. Never sent."
+        },
+        {
+          "id": "f_gm_121",
+          "from": {
+            "display_name": "Emeka Nwachukwu",
+            "email": "emeka.nwachukwu02@gmail.com",
+            "person_id": null
+          },
+          "to": [
+            "chidinma.nwachukwu@yahoo.com"
+          ],
+          "subject_key": "s06.mail.f_gm_121.subject",
+          "body_key": "s06.mail.f_gm_121.body",
+          "timestamp": "2025-01-11T03:20:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": true,
+          "must_delete_after_use": false,
+          "category": "primary",
+          "draft_note": "Draft 4 of 41. Never sent."
+        },
+        {
+          "id": "f_gm_122",
+          "from": {
+            "display_name": "Emeka Nwachukwu",
+            "email": "emeka.nwachukwu02@gmail.com",
+            "person_id": null
+          },
+          "to": [
+            "chidinma.nwachukwu@yahoo.com"
+          ],
+          "subject_key": "s06.mail.f_gm_122.subject",
+          "body_key": "s06.mail.f_gm_122.body",
+          "timestamp": "2025-02-02T02:50:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": true,
+          "must_delete_after_use": false,
+          "category": "primary",
+          "draft_note": "Draft 7 of 41. Never sent."
+        },
+        {
+          "id": "f_gm_123",
+          "from": {
+            "display_name": "Emeka Nwachukwu",
+            "email": "emeka.nwachukwu02@gmail.com",
+            "person_id": null
+          },
+          "to": [
+            "chidinma.nwachukwu@yahoo.com"
+          ],
+          "subject_key": "s06.mail.f_gm_123.subject",
+          "body_key": "s06.mail.f_gm_123.body",
+          "timestamp": "2025-03-01T04:05:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": true,
+          "must_delete_after_use": false,
+          "category": "primary",
+          "draft_note": "Draft 11 of 41. Never sent."
+        },
+        {
+          "id": "f_gm_124",
+          "from": {
+            "display_name": "Emeka Nwachukwu",
+            "email": "emeka.nwachukwu02@gmail.com",
+            "person_id": null
+          },
+          "to": [
+            "chidinma.nwachukwu@yahoo.com"
+          ],
+          "subject_key": "s06.mail.f_gm_124.subject",
+          "body_key": "s06.mail.f_gm_124.body",
+          "timestamp": "2025-03-24T02:35:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": true,
+          "must_delete_after_use": false,
+          "category": "primary",
+          "draft_note": "Draft 16 of 41. Never sent."
+        },
+        {
+          "id": "f_gm_125",
+          "from": {
+            "display_name": "Emeka Nwachukwu",
+            "email": "emeka.nwachukwu02@gmail.com",
+            "person_id": null
+          },
+          "to": [
+            "chidinma.nwachukwu@yahoo.com"
+          ],
+          "subject_key": "s06.mail.f_gm_125.subject",
+          "body_key": "s06.mail.f_gm_125.body",
+          "timestamp": "2025-05-18T03:10:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": true,
+          "must_delete_after_use": false,
+          "category": "primary",
+          "draft_note": "Draft 23 of 41. Never sent."
+        },
+        {
+          "id": "f_gm_126",
+          "from": {
+            "display_name": "Emeka Nwachukwu",
+            "email": "emeka.nwachukwu02@gmail.com",
+            "person_id": null
+          },
+          "to": [
+            "chidinma.nwachukwu@yahoo.com"
+          ],
+          "subject_key": "s06.mail.f_gm_126.subject",
+          "body_key": "s06.mail.f_gm_126.body",
+          "timestamp": "2025-07-06T02:25:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": true,
+          "must_delete_after_use": false,
+          "category": "primary",
+          "draft_note": "Draft 27 of 41. Never sent."
+        },
+        {
+          "id": "f_gm_127",
+          "from": {
+            "display_name": "Emeka Nwachukwu",
+            "email": "emeka.nwachukwu02@gmail.com",
+            "person_id": null
+          },
+          "to": [
+            "chidinma.nwachukwu@yahoo.com"
+          ],
+          "subject_key": "s06.mail.f_gm_127.subject",
+          "body_key": "s06.mail.f_gm_127.body",
+          "timestamp": "2025-08-17T03:45:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": true,
+          "must_delete_after_use": false,
+          "category": "primary",
+          "draft_note": "Draft 31 of 41. Never sent."
+        },
+        {
+          "id": "f_gm_128",
+          "from": {
+            "display_name": "Emeka Nwachukwu",
+            "email": "emeka.nwachukwu02@gmail.com",
+            "person_id": null
+          },
+          "to": [
+            "chidinma.nwachukwu@yahoo.com"
+          ],
+          "subject_key": "s06.mail.f_gm_128.subject",
+          "body_key": "s06.mail.f_gm_128.body",
+          "timestamp": "2025-10-12T02:15:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": true,
+          "must_delete_after_use": false,
+          "category": "primary",
+          "draft_note": "Draft 36 of 41. Never sent."
+        },
+        {
+          "id": "f_gm_129",
+          "from": {
+            "display_name": "Emeka Nwachukwu",
+            "email": "emeka.nwachukwu02@gmail.com",
+            "person_id": null
+          },
+          "to": [
+            "chidinma.nwachukwu@yahoo.com"
+          ],
+          "subject_key": "s06.mail.f_gm_129.subject",
+          "body_key": "s06.mail.f_gm_129.body",
+          "timestamp": "2025-11-09T03:55:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": true,
+          "must_delete_after_use": false,
+          "category": "primary",
+          "draft_note": "Draft 39 of 41. Never sent."
+        }
+      ],
+      "trash": []
+    },
+    "maps": {
+      "location_history": [
+        {
+          "id": "loc_001",
+          "name_key": "s06.maps.loc_001.name",
+          "category": "other",
+          "address_key": "s06.maps.loc_001.address",
+          "lat": 16.6874,
+          "lng": 98.5093,
+          "visited_at": "2026-03-04T06:00:00",
+          "duration_minutes": 588960,
+          "note_key": "s06.maps.loc_001.note"
+        },
+        {
+          "id": "loc_002",
+          "name_key": "s06.maps.loc_002.name",
+          "category": "restaurant",
+          "address_key": "s06.maps.loc_002.address",
+          "lat": 16.6871,
+          "lng": 98.5089,
+          "visited_at": "2026-03-03T12:30:00",
+          "duration_minutes": 25
+        },
+        {
+          "id": "loc_003",
+          "name_key": "s06.maps.loc_003.name",
+          "category": "other",
+          "address_key": "s06.maps.loc_003.address",
+          "lat": 16.6868,
+          "lng": 98.5086,
+          "visited_at": "2026-03-03T23:10:00",
+          "duration_minutes": 380
+        },
+        {
+          "id": "loc_004",
+          "name_key": "s06.maps.loc_004.name",
+          "category": "other",
+          "address_key": "s06.maps.loc_004.address",
+          "lat": 16.688,
+          "lng": 98.5097,
+          "visited_at": "2024-11-28T04:20:00",
+          "duration_minutes": 12,
+          "note_key": "s06.maps.loc_004.note"
+        },
+        {
+          "id": "loc_005",
+          "name_key": "s06.maps.loc_005.name",
+          "category": "other",
+          "address_key": "s06.maps.loc_005.address",
+          "lat": 6.5774,
+          "lng": 3.3212,
+          "visited_at": "2024-11-19T20:50:00",
+          "duration_minutes": 190
+        },
+        {
+          "id": "loc_006",
+          "name_key": "s06.maps.loc_006.name",
+          "category": "other",
+          "address_key": "s06.maps.loc_006.address",
+          "lat": 13.69,
+          "lng": 100.7501,
+          "visited_at": "2024-11-27T15:10:00",
+          "duration_minutes": 95
+        }
+      ],
+      "saved_places": []
+    },
+    "calendar": {
+      "events": [
+        {
+          "id": "ev_001",
+          "title_key": "s06.calendar.ev_001",
+          "type": "work",
+          "start": "2026-03-04T06:00:00",
+          "end": "2026-03-04T06:15:00",
+          "is_all_day": false,
+          "recurrence": "daily",
+          "color": "#7F1D1D",
+          "is_deleted": false
+        },
+        {
+          "id": "ev_002",
+          "title_key": "s06.calendar.ev_002",
+          "type": "work",
+          "start": "2026-03-03T22:00:00",
+          "end": "2026-03-03T22:30:00",
+          "is_all_day": false,
+          "recurrence": "daily",
+          "color": "#7F1D1D",
+          "is_deleted": false
+        },
+        {
+          "id": "ev_003",
+          "title_key": "s06.calendar.ev_003",
+          "type": "work",
+          "start": "2025-04-25T19:00:00",
+          "end": "2025-04-25T21:00:00",
+          "notes_key": "s06.calendar.ev_003.notes",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#B45309",
+          "is_deleted": false
+        },
+        {
+          "id": "ev_004",
+          "title_key": "s06.calendar.ev_004",
+          "type": "personal",
+          "start": "2026-08-09T00:00:00",
+          "end": "2026-08-09T23:59:00",
+          "is_all_day": true,
+          "recurrence": "yearly",
+          "color": "#166534",
+          "is_deleted": false
+        },
+        {
+          "id": "ev_005",
+          "title_key": "s06.calendar.ev_005",
+          "type": "work",
+          "start": "2025-09-11T05:00:00",
+          "end": "2025-09-11T06:00:00",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#7F1D1D",
+          "is_deleted": false
+        },
+        {
+          "id": "ev_006",
+          "title_key": "s06.calendar.ev_006",
+          "type": "personal",
+          "start": "2026-01-10T00:00:00",
+          "end": "2026-01-10T23:59:00",
+          "is_all_day": true,
+          "recurrence": "none",
+          "color": "#166534",
+          "is_deleted": false
+        },
+        {
+          "id": "f_ev_101",
+          "title_key": "s06.calendar.f_ev_101",
+          "type": "work",
+          "start": "2025-02-06T19:00:00",
+          "end": "2025-02-06T20:00:00",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#64748B",
+          "is_deleted": false
+        },
+        {
+          "id": "f_ev_102",
+          "title_key": "s06.calendar.f_ev_102",
+          "type": "other",
+          "start": "2025-04-10T13:00:00",
+          "end": "2025-04-10T14:00:00",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#64748B",
+          "is_deleted": false
+        },
+        {
+          "id": "f_ev_103",
+          "title_key": "s06.calendar.f_ev_103",
+          "type": "work",
+          "start": "2025-05-29T21:30:00",
+          "end": "2025-05-29T22:00:00",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#64748B",
+          "is_deleted": false
+        },
+        {
+          "id": "f_ev_104",
+          "title_key": "s06.calendar.f_ev_104",
+          "type": "work",
+          "start": "2025-06-26T19:00:00",
+          "end": "2025-06-26T20:00:00",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#64748B",
+          "is_deleted": false
+        },
+        {
+          "id": "f_ev_105",
+          "title_key": "s06.calendar.f_ev_105",
+          "type": "other",
+          "start": "2025-08-21T13:00:00",
+          "end": "2025-08-21T14:00:00",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#64748B",
+          "is_deleted": false
+        },
+        {
+          "id": "f_ev_106",
+          "title_key": "s06.calendar.f_ev_106",
+          "type": "work",
+          "start": "2025-09-18T21:30:00",
+          "end": "2025-09-18T22:00:00",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#64748B",
+          "is_deleted": false
+        },
+        {
+          "id": "f_ev_107",
+          "title_key": "s06.calendar.f_ev_107",
+          "type": "personal",
+          "start": "2025-10-30T19:00:00",
+          "end": "2025-10-30T20:00:00",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#64748B",
+          "is_deleted": false
+        },
+        {
+          "id": "f_ev_108",
+          "title_key": "s06.calendar.f_ev_108",
+          "type": "other",
+          "start": "2025-12-11T13:00:00",
+          "end": "2025-12-11T14:00:00",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#64748B",
+          "is_deleted": false
+        },
+        {
+          "id": "f_ev_109",
+          "title_key": "s06.calendar.f_ev_109",
+          "type": "work",
+          "start": "2026-01-22T21:30:00",
+          "end": "2026-01-22T22:00:00",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#64748B",
+          "is_deleted": false
+        },
+        {
+          "id": "f_ev_110",
+          "title_key": "s06.calendar.f_ev_110",
+          "type": "other",
+          "start": "2026-02-26T13:00:00",
+          "end": "2026-02-26T14:00:00",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#64748B",
+          "is_deleted": false
+        }
+      ]
+    },
+    "photos": {
+      "recents": [
+        "ph_020",
+        "ph_027",
+        "ph_021",
+        "ph_012",
+        "ph_013",
+        "ph_022",
+        "ph_014",
+        "ph_023",
+        "ph_015",
+        "ph_024",
+        "ph_016",
+        "ph_025",
+        "ph_026"
+      ],
+      "albums": [
+        {
+          "id": "album_001",
+          "name_key": "s06.photos.album_001",
+          "cover_photo_id": "ph_020",
+          "photo_ids": [
+            "ph_020",
+            "ph_027",
+            "ph_021",
+            "ph_012",
+            "ph_013",
+            "ph_022",
+            "ph_014",
+            "ph_023",
+            "ph_015",
+            "ph_024",
+            "ph_016",
+            "ph_025",
+            "ph_026"
+          ],
+          "is_locked": false
+        },
+        {
+          "id": "album_002",
+          "name_key": "s06.photos.album_002",
+          "cover_photo_id": "ph_012",
+          "photo_ids": [
+            "ph_012",
+            "ph_013",
+            "ph_014"
+          ],
+          "is_locked": false
+        },
+        {
+          "id": "album_003",
+          "name_key": "s06.photos.album_003",
+          "cover_photo_id": "ph_005",
+          "photo_ids": [
+            "ph_005",
+            "ph_007",
+            "ph_030",
+            "ph_031"
+          ],
+          "is_locked": true,
+          "lock_password": "1407"
+        },
+        {
+          "id": "album_004",
+          "name_key": "s06.photos.album_004",
+          "cover_photo_id": "ph_020",
+          "photo_ids": [
+            "ph_020",
+            "ph_027",
+            "ph_021",
+            "ph_006",
+            "ph_010",
+            "ph_022",
+            "ph_023"
+          ],
+          "is_locked": false
+        }
+      ],
+      "hidden": [],
+      "recently_deleted": [],
+      "items": [
+        {
+          "id": "ph_005",
+          "asset": "assets/cases/s06/photos/passport.jpg",
+          "taken_at": "2024-11-26T21:15:00",
+          "document_key": "s06.photos.ph_005.document"
+        },
+        {
+          "id": "ph_006",
+          "asset": "assets/cases/s06/photos/quota_sheet.jpg",
+          "taken_at": "2025-06-06T22:40:00",
+          "document_key": "s06.photos.ph_006.document"
+        },
+        {
+          "id": "ph_007",
+          "asset": "assets/cases/s06/photos/job_advert.jpg",
+          "taken_at": "2024-11-03T08:30:00",
+          "document_key": "s06.photos.ph_007.document"
+        },
+        {
+          "id": "ph_010",
+          "asset": "assets/cases/s06/photos/target_screen.jpg",
+          "taken_at": "2025-11-18T01:05:00",
+          "document_key": "s06.photos.ph_010.document"
+        },
+        {
+          "id": "ph_012",
+          "asset": "assets/cases/s06/photos/kasper_beach.jpg",
+          "taken_at": "2025-03-16T18:00:00"
+        },
+        {
+          "id": "ph_013",
+          "asset": "assets/cases/s06/photos/kasper_platform.jpg",
+          "taken_at": "2025-03-16T18:01:00"
+        },
+        {
+          "id": "ph_014",
+          "asset": "assets/cases/s06/photos/kasper_dog.jpg",
+          "taken_at": "2025-03-16T18:02:00"
+        },
+        {
+          "id": "ph_015",
+          "asset": "assets/cases/s06/photos/bergen_house.jpg",
+          "taken_at": "2025-10-28T22:05:00"
+        },
+        {
+          "id": "ph_016",
+          "asset": "assets/cases/s06/photos/bergen.jpg",
+          "taken_at": "2025-07-22T03:20:00"
+        },
+        {
+          "id": "ph_020",
+          "asset": "assets/cases/s06/photos/window_reflection.jpg",
+          "taken_at": "2025-09-02T14:33:00"
+        },
+        {
+          "id": "ph_027",
+          "asset": "assets/cases/s06/photos/floor.jpg",
+          "taken_at": "2025-04-11T19:05:00"
+        },
+        {
+          "id": "ph_021",
+          "asset": "assets/cases/s06/photos/desk.jpg",
+          "taken_at": "2025-08-14T20:10:00"
+        },
+        {
+          "id": "ph_022",
+          "asset": "assets/cases/s06/photos/dorm.jpg",
+          "taken_at": "2025-05-30T23:40:00"
+        },
+        {
+          "id": "ph_023",
+          "asset": "assets/cases/s06/photos/canteen.jpg",
+          "taken_at": "2025-07-04T12:35:00"
+        },
+        {
+          "id": "ph_024",
+          "asset": "assets/cases/s06/photos/gate.jpg",
+          "taken_at": "2025-02-16T17:20:00"
+        },
+        {
+          "id": "ph_025",
+          "asset": "assets/cases/s06/photos/river.jpg",
+          "taken_at": "2025-10-05T17:50:00"
+        },
+        {
+          "id": "ph_026",
+          "asset": "assets/cases/s06/photos/washing.jpg",
+          "taken_at": "2025-06-21T07:15:00"
+        },
+        {
+          "id": "ph_030",
+          "asset": "assets/cases/s06/photos/emeka_mama_2024.jpg",
+          "taken_at": "2024-11-18T16:40:00"
+        },
+        {
+          "id": "ph_031",
+          "asset": "assets/cases/s06/photos/lagos_street.jpg",
+          "taken_at": "2024-11-17T10:20:00"
+        }
+      ]
+    },
+    "notes": {
+      "folders": [
+        {
+          "id": "nf_001",
+          "name_key": "s06.notes.folder_001",
+          "notes": [
+            {
+              "id": "note_001",
+              "title_key": "s06.notes.note_001.title",
+              "created_at": "2025-03-26T20:50:00",
+              "updated_at": "2025-10-28T22:50:00",
+              "is_locked": false,
+              "lock_password": null,
+              "content": {
+                "type": "text",
+                "blocks": [
+                  {
+                    "type": "text",
+                    "text_key": "s06.notes.note_001.block_001"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s06.notes.note_001.block_002"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s06.notes.note_001.block_003"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s06.notes.note_001.block_004"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s06.notes.note_001.block_005"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "note_002",
+              "title_key": "s06.notes.note_002.title",
+              "created_at": "2025-04-26T01:20:00",
+              "updated_at": "2025-05-02T14:05:00",
+              "is_locked": false,
+              "lock_password": null,
+              "content": {
+                "type": "text",
+                "blocks": [
+                  {
+                    "type": "text",
+                    "text_key": "s06.notes.note_002.block_001"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s06.notes.note_002.block_002"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s06.notes.note_002.block_003"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s06.notes.note_002.block_004"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "f_note_101",
+              "title_key": "s06.notes.f_note_101.title",
+              "created_at": "2025-02-08T21:10:00",
+              "updated_at": "2025-11-02T21:30:00",
+              "is_locked": false,
+              "lock_password": null,
+              "content": {
+                "type": "text",
+                "blocks": [
+                  {
+                    "type": "text",
+                    "text_key": "s06.notes.f_note_101.block_001"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s06.notes.f_note_101.block_002"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s06.notes.f_note_101.block_003"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s06.notes.f_note_101.block_004"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s06.notes.f_note_101.block_005"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s06.notes.f_note_101.block_006"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "f_note_102",
+              "title_key": "s06.notes.f_note_102.title",
+              "created_at": "2025-03-30T22:00:00",
+              "updated_at": "2025-09-14T22:20:00",
+              "is_locked": false,
+              "lock_password": null,
+              "content": {
+                "type": "text",
+                "blocks": [
+                  {
+                    "type": "text",
+                    "text_key": "s06.notes.f_note_102.block_001"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s06.notes.f_note_102.block_002"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s06.notes.f_note_102.block_003"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s06.notes.f_note_102.block_004"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s06.notes.f_note_102.block_005"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "f_note_103",
+              "title_key": "s06.notes.f_note_103.title",
+              "created_at": "2025-06-12T20:30:00",
+              "updated_at": "2026-01-05T20:40:00",
+              "is_locked": false,
+              "lock_password": null,
+              "content": {
+                "type": "text",
+                "blocks": [
+                  {
+                    "type": "text",
+                    "text_key": "s06.notes.f_note_103.block_001"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s06.notes.f_note_103.block_002"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s06.notes.f_note_103.block_003"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s06.notes.f_note_103.block_004"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "nf_002",
+          "name_key": "s06.notes.folder_002",
+          "notes": [
+            {
+              "id": "note_003",
+              "title_key": "s06.notes.note_003.title",
+              "created_at": "2026-01-10T02:30:00",
+              "updated_at": "2026-03-03T23:55:00",
+              "is_locked": true,
+              "lock_password": "1407",
+              "content": {
+                "type": "text",
+                "blocks": [
+                  {
+                    "type": "text",
+                    "text_key": "s06.notes.note_003.block_001"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s06.notes.note_003.block_002"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s06.notes.note_003.block_003"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s06.notes.note_003.block_004"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s06.notes.note_003.block_005"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "f_note_111",
+              "title_key": "s06.notes.f_note_111.title",
+              "created_at": "2025-01-30T03:00:00",
+              "updated_at": "2026-02-28T03:10:00",
+              "is_locked": false,
+              "lock_password": null,
+              "content": {
+                "type": "text",
+                "blocks": [
+                  {
+                    "type": "text",
+                    "text_key": "s06.notes.f_note_111.block_001"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s06.notes.f_note_111.block_002"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s06.notes.f_note_111.block_003"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s06.notes.f_note_111.block_004"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "f_note_112",
+              "title_key": "s06.notes.f_note_112.title",
+              "created_at": "2025-07-27T02:40:00",
+              "updated_at": "2025-07-27T02:55:00",
+              "is_locked": false,
+              "lock_password": null,
+              "content": {
+                "type": "text",
+                "blocks": [
+                  {
+                    "type": "text",
+                    "text_key": "s06.notes.f_note_112.block_001"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s06.notes.f_note_112.block_002"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s06.notes.f_note_112.block_003"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "calls": {
+      "recent_calls": [
+        {
+          "id": "call_001",
+          "person_id": "p006",
+          "type": "outgoing",
+          "duration_seconds": 244,
+          "timestamp": "2024-11-04T15:02:00"
+        },
+        {
+          "id": "call_002",
+          "person_id": "p006",
+          "type": "outgoing",
+          "duration_seconds": 0,
+          "timestamp": "2024-12-06T22:41:00"
+        },
+        {
+          "id": "call_003",
+          "person_id": "p006",
+          "type": "outgoing",
+          "duration_seconds": 0,
+          "timestamp": "2025-02-11T01:16:00"
+        },
+        {
+          "id": "call_004",
+          "person_id": "p004",
+          "type": "outgoing",
+          "duration_seconds": 0,
+          "timestamp": "2024-12-25T09:00:00"
+        },
+        {
+          "id": "call_005",
+          "person_id": "p004",
+          "type": "outgoing",
+          "duration_seconds": 0,
+          "timestamp": "2025-12-25T09:00:00"
+        },
+        {
+          "id": "call_006",
+          "person_id": "p003",
+          "type": "incoming",
+          "duration_seconds": 38,
+          "timestamp": "2025-11-17T22:03:00"
+        },
+        {
+          "id": "call_007",
+          "person_id": "p005",
+          "type": "incoming",
+          "duration_seconds": 71,
+          "timestamp": "2026-01-10T02:10:00"
+        },
+        {
+          "id": "f_call_101",
+          "person_id": "p004",
+          "type": "outgoing",
+          "duration_seconds": 0,
+          "timestamp": "2025-03-16T09:00:00"
+        },
+        {
+          "id": "f_call_102",
+          "person_id": "p004",
+          "type": "outgoing",
+          "duration_seconds": 0,
+          "timestamp": "2025-06-15T09:00:00"
+        },
+        {
+          "id": "f_call_103",
+          "person_id": "p004",
+          "type": "outgoing",
+          "duration_seconds": 0,
+          "timestamp": "2025-09-21T09:00:00"
+        },
+        {
+          "id": "f_call_104",
+          "person_id": "p006",
+          "type": "outgoing",
+          "duration_seconds": 0,
+          "timestamp": "2025-04-27T01:41:00"
+        },
+        {
+          "id": "f_call_105",
+          "person_id": "p006",
+          "type": "outgoing",
+          "duration_seconds": 0,
+          "timestamp": "2025-10-11T02:45:00"
+        },
+        {
+          "id": "f_call_106",
+          "person_id": "p003",
+          "type": "incoming",
+          "duration_seconds": 22,
+          "timestamp": "2025-06-05T22:09:00"
+        },
+        {
+          "id": "f_call_107",
+          "person_id": "p003",
+          "type": "incoming",
+          "duration_seconds": 14,
+          "timestamp": "2025-10-28T22:59:00"
+        },
+        {
+          "id": "f_call_108",
+          "person_id": "p005",
+          "type": "incoming",
+          "duration_seconds": 405,
+          "timestamp": "2025-08-31T02:14:00"
+        },
+        {
+          "id": "f_call_109",
+          "person_id": "p005",
+          "type": "outgoing",
+          "duration_seconds": 96,
+          "timestamp": "2025-12-24T23:44:00"
+        },
+        {
+          "id": "f_call_110",
+          "person_id": "p003",
+          "type": "incoming",
+          "duration_seconds": 31,
+          "timestamp": "2026-02-11T21:09:00"
+        }
+      ]
+    },
+    "google": {
+      "searches": [
+        {
+          "id": "gs_001",
+          "query_key": "s06.search.gs_001",
+          "timestamp": "2024-11-03T09:10:00"
+        },
+        {
+          "id": "gs_002",
+          "query_key": "s06.search.gs_002",
+          "timestamp": "2024-11-29T02:40:00"
+        },
+        {
+          "id": "gs_003",
+          "query_key": "s06.search.gs_003",
+          "timestamp": "2024-11-29T02:52:00"
+        },
+        {
+          "id": "gs_004",
+          "query_key": "s06.search.gs_004",
+          "timestamp": "2025-10-05T18:05:00"
+        },
+        {
+          "id": "gs_005",
+          "query_key": "s06.search.gs_005",
+          "timestamp": "2025-03-17T18:30:00"
+        },
+        {
+          "id": "gs_006",
+          "query_key": "s06.search.gs_006",
+          "timestamp": "2025-03-26T20:44:00"
+        },
+        {
+          "id": "gs_007",
+          "query_key": "s06.search.gs_007",
+          "timestamp": "2025-07-22T03:13:00"
+        },
+        {
+          "id": "gs_008",
+          "query_key": "s06.search.gs_008",
+          "timestamp": "2025-01-08T03:20:00"
+        },
+        {
+          "id": "gs_009",
+          "query_key": "s06.search.gs_009",
+          "timestamp": "2026-01-10T02:44:00"
+        },
+        {
+          "id": "f_gs_101",
+          "query_key": "s06.search.f_gs_101",
+          "timestamp": "2024-12-02T23:40:00"
+        },
+        {
+          "id": "f_gs_102",
+          "query_key": "s06.search.f_gs_102",
+          "timestamp": "2025-01-17T02:10:00"
+        },
+        {
+          "id": "f_gs_103",
+          "query_key": "s06.search.f_gs_103",
+          "timestamp": "2025-02-21T03:30:00"
+        },
+        {
+          "id": "f_gs_104",
+          "query_key": "s06.search.f_gs_104",
+          "timestamp": "2025-03-13T19:05:00"
+        },
+        {
+          "id": "f_gs_105",
+          "query_key": "s06.search.f_gs_105",
+          "timestamp": "2025-04-08T18:50:00"
+        },
+        {
+          "id": "f_gs_106",
+          "query_key": "s06.search.f_gs_106",
+          "timestamp": "2025-05-04T02:20:00"
+        },
+        {
+          "id": "f_gs_107",
+          "query_key": "s06.search.f_gs_107",
+          "timestamp": "2025-06-29T03:15:00"
+        },
+        {
+          "id": "f_gs_108",
+          "query_key": "s06.search.f_gs_108",
+          "timestamp": "2025-07-18T19:20:00"
+        },
+        {
+          "id": "f_gs_109",
+          "query_key": "s06.search.f_gs_109",
+          "timestamp": "2025-08-25T02:40:00"
+        },
+        {
+          "id": "f_gs_110",
+          "query_key": "s06.search.f_gs_110",
+          "timestamp": "2025-09-08T21:00:00"
+        },
+        {
+          "id": "f_gs_111",
+          "query_key": "s06.search.f_gs_111",
+          "timestamp": "2025-10-20T03:05:00"
+        },
+        {
+          "id": "f_gs_112",
+          "query_key": "s06.search.f_gs_112",
+          "timestamp": "2025-12-07T02:55:00"
+        },
+        {
+          "id": "f_gs_113",
+          "query_key": "s06.search.f_gs_113",
+          "timestamp": "2026-01-16T03:40:00"
+        },
+        {
+          "id": "f_gs_114",
+          "query_key": "s06.search.f_gs_114",
+          "timestamp": "2026-02-22T02:05:00"
+        }
+      ]
+    },
+    "weather": {
+      "location": "Myawaddy",
+      "current": {
+        "timestamp": "2026-03-04T09:00:00",
+        "temp_celsius": 34,
+        "condition": "sunny",
+        "humidity": 64,
+        "wind_speed": 8
+      },
+      "hourly": [
+        {
+          "timestamp": "2026-03-04T10:00:00",
+          "temp_celsius": 36,
+          "condition": "sunny",
+          "humidity": 60,
+          "wind_speed": 7
+        },
+        {
+          "timestamp": "2026-03-04T11:00:00",
+          "temp_celsius": 37,
+          "condition": "sunny",
+          "humidity": 57,
+          "wind_speed": 6
+        }
+      ],
+      "daily": [
+        {
+          "timestamp": "2026-03-05T12:00:00",
+          "temp_celsius": 37,
+          "condition": "sunny",
+          "humidity": 58,
+          "wind_speed": 9
+        },
+        {
+          "timestamp": "2026-03-06T12:00:00",
+          "temp_celsius": 35,
+          "condition": "cloudy",
+          "humidity": 66,
+          "wind_speed": 11
+        }
+      ]
+    },
+    "clock": {
+      "alarms": [
+        {
+          "id": "al_001",
+          "time": "05:40",
+          "label_key": "s06.clock.al_001",
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri",
+            "Sat",
+            "Sun"
+          ],
+          "is_enabled": true
+        },
+        {
+          "id": "al_002",
+          "time": "21:45",
+          "label_key": "s06.clock.al_002",
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri",
+            "Sat",
+            "Sun"
+          ],
+          "is_enabled": true
+        }
+      ],
+      "world_clocks": [
+        {
+          "city": "Myawaddy",
+          "timezone": "MMT"
+        },
+        {
+          "city": "Bergen",
+          "timezone": "CET"
+        },
+        {
+          "city": "Lagos",
+          "timezone": "WAT"
+        }
+      ]
+    },
+    "settings": {
+      "wifi_history": [
+        {
+          "id": "wf_001",
+          "network_name": "SKP-BLOCK-C",
+          "connected_at": "2026-03-04T06:00:00",
+          "location_hint": "block C, floor 2"
+        },
+        {
+          "id": "wf_002",
+          "network_name": "SKP-DORM-D",
+          "connected_at": "2026-03-03T23:10:00",
+          "location_hint": "block D"
+        },
+        {
+          "id": "wf_003",
+          "network_name": "AIS-BKK-FREE",
+          "connected_at": "2024-11-27T15:12:00",
+          "location_hint": "Suvarnabhumi arrivals"
+        }
+      ],
+      "app_usage": [
+        {
+          "app_name": "Spark",
+          "daily_average_minutes": 291,
+          "this_week": [
+            {
+              "day": "Mon",
+              "minutes": 312
+            },
+            {
+              "day": "Tue",
+              "minutes": 288
+            }
+          ]
+        },
+        {
+          "app_name": "Slate",
+          "daily_average_minutes": 44,
+          "this_week": [
+            {
+              "day": "Mon",
+              "minutes": 51
+            },
+            {
+              "day": "Tue",
+              "minutes": 39
+            }
+          ]
+        },
+        {
+          "app_name": "WhatsApp",
+          "daily_average_minutes": 96,
+          "this_week": [
+            {
+              "day": "Mon",
+              "minutes": 88
+            },
+            {
+              "day": "Tue",
+              "minutes": 104
+            }
+          ]
+        }
+      ]
+    },
+    "vault": {
+      "login_required": true,
+      "master": "14skp2025",
+      "master_hint_key": "s06.keychain.master_hint",
+      "account_label": "Station 14 — Keychain",
+      "entries": [
+        {
+          "id": "v_001",
+          "label_key": "s06.keychain.v_001.label",
+          "username_key": "s06.keychain.v_001.username",
+          "password": "vestergaard46",
+          "last_modified": "2025-03-16T17:50:00"
+        },
+        {
+          "id": "v_002",
+          "label_key": "s06.keychain.v_002.label",
+          "username_key": "s06.keychain.v_002.username",
+          "password": "1407",
+          "last_modified": "2026-01-10T02:32:00",
+          "note_key": "s06.keychain.v_002.note"
+        },
+        {
+          "id": "v_003",
+          "label_key": "s06.keychain.v_003.label",
+          "username_key": "s06.keychain.v_003.username",
+          "password": "laoban-14",
+          "last_modified": "2025-06-06T22:45:00",
+          "note_key": "s06.keychain.v_003.note"
+        },
+        {
+          "id": "v_004",
+          "label_key": "s06.keychain.v_004.label",
+          "username_key": "s06.keychain.v_004.username",
+          "password": "vestergaard46",
+          "last_modified": "2025-03-16T17:52:00"
+        },
+        {
+          "id": "v_005",
+          "label_key": "s06.keychain.v_005.label",
+          "username_key": "s06.keychain.v_005.username",
+          "password": "read-only-14",
+          "last_modified": "2025-01-04T08:00:00",
+          "note_key": "s06.keychain.v_005.note"
+        }
+      ]
+    },
+    "cloud": {
+      "account_label": "Station drive — st14",
+      "folders": [
+        {
+          "id": "cfo_001",
+          "name_key": "s06.cloud.cfo_001",
+          "files": [
+            {
+              "id": "cf_001",
+              "name_key": "s06.cloud.cf_001.name",
+              "created_at": "2025-01-04T08:00:00",
+              "modified_at": "2025-08-19T09:12:00",
+              "size": "44 KB",
+              "body_key": "s06.cloud.cf_001.body"
+            },
+            {
+              "id": "cf_002",
+              "name_key": "s06.cloud.cf_002.name",
+              "created_at": "2025-01-04T08:00:00",
+              "modified_at": "2025-11-18T01:02:00",
+              "size": "12 KB",
+              "body_key": "s06.cloud.cf_002.body"
+            },
+            {
+              "id": "cf_004",
+              "name_key": "s06.cloud.cf_004.name",
+              "created_at": "2025-12-19T10:40:00",
+              "modified_at": "2025-12-19T10:40:00",
+              "size": "3 KB",
+              "body_key": "s06.cloud.cf_004.body"
+            },
+            {
+              "id": "cf_005",
+              "name_key": "s06.cloud.cf_005.name",
+              "created_at": "2024-11-28T06:00:00",
+              "modified_at": "2024-11-28T06:00:00",
+              "size": "88 KB",
+              "body_key": "s06.cloud.cf_005.body"
+            },
+            {
+              "id": "cf_003",
+              "name_key": "s06.cloud.cf_003.name",
+              "created_at": "2025-01-04T08:00:00",
+              "modified_at": "2026-03-03T22:05:00",
+              "size": "61 KB",
+              "is_locked": true,
+              "lock_password": "laoban-14",
+              "body_key": "s06.cloud.cf_003.body"
+            }
+          ]
+        }
+      ]
+    },
+    "slate": {
+      "workspace_name": "Shwe Kayin Park",
+      "channels": [
+        {
+          "id": "wch_001",
+          "name_key": "s06.slate.ch_001.name",
+          "topic_key": "s06.slate.ch_001.topic",
+          "member_person_ids": [
+            "p000",
+            "p003",
+            "p005"
+          ],
+          "messages": [
+            {
+              "id": "wc_001",
+              "sender_person_id": "p003",
+              "text_key": "s06.slate.wc_001",
+              "timestamp": "2025-01-04T07:40:00",
+              "is_pinned": true
+            },
+            {
+              "id": "wc_002",
+              "sender_person_id": "p003",
+              "text_key": "s06.slate.wc_002",
+              "timestamp": "2025-09-09T06:10:00"
+            },
+            {
+              "id": "wc_003",
+              "sender_person_id": "p003",
+              "text_key": "s06.slate.wc_003",
+              "timestamp": "2025-02-20T06:05:00",
+              "is_pinned": true
+            },
+            {
+              "id": "wc_101",
+              "sender_person_id": "p003",
+              "text_key": "s06.slate.wc_101",
+              "timestamp": "2025-01-22T06:00:00"
+            },
+            {
+              "id": "wc_102",
+              "sender_person_id": "p003",
+              "text_key": "s06.slate.wc_102",
+              "timestamp": "2025-03-11T06:00:00",
+              "is_pinned": true
+            },
+            {
+              "id": "wc_103",
+              "sender_person_id": "p003",
+              "text_key": "s06.slate.wc_103",
+              "timestamp": "2025-05-02T06:00:00"
+            },
+            {
+              "id": "wc_104",
+              "sender_person_id": "p003",
+              "text_key": "s06.slate.wc_104",
+              "timestamp": "2025-07-30T06:00:00"
+            },
+            {
+              "id": "wc_105",
+              "sender_person_id": "p003",
+              "text_key": "s06.slate.wc_105",
+              "timestamp": "2025-08-14T06:00:00"
+            },
+            {
+              "id": "wc_106",
+              "sender_person_id": "p003",
+              "text_key": "s06.slate.wc_106",
+              "timestamp": "2025-12-02T06:00:00"
+            },
+            {
+              "id": "wc_107",
+              "sender_person_id": "p003",
+              "text_key": "s06.slate.wc_107",
+              "timestamp": "2026-02-05T06:00:00"
+            }
+          ]
+        },
+        {
+          "id": "wch_002",
+          "name_key": "s06.slate.ch_002.name",
+          "topic_key": "s06.slate.ch_002.topic",
+          "member_person_ids": [
+            "p000",
+            "p003",
+            "p005"
+          ],
+          "messages": [
+            {
+              "id": "wc_010",
+              "sender_person_id": "p003",
+              "text_key": "s06.slate.wc_010",
+              "timestamp": "2025-06-05T06:00:00"
+            },
+            {
+              "id": "wc_011",
+              "sender_person_id": "p003",
+              "text_key": "s06.slate.wc_011",
+              "timestamp": "2025-06-05T22:02:00"
+            },
+            {
+              "id": "wc_012",
+              "sender_person_id": "p000",
+              "text_key": "s06.slate.wc_012",
+              "timestamp": "2025-06-05T22:04:00"
+            },
+            {
+              "id": "wc_013",
+              "sender_person_id": "p003",
+              "text_key": "s06.slate.wc_013",
+              "timestamp": "2025-06-05T22:06:00"
+            },
+            {
+              "id": "wc_014",
+              "sender_person_id": "p000",
+              "text_key": "s06.slate.wc_014",
+              "timestamp": "2025-06-05T22:06:30"
+            },
+            {
+              "id": "wc_015",
+              "sender_person_id": "p003",
+              "text_key": "s06.slate.wc_015",
+              "timestamp": "2025-06-05T22:08:00"
+            },
+            {
+              "id": "wc_020",
+              "sender_person_id": "p003",
+              "text_key": "s06.slate.wc_020",
+              "timestamp": "2025-10-28T06:00:00"
+            },
+            {
+              "id": "wc_021",
+              "sender_person_id": "p000",
+              "text_key": "s06.slate.wc_021",
+              "timestamp": "2025-10-28T22:50:00"
+            },
+            {
+              "id": "wc_022",
+              "sender_person_id": "p003",
+              "text_key": "s06.slate.wc_022",
+              "timestamp": "2025-10-28T22:55:00"
+            },
+            {
+              "id": "wc_023",
+              "sender_person_id": "p000",
+              "text_key": "s06.slate.wc_023",
+              "timestamp": "2025-11-17T22:00:00"
+            },
+            {
+              "id": "wc_024",
+              "sender_person_id": "p003",
+              "text_key": "s06.slate.wc_024",
+              "timestamp": "2025-11-17T22:12:00"
+            }
+          ]
+        },
+        {
+          "id": "wch_003",
+          "name_key": "s06.slate.ch_003.name",
+          "topic_key": "s06.slate.ch_003.topic",
+          "member_person_ids": [
+            "p000",
+            "p003",
+            "p005"
+          ],
+          "messages": [
+            {
+              "id": "wc_120",
+              "sender_person_id": "p003",
+              "text_key": "s06.slate.wc_120",
+              "timestamp": "2025-01-08T21:00:00",
+              "is_pinned": true
+            },
+            {
+              "id": "wc_121",
+              "sender_person_id": "p003",
+              "text_key": "s06.slate.wc_121",
+              "timestamp": "2025-02-14T21:00:00"
+            },
+            {
+              "id": "wc_122",
+              "sender_person_id": "p003",
+              "text_key": "s06.slate.wc_122",
+              "timestamp": "2025-04-03T21:00:00"
+            },
+            {
+              "id": "wc_123",
+              "sender_person_id": "p003",
+              "text_key": "s06.slate.wc_123",
+              "timestamp": "2025-06-17T21:00:00"
+            },
+            {
+              "id": "wc_124",
+              "sender_person_id": "p003",
+              "text_key": "s06.slate.wc_124",
+              "timestamp": "2025-07-09T21:00:00"
+            },
+            {
+              "id": "wc_125",
+              "sender_person_id": "p003",
+              "text_key": "s06.slate.wc_125",
+              "timestamp": "2025-09-01T21:00:00"
+            },
+            {
+              "id": "wc_126",
+              "sender_person_id": "p003",
+              "text_key": "s06.slate.wc_126",
+              "timestamp": "2025-10-15T21:00:00"
+            },
+            {
+              "id": "wc_127",
+              "sender_person_id": "p003",
+              "text_key": "s06.slate.wc_127",
+              "timestamp": "2025-12-19T21:00:00"
+            },
+            {
+              "id": "wc_128",
+              "sender_person_id": "p003",
+              "text_key": "s06.slate.wc_128",
+              "timestamp": "2026-01-27T21:00:00"
+            },
+            {
+              "id": "wc_129",
+              "sender_person_id": "p003",
+              "text_key": "s06.slate.wc_129",
+              "timestamp": "2026-02-24T21:00:00",
+              "is_pinned": true
+            }
+          ]
+        },
+        {
+          "id": "wch_004",
+          "name_key": "s06.slate.ch_004.name",
+          "topic_key": "s06.slate.ch_004.topic",
+          "member_person_ids": [
+            "p000",
+            "p003",
+            "p005"
+          ],
+          "messages": [
+            {
+              "id": "wc_140",
+              "sender_person_id": "p003",
+              "text_key": "s06.slate.wc_140",
+              "timestamp": "2025-02-03T22:40:00"
+            },
+            {
+              "id": "wc_141",
+              "sender_person_id": "p005",
+              "text_key": "s06.slate.wc_141",
+              "timestamp": "2025-02-03T22:44:00"
+            },
+            {
+              "id": "wc_142",
+              "sender_person_id": "p003",
+              "text_key": "s06.slate.wc_142",
+              "timestamp": "2025-02-03T22:45:00"
+            },
+            {
+              "id": "wc_143",
+              "sender_person_id": "p003",
+              "text_key": "s06.slate.wc_143",
+              "timestamp": "2025-05-20T22:40:00"
+            },
+            {
+              "id": "wc_144",
+              "sender_person_id": "p000",
+              "text_key": "s06.slate.wc_144",
+              "timestamp": "2025-05-20T22:48:00"
+            },
+            {
+              "id": "wc_145",
+              "sender_person_id": "p003",
+              "text_key": "s06.slate.wc_145",
+              "timestamp": "2025-05-20T22:50:00"
+            },
+            {
+              "id": "wc_146",
+              "sender_person_id": "p003",
+              "text_key": "s06.slate.wc_146",
+              "timestamp": "2025-08-06T22:40:00"
+            },
+            {
+              "id": "wc_147",
+              "sender_person_id": "p005",
+              "text_key": "s06.slate.wc_147",
+              "timestamp": "2025-08-06T22:52:00"
+            },
+            {
+              "id": "wc_148",
+              "sender_person_id": "p003",
+              "text_key": "s06.slate.wc_148",
+              "timestamp": "2025-09-25T22:40:00"
+            },
+            {
+              "id": "wc_149",
+              "sender_person_id": "p000",
+              "text_key": "s06.slate.wc_149",
+              "timestamp": "2025-09-25T22:55:00"
+            },
+            {
+              "id": "wc_150",
+              "sender_person_id": "p003",
+              "text_key": "s06.slate.wc_150",
+              "timestamp": "2025-09-25T22:56:00"
+            },
+            {
+              "id": "wc_151",
+              "sender_person_id": "p003",
+              "text_key": "s06.slate.wc_151",
+              "timestamp": "2026-01-14T22:40:00"
+            }
+          ]
+        }
+      ],
+      "dms": [
+        {
+          "id": "wdm_001",
+          "contact_person_id": "p005",
+          "messages": [
+            {
+              "id": "wc_030",
+              "sender_person_id": "p005",
+              "text_key": "s06.slate.wc_030",
+              "timestamp": "2025-06-06T09:02:00"
+            },
+            {
+              "id": "wc_031",
+              "sender_person_id": "p000",
+              "text_key": "s06.slate.wc_031",
+              "timestamp": "2025-06-06T09:04:00"
+            },
+            {
+              "id": "wc_032",
+              "sender_person_id": "p005",
+              "text_key": "s06.slate.wc_032",
+              "timestamp": "2025-06-06T09:05:00"
+            },
+            {
+              "id": "wc_033",
+              "sender_person_id": "p000",
+              "text_key": "s06.slate.wc_033",
+              "timestamp": "2026-01-10T02:02:00"
+            },
+            {
+              "id": "wc_034",
+              "sender_person_id": "p005",
+              "text_key": "s06.slate.wc_034",
+              "timestamp": "2026-01-10T02:05:00"
+            },
+            {
+              "id": "wc_035",
+              "sender_person_id": "p000",
+              "text_key": "s06.slate.wc_035",
+              "timestamp": "2026-01-10T02:07:00"
+            },
+            {
+              "id": "wc_160",
+              "sender_person_id": "p005",
+              "text_key": "s06.slate.wc_160",
+              "timestamp": "2025-03-02T09:10:00"
+            },
+            {
+              "id": "wc_161",
+              "sender_person_id": "p000",
+              "text_key": "s06.slate.wc_161",
+              "timestamp": "2025-03-02T09:14:00"
+            },
+            {
+              "id": "wc_162",
+              "sender_person_id": "p005",
+              "text_key": "s06.slate.wc_162",
+              "timestamp": "2025-03-02T09:16:00"
+            },
+            {
+              "id": "wc_163",
+              "sender_person_id": "p005",
+              "text_key": "s06.slate.wc_163",
+              "timestamp": "2025-08-31T02:20:00"
+            },
+            {
+              "id": "wc_164",
+              "sender_person_id": "p000",
+              "text_key": "s06.slate.wc_164",
+              "timestamp": "2025-08-31T02:26:00"
+            },
+            {
+              "id": "wc_165",
+              "sender_person_id": "p005",
+              "text_key": "s06.slate.wc_165",
+              "timestamp": "2025-08-31T02:30:00"
+            },
+            {
+              "id": "wc_166",
+              "sender_person_id": "p000",
+              "text_key": "s06.slate.wc_166",
+              "timestamp": "2025-08-31T02:33:00"
+            },
+            {
+              "id": "wc_167",
+              "sender_person_id": "p005",
+              "text_key": "s06.slate.wc_167",
+              "timestamp": "2025-12-24T23:50:00"
+            },
+            {
+              "id": "wc_168",
+              "sender_person_id": "p000",
+              "text_key": "s06.slate.wc_168",
+              "timestamp": "2025-12-24T23:58:00"
+            },
+            {
+              "id": "wc_169",
+              "sender_person_id": "p005",
+              "text_key": "s06.slate.wc_169",
+              "timestamp": "2026-02-19T03:00:00"
+            },
+            {
+              "id": "wc_170",
+              "sender_person_id": "p000",
+              "text_key": "s06.slate.wc_170",
+              "timestamp": "2026-02-19T03:04:00"
+            }
+          ]
+        },
+        {
+          "id": "wdm_002",
+          "contact_person_id": "p003",
+          "messages": [
+            {
+              "id": "wc_040",
+              "sender_person_id": "p003",
+              "text_key": "s06.slate.wc_040",
+              "timestamp": "2025-01-19T21:40:00"
+            },
+            {
+              "id": "wc_041",
+              "sender_person_id": "p000",
+              "text_key": "s06.slate.wc_041",
+              "timestamp": "2025-01-19T21:42:00"
+            },
+            {
+              "id": "wc_042",
+              "sender_person_id": "p003",
+              "text_key": "s06.slate.wc_042",
+              "timestamp": "2025-01-19T21:42:30"
+            },
+            {
+              "id": "wc_043",
+              "sender_person_id": "p000",
+              "text_key": "s06.slate.wc_043",
+              "timestamp": "2025-01-19T21:43:00"
+            },
+            {
+              "id": "wc_180",
+              "sender_person_id": "p003",
+              "text_key": "s06.slate.wc_180",
+              "timestamp": "2025-04-16T21:00:00"
+            },
+            {
+              "id": "wc_181",
+              "sender_person_id": "p000",
+              "text_key": "s06.slate.wc_181",
+              "timestamp": "2025-04-16T21:02:00"
+            },
+            {
+              "id": "wc_182",
+              "sender_person_id": "p003",
+              "text_key": "s06.slate.wc_182",
+              "timestamp": "2025-04-16T21:03:00"
+            },
+            {
+              "id": "wc_183",
+              "sender_person_id": "p003",
+              "text_key": "s06.slate.wc_183",
+              "timestamp": "2025-10-29T21:30:00"
+            },
+            {
+              "id": "wc_184",
+              "sender_person_id": "p000",
+              "text_key": "s06.slate.wc_184",
+              "timestamp": "2025-10-29T21:31:00"
+            },
+            {
+              "id": "wc_185",
+              "sender_person_id": "p003",
+              "text_key": "s06.slate.wc_185",
+              "timestamp": "2026-02-11T21:10:00"
+            },
+            {
+              "id": "wc_186",
+              "sender_person_id": "p000",
+              "text_key": "s06.slate.wc_186",
+              "timestamp": "2026-02-11T21:12:00"
+            },
+            {
+              "id": "wc_187",
+              "sender_person_id": "p003",
+              "text_key": "s06.slate.wc_187",
+              "timestamp": "2026-02-11T21:12:30"
+            }
+          ]
+        }
+      ]
+    },
+    "voice_memos": {
+      "memos": [
+        {
+          "id": "vm_001",
+          "title_key": "s06.memos.vm_001.title",
+          "recorded_at": "2024-12-24T23:50:00",
+          "duration_sec": 44,
+          "transcript_key": "s06.memos.vm_001.transcript",
+          "audio_asset": "assets/cases/s06/audio/emeka_mama_{lang}.mp3",
+          "audio_langs": [
+            "en"
+          ],
+          "is_deleted": false
+        }
+      ]
+    },
+    "dating": {
+      "login_required": false,
+      "master": null,
+      "master_hint_key": null,
+      "profile": {
+        "display_name": "Daniel",
+        "age": 46,
+        "bio_key": "s06.matches.profile.bio",
+        "photo_asset": "assets/cases/s06/photos/kasper_profile.jpg",
+        "location": "Stavanger"
+      },
+      "matches": [
+        {
+          "id": "m_001",
+          "person_id": "p002",
+          "age": 68,
+          "bio_key": "s06.matches.m_001.bio",
+          "photo_asset": "assets/cases/s06/photos/ingrid_profile.jpg",
+          "distance_km": 1042.0,
+          "last_active": "2026-06-01T23:40:00",
+          "messages": [
+            {
+              "id": "d1_001",
+              "sender": "user",
+              "text_key": "s06.matches.d1_001",
+              "timestamp": "2025-03-17T19:40:00"
+            },
+            {
+              "id": "d1_002",
+              "sender": "match",
+              "text_key": "s06.matches.d1_002",
+              "timestamp": "2025-03-17T21:05:00"
+            },
+            {
+              "id": "d1_003",
+              "sender": "user",
+              "text_key": "s06.matches.d1_003",
+              "timestamp": "2025-03-17T21:11:00"
+            },
+            {
+              "id": "d1_004",
+              "sender": "match",
+              "text_key": "s06.matches.d1_004",
+              "timestamp": "2025-03-17T21:30:00"
+            },
+            {
+              "id": "d1_005",
+              "sender": "user",
+              "text_key": "s06.matches.d1_005",
+              "timestamp": "2025-03-17T21:36:00"
+            },
+            {
+              "id": "d1_010",
+              "sender": "user",
+              "text_key": "s06.matches.d1_010",
+              "timestamp": "2025-03-25T19:40:00"
+            },
+            {
+              "id": "d1_011",
+              "sender": "match",
+              "text_key": "s06.matches.d1_011",
+              "timestamp": "2025-03-25T20:02:00"
+            },
+            {
+              "id": "d1_012",
+              "sender": "user",
+              "text_key": "s06.matches.d1_012",
+              "timestamp": "2025-03-25T20:04:00"
+            },
+            {
+              "id": "d1_013",
+              "sender": "match",
+              "text_key": "s06.matches.d1_013",
+              "timestamp": "2025-03-25T20:33:00"
+            },
+            {
+              "id": "d1_014",
+              "sender": "user",
+              "text_key": "s06.matches.d1_014",
+              "timestamp": "2025-03-25T20:38:00"
+            },
+            {
+              "id": "d1_020",
+              "sender": "user",
+              "text_key": "s06.matches.d1_020",
+              "timestamp": "2025-04-25T19:40:00"
+            },
+            {
+              "id": "d1_021",
+              "sender": "match",
+              "text_key": "s06.matches.d1_021",
+              "timestamp": "2025-04-25T19:51:00"
+            },
+            {
+              "id": "d1_022",
+              "sender": "user",
+              "text_key": "s06.matches.d1_022",
+              "timestamp": "2025-04-25T19:55:00"
+            },
+            {
+              "id": "d1_023",
+              "sender": "match",
+              "text_key": "s06.matches.d1_023",
+              "timestamp": "2025-04-25T20:14:00"
+            },
+            {
+              "id": "d1_024",
+              "sender": "user",
+              "text_key": "s06.matches.d1_024",
+              "timestamp": "2025-04-25T20:18:00"
+            },
+            {
+              "id": "d1_030",
+              "sender": "match",
+              "text_key": "s06.matches.d1_030",
+              "timestamp": "2025-05-02T12:05:00"
+            },
+            {
+              "id": "d1_031",
+              "sender": "user",
+              "text_key": "s06.matches.d1_031",
+              "timestamp": "2025-05-02T12:12:00"
+            },
+            {
+              "id": "d1_032",
+              "sender": "match",
+              "text_key": "s06.matches.d1_032",
+              "timestamp": "2025-05-02T13:30:00"
+            },
+            {
+              "id": "d1_040",
+              "sender": "match",
+              "text_key": "s06.matches.d1_040",
+              "timestamp": "2025-10-28T22:10:00"
+            },
+            {
+              "id": "d1_041",
+              "sender": "user",
+              "text_key": "s06.matches.d1_041",
+              "timestamp": "2025-10-28T22:19:00"
+            },
+            {
+              "id": "d1_042",
+              "sender": "match",
+              "text_key": "s06.matches.d1_042",
+              "timestamp": "2025-10-28T22:40:00"
+            },
+            {
+              "id": "d1_043",
+              "sender": "user",
+              "text_key": "s06.matches.d1_043",
+              "timestamp": "2025-10-28T22:44:00"
+            },
+            {
+              "id": "d1_050",
+              "sender": "match",
+              "text_key": "s06.matches.d1_050",
+              "timestamp": "2025-11-22T18:30:00"
+            },
+            {
+              "id": "d1_051",
+              "sender": "match",
+              "text_key": "s06.matches.d1_051",
+              "timestamp": "2025-12-01T21:00:00"
+            },
+            {
+              "id": "d1_052",
+              "sender": "match",
+              "text_key": "s06.matches.d1_052",
+              "timestamp": "2026-01-14T02:40:00"
+            },
+            {
+              "id": "d1_053",
+              "sender": "match",
+              "text_key": "s06.matches.d1_053",
+              "timestamp": "2026-06-01T23:40:00"
+            }
+          ]
+        },
+        {
+          "id": "m_002",
+          "name_key": "s06.matches.m_002.name",
+          "age": 61,
+          "bio_key": "s06.matches.m_002.bio",
+          "distance_km": 780.0,
+          "last_active": "2025-08-19T20:10:00",
+          "messages": [
+            {
+              "id": "d2_001",
+              "sender": "user",
+              "text_key": "s06.matches.d2_001",
+              "timestamp": "2025-06-02T19:40:00"
+            },
+            {
+              "id": "d2_002",
+              "sender": "match",
+              "text_key": "s06.matches.d2_002",
+              "timestamp": "2025-06-02T20:15:00"
+            },
+            {
+              "id": "d2_003",
+              "sender": "user",
+              "text_key": "s06.matches.d2_003",
+              "timestamp": "2025-06-02T20:22:00"
+            },
+            {
+              "id": "d2_010",
+              "sender": "user",
+              "text_key": "s06.matches.d2_010",
+              "timestamp": "2025-06-10T19:40:00"
+            }
+          ]
+        },
+        {
+          "id": "m_003",
+          "name_key": "s06.matches.m_003.name",
+          "age": 58,
+          "bio_key": "s06.matches.m_003.bio",
+          "distance_km": 611.0,
+          "last_active": "2025-06-19T09:00:00",
+          "messages": [
+            {
+              "id": "d3_001",
+              "sender": "user",
+              "text_key": "s06.matches.d3_001",
+              "timestamp": "2025-06-09T19:40:00"
+            },
+            {
+              "id": "d3_002",
+              "sender": "match",
+              "text_key": "s06.matches.d3_002",
+              "timestamp": "2025-06-09T19:52:00"
+            },
+            {
+              "id": "d3_003",
+              "sender": "user",
+              "text_key": "s06.matches.d3_003",
+              "timestamp": "2025-06-09T19:55:00"
+            },
+            {
+              "id": "d3_010",
+              "sender": "user",
+              "text_key": "s06.matches.d3_010",
+              "timestamp": "2025-06-17T19:40:00"
+            },
+            {
+              "id": "d3_011",
+              "sender": "match",
+              "text_key": "s06.matches.d3_011",
+              "timestamp": "2025-06-17T19:44:00"
+            }
+          ]
+        },
+        {
+          "id": "m_004",
+          "name_key": "s06.matches.m_004.name",
+          "age": 71,
+          "bio_key": "s06.matches.m_004.bio",
+          "distance_km": 1180.0,
+          "last_active": "2025-06-14T08:30:00",
+          "messages": [
+            {
+              "id": "d4_001",
+              "sender": "user",
+              "text_key": "s06.matches.d4_001",
+              "timestamp": "2025-06-08T19:40:00"
+            },
+            {
+              "id": "d4_002",
+              "sender": "match",
+              "text_key": "s06.matches.d4_002",
+              "timestamp": "2025-06-08T19:46:00"
+            },
+            {
+              "id": "d4_003",
+              "sender": "user",
+              "text_key": "s06.matches.d4_003",
+              "timestamp": "2025-06-08T19:52:00"
+            },
+            {
+              "id": "d4_004",
+              "sender": "match",
+              "text_key": "s06.matches.d4_004",
+              "timestamp": "2025-06-08T19:54:00"
+            },
+            {
+              "id": "d4_005",
+              "sender": "match",
+              "text_key": "s06.matches.d4_005",
+              "timestamp": "2025-06-14T08:30:00"
+            }
+          ]
+        },
+        {
+          "id": "m_005",
+          "name_key": "s06.matches.m_005.name",
+          "age": 66,
+          "bio_key": "s06.matches.m_005.bio",
+          "distance_km": 410.0,
+          "last_active": "2025-05-02T21:15:00",
+          "messages": [
+            {
+              "id": "d5_001",
+              "sender": "user",
+              "text_key": "s06.matches.d5_001",
+              "timestamp": "2025-04-28T19:40:00"
+            },
+            {
+              "id": "d5_002",
+              "sender": "match",
+              "text_key": "s06.matches.d5_002",
+              "timestamp": "2025-04-28T20:30:00"
+            },
+            {
+              "id": "d5_003",
+              "sender": "user",
+              "text_key": "s06.matches.d5_003",
+              "timestamp": "2025-04-28T20:36:00"
+            },
+            {
+              "id": "d5_004",
+              "sender": "match",
+              "text_key": "s06.matches.d5_004",
+              "timestamp": "2025-05-02T21:15:00"
+            }
+          ]
+        },
+        {
+          "id": "m_006",
+          "name_key": "s06.matches.m_006.name",
+          "age": 73,
+          "bio_key": "s06.matches.m_006.bio",
+          "distance_km": 1540.0,
+          "last_active": "2025-05-11T08:00:00",
+          "messages": [
+            {
+              "id": "d6_001",
+              "sender": "user",
+              "text_key": "s06.matches.d6_001",
+              "timestamp": "2025-05-09T19:40:00"
+            },
+            {
+              "id": "d6_002",
+              "sender": "user",
+              "text_key": "s06.matches.d6_002",
+              "timestamp": "2025-05-11T19:40:00"
+            }
+          ]
+        },
+        {
+          "id": "m_007",
+          "name_key": "s06.matches.m_007.name",
+          "age": 59,
+          "bio_key": "s06.matches.m_007.bio",
+          "distance_km": 520.0,
+          "last_active": "2025-07-04T22:41:00",
+          "messages": [
+            {
+              "id": "d7_001",
+              "sender": "user",
+              "text_key": "s06.matches.d7_001",
+              "timestamp": "2025-07-04T19:40:00"
+            },
+            {
+              "id": "d7_002",
+              "sender": "match",
+              "text_key": "s06.matches.d7_002",
+              "timestamp": "2025-07-04T22:20:00"
+            },
+            {
+              "id": "d7_003",
+              "sender": "match",
+              "text_key": "s06.matches.d7_003",
+              "timestamp": "2025-07-04T22:31:00"
+            },
+            {
+              "id": "d7_004",
+              "sender": "user",
+              "text_key": "s06.matches.d7_004",
+              "timestamp": "2025-07-04T22:38:00"
+            },
+            {
+              "id": "d7_005",
+              "sender": "match",
+              "text_key": "s06.matches.d7_005",
+              "timestamp": "2025-07-04T22:41:00"
+            }
+          ]
+        },
+        {
+          "id": "m_008",
+          "name_key": "s06.matches.m_008.name",
+          "age": 64,
+          "bio_key": "s06.matches.m_008.bio",
+          "distance_km": 30.0,
+          "last_active": "2025-08-30T18:02:00",
+          "messages": [
+            {
+              "id": "d8_001",
+              "sender": "user",
+              "text_key": "s06.matches.d8_001",
+              "timestamp": "2025-08-25T19:40:00"
+            },
+            {
+              "id": "d8_002",
+              "sender": "match",
+              "text_key": "s06.matches.d8_002",
+              "timestamp": "2025-08-25T21:10:00"
+            },
+            {
+              "id": "d8_003",
+              "sender": "user",
+              "text_key": "s06.matches.d8_003",
+              "timestamp": "2025-08-26T19:40:00"
+            },
+            {
+              "id": "d8_004",
+              "sender": "match",
+              "text_key": "s06.matches.d8_004",
+              "timestamp": "2025-08-30T18:02:00"
+            }
+          ]
+        },
+        {
+          "id": "m_009",
+          "name_key": "s06.matches.m_009.name",
+          "age": 69,
+          "bio_key": "s06.matches.m_009.bio",
+          "distance_km": 660.0,
+          "last_active": "2025-10-19T20:30:00",
+          "messages": [
+            {
+              "id": "d9_001",
+              "sender": "user",
+              "text_key": "s06.matches.d9_001",
+              "timestamp": "2025-09-14T19:40:00"
+            },
+            {
+              "id": "d9_002",
+              "sender": "match",
+              "text_key": "s06.matches.d9_002",
+              "timestamp": "2025-09-14T20:05:00"
+            },
+            {
+              "id": "d9_003",
+              "sender": "user",
+              "text_key": "s06.matches.d9_003",
+              "timestamp": "2025-09-15T19:40:00"
+            },
+            {
+              "id": "d9_004",
+              "sender": "match",
+              "text_key": "s06.matches.d9_004",
+              "timestamp": "2025-09-15T20:12:00"
+            },
+            {
+              "id": "d9_005",
+              "sender": "user",
+              "text_key": "s06.matches.d9_005",
+              "timestamp": "2025-09-23T19:40:00"
+            },
+            {
+              "id": "d9_006",
+              "sender": "match",
+              "text_key": "s06.matches.d9_006",
+              "timestamp": "2025-10-19T20:30:00"
+            }
+          ]
+        },
+        {
+          "id": "m_010",
+          "name_key": "s06.matches.m_010.name",
+          "age": 57,
+          "bio_key": "s06.matches.m_010.bio",
+          "distance_km": 1290.0,
+          "last_active": "2025-10-02T09:14:00",
+          "messages": [
+            {
+              "id": "d10_001",
+              "sender": "user",
+              "text_key": "s06.matches.d10_001",
+              "timestamp": "2025-10-01T19:40:00"
+            },
+            {
+              "id": "d10_002",
+              "sender": "match",
+              "text_key": "s06.matches.d10_002",
+              "timestamp": "2025-10-02T09:14:00"
+            }
+          ]
+        },
+        {
+          "id": "m_011",
+          "name_key": "s06.matches.m_011.name",
+          "age": 71,
+          "bio_key": "s06.matches.m_011.bio",
+          "distance_km": 340.0,
+          "last_active": "2025-11-06T07:20:00",
+          "messages": [
+            {
+              "id": "d11_001",
+              "sender": "user",
+              "text_key": "s06.matches.d11_001",
+              "timestamp": "2025-11-05T19:40:00"
+            },
+            {
+              "id": "d11_002",
+              "sender": "match",
+              "text_key": "s06.matches.d11_002",
+              "timestamp": "2025-11-06T07:20:00"
+            }
+          ]
+        },
+        {
+          "id": "m_012",
+          "name_key": "s06.matches.m_012.name",
+          "age": 62,
+          "bio_key": "s06.matches.m_012.bio",
+          "distance_km": 890.0,
+          "last_active": "2026-01-08T20:55:00",
+          "messages": [
+            {
+              "id": "d12_001",
+              "sender": "user",
+              "text_key": "s06.matches.d12_001",
+              "timestamp": "2026-01-08T19:40:00"
+            },
+            {
+              "id": "d12_002",
+              "sender": "match",
+              "text_key": "s06.matches.d12_002",
+              "timestamp": "2026-01-08T20:44:00"
+            },
+            {
+              "id": "d12_003",
+              "sender": "user",
+              "text_key": "s06.matches.d12_003",
+              "timestamp": "2026-01-08T20:50:00"
+            },
+            {
+              "id": "d12_004",
+              "sender": "match",
+              "text_key": "s06.matches.d12_004",
+              "timestamp": "2026-01-08T20:55:00"
+            }
+          ]
+        }
+      ]
+    },
+    "mines": {
+      "games_played": 41,
+      "sessions": [
+        {
+          "started_at": "2026-02-17T03:02:00",
+          "duration_sec": 74,
+          "cleared": false
+        },
+        {
+          "started_at": "2026-02-17T02:01:00",
+          "duration_sec": 52,
+          "cleared": false
+        },
+        {
+          "started_at": "2026-02-17T01:03:00",
+          "duration_sec": 96,
+          "cleared": false
+        },
+        {
+          "started_at": "2026-02-16T04:00:00",
+          "duration_sec": 61,
+          "cleared": false
+        },
+        {
+          "started_at": "2026-02-16T02:58:00",
+          "duration_sec": 45,
+          "cleared": false
+        },
+        {
+          "started_at": "2026-02-15T02:44:00",
+          "duration_sec": 38,
+          "cleared": false
+        },
+        {
+          "started_at": "2026-02-15T01:50:00",
+          "duration_sec": 110,
+          "cleared": false
+        },
+        {
+          "started_at": "2026-02-12T03:31:00",
+          "duration_sec": 64,
+          "cleared": false
+        },
+        {
+          "started_at": "2026-02-09T02:12:00",
+          "duration_sec": 47,
+          "cleared": false
+        },
+        {
+          "started_at": "2026-02-04T03:58:00",
+          "duration_sec": 82,
+          "cleared": false
+        },
+        {
+          "started_at": "2026-01-29T02:37:00",
+          "duration_sec": 55,
+          "cleared": false
+        }
+      ]
+    }
+  }
+}

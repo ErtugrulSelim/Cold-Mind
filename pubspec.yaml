@@ -1,0 +1,139 @@
+name: coldmind
+description: "Cold Mind - detective investigation game"
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.12.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State management. Every service in the v1 codebase was a hand-rolled
+  # singleton; these replace them with providers that can be overridden in
+  # tests and disposed with the case they belong to.
+  flutter_riverpod: ^3.1.0
+  riverpod_annotation: ^4.0.0
+
+  # Immutable models + JSON parsing, both generated. The v2 case schema is
+  # large enough that hand-written fromJson is where the bugs would live.
+  freezed_annotation: ^3.1.0
+  json_annotation: ^4.9.0
+
+  # Navigation.
+  go_router: ^17.5.0
+
+  # Progress + session persistence (solved counts, logins, lock steps).
+  shared_preferences: ^2.5.5
+
+  # Maps app surface.
+  flutter_map: ^8.3.1
+  latlong2: ^0.10.1
+
+  # Voice notes, voice memos, question-screen audio clues.
+  audioplayers: ^6.8.1
+
+  # Instagram-style video posts in the explore/feed surfaces.
+  video_player: ^2.14.0
+
+  collection: ^1.19.1
+  url_launcher: ^6.3.2
+  share_plus: ^13.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  build_runner: ^2.15.1
+  freezed: ^3.2.3
+  json_serializable: ^6.11.2
+  riverpod_generator: ^4.0.0+1
+  custom_lint: ^0.8.1
+  riverpod_lint: ^3.1.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    # The phone's app icons, one PNG per key in `app_registry`. Only the
+    # folder itself is listed — `raw/` holds the untouched generator output
+    # and is deliberately not shipped.
+    - assets/icons/
+    # The player's own three controls — cases, questions, board. They sit on
+    # the phone but belong to the warm register, which is why they are brass
+    # rather than another cold tile, and why they live outside assets/icons/.
+    - assets/desk/
+    # One case.json per case: the phone, the cast, the lock chain and the
+    # questions in one document. index.json lists them for the case deck.
+    - assets/cases/
+    - assets/cases/s01/
+    - assets/cases/s01/photos/
+    - assets/cases/s01/audio/
+    - assets/cases/s02/
+    - assets/cases/s02/photos/
+    - assets/cases/s02/audio/
+    - assets/cases/s03/
+    - assets/cases/s03/photos/
+    - assets/cases/s04/
+    - assets/cases/s04/photos/
+    - assets/cases/s04/audio/
+    - assets/cases/s05/
+    - assets/cases/s05/photos/
+    - assets/cases/s05/audio/
+    - assets/cases/s06/
+    - assets/cases/s06/photos/
+    - assets/cases/s06/audio/
+    - assets/cases/s07/
+    - assets/cases/s07/photos/
+    - assets/cases/s07/audio/
+    - assets/cases/s08/
+    - assets/cases/s08/photos/
+    - assets/cases/s08/audio/
+    - assets/cases/s09/
+    - assets/cases/s09/photos/
+    - assets/cases/s09/audio/
+    - assets/cases/s10/
+    - assets/cases/s10/photos/
+    - assets/cases/s10/audio/
+
+    # Cast files, shared across the apps that render people.
+    - assets/people/
+
+    # Localization. English is the source of truth and the per-key fallback;
+    # every other pack overlays it.
+    - assets/l10n/en/
+    - assets/l10n/tr/
+    - assets/l10n/es/
+    - assets/l10n/fr/
+    - assets/l10n/de/
+    - assets/l10n/it/
+    - assets/l10n/br/
+    - assets/l10n/ru/
+    - assets/l10n/jp/
+    - assets/l10n/kr/
+    - assets/l10n/cn/
+    - assets/l10n/sa/
+    - assets/l10n/in/
+    - assets/l10n/nl/
+    - assets/l10n/pl/
+    - assets/l10n/se/
+    - assets/l10n/cz/
+    - assets/l10n/ua/
+
+    # Shared, case-agnostic surfaces.
+    - assets/textures/
+    - assets/paywall/
+    - assets/stock/photos/
+    - assets/stock/video/
+
+  fonts:
+    - family: Caveat
+      fonts:
+        - asset: assets/Caveat-font/static/Caveat-Regular.ttf
+        - asset: assets/Caveat-font/static/Caveat-Medium.ttf
+          weight: 500
+        - asset: assets/Caveat-font/static/Caveat-SemiBold.ttf
+          weight: 600
+        - asset: assets/Caveat-font/static/Caveat-Bold.ttf
+          weight: 700

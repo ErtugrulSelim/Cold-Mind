@@ -1,0 +1,100 @@
+{
+  "_comment": [
+    "One voice per person, across the whole game.",
+    "",
+    "The rule this file exists to keep: no two characters share a voice, even",
+    "when they are in different cases. A player who meets the same voice as two",
+    "different people stops believing the phones are different phones.",
+    "",
+    "`voice_id` values are ElevenLabs ids, which is what the Magnific voiceover",
+    "endpoint takes. Every one of them was verified against the API by",
+    "generating a clip and polling it to COMPLETED — a bad id is accepted at",
+    "submit and only fails later, so a submit that returns 200 proves nothing.",
+    "",
+    "`voice_registry_test.dart` fails if two speakers share an id."
+  ],
+
+  "speakers": {
+    "elias": {
+      "case": "s01",
+      "person": "Elias Rand",
+      "note": "The owner. Mid-thirties, an engineer talking himself into something.",
+      "voice_id": "pNInz6obpgDQGcFmaJgB",
+      "voice_name": "Adam — male, US, level",
+      "stability": 0.55,
+      "speed": 1.0
+    },
+    "halme": {
+      "case": "s01",
+      "person": "Viktor Halme",
+      "note": "His boss, older, shutting the conversation down. Has to sound like the room belongs to him.",
+      "voice_id": "onwK4e9ZLuTAKqWW03F9",
+      "voice_name": "Daniel — male, UK, authoritative",
+      "stability": 0.65,
+      "speed": 0.95
+    },
+
+    "maya": {
+      "case": "s02",
+      "person": "Maya Sorensen",
+      "note": "The owner. An artist recording herself at three in the morning.",
+      "voice_id": "XB0fDUnXU5powFXDhCwa",
+      "voice_name": "Charlotte — female, warm",
+      "stability": 0.45,
+      "speed": 0.97
+    },
+    "brandt": {
+      "case": "s02",
+      "person": "Leo Brandt",
+      "note": "Her manager and ex. Reasonable on the surface, which is the unpleasant part.",
+      "voice_id": "cjVigY5qzO86Huf0OWal",
+      "voice_name": "Eric — male, US, smooth",
+      "stability": 0.6,
+      "speed": 1.0
+    },
+
+    "rui": {
+      "case": "s04",
+      "person": "Rui Andrade",
+      "note": "The owner. Tired, talking into a stairwell, testing something that is not working.",
+      "voice_id": "JBFqnCBsd6RMkjVDRZzb",
+      "voice_name": "George — male, UK, weathered",
+      "stability": 0.5,
+      "speed": 0.98
+    },
+    "vasco": {
+      "case": "s04",
+      "person": "Vasco",
+      "note": "In a loud bar, pleased with himself.",
+      "voice_id": "iP95p4xoKVk53GoZ742B",
+      "voice_name": "Chris — male, US, casual",
+      "stability": 0.4,
+      "speed": 1.05
+    },
+    "marta": {
+      "case": "s04",
+      "person": "Marta",
+      "note": "Projecting to the back of a room. She is acting, and the recording only sounds like a fight.",
+      "voice_id": "FGY2WhTYpPnrIDTdsKH5",
+      "voice_name": "Laura — female, US, projecting",
+      "stability": 0.35,
+      "speed": 1.0
+    },
+    "director": {
+      "case": "s04",
+      "person": "the director at the read-through",
+      "note": "Off in the room, not in the scene. Flat and unbothered — he is the line that gives the whole recording away.",
+      "voice_id": "TX3LPaxmHKxFdv7VOQHJ",
+      "voice_name": "Liam — male, US, plain",
+      "stability": 0.7,
+      "speed": 1.0
+    }
+  },
+
+  "skipped": {
+    "_comment": "Not an oversight. Each of these is a memo that must stay silent.",
+    "s03": "Every memo. Two are a boy reading aloud, and the voice library is all adults — CLAUDE.md's rule is to write the transcript and skip the clip. The other two are authored as no-speech: a street at night, and water against a canal wall.",
+    "s02.vm_010": "Opens on thirty seconds of an empty room. Only the tail is spoken, and it is voiced from that point.",
+    "s04.vm_002": "Forty seconds of a fridge compressor and a car going past. Nobody speaks; the recording ends on its own."
+  }
+}

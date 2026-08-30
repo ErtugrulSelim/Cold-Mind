@@ -1,0 +1,166 @@
+{
+  "case_id": "s05",
+  "people": [
+    {
+      "id": "p000",
+      "tier": 1,
+      "contact": {
+        "first_name": "Marco",
+        "last_name": "Beltrame",
+        "phone_number": "+39 340 118 6620",
+        "avatar_color": "#334155"
+      },
+      "photo_asset": "assets/cases/s05/photos/ilija_profile.jpg",
+      "age": 54,
+      "home_city": "Trieste",
+      "occupation": "Dock hand, night crew",
+      "personality_tags": [
+        "quiet",
+        "punctual",
+        "unremarkable"
+      ]
+    },
+    {
+      "id": "p001",
+      "tier": 1,
+      "contact": {
+        "first_name": "Elena",
+        "last_name": "Furlan",
+        "phone_number": "+39 040 399 2210",
+        "avatar_color": "#0F766E"
+      },
+      "photo_asset": "assets/cases/s05/photos/elena_profile.jpg",
+      "age": 47,
+      "home_city": "Trieste",
+      "occupation": "Identification officer, Istituto di Medicina Legale",
+      "personality_tags": [
+        "exact",
+        "warm",
+        "out of leads"
+      ]
+    },
+    {
+      "id": "p002",
+      "tier": 1,
+      "contact": {
+        "first_name": "Nadia",
+        "last_name": "Beltrame",
+        "phone_number": "+39 040 771 4408",
+        "avatar_color": "#B45309"
+      },
+      "photo_asset": "assets/cases/s05/photos/nadia_profile.jpg",
+      "age": 41,
+      "home_city": "Trieste",
+      "occupation": "Resident, Casa Serena",
+      "personality_tags": [
+        "literal",
+        "steady",
+        "waiting"
+      ]
+    },
+    {
+      "id": "p003",
+      "tier": 1,
+      "contact": {
+        "first_name": "Bruno",
+        "last_name": "Zorzi",
+        "phone_number": "+39 335 204 7719",
+        "avatar_color": "#7F1D1D"
+      },
+      "photo_asset": "assets/cases/s05/photos/bruno_profile.jpg",
+      "age": 58,
+      "home_city": "Trieste",
+      "occupation": "Foreman, night loading crew",
+      "personality_tags": [
+        "hard",
+        "practical",
+        "afraid of inspections"
+      ]
+    },
+    {
+      "id": "p004",
+      "tier": 2,
+      "contact": {
+        "first_name": "Marco",
+        "last_name": "Beltrame",
+        "phone_number": "+39 340 118 6620",
+        "avatar_color": "#1E3A5F"
+      },
+      "photo_asset": "assets/cases/s05/photos/marco_photo.jpg",
+      "age": 61,
+      "home_city": "Trieste",
+      "occupation": "Able seaman (last signed on 2014)",
+      "personality_tags": [
+        "loud",
+        "generous",
+        "gone"
+      ]
+    },
+    {
+      "id": "p005",
+      "tier": 2,
+      "contact": {
+        "first_name": "Vesna",
+        "last_name": "Šarić",
+        "phone_number": "+387 37 226 118",
+        "avatar_color": "#6D28D9"
+      },
+      "age": 61,
+      "home_city": "Bihać",
+      "occupation": "Retired teacher",
+      "personality_tags": [
+        "formal",
+        "patient",
+        "unfinished"
+      ]
+    },
+    {
+      "id": "p006",
+      "tier": 2,
+      "contact": {
+        "first_name": "Aleksandar",
+        "last_name": "Petrović",
+        "phone_number": "+39 351 660 9034",
+        "avatar_color": "#166534"
+      },
+      "photo_asset": "assets/cases/s05/photos/sasha_profile.jpg",
+      "age": 34,
+      "home_city": "Trieste",
+      "occupation": "Dock hand, night crew",
+      "personality_tags": [
+        "frightened",
+        "decent",
+        "unpapered"
+      ]
+    },
+    {
+      "id": "p007",
+      "tier": 3,
+      "contact": {
+        "first_name": "Casa",
+        "last_name": "Serena",
+        "phone_number": "+39 040 812 3300",
+        "avatar_color": "#0369A1"
+      },
+      "age": 0,
+      "home_city": "Trieste",
+      "occupation": "Assisted living",
+      "personality_tags": []
+    },
+    {
+      "id": "p008",
+      "tier": 3,
+      "contact": {
+        "first_name": "Sportello",
+        "last_name": "Anagrafe",
+        "phone_number": "+39 040 675 8000",
+        "avatar_color": "#475569"
+      },
+      "age": 0,
+      "home_city": "Trieste",
+      "occupation": "Registry office",
+      "personality_tags": []
+    }
+  ],
+  "instagram_posts": []
+}

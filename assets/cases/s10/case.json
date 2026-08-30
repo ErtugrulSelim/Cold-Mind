@@ -1,0 +1,5896 @@
+{
+  "schema": 2,
+  "id": "s10",
+  "meta": {
+    "title_key": "s10.meta.title",
+    "difficulty": "hard",
+    "city": {
+      "name": "Bristol",
+      "lat": 51.4545,
+      "lng": -2.5879
+    },
+    "thumbnail": "assets/cases/s10/photos/thumbnail.jpg",
+    "client": {
+      "person_id": "p000",
+      "name": "Elena Christofi",
+      "photo": "assets/cases/s10/photos/elena_profile.jpg"
+    },
+    "reveal_total": true
+  },
+  "device": {
+    "owner_name": "Elena Christofi",
+    "model": "Aurel 8",
+    "ios_version": "Kite 18.4",
+    "storage_total_gb": 256,
+    "storage_used_gb": 201,
+    "last_backup": "2026-05-03T02:00:00",
+    "lock_pin": "091117",
+    "wallpaper_asset": "assets/cases/s10/photos/wallpaper.jpg"
+  },
+  "cast": [
+    {
+      "person_id": "p000",
+      "role": "victim",
+      "contact_saved": false
+    },
+    {
+      "person_id": "p001",
+      "role": "family",
+      "nickname": "Sophia",
+      "contact_saved": true,
+      "relationship_note_key": "s10.relationship.p001.note"
+    },
+    {
+      "person_id": "p002",
+      "role": "partner",
+      "nickname": "Bobby",
+      "contact_saved": true,
+      "relationship_note_key": "s10.relationship.p002.note"
+    },
+    {
+      "person_id": "p003",
+      "role": "friend",
+      "nickname": "Nia",
+      "contact_saved": true,
+      "relationship_note_key": "s10.relationship.p003.note"
+    },
+    {
+      "person_id": "p004",
+      "role": "family",
+      "contact_saved": true,
+      "relationship_note_key": "s10.relationship.p004.note"
+    },
+    {
+      "person_id": "p005",
+      "role": "family",
+      "nickname": "Dad",
+      "contact_saved": true
+    },
+    {
+      "person_id": "p006",
+      "role": "other",
+      "contact_saved": true,
+      "relationship_note_key": "s10.relationship.p006.note"
+    },
+    {
+      "person_id": "p007",
+      "role": "other",
+      "contact_saved": true,
+      "relationship_note_key": "s10.relationship.p007.note"
+    },
+    {
+      "person_id": "p008",
+      "role": "other",
+      "contact_saved": true,
+      "relationship_note_key": "s10.relationship.p008.note"
+    }
+  ],
+  "contacts": [
+    {
+      "person_id": "p001",
+      "is_saved": true
+    },
+    {
+      "person_id": "p002",
+      "is_saved": true
+    },
+    {
+      "person_id": "p003",
+      "is_saved": true
+    },
+    {
+      "person_id": "p004",
+      "is_saved": true
+    },
+    {
+      "person_id": "p005",
+      "is_saved": true
+    },
+    {
+      "person_id": "p006",
+      "is_saved": true,
+      "custom_label_key": "s10.contact.p006.label"
+    },
+    {
+      "person_id": "p007",
+      "is_saved": true,
+      "custom_label_key": "s10.contact.p007.label"
+    },
+    {
+      "person_id": "p008",
+      "is_saved": true,
+      "custom_label_key": "s10.contact.p008.label"
+    }
+  ],
+  "home": {
+    "grid": [
+      "instagram",
+      "gmail",
+      "cloud",
+      "notes",
+      "photos",
+      "calendar",
+      "venmo",
+      "maps",
+      "google",
+      "voice_memos",
+      "spotify",
+      "ereader",
+      "rides",
+      "health",
+      "games"
+    ],
+    "dock": [
+      "calls",
+      "sms",
+      "whatsapp",
+      "instagram"
+    ],
+    "widget_pages": [
+      [
+        "photos",
+        "calendar"
+      ]
+    ]
+  },
+  "board": {
+    "center_node_id": "b_elena",
+    "nodes": [
+      {
+        "id": "b_elena",
+        "type": "polaroid",
+        "title_key": "s10.board.elena.title",
+        "subtitle_key": "s10.board.elena.sub",
+        "image_asset": "assets/cases/s10/photos/elena_profile.jpg",
+        "is_center": true
+      },
+      {
+        "id": "b_bobby",
+        "type": "polaroid",
+        "title_key": "s10.board.bobby.title",
+        "subtitle_key": "s10.board.bobby.sub",
+        "image_asset": "assets/cases/s10/photos/andreas_beach.jpg"
+      },
+      {
+        "id": "b_andreas",
+        "type": "polaroid",
+        "title_key": "s10.board.andreas.title",
+        "subtitle_key": "s10.board.andreas.sub",
+        "image_asset": "assets/cases/s10/photos/andreas_profile.jpg"
+      },
+      {
+        "id": "b_family",
+        "type": "map",
+        "title_key": "s10.board.family.title",
+        "subtitle_key": "s10.board.family.sub",
+        "image_asset": "assets/cases/s10/photos/family_table.jpg"
+      },
+      {
+        "id": "b_nia",
+        "type": "polaroid",
+        "title_key": "s10.board.nia.title",
+        "subtitle_key": "s10.board.nia.sub",
+        "image_asset": "assets/cases/s10/photos/nia_profile.jpg"
+      },
+      {
+        "id": "b_accounts",
+        "type": "sticky_note",
+        "title_key": "s10.board.accounts.title",
+        "subtitle_key": "s10.board.accounts.sub"
+      },
+      {
+        "id": "b_money",
+        "type": "sticky_note",
+        "title_key": "s10.board.money.title",
+        "subtitle_key": "s10.board.money.sub"
+      },
+      {
+        "id": "b_nadia",
+        "type": "sticky_note",
+        "title_key": "s10.board.nadia.title",
+        "subtitle_key": "s10.board.nadia.sub"
+      }
+    ],
+    "edges": [
+      {
+        "id": "be_1",
+        "from": "b_elena",
+        "to": "b_bobby",
+        "label_key": "s10.board.e1",
+        "curvature": 0.13
+      },
+      {
+        "id": "be_2",
+        "from": "b_bobby",
+        "to": "b_andreas",
+        "label_key": "s10.board.e2",
+        "curvature": 0.2
+      },
+      {
+        "id": "be_3",
+        "from": "b_accounts",
+        "to": "b_elena",
+        "label_key": "s10.board.e3",
+        "curvature": 0.16
+      },
+      {
+        "id": "be_4",
+        "from": "b_family",
+        "to": "b_accounts",
+        "label_key": "s10.board.e4",
+        "curvature": 0.18
+      },
+      {
+        "id": "be_5",
+        "from": "b_nia",
+        "to": "b_elena",
+        "label_key": "s10.board.e5",
+        "curvature": 0.12
+      },
+      {
+        "id": "be_6",
+        "from": "b_money",
+        "to": "b_elena",
+        "label_key": "s10.board.e6",
+        "curvature": 0.15
+      },
+      {
+        "id": "be_7",
+        "from": "b_elena",
+        "to": "b_family",
+        "label_key": "s10.board.e7",
+        "curvature": 0.11
+      },
+      {
+        "id": "be_8",
+        "from": "b_elena",
+        "to": "b_andreas",
+        "label_key": "s10.board.e8",
+        "curvature": 0.22
+      },
+      {
+        "id": "be_9",
+        "from": "b_nadia",
+        "to": "b_elena",
+        "label_key": "s10.board.e9",
+        "curvature": 0.19
+      }
+    ]
+  },
+  "chats": {
+    "intro": {
+      "client_person_id": "p000",
+      "messages": [
+        {
+          "id": "cc_001",
+          "sender": "client",
+          "text_key": "s10.client_chat.cc_001",
+          "timestamp": "2026-05-04T14:20:00",
+          "delay_ms": 0
+        },
+        {
+          "id": "cc_002",
+          "sender": "client",
+          "text_key": "s10.client_chat.cc_002",
+          "timestamp": "2026-05-04T14:20:16",
+          "delay_ms": 16000
+        },
+        {
+          "id": "cc_003",
+          "sender": "client",
+          "text_key": "s10.client_chat.cc_003",
+          "timestamp": "2026-05-04T14:20:35",
+          "delay_ms": 19000
+        },
+        {
+          "id": "cc_004",
+          "sender": "client",
+          "text_key": "s10.client_chat.cc_004",
+          "timestamp": "2026-05-04T14:20:54",
+          "delay_ms": 19000
+        },
+        {
+          "id": "cc_005",
+          "sender": "client",
+          "text_key": "s10.client_chat.cc_005",
+          "timestamp": "2026-05-04T14:21:11",
+          "delay_ms": 17000
+        },
+        {
+          "id": "cc_006",
+          "sender": "client",
+          "text_key": "s10.client_chat.cc_006",
+          "timestamp": "2026-05-04T14:21:28",
+          "delay_ms": 17000
+        },
+        {
+          "id": "cc_007",
+          "sender": "client",
+          "text_key": "s10.client_chat.cc_007",
+          "timestamp": "2026-05-04T14:21:41",
+          "delay_ms": 13000,
+          "is_choice": true,
+          "choices": [
+            {
+              "label_key": "s10.client_chat.cc_007.accept",
+              "action": "accept_case"
+            },
+            {
+              "label_key": "s10.client_chat.cc_007.decline",
+              "action": "decline_case"
+            }
+          ]
+        },
+        {
+          "id": "cc_008",
+          "sender": "client",
+          "text_key": "s10.client_chat.cc_008",
+          "timestamp": "2026-05-04T14:21:56",
+          "delay_ms": 15000
+        },
+        {
+          "id": "cc_009",
+          "sender": "client",
+          "text_key": "s10.client_chat.cc_009",
+          "timestamp": "2026-05-04T14:22:10",
+          "delay_ms": 14000
+        }
+      ]
+    },
+    "interstitials": [
+      {
+        "after_question": 4,
+        "client_person_id": "p000",
+        "messages": [
+          {
+            "id": "is1_001",
+            "sender": "client",
+            "text_key": "s10.interstitial.is1_001",
+            "timestamp": "2026-05-06T20:10:00",
+            "delay_ms": 0
+          },
+          {
+            "id": "is1_002",
+            "sender": "client",
+            "text_key": "s10.interstitial.is1_002",
+            "timestamp": "2026-05-06T20:10:17",
+            "delay_ms": 17000
+          },
+          {
+            "id": "is1_003",
+            "sender": "client",
+            "text_key": "s10.interstitial.is1_003",
+            "timestamp": "2026-05-06T20:10:31",
+            "delay_ms": 14000
+          }
+        ]
+      },
+      {
+        "after_question": 7,
+        "client_person_id": "p000",
+        "messages": [
+          {
+            "id": "is2_001",
+            "sender": "client",
+            "text_key": "s10.interstitial.is2_001",
+            "timestamp": "2026-05-09T22:40:00",
+            "delay_ms": 0
+          },
+          {
+            "id": "is2_002",
+            "sender": "client",
+            "text_key": "s10.interstitial.is2_002",
+            "timestamp": "2026-05-09T22:40:14",
+            "delay_ms": 14000
+          },
+          {
+            "id": "is2_003",
+            "sender": "client",
+            "text_key": "s10.interstitial.is2_003",
+            "timestamp": "2026-05-09T22:40:32",
+            "delay_ms": 18000
+          },
+          {
+            "id": "is2_004",
+            "sender": "client",
+            "text_key": "s10.interstitial.is2_004",
+            "timestamp": "2026-05-09T22:40:45",
+            "delay_ms": 13000
+          }
+        ]
+      },
+      {
+        "after_question": 11,
+        "client_person_id": "p000",
+        "messages": [
+          {
+            "id": "is3_001",
+            "sender": "client",
+            "text_key": "s10.interstitial.is3_001",
+            "timestamp": "2026-05-13T19:05:00",
+            "delay_ms": 0
+          },
+          {
+            "id": "is3_002",
+            "sender": "client",
+            "text_key": "s10.interstitial.is3_002",
+            "timestamp": "2026-05-13T19:05:16",
+            "delay_ms": 16000
+          },
+          {
+            "id": "is3_003",
+            "sender": "client",
+            "text_key": "s10.interstitial.is3_003",
+            "timestamp": "2026-05-13T19:05:37",
+            "delay_ms": 21000
+          },
+          {
+            "id": "is3_004",
+            "sender": "client",
+            "text_key": "s10.interstitial.is3_004",
+            "timestamp": "2026-05-13T19:05:50",
+            "delay_ms": 13000
+          }
+        ]
+      }
+    ],
+    "closing": {
+      "client_person_id": "p000",
+      "messages": [
+        {
+          "id": "cl_001",
+          "sender": "client",
+          "text_key": "s10.closing_chat.cl_001",
+          "timestamp": "2026-05-21T18:30:00",
+          "delay_ms": 0
+        },
+        {
+          "id": "cl_002",
+          "sender": "client",
+          "text_key": "s10.closing_chat.cl_002",
+          "timestamp": "2026-05-21T18:30:20",
+          "delay_ms": 20000
+        },
+        {
+          "id": "cl_003",
+          "sender": "client",
+          "text_key": "s10.closing_chat.cl_003",
+          "timestamp": "2026-05-21T18:30:36",
+          "delay_ms": 16000
+        },
+        {
+          "id": "cl_004",
+          "sender": "client",
+          "text_key": "s10.closing_chat.cl_004",
+          "timestamp": "2026-05-21T18:30:58",
+          "delay_ms": 22000
+        },
+        {
+          "id": "cl_005",
+          "sender": "client",
+          "text_key": "s10.closing_chat.cl_005",
+          "timestamp": "2026-05-21T18:31:17",
+          "delay_ms": 19000
+        },
+        {
+          "id": "cl_006",
+          "sender": "client",
+          "text_key": "s10.closing_chat.cl_006",
+          "timestamp": "2026-05-21T18:31:26",
+          "delay_ms": 9000
+        },
+        {
+          "id": "cl_007",
+          "sender": "client",
+          "text_key": "s10.closing_chat.cl_007",
+          "timestamp": "2026-05-21T18:31:41",
+          "delay_ms": 15000
+        },
+        {
+          "id": "cl_008",
+          "sender": "client",
+          "text_key": "s10.closing_chat.cl_008",
+          "timestamp": "2026-05-21T18:32:01",
+          "delay_ms": 20000
+        },
+        {
+          "id": "cl_009",
+          "sender": "client",
+          "text_key": "s10.closing_chat.cl_009",
+          "timestamp": "2026-05-21T18:32:13",
+          "delay_ms": 12000
+        },
+        {
+          "id": "cl_010",
+          "sender": "client",
+          "text_key": "s10.closing_chat.cl_010",
+          "timestamp": "2026-05-21T18:32:26",
+          "delay_ms": 13000
+        },
+        {
+          "id": "cl_011",
+          "sender": "client",
+          "text_key": "s10.closing_chat.cl_011",
+          "timestamp": "2026-05-21T18:32:38",
+          "delay_ms": 12000,
+          "is_choice": true,
+          "choices": [
+            {
+              "label_key": "s10.closing_chat.cl_011.opt1",
+              "action": "none",
+              "branch": "civil"
+            },
+            {
+              "label_key": "s10.closing_chat.cl_011.opt2",
+              "action": "none",
+              "branch": "police"
+            },
+            {
+              "label_key": "s10.closing_chat.cl_011.opt3",
+              "action": "none",
+              "branch": "family"
+            }
+          ]
+        },
+        {
+          "id": "cl_013",
+          "sender": "client",
+          "text_key": "s10.closing_chat.cl_013",
+          "timestamp": "2026-05-21T18:32:46",
+          "delay_ms": 5000,
+          "trigger": "civil"
+        },
+        {
+          "id": "cl_014",
+          "sender": "client",
+          "text_key": "s10.closing_chat.cl_014",
+          "timestamp": "2026-05-21T18:33:04",
+          "delay_ms": 18000,
+          "trigger": "civil"
+        },
+        {
+          "id": "cl_015",
+          "sender": "client",
+          "text_key": "s10.closing_chat.cl_015",
+          "timestamp": "2026-05-21T18:32:46",
+          "delay_ms": 5000,
+          "trigger": "police"
+        },
+        {
+          "id": "cl_016",
+          "sender": "client",
+          "text_key": "s10.closing_chat.cl_016",
+          "timestamp": "2026-05-21T18:33:04",
+          "delay_ms": 18000,
+          "trigger": "police"
+        },
+        {
+          "id": "cl_017",
+          "sender": "client",
+          "text_key": "s10.closing_chat.cl_017",
+          "timestamp": "2026-05-21T18:32:46",
+          "delay_ms": 5000,
+          "trigger": "family"
+        },
+        {
+          "id": "cl_018",
+          "sender": "client",
+          "text_key": "s10.closing_chat.cl_018",
+          "timestamp": "2026-05-21T18:33:04",
+          "delay_ms": 18000,
+          "trigger": "family"
+        },
+        {
+          "id": "cl_019",
+          "sender": "client",
+          "text_key": "s10.closing_chat.cl_019",
+          "timestamp": "2026-05-21T18:33:22",
+          "delay_ms": 18000
+        }
+      ]
+    }
+  },
+  "locks": [
+    {
+      "id": "step_001",
+      "order": 1,
+      "type": "find_code",
+      "note": "Kilitsiz Thursdays notunun son satiri kodu acikca yaziyor: 0911, ilk mesaji aldigi gun",
+      "source_app": "notes",
+      "source_item_id": "note_002",
+      "target_app": "photos",
+      "target_item_id": "album_003",
+      "hint_toast_key": "s10.lock.step_001.hint"
+    },
+    {
+      "id": "step_002",
+      "order": 2,
+      "type": "find_code",
+      "note": "Ayni dort hane korumali thursday.csv dosyasini aciyor: dokuz yilda otuz dokuz hesabin da sessiz kaldigi iki saatlik pencerenin sayimi",
+      "source_app": "notes",
+      "source_item_id": "note_002",
+      "target_app": "cloud",
+      "target_item_id": "cf_005"
+    },
+    {
+      "id": "step_003",
+      "order": 3,
+      "type": "unlock_note",
+      "note": "Ve kendi kilitli notunu: ogrendigi gece ne dusundugunu, adini henuz yazmadan once",
+      "source_app": "notes",
+      "source_item_id": "note_002",
+      "target_app": "notes",
+      "target_item_id": "note_003"
+    }
+  ],
+  "questions": [
+    {
+      "index": 1,
+      "app": "whatsapp",
+      "kind": "free_text",
+      "title_key": "s10.question.q01.title",
+      "prompt_key": "s10.question.q01.question",
+      "answers_key": "s10.question.q01.answers",
+      "reveal": {
+        "answer_key": "s10.question.q01.opt2",
+        "decoy_keys": [
+          "s10.question.q01.opt0",
+          "s10.question.q01.opt1",
+          "s10.question.q01.opt3"
+        ]
+      }
+    },
+    {
+      "index": 2,
+      "app": "instagram",
+      "kind": "free_text",
+      "title_key": "s10.question.q02.title",
+      "prompt_key": "s10.question.q02.question",
+      "answers_key": "s10.question.q02.answers",
+      "reveal": {
+        "answer_key": "s10.question.q02.opt1",
+        "decoy_keys": [
+          "s10.question.q02.opt0",
+          "s10.question.q02.opt2",
+          "s10.question.q02.opt3"
+        ]
+      }
+    },
+    {
+      "index": 3,
+      "app": "calls",
+      "kind": "free_text",
+      "title_key": "s10.question.q03.title",
+      "prompt_key": "s10.question.q03.question",
+      "answers_key": "s10.question.q03.answers",
+      "reveal": {
+        "answer_key": "s10.question.q03.opt1",
+        "decoy_keys": [
+          "s10.question.q03.opt0",
+          "s10.question.q03.opt2",
+          "s10.question.q03.opt3"
+        ]
+      }
+    },
+    {
+      "index": 4,
+      "app": "whatsapp",
+      "kind": "free_text",
+      "title_key": "s10.question.q04.title",
+      "prompt_key": "s10.question.q04.question",
+      "answers_key": "s10.question.q04.answers",
+      "reveal": {
+        "answer_key": "s10.question.q04.opt1",
+        "decoy_keys": [
+          "s10.question.q04.opt0",
+          "s10.question.q04.opt2",
+          "s10.question.q04.opt3"
+        ]
+      }
+    },
+    {
+      "index": 5,
+      "app": "whatsapp",
+      "kind": "contradiction",
+      "title_key": "s10.question.q05.title",
+      "prompt_key": "s10.question.q05.question",
+      "snippets": [
+        "s10.question.q05.sn0",
+        "s10.question.q05.sn1",
+        "s10.question.q05.sn2",
+        "s10.question.q05.sn3"
+      ],
+      "lie_index": 2
+    },
+    {
+      "index": 6,
+      "app": "whatsapp",
+      "kind": "free_text",
+      "title_key": "s10.question.q06.title",
+      "prompt_key": "s10.question.q06.question",
+      "answers_key": "s10.question.q06.answers",
+      "reveal": {
+        "answer_key": "s10.question.q06.opt1",
+        "decoy_keys": [
+          "s10.question.q06.opt0",
+          "s10.question.q06.opt2",
+          "s10.question.q06.opt3"
+        ]
+      }
+    },
+    {
+      "index": 7,
+      "app": "cloud",
+      "kind": "free_text",
+      "title_key": "s10.question.q07.title",
+      "prompt_key": "s10.question.q07.question",
+      "answers_key": "s10.question.q07.answers",
+      "reveal": {
+        "answer_key": "s10.question.q07.opt1",
+        "decoy_keys": [
+          "s10.question.q07.opt0",
+          "s10.question.q07.opt2",
+          "s10.question.q07.opt3"
+        ]
+      }
+    },
+    {
+      "index": 8,
+      "app": "photos",
+      "kind": "free_text",
+      "title_key": "s10.question.q08.title",
+      "prompt_key": "s10.question.q08.question",
+      "answers_key": "s10.question.q08.answers",
+      "reveal": {
+        "answer_key": "s10.question.q08.opt1",
+        "decoy_keys": [
+          "s10.question.q08.opt0",
+          "s10.question.q08.opt2",
+          "s10.question.q08.opt3"
+        ]
+      }
+    },
+    {
+      "index": 9,
+      "app": "gmail",
+      "kind": "free_text",
+      "title_key": "s10.question.q09.title",
+      "prompt_key": "s10.question.q09.question",
+      "answers_key": "s10.question.q09.answers",
+      "reveal": {
+        "answer_key": "s10.question.q09.opt1",
+        "decoy_keys": [
+          "s10.question.q09.opt0",
+          "s10.question.q09.opt2",
+          "s10.question.q09.opt3"
+        ]
+      }
+    },
+    {
+      "index": 10,
+      "app": "venmo",
+      "kind": "free_text",
+      "title_key": "s10.question.q10.title",
+      "prompt_key": "s10.question.q10.question",
+      "answers_key": "s10.question.q10.answers",
+      "reveal": {
+        "answer_key": "s10.question.q10.opt1",
+        "decoy_keys": [
+          "s10.question.q10.opt0",
+          "s10.question.q10.opt2",
+          "s10.question.q10.opt3"
+        ]
+      }
+    },
+    {
+      "index": 11,
+      "app": "cloud",
+      "kind": "free_text",
+      "title_key": "s10.question.q11.title",
+      "prompt_key": "s10.question.q11.question",
+      "answers_key": "s10.question.q11.answers",
+      "reveal": {
+        "answer_key": "s10.question.q11.opt1",
+        "decoy_keys": [
+          "s10.question.q11.opt0",
+          "s10.question.q11.opt2",
+          "s10.question.q11.opt3"
+        ]
+      }
+    },
+    {
+      "index": 12,
+      "app": "photos",
+      "kind": "suspect",
+      "title_key": "s10.question.q12.title",
+      "prompt_key": "s10.question.q12.question",
+      "person_ids": [
+        "p003",
+        "p001",
+        "p004",
+        "p002"
+      ],
+      "correct_person_id": "p001"
+    },
+    {
+      "index": 13,
+      "app": "photos",
+      "kind": "free_text",
+      "title_key": "s10.question.q13.title",
+      "prompt_key": "s10.question.q13.question",
+      "answers_key": "s10.question.q13.answers",
+      "reveal": {
+        "answer_key": "s10.question.q13.opt2",
+        "decoy_keys": [
+          "s10.question.q13.opt0",
+          "s10.question.q13.opt1",
+          "s10.question.q13.opt3"
+        ]
+      }
+    },
+    {
+      "index": 14,
+      "app": "gmail",
+      "kind": "free_text",
+      "title_key": "s10.question.q14.title",
+      "prompt_key": "s10.question.q14.question",
+      "answers_key": "s10.question.q14.answers",
+      "reveal": {
+        "answer_key": "s10.question.q14.opt1",
+        "decoy_keys": [
+          "s10.question.q14.opt0",
+          "s10.question.q14.opt2",
+          "s10.question.q14.opt3"
+        ]
+      }
+    },
+    {
+      "index": 15,
+      "app": "gmail",
+      "kind": "free_text",
+      "title_key": "s10.question.q15.title",
+      "prompt_key": "s10.question.q15.question",
+      "answers_key": "s10.question.q15.answers",
+      "reveal": {
+        "answer_key": "s10.question.q15.opt1",
+        "decoy_keys": [
+          "s10.question.q15.opt0",
+          "s10.question.q15.opt2",
+          "s10.question.q15.opt3"
+        ]
+      }
+    }
+  ],
+  "apps": {
+    "sms": {
+      "conversations": [
+        {
+          "contact_person_id": "p005",
+          "messages": [
+            {
+              "id": "sms_001",
+              "sender": "contact",
+              "text_key": "s10.messages.sms_001",
+              "timestamp": "2026-04-02T19:40:00",
+              "is_deleted": false
+            },
+            {
+              "id": "sms_002",
+              "sender": "user",
+              "text_key": "s10.messages.sms_002",
+              "timestamp": "2026-04-02T21:15:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_101",
+              "sender": "contact",
+              "text_key": "s10.messages.f_sms_101",
+              "timestamp": "2019-04-28T10:00:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_102",
+              "sender": "user",
+              "text_key": "s10.messages.f_sms_102",
+              "timestamp": "2019-04-28T10:20:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_103",
+              "sender": "contact",
+              "text_key": "s10.messages.f_sms_103",
+              "timestamp": "2022-01-16T09:30:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_104",
+              "sender": "user",
+              "text_key": "s10.messages.f_sms_104",
+              "timestamp": "2022-01-16T09:50:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_105",
+              "sender": "contact",
+              "text_key": "s10.messages.f_sms_105",
+              "timestamp": "2024-08-11T11:00:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_106",
+              "sender": "contact",
+              "text_key": "s10.messages.f_sms_106",
+              "timestamp": "2026-03-29T10:00:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_107",
+              "sender": "user",
+              "text_key": "s10.messages.f_sms_107",
+              "timestamp": "2026-03-29T14:00:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_108",
+              "sender": "contact",
+              "text_key": "s10.messages.f_sms_108",
+              "timestamp": "2026-05-17T10:00:00",
+              "is_deleted": false
+            }
+          ]
+        },
+        {
+          "contact_person_id": "p008",
+          "messages": [
+            {
+              "id": "sms_010",
+              "sender": "contact",
+              "text_key": "s10.messages.sms_010",
+              "timestamp": "2026-04-28T16:20:00",
+              "is_deleted": false
+            },
+            {
+              "id": "sms_011",
+              "sender": "user",
+              "text_key": "s10.messages.sms_011",
+              "timestamp": "2026-04-28T16:44:00",
+              "is_deleted": false
+            },
+            {
+              "id": "sms_012",
+              "sender": "contact",
+              "text_key": "s10.messages.sms_012",
+              "timestamp": "2026-04-28T16:47:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_141",
+              "sender": "contact",
+              "text_key": "s10.messages.f_sms_141",
+              "timestamp": "2026-04-02T09:00:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_142",
+              "sender": "user",
+              "text_key": "s10.messages.f_sms_142",
+              "timestamp": "2026-04-02T09:20:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_143",
+              "sender": "contact",
+              "text_key": "s10.messages.f_sms_143",
+              "timestamp": "2026-04-16T15:00:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_144",
+              "sender": "user",
+              "text_key": "s10.messages.f_sms_144",
+              "timestamp": "2026-04-16T15:30:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_145",
+              "sender": "contact",
+              "text_key": "s10.messages.f_sms_145",
+              "timestamp": "2026-04-16T15:32:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_146",
+              "sender": "contact",
+              "text_key": "s10.messages.f_sms_146",
+              "timestamp": "2026-05-14T11:20:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_147",
+              "sender": "user",
+              "text_key": "s10.messages.f_sms_147",
+              "timestamp": "2026-05-14T12:00:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_148",
+              "sender": "contact",
+              "text_key": "s10.messages.f_sms_148",
+              "timestamp": "2026-05-14T12:04:00",
+              "is_deleted": false
+            }
+          ]
+        },
+        {
+          "contact_person_id": "p004",
+          "messages": [
+            {
+              "id": "sms_020",
+              "sender": "contact",
+              "text_key": "s10.messages.sms_020",
+              "timestamp": "2026-05-20T23:30:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_121",
+              "sender": "contact",
+              "text_key": "s10.messages.f_sms_121",
+              "timestamp": "2020-12-24T15:00:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_122",
+              "sender": "contact",
+              "text_key": "s10.messages.f_sms_122",
+              "timestamp": "2023-09-14T16:30:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_123",
+              "sender": "user",
+              "text_key": "s10.messages.f_sms_123",
+              "timestamp": "2023-09-14T17:00:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_124",
+              "sender": "contact",
+              "text_key": "s10.messages.f_sms_124",
+              "timestamp": "2026-04-09T19:41:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_125",
+              "sender": "contact",
+              "text_key": "s10.messages.f_sms_125",
+              "timestamp": "2026-04-23T18:00:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_126",
+              "sender": "contact",
+              "text_key": "s10.messages.f_sms_126",
+              "timestamp": "2026-05-19T23:33:00",
+              "is_deleted": false
+            }
+          ]
+        }
+      ]
+    },
+    "whatsapp": {
+      "conversations": [
+        {
+          "contact_person_id": "p002",
+          "last_seen": "2026-03-19T14:02:00",
+          "messages": [
+            {
+              "id": "b1_001",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s10.chats.b1_001",
+              "timestamp": "2017-12-03T01:40:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b1_002",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.b1_002",
+              "timestamp": "2017-12-03T01:44:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b1_003",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s10.chats.b1_003",
+              "timestamp": "2017-12-03T01:46:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b1_010",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.b1_010",
+              "timestamp": "2018-06-13T20:10:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b1_011",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s10.chats.b1_011",
+              "timestamp": "2018-06-13T20:22:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b1_012",
+              "sender": "p002",
+              "type": "voice",
+              "text_key": "s10.chats.b1_012",
+              "asset": "assets/cases/s10/audio/bobby_voice_{lang}.mp3",
+              "audio_langs": [
+                "en"
+              ],
+              "duration_sec": 9,
+              "timestamp": "2018-06-13T20:31:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b1_013",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.b1_013",
+              "timestamp": "2018-06-13T20:34:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b1_020",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.b1_020",
+              "timestamp": "2019-02-09T21:05:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b1_021",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s10.chats.b1_021",
+              "timestamp": "2019-02-09T21:12:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b1_022",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.b1_022",
+              "timestamp": "2019-02-09T21:13:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b1_023",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s10.chats.b1_023",
+              "timestamp": "2019-02-09T21:20:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b1_030",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s10.chats.b1_030",
+              "timestamp": "2019-08-06T23:14:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b1_031",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s10.chats.b1_031",
+              "timestamp": "2019-08-06T23:15:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b1_032",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.b1_032",
+              "timestamp": "2019-08-06T23:16:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b1_033",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s10.chats.b1_033",
+              "timestamp": "2019-08-06T23:22:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b1_040",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s10.chats.b1_040",
+              "timestamp": "2019-12-11T18:02:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b1_041",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.b1_041",
+              "timestamp": "2019-12-11T18:09:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b1_042",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s10.chats.b1_042",
+              "timestamp": "2019-12-11T18:11:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b1_050",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.b1_050",
+              "timestamp": "2023-04-18T23:56:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b1_051",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s10.chats.b1_051",
+              "timestamp": "2023-04-18T23:57:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b1_052",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.b1_052",
+              "timestamp": "2023-04-18T23:58:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b1_053",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s10.chats.b1_053",
+              "timestamp": "2023-04-18T23:58:40",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b1_054",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.b1_054",
+              "timestamp": "2023-04-18T23:59:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b1_055",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s10.chats.b1_055",
+              "timestamp": "2023-04-19T00:04:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b1_056",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.b1_056",
+              "timestamp": "2023-04-19T00:06:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b1_057",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s10.chats.b1_057",
+              "timestamp": "2023-04-19T00:06:30",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b1_060",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s10.chats.b1_060",
+              "timestamp": "2026-02-17T02:40:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b1_061",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s10.chats.b1_061",
+              "timestamp": "2026-02-17T02:41:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b1_062",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.b1_062",
+              "timestamp": "2026-02-17T02:50:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b2_101",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s10.chats.b2_101",
+              "timestamp": "2017-11-12T22:40:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b2_102",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.b2_102",
+              "timestamp": "2017-11-12T22:52:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b2_103",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s10.chats.b2_103",
+              "timestamp": "2017-11-12T22:55:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b2_110",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s10.chats.b2_110",
+              "timestamp": "2018-02-03T23:10:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b2_111",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.b2_111",
+              "timestamp": "2018-02-03T23:12:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b2_112",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s10.chats.b2_112",
+              "timestamp": "2018-02-03T23:40:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b2_120",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s10.chats.b2_120",
+              "timestamp": "2018-06-19T07:20:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b2_121",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.b2_121",
+              "timestamp": "2018-06-19T07:24:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b2_122",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s10.chats.b2_122",
+              "timestamp": "2018-06-19T07:25:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b2_130",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s10.chats.b2_130",
+              "timestamp": "2018-11-09T23:55:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b2_131",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.b2_131",
+              "timestamp": "2018-11-09T23:57:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b2_140",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s10.chats.b2_140",
+              "timestamp": "2019-01-22T21:30:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b2_141",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.b2_141",
+              "timestamp": "2019-01-22T21:44:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b2_142",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s10.chats.b2_142",
+              "timestamp": "2019-01-22T21:46:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b2_150",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s10.chats.b2_150",
+              "timestamp": "2019-09-05T22:15:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b2_151",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.b2_151",
+              "timestamp": "2019-09-05T22:30:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b2_152",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s10.chats.b2_152",
+              "timestamp": "2019-09-05T22:31:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b2_153",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.b2_153",
+              "timestamp": "2019-09-05T22:40:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b2_154",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s10.chats.b2_154",
+              "timestamp": "2019-09-05T22:44:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b2_160",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s10.chats.b2_160",
+              "timestamp": "2020-03-24T18:40:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b2_161",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.b2_161",
+              "timestamp": "2020-03-24T18:52:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b2_162",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s10.chats.b2_162",
+              "timestamp": "2020-04-11T05:50:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b2_163",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.b2_163",
+              "timestamp": "2020-04-11T06:04:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b2_164",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s10.chats.b2_164",
+              "timestamp": "2020-04-11T06:05:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b2_165",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.b2_165",
+              "timestamp": "2020-04-11T06:06:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b2_166",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s10.chats.b2_166",
+              "timestamp": "2020-04-11T06:08:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b2_170",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s10.chats.b2_170",
+              "timestamp": "2021-01-30T21:05:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b2_171",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.b2_171",
+              "timestamp": "2021-01-30T21:20:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b2_180",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s10.chats.b2_180",
+              "timestamp": "2021-08-14T22:20:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b2_181",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.b2_181",
+              "timestamp": "2021-08-14T22:33:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b2_182",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s10.chats.b2_182",
+              "timestamp": "2021-08-14T22:35:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b2_190",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s10.chats.b2_190",
+              "timestamp": "2022-05-07T13:00:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b2_191",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.b2_191",
+              "timestamp": "2022-05-07T13:10:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b2_192",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s10.chats.b2_192",
+              "timestamp": "2022-05-07T13:12:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b2_193",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.b2_193",
+              "timestamp": "2022-05-07T13:13:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b2_200",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s10.chats.b2_200",
+              "timestamp": "2022-12-25T08:30:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b2_201",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.b2_201",
+              "timestamp": "2022-12-25T09:02:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b2_202",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s10.chats.b2_202",
+              "timestamp": "2022-12-25T09:04:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b2_210",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s10.chats.b2_210",
+              "timestamp": "2023-07-18T22:00:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b2_211",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.b2_211",
+              "timestamp": "2023-07-18T22:30:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b2_212",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s10.chats.b2_212",
+              "timestamp": "2023-07-18T22:34:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b2_220",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s10.chats.b2_220",
+              "timestamp": "2024-02-14T07:15:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b2_221",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.b2_221",
+              "timestamp": "2024-02-14T07:40:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b2_222",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s10.chats.b2_222",
+              "timestamp": "2024-02-14T07:41:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b2_230",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s10.chats.b2_230",
+              "timestamp": "2024-10-02T21:50:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b2_231",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.b2_231",
+              "timestamp": "2024-10-02T22:04:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b2_232",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s10.chats.b2_232",
+              "timestamp": "2024-10-02T22:06:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b2_233",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.b2_233",
+              "timestamp": "2024-10-02T22:07:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b2_240",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s10.chats.b2_240",
+              "timestamp": "2025-06-11T21:30:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b2_241",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.b2_241",
+              "timestamp": "2025-06-11T21:44:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b2_242",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s10.chats.b2_242",
+              "timestamp": "2025-06-11T21:46:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b2_250",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s10.chats.b2_250",
+              "timestamp": "2025-11-09T22:00:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b2_251",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.b2_251",
+              "timestamp": "2025-11-09T22:02:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b2_252",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s10.chats.b2_252",
+              "timestamp": "2025-11-09T22:10:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b2_253",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.b2_253",
+              "timestamp": "2025-11-09T22:20:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b2_254",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s10.chats.b2_254",
+              "timestamp": "2025-11-09T22:22:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b2_255",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.b2_255",
+              "timestamp": "2025-11-09T22:30:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b2_260",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s10.chats.b2_260",
+              "timestamp": "2026-03-13T07:40:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b2_261",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s10.chats.b2_261",
+              "timestamp": "2026-03-16T21:30:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b2_262",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s10.chats.b2_262",
+              "timestamp": "2026-03-18T23:15:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "b2_263",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s10.chats.b2_263",
+              "timestamp": "2026-03-19T21:10:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            }
+          ]
+        },
+        {
+          "contact_person_id": "p006",
+          "last_seen": "2022-11-08T19:30:00",
+          "messages": [
+            {
+              "id": "n1_001",
+              "sender": "p006",
+              "type": "text",
+              "text_key": "s10.chats.n1_001",
+              "timestamp": "2019-03-22T20:15:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "n1_002",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.n1_002",
+              "timestamp": "2019-03-22T20:31:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "n1_003",
+              "sender": "p006",
+              "type": "text",
+              "text_key": "s10.chats.n1_003",
+              "timestamp": "2019-03-22T20:33:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "n1_004",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.n1_004",
+              "timestamp": "2019-03-22T20:40:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "n1_010",
+              "sender": "p006",
+              "type": "text",
+              "text_key": "s10.chats.n1_010",
+              "timestamp": "2020-07-14T21:02:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "n1_011",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.n1_011",
+              "timestamp": "2020-07-14T21:20:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "n1_012",
+              "sender": "p006",
+              "type": "text",
+              "text_key": "s10.chats.n1_012",
+              "timestamp": "2020-07-14T21:24:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "n1_020",
+              "sender": "p006",
+              "type": "text",
+              "text_key": "s10.chats.n1_020",
+              "timestamp": "2022-11-08T19:30:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "nd2_101",
+              "sender": "p006",
+              "type": "text",
+              "text_key": "s10.chats.nd2_101",
+              "timestamp": "2019-03-22T14:20:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "nd2_102",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.nd2_102",
+              "timestamp": "2019-03-22T14:40:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "nd2_103",
+              "sender": "p006",
+              "type": "text",
+              "text_key": "s10.chats.nd2_103",
+              "timestamp": "2019-03-22T14:42:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "nd2_110",
+              "sender": "p006",
+              "type": "text",
+              "text_key": "s10.chats.nd2_110",
+              "timestamp": "2019-11-04T22:10:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "nd2_111",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.nd2_111",
+              "timestamp": "2019-11-04T22:30:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "nd2_120",
+              "sender": "p006",
+              "type": "text",
+              "text_key": "s10.chats.nd2_120",
+              "timestamp": "2020-06-17T13:00:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "nd2_130",
+              "sender": "p006",
+              "type": "text",
+              "text_key": "s10.chats.nd2_130",
+              "timestamp": "2021-09-28T18:15:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "nd2_131",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.nd2_131",
+              "timestamp": "2021-09-28T18:40:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "nd2_132",
+              "sender": "p006",
+              "type": "text",
+              "text_key": "s10.chats.nd2_132",
+              "timestamp": "2021-09-28T18:42:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "nd2_140",
+              "sender": "p006",
+              "type": "text",
+              "text_key": "s10.chats.nd2_140",
+              "timestamp": "2022-04-19T21:40:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            }
+          ]
+        },
+        {
+          "contact_person_id": "p007",
+          "last_seen": "2021-09-02T11:40:00",
+          "messages": [
+            {
+              "id": "f1_001",
+              "sender": "p007",
+              "type": "text",
+              "text_key": "s10.chats.f1_001",
+              "timestamp": "2021-06-18T10:05:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f1_002",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.f1_002",
+              "timestamp": "2021-06-18T10:07:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f1_003",
+              "sender": "p007",
+              "type": "text",
+              "text_key": "s10.chats.f1_003",
+              "timestamp": "2021-06-18T10:22:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f1_010",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.f1_010",
+              "timestamp": "2021-09-02T11:20:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f1_011",
+              "sender": "p007",
+              "type": "text",
+              "text_key": "s10.chats.f1_011",
+              "timestamp": "2021-09-02T11:40:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "fr2_101",
+              "sender": "p007",
+              "type": "text",
+              "text_key": "s10.chats.fr2_101",
+              "timestamp": "2021-11-16T13:20:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "fr2_102",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.fr2_102",
+              "timestamp": "2021-11-16T13:35:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "fr2_103",
+              "sender": "p007",
+              "type": "text",
+              "text_key": "s10.chats.fr2_103",
+              "timestamp": "2021-11-16T13:38:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "fr2_110",
+              "sender": "p007",
+              "type": "text",
+              "text_key": "s10.chats.fr2_110",
+              "timestamp": "2023-02-08T16:00:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "fr2_111",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.fr2_111",
+              "timestamp": "2023-02-08T16:20:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "fr2_112",
+              "sender": "p007",
+              "type": "text",
+              "text_key": "s10.chats.fr2_112",
+              "timestamp": "2023-02-08T16:22:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            }
+          ]
+        },
+        {
+          "contact_person_id": "p003",
+          "last_seen": "2026-03-19T22:00:00",
+          "messages": [
+            {
+              "id": "nia_001",
+              "sender": "p003",
+              "type": "text",
+              "text_key": "s10.chats.nia_001",
+              "timestamp": "2023-10-05T13:10:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "nia_002",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.nia_002",
+              "timestamp": "2023-10-05T13:11:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "nia_003",
+              "sender": "p003",
+              "type": "text",
+              "text_key": "s10.chats.nia_003",
+              "timestamp": "2023-10-05T13:14:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "nia_004",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.nia_004",
+              "timestamp": "2023-10-05T13:22:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "nia_005",
+              "sender": "p003",
+              "type": "text",
+              "text_key": "s10.chats.nia_005",
+              "timestamp": "2023-10-05T13:26:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "nia_010",
+              "sender": "p003",
+              "type": "text",
+              "text_key": "s10.chats.nia_010",
+              "timestamp": "2026-03-19T21:44:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "nia_011",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.nia_011",
+              "timestamp": "2026-03-19T21:52:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "nia_012",
+              "sender": "p003",
+              "type": "text",
+              "text_key": "s10.chats.nia_012",
+              "timestamp": "2026-03-19T22:00:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "n2_101",
+              "sender": "p003",
+              "type": "text",
+              "text_key": "s10.chats.n2_101",
+              "timestamp": "2018-09-27T12:40:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "n2_102",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.n2_102",
+              "timestamp": "2018-09-27T12:50:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "n2_103",
+              "sender": "p003",
+              "type": "text",
+              "text_key": "s10.chats.n2_103",
+              "timestamp": "2018-09-27T12:52:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "n2_110",
+              "sender": "p003",
+              "type": "text",
+              "text_key": "s10.chats.n2_110",
+              "timestamp": "2019-07-16T13:00:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "n2_111",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.n2_111",
+              "timestamp": "2019-07-16T13:20:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "n2_112",
+              "sender": "p003",
+              "type": "text",
+              "text_key": "s10.chats.n2_112",
+              "timestamp": "2019-07-16T13:22:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "n2_120",
+              "sender": "p003",
+              "type": "text",
+              "text_key": "s10.chats.n2_120",
+              "timestamp": "2021-02-09T18:30:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "n2_121",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.n2_121",
+              "timestamp": "2021-02-09T18:44:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "n2_122",
+              "sender": "p003",
+              "type": "text",
+              "text_key": "s10.chats.n2_122",
+              "timestamp": "2021-02-09T18:46:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "n2_130",
+              "sender": "p003",
+              "type": "text",
+              "text_key": "s10.chats.n2_130",
+              "timestamp": "2023-05-23T12:30:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "n2_131",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.n2_131",
+              "timestamp": "2023-05-23T12:40:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "n2_140",
+              "sender": "p003",
+              "type": "text",
+              "text_key": "s10.chats.n2_140",
+              "timestamp": "2024-11-12T17:00:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "n2_141",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.n2_141",
+              "timestamp": "2024-11-12T17:20:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "n2_142",
+              "sender": "p003",
+              "type": "text",
+              "text_key": "s10.chats.n2_142",
+              "timestamp": "2024-11-12T17:22:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "n2_150",
+              "sender": "p003",
+              "type": "text",
+              "text_key": "s10.chats.n2_150",
+              "timestamp": "2026-04-08T20:00:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "n2_151",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.n2_151",
+              "timestamp": "2026-04-08T20:30:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "n2_152",
+              "sender": "p003",
+              "type": "text",
+              "text_key": "s10.chats.n2_152",
+              "timestamp": "2026-04-08T20:32:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "n2_160",
+              "sender": "p003",
+              "type": "text",
+              "text_key": "s10.chats.n2_160",
+              "timestamp": "2026-05-18T12:00:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            }
+          ]
+        },
+        {
+          "contact_person_id": "p001",
+          "last_seen": "2026-05-19T23:50:00",
+          "messages": [
+            {
+              "id": "s1_001",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s10.chats.s1_001",
+              "timestamp": "2021-03-10T17:20:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "s1_002",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.s1_002",
+              "timestamp": "2021-03-10T18:02:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "s1_003",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s10.chats.s1_003",
+              "timestamp": "2021-03-10T18:05:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "s1_010",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s10.chats.s1_010",
+              "timestamp": "2023-07-24T09:30:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "s1_011",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.s1_011",
+              "timestamp": "2023-07-24T09:41:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "s1_012",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s10.chats.s1_012",
+              "timestamp": "2023-07-24T09:44:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "s1_020",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s10.chats.s1_020",
+              "timestamp": "2026-03-20T08:15:00",
+              "is_read": false,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "s1_021",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s10.chats.s1_021",
+              "timestamp": "2026-03-20T14:40:00",
+              "is_read": false,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "s1_030",
+              "sender": "p001",
+              "type": "voice",
+              "text_key": "s10.chats.s1_030",
+              "asset": "assets/cases/s10/audio/sophia_confession_{lang}.mp3",
+              "audio_langs": [
+                "en"
+              ],
+              "duration_sec": 38,
+              "timestamp": "2026-05-19T23:50:00",
+              "is_read": false,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "s2_101",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s10.chats.s2_101",
+              "timestamp": "2018-03-11T18:40:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "s2_102",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.s2_102",
+              "timestamp": "2018-03-11T18:45:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "s2_103",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s10.chats.s2_103",
+              "timestamp": "2018-03-11T18:46:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "s2_110",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s10.chats.s2_110",
+              "timestamp": "2018-11-10T10:00:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "s2_111",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.s2_111",
+              "timestamp": "2018-11-10T10:20:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "s2_112",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s10.chats.s2_112",
+              "timestamp": "2018-11-10T10:22:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "s2_120",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s10.chats.s2_120",
+              "timestamp": "2019-05-04T16:00:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "s2_121",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.s2_121",
+              "timestamp": "2019-05-04T16:03:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "s2_122",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s10.chats.s2_122",
+              "timestamp": "2019-05-04T16:04:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "s2_130",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s10.chats.s2_130",
+              "timestamp": "2019-06-14T18:00:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "s2_131",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.s2_131",
+              "timestamp": "2019-06-14T20:40:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "s2_132",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s10.chats.s2_132",
+              "timestamp": "2019-06-14T20:44:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "s2_140",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s10.chats.s2_140",
+              "timestamp": "2020-04-12T11:00:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "s2_141",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.s2_141",
+              "timestamp": "2020-04-12T11:30:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "s2_142",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s10.chats.s2_142",
+              "timestamp": "2020-04-12T11:32:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "s2_150",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s10.chats.s2_150",
+              "timestamp": "2020-09-08T20:30:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "s2_151",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.s2_151",
+              "timestamp": "2020-09-08T20:40:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "s2_152",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s10.chats.s2_152",
+              "timestamp": "2020-09-08T20:42:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "s2_153",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.s2_153",
+              "timestamp": "2020-09-08T20:50:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "s2_154",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s10.chats.s2_154",
+              "timestamp": "2020-09-08T20:51:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "s2_160",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s10.chats.s2_160",
+              "timestamp": "2021-04-06T12:00:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "s2_161",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.s2_161",
+              "timestamp": "2021-04-06T12:30:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "s2_162",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s10.chats.s2_162",
+              "timestamp": "2021-04-06T12:32:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "s2_170",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s10.chats.s2_170",
+              "timestamp": "2021-12-24T09:00:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "s2_171",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.s2_171",
+              "timestamp": "2021-12-24T09:10:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "s2_172",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s10.chats.s2_172",
+              "timestamp": "2021-12-24T09:11:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "s2_180",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s10.chats.s2_180",
+              "timestamp": "2022-08-19T22:00:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "s2_181",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.s2_181",
+              "timestamp": "2022-08-19T22:04:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "s2_182",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s10.chats.s2_182",
+              "timestamp": "2022-08-19T22:05:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "s2_183",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.s2_183",
+              "timestamp": "2022-08-19T22:06:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "s2_184",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s10.chats.s2_184",
+              "timestamp": "2022-08-19T22:06:30",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "s2_190",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s10.chats.s2_190",
+              "timestamp": "2022-11-09T09:00:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "s2_191",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.s2_191",
+              "timestamp": "2022-11-09T09:20:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "s2_192",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s10.chats.s2_192",
+              "timestamp": "2022-11-09T09:21:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "s2_200",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s10.chats.s2_200",
+              "timestamp": "2023-04-02T19:40:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "s2_201",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.s2_201",
+              "timestamp": "2023-04-02T19:50:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "s2_202",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s10.chats.s2_202",
+              "timestamp": "2023-04-02T19:52:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "s2_210",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s10.chats.s2_210",
+              "timestamp": "2023-10-30T13:00:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "s2_211",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.s2_211",
+              "timestamp": "2023-10-30T13:20:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "s2_220",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s10.chats.s2_220",
+              "timestamp": "2024-06-05T21:00:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "s2_221",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.s2_221",
+              "timestamp": "2024-06-05T21:30:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "s2_222",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s10.chats.s2_222",
+              "timestamp": "2024-06-05T21:32:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "s2_223",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.s2_223",
+              "timestamp": "2024-06-05T21:40:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "s2_224",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s10.chats.s2_224",
+              "timestamp": "2024-06-05T21:41:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "s2_230",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s10.chats.s2_230",
+              "timestamp": "2024-10-01T13:00:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "s2_231",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.s2_231",
+              "timestamp": "2024-10-01T13:10:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "s2_232",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s10.chats.s2_232",
+              "timestamp": "2024-10-01T13:12:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "s2_240",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s10.chats.s2_240",
+              "timestamp": "2025-03-08T10:00:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "s2_241",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.s2_241",
+              "timestamp": "2025-03-08T10:30:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "s2_250",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s10.chats.s2_250",
+              "timestamp": "2025-11-09T23:00:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "s2_251",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.s2_251",
+              "timestamp": "2025-11-09T23:20:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "s2_252",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s10.chats.s2_252",
+              "timestamp": "2025-11-09T23:53:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "s2_253",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.chats.s2_253",
+              "timestamp": "2025-11-10T00:50:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "s2_254",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s10.chats.s2_254",
+              "timestamp": "2025-11-10T00:52:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "s2_260",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s10.chats.s2_260",
+              "timestamp": "2026-03-19T21:00:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "s2_270",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s10.chats.s2_270",
+              "timestamp": "2026-04-02T18:00:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "s2_271",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s10.chats.s2_271",
+              "timestamp": "2026-05-10T14:00:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            }
+          ]
+        }
+      ],
+      "groups": [],
+      "statuses": []
+    },
+    "instagram": {
+      "login_required": false,
+      "username": "elena.c.bristol",
+      "profile_photo_asset": "assets/cases/s10/photos/elena_profile.jpg",
+      "profile": {
+        "bio_key": "s10.feed.bio",
+        "follower_count": 16,
+        "following_count": 11,
+        "post_ids": [
+          "post_p000_01",
+          "post_p000_02"
+        ],
+        "following_person_ids": [
+          "p001",
+          "p002",
+          "p003",
+          "p004"
+        ],
+        "followers": [
+          "p000",
+          "p001",
+          "p002",
+          "p006",
+          {
+            "username": "hannah.pike",
+            "name": "Hannah Pike"
+          },
+          {
+            "username": "j.whitcombe",
+            "name": "James Whitcombe"
+          },
+          {
+            "username": "wexley.co",
+            "name": "Wexley & Co"
+          },
+          {
+            "username": "orla_brennan",
+            "name": "Orla Brennan"
+          },
+          {
+            "username": "tom.hargreaves",
+            "name": "Tom Hargreaves"
+          },
+          {
+            "username": "bristol.harbour",
+            "name": "Bristol Harbour"
+          },
+          {
+            "username": "priya.raman",
+            "name": "Priya Raman"
+          },
+          {
+            "username": "c.mortimer",
+            "name": "Charlotte Mortimer"
+          },
+          {
+            "username": "ellie_dawes",
+            "name": "Ellie Dawes"
+          },
+          {
+            "username": "sam.okoro",
+            "name": "Sam Okoro"
+          },
+          {
+            "username": "rachel.finn",
+            "name": "Rachel Finn"
+          },
+          {
+            "username": "greg_hollis",
+            "name": "Greg Hollis"
+          }
+        ],
+        "following": [
+          "p000",
+          "p001",
+          "p002",
+          "p006",
+          {
+            "username": "wexley.co",
+            "name": "Wexley & Co"
+          },
+          {
+            "username": "hannah.pike",
+            "name": "Hannah Pike"
+          },
+          {
+            "username": "bristol.harbour",
+            "name": "Bristol Harbour"
+          },
+          {
+            "username": "orla_brennan",
+            "name": "Orla Brennan"
+          },
+          {
+            "username": "priya.raman",
+            "name": "Priya Raman"
+          },
+          {
+            "username": "c.mortimer",
+            "name": "Charlotte Mortimer"
+          },
+          {
+            "username": "rachel.finn",
+            "name": "Rachel Finn"
+          }
+        ]
+      },
+      "dms": [
+        {
+          "contact_person_id": "p002",
+          "messages": [
+            {
+              "id": "dm_b1_001",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s10.feed.dm_b1_001",
+              "timestamp": "2017-11-09T22:12:00"
+            },
+            {
+              "id": "dm_b1_002",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.feed.dm_b1_002",
+              "timestamp": "2017-11-09T22:40:00"
+            },
+            {
+              "id": "dm_b1_003",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s10.feed.dm_b1_003",
+              "timestamp": "2017-11-09T22:44:00"
+            },
+            {
+              "id": "dm_b1_004",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.feed.dm_b1_004",
+              "timestamp": "2017-11-09T22:51:00"
+            },
+            {
+              "id": "dm_b1_010",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s10.feed.dm_b1_010",
+              "timestamp": "2017-11-16T19:20:00"
+            },
+            {
+              "id": "dm_b1_011",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.feed.dm_b1_011",
+              "timestamp": "2017-11-16T19:22:00"
+            },
+            {
+              "id": "dm_b1_012",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s10.feed.dm_b1_012",
+              "timestamp": "2017-11-16T19:31:00"
+            },
+            {
+              "id": "dm_a1_001",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.feed.dm_a1_001",
+              "timestamp": "2026-03-19T11:02:00"
+            },
+            {
+              "id": "dm_a1_002",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s10.feed.dm_a1_002",
+              "timestamp": "2026-03-19T12:40:00"
+            },
+            {
+              "id": "dm_a1_003",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.feed.dm_a1_003",
+              "timestamp": "2026-03-19T12:44:00"
+            },
+            {
+              "id": "dm_a1_004",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s10.feed.dm_a1_004",
+              "timestamp": "2026-03-19T13:10:00"
+            },
+            {
+              "id": "dm_a1_005",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.feed.dm_a1_005",
+              "timestamp": "2026-03-19T13:38:00"
+            },
+            {
+              "id": "dm_a1_006",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s10.feed.dm_a1_006",
+              "timestamp": "2026-03-19T13:41:00"
+            },
+            {
+              "id": "dm_a1_007",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s10.feed.dm_a1_007",
+              "timestamp": "2026-03-19T13:52:00"
+            },
+            {
+              "id": "dm_a1_008",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s10.feed.dm_a1_008",
+              "timestamp": "2026-03-19T13:58:00"
+            },
+            {
+              "id": "dm_a1_009",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s10.feed.dm_a1_009",
+              "timestamp": "2026-03-19T14:02:00"
+            }
+          ]
+        }
+      ],
+      "liked_posts": [],
+      "explore_post_ids": [],
+      "feed_post_ids": [
+        "post_p002_03",
+        "post_p001_01",
+        "post_p000_02",
+        "post_p002_02",
+        "post_p000_01",
+        "post_p002_01"
+      ]
+    },
+    "gmail": {
+      "account_email": "e.christofi@wexley-co.uk",
+      "login_required": false,
+      "password": null,
+      "inbox": [
+        {
+          "id": "gm_001",
+          "from": {
+            "display_name": "Disclosure Team",
+            "email": "disclosure@platform-legal.com",
+            "person_id": null
+          },
+          "to": [
+            "e.christofi@wexley-co.uk"
+          ],
+          "subject_key": "s10.mail.gm_001.subject",
+          "body_key": "s10.mail.gm_001.body",
+          "timestamp": "2026-05-12T09:40:00",
+          "is_read": true,
+          "is_starred": true,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "gm_003",
+          "from": {
+            "display_name": "Nia Okonjo",
+            "email": "n.okonjo@wexley-co.uk",
+            "person_id": "p003"
+          },
+          "to": [
+            "e.christofi@wexley-co.uk"
+          ],
+          "subject_key": "s10.mail.gm_003.subject",
+          "body_key": "s10.mail.gm_003.body",
+          "timestamp": "2026-03-19T09:15:00",
+          "is_read": true,
+          "is_starred": true,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "gm_004",
+          "from": {
+            "display_name": "Hannah Wexley",
+            "email": "h.wexley@wexley-co.uk",
+            "person_id": "p008"
+          },
+          "to": [
+            "e.christofi@wexley-co.uk"
+          ],
+          "subject_key": "s10.mail.gm_004.subject",
+          "body_key": "s10.mail.gm_004.body",
+          "timestamp": "2026-04-27T17:30:00",
+          "is_read": true,
+          "is_starred": true,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "gm_005",
+          "from": {
+            "display_name": "Sophia Christofi",
+            "email": "soph.chr01@gmail.com",
+            "person_id": "p001"
+          },
+          "to": [
+            "e.christofi@wexley-co.uk"
+          ],
+          "subject_key": "s10.mail.gm_005.subject",
+          "body_key": "s10.mail.gm_005.body",
+          "timestamp": "2026-05-20T04:12:00",
+          "is_read": false,
+          "is_starred": true,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_101",
+          "from": {
+            "display_name": "Wexley & Co",
+            "email": "hwexley@wexleyco.uk",
+            "person_id": null
+          },
+          "to": [
+            "e.christofi.bs5@gmail.com"
+          ],
+          "subject_key": "s10.mail.f_gm_101.subject",
+          "body_key": "s10.mail.f_gm_101.body",
+          "timestamp": "2026-04-01T09:00:00",
+          "is_read": false,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_102",
+          "from": {
+            "display_name": "Wexley & Co",
+            "email": "accounts@wexleyco.uk",
+            "person_id": null
+          },
+          "to": [
+            "e.christofi.bs5@gmail.com"
+          ],
+          "subject_key": "s10.mail.f_gm_102.subject",
+          "body_key": "s10.mail.f_gm_102.body",
+          "timestamp": "2026-04-17T09:00:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_103",
+          "from": {
+            "display_name": "Wexley & Co",
+            "email": "hwexley@wexleyco.uk",
+            "person_id": null
+          },
+          "to": [
+            "e.christofi.bs5@gmail.com"
+          ],
+          "subject_key": "s10.mail.f_gm_103.subject",
+          "body_key": "s10.mail.f_gm_103.body",
+          "timestamp": "2026-05-13T09:00:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_104",
+          "from": {
+            "display_name": "Feed Support",
+            "email": "no-reply@feed.com",
+            "person_id": null
+          },
+          "to": [
+            "e.christofi.bs5@gmail.com"
+          ],
+          "subject_key": "s10.mail.f_gm_104.subject",
+          "body_key": "s10.mail.f_gm_104.body",
+          "timestamp": "2026-03-21T04:00:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_105",
+          "from": {
+            "display_name": "Feed Support",
+            "email": "no-reply@feed.com",
+            "person_id": null
+          },
+          "to": [
+            "e.christofi.bs5@gmail.com"
+          ],
+          "subject_key": "s10.mail.f_gm_105.subject",
+          "body_key": "s10.mail.f_gm_105.body",
+          "timestamp": "2026-03-28T04:00:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_106",
+          "from": {
+            "display_name": "Chats Security",
+            "email": "no-reply@chats.com",
+            "person_id": null
+          },
+          "to": [
+            "e.christofi.bs5@gmail.com"
+          ],
+          "subject_key": "s10.mail.f_gm_106.subject",
+          "body_key": "s10.mail.f_gm_106.body",
+          "timestamp": "2026-03-22T05:00:00",
+          "is_read": false,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_107",
+          "from": {
+            "display_name": "Bristol Royal Infirmary",
+            "email": "noreply@uhbw.nhs.uk",
+            "person_id": null
+          },
+          "to": [
+            "e.christofi.bs5@gmail.com"
+          ],
+          "subject_key": "s10.mail.f_gm_107.subject",
+          "body_key": "s10.mail.f_gm_107.body",
+          "timestamp": "2026-04-14T08:00:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_108",
+          "from": {
+            "display_name": "Vodafone",
+            "email": "noreply@vodafone.co.uk",
+            "person_id": null
+          },
+          "to": [
+            "e.christofi.bs5@gmail.com"
+          ],
+          "subject_key": "s10.mail.f_gm_108.subject",
+          "body_key": "s10.mail.f_gm_108.body",
+          "timestamp": "2026-03-23T07:00:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_109",
+          "from": {
+            "display_name": "Marchbank Family Law",
+            "email": "hr@marchbank-law.co.uk",
+            "person_id": null
+          },
+          "to": [
+            "e.christofi.bs5@gmail.com"
+          ],
+          "subject_key": "s10.mail.f_gm_109.subject",
+          "body_key": "s10.mail.f_gm_109.body",
+          "timestamp": "2026-04-20T10:00:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_110",
+          "from": {
+            "display_name": "Marchbank Family Law",
+            "email": "hr@marchbank-law.co.uk",
+            "person_id": null
+          },
+          "to": [
+            "e.christofi.bs5@gmail.com"
+          ],
+          "subject_key": "s10.mail.f_gm_110.subject",
+          "body_key": "s10.mail.f_gm_110.body",
+          "timestamp": "2025-09-02T10:00:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_111",
+          "from": {
+            "display_name": "Nia Okonjo",
+            "email": "n.okonjo@marchbank-law.co.uk",
+            "person_id": null
+          },
+          "to": [
+            "e.christofi.bs5@gmail.com"
+          ],
+          "subject_key": "s10.mail.f_gm_111.subject",
+          "body_key": "s10.mail.f_gm_111.body",
+          "timestamp": "2026-04-24T13:00:00",
+          "is_read": false,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_112",
+          "from": {
+            "display_name": "CILEx",
+            "email": "membership@cilex.org.uk",
+            "person_id": null
+          },
+          "to": [
+            "e.christofi.bs5@gmail.com"
+          ],
+          "subject_key": "s10.mail.f_gm_112.subject",
+          "body_key": "s10.mail.f_gm_112.body",
+          "timestamp": "2026-01-12T09:00:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_113",
+          "from": {
+            "display_name": "Bristol City Council",
+            "email": "counciltax@bristol.gov.uk",
+            "person_id": null
+          },
+          "to": [
+            "e.christofi.bs5@gmail.com"
+          ],
+          "subject_key": "s10.mail.f_gm_113.subject",
+          "body_key": "s10.mail.f_gm_113.body",
+          "timestamp": "2026-04-05T08:00:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_114",
+          "from": {
+            "display_name": "Refuge",
+            "email": "support@refuge.org.uk",
+            "person_id": null
+          },
+          "to": [
+            "e.christofi.bs5@gmail.com"
+          ],
+          "subject_key": "s10.mail.f_gm_114.subject",
+          "body_key": "s10.mail.f_gm_114.body",
+          "timestamp": "2026-04-11T12:00:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_115",
+          "from": {
+            "display_name": "Andreas Solomou",
+            "email": "a.solomou@nhs.net",
+            "person_id": null
+          },
+          "to": [
+            "e.christofi.bs5@gmail.com"
+          ],
+          "subject_key": "s10.mail.f_gm_115.subject",
+          "body_key": "s10.mail.f_gm_115.body",
+          "timestamp": "2026-03-24T21:00:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_116",
+          "from": {
+            "display_name": "Andreas Solomou",
+            "email": "a.solomou@nhs.net",
+            "person_id": null
+          },
+          "to": [
+            "e.christofi.bs5@gmail.com"
+          ],
+          "subject_key": "s10.mail.f_gm_116.subject",
+          "body_key": "s10.mail.f_gm_116.body",
+          "timestamp": "2026-05-06T20:00:00",
+          "is_read": false,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        }
+      ],
+      "sent": [
+        {
+          "id": "f_gm_131",
+          "from": {
+            "display_name": "Elena Christofi",
+            "email": "e.christofi.bs5@gmail.com",
+            "person_id": null
+          },
+          "to": [
+            "e.christofi.bs5@gmail.com"
+          ],
+          "subject_key": "s10.mail.f_gm_131.subject",
+          "body_key": "s10.mail.f_gm_131.body",
+          "timestamp": "2026-03-21T05:20:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_132",
+          "from": {
+            "display_name": "Elena Christofi",
+            "email": "e.christofi.bs5@gmail.com",
+            "person_id": null
+          },
+          "to": [
+            "e.christofi.bs5@gmail.com"
+          ],
+          "subject_key": "s10.mail.f_gm_132.subject",
+          "body_key": "s10.mail.f_gm_132.body",
+          "timestamp": "2026-03-25T22:00:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_133",
+          "from": {
+            "display_name": "Elena Christofi",
+            "email": "e.christofi.bs5@gmail.com",
+            "person_id": null
+          },
+          "to": [
+            "e.christofi.bs5@gmail.com"
+          ],
+          "subject_key": "s10.mail.f_gm_133.subject",
+          "body_key": "s10.mail.f_gm_133.body",
+          "timestamp": "2026-04-02T10:00:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_134",
+          "from": {
+            "display_name": "Elena Christofi",
+            "email": "e.christofi.bs5@gmail.com",
+            "person_id": null
+          },
+          "to": [
+            "e.christofi.bs5@gmail.com"
+          ],
+          "subject_key": "s10.mail.f_gm_134.subject",
+          "body_key": "s10.mail.f_gm_134.body",
+          "timestamp": "2026-04-24T13:40:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_135",
+          "from": {
+            "display_name": "Elena Christofi",
+            "email": "e.christofi.bs5@gmail.com",
+            "person_id": null
+          },
+          "to": [
+            "e.christofi.bs5@gmail.com"
+          ],
+          "subject_key": "s10.mail.f_gm_135.subject",
+          "body_key": "s10.mail.f_gm_135.body",
+          "timestamp": "2026-05-13T18:00:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_136",
+          "from": {
+            "display_name": "Elena Christofi",
+            "email": "e.christofi.bs5@gmail.com",
+            "person_id": null
+          },
+          "to": [
+            "e.christofi.bs5@gmail.com"
+          ],
+          "subject_key": "s10.mail.f_gm_136.subject",
+          "body_key": "s10.mail.f_gm_136.body",
+          "timestamp": "2026-05-20T21:00:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        }
+      ],
+      "drafts": [
+        {
+          "id": "gm_002",
+          "from": {
+            "display_name": "Elena Christofi",
+            "email": "e.christofi@wexley-co.uk",
+            "person_id": null
+          },
+          "to": [
+            "e.christofi@wexley-co.uk"
+          ],
+          "subject_key": "s10.mail.gm_002.subject",
+          "body_key": "s10.mail.gm_002.body",
+          "timestamp": "2026-04-24T02:30:00",
+          "is_read": true,
+          "is_starred": true,
+          "is_deleted": false,
+          "is_draft": true,
+          "must_delete_after_use": false,
+          "category": "primary",
+          "draft_note": "Never sent. Version 11."
+        },
+        {
+          "id": "f_gm_141",
+          "from": {
+            "display_name": "Elena Christofi",
+            "email": "e.christofi.bs5@gmail.com",
+            "person_id": null
+          },
+          "to": [
+            "e.christofi.bs5@gmail.com"
+          ],
+          "subject_key": "s10.mail.f_gm_141.subject",
+          "body_key": "s10.mail.f_gm_141.body",
+          "timestamp": "2026-03-26T03:00:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": true,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_142",
+          "from": {
+            "display_name": "Elena Christofi",
+            "email": "e.christofi.bs5@gmail.com",
+            "person_id": null
+          },
+          "to": [
+            "e.christofi.bs5@gmail.com"
+          ],
+          "subject_key": "s10.mail.f_gm_142.subject",
+          "body_key": "s10.mail.f_gm_142.body",
+          "timestamp": "2026-04-13T02:40:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": true,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_143",
+          "from": {
+            "display_name": "Elena Christofi",
+            "email": "e.christofi.bs5@gmail.com",
+            "person_id": null
+          },
+          "to": [
+            "e.christofi.bs5@gmail.com"
+          ],
+          "subject_key": "s10.mail.f_gm_143.subject",
+          "body_key": "s10.mail.f_gm_143.body",
+          "timestamp": "2026-05-19T23:55:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": true,
+          "must_delete_after_use": false,
+          "category": "primary"
+        }
+      ],
+      "trash": []
+    },
+    "maps": {
+      "location_history": [
+        {
+          "id": "loc_001",
+          "name_key": "s10.maps.loc_001.name",
+          "category": "other",
+          "address_key": "s10.maps.loc_001.address",
+          "lat": 51.4602,
+          "lng": -2.5648,
+          "visited_at": "2026-05-04T07:30:00",
+          "duration_minutes": 620
+        },
+        {
+          "id": "loc_002",
+          "name_key": "s10.maps.loc_002.name",
+          "category": "other",
+          "address_key": "s10.maps.loc_002.address",
+          "lat": 51.479,
+          "lng": -2.5442,
+          "visited_at": "2026-05-14T19:00:00",
+          "duration_minutes": 230,
+          "note_key": "s10.maps.loc_002.note"
+        },
+        {
+          "id": "loc_003",
+          "name_key": "s10.maps.loc_003.name",
+          "category": "other",
+          "address_key": "s10.maps.loc_003.address",
+          "lat": 51.4498,
+          "lng": -2.5966,
+          "visited_at": "2026-05-04T09:00:00",
+          "duration_minutes": 480
+        },
+        {
+          "id": "loc_004",
+          "name_key": "s10.maps.loc_004.name",
+          "category": "other",
+          "address_key": "s10.maps.loc_004.address",
+          "lat": 51.553,
+          "lng": -0.165,
+          "visited_at": "2021-06-18T10:00:00",
+          "duration_minutes": 0,
+          "note_key": "s10.maps.loc_004.note"
+        },
+        {
+          "id": "loc_005",
+          "name_key": "s10.maps.loc_005.name",
+          "category": "other",
+          "address_key": "s10.maps.loc_005.address",
+          "lat": 51.4525,
+          "lng": -2.606,
+          "visited_at": "2026-04-30T09:00:00",
+          "duration_minutes": 90
+        },
+        {
+          "id": "loc_006",
+          "name_key": "s10.maps.loc_006.name",
+          "category": "other",
+          "address_key": "s10.maps.loc_006.address",
+          "lat": 51.4816,
+          "lng": -3.1791,
+          "visited_at": "2026-03-21T13:20:00",
+          "duration_minutes": 180,
+          "note_key": "s10.maps.loc_006.note"
+        }
+      ],
+      "saved_places": [
+        {
+          "id": "f_sp_001",
+          "name_key": "s10.maps.f_sp_001.name",
+          "category": "other",
+          "address_key": "s10.maps.f_sp_001.address",
+          "lat": 51.4632,
+          "lng": -2.5501
+        },
+        {
+          "id": "f_sp_002",
+          "name_key": "s10.maps.f_sp_002.name",
+          "category": "other",
+          "address_key": "s10.maps.f_sp_002.address",
+          "lat": 51.4585,
+          "lng": -2.5878
+        },
+        {
+          "id": "f_sp_003",
+          "name_key": "s10.maps.f_sp_003.name",
+          "category": "other",
+          "address_key": "s10.maps.f_sp_003.address",
+          "lat": 51.4519,
+          "lng": -2.5972
+        }
+      ]
+    },
+    "venmo": {
+      "account_name": "Elena Christofi",
+      "username": "@elena.c",
+      "transactions": [
+        {
+          "id": "tx_001",
+          "type": "sent",
+          "person_id": null,
+          "recipient_name": "RFH Parking",
+          "amount": 186.0,
+          "note_key": "s10.payments.tx_001.note",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2021-07-02T08:20:00"
+        },
+        {
+          "id": "tx_002",
+          "type": "sent",
+          "person_id": null,
+          "recipient_name": "Bloom & Wild",
+          "amount": 42.0,
+          "note_key": "s10.payments.tx_002.note",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2021-06-21T11:05:00"
+        },
+        {
+          "id": "tx_003",
+          "type": "sent",
+          "person_id": "p002",
+          "amount": 84.0,
+          "note_key": "s10.payments.tx_003.note",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2019-02-16T14:40:00"
+        },
+        {
+          "id": "tx_004",
+          "type": "sent",
+          "person_id": "p004",
+          "amount": 20.0,
+          "note_key": "s10.payments.tx_004.note",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2026-05-14T18:40:00"
+        },
+        {
+          "id": "tx_005",
+          "type": "sent",
+          "person_id": "p003",
+          "amount": 12.5,
+          "note_key": "s10.payments.tx_005.note",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2026-04-15T13:20:00"
+        },
+        {
+          "id": "tx_006",
+          "type": "sent",
+          "person_id": null,
+          "recipient_name": "Wexley & Co",
+          "amount": 750.0,
+          "note_key": "s10.payments.tx_006.note",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2026-04-30T10:10:00"
+        },
+        {
+          "id": "tx_007",
+          "type": "sent",
+          "person_id": null,
+          "recipient_name": "GWR",
+          "amount": 31.4,
+          "note_key": "s10.payments.tx_007.note",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2026-03-21T11:50:00"
+        },
+        {
+          "id": "f_tx_101",
+          "type": "sent",
+          "person_id": null,
+          "recipient_name": "Marianna Christofi",
+          "amount": 20.0,
+          "note_key": "s10.payments.f_tx_101.note",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2026-01-15T18:00:00"
+        },
+        {
+          "id": "f_tx_102",
+          "type": "sent",
+          "person_id": null,
+          "recipient_name": "Marianna Christofi",
+          "amount": 20.0,
+          "note_key": "s10.payments.f_tx_102.note",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2026-02-19T18:00:00"
+        },
+        {
+          "id": "f_tx_103",
+          "type": "sent",
+          "person_id": null,
+          "recipient_name": "Sophia Christofi",
+          "amount": 35.0,
+          "note_key": "s10.payments.f_tx_103.note",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2025-10-04T12:00:00"
+        },
+        {
+          "id": "f_tx_104",
+          "type": "sent",
+          "person_id": null,
+          "recipient_name": "Sophia Christofi",
+          "amount": 12.5,
+          "note_key": "s10.payments.f_tx_104.note",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2026-02-01T17:10:00"
+        },
+        {
+          "id": "f_tx_105",
+          "type": "sent",
+          "person_id": null,
+          "recipient_name": "Nia Okonjo",
+          "amount": 9.4,
+          "note_key": "s10.payments.f_tx_105.note",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2026-02-27T13:00:00"
+        },
+        {
+          "id": "f_tx_106",
+          "type": "sent",
+          "person_id": null,
+          "recipient_name": "Wexley & Co",
+          "amount": 750.0,
+          "note_key": "s10.payments.f_tx_106.note",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2026-04-17T10:00:00"
+        },
+        {
+          "id": "f_tx_107",
+          "type": "sent",
+          "person_id": null,
+          "recipient_name": "Wexley & Co",
+          "amount": 750.0,
+          "note_key": "s10.payments.f_tx_107.note",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2026-05-13T10:00:00"
+        },
+        {
+          "id": "f_tx_108",
+          "type": "sent",
+          "person_id": null,
+          "recipient_name": "First Bus",
+          "amount": 62.0,
+          "note_key": "s10.payments.f_tx_108.note",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2026-01-05T08:00:00"
+        },
+        {
+          "id": "f_tx_109",
+          "type": "sent",
+          "person_id": null,
+          "recipient_name": "Yiannis Christofi",
+          "amount": 40.0,
+          "note_key": "s10.payments.f_tx_109.note",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2026-03-29T15:00:00"
+        },
+        {
+          "id": "f_tx_110",
+          "type": "sent",
+          "person_id": null,
+          "recipient_name": "Bristol City Council",
+          "amount": 168.4,
+          "note_key": "s10.payments.f_tx_110.note",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2026-04-05T09:00:00"
+        }
+      ]
+    },
+    "calendar": {
+      "events": [
+        {
+          "id": "ev_001",
+          "title_key": "s10.calendar.ev_001",
+          "type": "personal",
+          "start": "2026-05-14T19:00:00",
+          "end": "2026-05-14T23:00:00",
+          "is_all_day": false,
+          "recurrence": "weekly",
+          "color": "#7C3AED",
+          "is_deleted": false
+        },
+        {
+          "id": "ev_002",
+          "title_key": "s10.calendar.ev_002",
+          "type": "personal",
+          "start": "2021-06-18T08:00:00",
+          "end": "2021-06-18T18:00:00",
+          "notes_key": "s10.calendar.ev_002.notes",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#1E3A5F",
+          "is_deleted": false
+        },
+        {
+          "id": "ev_003",
+          "title_key": "s10.calendar.ev_003",
+          "type": "personal",
+          "start": "2025-11-09T00:00:00",
+          "end": "2025-11-09T23:59:00",
+          "is_all_day": true,
+          "recurrence": "yearly",
+          "color": "#BE185D",
+          "is_deleted": false
+        },
+        {
+          "id": "ev_004",
+          "title_key": "s10.calendar.ev_004",
+          "type": "personal",
+          "start": "2026-04-30T09:00:00",
+          "end": "2026-04-30T10:30:00",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#334155",
+          "is_deleted": false
+        },
+        {
+          "id": "ev_005",
+          "title_key": "s10.calendar.ev_005",
+          "type": "personal",
+          "start": "2026-08-03T00:00:00",
+          "end": "2026-08-03T23:59:00",
+          "is_all_day": true,
+          "recurrence": "yearly",
+          "color": "#BE185D",
+          "is_deleted": false
+        },
+        {
+          "id": "ev_006",
+          "title_key": "s10.calendar.ev_006",
+          "type": "personal",
+          "start": "2026-03-21T11:00:00",
+          "end": "2026-03-21T18:00:00",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#166534",
+          "is_deleted": false
+        },
+        {
+          "id": "f_ev_101",
+          "title_key": "s10.calendar.f_ev_101",
+          "type": "personal",
+          "start": "2026-01-08T19:00:00",
+          "end": "2026-01-08T23:00:00",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#64748B",
+          "is_deleted": false
+        },
+        {
+          "id": "f_ev_102",
+          "title_key": "s10.calendar.f_ev_102",
+          "type": "personal",
+          "start": "2026-02-12T19:00:00",
+          "end": "2026-02-12T23:00:00",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#64748B",
+          "is_deleted": false
+        },
+        {
+          "id": "f_ev_103",
+          "title_key": "s10.calendar.f_ev_103",
+          "type": "personal",
+          "start": "2026-03-12T19:00:00",
+          "end": "2026-03-12T23:00:00",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#64748B",
+          "is_deleted": false
+        },
+        {
+          "id": "f_ev_104",
+          "title_key": "s10.calendar.f_ev_104",
+          "type": "personal",
+          "start": "2026-04-16T19:00:00",
+          "end": "2026-04-16T23:00:00",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#64748B",
+          "is_deleted": false
+        },
+        {
+          "id": "f_ev_105",
+          "title_key": "s10.calendar.f_ev_105",
+          "type": "work",
+          "start": "2026-01-22T09:00:00",
+          "end": "2026-01-22T17:30:00",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#64748B",
+          "is_deleted": false
+        },
+        {
+          "id": "f_ev_106",
+          "title_key": "s10.calendar.f_ev_106",
+          "type": "work",
+          "start": "2026-02-26T09:00:00",
+          "end": "2026-02-26T17:30:00",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#64748B",
+          "is_deleted": false
+        },
+        {
+          "id": "f_ev_107",
+          "title_key": "s10.calendar.f_ev_107",
+          "type": "other",
+          "start": "2026-03-24T21:00:00",
+          "end": "2026-03-24T22:00:00",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#64748B",
+          "is_deleted": false
+        },
+        {
+          "id": "f_ev_108",
+          "title_key": "s10.calendar.f_ev_108",
+          "type": "other",
+          "start": "2026-04-02T09:00:00",
+          "end": "2026-04-02T10:00:00",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#64748B",
+          "is_deleted": false
+        },
+        {
+          "id": "f_ev_109",
+          "title_key": "s10.calendar.f_ev_109",
+          "type": "other",
+          "start": "2026-04-17T09:00:00",
+          "end": "2026-04-17T10:00:00",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#64748B",
+          "is_deleted": false
+        },
+        {
+          "id": "f_ev_110",
+          "title_key": "s10.calendar.f_ev_110",
+          "type": "other",
+          "start": "2026-05-13T09:00:00",
+          "end": "2026-05-13T10:00:00",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#64748B",
+          "is_deleted": false
+        },
+        {
+          "id": "f_ev_111",
+          "title_key": "s10.calendar.f_ev_111",
+          "type": "personal",
+          "start": "2026-04-14T11:00:00",
+          "end": "2026-04-14T11:30:00",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#64748B",
+          "is_deleted": false
+        },
+        {
+          "id": "f_ev_112",
+          "title_key": "s10.calendar.f_ev_112",
+          "type": "personal",
+          "start": "2026-05-21T19:00:00",
+          "end": "2026-05-21T23:00:00",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#64748B",
+          "is_deleted": false
+        }
+      ]
+    },
+    "photos": {
+      "recents": [
+        "ph_020",
+        "ph_021",
+        "ph_022",
+        "ph_023",
+        "ph_006",
+        "ph_030",
+        "ph_031",
+        "ph_032",
+        "ph_033",
+        "ph_034",
+        "ph_001",
+        "ph_002",
+        "ph_003",
+        "ph_004",
+        "ph_005"
+      ],
+      "albums": [
+        {
+          "id": "album_001",
+          "name_key": "s10.photos.album_001",
+          "cover_photo_id": "ph_002",
+          "photo_ids": [
+            "ph_020",
+            "ph_021",
+            "ph_022",
+            "ph_023",
+            "ph_006",
+            "ph_030",
+            "ph_031",
+            "ph_032",
+            "ph_033",
+            "ph_034",
+            "ph_001",
+            "ph_002",
+            "ph_003",
+            "ph_004",
+            "ph_005"
+          ],
+          "is_locked": false
+        },
+        {
+          "id": "album_002",
+          "name_key": "s10.photos.album_002",
+          "cover_photo_id": "ph_021",
+          "photo_ids": [
+            "ph_020",
+            "ph_021",
+            "ph_022",
+            "ph_023",
+            "ph_002",
+            "ph_034"
+          ],
+          "is_locked": false
+        },
+        {
+          "id": "album_003",
+          "name_key": "s10.photos.album_003",
+          "cover_photo_id": "ph_010",
+          "photo_ids": [
+            "ph_010",
+            "ph_011",
+            "ph_012",
+            "ph_013"
+          ],
+          "is_locked": true,
+          "lock_password": "0911"
+        },
+        {
+          "id": "album_004",
+          "name_key": "s10.photos.album_004",
+          "cover_photo_id": "ph_004",
+          "photo_ids": [
+            "ph_004",
+            "ph_005",
+            "ph_006"
+          ],
+          "is_locked": false
+        }
+      ],
+      "hidden": [],
+      "recently_deleted": [],
+      "items": [
+        {
+          "id": "ph_001",
+          "asset": "assets/cases/s10/photos/harbourside.jpg",
+          "taken_at": "2024-09-12T18:35:00",
+          "location": "Bristol"
+        },
+        {
+          "id": "ph_002",
+          "asset": "assets/cases/s10/photos/name_day.jpg",
+          "taken_at": "2025-05-21T21:10:00",
+          "location": "Bristol"
+        },
+        {
+          "id": "ph_003",
+          "asset": "assets/cases/s10/photos/pharmacy.jpg",
+          "taken_at": "2024-11-04T17:00:00",
+          "location": "Bristol"
+        },
+        {
+          "id": "ph_004",
+          "asset": "assets/cases/s10/photos/andreas_beach.jpg",
+          "taken_at": "2019-08-11T16:20:00"
+        },
+        {
+          "id": "ph_005",
+          "asset": "assets/cases/s10/photos/andreas_scrubs.jpg",
+          "taken_at": "2021-02-19T06:44:00"
+        },
+        {
+          "id": "ph_006",
+          "asset": "assets/cases/s10/photos/andreas_wedding.jpg",
+          "taken_at": "2026-03-14T22:50:00",
+          "location": "Cardiff"
+        },
+        {
+          "id": "ph_010",
+          "asset": "assets/cases/s10/photos/chronology.jpg",
+          "taken_at": "2026-04-24T02:44:00",
+          "document_key": "s10.photos.ph_010.document"
+        },
+        {
+          "id": "ph_011",
+          "asset": "assets/cases/s10/photos/newspaper_thread.jpg",
+          "taken_at": "2026-04-17T01:20:00",
+          "document_key": "s10.photos.ph_011.document"
+        },
+        {
+          "id": "ph_012",
+          "asset": "assets/cases/s10/photos/schedule_a.jpg",
+          "taken_at": "2026-05-12T10:05:00",
+          "document_key": "s10.photos.ph_012.document"
+        },
+        {
+          "id": "ph_013",
+          "asset": "assets/cases/s10/photos/contacts.jpg",
+          "taken_at": "2026-05-20T05:30:00",
+          "document_key": "s10.photos.ph_013.document"
+        },
+        {
+          "id": "ph_020",
+          "asset": "assets/cases/s10/photos/family_christening.jpg",
+          "taken_at": "2019-06-16T15:40:00",
+          "location": "Bristol"
+        },
+        {
+          "id": "ph_021",
+          "asset": "assets/cases/s10/photos/family_table.jpg",
+          "taken_at": "2022-04-24T20:15:00",
+          "location": "Bristol"
+        },
+        {
+          "id": "ph_022",
+          "asset": "assets/cases/s10/photos/family_garden.jpg",
+          "taken_at": "2023-07-30T17:05:00",
+          "location": "Bristol"
+        },
+        {
+          "id": "ph_023",
+          "asset": "assets/cases/s10/photos/family_kitchen.jpg",
+          "taken_at": "2025-12-24T22:40:00",
+          "location": "Bristol"
+        },
+        {
+          "id": "ph_030",
+          "asset": "assets/cases/s10/photos/easton_street.jpg",
+          "taken_at": "2026-04-11T16:20:00",
+          "location": "Bristol"
+        },
+        {
+          "id": "ph_031",
+          "asset": "assets/cases/s10/photos/marianna_house.jpg",
+          "taken_at": "2026-05-14T18:55:00",
+          "location": "Bristol"
+        },
+        {
+          "id": "ph_032",
+          "asset": "assets/cases/s10/photos/office.jpg",
+          "taken_at": "2026-02-03T08:50:00",
+          "location": "Bristol"
+        },
+        {
+          "id": "ph_033",
+          "asset": "assets/cases/s10/photos/kitchen_night.jpg",
+          "taken_at": "2026-03-20T03:50:00"
+        },
+        {
+          "id": "ph_034",
+          "asset": "assets/cases/s10/photos/phone_bowl.jpg",
+          "taken_at": "2024-02-15T19:04:00",
+          "location": "Bristol"
+        }
+      ]
+    },
+    "notes": {
+      "folders": [
+        {
+          "id": "nf_001",
+          "name_key": "s10.notes.folder_001",
+          "notes": [
+            {
+              "id": "note_001",
+              "title_key": "s10.notes.note_001.title",
+              "created_at": "2021-05-02T23:40:00",
+              "updated_at": "2026-04-22T01:15:00",
+              "is_locked": false,
+              "lock_password": null,
+              "content": {
+                "type": "text",
+                "blocks": [
+                  {
+                    "type": "text",
+                    "text_key": "s10.notes.note_001.block_001"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s10.notes.note_001.block_002"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s10.notes.note_001.block_003"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s10.notes.note_001.block_004"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s10.notes.note_001.block_005"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "note_002",
+              "title_key": "s10.notes.note_002.title",
+              "created_at": "2026-04-23T00:30:00",
+              "updated_at": "2026-04-23T02:10:00",
+              "is_locked": false,
+              "lock_password": null,
+              "content": {
+                "type": "text",
+                "blocks": [
+                  {
+                    "type": "text",
+                    "text_key": "s10.notes.note_002.block_001"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s10.notes.note_002.block_002"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s10.notes.note_002.block_003"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s10.notes.note_002.block_004"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s10.notes.note_002.block_005"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s10.notes.note_002.block_006"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "f_note_101",
+              "title_key": "s10.notes.f_note_101.title",
+              "created_at": "2019-02-11T22:00:00",
+              "updated_at": "2026-03-14T22:10:00",
+              "is_locked": false,
+              "lock_password": null,
+              "content": {
+                "type": "text",
+                "blocks": [
+                  {
+                    "type": "text",
+                    "text_key": "s10.notes.f_note_101.block_001"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s10.notes.f_note_101.block_002"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s10.notes.f_note_101.block_003"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s10.notes.f_note_101.block_004"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s10.notes.f_note_101.block_005"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s10.notes.f_note_101.block_006"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "f_note_102",
+              "title_key": "s10.notes.f_note_102.title",
+              "created_at": "2021-06-30T20:00:00",
+              "updated_at": "2025-12-01T20:20:00",
+              "is_locked": false,
+              "lock_password": null,
+              "content": {
+                "type": "text",
+                "blocks": [
+                  {
+                    "type": "text",
+                    "text_key": "s10.notes.f_note_102.block_001"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s10.notes.f_note_102.block_002"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s10.notes.f_note_102.block_003"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s10.notes.f_note_102.block_004"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s10.notes.f_note_102.block_005"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "f_note_103",
+              "title_key": "s10.notes.f_note_103.title",
+              "created_at": "2026-03-21T09:00:00",
+              "updated_at": "2026-05-12T09:30:00",
+              "is_locked": false,
+              "lock_password": null,
+              "content": {
+                "type": "text",
+                "blocks": [
+                  {
+                    "type": "text",
+                    "text_key": "s10.notes.f_note_103.block_001"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s10.notes.f_note_103.block_002"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s10.notes.f_note_103.block_003"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s10.notes.f_note_103.block_004"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s10.notes.f_note_103.block_005"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "nf_002",
+          "name_key": "s10.notes.folder_002",
+          "notes": [
+            {
+              "id": "note_003",
+              "title_key": "s10.notes.note_003.title",
+              "created_at": "2026-03-20T04:00:00",
+              "updated_at": "2026-05-13T23:40:00",
+              "is_locked": true,
+              "lock_password": "0911",
+              "content": {
+                "type": "text",
+                "blocks": [
+                  {
+                    "type": "text",
+                    "text_key": "s10.notes.note_003.block_001"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s10.notes.note_003.block_002"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s10.notes.note_003.block_003"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s10.notes.note_003.block_004"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s10.notes.note_003.block_005"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "f_note_111",
+              "title_key": "s10.notes.f_note_111.title",
+              "created_at": "2026-03-24T03:20:00",
+              "updated_at": "2026-03-24T03:40:00",
+              "is_locked": false,
+              "lock_password": null,
+              "content": {
+                "type": "text",
+                "blocks": [
+                  {
+                    "type": "text",
+                    "text_key": "s10.notes.f_note_111.block_001"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s10.notes.f_note_111.block_002"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s10.notes.f_note_111.block_003"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s10.notes.f_note_111.block_004"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s10.notes.f_note_111.block_005"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "f_note_112",
+              "title_key": "s10.notes.f_note_112.title",
+              "created_at": "2026-05-14T02:50:00",
+              "updated_at": "2026-05-20T03:00:00",
+              "is_locked": false,
+              "lock_password": null,
+              "content": {
+                "type": "text",
+                "blocks": [
+                  {
+                    "type": "text",
+                    "text_key": "s10.notes.f_note_112.block_001"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s10.notes.f_note_112.block_002"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s10.notes.f_note_112.block_003"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s10.notes.f_note_112.block_004"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s10.notes.f_note_112.block_005"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "calls": {
+      "recent_calls": [
+        {
+          "id": "call_001",
+          "person_id": "p002",
+          "type": "incoming",
+          "duration_seconds": 4820,
+          "timestamp": "2026-02-16T21:10:00"
+        },
+        {
+          "id": "call_002",
+          "person_id": "p002",
+          "type": "incoming",
+          "duration_seconds": 3140,
+          "timestamp": "2026-02-09T21:05:00"
+        },
+        {
+          "id": "call_003",
+          "person_id": "p002",
+          "type": "incoming",
+          "duration_seconds": 6602,
+          "timestamp": "2026-01-28T20:50:00"
+        },
+        {
+          "id": "call_004",
+          "person_id": "p002",
+          "type": "outgoing",
+          "duration_seconds": 0,
+          "timestamp": "2026-01-19T19:40:00"
+        },
+        {
+          "id": "call_005",
+          "person_id": "p002",
+          "type": "outgoing",
+          "duration_seconds": 0,
+          "timestamp": "2025-11-09T23:50:00"
+        },
+        {
+          "id": "call_006",
+          "person_id": "p002",
+          "type": "incoming",
+          "duration_seconds": 2955,
+          "timestamp": "2025-11-09T23:58:00"
+        },
+        {
+          "id": "call_007",
+          "person_id": "p003",
+          "type": "incoming",
+          "duration_seconds": 4260,
+          "timestamp": "2026-03-19T22:05:00"
+        },
+        {
+          "id": "call_008",
+          "person_id": "p001",
+          "type": "incoming",
+          "duration_seconds": 0,
+          "timestamp": "2026-03-20T08:12:00"
+        },
+        {
+          "id": "call_009",
+          "person_id": "p004",
+          "type": "incoming",
+          "duration_seconds": 1180,
+          "timestamp": "2026-05-19T23:32:00"
+        },
+        {
+          "id": "call_010",
+          "person_id": "p008",
+          "type": "outgoing",
+          "duration_seconds": 1440,
+          "timestamp": "2026-04-27T18:00:00"
+        },
+        {
+          "id": "f_call_101",
+          "person_id": "p002",
+          "type": "incoming",
+          "duration_seconds": 5340,
+          "timestamp": "2025-08-14T21:30:00"
+        },
+        {
+          "id": "f_call_102",
+          "person_id": "p002",
+          "type": "incoming",
+          "duration_seconds": 2280,
+          "timestamp": "2025-09-30T22:15:00"
+        },
+        {
+          "id": "f_call_103",
+          "person_id": "p002",
+          "type": "incoming",
+          "duration_seconds": 7020,
+          "timestamp": "2025-12-24T22:40:00"
+        },
+        {
+          "id": "f_call_104",
+          "person_id": "p002",
+          "type": "outgoing",
+          "duration_seconds": 0,
+          "timestamp": "2026-01-02T18:20:00"
+        },
+        {
+          "id": "f_call_105",
+          "person_id": "p002",
+          "type": "incoming",
+          "duration_seconds": 1860,
+          "timestamp": "2026-01-02T21:05:00"
+        },
+        {
+          "id": "f_call_106",
+          "person_id": "p002",
+          "type": "incoming",
+          "duration_seconds": 3900,
+          "timestamp": "2026-02-24T21:20:00"
+        },
+        {
+          "id": "f_call_107",
+          "person_id": "p002",
+          "type": "outgoing",
+          "duration_seconds": 0,
+          "timestamp": "2026-03-18T23:20:00"
+        },
+        {
+          "id": "f_call_108",
+          "person_id": "p001",
+          "type": "incoming",
+          "duration_seconds": 1420,
+          "timestamp": "2026-02-01T17:00:00"
+        },
+        {
+          "id": "f_call_109",
+          "person_id": "p003",
+          "type": "incoming",
+          "duration_seconds": 2640,
+          "timestamp": "2026-03-21T20:00:00"
+        },
+        {
+          "id": "f_call_110",
+          "person_id": "p004",
+          "type": "incoming",
+          "duration_seconds": 0,
+          "timestamp": "2026-03-26T19:40:00"
+        },
+        {
+          "id": "f_call_111",
+          "person_id": "p004",
+          "type": "incoming",
+          "duration_seconds": 0,
+          "timestamp": "2026-04-09T19:40:00"
+        },
+        {
+          "id": "f_call_112",
+          "person_id": "p008",
+          "type": "incoming",
+          "duration_seconds": 980,
+          "timestamp": "2026-05-14T11:00:00"
+        }
+      ]
+    },
+    "google": {
+      "searches": [
+        {
+          "id": "gs_001",
+          "query_key": "s10.search.gs_001",
+          "timestamp": "2021-06-18T10:30:00"
+        },
+        {
+          "id": "gs_002",
+          "query_key": "s10.search.gs_002",
+          "timestamp": "2019-08-07T00:20:00"
+        },
+        {
+          "id": "gs_003",
+          "query_key": "s10.search.gs_003",
+          "timestamp": "2023-04-19T00:40:00"
+        },
+        {
+          "id": "gs_004",
+          "query_key": "s10.search.gs_004",
+          "timestamp": "2026-03-19T10:20:00"
+        },
+        {
+          "id": "gs_005",
+          "query_key": "s10.search.gs_005",
+          "timestamp": "2026-03-19T10:44:00"
+        },
+        {
+          "id": "gs_006",
+          "query_key": "s10.search.gs_006",
+          "timestamp": "2026-04-02T01:15:00"
+        },
+        {
+          "id": "gs_007",
+          "query_key": "s10.search.gs_007",
+          "timestamp": "2026-04-27T18:40:00"
+        },
+        {
+          "id": "gs_008",
+          "query_key": "s10.search.gs_008",
+          "timestamp": "2026-05-20T04:50:00"
+        },
+        {
+          "id": "f_gs_101",
+          "query_key": "s10.search.f_gs_101",
+          "timestamp": "2019-06-20T02:10:00"
+        },
+        {
+          "id": "f_gs_102",
+          "query_key": "s10.search.f_gs_102",
+          "timestamp": "2021-03-19T23:40:00"
+        },
+        {
+          "id": "f_gs_103",
+          "query_key": "s10.search.f_gs_103",
+          "timestamp": "2023-08-01T01:20:00"
+        },
+        {
+          "id": "f_gs_104",
+          "query_key": "s10.search.f_gs_104",
+          "timestamp": "2026-03-20T04:30:00"
+        },
+        {
+          "id": "f_gs_105",
+          "query_key": "s10.search.f_gs_105",
+          "timestamp": "2026-03-21T03:00:00"
+        },
+        {
+          "id": "f_gs_106",
+          "query_key": "s10.search.f_gs_106",
+          "timestamp": "2026-03-22T02:40:00"
+        },
+        {
+          "id": "f_gs_107",
+          "query_key": "s10.search.f_gs_107",
+          "timestamp": "2026-03-26T03:10:00"
+        },
+        {
+          "id": "f_gs_108",
+          "query_key": "s10.search.f_gs_108",
+          "timestamp": "2026-04-03T22:00:00"
+        },
+        {
+          "id": "f_gs_109",
+          "query_key": "s10.search.f_gs_109",
+          "timestamp": "2026-04-13T02:50:00"
+        },
+        {
+          "id": "f_gs_110",
+          "query_key": "s10.search.f_gs_110",
+          "timestamp": "2026-04-22T21:30:00"
+        },
+        {
+          "id": "f_gs_111",
+          "query_key": "s10.search.f_gs_111",
+          "timestamp": "2026-05-02T23:00:00"
+        },
+        {
+          "id": "f_gs_112",
+          "query_key": "s10.search.f_gs_112",
+          "timestamp": "2026-05-19T02:20:00"
+        }
+      ]
+    },
+    "weather": {
+      "location": "Bristol",
+      "current": {
+        "timestamp": "2026-05-21T09:00:00",
+        "temp_celsius": 17,
+        "condition": "cloudy",
+        "humidity": 66,
+        "wind_speed": 15
+      },
+      "hourly": [
+        {
+          "timestamp": "2026-05-21T10:00:00",
+          "temp_celsius": 18,
+          "condition": "cloudy",
+          "humidity": 63,
+          "wind_speed": 14
+        },
+        {
+          "timestamp": "2026-05-21T11:00:00",
+          "temp_celsius": 20,
+          "condition": "sunny",
+          "humidity": 58,
+          "wind_speed": 12
+        }
+      ],
+      "daily": [
+        {
+          "timestamp": "2026-05-22T12:00:00",
+          "temp_celsius": 21,
+          "condition": "sunny",
+          "humidity": 55,
+          "wind_speed": 11
+        },
+        {
+          "timestamp": "2026-05-23T12:00:00",
+          "temp_celsius": 18,
+          "condition": "rainy",
+          "humidity": 78,
+          "wind_speed": 20
+        }
+      ]
+    },
+    "spotify": {
+      "recently_played": [
+        {
+          "id": "tr_001",
+          "title": "Kerynia",
+          "artist": "Andri Loizou",
+          "played_at": "2026-05-22T22:30:00"
+        },
+        {
+          "id": "tr_002",
+          "title": "Long Distance",
+          "artist": "Ffion Rhys",
+          "played_at": "2026-05-22T21:55:00"
+        },
+        {
+          "id": "tr_003",
+          "title": "Yiayia's Kitchen",
+          "artist": "Marios Pantelis",
+          "played_at": "2026-05-20T13:20:00"
+        },
+        {
+          "id": "tr_004",
+          "title": "Slow Water",
+          "artist": "The Harbourmen",
+          "played_at": "2026-05-17T08:10:00"
+        },
+        {
+          "id": "tr_010",
+          "title": "Name Day",
+          "artist": "Marios Pantelis",
+          "played_at": "2026-05-19T02:30:00"
+        },
+        {
+          "id": "tr_011",
+          "title": "Nine Septembers",
+          "artist": "Andri Loizou",
+          "played_at": "2026-04-13T03:00:00"
+        },
+        {
+          "id": "tr_012",
+          "title": "Severn Tide",
+          "artist": "Ffion Rhys",
+          "played_at": "2026-03-26T03:20:00"
+        },
+        {
+          "id": "tr_011",
+          "title": "Nine Septembers",
+          "artist": "Andri Loizou",
+          "played_at": "2025-11-09T21:40:00"
+        },
+        {
+          "id": "tr_010",
+          "title": "Name Day",
+          "artist": "Marios Pantelis",
+          "played_at": "2026-03-21T03:10:00"
+        },
+        {
+          "id": "tr_012",
+          "title": "Severn Tide",
+          "artist": "Ffion Rhys",
+          "played_at": "2026-05-02T23:10:00"
+        }
+      ],
+      "liked_songs": [
+        {
+          "id": "tr_010",
+          "title": "Name Day",
+          "artist": "Marios Pantelis"
+        },
+        {
+          "id": "tr_011",
+          "title": "Nine Septembers",
+          "artist": "Andri Loizou"
+        },
+        {
+          "id": "tr_012",
+          "title": "Severn Tide",
+          "artist": "Ffion Rhys"
+        }
+      ]
+    },
+    "rides": {
+      "trips": [
+        {
+          "id": "rd_001",
+          "pickup": "Alma Road, Clifton",
+          "dropoff": "St John's Road, Bedminster",
+          "requested_at": "2026-05-17T19:16:00",
+          "picked_up_at": "2026-05-17T19:23:00",
+          "dropped_off_at": "2026-05-17T19:41:00",
+          "fare": "£9.40",
+          "driver": "Dev",
+          "distance_km": 5,
+          "duration_min": 18,
+          "status": "completed"
+        },
+        {
+          "id": "rd_002",
+          "pickup": "St John's Road, Bedminster",
+          "dropoff": "Alma Road, Clifton",
+          "requested_at": "2026-05-10T12:01:00",
+          "picked_up_at": "2026-05-10T12:08:00",
+          "dropped_off_at": "2026-05-10T12:24:00",
+          "fare": "£8.90",
+          "driver": "Marta",
+          "distance_km": 5,
+          "duration_min": 16,
+          "status": "completed"
+        },
+        {
+          "id": "rd_003",
+          "pickup": "Alma Road, Clifton",
+          "dropoff": "Bristol Temple Meads",
+          "requested_at": "2026-02-14T18:57:00",
+          "fare": "",
+          "driver": "",
+          "status": "cancelled"
+        },
+        {
+          "id": "rd_004",
+          "pickup": "Bristol Temple Meads",
+          "dropoff": "Alma Road, Clifton",
+          "requested_at": "2026-02-06T18:42:00",
+          "picked_up_at": "2026-02-06T18:49:00",
+          "dropped_off_at": "2026-02-06T19:05:00",
+          "fare": "£7.30",
+          "driver": "Callum",
+          "distance_km": 4,
+          "duration_min": 16,
+          "status": "completed"
+        }
+      ]
+    },
+    "health": {
+      "days": [
+        {
+          "date": "2026-05-23",
+          "steps": 4180,
+          "sleep_hours": 3.9,
+          "resting_bpm": 72
+        },
+        {
+          "date": "2026-05-22",
+          "steps": 5240,
+          "sleep_hours": 4.4,
+          "resting_bpm": 70
+        },
+        {
+          "date": "2026-05-21",
+          "steps": 6910,
+          "sleep_hours": 5.8,
+          "resting_bpm": 66
+        },
+        {
+          "date": "2026-05-20",
+          "steps": 8470,
+          "sleep_hours": 6.5,
+          "resting_bpm": 63
+        },
+        {
+          "date": "2026-05-19",
+          "steps": 7320,
+          "sleep_hours": 7.1,
+          "resting_bpm": 61
+        },
+        {
+          "date": "2026-05-18",
+          "steps": 9150,
+          "sleep_hours": 6.2,
+          "resting_bpm": 64
+        },
+        {
+          "date": "2026-05-17",
+          "steps": 8830,
+          "sleep_hours": 6.7,
+          "resting_bpm": 62
+        },
+        {
+          "date": "2026-05-16",
+          "steps": 10240,
+          "sleep_hours": 7.4,
+          "resting_bpm": 60
+        },
+        {
+          "date": "2026-05-15",
+          "steps": 7690,
+          "sleep_hours": 6.9,
+          "resting_bpm": 61
+        },
+        {
+          "date": "2026-05-14",
+          "steps": 9020,
+          "sleep_hours": 7.0,
+          "resting_bpm": 59
+        },
+        {
+          "date": "2026-03-19",
+          "steps": 3120,
+          "sleep_hours": 1.4,
+          "resting_bpm": 92
+        },
+        {
+          "date": "2026-03-20",
+          "steps": 1840,
+          "sleep_hours": 0.9,
+          "resting_bpm": 96
+        },
+        {
+          "date": "2026-03-21",
+          "steps": 2260,
+          "sleep_hours": 2.1,
+          "resting_bpm": 90
+        },
+        {
+          "date": "2026-03-24",
+          "steps": 4410,
+          "sleep_hours": 3.0,
+          "resting_bpm": 86
+        },
+        {
+          "date": "2026-04-13",
+          "steps": 5020,
+          "sleep_hours": 3.4,
+          "resting_bpm": 84
+        },
+        {
+          "date": "2026-02-16",
+          "steps": 8940,
+          "sleep_hours": 6.9,
+          "resting_bpm": 68
+        },
+        {
+          "date": "2026-01-08",
+          "steps": 9210,
+          "sleep_hours": 7.4,
+          "resting_bpm": 67
+        }
+      ]
+    },
+    "ereader": {
+      "account_label": "Margin — e.christofi",
+      "books": [
+        {
+          "id": "bk_001",
+          "title": "The Burden of Proof Is Yours",
+          "author": "Cara Whitlock",
+          "progress_percent": 91,
+          "last_opened_at": "2026-05-22T23:40:00",
+          "open_count": 63
+        },
+        {
+          "id": "bk_002",
+          "title": "Nine Years of Sundays",
+          "author": "Despina Iakovou",
+          "progress_percent": 100,
+          "last_opened_at": "2026-04-27T22:15:00",
+          "open_count": 44
+        },
+        {
+          "id": "bk_003",
+          "title": "How to Read a Contract",
+          "author": "Martin Peake",
+          "progress_percent": 22,
+          "last_opened_at": "2025-11-05T18:50:00",
+          "open_count": 8
+        },
+        {
+          "id": "bk_004",
+          "title": "The Long Con",
+          "author": "Jessica Marne",
+          "progress_percent": 100,
+          "last_opened_at": "2026-04-19T02:40:00",
+          "open_count": 22
+        },
+        {
+          "id": "bk_005",
+          "title": "Family Law: A Practitioner's Handbook",
+          "author": "Sweet & Rowe",
+          "progress_percent": 34,
+          "last_opened_at": "2026-05-06T21:00:00",
+          "open_count": 41
+        }
+      ]
+    },
+    "clock": {
+      "alarms": [
+        {
+          "id": "al_001",
+          "time": "07:10",
+          "label_key": "s10.clock.al_001",
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "is_enabled": true
+        },
+        {
+          "id": "al_002",
+          "time": "18:30",
+          "label_key": "s10.clock.al_002",
+          "days": [
+            "Thu"
+          ],
+          "is_enabled": true
+        }
+      ],
+      "world_clocks": [
+        {
+          "city": "Bristol",
+          "timezone": "BST"
+        }
+      ]
+    },
+    "settings": {
+      "wifi_history": [
+        {
+          "id": "wf_001",
+          "network_name": "BT-CHRISTOFI-5G",
+          "connected_at": "2026-05-14T19:02:00",
+          "location_hint": "Marianna's"
+        },
+        {
+          "id": "wf_002",
+          "network_name": "Wexley-Guest",
+          "connected_at": "2026-04-30T09:04:00",
+          "location_hint": "Berkeley Square"
+        },
+        {
+          "id": "wf_003",
+          "network_name": "EE-4f21a9",
+          "connected_at": "2026-05-04T07:32:00",
+          "location_hint": "home"
+        }
+      ],
+      "app_usage": [
+        {
+          "app_name": "WhatsApp",
+          "daily_average_minutes": 191,
+          "this_week": [
+            {
+              "day": "Mon",
+              "minutes": 44
+            },
+            {
+              "day": "Tue",
+              "minutes": 51
+            }
+          ]
+        },
+        {
+          "app_name": "Instagram",
+          "daily_average_minutes": 88,
+          "this_week": [
+            {
+              "day": "Mon",
+              "minutes": 130
+            },
+            {
+              "day": "Tue",
+              "minutes": 96
+            }
+          ]
+        },
+        {
+          "app_name": "Files",
+          "daily_average_minutes": 42,
+          "this_week": [
+            {
+              "day": "Mon",
+              "minutes": 188
+            },
+            {
+              "day": "Tue",
+              "minutes": 121
+            }
+          ]
+        },
+        {
+          "app_name": "Chats",
+          "daily_average_minutes": 96,
+          "this_week": [
+            {
+              "day": "Wed",
+              "minutes": 0
+            },
+            {
+              "day": "Thu",
+              "minutes": 0
+            }
+          ]
+        },
+        {
+          "app_name": "Notes",
+          "daily_average_minutes": 38,
+          "this_week": [
+            {
+              "day": "Wed",
+              "minutes": 0
+            },
+            {
+              "day": "Thu",
+              "minutes": 0
+            }
+          ]
+        }
+      ]
+    },
+    "cloud": {
+      "account_label": "Drive — e.christofi",
+      "folders": [
+        {
+          "id": "cfo_001",
+          "name_key": "s10.cloud.cfo_001",
+          "files": [
+            {
+              "id": "cf_001",
+              "name_key": "s10.cloud.cf_001.name",
+              "created_at": "2026-03-22T01:10:00",
+              "modified_at": "2026-04-24T02:30:00",
+              "size": "1.4 MB",
+              "body_key": "s10.cloud.cf_001.body"
+            },
+            {
+              "id": "cf_002",
+              "name_key": "s10.cloud.cf_002.name",
+              "created_at": "2026-05-12T09:44:00",
+              "modified_at": "2026-05-12T09:44:00",
+              "size": "212 KB",
+              "body_key": "s10.cloud.cf_002.body"
+            },
+            {
+              "id": "cf_003",
+              "name_key": "s10.cloud.cf_003.name",
+              "created_at": "2026-04-22T01:20:00",
+              "modified_at": "2026-04-22T01:20:00",
+              "size": "4 KB",
+              "body_key": "s10.cloud.cf_003.body"
+            },
+            {
+              "id": "cf_004",
+              "name_key": "s10.cloud.cf_004.name",
+              "created_at": "2026-03-19T15:00:00",
+              "modified_at": "2026-03-19T15:00:00",
+              "size": "88 KB",
+              "body_key": "s10.cloud.cf_004.body"
+            },
+            {
+              "id": "cf_005",
+              "name_key": "s10.cloud.cf_005.name",
+              "created_at": "2026-04-23T02:20:00",
+              "modified_at": "2026-05-13T23:50:00",
+              "size": "31 KB",
+              "is_locked": true,
+              "lock_password": "0911",
+              "body_key": "s10.cloud.cf_005.body"
+            }
+          ]
+        }
+      ]
+    },
+    "voice_memos": {
+      "memos": [
+        {
+          "id": "vm_001",
+          "title_key": "s10.memos.vm_001.title",
+          "recorded_at": "2025-11-09T23:40:00",
+          "duration_sec": 27,
+          "transcript_key": "s10.memos.vm_001.transcript",
+          "is_deleted": false
+        },
+        {
+          "id": "vm_002",
+          "title_key": "s10.memos.vm_002.title",
+          "recorded_at": "2026-03-20T03:45:00",
+          "duration_sec": 96,
+          "transcript_key": "s10.memos.vm_002.transcript",
+          "is_deleted": false
+        }
+      ]
+    },
+    "games": {
+      "best_score": 4560,
+      "games_played": 37,
+      "sessions": [
+        {
+          "started_at": "2026-05-21T13:26:00",
+          "duration_min": 1,
+          "score": 288
+        },
+        {
+          "started_at": "2026-05-20T19:52:00",
+          "duration_min": 7,
+          "score": 1836
+        },
+        {
+          "started_at": "2026-05-19T13:31:00",
+          "duration_min": 1,
+          "score": 164
+        },
+        {
+          "started_at": "2026-05-17T18:09:00",
+          "duration_min": 14,
+          "score": 4560
+        },
+        {
+          "started_at": "2026-05-13T20:41:00",
+          "duration_min": 5,
+          "score": 1002
+        }
+      ]
+    }
+  }
+}

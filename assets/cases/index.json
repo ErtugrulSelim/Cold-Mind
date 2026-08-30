@@ -1,0 +1,182 @@
+[
+  {
+    "id": "s01",
+    "title_key": "s01.meta.title",
+    "difficulty": "hard",
+    "city": "Tallinn",
+    "thumbnail": "assets/cases/s01/photos/thumbnail.jpg",
+    "client_name": "Nora Ilves",
+    "question_count": 15,
+    "backdrop": [
+      "assets/cases/s01/photos/airport_gate.jpg",
+      "assets/cases/s01/photos/bookshelf.jpg",
+      "assets/cases/s01/photos/dinner.jpg",
+      "assets/cases/s01/photos/kilian_profile.jpg",
+      "assets/cases/s01/photos/nora_profile.jpg",
+      "assets/cases/s01/photos/router_serial.jpg",
+      "assets/cases/s01/photos/snow_clearing.jpg"
+    ]
+  },
+  {
+    "id": "s02",
+    "title_key": "s02.meta.title",
+    "difficulty": "hard",
+    "city": "Berlin",
+    "thumbnail": "assets/cases/s02/photos/thumbnail.jpg",
+    "client_name": "Cypher",
+    "question_count": 15,
+    "backdrop": [
+      "assets/cases/s02/photos/bank_screen.jpg",
+      "assets/cases/s02/photos/doorlog.jpg",
+      "assets/cases/s02/photos/ines_work.jpg",
+      "assets/cases/s02/photos/keycard.jpg",
+      "assets/cases/s02/photos/maya_juno.jpg",
+      "assets/cases/s02/photos/render.jpg",
+      "assets/cases/s02/photos/studio_team.jpg"
+    ]
+  },
+  {
+    "id": "s03",
+    "title_key": "s03.meta.title",
+    "difficulty": "hard",
+    "city": "Ghent",
+    "thumbnail": "assets/cases/s03/photos/thumbnail.jpg",
+    "client_name": "Bram Merckx",
+    "question_count": 16,
+    "backdrop": [
+      "assets/cases/s03/photos/bicycle.jpg",
+      "assets/cases/s03/photos/bookmark.jpg",
+      "assets/cases/s03/photos/cat.jpg",
+      "assets/cases/s03/photos/frituur.jpg",
+      "assets/cases/s03/photos/lockhouse.jpg",
+      "assets/cases/s03/photos/reading_group.jpg",
+      "assets/cases/s03/photos/schoolyard.jpg"
+    ]
+  },
+  {
+    "id": "s04",
+    "title_key": "s04.meta.title",
+    "difficulty": "hard",
+    "city": "Porto",
+    "thumbnail": "assets/cases/s04/photos/thumbnail.jpg",
+    "client_name": "Vasco Pinto",
+    "question_count": 15,
+    "backdrop": [
+      "assets/cases/s04/photos/alley.jpg",
+      "assets/cases/s04/photos/doorcam.jpg",
+      "assets/cases/s04/photos/house.jpg",
+      "assets/cases/s04/photos/matosinhos.jpg",
+      "assets/cases/s04/photos/rain_window.jpg",
+      "assets/cases/s04/photos/rui_vasco_2014.jpg",
+      "assets/cases/s04/photos/tram.jpg"
+    ]
+  },
+  {
+    "id": "s05",
+    "title_key": "s05.meta.title",
+    "difficulty": "hard",
+    "city": "Trieste",
+    "thumbnail": "assets/cases/s05/photos/thumbnail.jpg",
+    "client_name": "Elena Furlan",
+    "question_count": 15,
+    "backdrop": [
+      "assets/cases/s05/photos/bora.jpg",
+      "assets/cases/s05/photos/cafe.jpg",
+      "assets/cases/s05/photos/crew_list.jpg",
+      "assets/cases/s05/photos/gloves.jpg",
+      "assets/cases/s05/photos/karst.jpg",
+      "assets/cases/s05/photos/molo_audace.jpg",
+      "assets/cases/s05/photos/plaque.jpg"
+    ]
+  },
+  {
+    "id": "s06",
+    "title_key": "s06.meta.title",
+    "difficulty": "hard",
+    "city": "Myawaddy",
+    "thumbnail": "assets/cases/s06/photos/thumbnail.jpg",
+    "client_name": "Jonas Halvorsen",
+    "question_count": 15,
+    "backdrop": [
+      "assets/cases/s06/photos/bergen.jpg",
+      "assets/cases/s06/photos/chidinma_profile.jpg",
+      "assets/cases/s06/photos/emeka_profile.jpg",
+      "assets/cases/s06/photos/ingrid_profile.jpg",
+      "assets/cases/s06/photos/kasper_dog.jpg",
+      "assets/cases/s06/photos/passport.jpg",
+      "assets/cases/s06/photos/tunde_profile.jpg"
+    ]
+  },
+  {
+    "id": "s07",
+    "title_key": "s07.meta.title",
+    "difficulty": "hard",
+    "city": "Connemara",
+    "thumbnail": "assets/cases/s07/photos/thumbnail.jpg",
+    "client_name": "Aoife Conneely",
+    "question_count": 15,
+    "backdrop": [
+      "assets/cases/s07/photos/aoife_profile.jpg",
+      "assets/cases/s07/photos/bog_road.jpg",
+      "assets/cases/s07/photos/courthouse.jpg",
+      "assets/cases/s07/photos/fiona_profile.jpg",
+      "assets/cases/s07/photos/maire_profile.jpg",
+      "assets/cases/s07/photos/safe_count_02.jpg",
+      "assets/cases/s07/photos/terminal.jpg"
+    ]
+  },
+  {
+    "id": "s08",
+    "title_key": "s08.meta.title",
+    "difficulty": "hard",
+    "city": "Kraków",
+    "thumbnail": "assets/cases/s08/photos/thumbnail.jpg",
+    "client_name": "Barbara Kaczmarek",
+    "question_count": 15,
+    "backdrop": [
+      "assets/cases/s08/photos/aneta_profile.jpg",
+      "assets/cases/s08/photos/bulwar.jpg",
+      "assets/cases/s08/photos/discharge_2.jpg",
+      "assets/cases/s08/photos/hallway_coat.jpg",
+      "assets/cases/s08/photos/kalina_iga.jpg",
+      "assets/cases/s08/photos/pencil_case.jpg",
+      "assets/cases/s08/photos/whitby_steps.jpg"
+    ]
+  },
+  {
+    "id": "s09",
+    "title_key": "s09.meta.title",
+    "difficulty": "hard",
+    "city": "Maastricht",
+    "thumbnail": "assets/cases/s09/photos/thumbnail.jpg",
+    "client_name": "Ariane Bosch",
+    "question_count": 15,
+    "backdrop": [
+      "assets/cases/s09/photos/ariane_profile.jpg",
+      "assets/cases/s09/photos/catalogue_proof.jpg",
+      "assets/cases/s09/photos/crate.jpg",
+      "assets/cases/s09/photos/halderman_profile.jpg",
+      "assets/cases/s09/photos/loading_bay.jpg",
+      "assets/cases/s09/photos/plaque.jpg",
+      "assets/cases/s09/photos/service_door.jpg"
+    ]
+  },
+  {
+    "id": "s10",
+    "title_key": "s10.meta.title",
+    "difficulty": "hard",
+    "city": "Bristol",
+    "thumbnail": "assets/cases/s10/photos/thumbnail.jpg",
+    "client_name": "Elena Christofi",
+    "question_count": 15,
+    "backdrop": [
+      "assets/cases/s10/photos/andreas_beach.jpg",
+      "assets/cases/s10/photos/andreas_wedding.jpg",
+      "assets/cases/s10/photos/elena_profile.jpg",
+      "assets/cases/s10/photos/family_table.jpg",
+      "assets/cases/s10/photos/kitchen_night.jpg",
+      "assets/cases/s10/photos/newspaper_thread.jpg",
+      "assets/cases/s10/photos/phone_bowl.jpg"
+    ]
+  }
+]

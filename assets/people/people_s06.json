@@ -1,0 +1,156 @@
+{
+  "case_id": "s06",
+  "people": [
+    {
+      "id": "p000",
+      "tier": 1,
+      "contact": {
+        "first_name": "Emeka",
+        "last_name": "Nwachukwu",
+        "phone_number": "+95 9 442 108 663",
+        "avatar_color": "#166534"
+      },
+      "photo_asset": "assets/cases/s06/photos/emeka_profile.jpg",
+      "age": 23,
+      "home_city": "Lagos",
+      "occupation": "Station 14",
+      "personality_tags": [
+        "quick",
+        "polite",
+        "counting days"
+      ]
+    },
+    {
+      "id": "p001",
+      "tier": 1,
+      "contact": {
+        "first_name": "Jonas",
+        "last_name": "Halvorsen",
+        "phone_number": "+47 951 20 774",
+        "avatar_color": "#B91C1C"
+      },
+      "photo_asset": "assets/cases/s06/photos/jonas_profile.jpg",
+      "age": 41,
+      "home_city": "Bergen",
+      "occupation": "Quantity surveyor",
+      "personality_tags": [
+        "furious",
+        "methodical",
+        "out of his depth"
+      ]
+    },
+    {
+      "id": "p002",
+      "tier": 1,
+      "contact": {
+        "first_name": "Ingrid",
+        "last_name": "Halvorsen",
+        "phone_number": "+47 916 44 208",
+        "avatar_color": "#7C3AED"
+      },
+      "photo_asset": "assets/cases/s06/photos/ingrid_profile.jpg",
+      "age": 68,
+      "home_city": "Bergen",
+      "occupation": "Retired midwife",
+      "personality_tags": [
+        "careful",
+        "lonely",
+        "ashamed"
+      ]
+    },
+    {
+      "id": "p003",
+      "tier": 1,
+      "contact": {
+        "first_name": "Wei",
+        "last_name": "Songlin",
+        "phone_number": "+95 9 770 004 121",
+        "avatar_color": "#7F1D1D"
+      },
+      "photo_asset": "assets/cases/s06/photos/wei_profile.jpg",
+      "age": 44,
+      "home_city": "Myawaddy",
+      "occupation": "Floor manager, Shwe Kayin Park",
+      "personality_tags": [
+        "exact",
+        "unbothered",
+        "never on camera"
+      ]
+    },
+    {
+      "id": "p004",
+      "tier": 2,
+      "contact": {
+        "first_name": "Chidinma",
+        "last_name": "Nwachukwu",
+        "phone_number": "+234 803 771 5502",
+        "avatar_color": "#B45309"
+      },
+      "photo_asset": "assets/cases/s06/photos/chidinma_profile.jpg",
+      "age": 51,
+      "home_city": "Lagos",
+      "occupation": "Seamstress",
+      "personality_tags": [
+        "proud",
+        "waiting",
+        "told nothing"
+      ]
+    },
+    {
+      "id": "p005",
+      "tier": 2,
+      "contact": {
+        "first_name": "Blessing",
+        "last_name": "Adeyemi",
+        "phone_number": "+95 9 442 108 671",
+        "avatar_color": "#0F766E"
+      },
+      "photo_asset": "assets/cases/s06/photos/blessing_profile.jpg",
+      "age": 26,
+      "home_city": "Ibadan",
+      "occupation": "Station 15",
+      "personality_tags": [
+        "careful",
+        "older in the head",
+        "keeps count"
+      ]
+    },
+    {
+      "id": "p006",
+      "tier": 2,
+      "contact": {
+        "first_name": "Tunde",
+        "last_name": "Bakare",
+        "phone_number": "+234 815 220 9104",
+        "avatar_color": "#475569"
+      },
+      "photo_asset": "assets/cases/s06/photos/tunde_profile.jpg",
+      "age": 37,
+      "home_city": "Lagos",
+      "occupation": "Overseas placements agent",
+      "personality_tags": [
+        "warm on the phone",
+        "unreachable after"
+      ]
+    },
+    {
+      "id": "p007",
+      "tier": 3,
+      "contact": {
+        "first_name": "Kasper",
+        "last_name": "Lund",
+        "phone_number": "+45 27 44 90 18",
+        "avatar_color": "#1D4ED8"
+      },
+      "photo_asset": "assets/cases/s06/photos/kasper_profile.jpg",
+      "age": 38,
+      "home_city": "Aarhus",
+      "occupation": "Personal trainer",
+      "personality_tags": [
+        "oblivious",
+        "photographed constantly"
+      ]
+    }
+  ],
+  "instagram_posts": []
+}

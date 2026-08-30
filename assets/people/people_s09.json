@@ -1,0 +1,171 @@
+{
+  "case_id": "s09",
+  "people": [
+    {
+      "id": "p000",
+      "tier": 1,
+      "contact": {
+        "first_name": "Lotte",
+        "last_name": "Vervoort",
+        "phone_number": "+31 6 2244 8017",
+        "avatar_color": "#0E7490"
+      },
+      "photo_asset": "assets/cases/s09/photos/lotte_profile.jpg",
+      "age": 26,
+      "home_city": "Maastricht",
+      "occupation": "Registrar, Halderman Ancient Art",
+      "personality_tags": [
+        "meticulous",
+        "junior",
+        "already worked it out"
+      ]
+    },
+    {
+      "id": "p001",
+      "tier": 1,
+      "contact": {
+        "first_name": "Ariane",
+        "last_name": "Bosch",
+        "phone_number": "+31 6 5108 3390",
+        "avatar_color": "#B91C1C"
+      },
+      "photo_asset": "assets/cases/s09/photos/ariane_profile.jpg",
+      "age": 48,
+      "home_city": "Rotterdam",
+      "occupation": "Special risks investigator, Havenkring Verzekering",
+      "personality_tags": [
+        "fast",
+        "dry",
+        "does not care who they are"
+      ]
+    },
+    {
+      "id": "p002",
+      "tier": 1,
+      "contact": {
+        "first_name": "Guus",
+        "last_name": "Halderman",
+        "phone_number": "+31 6 4470 2255",
+        "avatar_color": "#78350F"
+      },
+      "photo_asset": "assets/cases/s09/photos/halderman_profile.jpg",
+      "age": 61,
+      "home_city": "Maastricht",
+      "occupation": "Owner, Halderman Ancient Art (est. 1994)",
+      "personality_tags": [
+        "courteous",
+        "thirty years of goodwill",
+        "never rushes"
+      ]
+    },
+    {
+      "id": "p003",
+      "tier": 2,
+      "contact": {
+        "first_name": "Sem",
+        "last_name": "Dekkers",
+        "phone_number": "+31 6 3920 7714",
+        "avatar_color": "#334155"
+      },
+      "photo_asset": "assets/cases/s09/photos/sem_profile.jpg",
+      "age": 22,
+      "home_city": "Maastricht",
+      "occupation": "Casual porter (until December)",
+      "personality_tags": [
+        "arrested on the night",
+        "has said nothing at all"
+      ]
+    },
+    {
+      "id": "p004",
+      "tier": 2,
+      "contact": {
+        "first_name": "Nadia",
+        "last_name": "El Amrani",
+        "phone_number": "+31 6 1177 4402",
+        "avatar_color": "#166534"
+      },
+      "photo_asset": "assets/cases/s09/photos/nadia_profile.jpg",
+      "age": 34,
+      "home_city": "Maastricht",
+      "occupation": "Night security supervisor, Vrijthof Fair",
+      "personality_tags": [
+        "straight",
+        "raised it twice",
+        "in writing"
+      ]
+    },
+    {
+      "id": "p005",
+      "tier": 2,
+      "contact": {
+        "first_name": "Teodora",
+        "last_name": "Ilieva",
+        "phone_number": "+359 88 442 1180",
+        "avatar_color": "#7C3AED"
+      },
+      "photo_asset": "assets/cases/s09/photos/ilieva_profile.jpg",
+      "age": 45,
+      "home_city": "Plovdiv",
+      "occupation": "Curator and loan courier, Regional Museum of History",
+      "personality_tags": [
+        "exact",
+        "signed for nine",
+        "counted twice"
+      ]
+    },
+    {
+      "id": "p006",
+      "tier": 3,
+      "contact": {
+        "first_name": "Rob",
+        "last_name": "Wielart",
+        "phone_number": "+31 6 2288 0093",
+        "avatar_color": "#475569"
+      },
+      "age": 39,
+      "home_city": "Eindhoven",
+      "occupation": "Vitrine fitter, subcontractor",
+      "personality_tags": [
+        "did the job",
+        "kept the work order"
+      ]
+    },
+    {
+      "id": "p007",
+      "tier": 2,
+      "contact": {
+        "first_name": "Rima",
+        "last_name": "Haddad",
+        "phone_number": "+49 30 4477 2019",
+        "avatar_color": "#B45309"
+      },
+      "photo_asset": "assets/cases/s09/photos/haddad_profile.jpg",
+      "age": 47,
+      "home_city": "Berlin",
+      "occupation": "Archaeologist, Tell Muqbila documentation project",
+      "personality_tags": [
+        "seven years on one list",
+        "answers every email"
+      ]
+    },
+    {
+      "id": "p008",
+      "tier": 3,
+      "contact": {
+        "first_name": "Joachim",
+        "last_name": "Prins",
+        "phone_number": "+31 6 5540 1128",
+        "avatar_color": "#1E3A5F"
+      },
+      "age": 55,
+      "home_city": "Amsterdam",
+      "occupation": "Fair registrar and chair of vetting",
+      "personality_tags": [
+        "procedural",
+        "signs what he is given"
+      ]
+    }
+  ],
+  "instagram_posts": []
+}

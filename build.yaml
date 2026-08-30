@@ -1,0 +1,9 @@
+targets:
+  $default:
+    builders:
+      json_serializable:
+        options:
+          # The case files are snake_case throughout, so every model field maps
+          # by convention instead of carrying a @JsonKey(name:) of its own.
+          field_rename: snake
+          explicit_to_json: true

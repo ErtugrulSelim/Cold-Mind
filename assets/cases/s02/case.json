@@ -1,0 +1,5537 @@
+{
+  "schema": 2,
+  "id": "s02",
+  "meta": {
+    "title_key": "s02.meta.title",
+    "difficulty": "hard",
+    "city": {
+      "name": "Berlin",
+      "lat": 52.52,
+      "lng": 13.405
+    },
+    "thumbnail": "assets/cases/s02/photos/thumbnail.jpg",
+    "client": {
+      "person_id": "p000",
+      "name": "Cypher",
+      "photo": "assets/cases/s02/photos/cypher_avatar.jpg"
+    },
+    "reveal_total": true
+  },
+  "device": {
+    "owner_name": "Maya Sorensen",
+    "model": "Aurel 10 Pro",
+    "ios_version": "18.3.1",
+    "storage_total_gb": 512,
+    "storage_used_gb": 388,
+    "last_backup": "2025-03-19T02:47:00",
+    "lock_pin": "309471",
+    "wallpaper_asset": "assets/cases/s02/photos/wallpaper.jpg"
+  },
+  "cast": [
+    {
+      "person_id": "p000",
+      "role": "victim",
+      "contact_saved": false
+    },
+    {
+      "person_id": "p001",
+      "role": "suspect",
+      "nickname": "Leo",
+      "contact_saved": true,
+      "relationship_note_key": "s02.relationship.p001.note"
+    },
+    {
+      "person_id": "p002",
+      "role": "colleague",
+      "nickname": "Ines",
+      "contact_saved": true,
+      "relationship_note_key": "s02.relationship.p002.note"
+    },
+    {
+      "person_id": "p003",
+      "role": "friend",
+      "nickname": "Juno",
+      "contact_saved": true,
+      "relationship_note_key": "s02.relationship.p003.note"
+    },
+    {
+      "person_id": "p004",
+      "role": "service",
+      "contact_saved": true,
+      "relationship_note_key": "s02.relationship.p004.note"
+    },
+    {
+      "person_id": "p005",
+      "role": "colleague",
+      "contact_saved": true,
+      "relationship_note_key": "s02.relationship.p005.note"
+    }
+  ],
+  "contacts": [
+    {
+      "person_id": "p001",
+      "is_saved": true
+    },
+    {
+      "person_id": "p002",
+      "is_saved": true
+    },
+    {
+      "person_id": "p003",
+      "is_saved": true
+    },
+    {
+      "person_id": "p004",
+      "is_saved": true,
+      "custom_label_key": "s02.contact.p004.label"
+    },
+    {
+      "person_id": "p005",
+      "is_saved": true,
+      "custom_label_key": "s02.contact.p005.label"
+    }
+  ],
+  "home": {
+    "grid": [
+      "instagram",
+      "whatsapp",
+      "gmail",
+      "photos",
+      "notes",
+      "calendar",
+      "maps",
+      "cloud",
+      "vault",
+      "access",
+      "voice_memos",
+      "sms",
+      "venmo",
+      "spotify",
+      "google",
+      "ereader",
+      "rides",
+      "health",
+      "games"
+    ],
+    "dock": [
+      "calls",
+      "sms",
+      "whatsapp",
+      "instagram"
+    ],
+    "widget_pages": [
+      [
+        "weather"
+      ],
+      [
+        "calendar"
+      ]
+    ]
+  },
+  "board": {
+    "center_node_id": "b_maya",
+    "nodes": [
+      {
+        "id": "b_maya",
+        "type": "polaroid",
+        "title_key": "s02.board.maya.title",
+        "subtitle_key": "s02.board.maya.sub",
+        "image_asset": "assets/cases/s02/photos/maya_profile.jpg",
+        "is_center": true
+      },
+      {
+        "id": "b_leo",
+        "type": "polaroid",
+        "title_key": "s02.board.leo.title",
+        "subtitle_key": "s02.board.leo.sub",
+        "image_asset": "assets/cases/s02/photos/leo_profile.jpg"
+      },
+      {
+        "id": "b_juno",
+        "type": "polaroid",
+        "title_key": "s02.board.juno.title",
+        "subtitle_key": "s02.board.juno.sub",
+        "image_asset": "assets/cases/s02/photos/juno_profile.jpg"
+      },
+      {
+        "id": "b_studio",
+        "type": "map",
+        "title_key": "s02.board.studio.title",
+        "subtitle_key": "s02.board.studio.sub",
+        "image_asset": "assets/cases/s02/photos/studio.jpg"
+      },
+      {
+        "id": "b_night",
+        "type": "sticky_note",
+        "title_key": "s02.board.night.title",
+        "subtitle_key": "s02.board.night.sub"
+      },
+      {
+        "id": "b_file",
+        "type": "sticky_note",
+        "title_key": "s02.board.file.title",
+        "subtitle_key": "s02.board.file.sub"
+      }
+    ],
+    "edges": [
+      {
+        "id": "be_1",
+        "from": "b_maya",
+        "to": "b_leo",
+        "label_key": "s02.board.e1",
+        "curvature": 0.12
+      },
+      {
+        "id": "be_3",
+        "from": "b_maya",
+        "to": "b_juno",
+        "label_key": "s02.board.e3",
+        "curvature": 0.1
+      },
+      {
+        "id": "be_4",
+        "from": "b_maya",
+        "to": "b_studio",
+        "label_key": "s02.board.e4",
+        "curvature": 0.14
+      },
+      {
+        "id": "be_5",
+        "from": "b_studio",
+        "to": "b_night",
+        "label_key": "s02.board.e5",
+        "curvature": 0.18
+      },
+      {
+        "id": "be_6",
+        "from": "b_night",
+        "to": "b_file",
+        "label_key": "s02.board.e6",
+        "curvature": 0.2
+      }
+    ]
+  },
+  "chats": {
+    "intro": {
+      "client_person_id": "p000",
+      "messages": [
+        {
+          "id": "cc_001",
+          "sender": "client",
+          "text_key": "s02.client_chat.cc_001",
+          "timestamp": "2025-04-02T23:10:00",
+          "delay_ms": 0
+        },
+        {
+          "id": "cc_002",
+          "sender": "client",
+          "text_key": "s02.client_chat.cc_002",
+          "timestamp": "2025-04-02T23:10:06",
+          "delay_ms": 6000
+        },
+        {
+          "id": "cc_003",
+          "sender": "client",
+          "text_key": "s02.client_chat.cc_003",
+          "timestamp": "2025-04-02T23:10:14",
+          "delay_ms": 8000
+        },
+        {
+          "id": "cc_004",
+          "sender": "client",
+          "text_key": "s02.client_chat.cc_004",
+          "timestamp": "2025-04-02T23:10:22",
+          "delay_ms": 8000
+        },
+        {
+          "id": "cc_005",
+          "sender": "client",
+          "text_key": "s02.client_chat.cc_005",
+          "timestamp": "2025-04-02T23:10:31",
+          "delay_ms": 9000
+        },
+        {
+          "id": "cc_006",
+          "sender": "client",
+          "text_key": "s02.client_chat.cc_006",
+          "timestamp": "2025-04-02T23:10:39",
+          "delay_ms": 8000
+        },
+        {
+          "id": "cc_007",
+          "sender": "client",
+          "text_key": "s02.client_chat.cc_007",
+          "timestamp": "2025-04-02T23:10:47",
+          "delay_ms": 8000,
+          "is_choice": true,
+          "choices": [
+            {
+              "label_key": "s02.client_chat.cc_007.accept",
+              "action": "accept_case"
+            },
+            {
+              "label_key": "s02.client_chat.cc_007.decline",
+              "action": "decline_case"
+            }
+          ]
+        },
+        {
+          "id": "cc_008",
+          "sender": "client",
+          "text_key": "s02.client_chat.cc_008",
+          "timestamp": "2025-04-02T23:11:00",
+          "delay_ms": 4000
+        },
+        {
+          "id": "cc_009",
+          "sender": "client",
+          "text_key": "s02.client_chat.cc_009",
+          "timestamp": "2025-04-02T23:11:08",
+          "delay_ms": 8000
+        }
+      ]
+    },
+    "interstitials": [
+      {
+        "after_question": 5,
+        "client_person_id": "p000",
+        "messages": [
+          {
+            "id": "is1_001",
+            "sender": "client",
+            "text_key": "s02.interstitial.is1_001",
+            "timestamp": "2025-04-03T01:20:00",
+            "delay_ms": 0
+          },
+          {
+            "id": "is1_002",
+            "sender": "client",
+            "text_key": "s02.interstitial.is1_002",
+            "timestamp": "2025-04-03T01:20:05",
+            "delay_ms": 5000
+          },
+          {
+            "id": "is1_003",
+            "sender": "client",
+            "text_key": "s02.interstitial.is1_003",
+            "timestamp": "2025-04-03T01:20:12",
+            "delay_ms": 7000
+          }
+        ]
+      },
+      {
+        "after_question": 10,
+        "client_person_id": "p000",
+        "messages": [
+          {
+            "id": "is2_001",
+            "sender": "client",
+            "text_key": "s02.interstitial.is2_001",
+            "timestamp": "2025-04-03T18:40:00",
+            "delay_ms": 0
+          },
+          {
+            "id": "is2_002",
+            "sender": "client",
+            "text_key": "s02.interstitial.is2_002",
+            "timestamp": "2025-04-03T18:40:05",
+            "delay_ms": 5000
+          },
+          {
+            "id": "is2_003",
+            "sender": "client",
+            "text_key": "s02.interstitial.is2_003",
+            "timestamp": "2025-04-03T18:40:12",
+            "delay_ms": 7000
+          },
+          {
+            "id": "is2_004",
+            "sender": "client",
+            "text_key": "s02.interstitial.is2_004",
+            "timestamp": "2025-04-03T18:40:20",
+            "delay_ms": 8000
+          }
+        ]
+      },
+      {
+        "after_question": 12,
+        "client_person_id": "p000",
+        "messages": [
+          {
+            "id": "is3_001",
+            "sender": "client",
+            "text_key": "s02.interstitial.is3_001",
+            "timestamp": "2025-04-04T02:05:00",
+            "delay_ms": 0
+          },
+          {
+            "id": "is3_002",
+            "sender": "client",
+            "text_key": "s02.interstitial.is3_002",
+            "timestamp": "2025-04-04T02:05:06",
+            "delay_ms": 6000
+          },
+          {
+            "id": "is3_003",
+            "sender": "client",
+            "text_key": "s02.interstitial.is3_003",
+            "timestamp": "2025-04-04T02:05:14",
+            "delay_ms": 8000
+          }
+        ]
+      }
+    ],
+    "closing": {
+      "client_person_id": "p000",
+      "messages": [
+        {
+          "id": "cl_001",
+          "sender": "client",
+          "text_key": "s02.closing_chat.cl_001",
+          "timestamp": "2025-04-04T03:30:00",
+          "delay_ms": 0
+        },
+        {
+          "id": "cl_002",
+          "sender": "client",
+          "text_key": "s02.closing_chat.cl_002",
+          "timestamp": "2025-04-04T03:30:09",
+          "delay_ms": 9000
+        },
+        {
+          "id": "cl_003",
+          "sender": "client",
+          "text_key": "s02.closing_chat.cl_003",
+          "timestamp": "2025-04-04T03:30:19",
+          "delay_ms": 10000
+        },
+        {
+          "id": "cl_004",
+          "sender": "client",
+          "text_key": "s02.closing_chat.cl_004",
+          "timestamp": "2025-04-04T03:30:29",
+          "delay_ms": 10000
+        },
+        {
+          "id": "cl_005",
+          "sender": "client",
+          "text_key": "s02.closing_chat.cl_005",
+          "timestamp": "2025-04-04T03:30:39",
+          "delay_ms": 10000
+        },
+        {
+          "id": "cl_006",
+          "sender": "client",
+          "text_key": "s02.closing_chat.cl_006",
+          "timestamp": "2025-04-04T03:30:49",
+          "delay_ms": 10000
+        },
+        {
+          "id": "cl_007",
+          "sender": "client",
+          "text_key": "s02.closing_chat.cl_007",
+          "timestamp": "2025-04-04T03:30:58",
+          "delay_ms": 9000
+        },
+        {
+          "id": "cl_008",
+          "sender": "client",
+          "text_key": "s02.closing_chat.cl_008",
+          "timestamp": "2025-04-04T03:31:08",
+          "delay_ms": 10000,
+          "is_choice": true,
+          "choices": [
+            {
+              "label_key": "s02.closing_chat.cl_008.opt1",
+              "action": "none",
+              "branch": "expose"
+            },
+            {
+              "label_key": "s02.closing_chat.cl_008.opt2",
+              "action": "none",
+              "branch": "fraud_only"
+            },
+            {
+              "label_key": "s02.closing_chat.cl_008.opt3",
+              "action": "none",
+              "branch": "silence"
+            }
+          ]
+        },
+        {
+          "id": "cl_010",
+          "sender": "client",
+          "text_key": "s02.closing_chat.cl_010",
+          "timestamp": "2025-04-04T03:31:20",
+          "delay_ms": 5000,
+          "trigger": "expose"
+        },
+        {
+          "id": "cl_011",
+          "sender": "client",
+          "text_key": "s02.closing_chat.cl_011",
+          "timestamp": "2025-04-04T03:31:28",
+          "delay_ms": 8000,
+          "trigger": "expose"
+        },
+        {
+          "id": "cl_012",
+          "sender": "client",
+          "text_key": "s02.closing_chat.cl_012",
+          "timestamp": "2025-04-04T03:31:20",
+          "delay_ms": 5000,
+          "trigger": "fraud_only"
+        },
+        {
+          "id": "cl_013",
+          "sender": "client",
+          "text_key": "s02.closing_chat.cl_013",
+          "timestamp": "2025-04-04T03:31:28",
+          "delay_ms": 8000,
+          "trigger": "fraud_only"
+        },
+        {
+          "id": "cl_014",
+          "sender": "client",
+          "text_key": "s02.closing_chat.cl_014",
+          "timestamp": "2025-04-04T03:31:20",
+          "delay_ms": 5000,
+          "trigger": "silence"
+        },
+        {
+          "id": "cl_015",
+          "sender": "client",
+          "text_key": "s02.closing_chat.cl_015",
+          "timestamp": "2025-04-04T03:31:28",
+          "delay_ms": 8000,
+          "trigger": "silence"
+        },
+        {
+          "id": "cl_016",
+          "sender": "client",
+          "text_key": "s02.closing_chat.cl_016",
+          "timestamp": "2025-04-04T03:31:40",
+          "delay_ms": 10000
+        }
+      ]
+    }
+  },
+  "locks": [
+    {
+      "id": "step_001",
+      "order": 1,
+      "type": "find_password",
+      "note": "Muhasebecinin SMS'inde Leo'nun gölge şirketi 'Halcyon' geçiyor; kasa parolası da aynı notta",
+      "source_app": "sms",
+      "source_item_id": "sms_030",
+      "target_app": "vault",
+      "hint_toast_key": "s02.lock.step_001.hint"
+    },
+    {
+      "id": "step_002",
+      "order": 2,
+      "type": "login_app",
+      "note": "Kasa açılır; Maya'nın topladığı kanıt kayıtları görünür",
+      "source_app": "sms",
+      "source_item_id": "sms_030",
+      "target_app": "vault"
+    },
+    {
+      "id": "step_003",
+      "order": 3,
+      "type": "find_password",
+      "note": "Kasadaki kayıt, kilitli banka ekstresi dosyasının parolasını verir",
+      "source_app": "vault",
+      "source_item_id": "v_002",
+      "target_app": "cloud",
+      "target_item_id": "cf_003",
+      "hint_toast_key": "s02.lock.step_003.hint"
+    },
+    {
+      "id": "step_004",
+      "order": 4,
+      "type": "find_code",
+      "note": "Maya'nın kendi banka ekstresi e-postasının bittiği dört hane (8802) kilitli albümün kodudur — Halcyon hesabının son dördü (4471) değil, o kilitli dosyanın parolası",
+      "source_app": "gmail",
+      "source_item_id": "gm_005",
+      "target_app": "photos",
+      "target_item_id": "album_002",
+      "hint_toast_key": "s02.lock.step_004.hint"
+    },
+    {
+      "id": "step_005",
+      "order": 5,
+      "type": "unlock_note",
+      "note": "Albümdeki ekran görüntüsü, Maya'nın gizli notunun kodunu taşır — asıl plan orada",
+      "source_app": "photos",
+      "source_item_id": "ph_006",
+      "target_app": "notes",
+      "target_item_id": "note_003",
+      "hint_toast_key": "s02.lock.step_005.hint"
+    }
+  ],
+  "questions": [
+    {
+      "index": 1,
+      "app": "whatsapp",
+      "kind": "free_text",
+      "title_key": "s02.question.q01.title",
+      "prompt_key": "s02.question.q01.question",
+      "answers_key": "s02.question.q01.answers",
+      "reveal": {
+        "answer_key": "s02.question.q01.opt2",
+        "decoy_keys": [
+          "s02.question.q01.opt0",
+          "s02.question.q01.opt1",
+          "s02.question.q01.opt3"
+        ]
+      }
+    },
+    {
+      "index": 2,
+      "app": "calendar",
+      "kind": "free_text",
+      "title_key": "s02.question.q02.title",
+      "prompt_key": "s02.question.q02.question",
+      "answers_key": "s02.question.q02.answers",
+      "reveal": {
+        "answer_key": "s02.question.q02.opt0",
+        "decoy_keys": [
+          "s02.question.q02.opt1",
+          "s02.question.q02.opt2",
+          "s02.question.q02.opt3"
+        ]
+      }
+    },
+    {
+      "index": 3,
+      "app": "maps",
+      "kind": "timeline",
+      "title_key": "s02.question.q03.title",
+      "prompt_key": "s02.question.q03.question",
+      "events": [
+        "s02.question.q03.ev0",
+        "s02.question.q03.ev1",
+        "s02.question.q03.ev2",
+        "s02.question.q03.ev3",
+        "s02.question.q03.ev4"
+      ],
+      "order": [
+        2,
+        4,
+        0,
+        3,
+        1
+      ]
+    },
+    {
+      "index": 4,
+      "app": "voice_memos",
+      "kind": "free_text",
+      "title_key": "s02.question.q04.title",
+      "prompt_key": "s02.question.q04.question",
+      "answers_key": "s02.question.q04.answers",
+      "reveal": {
+        "answer_key": "s02.question.q04.opt1",
+        "decoy_keys": [
+          "s02.question.q04.opt0",
+          "s02.question.q04.opt2",
+          "s02.question.q04.opt3"
+        ]
+      }
+    },
+    {
+      "index": 5,
+      "app": "whatsapp",
+      "kind": "free_text",
+      "title_key": "s02.question.q05.title",
+      "prompt_key": "s02.question.q05.question",
+      "answers_key": "s02.question.q05.answers",
+      "reveal": {
+        "answer_key": "s02.question.q05.opt2",
+        "decoy_keys": [
+          "s02.question.q05.opt0",
+          "s02.question.q05.opt1",
+          "s02.question.q05.opt3"
+        ]
+      }
+    },
+    {
+      "index": 6,
+      "app": "vault",
+      "kind": "free_text",
+      "title_key": "s02.question.q06.title",
+      "prompt_key": "s02.question.q06.question",
+      "answers_key": "s02.question.q06.answers",
+      "reveal": {
+        "answer_key": "s02.question.q06.opt0",
+        "decoy_keys": [
+          "s02.question.q06.opt1",
+          "s02.question.q06.opt2",
+          "s02.question.q06.opt3"
+        ]
+      }
+    },
+    {
+      "index": 7,
+      "app": "cloud",
+      "kind": "free_text",
+      "title_key": "s02.question.q07.title",
+      "prompt_key": "s02.question.q07.question",
+      "answers_key": "s02.question.q07.answers",
+      "reveal": {
+        "answer_key": "s02.question.q07.opt1",
+        "decoy_keys": [
+          "s02.question.q07.opt0",
+          "s02.question.q07.opt2",
+          "s02.question.q07.opt3"
+        ]
+      }
+    },
+    {
+      "index": 8,
+      "app": "whatsapp",
+      "kind": "free_text",
+      "title_key": "s02.question.q08.title",
+      "prompt_key": "s02.question.q08.question",
+      "answers_key": "s02.question.q08.answers",
+      "reveal": {
+        "answer_key": "s02.question.q08.opt1",
+        "decoy_keys": [
+          "s02.question.q08.opt0",
+          "s02.question.q08.opt2",
+          "s02.question.q08.opt3"
+        ]
+      }
+    },
+    {
+      "index": 9,
+      "app": "photos",
+      "kind": "free_text",
+      "title_key": "s02.question.q09.title",
+      "prompt_key": "s02.question.q09.question",
+      "answers_key": "s02.question.q09.answers",
+      "reveal": {
+        "answer_key": "s02.question.q09.opt0",
+        "decoy_keys": [
+          "s02.question.q09.opt1",
+          "s02.question.q09.opt2",
+          "s02.question.q09.opt3"
+        ]
+      }
+    },
+    {
+      "index": 10,
+      "app": "access",
+      "kind": "multi_select",
+      "title_key": "s02.question.q10.title",
+      "prompt_key": "s02.question.q10.question",
+      "options": [
+        "s02.question.q10.opt0",
+        "s02.question.q10.opt1",
+        "s02.question.q10.opt2",
+        "s02.question.q10.opt3",
+        "s02.question.q10.opt4"
+      ],
+      "correct_indices": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "index": 11,
+      "app": "access",
+      "kind": "contradiction",
+      "title_key": "s02.question.q11.title",
+      "prompt_key": "s02.question.q11.question",
+      "snippets": [
+        "s02.question.q11.sn0",
+        "s02.question.q11.sn1",
+        "s02.question.q11.sn2",
+        "s02.question.q11.sn3"
+      ],
+      "lie_index": 0
+    },
+    {
+      "index": 12,
+      "app": "cloud",
+      "kind": "free_text",
+      "title_key": "s02.question.q12.title",
+      "prompt_key": "s02.question.q12.question",
+      "answers_key": "s02.question.q12.answers",
+      "reveal": {
+        "answer_key": "s02.question.q12.opt1",
+        "decoy_keys": [
+          "s02.question.q12.opt0",
+          "s02.question.q12.opt2",
+          "s02.question.q12.opt3"
+        ]
+      }
+    },
+    {
+      "index": 13,
+      "app": "notes",
+      "kind": "multi_select",
+      "title_key": "s02.question.q13.title",
+      "prompt_key": "s02.question.q13.question",
+      "options": [
+        "s02.question.q13.opt0",
+        "s02.question.q13.opt1",
+        "s02.question.q13.opt2",
+        "s02.question.q13.opt3",
+        "s02.question.q13.opt4"
+      ],
+      "correct_indices": [
+        0,
+        2,
+        4
+      ]
+    },
+    {
+      "index": 14,
+      "app": "cloud",
+      "kind": "free_text",
+      "title_key": "s02.question.q14.title",
+      "prompt_key": "s02.question.q14.question",
+      "answers_key": "s02.question.q14.answers",
+      "reveal": {
+        "answer_key": "s02.question.q14.opt1",
+        "decoy_keys": [
+          "s02.question.q14.opt0",
+          "s02.question.q14.opt2",
+          "s02.question.q14.opt3"
+        ]
+      }
+    },
+    {
+      "index": 15,
+      "app": "photos",
+      "kind": "suspect",
+      "title_key": "s02.question.q15.title",
+      "prompt_key": "s02.question.q15.question",
+      "person_ids": [
+        "p000",
+        "p001",
+        "p002",
+        "p003"
+      ],
+      "correct_person_id": "p000"
+    }
+  ],
+  "apps": {
+    "sms": {
+      "conversations": [
+        {
+          "contact_person_id": "p004",
+          "messages": [
+            {
+              "id": "sms_020",
+              "sender": "contact",
+              "text_key": "s02.messages.sms_020",
+              "timestamp": "2025-01-22T10:00:00",
+              "is_deleted": false
+            },
+            {
+              "id": "sms_021",
+              "sender": "user",
+              "text_key": "s02.messages.sms_021",
+              "timestamp": "2025-01-22T14:30:00",
+              "is_deleted": false
+            },
+            {
+              "id": "sms_022",
+              "sender": "contact",
+              "text_key": "s02.messages.sms_022",
+              "timestamp": "2025-02-04T09:15:00",
+              "is_deleted": false
+            },
+            {
+              "id": "sms_023",
+              "sender": "user",
+              "text_key": "s02.messages.sms_023",
+              "timestamp": "2025-02-04T11:40:00",
+              "is_deleted": false
+            },
+            {
+              "id": "sms_024",
+              "sender": "contact",
+              "text_key": "s02.messages.sms_024",
+              "timestamp": "2025-02-04T12:02:00",
+              "is_deleted": false
+            },
+            {
+              "id": "sms_030",
+              "sender": "contact",
+              "text_key": "s02.messages.sms_030",
+              "timestamp": "2025-02-26T16:20:00",
+              "is_deleted": false
+            },
+            {
+              "id": "sms_031",
+              "sender": "user",
+              "text_key": "s02.messages.sms_031",
+              "timestamp": "2025-02-26T18:00:00",
+              "is_deleted": false
+            },
+            {
+              "id": "sms_032",
+              "sender": "contact",
+              "text_key": "s02.messages.sms_032",
+              "timestamp": "2025-02-26T18:14:00",
+              "is_deleted": false
+            },
+            {
+              "id": "sms_033",
+              "sender": "user",
+              "text_key": "s02.messages.sms_033",
+              "timestamp": "2025-03-04T09:30:00",
+              "is_deleted": false
+            },
+            {
+              "id": "sms_034",
+              "sender": "contact",
+              "text_key": "s02.messages.sms_034",
+              "timestamp": "2025-03-04T10:05:00",
+              "is_deleted": false
+            }
+          ]
+        },
+        {
+          "contact_person_id": "p005",
+          "messages": [
+            {
+              "id": "sms_040",
+              "sender": "contact",
+              "text_key": "s02.messages.sms_040",
+              "timestamp": "2025-02-14T11:00:00",
+              "is_deleted": false
+            },
+            {
+              "id": "sms_041",
+              "sender": "user",
+              "text_key": "s02.messages.sms_041",
+              "timestamp": "2025-02-14T13:20:00",
+              "is_deleted": false
+            },
+            {
+              "id": "sms_042",
+              "sender": "contact",
+              "text_key": "s02.messages.sms_042",
+              "timestamp": "2025-03-03T10:00:00",
+              "is_deleted": false
+            },
+            {
+              "id": "sms_043",
+              "sender": "user",
+              "text_key": "s02.messages.sms_043",
+              "timestamp": "2025-03-03T10:40:00",
+              "is_deleted": false
+            },
+            {
+              "id": "sms_044",
+              "sender": "contact",
+              "text_key": "s02.messages.sms_044",
+              "timestamp": "2025-03-06T15:00:00",
+              "is_deleted": false
+            }
+          ]
+        },
+        {
+          "contact_person_id": "p002",
+          "messages": [
+            {
+              "id": "sms_050",
+              "sender": "contact",
+              "text_key": "s02.messages.sms_050",
+              "timestamp": "2025-02-05T19:00:00",
+              "is_deleted": false
+            },
+            {
+              "id": "sms_051",
+              "sender": "user",
+              "text_key": "s02.messages.sms_051",
+              "timestamp": "2025-02-05T21:30:00",
+              "is_deleted": false
+            },
+            {
+              "id": "sms_052",
+              "sender": "contact",
+              "text_key": "s02.messages.sms_052",
+              "timestamp": "2025-02-05T21:44:00",
+              "is_deleted": false
+            },
+            {
+              "id": "sms_053",
+              "sender": "contact",
+              "text_key": "s02.messages.sms_053",
+              "timestamp": "2025-03-07T17:10:00",
+              "is_deleted": false
+            }
+          ]
+        },
+        {
+          "contact_person_id": "p003",
+          "messages": [
+            {
+              "id": "f_sms_101",
+              "sender": "contact",
+              "text_key": "s02.messages.f_sms_101",
+              "timestamp": "2025-02-24T10:12:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_102",
+              "sender": "user",
+              "text_key": "s02.messages.f_sms_102",
+              "timestamp": "2025-02-24T10:40:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_103",
+              "sender": "contact",
+              "text_key": "s02.messages.f_sms_103",
+              "timestamp": "2025-02-24T10:44:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_104",
+              "sender": "user",
+              "text_key": "s02.messages.f_sms_104",
+              "timestamp": "2025-02-27T17:05:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_105",
+              "sender": "contact",
+              "text_key": "s02.messages.f_sms_105",
+              "timestamp": "2025-02-28T08:30:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_106",
+              "sender": "user",
+              "text_key": "s02.messages.f_sms_106",
+              "timestamp": "2025-02-28T09:02:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_107",
+              "sender": "contact",
+              "text_key": "s02.messages.f_sms_107",
+              "timestamp": "2025-02-28T09:05:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_108",
+              "sender": "user",
+              "text_key": "s02.messages.f_sms_108",
+              "timestamp": "2025-02-28T09:06:00",
+              "is_deleted": false
+            }
+          ]
+        }
+      ]
+    },
+    "whatsapp": {
+      "conversations": [
+        {
+          "contact_person_id": "p001",
+          "last_seen": "2025-03-07T23:12:00",
+          "messages": [
+            {
+              "id": "wa_001",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s02.chats.wa_001",
+              "timestamp": "2025-01-18T22:00:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "wa_002",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s02.chats.wa_002",
+              "timestamp": "2025-01-18T22:30:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "wa_003",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s02.chats.wa_003",
+              "timestamp": "2025-01-18T22:32:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "wa_004",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s02.chats.wa_004",
+              "timestamp": "2025-02-03T13:00:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "wa_005",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s02.chats.wa_005",
+              "timestamp": "2025-02-03T13:25:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "wa_006",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s02.chats.wa_006",
+              "timestamp": "2025-02-03T13:27:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "wa_007",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s02.chats.wa_007",
+              "timestamp": "2025-02-20T20:40:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "wa_008",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s02.chats.wa_008",
+              "timestamp": "2025-02-20T21:05:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "wa_009",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s02.chats.wa_009",
+              "timestamp": "2025-02-20T21:06:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "wa_010",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s02.chats.wa_010",
+              "timestamp": "2025-03-02T11:00:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "wa_011",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s02.chats.wa_011",
+              "timestamp": "2025-03-02T11:40:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "wa_012",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s02.chats.wa_012",
+              "timestamp": "2025-03-06T19:30:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "wa_013",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s02.chats.wa_013",
+              "timestamp": "2025-03-06T19:55:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "wa_014",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s02.chats.wa_014",
+              "timestamp": "2025-03-06T19:58:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "wa_015",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s02.chats.wa_015",
+              "timestamp": "2025-03-07T20:44:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "wa_016",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s02.chats.wa_016",
+              "timestamp": "2025-03-07T23:12:00",
+              "is_read": false,
+              "is_delivered": true,
+              "is_deleted": false
+            }
+          ]
+        },
+        {
+          "contact_person_id": "p003",
+          "last_seen": "2025-03-16T23:40:00",
+          "messages": [
+            {
+              "id": "wa_030",
+              "sender": "p003",
+              "type": "text",
+              "text_key": "s02.chats.wa_030",
+              "timestamp": "2025-01-30T15:00:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "wa_031",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s02.chats.wa_031",
+              "timestamp": "2025-01-30T15:30:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "wa_032",
+              "sender": "p003",
+              "type": "text",
+              "text_key": "s02.chats.wa_032",
+              "timestamp": "2025-02-11T19:00:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "wa_033",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s02.chats.wa_033",
+              "timestamp": "2025-02-11T19:40:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "wa_034",
+              "sender": "p003",
+              "type": "text",
+              "text_key": "s02.chats.wa_034",
+              "timestamp": "2025-02-11T19:44:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "wa_035",
+              "sender": "p003",
+              "type": "text",
+              "text_key": "s02.chats.wa_035",
+              "timestamp": "2025-02-27T22:00:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "wa_036",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s02.chats.wa_036",
+              "timestamp": "2025-02-27T22:20:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "wa_037",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s02.chats.wa_037",
+              "timestamp": "2025-03-07T22:58:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "wa_038",
+              "sender": "p003",
+              "type": "text",
+              "text_key": "s02.chats.wa_038",
+              "timestamp": "2025-03-08T09:14:00",
+              "is_read": false,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "wa_039",
+              "sender": "p003",
+              "type": "text",
+              "text_key": "s02.chats.wa_039",
+              "timestamp": "2025-03-09T11:00:00",
+              "is_read": false,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "wa_040",
+              "sender": "p003",
+              "type": "text",
+              "text_key": "s02.chats.wa_040",
+              "timestamp": "2025-03-16T23:40:00",
+              "is_read": false,
+              "is_delivered": true,
+              "is_deleted": false
+            }
+          ]
+        },
+        {
+          "contact_person_id": "p002",
+          "last_seen": "2025-03-08T12:00:00",
+          "messages": [
+            {
+              "id": "wa_070",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s02.chats.wa_070",
+              "timestamp": "2025-01-09T09:15:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "wa_071",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s02.chats.wa_071",
+              "timestamp": "2025-01-09T09:22:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "wa_072",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s02.chats.wa_072",
+              "timestamp": "2025-01-09T09:24:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "wa_050",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s02.chats.wa_050",
+              "timestamp": "2025-01-24T10:00:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "wa_051",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s02.chats.wa_051",
+              "timestamp": "2025-01-24T10:30:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "wa_052",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s02.chats.wa_052",
+              "timestamp": "2025-02-04T18:00:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "wa_053",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s02.chats.wa_053",
+              "timestamp": "2025-02-04T20:15:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "wa_054",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s02.chats.wa_054",
+              "timestamp": "2025-02-04T20:22:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "wa_073",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s02.chats.wa_073",
+              "timestamp": "2025-02-27T11:40:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "wa_074",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s02.chats.wa_074",
+              "timestamp": "2025-02-27T11:52:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "wa_075",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s02.chats.wa_075",
+              "timestamp": "2025-03-04T13:10:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "wa_076",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s02.chats.wa_076",
+              "timestamp": "2025-03-04T13:31:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "wa_077",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s02.chats.wa_077",
+              "timestamp": "2025-03-05T18:55:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "wa_078",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s02.chats.wa_078",
+              "timestamp": "2025-03-05T19:04:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "wa_055",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s02.chats.wa_055",
+              "timestamp": "2025-03-08T12:00:00",
+              "is_read": false,
+              "is_delivered": true,
+              "is_deleted": false
+            }
+          ]
+        }
+      ],
+      "groups": [
+        {
+          "id": "grp_001",
+          "name_key": "s02.chats.grp_uferhallen",
+          "member_person_ids": [
+            "p001",
+            "p003"
+          ],
+          "member_count": 24,
+          "messages": [
+            {
+              "id": "g_wa_101",
+              "sender_person_id": null,
+              "sender": "contact",
+              "type": "text",
+              "text_key": "s02.chats.g_wa_101",
+              "timestamp": "2025-03-03T17:20:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "g_wa_102",
+              "sender_person_id": "p003",
+              "sender": "contact",
+              "type": "text",
+              "text_key": "s02.chats.g_wa_102",
+              "timestamp": "2025-03-03T17:41:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "g_wa_103",
+              "sender_person_id": null,
+              "sender": "contact",
+              "type": "text",
+              "text_key": "s02.chats.g_wa_103",
+              "timestamp": "2025-03-03T17:44:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "g_wa_104",
+              "sender_person_id": null,
+              "sender": "contact",
+              "type": "text",
+              "text_key": "s02.chats.g_wa_104",
+              "timestamp": "2025-02-23T11:00:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "g_wa_105",
+              "sender_person_id": null,
+              "sender": "contact",
+              "type": "text",
+              "text_key": "s02.chats.g_wa_105",
+              "timestamp": "2025-02-10T09:15:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "g_wa_106",
+              "sender_person_id": "p001",
+              "sender": "contact",
+              "type": "text",
+              "text_key": "s02.chats.g_wa_106",
+              "timestamp": "2025-02-10T09:31:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            }
+          ]
+        },
+        {
+          "id": "grp_002",
+          "name_key": "s02.chats.grp_kiln",
+          "member_person_ids": [
+            "p003"
+          ],
+          "member_count": 7,
+          "messages": [
+            {
+              "id": "g_wa_107",
+              "sender_person_id": null,
+              "sender": "contact",
+              "type": "text",
+              "text_key": "s02.chats.g_wa_107",
+              "timestamp": "2025-03-04T08:10:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "g_wa_108",
+              "sender_person_id": null,
+              "sender": "user",
+              "type": "text",
+              "text_key": "s02.chats.g_wa_108",
+              "timestamp": "2025-03-04T08:26:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "g_wa_109",
+              "sender_person_id": null,
+              "sender": "contact",
+              "type": "text",
+              "text_key": "s02.chats.g_wa_109",
+              "timestamp": "2025-03-04T08:30:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "g_wa_110",
+              "sender_person_id": null,
+              "sender": "contact",
+              "type": "text",
+              "text_key": "s02.chats.g_wa_110",
+              "timestamp": "2025-02-18T13:05:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            }
+          ]
+        }
+      ],
+      "statuses": [
+        {
+          "id": "st_001",
+          "person_id": "p003",
+          "text_key": "s02.chats.st_101",
+          "timestamp": "2025-03-04T10:20:00"
+        },
+        {
+          "id": "st_002",
+          "person_id": "p001",
+          "text_key": "s02.chats.st_102",
+          "timestamp": "2025-03-02T16:40:00"
+        },
+        {
+          "id": "st_003",
+          "person_id": "p003",
+          "text_key": "s02.chats.st_103",
+          "timestamp": "2025-01-09T08:12:00"
+        }
+      ]
+    },
+    "instagram": {
+      "login_required": false,
+      "username": "maya.sorensen",
+      "profile_photo_asset": "assets/cases/s02/photos/maya_profile.jpg",
+      "profile": {
+        "bio_key": "s02.feed.bio",
+        "follower_count": 16,
+        "following_count": 12,
+        "post_ids": [
+          "post_p000_01",
+          "post_p000_02",
+          "post_p000_03"
+        ],
+        "following_person_ids": [
+          "p001",
+          "p002",
+          "p003",
+          "p005"
+        ],
+        "followers": [
+          "p000",
+          "p001",
+          "p002",
+          "p003",
+          {
+            "username": "lena.hoffmann",
+            "name": "Lena Hoffmann"
+          },
+          {
+            "username": "j.baumann",
+            "name": "Jonas Baumann"
+          },
+          {
+            "username": "clara_wolf",
+            "name": "Clara Wolf"
+          },
+          {
+            "username": "halcyon.berlin",
+            "name": "Halcyon Berlin"
+          },
+          {
+            "username": "max.richter.foto",
+            "name": "Max Richter"
+          },
+          {
+            "username": "nina_scholz",
+            "name": "Nina Scholz"
+          },
+          {
+            "username": "felix.braun",
+            "name": "Felix Braun"
+          },
+          {
+            "username": "studio.kreuzberg",
+            "name": "Studio Kreuzberg"
+          },
+          {
+            "username": "anke.moser",
+            "name": "Anke Moser"
+          },
+          {
+            "username": "tobias.lang",
+            "name": "Tobias Lang"
+          },
+          {
+            "username": "greta.sommer",
+            "name": "Greta Sommer"
+          },
+          {
+            "username": "paul_eichel",
+            "name": "Paul Eichel"
+          }
+        ],
+        "following": [
+          "p000",
+          "p001",
+          "p002",
+          "p003",
+          {
+            "username": "lena.hoffmann",
+            "name": "Lena Hoffmann"
+          },
+          {
+            "username": "halcyon.berlin",
+            "name": "Halcyon Berlin"
+          },
+          {
+            "username": "clara_wolf",
+            "name": "Clara Wolf"
+          },
+          {
+            "username": "studio.kreuzberg",
+            "name": "Studio Kreuzberg"
+          },
+          {
+            "username": "nina_scholz",
+            "name": "Nina Scholz"
+          },
+          {
+            "username": "berlin.galerien",
+            "name": "Berlin Galerien"
+          },
+          {
+            "username": "felix.braun",
+            "name": "Felix Braun"
+          },
+          {
+            "username": "greta.sommer",
+            "name": "Greta Sommer"
+          }
+        ]
+      },
+      "dms": [
+        {
+          "contact_person_id": "p003",
+          "messages": [
+            {
+              "id": "ig_001",
+              "sender": "p003",
+              "type": "text",
+              "text_key": "s02.feed.ig_001",
+              "timestamp": "2025-03-05T20:00:00"
+            },
+            {
+              "id": "ig_002",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s02.feed.ig_002",
+              "timestamp": "2025-03-05T20:30:00"
+            }
+          ]
+        },
+        {
+          "contact_person_id": "p002",
+          "messages": [
+            {
+              "id": "ig_010",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s02.feed.ig_010",
+              "timestamp": "2025-02-06T11:00:00"
+            },
+            {
+              "id": "ig_011",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s02.feed.ig_011",
+              "timestamp": "2025-02-06T12:20:00"
+            },
+            {
+              "id": "ig_012",
+              "sender": "p002",
+              "type": "text",
+              "text_key": "s02.feed.ig_012",
+              "timestamp": "2025-02-06T12:25:00"
+            }
+          ]
+        },
+        {
+          "contact_person_id": "p001",
+          "messages": [
+            {
+              "id": "f_ig_101",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s02.feed.f_ig_101",
+              "timestamp": "2025-02-21T12:10:00"
+            },
+            {
+              "id": "f_ig_102",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s02.feed.f_ig_102",
+              "timestamp": "2025-02-21T12:38:00"
+            },
+            {
+              "id": "f_ig_103",
+              "sender": "p001",
+              "type": "text",
+              "text_key": "s02.feed.f_ig_103",
+              "timestamp": "2025-02-21T12:44:00"
+            },
+            {
+              "id": "f_ig_104",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s02.feed.f_ig_104",
+              "timestamp": "2025-02-21T13:02:00"
+            }
+          ]
+        }
+      ],
+      "liked_posts": [
+        {
+          "post_id": "post_p002_01",
+          "liked_at": "2025-02-06T10:40:00"
+        },
+        {
+          "post_id": "post_stock_01",
+          "liked_at": "2025-02-20T12:15:00"
+        },
+        {
+          "post_id": "post_stock_02",
+          "liked_at": "2025-02-14T10:02:00"
+        },
+        {
+          "post_id": "post_stock_04",
+          "liked_at": "2025-01-09T08:40:00"
+        },
+        {
+          "post_id": "post_stock_06",
+          "liked_at": "2025-02-02T19:20:00"
+        }
+      ],
+      "explore_post_ids": [],
+      "feed_post_ids": [
+        "post_p003_01",
+        "post_p001_01",
+        "post_p002_01",
+        "post_p000_01",
+        "post_p000_02",
+        "post_p000_03"
+      ]
+    },
+    "gmail": {
+      "account_email": "studio@mayasorensen.com",
+      "login_required": false,
+      "inbox": [
+        {
+          "id": "gm_001",
+          "from": {
+            "display_name": "Uferhallen Verwaltung",
+            "email": "verwaltung@uferhallen.de",
+            "person_id": null
+          },
+          "to": [
+            "studio@mayasorensen.com"
+          ],
+          "subject_key": "s02.mail.gm_001.subject",
+          "body_key": "s02.mail.gm_001.body",
+          "timestamp": "2025-02-28T14:20:00",
+          "is_read": true,
+          "is_starred": true,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "gm_002",
+          "from": {
+            "display_name": "Kasimir Rohde",
+            "email": "k.rohde@rohde-berlin.de",
+            "person_id": "p005"
+          },
+          "to": [
+            "studio@mayasorensen.com"
+          ],
+          "subject_key": "s02.mail.gm_002.subject",
+          "body_key": "s02.mail.gm_002.body",
+          "timestamp": "2025-03-03T09:40:00",
+          "is_read": true,
+          "is_starred": true,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "gm_003",
+          "from": {
+            "display_name": "Hanna Vogt",
+            "email": "h.vogt@vogt-steuer.de",
+            "person_id": "p004"
+          },
+          "to": [
+            "studio@mayasorensen.com"
+          ],
+          "subject_key": "s02.mail.gm_003.subject",
+          "body_key": "s02.mail.gm_003.body",
+          "timestamp": "2025-02-26T16:00:00",
+          "is_read": true,
+          "is_starred": true,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "gm_004",
+          "from": {
+            "display_name": "Leo Brandt",
+            "email": "leo@halcyonmedia.eu",
+            "person_id": "p001"
+          },
+          "to": [
+            "studio@mayasorensen.com"
+          ],
+          "subject_key": "s02.mail.gm_004.subject",
+          "body_key": "s02.mail.gm_004.body",
+          "timestamp": "2025-03-05T08:15:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "gm_005",
+          "from": {
+            "display_name": "Berliner Volksbank",
+            "email": "service@berliner-volksbank.de",
+            "person_id": null
+          },
+          "to": [
+            "studio@mayasorensen.com"
+          ],
+          "subject_key": "s02.mail.gm_005.subject",
+          "body_key": "s02.mail.gm_005.body",
+          "timestamp": "2025-03-01T06:00:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "updates"
+        },
+        {
+          "id": "gm_006",
+          "from": {
+            "display_name": "Aperture Studio Insurance",
+            "email": "claims@aperture-insure.de",
+            "person_id": null
+          },
+          "to": [
+            "studio@mayasorensen.com"
+          ],
+          "subject_key": "s02.mail.gm_006.subject",
+          "body_key": "s02.mail.gm_006.body",
+          "timestamp": "2025-02-10T11:30:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "updates"
+        },
+        {
+          "id": "gm_100",
+          "from": {
+            "display_name": "Grafisches Atelier Kreuzberg",
+            "email": "job@ga-kreuzberg.de",
+            "person_id": null
+          },
+          "to": [
+            "studio@mayasorensen.com"
+          ],
+          "subject_key": "s02.mail.gm_100.subject",
+          "body_key": "s02.mail.gm_100.body",
+          "timestamp": "2025-03-04T16:05:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "gm_101",
+          "from": {
+            "display_name": "Fährte Festival",
+            "email": "opencall@faehrte-festival.eu",
+            "person_id": null
+          },
+          "to": [
+            "studio@mayasorensen.com"
+          ],
+          "subject_key": "s02.mail.gm_101.subject",
+          "body_key": "s02.mail.gm_101.body",
+          "timestamp": "2025-03-01T08:00:00",
+          "is_read": false,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "updates"
+        },
+        {
+          "id": "gm_102",
+          "from": {
+            "display_name": "Theo Reinhardt",
+            "email": "t.reinhardt@udk-berlin.de",
+            "person_id": null
+          },
+          "to": [
+            "studio@mayasorensen.com"
+          ],
+          "subject_key": "s02.mail.gm_102.subject",
+          "body_key": "s02.mail.gm_102.body",
+          "timestamp": "2025-02-24T19:40:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "gm_103",
+          "from": {
+            "display_name": "Prism Render",
+            "email": "billing@prismrender.com",
+            "person_id": null
+          },
+          "to": [
+            "studio@mayasorensen.com"
+          ],
+          "subject_key": "s02.mail.gm_103.subject",
+          "body_key": "s02.mail.gm_103.body",
+          "timestamp": "2025-03-06T07:15:00",
+          "is_read": false,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "updates"
+        },
+        {
+          "id": "gm_104",
+          "from": {
+            "display_name": "Aluprofil Nord",
+            "email": "versand@aluprofil-nord.de",
+            "person_id": null
+          },
+          "to": [
+            "studio@mayasorensen.com"
+          ],
+          "subject_key": "s02.mail.gm_104.subject",
+          "body_key": "s02.mail.gm_104.body",
+          "timestamp": "2025-03-05T06:50:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "updates"
+        },
+        {
+          "id": "gm_105",
+          "from": {
+            "display_name": "Anneke Prins",
+            "email": "a.prins@huisvandermeer.nl",
+            "person_id": null
+          },
+          "to": [
+            "studio@mayasorensen.com"
+          ],
+          "subject_key": "s02.mail.gm_105.subject",
+          "body_key": "s02.mail.gm_105.body",
+          "timestamp": "2025-02-26T13:20:00",
+          "is_read": true,
+          "is_starred": true,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "gm_106",
+          "from": {
+            "display_name": "Zahnarztpraxis am Leopoldplatz",
+            "email": "termine@zap-leopoldplatz.de",
+            "person_id": null
+          },
+          "to": [
+            "studio@mayasorensen.com"
+          ],
+          "subject_key": "s02.mail.gm_106.subject",
+          "body_key": "s02.mail.gm_106.body",
+          "timestamp": "2025-03-06T10:00:00",
+          "is_read": false,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "updates"
+        },
+        {
+          "id": "gm_107",
+          "from": {
+            "display_name": "Lotte Fenner",
+            "email": "l.fenner@faehrte-magazin.de",
+            "person_id": null
+          },
+          "to": [
+            "studio@mayasorensen.com"
+          ],
+          "subject_key": "s02.mail.gm_107.subject",
+          "body_key": "s02.mail.gm_107.body",
+          "timestamp": "2025-03-03T15:45:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "gm_108",
+          "from": {
+            "display_name": "Vattenstrom Berlin",
+            "email": "keine-antwort@vattenstrom.de",
+            "person_id": null
+          },
+          "to": [
+            "studio@mayasorensen.com"
+          ],
+          "subject_key": "s02.mail.gm_108.subject",
+          "body_key": "s02.mail.gm_108.body",
+          "timestamp": "2025-03-02T05:30:00",
+          "is_read": false,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "updates"
+        },
+        {
+          "id": "gm_109",
+          "from": {
+            "display_name": "H. Steinbach",
+            "email": "hsteinbach@posteo.de",
+            "person_id": null
+          },
+          "to": [
+            "studio@mayasorensen.com"
+          ],
+          "subject_key": "s02.mail.gm_109.subject",
+          "body_key": "s02.mail.gm_109.body",
+          "timestamp": "2025-02-19T14:10:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "gm_110",
+          "from": {
+            "display_name": "Berlin Art Prize Committee",
+            "email": "no-reply@bap-awards-2025.info",
+            "person_id": null
+          },
+          "to": [
+            "studio@mayasorensen.com"
+          ],
+          "subject_key": "s02.mail.gm_110.subject",
+          "body_key": "s02.mail.gm_110.body",
+          "timestamp": "2025-02-27T03:12:00",
+          "is_read": false,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "updates"
+        },
+        {
+          "id": "gm_111",
+          "from": {
+            "display_name": "Bernd Kaltenbach",
+            "email": "werkstatt@kaltenbach-technik.de",
+            "person_id": null
+          },
+          "to": [
+            "studio@mayasorensen.com"
+          ],
+          "subject_key": "s02.mail.gm_111.subject",
+          "body_key": "s02.mail.gm_111.body",
+          "timestamp": "2025-03-05T17:25:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_101",
+          "from": {
+            "display_name": "Ton & Erde GmbH",
+            "email": "buchhaltung@tonunderde.de",
+            "person_id": null
+          },
+          "to": [
+            "studio@mayasorensen.com"
+          ],
+          "subject_key": "s02.mail.f_gm_101.subject",
+          "body_key": "s02.mail.f_gm_101.body",
+          "timestamp": "2025-03-01T09:14:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_102",
+          "from": {
+            "display_name": "Galerie Nordstern",
+            "email": "programm@nordstern-berlin.de",
+            "person_id": null
+          },
+          "to": [
+            "studio@mayasorensen.com"
+          ],
+          "subject_key": "s02.mail.f_gm_102.subject",
+          "body_key": "s02.mail.f_gm_102.body",
+          "timestamp": "2025-02-26T11:02:00",
+          "is_read": true,
+          "is_starred": true,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_103",
+          "from": {
+            "display_name": "Galerie Nordstern",
+            "email": "programm@nordstern-berlin.de",
+            "person_id": null
+          },
+          "to": [
+            "studio@mayasorensen.com"
+          ],
+          "subject_key": "s02.mail.f_gm_103.subject",
+          "body_key": "s02.mail.f_gm_103.body",
+          "timestamp": "2025-03-04T15:30:00",
+          "is_read": false,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_104",
+          "from": {
+            "display_name": "Kollwitz Rahmen",
+            "email": "werkstatt@kollwitz-rahmen.de",
+            "person_id": null
+          },
+          "to": [
+            "studio@mayasorensen.com"
+          ],
+          "subject_key": "s02.mail.f_gm_104.subject",
+          "body_key": "s02.mail.f_gm_104.body",
+          "timestamp": "2025-02-24T10:05:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_105",
+          "from": {
+            "display_name": "Uferhallen Verwaltung",
+            "email": "verwaltung@uferhallen.de",
+            "person_id": null
+          },
+          "to": [
+            "studio@mayasorensen.com"
+          ],
+          "subject_key": "s02.mail.f_gm_105.subject",
+          "body_key": "s02.mail.f_gm_105.body",
+          "timestamp": "2025-03-03T17:10:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_106",
+          "from": {
+            "display_name": "Berlin Galerien",
+            "email": "newsletter@berlingalerien.de",
+            "person_id": null
+          },
+          "to": [
+            "studio@mayasorensen.com"
+          ],
+          "subject_key": "s02.mail.f_gm_106.subject",
+          "body_key": "s02.mail.f_gm_106.body",
+          "timestamp": "2025-03-06T07:00:00",
+          "is_read": false,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_107",
+          "from": {
+            "display_name": "DHL",
+            "email": "noreply@dhl.de",
+            "person_id": null
+          },
+          "to": [
+            "studio@mayasorensen.com"
+          ],
+          "subject_key": "s02.mail.f_gm_107.subject",
+          "body_key": "s02.mail.f_gm_107.body",
+          "timestamp": "2025-02-21T13:22:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_108",
+          "from": {
+            "display_name": "Spedition Marek",
+            "email": "kontakt@spedition-marek.de",
+            "person_id": null
+          },
+          "to": [
+            "studio@mayasorensen.com"
+          ],
+          "subject_key": "s02.mail.f_gm_108.subject",
+          "body_key": "s02.mail.f_gm_108.body",
+          "timestamp": "2025-03-05T10:48:00",
+          "is_read": false,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_109",
+          "from": {
+            "display_name": "Allianz",
+            "email": "service@allianz.de",
+            "person_id": null
+          },
+          "to": [
+            "studio@mayasorensen.com"
+          ],
+          "subject_key": "s02.mail.f_gm_109.subject",
+          "body_key": "s02.mail.f_gm_109.body",
+          "timestamp": "2025-02-19T08:00:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        }
+      ],
+      "sent": [
+        {
+          "id": "gm_120",
+          "from": {
+            "display_name": "Maya Sorensen",
+            "email": "studio@mayasorensen.com",
+            "person_id": null
+          },
+          "to": [
+            "job@ga-kreuzberg.de"
+          ],
+          "subject_key": "s02.mail.gm_120.subject",
+          "body_key": "s02.mail.gm_120.body",
+          "timestamp": "2025-03-04T18:40:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "gm_121",
+          "from": {
+            "display_name": "Maya Sorensen",
+            "email": "studio@mayasorensen.com",
+            "person_id": null
+          },
+          "to": [
+            "t.reinhardt@udk-berlin.de"
+          ],
+          "subject_key": "s02.mail.gm_121.subject",
+          "body_key": "s02.mail.gm_121.body",
+          "timestamp": "2025-02-25T09:12:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "gm_010",
+          "from": {
+            "display_name": "Maya Sorensen",
+            "email": "studio@mayasorensen.com",
+            "person_id": null
+          },
+          "to": [
+            "verwaltung@uferhallen.de"
+          ],
+          "subject_key": "s02.mail.gm_010.subject",
+          "body_key": "s02.mail.gm_010.body",
+          "timestamp": "2025-02-28T13:50:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "gm_011",
+          "from": {
+            "display_name": "Maya Sorensen",
+            "email": "studio@mayasorensen.com",
+            "person_id": null
+          },
+          "to": [
+            "h.vogt@vogt-steuer.de"
+          ],
+          "subject_key": "s02.mail.gm_011.subject",
+          "body_key": "s02.mail.gm_011.body",
+          "timestamp": "2025-02-26T18:20:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_110",
+          "from": {
+            "display_name": "Maya Sorensen",
+            "email": "studio@mayasorensen.com",
+            "person_id": null
+          },
+          "to": [
+            "studio@mayasorensen.com"
+          ],
+          "subject_key": "s02.mail.f_gm_110.subject",
+          "body_key": "s02.mail.f_gm_110.body",
+          "timestamp": "2025-03-04T21:15:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        },
+        {
+          "id": "f_gm_111",
+          "from": {
+            "display_name": "Maya Sorensen",
+            "email": "studio@mayasorensen.com",
+            "person_id": null
+          },
+          "to": [
+            "studio@mayasorensen.com"
+          ],
+          "subject_key": "s02.mail.f_gm_111.subject",
+          "body_key": "s02.mail.f_gm_111.body",
+          "timestamp": "2025-03-05T11:02:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "primary"
+        }
+      ],
+      "drafts": [
+        {
+          "id": "gm_020",
+          "from": {
+            "display_name": "Maya Sorensen",
+            "email": "studio@mayasorensen.com",
+            "person_id": null
+          },
+          "to": [
+            "junoweiss@posteo.de"
+          ],
+          "subject_key": "s02.mail.gm_020.subject",
+          "body_key": "s02.mail.gm_020.body",
+          "timestamp": "2025-03-06T02:30:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": true,
+          "must_delete_after_use": false,
+          "category": "primary",
+          "draft_note": "Never sent"
+        },
+        {
+          "id": "f_gm_112",
+          "from": {
+            "display_name": "Maya Sorensen",
+            "email": "studio@mayasorensen.com",
+            "person_id": null
+          },
+          "to": [
+            "studio@mayasorensen.com"
+          ],
+          "subject_key": "s02.mail.f_gm_112.subject",
+          "body_key": "s02.mail.f_gm_112.body",
+          "timestamp": "2025-03-06T02:41:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": true,
+          "must_delete_after_use": false,
+          "category": "primary"
+        }
+      ],
+      "trash": [
+        {
+          "id": "gm_130",
+          "from": {
+            "display_name": "Kunstforum Wochenbrief",
+            "email": "brief@kunstforum-woche.de",
+            "person_id": null
+          },
+          "to": [
+            "studio@mayasorensen.com"
+          ],
+          "subject_key": "s02.mail.gm_130.subject",
+          "body_key": "s02.mail.gm_130.body",
+          "timestamp": "2025-02-21T11:05:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": true,
+          "is_draft": false,
+          "must_delete_after_use": false,
+          "category": "updates"
+        }
+      ]
+    },
+    "maps": {
+      "location_history": [
+        {
+          "id": "loc_001",
+          "name_key": "s02.maps.loc_001.name",
+          "category": "other",
+          "address_key": "s02.maps.loc_001.address",
+          "lat": 52.5525,
+          "lng": 13.366,
+          "visited_at": "2025-03-07T23:58:00",
+          "duration_minutes": 320,
+          "note_key": "s02.maps.loc_001.note"
+        },
+        {
+          "id": "loc_002",
+          "name_key": "s02.maps.loc_002.name",
+          "category": "other",
+          "address_key": "s02.maps.loc_002.address",
+          "lat": 52.531,
+          "lng": 13.41,
+          "visited_at": "2025-03-07T18:40:00",
+          "duration_minutes": 55
+        },
+        {
+          "id": "loc_003",
+          "name_key": "s02.maps.loc_003.name",
+          "category": "restaurant",
+          "address_key": "s02.maps.loc_003.address",
+          "lat": 52.529,
+          "lng": 13.402,
+          "visited_at": "2025-03-05T13:20:00",
+          "duration_minutes": 70
+        },
+        {
+          "id": "loc_004",
+          "name_key": "s02.maps.loc_004.name",
+          "category": "other",
+          "address_key": "s02.maps.loc_004.address",
+          "lat": 52.5065,
+          "lng": 13.33,
+          "visited_at": "2025-03-03T11:00:00",
+          "duration_minutes": 95
+        },
+        {
+          "id": "loc_005",
+          "name_key": "s02.maps.loc_005.name",
+          "category": "shopping",
+          "address_key": "s02.maps.loc_005.address",
+          "lat": 52.544,
+          "lng": 13.355,
+          "visited_at": "2025-03-06T16:30:00",
+          "duration_minutes": 40,
+          "note_key": "s02.maps.loc_005.note"
+        },
+        {
+          "id": "loc_006",
+          "name_key": "s02.maps.loc_006.name",
+          "category": "airport",
+          "address_key": "s02.maps.loc_006.address",
+          "lat": 52.3667,
+          "lng": 13.5033,
+          "visited_at": "2025-02-21T06:30:00",
+          "duration_minutes": 110
+        },
+        {
+          "id": "f_loc_101",
+          "name_key": "s02.maps.f_loc_101.name",
+          "category": "other",
+          "address_key": "s02.maps.f_loc_101.address",
+          "lat": 52.5462,
+          "lng": 13.3639,
+          "visited_at": "2025-03-04T09:10:00",
+          "duration_minutes": 25
+        },
+        {
+          "id": "f_loc_102",
+          "name_key": "s02.maps.f_loc_102.name",
+          "category": "other",
+          "address_key": "s02.maps.f_loc_102.address",
+          "lat": 52.5389,
+          "lng": 13.4166,
+          "visited_at": "2025-02-27T16:05:00",
+          "duration_minutes": 20
+        },
+        {
+          "id": "f_loc_104",
+          "name_key": "s02.maps.f_loc_104.name",
+          "category": "other",
+          "address_key": "s02.maps.f_loc_104.address",
+          "lat": 52.5185,
+          "lng": 13.4302,
+          "visited_at": "2025-02-26T08:28:00",
+          "duration_minutes": 45
+        },
+        {
+          "id": "f_loc_103",
+          "name_key": "s02.maps.f_loc_103.name",
+          "category": "restaurant",
+          "address_key": "s02.maps.f_loc_103.address",
+          "lat": 52.5471,
+          "lng": 13.3652,
+          "visited_at": "2025-03-06T15:02:00",
+          "duration_minutes": 58
+        },
+        {
+          "id": "f_loc_106",
+          "name_key": "s02.maps.f_loc_106.name",
+          "category": "other",
+          "address_key": "s02.maps.f_loc_106.address",
+          "lat": 52.4869,
+          "lng": 13.439,
+          "visited_at": "2025-02-21T18:40:00",
+          "duration_minutes": 8
+        },
+        {
+          "id": "f_loc_105",
+          "name_key": "s02.maps.f_loc_105.name",
+          "category": "other",
+          "address_key": "s02.maps.f_loc_105.address",
+          "lat": 52.5321,
+          "lng": 13.4012,
+          "visited_at": "2025-02-26T13:20:00",
+          "duration_minutes": 35
+        },
+        {
+          "id": "f_loc_101",
+          "name_key": "s02.maps.f_loc_101.name",
+          "category": "other",
+          "address_key": "s02.maps.f_loc_101.address",
+          "lat": 52.5462,
+          "lng": 13.3639,
+          "visited_at": "2025-02-04T10:15:00",
+          "duration_minutes": 22
+        },
+        {
+          "id": "f_loc_103",
+          "name_key": "s02.maps.f_loc_103.name",
+          "category": "restaurant",
+          "address_key": "s02.maps.f_loc_103.address",
+          "lat": 52.5471,
+          "lng": 13.3652,
+          "visited_at": "2025-02-11T15:30:00",
+          "duration_minutes": 40
+        }
+      ],
+      "saved_places": [
+        {
+          "id": "loc_001",
+          "name_key": "s02.maps.loc_001.name",
+          "category": "other",
+          "address_key": "s02.maps.loc_001.address",
+          "lat": 52.5525,
+          "lng": 13.366
+        },
+        {
+          "id": "loc_004",
+          "name_key": "s02.maps.loc_004.name",
+          "category": "other",
+          "address_key": "s02.maps.loc_004.address",
+          "lat": 52.5065,
+          "lng": 13.33
+        },
+        {
+          "id": "f_loc_101",
+          "name_key": "s02.maps.f_loc_101.name",
+          "category": "other",
+          "address_key": "s02.maps.f_loc_101.address",
+          "lat": 52.5462,
+          "lng": 13.3639
+        },
+        {
+          "id": "f_loc_102",
+          "name_key": "s02.maps.f_loc_102.name",
+          "category": "other",
+          "address_key": "s02.maps.f_loc_102.address",
+          "lat": 52.5389,
+          "lng": 13.4166
+        },
+        {
+          "id": "f_loc_103",
+          "name_key": "s02.maps.f_loc_103.name",
+          "category": "restaurant",
+          "address_key": "s02.maps.f_loc_103.address",
+          "lat": 52.5471,
+          "lng": 13.3652
+        },
+        {
+          "id": "f_loc_105",
+          "name_key": "s02.maps.f_loc_105.name",
+          "category": "other",
+          "address_key": "s02.maps.f_loc_105.address",
+          "lat": 52.5321,
+          "lng": 13.4012
+        }
+      ]
+    },
+    "venmo": {
+      "account_name": "Maya Sorensen",
+      "username": "@mayasorensen",
+      "transactions": [
+        {
+          "id": "tx_001",
+          "type": "sent",
+          "person_id": "p002",
+          "amount": 900.0,
+          "note_key": "s02.payments.tx_001",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2025-02-05T12:00:00"
+        },
+        {
+          "id": "tx_002",
+          "type": "sent",
+          "recipient_name": "Uferhallen Verwaltung",
+          "amount": 1450.0,
+          "note_key": "s02.payments.tx_002",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2025-03-01T09:00:00"
+        },
+        {
+          "id": "tx_003",
+          "type": "received",
+          "recipient_name": "Halcyon Media",
+          "amount": 4000.0,
+          "note_key": "s02.payments.tx_003",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2025-03-01T10:15:00"
+        },
+        {
+          "id": "tx_004",
+          "type": "sent",
+          "recipient_name": "Modulor",
+          "amount": 312.6,
+          "emoji": "🧰",
+          "emoji_only": true,
+          "visibility": "private",
+          "timestamp": "2025-03-06T16:35:00"
+        },
+        {
+          "id": "tx_005",
+          "type": "sent",
+          "person_id": "p003",
+          "amount": 40.0,
+          "note_key": "s02.payments.tx_005",
+          "emoji_only": false,
+          "visibility": "friends",
+          "timestamp": "2025-02-27T23:00:00"
+        },
+        {
+          "id": "tx_006",
+          "type": "sent",
+          "recipient_name": "Deutsche Bahn",
+          "amount": 118.9,
+          "emoji": "🚆",
+          "emoji_only": true,
+          "visibility": "private",
+          "timestamp": "2025-03-06T21:10:00"
+        },
+        {
+          "id": "tx_007",
+          "type": "received",
+          "recipient_name": "Halcyon Media",
+          "amount": 4000.0,
+          "note_key": "s02.payments.tx_007",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2025-02-01T10:15:00"
+        },
+        {
+          "id": "tx_020",
+          "type": "sent",
+          "recipient_name": "Grafisches Atelier Kreuzberg",
+          "amount": 268.0,
+          "note_key": "s02.payments.tx_020",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2025-03-04T16:20:00"
+        },
+        {
+          "id": "tx_021",
+          "type": "sent",
+          "recipient_name": "Späti Wiesenstraße",
+          "amount": 9.4,
+          "emoji": "☕",
+          "emoji_only": true,
+          "visibility": "private",
+          "timestamp": "2025-03-06T08:35:00"
+        },
+        {
+          "id": "tx_022",
+          "type": "sent",
+          "recipient_name": "Aluprofil Nord",
+          "amount": 742.5,
+          "note_key": "s02.payments.tx_022",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2025-03-03T12:05:00"
+        },
+        {
+          "id": "tx_023",
+          "type": "sent",
+          "person_id": "p002",
+          "amount": 360.0,
+          "note_key": "s02.payments.tx_023",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2025-03-05T19:00:00"
+        },
+        {
+          "id": "tx_024",
+          "type": "sent",
+          "recipient_name": "Vattenstrom Berlin",
+          "amount": 318.4,
+          "note_key": "s02.payments.tx_024",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2025-02-28T09:00:00"
+        },
+        {
+          "id": "tx_025",
+          "type": "sent",
+          "recipient_name": "Kaltenbach Technik",
+          "amount": 140.0,
+          "note_key": "s02.payments.tx_025",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2025-03-06T18:20:00"
+        },
+        {
+          "id": "tx_026",
+          "type": "sent",
+          "recipient_name": "Stadtbad Wedding",
+          "amount": 42.0,
+          "emoji": "🏊",
+          "emoji_only": true,
+          "visibility": "friends",
+          "timestamp": "2025-02-14T07:50:00"
+        },
+        {
+          "id": "tx_027",
+          "type": "sent",
+          "person_id": "p003",
+          "amount": 31.0,
+          "emoji": "🍜",
+          "emoji_only": true,
+          "visibility": "friends",
+          "timestamp": "2025-03-02T22:40:00"
+        },
+        {
+          "id": "tx_028",
+          "type": "sent",
+          "recipient_name": "Prism Render",
+          "amount": 948.0,
+          "note_key": "s02.payments.tx_028",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2024-03-22T07:00:00"
+        },
+        {
+          "id": "tx_029",
+          "type": "sent",
+          "recipient_name": "Uferhallen Verwaltung",
+          "amount": 1180.0,
+          "note_key": "s02.payments.tx_029",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2025-02-03T08:10:00"
+        },
+        {
+          "id": "f_tx_101",
+          "type": "sent",
+          "recipient_name": "Ton & Erde",
+          "amount": 128.5,
+          "note_key": "s02.payments.f_tx_101",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2025-03-01T09:20:00"
+        },
+        {
+          "id": "f_tx_102",
+          "type": "sent",
+          "recipient_name": "Kollwitz Rahmen",
+          "amount": 240.0,
+          "note_key": "s02.payments.f_tx_102",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2025-02-27T16:20:00"
+        },
+        {
+          "id": "f_tx_103",
+          "type": "sent",
+          "recipient_name": "Kiln share",
+          "amount": 45.0,
+          "note_key": "s02.payments.f_tx_103",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2025-03-01T10:00:00"
+        },
+        {
+          "id": "f_tx_104",
+          "type": "sent",
+          "recipient_name": "Café am Ufer",
+          "amount": 9.2,
+          "note_key": "s02.payments.f_tx_104",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2025-03-06T15:50:00"
+        },
+        {
+          "id": "f_tx_105",
+          "type": "sent",
+          "recipient_name": "Spedition Marek",
+          "amount": 60.0,
+          "note_key": "s02.payments.f_tx_105",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2025-03-05T11:05:00"
+        },
+        {
+          "id": "f_tx_106",
+          "type": "sent",
+          "recipient_name": "Dr Adler",
+          "amount": 82.0,
+          "note_key": "s02.payments.f_tx_106",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2025-02-26T09:20:00"
+        },
+        {
+          "id": "f_tx_107",
+          "type": "sent",
+          "recipient_name": "Telekom",
+          "amount": 24.99,
+          "note_key": "s02.payments.f_tx_107",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2025-03-01T06:00:00"
+        },
+        {
+          "id": "f_tx_108",
+          "type": "sent",
+          "recipient_name": "Vattenfall",
+          "amount": 71.4,
+          "note_key": "s02.payments.f_tx_108",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2025-03-01T06:00:00"
+        },
+        {
+          "id": "f_tx_109",
+          "type": "sent",
+          "recipient_name": "BVG",
+          "amount": 49.0,
+          "note_key": "s02.payments.f_tx_109",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2025-03-01T06:00:00"
+        },
+        {
+          "id": "f_tx_110",
+          "type": "received",
+          "person_id": "p003",
+          "amount": 20.0,
+          "note_key": "s02.payments.f_tx_110",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2025-02-18T21:10:00"
+        },
+        {
+          "id": "f_tx_111",
+          "type": "sent",
+          "recipient_name": "Späti",
+          "amount": 16.8,
+          "note_key": "s02.payments.f_tx_111",
+          "emoji_only": false,
+          "visibility": "private",
+          "timestamp": "2025-02-21T18:45:00"
+        }
+      ]
+    },
+    "calendar": {
+      "events": [
+        {
+          "id": "ev_001",
+          "title_key": "s02.calendar.ev_001",
+          "type": "work",
+          "start": "2025-03-07T21:00:00",
+          "end": "2025-03-07T22:30:00",
+          "location_key": "s02.calendar.ev_001.loc",
+          "notes_key": "s02.calendar.ev_001.notes",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#DC2626",
+          "is_deleted": false
+        },
+        {
+          "id": "ev_002",
+          "title_key": "s02.calendar.ev_002",
+          "type": "work",
+          "start": "2025-03-21T18:00:00",
+          "end": "2025-03-21T22:00:00",
+          "location_key": "s02.calendar.ev_002.loc",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#8B5CF6",
+          "is_deleted": false
+        },
+        {
+          "id": "ev_003",
+          "title_key": "s02.calendar.ev_003",
+          "type": "work",
+          "start": "2025-03-03T11:00:00",
+          "end": "2025-03-03T12:30:00",
+          "location_key": "s02.calendar.ev_003.loc",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#8B5CF6",
+          "is_deleted": false
+        },
+        {
+          "id": "ev_004",
+          "title_key": "s02.calendar.ev_004",
+          "type": "personal",
+          "start": "2025-03-05T13:00:00",
+          "end": "2025-03-05T14:30:00",
+          "location_key": "s02.calendar.ev_004.loc",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#22C55E",
+          "is_deleted": false
+        },
+        {
+          "id": "ev_005",
+          "title_key": "s02.calendar.ev_005",
+          "type": "work",
+          "start": "2025-03-10T10:00:00",
+          "end": "2025-03-10T11:00:00",
+          "notes_key": "s02.calendar.ev_005.notes",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#0EA5E9",
+          "is_deleted": false
+        },
+        {
+          "id": "ev_006",
+          "title_key": "s02.calendar.ev_006",
+          "type": "other",
+          "start": "2025-02-28T00:00:00",
+          "end": "2025-02-28T23:59:00",
+          "is_all_day": true,
+          "recurrence": "none",
+          "color": "#F59E0B",
+          "is_deleted": false
+        },
+        {
+          "id": "ev_007",
+          "title_key": "s02.calendar.ev_007",
+          "type": "travel",
+          "start": "2025-03-08T06:40:00",
+          "end": "2025-03-08T09:20:00",
+          "location_key": "s02.calendar.ev_007.loc",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#64748B",
+          "is_deleted": true
+        },
+        {
+          "id": "ev_010",
+          "title_key": "s02.calendar.ev_010",
+          "type": "work",
+          "start": "2025-03-19T09:00:00",
+          "end": "2025-03-19T18:00:00",
+          "location_key": "s02.calendar.ev_010.loc",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#0EA5E9",
+          "is_deleted": false
+        },
+        {
+          "id": "ev_011",
+          "title_key": "s02.calendar.ev_011",
+          "type": "work",
+          "start": "2025-03-20T10:00:00",
+          "end": "2025-03-20T20:00:00",
+          "location_key": "s02.calendar.ev_011.loc",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#0EA5E9",
+          "is_deleted": false
+        },
+        {
+          "id": "ev_012",
+          "title_key": "s02.calendar.ev_012",
+          "type": "personal",
+          "start": "2025-03-24T09:30:00",
+          "end": "2025-03-24T10:15:00",
+          "location_key": "s02.calendar.ev_012.loc",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#059669",
+          "is_deleted": false
+        },
+        {
+          "id": "ev_013",
+          "title_key": "s02.calendar.ev_013",
+          "type": "work",
+          "start": "2025-03-06T14:00:00",
+          "end": "2025-03-06T15:00:00",
+          "location_key": "s02.calendar.ev_013.loc",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#0EA5E9",
+          "is_deleted": false
+        },
+        {
+          "id": "ev_014",
+          "title_key": "s02.calendar.ev_014",
+          "type": "work",
+          "start": "2025-03-04T11:00:00",
+          "end": "2025-03-04T15:00:00",
+          "location_key": "s02.calendar.ev_014.loc",
+          "is_all_day": false,
+          "recurrence": "weekly",
+          "color": "#0EA5E9",
+          "is_deleted": false
+        },
+        {
+          "id": "ev_015",
+          "title_key": "s02.calendar.ev_015",
+          "type": "personal",
+          "start": "2025-03-02T19:30:00",
+          "end": "2025-03-02T23:00:00",
+          "location_key": "s02.calendar.ev_015.loc",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#059669",
+          "is_deleted": false
+        },
+        {
+          "id": "ev_016",
+          "title_key": "s02.calendar.ev_016",
+          "type": "personal",
+          "start": "2025-02-28T08:00:00",
+          "end": "2025-02-28T09:00:00",
+          "location_key": "s02.calendar.ev_016.loc",
+          "is_all_day": false,
+          "recurrence": "weekly",
+          "color": "#059669",
+          "is_deleted": false
+        },
+        {
+          "id": "ev_017",
+          "title_key": "s02.calendar.ev_017",
+          "type": "work",
+          "start": "2025-02-20T16:00:00",
+          "end": "2025-02-20T17:30:00",
+          "location_key": "s02.calendar.ev_017.loc",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#0EA5E9",
+          "is_deleted": true
+        },
+        {
+          "id": "ev_018",
+          "title_key": "s02.calendar.ev_018",
+          "type": "other",
+          "start": "2025-04-14T00:00:00",
+          "end": "2025-04-14T23:59:00",
+          "is_all_day": true,
+          "recurrence": "none",
+          "color": "#64748B",
+          "is_deleted": false
+        },
+        {
+          "id": "f_ev_101",
+          "title_key": "s02.calendar.f_ev_101",
+          "type": "work",
+          "start": "2025-03-04T08:00:00",
+          "end": "2025-03-04T12:00:00",
+          "location_key": "s02.calendar.f_ev_101.loc",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#3B82F6",
+          "is_deleted": false
+        },
+        {
+          "id": "f_ev_102",
+          "title_key": "s02.calendar.f_ev_102",
+          "type": "personal",
+          "start": "2025-02-26T08:30:00",
+          "end": "2025-02-26T09:15:00",
+          "location_key": "s02.calendar.f_ev_102.loc",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#3B82F6",
+          "is_deleted": false
+        },
+        {
+          "id": "f_ev_103",
+          "title_key": "s02.calendar.f_ev_103",
+          "type": "personal",
+          "start": "2025-02-27T16:00:00",
+          "end": "2025-02-27T16:30:00",
+          "location_key": "s02.calendar.f_ev_103.loc",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#3B82F6",
+          "is_deleted": false
+        },
+        {
+          "id": "f_ev_104",
+          "title_key": "s02.calendar.f_ev_104",
+          "type": "work",
+          "start": "2025-04-30T00:00:00",
+          "end": "2025-04-30T23:59:00",
+          "is_all_day": true,
+          "recurrence": "none",
+          "color": "#3B82F6",
+          "is_deleted": false
+        },
+        {
+          "id": "f_ev_105",
+          "title_key": "s02.calendar.f_ev_105",
+          "type": "work",
+          "start": "2025-03-04T09:00:00",
+          "end": "2025-03-04T09:30:00",
+          "location_key": "s02.calendar.f_ev_105.loc",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#3B82F6",
+          "is_deleted": false
+        },
+        {
+          "id": "f_ev_106",
+          "title_key": "s02.calendar.f_ev_106",
+          "type": "work",
+          "start": "2025-05-17T11:00:00",
+          "end": "2025-05-17T18:00:00",
+          "location_key": "s02.calendar.f_ev_106.loc",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#3B82F6",
+          "is_deleted": false
+        },
+        {
+          "id": "f_ev_107",
+          "title_key": "s02.calendar.f_ev_107",
+          "type": "other",
+          "start": "2025-03-05T08:00:00",
+          "end": "2025-03-05T12:00:00",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#3B82F6",
+          "is_deleted": false
+        },
+        {
+          "id": "f_ev_108",
+          "title_key": "s02.calendar.f_ev_108",
+          "type": "other",
+          "start": "2025-03-02T20:00:00",
+          "end": "2025-03-02T20:15:00",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#3B82F6",
+          "is_deleted": false
+        },
+        {
+          "id": "f_ev_109",
+          "title_key": "s02.calendar.f_ev_109",
+          "type": "other",
+          "start": "2025-05-01T00:00:00",
+          "end": "2025-05-01T23:59:00",
+          "is_all_day": true,
+          "recurrence": "none",
+          "color": "#3B82F6",
+          "is_deleted": false
+        },
+        {
+          "id": "f_ev_110",
+          "title_key": "s02.calendar.f_ev_110",
+          "type": "personal",
+          "start": "2025-03-06T15:00:00",
+          "end": "2025-03-06T16:00:00",
+          "location_key": "s02.calendar.f_ev_110.loc",
+          "is_all_day": false,
+          "recurrence": "none",
+          "color": "#3B82F6",
+          "is_deleted": false
+        }
+      ]
+    },
+    "photos": {
+      "recents": [
+        "ph_026",
+        "ph_001",
+        "ph_012",
+        "ph_002",
+        "ph_013",
+        "ph_016",
+        "ph_003",
+        "ph_025",
+        "ph_030",
+        "ph_021",
+        "ph_015",
+        "ph_020",
+        "ph_010",
+        "ph_035",
+        "ph_024",
+        "ph_011",
+        "ph_014",
+        "ph_019",
+        "ph_017",
+        "ph_031",
+        "ph_018",
+        "ph_036",
+        "ph_032",
+        "ph_034",
+        "ph_033",
+        "ph_037"
+      ],
+      "albums": [
+        {
+          "id": "album_001",
+          "name_key": "s02.photos.album_001",
+          "cover_photo_id": "ph_001",
+          "photo_ids": [
+            "ph_001",
+            "ph_002",
+            "ph_003",
+            "ph_012",
+            "ph_013",
+            "ph_014",
+            "ph_015",
+            "ph_016",
+            "ph_017",
+            "ph_018",
+            "ph_019"
+          ],
+          "is_locked": false
+        },
+        {
+          "id": "album_005",
+          "name_key": "s02.photos.album_005",
+          "cover_photo_id": "ph_030",
+          "photo_ids": [
+            "ph_030",
+            "ph_031",
+            "ph_032",
+            "ph_035",
+            "ph_036",
+            "ph_033",
+            "ph_034",
+            "ph_037"
+          ],
+          "is_locked": false
+        },
+        {
+          "id": "album_004",
+          "name_key": "s02.photos.album_004",
+          "cover_photo_id": "ph_020",
+          "photo_ids": [
+            "ph_020",
+            "ph_021",
+            "ph_022",
+            "ph_023"
+          ],
+          "is_locked": false
+        },
+        {
+          "id": "album_003",
+          "name_key": "s02.photos.album_003",
+          "cover_photo_id": "ph_010",
+          "photo_ids": [
+            "ph_010",
+            "ph_011",
+            "ph_024",
+            "ph_025",
+            "ph_026"
+          ],
+          "is_locked": false
+        },
+        {
+          "id": "album_002",
+          "name_key": "s02.photos.album_002",
+          "cover_photo_id": "ph_005",
+          "photo_ids": [
+            "ph_004",
+            "ph_005",
+            "ph_006",
+            "ph_027"
+          ],
+          "is_locked": true,
+          "lock_password": "8802"
+        }
+      ],
+      "hidden": [],
+      "recently_deleted": [],
+      "items": [
+        {
+          "id": "ph_001",
+          "asset": "assets/cases/s02/photos/studio.jpg",
+          "taken_at": "2025-03-05T19:30:00",
+          "location": "Uferhallen, Wedding"
+        },
+        {
+          "id": "ph_002",
+          "asset": "assets/cases/s02/photos/render.jpg",
+          "taken_at": "2025-03-05T19:10:00"
+        },
+        {
+          "id": "ph_003",
+          "asset": "assets/cases/s02/photos/gallery.jpg",
+          "taken_at": "2025-03-03T11:40:00",
+          "location": "Rohde Berlin"
+        },
+        {
+          "id": "ph_004",
+          "asset": "assets/cases/s02/photos/threat_screenshot.jpg",
+          "taken_at": "2025-02-20T21:10:00",
+          "document_key": "s02.photos.ph_004.document"
+        },
+        {
+          "id": "ph_005",
+          "asset": "assets/cases/s02/photos/doorlog.jpg",
+          "taken_at": "2025-03-08T01:20:00",
+          "document_key": "s02.photos.ph_005.document"
+        },
+        {
+          "id": "ph_006",
+          "asset": "assets/cases/s02/photos/notebook.jpg",
+          "taken_at": "2025-03-06T03:05:00",
+          "document_key": "s02.photos.ph_006.document"
+        },
+        {
+          "id": "ph_010",
+          "asset": "assets/cases/s02/photos/juno.jpg",
+          "taken_at": "2025-02-27T22:40:00",
+          "location": "Neukölln"
+        },
+        {
+          "id": "ph_011",
+          "asset": "assets/cases/s02/photos/canal.jpg",
+          "taken_at": "2025-02-16T16:00:00",
+          "location": "Landwehrkanal"
+        },
+        {
+          "id": "ph_012",
+          "asset": "assets/cases/s02/photos/work_detail.jpg",
+          "taken_at": "2025-03-05T18:40:00",
+          "location": "Uferhallen, Wedding"
+        },
+        {
+          "id": "ph_013",
+          "asset": "assets/cases/s02/photos/install_crate.jpg",
+          "taken_at": "2025-03-03T12:10:00",
+          "location": "Rohde Berlin"
+        },
+        {
+          "id": "ph_014",
+          "asset": "assets/cases/s02/photos/studio_morning.jpg",
+          "taken_at": "2025-02-11T09:15:00",
+          "location": "Uferhallen, Wedding"
+        },
+        {
+          "id": "ph_015",
+          "asset": "assets/cases/s02/photos/hands_work.jpg",
+          "taken_at": "2025-02-19T15:30:00",
+          "location": "Uferhallen, Wedding"
+        },
+        {
+          "id": "ph_016",
+          "asset": "assets/cases/s02/photos/gallery_wall.jpg",
+          "taken_at": "2025-03-03T11:20:00",
+          "location": "Rohde Berlin"
+        },
+        {
+          "id": "ph_017",
+          "asset": "assets/cases/s02/photos/materials.jpg",
+          "taken_at": "2025-01-28T14:00:00",
+          "location": "Uferhallen, Wedding"
+        },
+        {
+          "id": "ph_018",
+          "asset": "assets/cases/s02/photos/ines_work.jpg",
+          "taken_at": "2025-01-24T16:45:00",
+          "location": "Uferhallen, Wedding"
+        },
+        {
+          "id": "ph_019",
+          "asset": "assets/cases/s02/photos/leo_studio.jpg",
+          "taken_at": "2025-02-03T13:20:00",
+          "location": "Uferhallen, Wedding"
+        },
+        {
+          "id": "ph_020",
+          "asset": "assets/cases/s02/photos/studio_4am.jpg",
+          "taken_at": "2025-02-19T04:05:00",
+          "location": "Uferhallen, Wedding"
+        },
+        {
+          "id": "ph_021",
+          "asset": "assets/cases/s02/photos/window_night.jpg",
+          "taken_at": "2025-02-25T03:12:00",
+          "location": "Uferhallen, Wedding"
+        },
+        {
+          "id": "ph_022",
+          "asset": "assets/cases/s02/photos/bank_screen.jpg",
+          "taken_at": "2025-02-24T23:20:00",
+          "document_key": "s02.photos.ph_022.document"
+        },
+        {
+          "id": "ph_023",
+          "asset": "assets/cases/s02/photos/contract_page.jpg",
+          "taken_at": "2025-02-24T23:44:00",
+          "document_key": "s02.photos.ph_023.document"
+        },
+        {
+          "id": "ph_024",
+          "asset": "assets/cases/s02/photos/juno_canal.jpg",
+          "taken_at": "2025-02-16T16:05:00",
+          "location": "Landwehrkanal"
+        },
+        {
+          "id": "ph_025",
+          "asset": "assets/cases/s02/photos/keycard.jpg",
+          "taken_at": "2025-02-28T14:30:00",
+          "location": "Uferhallen, Wedding"
+        },
+        {
+          "id": "ph_026",
+          "asset": "assets/cases/s02/photos/train_ticket.jpg",
+          "taken_at": "2025-03-06T21:30:00",
+          "document_key": "s02.photos.ph_026.document"
+        },
+        {
+          "id": "ph_027",
+          "asset": "assets/cases/s02/photos/packed_bag.jpg",
+          "taken_at": "2025-03-06T02:50:00"
+        },
+        {
+          "id": "ph_030",
+          "asset": "assets/cases/s02/photos/maya_juno.jpg",
+          "taken_at": "2025-02-27T23:10:00",
+          "location": "Neukölln"
+        },
+        {
+          "id": "ph_031",
+          "asset": "assets/cases/s02/photos/maya_ines.jpg",
+          "taken_at": "2025-01-24T19:50:00",
+          "location": "Uferhallen, Wedding"
+        },
+        {
+          "id": "ph_032",
+          "asset": "assets/cases/s02/photos/studio_team.jpg",
+          "taken_at": "2024-11-16T23:30:00",
+          "location": "Uferhallen, Wedding"
+        },
+        {
+          "id": "ph_033",
+          "asset": "assets/cases/s02/photos/maya_leo.jpg",
+          "taken_at": "2024-10-11T20:15:00",
+          "location": "Rohde Berlin"
+        },
+        {
+          "id": "ph_034",
+          "asset": "assets/cases/s02/photos/opening_night.jpg",
+          "taken_at": "2024-10-11T20:40:00",
+          "location": "Rohde Berlin"
+        },
+        {
+          "id": "ph_035",
+          "asset": "assets/cases/s02/photos/juno_dog.jpg",
+          "taken_at": "2025-02-16T16:20:00",
+          "location": "Landwehrkanal"
+        },
+        {
+          "id": "ph_036",
+          "asset": "assets/cases/s02/photos/birthday_studio.jpg",
+          "taken_at": "2025-01-09T21:00:00",
+          "location": "Uferhallen, Wedding"
+        },
+        {
+          "id": "ph_037",
+          "asset": "assets/cases/s02/photos/rohde_profile.jpg",
+          "taken_at": "2024-10-11T19:50:00",
+          "location": "Rohde Berlin"
+        }
+      ]
+    },
+    "notes": {
+      "folders": [
+        {
+          "id": "nf_001",
+          "name_key": "s02.notes.folder_001",
+          "notes": [
+            {
+              "id": "note_001",
+              "title_key": "s02.notes.note_001.title",
+              "created_at": "2025-01-14T09:00:00",
+              "updated_at": "2025-03-05T20:00:00",
+              "is_locked": false,
+              "lock_password": null,
+              "content": {
+                "type": "checklist",
+                "blocks": [
+                  {
+                    "type": "checkbox",
+                    "text_key": "s02.notes.note_001.block_001",
+                    "is_checked": true
+                  },
+                  {
+                    "type": "checkbox",
+                    "text_key": "s02.notes.note_001.block_002",
+                    "is_checked": true
+                  },
+                  {
+                    "type": "checkbox",
+                    "text_key": "s02.notes.note_001.block_003",
+                    "is_checked": false
+                  },
+                  {
+                    "type": "checkbox",
+                    "text_key": "s02.notes.note_001.block_004",
+                    "is_checked": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": "note_002",
+              "title_key": "s02.notes.note_002.title",
+              "created_at": "2025-02-24T23:00:00",
+              "updated_at": "2025-02-24T23:40:00",
+              "is_locked": false,
+              "lock_password": null,
+              "content": {
+                "type": "text",
+                "blocks": [
+                  {
+                    "type": "text",
+                    "text_key": "s02.notes.note_002.block_001"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s02.notes.note_002.block_002"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s02.notes.note_002.block_003"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "note_010",
+              "title_key": "s02.notes.note_010.title",
+              "created_at": "2025-02-16T10:20:00",
+              "updated_at": "2025-03-05T18:15:00",
+              "is_locked": false,
+              "lock_password": null,
+              "content": {
+                "type": "checklist",
+                "blocks": [
+                  {
+                    "type": "checkbox",
+                    "text_key": "s02.notes.note_010.block_001",
+                    "is_checked": true
+                  },
+                  {
+                    "type": "checkbox",
+                    "text_key": "s02.notes.note_010.block_002",
+                    "is_checked": true
+                  },
+                  {
+                    "type": "checkbox",
+                    "text_key": "s02.notes.note_010.block_003",
+                    "is_checked": true
+                  },
+                  {
+                    "type": "checkbox",
+                    "text_key": "s02.notes.note_010.block_004",
+                    "is_checked": false
+                  },
+                  {
+                    "type": "checkbox",
+                    "text_key": "s02.notes.note_010.block_005",
+                    "is_checked": false
+                  },
+                  {
+                    "type": "checkbox",
+                    "text_key": "s02.notes.note_010.block_006",
+                    "is_checked": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": "note_011",
+              "title_key": "s02.notes.note_011.title",
+              "created_at": "2024-11-30T21:05:00",
+              "updated_at": "2025-01-12T14:50:00",
+              "is_locked": false,
+              "lock_password": null,
+              "content": {
+                "type": "text",
+                "blocks": [
+                  {
+                    "type": "text",
+                    "text_key": "s02.notes.note_011.block_001"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s02.notes.note_011.block_002"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s02.notes.note_011.block_003"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s02.notes.note_011.block_004"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "note_012",
+              "title_key": "s02.notes.note_012.title",
+              "created_at": "2025-01-29T09:35:00",
+              "updated_at": "2025-02-27T11:20:00",
+              "is_locked": false,
+              "lock_password": null,
+              "content": {
+                "type": "text",
+                "blocks": [
+                  {
+                    "type": "text",
+                    "text_key": "s02.notes.note_012.block_001"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s02.notes.note_012.block_002"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s02.notes.note_012.block_003"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "f_note_101",
+              "title_key": "s02.notes.f_note_101.title",
+              "created_at": "2025-01-20T18:00:00",
+              "updated_at": "2025-03-04T20:10:00",
+              "is_locked": false,
+              "lock_password": null,
+              "content": {
+                "type": "text",
+                "blocks": [
+                  {
+                    "type": "text",
+                    "text_key": "s02.notes.f_note_101.body"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "f_note_102",
+              "title_key": "s02.notes.f_note_102.title",
+              "created_at": "2025-03-05T09:00:00",
+              "updated_at": "2025-03-05T09:00:00",
+              "is_locked": false,
+              "lock_password": null,
+              "content": {
+                "type": "checklist",
+                "blocks": [
+                  {
+                    "type": "checkbox",
+                    "text_key": "s02.notes.f_note_102.block_001",
+                    "is_checked": true
+                  },
+                  {
+                    "type": "checkbox",
+                    "text_key": "s02.notes.f_note_102.block_002",
+                    "is_checked": true
+                  },
+                  {
+                    "type": "checkbox",
+                    "text_key": "s02.notes.f_note_102.block_003",
+                    "is_checked": false
+                  },
+                  {
+                    "type": "checkbox",
+                    "text_key": "s02.notes.f_note_102.block_004",
+                    "is_checked": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": "f_note_103",
+              "title_key": "s02.notes.f_note_103.title",
+              "created_at": "2024-12-02T22:30:00",
+              "updated_at": "2025-02-11T23:15:00",
+              "is_locked": false,
+              "lock_password": null,
+              "content": {
+                "type": "text",
+                "blocks": [
+                  {
+                    "type": "text",
+                    "text_key": "s02.notes.f_note_103.body"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "f_note_104",
+              "title_key": "s02.notes.f_note_104.title",
+              "created_at": "2025-03-04T20:40:00",
+              "updated_at": "2025-03-04T21:10:00",
+              "is_locked": false,
+              "lock_password": null,
+              "content": {
+                "type": "text",
+                "blocks": [
+                  {
+                    "type": "text",
+                    "text_key": "s02.notes.f_note_104.body"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "f_note_105",
+              "title_key": "s02.notes.f_note_105.title",
+              "created_at": "2025-03-06T08:15:00",
+              "updated_at": "2025-03-06T08:15:00",
+              "is_locked": false,
+              "lock_password": null,
+              "content": {
+                "type": "checklist",
+                "blocks": [
+                  {
+                    "type": "checkbox",
+                    "text_key": "s02.notes.f_note_105.block_001",
+                    "is_checked": true
+                  },
+                  {
+                    "type": "checkbox",
+                    "text_key": "s02.notes.f_note_105.block_002",
+                    "is_checked": true
+                  },
+                  {
+                    "type": "checkbox",
+                    "text_key": "s02.notes.f_note_105.block_003",
+                    "is_checked": false
+                  },
+                  {
+                    "type": "checkbox",
+                    "text_key": "s02.notes.f_note_105.block_004",
+                    "is_checked": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "nf_002",
+          "name_key": "s02.notes.folder_002",
+          "notes": [
+            {
+              "id": "note_003",
+              "title_key": "s02.notes.note_003.title",
+              "created_at": "2025-02-27T02:00:00",
+              "updated_at": "2025-03-06T03:10:00",
+              "is_locked": true,
+              "lock_password": "1147",
+              "content": {
+                "type": "text",
+                "blocks": [
+                  {
+                    "type": "text",
+                    "text_key": "s02.notes.note_003.block_001"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s02.notes.note_003.block_002"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s02.notes.note_003.block_003"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s02.notes.note_003.block_004"
+                  },
+                  {
+                    "type": "text",
+                    "text_key": "s02.notes.note_003.block_005"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "calls": {
+      "recent_calls": [
+        {
+          "id": "call_001",
+          "person_id": "p001",
+          "type": "incoming",
+          "duration_seconds": 412,
+          "timestamp": "2025-03-07T20:10:00"
+        },
+        {
+          "id": "call_002",
+          "person_id": "p003",
+          "type": "outgoing",
+          "duration_seconds": 88,
+          "timestamp": "2025-03-07T18:20:00"
+        },
+        {
+          "id": "call_003",
+          "person_id": "p001",
+          "type": "missed",
+          "duration_seconds": null,
+          "timestamp": "2025-03-07T23:14:00"
+        },
+        {
+          "id": "call_004",
+          "person_id": "p004",
+          "type": "incoming",
+          "duration_seconds": 640,
+          "timestamp": "2025-02-26T16:40:00"
+        },
+        {
+          "id": "call_005",
+          "person_id": "p005",
+          "type": "incoming",
+          "duration_seconds": 210,
+          "timestamp": "2025-03-03T09:50:00"
+        },
+        {
+          "id": "call_006",
+          "person_id": "p002",
+          "type": "missed",
+          "duration_seconds": null,
+          "timestamp": "2025-02-05T19:10:00"
+        },
+        {
+          "id": "call_007",
+          "person_id": "p003",
+          "type": "missed",
+          "duration_seconds": null,
+          "timestamp": "2025-03-08T09:10:00"
+        },
+        {
+          "id": "call_008",
+          "person_id": "p003",
+          "type": "missed",
+          "duration_seconds": null,
+          "timestamp": "2025-03-09T10:55:00"
+        },
+        {
+          "id": "f_call_101",
+          "person_id": "p003",
+          "type": "outgoing",
+          "duration_seconds": 96,
+          "timestamp": "2025-03-04T09:05:00"
+        },
+        {
+          "id": "f_call_102",
+          "person_id": "p005",
+          "type": "incoming",
+          "duration_seconds": 212,
+          "timestamp": "2025-03-03T17:15:00"
+        },
+        {
+          "id": "f_call_103",
+          "person_id": "p003",
+          "type": "missed",
+          "duration_seconds": 0,
+          "timestamp": "2025-03-01T11:40:00"
+        },
+        {
+          "id": "f_call_104",
+          "person_id": "p003",
+          "type": "outgoing",
+          "duration_seconds": 48,
+          "timestamp": "2025-02-27T15:20:00"
+        },
+        {
+          "id": "f_call_105",
+          "person_id": "p005",
+          "type": "incoming",
+          "duration_seconds": 331,
+          "timestamp": "2025-02-26T18:02:00"
+        },
+        {
+          "id": "f_call_106",
+          "person_id": "p003",
+          "type": "missed",
+          "duration_seconds": 0,
+          "timestamp": "2025-02-24T14:11:00"
+        },
+        {
+          "id": "f_call_107",
+          "person_id": "p005",
+          "type": "outgoing",
+          "duration_seconds": 154,
+          "timestamp": "2025-02-21T13:30:00"
+        },
+        {
+          "id": "f_call_108",
+          "person_id": "p003",
+          "type": "incoming",
+          "duration_seconds": 77,
+          "timestamp": "2025-02-19T10:25:00"
+        }
+      ]
+    },
+    "spotify": {
+      "playlists": [
+        {
+          "id": "pl_001",
+          "name_key": "s02.music.pl_001",
+          "created_at": "2024-10-02T00:00:00",
+          "track_ids": [
+            "tr_001",
+            "tr_002",
+            "tr_003"
+          ]
+        },
+        {
+          "id": "pl_002",
+          "name_key": "s02.music.pl_002",
+          "created_at": "2025-02-25T00:00:00",
+          "track_ids": [
+            "tr_004",
+            "tr_005"
+          ]
+        },
+        {
+          "id": "pl_101",
+          "name_key": "s02.music.f_pl_101",
+          "created_at": "2024-11-03T00:00:00",
+          "track_ids": [
+            "tr_101",
+            "tr_102",
+            "tr_103",
+            "tr_104"
+          ]
+        },
+        {
+          "id": "pl_102",
+          "name_key": "s02.music.f_pl_102",
+          "created_at": "2025-01-19T00:00:00",
+          "track_ids": [
+            "tr_105",
+            "tr_106",
+            "tr_107"
+          ]
+        }
+      ],
+      "recently_played": [
+        {
+          "id": "tr_001",
+          "title": "Rework",
+          "artist": "Nils Frahm",
+          "played_at": "2025-03-07T21:40:00"
+        },
+        {
+          "id": "tr_002",
+          "title": "Sleeper",
+          "artist": "Kelly Lee Owens",
+          "played_at": "2025-03-07T19:00:00"
+        },
+        {
+          "id": "tr_004",
+          "title": "Escapism",
+          "artist": "Rival Consoles",
+          "played_at": "2025-03-06T02:20:00"
+        },
+        {
+          "id": "tr_003",
+          "title": "Avril 14th",
+          "artist": "Aphex Twin",
+          "played_at": "2025-03-05T23:30:00"
+        },
+        {
+          "id": "tr_005",
+          "title": "Ghosts",
+          "artist": "Jon Hopkins",
+          "played_at": "2025-03-04T01:10:00"
+        },
+        {
+          "id": "tr_101",
+          "title": "Says",
+          "artist": "Nils Frahm",
+          "played_at": "2025-03-06T14:20:00"
+        },
+        {
+          "id": "tr_102",
+          "title": "An Ending (Ascent)",
+          "artist": "Brian Eno",
+          "played_at": "2025-03-05T22:05:00"
+        },
+        {
+          "id": "tr_103",
+          "title": "Avril 14th",
+          "artist": "Aphex Twin",
+          "played_at": "2025-03-05T11:40:00"
+        },
+        {
+          "id": "tr_104",
+          "title": "Gymnopédie No. 1",
+          "artist": "Erik Satie",
+          "played_at": "2025-03-04T09:15:00"
+        },
+        {
+          "id": "tr_105",
+          "title": "Horizon Variations",
+          "artist": "Max Richter",
+          "played_at": "2025-03-04T20:50:00"
+        },
+        {
+          "id": "tr_106",
+          "title": "Everything In Its Right Place",
+          "artist": "Radiohead",
+          "played_at": "2025-03-03T18:30:00"
+        },
+        {
+          "id": "tr_107",
+          "title": "Bloom",
+          "artist": "Ólafur Arnalds",
+          "played_at": "2025-03-02T21:10:00"
+        },
+        {
+          "id": "tr_108",
+          "title": "Music For Airports 1/1",
+          "artist": "Brian Eno",
+          "played_at": "2025-03-01T10:05:00"
+        },
+        {
+          "id": "tr_109",
+          "title": "Nuvole Bianche",
+          "artist": "Ludovico Einaudi",
+          "played_at": "2025-02-27T17:20:00"
+        },
+        {
+          "id": "tr_110",
+          "title": "Re:Stasis",
+          "artist": "Kiasmos",
+          "played_at": "2025-02-26T19:45:00"
+        }
+      ],
+      "liked_songs": [
+        {
+          "id": "tr_001",
+          "title": "Rework",
+          "artist": "Nils Frahm"
+        },
+        {
+          "id": "tr_004",
+          "title": "Escapism",
+          "artist": "Rival Consoles"
+        },
+        {
+          "id": "tr_101",
+          "title": "Says",
+          "artist": "Nils Frahm"
+        },
+        {
+          "id": "tr_102",
+          "title": "An Ending (Ascent)",
+          "artist": "Brian Eno"
+        },
+        {
+          "id": "tr_103",
+          "title": "Avril 14th",
+          "artist": "Aphex Twin"
+        },
+        {
+          "id": "tr_104",
+          "title": "Gymnopédie No. 1",
+          "artist": "Erik Satie"
+        },
+        {
+          "id": "tr_105",
+          "title": "Horizon Variations",
+          "artist": "Max Richter"
+        },
+        {
+          "id": "tr_106",
+          "title": "Everything In Its Right Place",
+          "artist": "Radiohead"
+        },
+        {
+          "id": "tr_107",
+          "title": "Bloom",
+          "artist": "Ólafur Arnalds"
+        },
+        {
+          "id": "tr_108",
+          "title": "Music For Airports 1/1",
+          "artist": "Brian Eno"
+        },
+        {
+          "id": "tr_109",
+          "title": "Nuvole Bianche",
+          "artist": "Ludovico Einaudi"
+        },
+        {
+          "id": "tr_110",
+          "title": "Re:Stasis",
+          "artist": "Kiasmos"
+        }
+      ]
+    },
+    "google": {
+      "searches": [
+        {
+          "id": "gs_001",
+          "query_key": "s02.search.gs_001",
+          "timestamp": "2025-02-24T22:40:00"
+        },
+        {
+          "id": "gs_002",
+          "query_key": "s02.search.gs_002",
+          "timestamp": "2025-02-24T22:55:00"
+        },
+        {
+          "id": "gs_003",
+          "query_key": "s02.search.gs_003",
+          "timestamp": "2025-02-26T19:30:00"
+        },
+        {
+          "id": "gs_004",
+          "query_key": "s02.search.gs_004",
+          "timestamp": "2025-03-06T02:10:00"
+        },
+        {
+          "id": "gs_005",
+          "query_key": "s02.search.gs_005",
+          "timestamp": "2025-03-06T02:22:00"
+        },
+        {
+          "id": "gs_006",
+          "query_key": "s02.search.gs_006",
+          "timestamp": "2025-01-30T14:00:00"
+        },
+        {
+          "id": "gs_010",
+          "query_key": "s02.search.gs_010",
+          "timestamp": "2025-03-06T11:40:00"
+        },
+        {
+          "id": "gs_011",
+          "query_key": "s02.search.gs_011",
+          "timestamp": "2025-03-05T20:15:00"
+        },
+        {
+          "id": "gs_012",
+          "query_key": "s02.search.gs_012",
+          "timestamp": "2025-03-05T13:05:00"
+        },
+        {
+          "id": "gs_013",
+          "query_key": "s02.search.gs_013",
+          "timestamp": "2025-03-04T23:50:00"
+        },
+        {
+          "id": "gs_014",
+          "query_key": "s02.search.gs_014",
+          "timestamp": "2025-03-03T16:30:00"
+        },
+        {
+          "id": "gs_015",
+          "query_key": "s02.search.gs_015",
+          "timestamp": "2025-03-02T10:10:00"
+        },
+        {
+          "id": "gs_016",
+          "query_key": "s02.search.gs_016",
+          "timestamp": "2025-02-28T21:35:00"
+        },
+        {
+          "id": "gs_017",
+          "query_key": "s02.search.gs_017",
+          "timestamp": "2025-02-27T15:20:00"
+        },
+        {
+          "id": "gs_018",
+          "query_key": "s02.search.gs_018",
+          "timestamp": "2025-02-22T12:45:00"
+        },
+        {
+          "id": "gs_019",
+          "query_key": "s02.search.gs_019",
+          "timestamp": "2025-02-18T19:55:00"
+        },
+        {
+          "id": "gs_020",
+          "query_key": "s02.search.gs_020",
+          "timestamp": "2025-02-11T08:25:00"
+        },
+        {
+          "id": "gs_021",
+          "query_key": "s02.search.gs_021",
+          "timestamp": "2025-01-27T23:10:00"
+        },
+        {
+          "id": "f_gs_001",
+          "query_key": "s02.search.f_gs_101",
+          "timestamp": "2025-01-21T19:10:00"
+        },
+        {
+          "id": "f_gs_002",
+          "query_key": "s02.search.f_gs_102",
+          "timestamp": "2025-01-14T20:02:00"
+        },
+        {
+          "id": "f_gs_003",
+          "query_key": "s02.search.f_gs_103",
+          "timestamp": "2025-02-03T11:45:00"
+        },
+        {
+          "id": "f_gs_004",
+          "query_key": "s02.search.f_gs_104",
+          "timestamp": "2025-03-05T10:30:00"
+        },
+        {
+          "id": "f_gs_005",
+          "query_key": "s02.search.f_gs_105",
+          "timestamp": "2025-03-04T20:35:00"
+        },
+        {
+          "id": "f_gs_006",
+          "query_key": "s02.search.f_gs_106",
+          "timestamp": "2025-02-24T09:50:00"
+        },
+        {
+          "id": "f_gs_007",
+          "query_key": "s02.search.f_gs_107",
+          "timestamp": "2025-02-25T06:10:00"
+        },
+        {
+          "id": "f_gs_008",
+          "query_key": "s02.search.f_gs_108",
+          "timestamp": "2025-03-06T07:20:00"
+        },
+        {
+          "id": "f_gs_009",
+          "query_key": "s02.search.f_gs_109",
+          "timestamp": "2025-02-02T18:30:00"
+        },
+        {
+          "id": "f_gs_010",
+          "query_key": "s02.search.f_gs_110",
+          "timestamp": "2025-02-26T10:55:00"
+        },
+        {
+          "id": "f_gs_011",
+          "query_key": "s02.search.f_gs_111",
+          "timestamp": "2024-12-02T22:20:00"
+        },
+        {
+          "id": "f_gs_012",
+          "query_key": "s02.search.f_gs_112",
+          "timestamp": "2025-02-18T13:10:00"
+        }
+      ]
+    },
+    "weather": {
+      "location": "Berlin",
+      "current": {
+        "timestamp": "2025-04-04T09:00:00",
+        "temp_celsius": 11,
+        "condition": "cloudy",
+        "humidity": 68,
+        "wind_speed": 12
+      },
+      "hourly": [
+        {
+          "timestamp": "2025-04-04T10:00:00",
+          "temp_celsius": 12,
+          "condition": "cloudy",
+          "humidity": 60,
+          "wind_speed": 8
+        },
+        {
+          "timestamp": "2025-04-04T11:00:00",
+          "temp_celsius": 13,
+          "condition": "cloudy",
+          "humidity": 61,
+          "wind_speed": 9
+        },
+        {
+          "timestamp": "2025-04-04T12:00:00",
+          "temp_celsius": 14,
+          "condition": "sunny",
+          "humidity": 62,
+          "wind_speed": 10
+        },
+        {
+          "timestamp": "2025-04-04T13:00:00",
+          "temp_celsius": 15,
+          "condition": "sunny",
+          "humidity": 63,
+          "wind_speed": 11
+        },
+        {
+          "timestamp": "2025-04-04T14:00:00",
+          "temp_celsius": 15,
+          "condition": "sunny",
+          "humidity": 64,
+          "wind_speed": 12
+        },
+        {
+          "timestamp": "2025-04-04T15:00:00",
+          "temp_celsius": 16,
+          "condition": "sunny",
+          "humidity": 65,
+          "wind_speed": 13
+        },
+        {
+          "timestamp": "2025-04-04T16:00:00",
+          "temp_celsius": 15,
+          "condition": "cloudy",
+          "humidity": 66,
+          "wind_speed": 8
+        },
+        {
+          "timestamp": "2025-04-04T17:00:00",
+          "temp_celsius": 14,
+          "condition": "cloudy",
+          "humidity": 60,
+          "wind_speed": 9
+        },
+        {
+          "timestamp": "2025-04-04T18:00:00",
+          "temp_celsius": 13,
+          "condition": "rainy",
+          "humidity": 61,
+          "wind_speed": 10
+        },
+        {
+          "timestamp": "2025-04-04T19:00:00",
+          "temp_celsius": 12,
+          "condition": "rainy",
+          "humidity": 62,
+          "wind_speed": 11
+        },
+        {
+          "timestamp": "2025-04-04T20:00:00",
+          "temp_celsius": 11,
+          "condition": "cloudy",
+          "humidity": 63,
+          "wind_speed": 12
+        },
+        {
+          "timestamp": "2025-04-04T21:00:00",
+          "temp_celsius": 10,
+          "condition": "cloudy",
+          "humidity": 64,
+          "wind_speed": 13
+        }
+      ],
+      "daily": [
+        {
+          "timestamp": "2025-04-05T12:00:00",
+          "temp_celsius": 14,
+          "condition": "sunny",
+          "humidity": 55,
+          "wind_speed": 7
+        },
+        {
+          "timestamp": "2025-04-06T12:00:00",
+          "temp_celsius": 16,
+          "condition": "sunny",
+          "humidity": 56,
+          "wind_speed": 8
+        },
+        {
+          "timestamp": "2025-04-07T12:00:00",
+          "temp_celsius": 13,
+          "condition": "rainy",
+          "humidity": 57,
+          "wind_speed": 9
+        },
+        {
+          "timestamp": "2025-04-08T12:00:00",
+          "temp_celsius": 11,
+          "condition": "rainy",
+          "humidity": 58,
+          "wind_speed": 10
+        },
+        {
+          "timestamp": "2025-04-09T12:00:00",
+          "temp_celsius": 12,
+          "condition": "cloudy",
+          "humidity": 59,
+          "wind_speed": 11
+        },
+        {
+          "timestamp": "2025-04-10T12:00:00",
+          "temp_celsius": 15,
+          "condition": "cloudy",
+          "humidity": 60,
+          "wind_speed": 7
+        },
+        {
+          "timestamp": "2025-04-11T12:00:00",
+          "temp_celsius": 17,
+          "condition": "sunny",
+          "humidity": 61,
+          "wind_speed": 8
+        }
+      ]
+    },
+    "rides": {
+      "trips": [
+        {
+          "id": "rd_001",
+          "pickup": "Weichselstrasse 4, Neukolln",
+          "dropoff": "Ohlauer Strasse 22, Kreuzberg",
+          "requested_at": "2025-03-02T20:08:00",
+          "picked_up_at": "2025-03-02T20:14:00",
+          "dropped_off_at": "2025-03-02T20:29:00",
+          "fare": "11.40 €",
+          "driver": "Emre",
+          "distance_km": 5,
+          "duration_min": 15,
+          "status": "completed"
+        },
+        {
+          "id": "rd_002",
+          "pickup": "Weichselstrasse 4, Neukolln",
+          "dropoff": "Flughafen BER, Terminal 1",
+          "requested_at": "2025-02-19T09:10:00",
+          "picked_up_at": "2025-02-19T09:17:00",
+          "dropped_off_at": "2025-02-19T10:02:00",
+          "fare": "38.90 €",
+          "driver": "Katrin",
+          "distance_km": 29,
+          "duration_min": 45,
+          "status": "completed"
+        },
+        {
+          "id": "rd_003",
+          "pickup": "Torstrasse 91, Mitte",
+          "dropoff": "Weichselstrasse 4, Neukolln",
+          "requested_at": "2025-02-14T23:46:00",
+          "picked_up_at": "2025-02-14T23:52:00",
+          "dropped_off_at": "2025-02-15T00:11:00",
+          "fare": "14.20 €",
+          "driver": "Mehmet",
+          "distance_km": 8,
+          "duration_min": 19,
+          "status": "completed"
+        },
+        {
+          "id": "rd_004",
+          "pickup": "Ohlauer Strasse 22, Kreuzberg",
+          "dropoff": "Weichselstrasse 4, Neukolln",
+          "requested_at": "2025-02-05T21:33:00",
+          "fare": "",
+          "driver": "",
+          "status": "cancelled"
+        },
+        {
+          "id": "rd_101",
+          "pickup": "Weichselstrasse 4, Neukolln",
+          "dropoff": "Reinickendorfer Strasse 55, Wedding",
+          "requested_at": "2025-03-04T08:30:00",
+          "picked_up_at": "2025-03-04T08:30:00",
+          "dropped_off_at": "2025-03-04T08:30:00",
+          "fare": "24.80 €",
+          "driver": "Kasia",
+          "distance_km": 13,
+          "duration_min": 42,
+          "status": "completed"
+        },
+        {
+          "id": "rd_102",
+          "pickup": "Uferstrasse 8, Wedding",
+          "dropoff": "Sredzkistrasse 12, Prenzlauer Berg",
+          "requested_at": "2025-02-27T15:35:00",
+          "picked_up_at": "2025-02-27T15:35:00",
+          "dropped_off_at": "2025-02-27T15:35:00",
+          "fare": "15.60 €",
+          "driver": "Amir",
+          "distance_km": 7,
+          "duration_min": 24,
+          "status": "completed"
+        },
+        {
+          "id": "rd_103",
+          "pickup": "Weichselstrasse 4, Neukolln",
+          "dropoff": "Karl-Marx-Allee 78, Friedrichshain",
+          "requested_at": "2025-02-26T07:55:00",
+          "picked_up_at": "2025-02-26T07:55:00",
+          "dropped_off_at": "2025-02-26T07:55:00",
+          "fare": "12.90 €",
+          "driver": "Dilan",
+          "distance_km": 6,
+          "duration_min": 19,
+          "status": "completed"
+        },
+        {
+          "id": "rd_104",
+          "pickup": "Brunnenstrasse 141, Mitte",
+          "dropoff": "Weichselstrasse 4, Neukolln",
+          "requested_at": "2025-02-26T14:10:00",
+          "picked_up_at": "2025-02-26T14:10:00",
+          "dropped_off_at": "2025-02-26T14:10:00",
+          "fare": "17.20 €",
+          "driver": "Marek",
+          "distance_km": 8,
+          "duration_min": 27,
+          "status": "completed"
+        },
+        {
+          "id": "rd_105",
+          "pickup": "Weichselstrasse 4, Neukolln",
+          "dropoff": "Uferstrasse 8, Wedding",
+          "requested_at": "2025-03-06T14:40:00",
+          "picked_up_at": "2025-03-06T14:40:00",
+          "dropped_off_at": "2025-03-06T14:40:00",
+          "fare": "14.10 €",
+          "driver": "Suleyman",
+          "distance_km": 7,
+          "duration_min": 21,
+          "status": "completed"
+        },
+        {
+          "id": "rd_106",
+          "pickup": "Uferstrasse 8, Wedding",
+          "dropoff": "Weichselstrasse 4, Neukolln",
+          "requested_at": "2025-03-06T16:15:00",
+          "picked_up_at": "2025-03-06T16:15:00",
+          "dropped_off_at": "2025-03-06T16:15:00",
+          "fare": "15.00 €",
+          "driver": "Nour",
+          "distance_km": 7,
+          "duration_min": 23,
+          "status": "completed"
+        }
+      ]
+    },
+    "health": {
+      "days": [
+        {
+          "date": "2025-03-08",
+          "steps": 210,
+          "resting_bpm": null
+        },
+        {
+          "date": "2025-03-07",
+          "steps": 9870,
+          "sleep_hours": 5.1,
+          "resting_bpm": 67
+        },
+        {
+          "date": "2025-03-06",
+          "steps": 11240,
+          "sleep_hours": 5.8,
+          "resting_bpm": 64
+        },
+        {
+          "date": "2025-03-05",
+          "steps": 13610,
+          "sleep_hours": 6.4,
+          "resting_bpm": 62
+        },
+        {
+          "date": "2025-03-04",
+          "steps": 8930,
+          "sleep_hours": 7.0,
+          "resting_bpm": 60
+        },
+        {
+          "date": "2025-03-03",
+          "steps": 10450,
+          "sleep_hours": 6.9,
+          "resting_bpm": 61
+        },
+        {
+          "date": "2025-03-02",
+          "steps": 14780,
+          "sleep_hours": 7.6,
+          "resting_bpm": 59
+        },
+        {
+          "date": "2025-03-01",
+          "steps": 7120,
+          "sleep_hours": 8.2,
+          "resting_bpm": 58
+        },
+        {
+          "date": "2025-02-28",
+          "steps": 12030,
+          "sleep_hours": 6.1,
+          "resting_bpm": 63
+        },
+        {
+          "date": "2025-02-27",
+          "steps": 9540,
+          "sleep_hours": 6.7,
+          "resting_bpm": 61
+        },
+        {
+          "date": "2025-02-22",
+          "steps": 4820,
+          "resting_bpm": 58,
+          "sleep_hours": 7.5
+        },
+        {
+          "date": "2025-02-23",
+          "steps": 3110,
+          "resting_bpm": 59,
+          "sleep_hours": 8.1
+        },
+        {
+          "date": "2025-02-24",
+          "steps": 7640,
+          "resting_bpm": 60,
+          "sleep_hours": 6.2
+        },
+        {
+          "date": "2025-02-25",
+          "steps": 6205,
+          "resting_bpm": 61,
+          "sleep_hours": 7.0
+        },
+        {
+          "date": "2025-02-26",
+          "steps": 9180,
+          "resting_bpm": 62,
+          "sleep_hours": 5.4
+        }
+      ]
+    },
+    "ereader": {
+      "account_label": "Margin — m.sorensen",
+      "books": [
+        {
+          "id": "bk_001",
+          "title": "Available Light",
+          "author": "Renske Bohl",
+          "progress_percent": 88,
+          "last_opened_at": "2025-03-05T00:20:00",
+          "open_count": 47
+        },
+        {
+          "id": "bk_002",
+          "title": "Frames Per Second",
+          "author": "Jonas Weiler",
+          "progress_percent": 100,
+          "last_opened_at": "2024-10-11T21:40:00",
+          "open_count": 63
+        },
+        {
+          "id": "bk_003",
+          "title": "The Quiet Hour",
+          "author": "Marit Lovaas",
+          "progress_percent": 41,
+          "last_opened_at": "2025-02-19T23:05:00",
+          "open_count": 12
+        },
+        {
+          "id": "bk_101",
+          "title": "The Craftsman",
+          "author": "Richard Sennett",
+          "progress_percent": 34,
+          "last_opened_at": "2025-02-16T22:40:00",
+          "open_count": 12
+        },
+        {
+          "id": "bk_102",
+          "title": "Kiln Construction",
+          "author": "Ian Gregory",
+          "progress_percent": 61,
+          "last_opened_at": "2025-01-28T19:05:00",
+          "open_count": 31
+        },
+        {
+          "id": "bk_103",
+          "title": "The Unknown Craftsman",
+          "author": "Soetsu Yanagi",
+          "progress_percent": 100,
+          "last_opened_at": "2024-12-19T23:10:00",
+          "open_count": 22
+        },
+        {
+          "id": "bk_104",
+          "title": "On Weathering",
+          "author": "Mohsen Mostafavi",
+          "progress_percent": 8,
+          "last_opened_at": "2025-03-02T21:55:00",
+          "open_count": 3
+        },
+        {
+          "id": "bk_105",
+          "title": "Glass: A World History",
+          "author": "Alan Macfarlane",
+          "progress_percent": 47,
+          "last_opened_at": "2025-02-08T20:20:00",
+          "open_count": 9
+        }
+      ]
+    },
+    "clock": {
+      "alarms": [
+        {
+          "id": "al_001",
+          "time": "04:00",
+          "label_key": "s02.clock.al_001",
+          "days": [
+            "Tue",
+            "Thu"
+          ],
+          "is_enabled": true
+        },
+        {
+          "id": "al_002",
+          "time": "11:30",
+          "label_key": "s02.clock.al_002",
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "is_enabled": true
+        },
+        {
+          "id": "al_101",
+          "time": "06:30",
+          "label_key": "s02.clock.f_al_101",
+          "days": [
+            "Fri"
+          ],
+          "is_enabled": true
+        },
+        {
+          "id": "al_102",
+          "time": "19:45",
+          "label_key": "s02.clock.f_al_102",
+          "days": [
+            "Sun"
+          ],
+          "is_enabled": false
+        }
+      ],
+      "world_clocks": [
+        {
+          "city": "Berlin",
+          "timezone": "CET"
+        },
+        {
+          "city": "Lisbon",
+          "timezone": "WET"
+        },
+        {
+          "city": "Reykjavík",
+          "timezone": "GMT"
+        }
+      ]
+    },
+    "settings": {
+      "wifi_history": [
+        {
+          "id": "wf_001",
+          "network_name": "Uferhallen-Studios",
+          "connected_at": "2025-03-07T21:02:00",
+          "location_hint": "Wedding"
+        },
+        {
+          "id": "wf_002",
+          "network_name": "Sorensen-Home",
+          "connected_at": "2025-03-07T18:45:00",
+          "location_hint": "Prenzlauer Berg"
+        },
+        {
+          "id": "wf_003",
+          "network_name": "Rohde-Gallery",
+          "connected_at": "2025-03-03T11:05:00",
+          "location_hint": "Charlottenburg"
+        },
+        {
+          "id": "wf_004",
+          "network_name": "DB-WIFI",
+          "connected_at": "2025-03-06T21:20:00",
+          "location_hint": "Hauptbahnhof"
+        },
+        {
+          "id": "f_wf_101",
+          "network_name": "TonUndErde-Gast",
+          "connected_at": "2025-03-04T09:12:00",
+          "location_hint": "Wedding"
+        },
+        {
+          "id": "f_wf_102",
+          "network_name": "Kollwitz-Werkstatt",
+          "connected_at": "2025-02-27T16:08:00",
+          "location_hint": "Prenzlauer Berg"
+        },
+        {
+          "id": "f_wf_103",
+          "network_name": "CafeAmUfer",
+          "connected_at": "2025-03-06T15:05:00",
+          "location_hint": "Wedding"
+        },
+        {
+          "id": "f_wf_104",
+          "network_name": "Nordstern-Besucher",
+          "connected_at": "2025-02-26T13:25:00",
+          "location_hint": "Mitte"
+        },
+        {
+          "id": "f_wf_105",
+          "network_name": "FRITZ!Box 7590 XW",
+          "connected_at": "2025-03-06T18:40:00",
+          "location_hint": "Neukölln"
+        },
+        {
+          "id": "f_wf_106",
+          "network_name": "BVG Wi-Fi",
+          "connected_at": "2025-03-01T08:05:00",
+          "location_hint": "U-Bahn"
+        },
+        {
+          "id": "f_wf_107",
+          "network_name": "Praxis-Adler-Gast",
+          "connected_at": "2025-02-26T08:32:00",
+          "location_hint": "Friedrichshain"
+        }
+      ],
+      "app_usage": [
+        {
+          "app_name": "Instagram",
+          "daily_average_minutes": 96,
+          "this_week": [
+            {
+              "day": "Thu",
+              "minutes": 88
+            },
+            {
+              "day": "Fri",
+              "minutes": 41
+            }
+          ]
+        },
+        {
+          "app_name": "Files",
+          "daily_average_minutes": 34,
+          "this_week": [
+            {
+              "day": "Thu",
+              "minutes": 52
+            },
+            {
+              "day": "Fri",
+              "minutes": 77
+            }
+          ]
+        },
+        {
+          "app_name": "Notes",
+          "daily_average_minutes": 18,
+          "this_week": [
+            {
+              "day": "Thu",
+              "minutes": 30
+            },
+            {
+              "day": "Fri",
+              "minutes": 44
+            }
+          ]
+        }
+      ]
+    },
+    "vault": {
+      "login_required": true,
+      "master": "halcyon-is-not-mine",
+      "master_hint_key": "s02.keychain.master_hint",
+      "account_label": "Maya Sorensen — Keychain",
+      "entries": [
+        {
+          "id": "v_001",
+          "label_key": "s02.keychain.v_001.label",
+          "username_key": "s02.keychain.v_001.username",
+          "password": "R0hde-Vessel-21",
+          "last_modified": "2025-02-12T10:00:00"
+        },
+        {
+          "id": "v_002",
+          "label_key": "s02.keychain.v_002.label",
+          "username_key": "s02.keychain.v_002.username",
+          "password": "4471-Vogt-Audit",
+          "last_modified": "2025-02-26T18:30:00",
+          "note_key": "s02.keychain.v_002.note"
+        },
+        {
+          "id": "v_003",
+          "label_key": "s02.keychain.v_003.label",
+          "username_key": "s02.keychain.v_003.username",
+          "password": "atelier-local-9",
+          "last_modified": "2025-01-05T12:00:00",
+          "note_key": "s02.keychain.v_003.note"
+        },
+        {
+          "id": "f_v_101",
+          "label_key": "s02.keychain.f_v_101.label",
+          "username_key": "s02.keychain.f_v_101.username",
+          "password": "Grog-Depot-55",
+          "last_modified": "2024-09-11T10:00:00"
+        },
+        {
+          "id": "f_v_102",
+          "label_key": "s02.keychain.f_v_102.label",
+          "username_key": "s02.keychain.f_v_102.username",
+          "password": "Ubahn!2025",
+          "last_modified": "2025-01-02T08:30:00"
+        },
+        {
+          "id": "f_v_103",
+          "label_key": "s02.keychain.f_v_103.label",
+          "username_key": "s02.keychain.f_v_103.username",
+          "password": "Studio2B-uferhallen",
+          "last_modified": "2024-10-18T14:00:00"
+        },
+        {
+          "id": "f_v_104",
+          "label_key": "s02.keychain.f_v_104.label",
+          "username_key": "s02.keychain.f_v_104.username",
+          "password": "cone04hold",
+          "last_modified": "2025-01-14T19:20:00"
+        },
+        {
+          "id": "f_v_105",
+          "label_key": "s02.keychain.f_v_105.label",
+          "username_key": "s02.keychain.f_v_105.username",
+          "password": "nordstern-2025",
+          "last_modified": "2025-02-26T11:30:00"
+        },
+        {
+          "id": "f_v_106",
+          "label_key": "s02.keychain.f_v_106.label",
+          "username_key": "s02.keychain.f_v_106.username",
+          "password": "Vatten-441-fall",
+          "last_modified": "2024-12-01T09:45:00"
+        }
+      ]
+    },
+    "cloud": {
+      "account_label": "Studio Drive — studio@mayasorensen.com",
+      "folders": [
+        {
+          "id": "cfo_001",
+          "name_key": "s02.cloud.cfo_001",
+          "files": [
+            {
+              "id": "cf_001",
+              "name_key": "s02.cloud.cf_001.name",
+              "created_at": "2024-11-02T10:00:00",
+              "modified_at": "2025-03-05T19:00:00",
+              "size": "1.2 GB",
+              "body_key": "s02.cloud.cf_001.body"
+            },
+            {
+              "id": "cf_002",
+              "name_key": "s02.cloud.cf_002.name",
+              "created_at": "2025-02-12T09:00:00",
+              "modified_at": "2025-03-04T17:40:00",
+              "size": "84 KB",
+              "body_key": "s02.cloud.cf_002.body"
+            },
+            {
+              "id": "cf_003",
+              "name_key": "s02.cloud.cf_003.name",
+              "created_at": "2025-02-26T18:40:00",
+              "modified_at": "2025-03-06T01:12:00",
+              "size": "640 KB",
+              "is_locked": true,
+              "lock_password": "4471",
+              "body_key": "s02.cloud.cf_003.body"
+            },
+            {
+              "id": "cf_004",
+              "name_key": "s02.cloud.cf_004.name",
+              "created_at": "2025-03-19T02:47:00",
+              "modified_at": "2025-04-04T01:02:00",
+              "size": "12 KB",
+              "body_key": "s02.cloud.cf_004.body"
+            },
+            {
+              "id": "cf_010",
+              "name_key": "s02.cloud.cf_010.name",
+              "created_at": "2024-12-14T15:20:00",
+              "modified_at": "2025-03-05T12:30:00",
+              "size": "2.4 MB",
+              "body_key": "s02.cloud.cf_010.body"
+            },
+            {
+              "id": "cf_011",
+              "name_key": "s02.cloud.cf_011.name",
+              "created_at": "2025-01-08T11:00:00",
+              "modified_at": "2025-02-27T16:45:00",
+              "size": "38 KB",
+              "body_key": "s02.cloud.cf_011.body"
+            },
+            {
+              "id": "cf_012",
+              "name_key": "s02.cloud.cf_012.name",
+              "created_at": "2025-02-06T20:10:00",
+              "modified_at": "2025-03-04T22:05:00",
+              "size": "410 MB",
+              "body_key": "s02.cloud.cf_012.body"
+            }
+          ]
+        },
+        {
+          "id": "folder_glaze",
+          "name_key": "s02.cloud.f_folder_glaze",
+          "files": [
+            {
+              "id": "f_cf_101",
+              "name_key": "s02.cloud.f_cf_101.name",
+              "created_at": "2025-01-20T18:10:00",
+              "modified_at": "2025-03-04T20:12:00",
+              "size": "48 KB",
+              "body_key": "s02.cloud.f_cf_101.body"
+            },
+            {
+              "id": "f_cf_102",
+              "name_key": "s02.cloud.f_cf_102.name",
+              "created_at": "2024-11-30T09:00:00",
+              "modified_at": "2025-03-04T12:30:00",
+              "size": "6 KB",
+              "body_key": "s02.cloud.f_cf_102.body"
+            }
+          ]
+        },
+        {
+          "id": "folder_admin",
+          "name_key": "s02.cloud.f_folder_admin",
+          "files": [
+            {
+              "id": "f_cf_103",
+              "name_key": "s02.cloud.f_cf_103.name",
+              "created_at": "2025-02-19T08:05:00",
+              "modified_at": "2025-02-19T08:05:00",
+              "size": "210 KB",
+              "body_key": "s02.cloud.f_cf_103.body"
+            },
+            {
+              "id": "f_cf_104",
+              "name_key": "s02.cloud.f_cf_104.name",
+              "created_at": "2025-03-04T20:45:00",
+              "modified_at": "2025-03-04T21:12:00",
+              "size": "18 KB",
+              "body_key": "s02.cloud.f_cf_104.body"
+            },
+            {
+              "id": "f_cf_105",
+              "name_key": "s02.cloud.f_cf_105.name",
+              "created_at": "2025-03-05T10:50:00",
+              "modified_at": "2025-03-05T10:50:00",
+              "size": "2.4 MB",
+              "body_key": "s02.cloud.f_cf_105.body"
+            }
+          ]
+        }
+      ]
+    },
+    "access": {
+      "account_label": "Uferhallen — Studio 4",
+      "events": [
+        {
+          "id": "ac_001",
+          "type": "door",
+          "actor_key": "s02.access.actor_maya",
+          "detail_key": "s02.access.ac_001.detail",
+          "source_key": "s02.access.src_card",
+          "result_key": "s02.access.result_granted",
+          "timestamp": "2025-03-07T20:55:00",
+          "flagged": false
+        },
+        {
+          "id": "ac_002",
+          "type": "door",
+          "actor_key": "s02.access.actor_leo",
+          "detail_key": "s02.access.ac_002.detail",
+          "source_key": "s02.access.src_card",
+          "result_key": "s02.access.result_granted",
+          "timestamp": "2025-03-07T21:00:00",
+          "flagged": false
+        },
+        {
+          "id": "ac_003",
+          "type": "door",
+          "actor_key": "s02.access.actor_leo",
+          "detail_key": "s02.access.ac_003.detail",
+          "source_key": "s02.access.src_card",
+          "result_key": "s02.access.result_granted",
+          "timestamp": "2025-03-07T22:34:00",
+          "flagged": false
+        },
+        {
+          "id": "ac_004",
+          "type": "door",
+          "actor_key": "s02.access.actor_leo",
+          "detail_key": "s02.access.ac_004.detail",
+          "source_key": "s02.access.src_card",
+          "result_key": "s02.access.result_granted",
+          "timestamp": "2025-03-07T23:40:00",
+          "flagged": true
+        },
+        {
+          "id": "ac_005",
+          "type": "other",
+          "actor_key": "s02.access.actor_system",
+          "detail_key": "s02.access.ac_005.detail",
+          "source_key": "s02.access.src_admin",
+          "result_key": "s02.access.result_ok",
+          "timestamp": "2025-02-28T14:18:00",
+          "flagged": true
+        },
+        {
+          "id": "ac_006",
+          "type": "signin",
+          "actor_key": "s02.access.actor_moth",
+          "detail_key": "s02.access.ac_006.detail",
+          "source_key": "s02.access.src_atelier",
+          "result_key": "s02.access.result_ok",
+          "timestamp": "2025-03-19T02:47:00",
+          "flagged": true
+        },
+        {
+          "id": "f_ac_101",
+          "type": "door",
+          "actor_key": "s02.access.actor_maya",
+          "detail_key": "s02.access.f_ac_101.detail",
+          "source_key": "s02.access.src_card",
+          "result_key": "s02.access.result_granted",
+          "timestamp": "2025-02-18T09:02:00",
+          "flagged": false
+        },
+        {
+          "id": "f_ac_102",
+          "type": "door",
+          "actor_key": "s02.access.actor_maya",
+          "detail_key": "s02.access.f_ac_102.detail",
+          "source_key": "s02.access.src_card",
+          "result_key": "s02.access.result_granted",
+          "timestamp": "2025-02-18T09:04:00",
+          "flagged": false
+        },
+        {
+          "id": "f_ac_103",
+          "type": "door",
+          "actor_key": "s02.access.actor_maya",
+          "detail_key": "s02.access.f_ac_103.detail",
+          "source_key": "s02.access.src_card",
+          "result_key": "s02.access.result_granted",
+          "timestamp": "2025-02-23T10:40:00",
+          "flagged": false
+        },
+        {
+          "id": "f_ac_104",
+          "type": "door",
+          "actor_key": "s02.access.actor_maya",
+          "detail_key": "s02.access.f_ac_104.detail",
+          "source_key": "s02.access.src_card",
+          "result_key": "s02.access.result_granted",
+          "timestamp": "2025-02-23T10:52:00",
+          "flagged": false
+        },
+        {
+          "id": "f_ac_105",
+          "type": "door",
+          "actor_key": "s02.access.actor_maya",
+          "detail_key": "s02.access.f_ac_105.detail",
+          "source_key": "s02.access.src_card",
+          "result_key": "s02.access.result_granted",
+          "timestamp": "2025-03-04T08:01:00",
+          "flagged": false
+        },
+        {
+          "id": "f_ac_106",
+          "type": "door",
+          "actor_key": "s02.access.actor_maya",
+          "detail_key": "s02.access.f_ac_106.detail",
+          "source_key": "s02.access.src_card",
+          "result_key": "s02.access.result_granted",
+          "timestamp": "2025-03-04T12:12:00",
+          "flagged": false
+        }
+      ]
+    },
+    "voice_memos": {
+      "memos": [
+        {
+          "id": "vm_001",
+          "title_key": "s02.memos.vm_001.title",
+          "recorded_at": "2025-03-07T21:48:00",
+          "duration_sec": 26,
+          "transcript_key": "s02.memos.vm_001.transcript",
+          "location_key": "s02.memos.vm_001.location",
+          "is_deleted": true,
+          "audio_asset": "assets/cases/s02/audio/maya_studio_{lang}.mp3",
+          "audio_langs": [
+            "en"
+          ]
+        },
+        {
+          "id": "vm_002",
+          "title_key": "s02.memos.vm_002.title",
+          "recorded_at": "2025-02-24T23:50:00",
+          "duration_sec": 20,
+          "transcript_key": "s02.memos.vm_002.transcript",
+          "is_deleted": false,
+          "audio_asset": "assets/cases/s02/audio/maya_after_hanna_{lang}.mp3",
+          "audio_langs": [
+            "en"
+          ]
+        },
+        {
+          "id": "vm_003",
+          "title_key": "s02.memos.vm_003.title",
+          "recorded_at": "2025-03-06T03:20:00",
+          "duration_sec": 18,
+          "transcript_key": "s02.memos.vm_003.transcript",
+          "is_deleted": false,
+          "audio_asset": "assets/cases/s02/audio/maya_3am_{lang}.mp3",
+          "audio_langs": [
+            "en"
+          ]
+        },
+        {
+          "id": "vm_004",
+          "title_key": "s02.memos.vm_004.title",
+          "recorded_at": "2025-01-19T12:00:00",
+          "duration_sec": 12,
+          "transcript_key": "s02.memos.vm_004.transcript",
+          "is_deleted": false,
+          "audio_asset": "assets/cases/s02/audio/maya_wall_text_{lang}.mp3",
+          "audio_langs": [
+            "en"
+          ]
+        },
+        {
+          "id": "vm_010",
+          "title_key": "s02.memos.vm_010.title",
+          "recorded_at": "2025-03-05T16:12:00",
+          "duration_sec": 8,
+          "transcript_key": "s02.memos.vm_010.transcript",
+          "location_key": "s02.memos.vm_010.location",
+          "is_deleted": false,
+          "audio_asset": "assets/cases/s02/audio/maya_room_tone_{lang}.mp3",
+          "audio_langs": [
+            "en"
+          ]
+        },
+        {
+          "id": "vm_011",
+          "title_key": "s02.memos.vm_011.title",
+          "recorded_at": "2025-02-18T02:40:00",
+          "duration_sec": 26,
+          "transcript_key": "s02.memos.vm_011.transcript",
+          "is_deleted": false,
+          "audio_asset": "assets/cases/s02/audio/maya_240_{lang}.mp3",
+          "audio_langs": [
+            "en"
+          ]
+        },
+        {
+          "id": "vm_012",
+          "title_key": "s02.memos.vm_012.title",
+          "recorded_at": "2025-01-31T14:05:00",
+          "duration_sec": 9,
+          "transcript_key": "s02.memos.vm_012.transcript",
+          "is_deleted": true,
+          "audio_asset": "assets/cases/s02/audio/maya_shopping_{lang}.mp3",
+          "audio_langs": [
+            "en"
+          ]
+        }
+      ]
+    },
+    "games": {
+      "best_score": 14208,
+      "games_played": 291,
+      "sessions": [
+        {
+          "started_at": "2025-03-04T18:52:00",
+          "duration_min": 14,
+          "score": 3096
+        },
+        {
+          "started_at": "2025-03-03T07:41:00",
+          "duration_min": 9,
+          "score": 2140
+        },
+        {
+          "started_at": "2025-03-02T22:36:00",
+          "duration_min": 31,
+          "score": 8804
+        },
+        {
+          "started_at": "2025-03-02T13:05:00",
+          "duration_min": 4,
+          "score": 612
+        },
+        {
+          "started_at": "2025-02-24T19:18:00",
+          "duration_min": 22,
+          "score": 5470
+        },
+        {
+          "started_at": "2025-02-21T08:02:00",
+          "duration_min": 11,
+          "score": 2988
+        },
+        {
+          "started_at": "2025-02-20T23:14:00",
+          "duration_min": 38,
+          "score": 14208
+        },
+        {
+          "started_at": "2025-02-19T18:44:00",
+          "duration_min": 7,
+          "score": 1104
+        }
+      ]
+    }
+  }
+}

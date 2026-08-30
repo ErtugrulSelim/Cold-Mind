@@ -1,0 +1,102 @@
+﻿[
+    {
+        "name":  "dial",
+        "prompt":  "A square mobile app icon, 1024x1024. The whole square is filled by an emerald green plate, #2E7D57 fading to #1E5E40, with a soft light from the upper-left; the colour reaches all four edges. Centred on it, a white classic telephone handset silhouette tilted 45 degrees with thick rounded strokes, filling about 60% of the square\u0027s width, and two faint concentric white arcs behind its earpiece. Flat modern vector icon design, clean crisp edges, no cast shadow. No text, no letters, no numbers, no wordmark, no logo of any existing company."
+    },
+    {
+        "name":  "texts",
+        "prompt":  "A square mobile app icon, 1024x1024. The whole square is filled by a slate blue-grey plate, #5B6B87 fading to #3E4A61; the colour reaches all four edges. On it, two large rounded speech bubbles overlap in an off-centre composition and together fill about 70% of the square: the front bubble is solid white with a small tail at its bottom-left, the bubble behind it is translucent white, offset up and to the right. Flat modern vector icon design, clean crisp edges, no cast shadow. No text, no letters, no numbers, no wordmark, no logo of any existing company."
+    },
+    {
+        "name":  "circle",
+        "prompt":  "A square mobile app icon, 1024x1024. The teal background colour #2A9D9B fading to #187A78 covers the entire square and runs right off all four edges; there is no inner frame, no border and no lighter margin anywhere. Centred on it, one single large rounded speech bubble in cool off-white #E4E8EF with a short tail at its bottom-left, filling about 68% of the square, and inside the bubble three evenly spaced solid teal dots in a horizontal row. A chat app: one bubble with three dots, nothing else. Flat modern vector icon design, clean crisp edges, no cast shadow. No text, no letters, no numbers, no wordmark, no logo of any existing company."
+    },
+    {
+        "name":  "inbox",
+        "prompt":  "A square mobile app icon, 1024x1024. The whole square is filled by a navy plate, #44618F fading to #2C4368; the colour reaches all four edges. On it, a cool off-white open-topped document tray in slight isometric perspective sits across the lower half and spans about 70% of the square\u0027s width, with one sheet of paper rising vertically out of it. It is a paper tray, never a sealed envelope. Flat modern vector icon design, clean crisp edges, one soft shadow only where the sheet meets the tray. No text, no letters, no numbers, no wordmark, no logo of any existing company."
+    },
+    {
+        "name":  "frames",
+        "prompt":  "A square mobile app icon, 1024x1024. The violet background colour #6E4BC4 fading to #3F2A80 covers the entire square and runs right off all four edges — there is no inner frame, no border, no outline and no lighter margin anywhere. On it, three cool off-white square outlines of the same size are stacked with a clear diagonal offset, each shifted down and to the right of the one behind it so all three are plainly visible as separate overlapping squares, together spanning about 72% of the square. Drawn flat and face-on with no perspective and no vanishing point. Not a camera, and no rainbow or multicolour gradient anywhere. Flat modern vector icon design, clean crisp edges, no cast shadow. No text, no letters, no numbers, no wordmark, no logo of any existing company."
+    },
+    {
+        "name":  "album",
+        "prompt":  "A square mobile app icon, 1024x1024. The whole square is filled by a cool pale grey plate #D8DEE7; the colour reaches all four edges. On it, four large photographic prints are fanned out at different angles, overlapping each other, and together they fill about 80% of the square, nearly reaching its edges. The four prints are dusty blue, sage grey, pale mint and slate, each with a thin white border. Bold and graphic, filling the frame. Flat modern vector icon design, clean crisp edges, only slight shadows between the overlapping prints. No text, no letters, no numbers, no wordmark, no logo of any existing company."
+    },
+    {
+        "name":  "pages",
+        "prompt":  "A square mobile app icon, 1024x1024. The whole square is filled by cool pale grey ruled paper #DDE3EB reaching all four edges, with a very subtle paper grain. Across it run four horizontal graphite ruled lines spanning about 70% of the width, plus one vertical red margin rule down the left quarter of the square. The top-right corner of the paper is slightly curled back with a soft shadow beneath the curl. A material, tactile sheet of ruled paper filling the whole tile. Flat modern vector icon design, clean crisp edges. No text, no letters, no numbers, no wordmark, no logo of any existing company."
+    },
+    {
+        "name":  "atlas",
+        "prompt":  "A square mobile app icon, 1024x1024. The whole square is filled, edge to edge, by a stylised top-down city map: pale sage green land, one deep blue river curving from top-left to bottom-right, two cool off-white road lines crossing it, and small blocks of buildings. The map artwork covers the entire tile with no border and no margin. A single solid vermilion location pin, about 25% of the square\u0027s height, sits upper-right of centre. Flat modern vector icon design, clean crisp edges, one soft shadow under the pin only. No text, no letters, no numbers, no wordmark, no logo of any existing company."
+    },
+    {
+        "name":  "slate",
+        "prompt":  "A square mobile app icon, 1024x1024. The deep oxblood background colour #6B2F35 fading to #3D171C covers the entire square and runs right off all four edges — a dark, desaturated, serious burgundy, never orange, never bright red, never pink. There is no inner frame, no border and no lighter margin anywhere. Centred on it, a large hash mark built from four thick rounded cool off-white bars, two near-vertical and two near-horizontal, crossing slightly off-square and filling about 62% of the square, with one bar drawn a shade lighter so the mark reads as layered. Flat modern vector icon design, clean crisp edges, no cast shadow. No text, no letters, no numbers, no wordmark, no logo of any existing company."
+    },
+    {
+        "name":  "locker",
+        "prompt":  "A square mobile app icon, 1024x1024. The whole square is filled by a steel blue plate, #4A7EA8 fading to #2E5878; the colour reaches all four edges. Centred on it, a large white cloud silhouette filling about 70% of the square\u0027s width, with a bright highlight along its upper edge and a keyhole punched clean through its centre revealing a darker blue layer beneath, so the cloud reads as having thickness. Flat modern vector icon design, clean crisp edges, no cast shadow. No text, no letters, no numbers, no wordmark, no logo of any existing company."
+    },
+    {
+        "name":  "keyring",
+        "prompt":  "A square mobile app icon, 1024x1024. The whole square is filled by an aubergine plate, #6B3F63 fading to #42263E; the colour reaches all four edges. Centred on it, a large brushed steel key lying at a 30 degree angle and spanning about 65% of the square, its bow at the upper-left and two teeth at the lower-right, with a soft specular highlight along the shaft. Cool brushed steel, never brass, never gold, never yellow. Flat modern vector icon design, clean crisp edges. No text, no letters, no numbers, no wordmark, no logo of any existing company."
+    },
+    {
+        "name":  "access",
+        "prompt":  "A square mobile app icon, 1024x1024. The whole square is filled by an indigo plate, #41569C fading to #27336B; the colour reaches all four edges. Centred on it, a cool off-white ID badge card tilted about 8 degrees and filling about 60% of the square, with a grey lanyard clip at its top edge, a small square photo area and two short blank bars where a name would sit. Flat modern vector icon design, clean crisp edges, one soft shadow under the card. No text, no letters, no numbers, no wordmark, no logo of any existing company."
+    },
+    {
+        "name":  "recorder",
+        "prompt":  "A square mobile app icon, 1024x1024. The whole square is filled by a near-black plate #17181C with a faint vertical brushed-metal sheen; the colour reaches all four edges. Across the middle, nine vertical bars in muted red #D9534F span about 70% of the square\u0027s width, their heights rising to a peak in the centre and falling away to the sides, the central bars brightest. A level meter caught mid-reading. Flat modern vector icon design, clean crisp edges, no cast shadow. No text, no letters, no numbers, no wordmark, no logo of any existing company."
+    },
+    {
+        "name":  "ledger",
+        "prompt":  "A square mobile app icon, 1024x1024. The deep sea-green background colour #2C7A72 fading to #19514C covers the entire square and runs right off all four edges; there is no inner frame, no border and no lighter margin anywhere. Centred on it, one cool off-white #E4E8EF banknote drawn as a wide rounded rectangle seen face-on with a plain circle in its middle, filling about 66% of the square\u0027s width, and one round silver-grey coin overlapping its lower-right corner. A money app: a banknote and a coin, never a book, never a page. Flat modern vector icon design, clean crisp edges, no cast shadow. No text, no letters, no numbers, no wordmark, no logo of any existing company."
+    },
+    {
+        "name":  "lookup",
+        "prompt":  "A square mobile app icon, 1024x1024. The graphite background colour #4C5058 fading to #2B2E34 covers the entire square and runs right off all four edges; there is no inner frame, no border and no lighter margin anywhere. Centred on it, one thick cool off-white #E4E8EF magnifying glass filling about 66% of the square: a bold circular lens ring with a short thick handle pointing to the lower-right, and inside the lens three short horizontal pale cyan #6FD8F0 lines stacked like lines of a search result. A search app: a magnifier with results inside it. Flat modern vector icon design, clean crisp edges, no cast shadow. No text, no letters, no numbers, no wordmark, no logo of any existing company."
+    },
+    {
+        "name":  "airwave",
+        "prompt":  "A square mobile app icon, 1024x1024. The purple background colour #7B4BB7 fading to #4A2A78 covers the entire square and runs right off all four edges; there is no inner frame, no border and no lighter margin anywhere. Centred on it, one large cool off-white #E4E8EF musical note - a solid round note head with a straight stem rising from its right side and a single flag curling off the top of the stem - filling about 62% of the square. A music app: one clear musical note. Flat modern vector icon design, clean crisp edges, no cast shadow. No text, no letters, no numbers, no wordmark, no logo of any existing company."
+    },
+    {
+        "name":  "lodge",
+        "prompt":  "A square mobile app icon, 1024x1024. The cool slate blue background colour #3A5A78 fading to #1E3348 covers the entire square and runs right off all four edges; there is no inner frame, no border and no lighter margin anywhere. Centred on it, one large cool off-white #E4E8EF bed seen from the side - a flat mattress with a headboard rising at its left end and one pillow on top - filling about 66% of the square\u0027s width, with a simple pitched roof line floating just above it. A place-to-stay app: a bed under a roof. Flat modern vector icon design, clean crisp edges, no cast shadow. No text, no letters, no numbers, no wordmark, no logo of any existing company."
+    },
+    {
+        "name":  "spark",
+        "prompt":  "A square mobile app icon, 1024x1024. The whole square is filled by a deep plum plate, #7E3F63 fading to #4E2440; the colour reaches all four edges. On it, two four-pointed sparkles: a large white one in the upper-left spanning about 50% of the square, and a smaller pale ice-blue one in the lower-right, each with a faint radial glow. Never a flame, never a heart, never a pink-to-orange gradient. Flat modern vector icon design, clean crisp edges. No text, no letters, no numbers, no wordmark, no logo of any existing company."
+    },
+    {
+        "name":  "margin",
+        "prompt":  "A square mobile app icon, 1024x1024. The whole square is filled by a dark espresso plate #1A1714 with a subtle leather grain; the colour reaches all four edges. Centred on it, a large cool off-white open book filling about 70% of the square, its pages gently curved rather than flat, a visible spine shadow down the middle, and a deep-red ribbon bookmark hanging from the top of the spine. Flat modern vector icon design, clean crisp edges. No text, no letters, no numbers, no wordmark, no logo of any existing company."
+    },
+    {
+        "name":  "fare",
+        "prompt":  "A square mobile app icon, 1024x1024. The deep navy background colour #1F3A5F fading to #14263D covers the entire square and runs right off all four edges; there is no inner frame, no border and no lighter margin anywhere. Centred on it, one cool off-white #E4E8EF car seen from the side with two visible wheels, filling about 60% of the square\u0027s width, and directly above its roof one solid pale cyan #6FD8F0 map location pin, the classic teardrop shape with a hole in the middle, about 26% of the square\u0027s height. A ride-hailing app: a car with a location pin over it. Flat modern vector icon design, clean crisp edges, no cast shadow. No text, no letters, no numbers, no wordmark, no logo of any existing company."
+    },
+    {
+        "name":  "pulse",
+        "prompt":  "A square mobile app icon, 1024x1024. The whole square is filled by a deep wine plate, #9B2F4A fading to crimson #5E1B2C; the colour reaches all four edges. A single white heartbeat trace runs the full width of the square from the left edge to the right edge across the middle: flat, then one sharp tall peak and trough just left of centre, then flat again, with a soft white glow around the peak. Flat modern vector icon design, clean crisp edges. No text, no letters, no numbers, no wordmark, no logo of any existing company."
+    },
+    {
+        "name":  "skies",
+        "prompt":  "A square mobile app icon, 1024x1024. The whole square is filled, edge to edge, by a sky gradient from pale cyan at the top to deeper blue at the bottom. A large pale silver-white sun disc sits in the upper-left spanning about 45% of the square, partly occluded by a soft white cumulus cloud in the lower-right that spans about 60% of the square\u0027s width, with gentle grey shading on the cloud\u0027s underside. Calm and luminous, filling the whole tile. Flat modern vector icon design, clean crisp edges. No text, no letters, no numbers, no wordmark, no logo of any existing company."
+    },
+    {
+        "name":  "settings",
+        "prompt":  "A square mobile app icon, 1024x1024. The whole square is filled by a neutral grey plate, #6A6E76 fading to #43464D; the colour reaches all four edges. Centred on it, a large machined gear with eight square teeth and a wide circular hole at its centre, drawn in pale grey-white and filling about 65% of the square, with a faint inner shadow inside the hole so it reads as cut clean through the plate. Flat modern vector icon design, clean crisp edges, no cast shadow. No text, no letters, no numbers, no wordmark, no logo of any existing company."
+    },
+    {
+        "name":  "tiles",
+        "prompt":  "A square mobile app icon, 1024x1024. The deep indigo background colour #2B2F6B fading to #14163A covers the entire square and runs right off all four edges; there is no inner frame, no border and no lighter margin anywhere. On it, a neat four by four grid of sixteen small rounded squares fills about 78% of the square with even gaps between them: eleven of the squares are a dim translucent slate blue, four are solid pale cyan #6FD8F0, and one single square in the upper-left is solid electric mint #7CF5C4 with a soft neon glow around it. A number puzzle app: a tidy grid of sliding tiles, one of them lit. Flat modern vector icon design, clean crisp edges, no cast shadow, no perspective. No text, no letters, no numbers, no wordmark, no logo of any existing company."
+    },
+    {
+        "name":  "mines",
+        "prompt":  "A square mobile app icon, 1024x1024. The whole square is filled edge to edge by a flat light grey plate #C0C0C0, with no border and no margin; the colour reaches all four corners. On it, a three by three block of classic beveled minesweeper squares fills about 78% of the square: each cell is the same #C0C0C0 with a thick white highlight along its top and left edges and a thick #808080 shadow along its bottom and right edges, so every cell looks raised and three dimensional. One cell in the middle is instead sunken and flat, and on it sits a black round bomb with eight short straight spikes and a small white highlight dot. One other cell carries a small bright red triangular pennant flag on a short black pole. Pixel-crisp retro Windows 95 desktop game styling, hard square edges, no rounded corners, no gradients, no glow. No text, no letters, no numbers, no wordmark, no logo of any existing company."
+    }
+]
