@@ -75,6 +75,10 @@ class ChatListScreen extends StatelessWidget {
                 contacts: contacts,
                 strings: strings,
                 format: format,
+                spansYears: PhoneFormat.spanYears([
+                  for (final thread in threads)
+                    for (final line in thread.lines) line.timestamp,
+                ]),
                 onOpen: () => Navigator.of(context).push(
                   MaterialPageRoute<void>(
                     builder: (_) => ConversationScreen(
@@ -97,12 +101,16 @@ class _ThreadRow extends StatelessWidget {
   final PhoneFormat format;
   final VoidCallback onOpen;
 
+  /// Whether the chat list as a whole runs across more than one year.
+  final bool spansYears;
+
   const _ThreadRow({
     required this.thread,
     required this.contacts,
     required this.strings,
     required this.format,
     required this.onOpen,
+    required this.spansYears,
   });
 
   @override
@@ -171,7 +179,10 @@ class _ThreadRow extends StatelessWidget {
                       ),
                       if (last != null)
                         Text(
-                          format.shortDate(last.timestamp),
+                          format.listDate(
+                            last.timestamp,
+                            spansYears: spansYears,
+                          ),
                           style: ColdType.meta.copyWith(
                             color: unread > 0
                                 ? device.accent
@@ -280,9 +291,19 @@ class _ThreadRow extends StatelessWidget {
     final last = thread.lastAt;
     final count = thread.lines.length;
     if (first == null || last == null) return '';
+
+    // This line exists to say how long the conversation ran, and it used to
+    // drop the years: s07 has a thread running from 2015 to 2026 and s10 one
+    // running from 2017, and both read as a few months. A span that crosses
+    // a year has to carry them or it is telling the player the opposite of
+    // what it is for.
+    final crossesYears = first.year != last.year;
+    String at(DateTime moment) =>
+        crossesYears ? format.dateWithYear(moment) : format.shortDate(moment);
+
     final range = first.year == last.year && first.month == last.month
-        ? format.shortDate(first)
-        : '${format.shortDate(first)} — ${format.shortDate(last)}';
+        ? at(first)
+        : '${at(first)} — ${at(last)}';
     return '$range · $count';
   }
 }

@@ -1,4 +1,4 @@
-﻿{
+{
   "ui.connecting": "Connecting to device...",
   "ui.connecting.subtitle": "Establishing secure connection...",
   "ui.connected": "Connected",
@@ -150,6 +150,9 @@
   "q.prompt_body": "If you get the same question wrong three times, we can show you two options to pick from — one right, one wrong.\n\nYou can change this anytime in Settings.",
   "q.prompt_no": "No, I'll figure it out",
   "q.prompt_yes": "Yes, help me",
+  "rating.prompt_title": "Enjoying the case so far?",
+  "rating.prompt_no": "Not really",
+  "rating.prompt_yes": "Yes",
   "q.suspect_pick": "Tap a suspect to accuse.",
   "q.contradiction_single": "Tap the statement that doesn't hold up:",
   "q.multi_prompt": "Select every statement the phone actually proves:",
@@ -179,6 +182,7 @@
   "solved.body": "You uncovered the truth in {{client}}'s case. Every question answered correctly.",
   "q.review_case": "Open the case file",
   "solved.next": "Next Case",
+  "solved.back_to_deck": "Cases",
   "solved.other_endings": "Other endings",
   "solved.play_again": "Play again",
   "solved.replay_confirm_title": "Start this case over?",
@@ -287,6 +291,10 @@
   "ui.calendar.no_events": "No events this month",
   "ui.calendar.events": "Events",
   "ui.calendar.all_day": "All day",
+  "ui.calendar.repeats.daily": "Repeats every day",
+  "ui.calendar.repeats.weekly": "Repeats every {{weekday}}",
+  "ui.calendar.repeats.monthly": "Repeats every month",
+  "ui.calendar.repeats.yearly": "Repeats every year",
   "ui.calendar.event_deleted": "This event was deleted",
   "ui.photos.archive": "Archive",
   "ui.photos.favorites": "Favorites",
@@ -440,6 +448,7 @@
   "ui.app.clock": "Hours",
   "ui.cases.index": "CASE INDEX",
   "ui.cases.pro": "GET PRO",
+  "ui.cases.locked": "PRO CASE",
   "ui.cases.available": "{{open}} open · {{closed}} closed",
   "ui.cases.new": "NEW",
   "ui.cases.active": "IN PROGRESS",
@@ -459,5 +468,11 @@
   "s07.meta.title": "Shortfall",
   "s08.meta.title": "Return",
   "s09.meta.title": "Case Four",
-  "s10.meta.title": "Proof of Life"
+  "s10.meta.title": "Proof of Life",
+  "ui.weekdays_short": "Mon,Tue,Wed,Thu,Fri,Sat,Sun",
+  "q.solved_title": "What you have worked out",
+  "q.solved_none": "Nothing yet.",
+  "q.solved_unrecorded": "Not recorded",
+  "q.solved_briefing": "The client, at the start",
+  "q.solved_interstitial": "The client got in touch"
 }

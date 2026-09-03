@@ -1,0 +1,18 @@
+[
+  {
+    "name": "reel_01",
+    "asset": "assets/stock/video/f01.mp4",
+    "from": "assets/stock/photos/f21.jpg",
+    "duration": "5",
+    "note": "Filler for the Reels tab. The still it grows out of is already in the Explore grid, which is what makes it read as somebody's own clip rather than as stock: a picture in the grid and the same place moving, one swipe away.",
+    "prompt": "Slow continuous motion. Waves keep rolling in and breaking over the sea wall, spray lifting and drifting sideways on the wind, the water draining back off the stones between sets. Overcast grey daylight throughout, no change of weather. Locked-off handheld framing with only the smallest drift, as if somebody is standing still holding a phone. No people, no camera moves, no zoom, no cuts, no text."
+  },
+  {
+    "name": "reel_02",
+    "asset": "assets/stock/video/f02.mp4",
+    "from": "assets/stock/photos/f37.jpg",
+    "duration": "5",
+    "note": "The second of the two, and deliberately unlike the first — open water instead of a wall, and birds instead of spray, so two swipes in a row do not look like the same clip twice.",
+    "prompt": "Slow continuous motion. The wake churns and spreads away from the stern, white water folding over on itself, the gulls holding station above it and shifting slightly on the wind. Flat overcast light throughout. Locked-off handheld framing with only the smallest drift, as if somebody is leaning on the rail holding a phone. No people, no camera moves, no zoom, no cuts, no text."
+  }
+]

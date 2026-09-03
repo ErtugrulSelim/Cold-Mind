@@ -4,6 +4,7 @@ import '../../../core/theme/cold_theme.dart';
 import '../../../data/l10n/case_strings.dart';
 import '../../../data/models/case_file.dart';
 import '../phone_format.dart';
+import '../widgets/document_body.dart';
 import '../widgets/avatar.dart';
 
 /// Mail.
@@ -51,6 +52,14 @@ class _MailScreenState extends State<MailScreen> {
     final format = PhoneFormat(strings);
     final data = widget.file.appData('gmail') ?? const {};
     final mails = _read(data, _box);
+    // Worked out across the whole account rather than per box: a Trash
+    // holding one week is not unambiguous when the inbox behind it runs for
+    // a decade, and the player is comparing these dates against other apps.
+    final spansYears = PhoneFormat.spanYears([
+      for (final box in _boxes)
+        if (box.id != 'starred')
+          for (final mail in _read(data, box.id)) mail.at,
+    ]);
     final current = _boxes.firstWhere((b) => b.id == _box);
 
     return Scaffold(
@@ -124,6 +133,7 @@ class _MailScreenState extends State<MailScreen> {
                 mail: mails[i],
                 strings: strings,
                 format: format,
+                showYear: spansYears,
                 onOpen: () => Navigator.of(context).push(
                   MaterialPageRoute<void>(
                     builder: (_) => _MailDetail(
@@ -222,11 +232,24 @@ class _MailRow extends StatelessWidget {
   final PhoneFormat format;
   final VoidCallback onOpen;
 
+  /// Whether this mailbox covers more than one calendar year.
+  ///
+  /// A row used to read "19 Nov" whatever year it was. s07's mail runs from
+  /// 2015 to 2026 and s05's over five years, so an inbox sorted newest-first
+  /// put a decade of history under one undated-looking list and gave the
+  /// player no reason to keep scrolling — s06's recruitment mail, every piece
+  /// of it, sits at the bottom under fifteen later messages.
+  ///
+  /// The year is shown only when it is ambiguous, so a case that happens
+  /// inside one year keeps the short form.
+  final bool showYear;
+
   const _MailRow({
     required this.mail,
     required this.strings,
     required this.format,
     required this.onOpen,
+    required this.showYear,
   });
 
   @override
@@ -275,7 +298,9 @@ class _MailRow extends StatelessWidget {
                       ),
                       const SizedBox(width: ColdSpace.sm),
                       Text(
-                        format.shortDate(mail.at),
+                        showYear
+                            ? format.dateWithYear(mail.at)
+                            : format.shortDate(mail.at),
                         style: ColdType.meta.copyWith(
                           color: unread ? device.accent : device.textTertiary,
                         ),
@@ -458,12 +483,13 @@ class _MailDetail extends StatelessWidget {
           const SizedBox(height: ColdSpace.lg),
           Divider(color: device.hairline),
           const SizedBox(height: ColdSpace.lg),
-          Text(
-            strings?.t(mail.bodyKey) ?? '',
-            style: ColdType.body.copyWith(
-              color: device.textPrimary,
-              height: 1.55,
-            ),
+          // Mail carries tables too — a ticket confirmation, an alert
+          // summary, a placement schedule — and the keychain password in s06
+          // is read off one of them.
+          DocumentBody(
+            text: strings?.t(mail.bodyKey) ?? '',
+            color: device.textPrimary,
+            proseStyle: ColdType.body.copyWith(height: 1.55),
           ),
         ],
       ),

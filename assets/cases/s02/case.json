@@ -626,7 +626,7 @@
     },
     {
       "index": 4,
-      "app": "voice_memos",
+      "app": "gmail",
       "kind": "free_text",
       "title_key": "s02.question.q04.title",
       "prompt_key": "s02.question.q04.question",
@@ -3625,7 +3625,8 @@
         {
           "id": "ph_027",
           "asset": "assets/cases/s02/photos/packed_bag.jpg",
-          "taken_at": "2025-03-06T02:50:00"
+          "taken_at": "2025-03-06T02:50:00",
+          "document_key": "s02.photos.ph_027.document"
         },
         {
           "id": "ph_030",
@@ -5080,7 +5081,7 @@
     },
     "vault": {
       "login_required": true,
-      "master": "halcyon-is-not-mine",
+      "master": "26022025",
       "master_hint_key": "s02.keychain.master_hint",
       "account_label": "Maya Sorensen — Keychain",
       "entries": [
@@ -5106,6 +5107,14 @@
           "password": "atelier-local-9",
           "last_modified": "2025-01-05T12:00:00",
           "note_key": "s02.keychain.v_003.note"
+        },
+        {
+          "id": "v_004",
+          "label_key": "s02.keychain.v_004.label",
+          "username_key": "s02.keychain.v_004.username",
+          "password": "Nordwind-22",
+          "last_modified": "2025-02-27T09:10:00",
+          "note_key": "s02.keychain.v_004.note"
         },
         {
           "id": "f_v_101",

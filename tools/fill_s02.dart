@@ -291,7 +291,7 @@ const _posts = [
     'person_id': 'p003',
     'timestamp': '2025-02-20T11:00:00',
     'liked_by_owner': true,
-    'image_asset': 'assets/stock/photos/12.jpg',
+    'image_asset': 'assets/stock/photos/f25.jpg',
   },
   {
     'id': 'post_stock_02',
@@ -303,7 +303,7 @@ const _posts = [
     'person_id': 'p005',
     'timestamp': '2025-02-14T09:30:00',
     'liked_by_owner': true,
-    'image_asset': 'assets/stock/photos/23.jpg',
+    'image_asset': 'assets/stock/photos/f26.jpg',
   },
   {
     'id': 'post_stock_03',
@@ -315,7 +315,7 @@ const _posts = [
     'person_id': 'p003',
     'timestamp': '2025-02-27T16:10:00',
     'liked_by_owner': false,
-    'image_asset': 'assets/stock/photos/31.jpg',
+    'image_asset': 'assets/stock/photos/f27.jpg',
   },
   {
     'id': 'post_stock_04',
@@ -327,7 +327,7 @@ const _posts = [
     'person_id': 'p005',
     'timestamp': '2025-01-09T08:05:00',
     'liked_by_owner': true,
-    'image_asset': 'assets/stock/photos/45.jpg',
+    'image_asset': 'assets/stock/photos/f28.jpg',
   },
   {
     'id': 'post_stock_05',
@@ -339,7 +339,7 @@ const _posts = [
     'person_id': 'p003',
     'timestamp': '2025-03-01T12:00:00',
     'liked_by_owner': false,
-    'image_asset': 'assets/stock/photos/8.jpg',
+    'image_asset': 'assets/stock/photos/f29.jpg',
   },
   {
     'id': 'post_stock_06',
@@ -351,7 +351,7 @@ const _posts = [
     'person_id': 'p005',
     'timestamp': '2025-02-02T18:45:00',
     'liked_by_owner': true,
-    'image_asset': 'assets/stock/photos/17.jpg',
+    'image_asset': 'assets/stock/photos/f30.jpg',
   },
 ];
 

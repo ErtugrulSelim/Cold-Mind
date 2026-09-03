@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:coldmind/data/models/chat.dart';
 import 'package:coldmind/data/repository/case_repository.dart';
 import 'package:flutter_test/flutter_test.dart';
@@ -69,6 +71,58 @@ void main() {
     }
 
     expect(failures, isEmpty, reason: '\n${failures.join('\n')}');
+  });
+
+  test('every branch a case offers has a picture of where it ends', () async {
+    // `CaseSolvedScreen` derives the path — assets/cases/<id>/endings/
+    // <branch>.jpg — so nothing declares it and nothing but this notices when
+    // one is missing. The screen falls back to the words alone, which reads as
+    // a design choice rather than as a gap.
+    //
+    // Two halves, because either can drift on its own: a branch with no card,
+    // and a card for a branch the closing conversation cannot reach.
+    final missing = <String>[];
+    final orphans = <String>[];
+
+    for (final summary in await repo.loadIndex()) {
+      final file = await repo.loadCase(summary.id);
+      final closing = file.chats.closing;
+      if (closing == null) continue;
+
+      final branches = _branchesOf(closing);
+      final dir = Directory('assets/cases/${summary.id}/endings');
+
+      for (final branch in branches) {
+        final card = File('${dir.path}/$branch.jpg');
+        if (!card.existsSync()) {
+          missing.add('${summary.id} — branch "$branch" has no card');
+        } else if (card.lengthSync() < 8 * 1024) {
+          // A truncated download leaves a file that exists and will not draw.
+          missing.add(
+            '${summary.id} — the card for "$branch" is '
+            '${card.lengthSync()} bytes',
+          );
+        }
+      }
+
+      if (!dir.existsSync()) continue;
+      for (final entry in dir.listSync().whereType<File>()) {
+        final name = entry.uri.pathSegments.last;
+        if (!name.endsWith('.jpg')) continue;
+        final branch = name.substring(0, name.length - 4);
+        if (!branches.contains(branch)) {
+          orphans.add(
+            '${summary.id} — $name is for no branch this case can reach',
+          );
+        }
+      }
+    }
+
+    expect(
+      [...missing, ...orphans],
+      isEmpty,
+      reason: '\n${[...missing, ...orphans].join('\n')}',
+    );
   });
 
   test('every interstitial fires at a question the case actually has', () async {

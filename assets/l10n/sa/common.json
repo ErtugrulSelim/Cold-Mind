@@ -336,5 +336,11 @@
   "notif.update.title": "يتوفر تحديث جديد",
   "notif.update.body": "صدر إصدار جديد من Cold Mind — اطّلع على الجديد!",
   "ui.photo_read": "Read",
-  "ui.photo_document": "DOCUMENT"
+  "ui.photo_document": "DOCUMENT",
+  "ui.weekdays_short": "الاثنين,الثلاثاء,الأربعاء,الخميس,الجمعة,السبت,الأحد",
+  "q.solved_title": "ما توصلت إليه",
+  "q.solved_none": "لا شيء بعد.",
+  "q.solved_unrecorded": "غير مسجَّل",
+  "q.solved_briefing": "العميل، في البداية",
+  "q.solved_interstitial": "تواصل العميل"
 }

@@ -73,6 +73,21 @@
       "person_id": "p007",
       "role": "other",
       "contact_saved": false
+    },
+    {
+      "person_id": "p008",
+      "role": "other",
+      "contact_saved": true
+    },
+    {
+      "person_id": "p009",
+      "role": "other",
+      "contact_saved": true
+    },
+    {
+      "person_id": "p010",
+      "role": "other",
+      "contact_saved": false
     }
   ],
   "contacts": [
@@ -98,6 +113,18 @@
       "person_id": "p006",
       "is_saved": true,
       "custom_label_key": "s06.contact.p006.label"
+    },
+    {
+      "person_id": "p008",
+      "is_saved": true
+    },
+    {
+      "person_id": "p009",
+      "is_saved": true
+    },
+    {
+      "person_id": "p010",
+      "is_saved": true
     }
   ],
   "home": {
@@ -590,7 +617,7 @@
       "id": "step_001",
       "order": 1,
       "type": "find_password",
-      "note": "#announcements'taki sabitlenmiş mesaj giriş formülünü yazıyor: istasyon numarası + park baş harfleri + yıl. Station 14 icin 14skp2025",
+      "note": "#announcements’taki sabitlenmis mesaj girisin kendi dogum tarihi oldugunu soyluyor; tarihi Mail’deki bilet onayi basiyor: 14.07.2002",
       "source_app": "workchat",
       "source_item_id": "wc_001",
       "target_app": "vault",
@@ -641,7 +668,7 @@
   "questions": [
     {
       "index": 1,
-      "app": "dating",
+      "app": "slate",
       "kind": "free_text",
       "title_key": "s06.question.q01.title",
       "prompt_key": "s06.question.q01.question",
@@ -1048,6 +1075,39 @@
               "is_deleted": false
             }
           ]
+        },
+        {
+          "contact_person_id": "p010",
+          "messages": [
+            {
+              "id": "f_sms_320",
+              "sender": "contact",
+              "text_key": "s06.messages.f_sms_320",
+              "timestamp": "2024-10-28T16:40:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_321",
+              "sender": "user",
+              "text_key": "s06.messages.f_sms_321",
+              "timestamp": "2024-10-28T17:02:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_322",
+              "sender": "contact",
+              "text_key": "s06.messages.f_sms_322",
+              "timestamp": "2024-10-28T17:04:00",
+              "is_deleted": false
+            },
+            {
+              "id": "f_sms_323",
+              "sender": "contact",
+              "text_key": "s06.messages.f_sms_323",
+              "timestamp": "2024-11-08T15:20:00",
+              "is_deleted": false
+            }
+          ]
         }
       ]
     },
@@ -1358,9 +1418,334 @@
               "is_deleted": false
             }
           ]
+        },
+        {
+          "contact_person_id": "p008",
+          "messages": [
+            {
+              "id": "f2_wa_301",
+              "sender": "p008",
+              "type": "text",
+              "text_key": "s06.chats.f2_wa_301",
+              "timestamp": "2024-08-11T19:40:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f2_wa_302",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s06.chats.f2_wa_302",
+              "timestamp": "2024-08-11T19:52:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f2_wa_303",
+              "sender": "p008",
+              "type": "text",
+              "text_key": "s06.chats.f2_wa_303",
+              "timestamp": "2024-08-11T19:55:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f2_wa_304",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s06.chats.f2_wa_304",
+              "timestamp": "2024-09-19T13:10:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f2_wa_305",
+              "sender": "p008",
+              "type": "text",
+              "text_key": "s06.chats.f2_wa_305",
+              "timestamp": "2024-09-19T13:31:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f2_wa_306",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s06.chats.f2_wa_306",
+              "timestamp": "2024-11-04T20:05:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f2_wa_307",
+              "sender": "p008",
+              "type": "text",
+              "text_key": "s06.chats.f2_wa_307",
+              "timestamp": "2024-11-04T20:06:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f2_wa_308",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s06.chats.f2_wa_308",
+              "timestamp": "2024-11-04T20:08:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f2_wa_309",
+              "sender": "p008",
+              "type": "text",
+              "text_key": "s06.chats.f2_wa_309",
+              "timestamp": "2024-11-04T20:09:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f2_wa_310",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s06.chats.f2_wa_310",
+              "timestamp": "2024-11-04T20:14:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f2_wa_311",
+              "sender": "p008",
+              "type": "text",
+              "text_key": "s06.chats.f2_wa_311",
+              "timestamp": "2024-11-04T20:15:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f2_wa_312",
+              "sender": "p008",
+              "type": "text",
+              "text_key": "s06.chats.f2_wa_312",
+              "timestamp": "2024-11-30T09:15:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f2_wa_313",
+              "sender": "p008",
+              "type": "text",
+              "text_key": "s06.chats.f2_wa_313",
+              "timestamp": "2024-12-03T21:40:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f2_wa_314",
+              "sender": "p008",
+              "type": "text",
+              "text_key": "s06.chats.f2_wa_314",
+              "timestamp": "2024-12-25T11:02:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f2_wa_315",
+              "sender": "p008",
+              "type": "text",
+              "text_key": "s06.chats.f2_wa_315",
+              "timestamp": "2025-02-16T18:20:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f2_wa_316",
+              "sender": "p008",
+              "type": "text",
+              "text_key": "s06.chats.f2_wa_316",
+              "timestamp": "2025-07-14T08:30:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f2_wa_317",
+              "sender": "p008",
+              "type": "text",
+              "text_key": "s06.chats.f2_wa_317",
+              "timestamp": "2025-11-09T22:10:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f2_wa_318",
+              "sender": "p008",
+              "type": "text",
+              "text_key": "s06.chats.f2_wa_318",
+              "timestamp": "2026-03-01T20:45:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            }
+          ]
+        },
+        {
+          "contact_person_id": "p009",
+          "messages": [
+            {
+              "id": "f2_wa_330",
+              "sender": "p009",
+              "type": "text",
+              "text_key": "s06.chats.f2_wa_330",
+              "timestamp": "2024-11-06T07:50:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f2_wa_331",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s06.chats.f2_wa_331",
+              "timestamp": "2024-11-06T08:20:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f2_wa_332",
+              "sender": "p009",
+              "type": "text",
+              "text_key": "s06.chats.f2_wa_332",
+              "timestamp": "2024-11-06T08:24:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f2_wa_333",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s06.chats.f2_wa_333",
+              "timestamp": "2024-11-06T08:31:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f2_wa_334",
+              "sender": "p009",
+              "type": "text",
+              "text_key": "s06.chats.f2_wa_334",
+              "timestamp": "2025-01-18T14:05:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f2_wa_335",
+              "sender": "p009",
+              "type": "text",
+              "text_key": "s06.chats.f2_wa_335",
+              "timestamp": "2025-09-27T19:30:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            }
+          ]
         }
       ],
-      "groups": [],
+      "groups": [
+        {
+          "id": "grp_f001",
+          "name_key": "s06.chats.f2_wa_grp.name",
+          "avatar_color": "#15803D",
+          "member_person_ids": [
+            "p000",
+            "p008",
+            "p010"
+          ],
+          "created_by_person_id": "p008",
+          "created_at": "2024-09-12T09:58:00",
+          "messages": [
+            {
+              "id": "f2_wa_350",
+              "sender": "p008",
+              "type": "text",
+              "text_key": "s06.chats.f2_wa_350",
+              "timestamp": "2024-09-12T10:00:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f2_wa_351",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s06.chats.f2_wa_351",
+              "timestamp": "2024-09-12T10:06:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f2_wa_352",
+              "sender": "p008",
+              "type": "text",
+              "text_key": "s06.chats.f2_wa_352",
+              "timestamp": "2024-09-12T12:40:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f2_wa_353",
+              "sender": "p010",
+              "type": "text",
+              "text_key": "s06.chats.f2_wa_353",
+              "timestamp": "2024-09-12T12:55:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f2_wa_354",
+              "sender": "user",
+              "type": "text",
+              "text_key": "s06.chats.f2_wa_354",
+              "timestamp": "2024-11-16T17:20:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f2_wa_355",
+              "sender": "p010",
+              "type": "text",
+              "text_key": "s06.chats.f2_wa_355",
+              "timestamp": "2024-11-16T17:24:00",
+              "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            }
+          ]
+        }
+      ],
       "statuses": []
     },
     "gmail": {
@@ -2062,6 +2447,586 @@
           "must_delete_after_use": false,
           "category": "primary",
           "draft_note": "Draft 39 of 41. Never sent."
+        },
+        {
+          "id": "f_gm_130",
+          "from": {
+            "display_name": "Emeka",
+            "email": "e.nwachukwu.lagos@mail.com",
+            "person_id": "p000"
+          },
+          "to": [
+            "chidinma.nwachukwu@mail.com"
+          ],
+          "subject_key": "s06.mail.f_gm_130.subject",
+          "body_key": "s06.mail.f_gm_130.body",
+          "timestamp": "2024-12-08T02:40:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": true,
+          "must_delete_after_use": false,
+          "category": "personal"
+        },
+        {
+          "id": "f_gm_131",
+          "from": {
+            "display_name": "Emeka",
+            "email": "e.nwachukwu.lagos@mail.com",
+            "person_id": "p000"
+          },
+          "to": [
+            "chidinma.nwachukwu@mail.com"
+          ],
+          "subject_key": "s06.mail.f_gm_131.subject",
+          "body_key": "s06.mail.f_gm_131.body",
+          "timestamp": "2024-12-22T03:05:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": true,
+          "must_delete_after_use": false,
+          "category": "personal"
+        },
+        {
+          "id": "f_gm_132",
+          "from": {
+            "display_name": "Emeka",
+            "email": "e.nwachukwu.lagos@mail.com",
+            "person_id": "p000"
+          },
+          "to": [
+            "chidinma.nwachukwu@mail.com"
+          ],
+          "subject_key": "s06.mail.f_gm_132.subject",
+          "body_key": "s06.mail.f_gm_132.body",
+          "timestamp": "2025-01-06T02:55:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": true,
+          "must_delete_after_use": false,
+          "category": "personal"
+        },
+        {
+          "id": "f_gm_133",
+          "from": {
+            "display_name": "Emeka",
+            "email": "e.nwachukwu.lagos@mail.com",
+            "person_id": "p000"
+          },
+          "to": [
+            "chidinma.nwachukwu@mail.com"
+          ],
+          "subject_key": "s06.mail.f_gm_133.subject",
+          "body_key": "s06.mail.f_gm_133.body",
+          "timestamp": "2025-01-19T04:10:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": true,
+          "must_delete_after_use": false,
+          "category": "personal"
+        },
+        {
+          "id": "f_gm_134",
+          "from": {
+            "display_name": "Emeka",
+            "email": "e.nwachukwu.lagos@mail.com",
+            "person_id": "p000"
+          },
+          "to": [
+            "chidinma.nwachukwu@mail.com"
+          ],
+          "subject_key": "s06.mail.f_gm_134.subject",
+          "body_key": "s06.mail.f_gm_134.body",
+          "timestamp": "2025-02-02T03:20:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": true,
+          "must_delete_after_use": false,
+          "category": "personal"
+        },
+        {
+          "id": "f_gm_135",
+          "from": {
+            "display_name": "Emeka",
+            "email": "e.nwachukwu.lagos@mail.com",
+            "person_id": "p000"
+          },
+          "to": [
+            "chidinma.nwachukwu@mail.com"
+          ],
+          "subject_key": "s06.mail.f_gm_135.subject",
+          "body_key": "s06.mail.f_gm_135.body",
+          "timestamp": "2025-02-17T02:30:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": true,
+          "must_delete_after_use": false,
+          "category": "personal"
+        },
+        {
+          "id": "f_gm_136",
+          "from": {
+            "display_name": "Emeka",
+            "email": "e.nwachukwu.lagos@mail.com",
+            "person_id": "p000"
+          },
+          "to": [
+            "chidinma.nwachukwu@mail.com"
+          ],
+          "subject_key": "s06.mail.f_gm_136.subject",
+          "body_key": "s06.mail.f_gm_136.body",
+          "timestamp": "2025-03-03T03:45:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": true,
+          "must_delete_after_use": false,
+          "category": "personal"
+        },
+        {
+          "id": "f_gm_137",
+          "from": {
+            "display_name": "Emeka",
+            "email": "e.nwachukwu.lagos@mail.com",
+            "person_id": "p000"
+          },
+          "to": [
+            "chidinma.nwachukwu@mail.com"
+          ],
+          "subject_key": "s06.mail.f_gm_137.subject",
+          "body_key": "s06.mail.f_gm_137.body",
+          "timestamp": "2025-03-18T02:15:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": true,
+          "must_delete_after_use": false,
+          "category": "personal"
+        },
+        {
+          "id": "f_gm_138",
+          "from": {
+            "display_name": "Emeka",
+            "email": "e.nwachukwu.lagos@mail.com",
+            "person_id": "p000"
+          },
+          "to": [
+            "chidinma.nwachukwu@mail.com"
+          ],
+          "subject_key": "s06.mail.f_gm_138.subject",
+          "body_key": "s06.mail.f_gm_138.body",
+          "timestamp": "2025-04-05T04:00:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": true,
+          "must_delete_after_use": false,
+          "category": "personal"
+        },
+        {
+          "id": "f_gm_139",
+          "from": {
+            "display_name": "Emeka",
+            "email": "e.nwachukwu.lagos@mail.com",
+            "person_id": "p000"
+          },
+          "to": [
+            "chidinma.nwachukwu@mail.com"
+          ],
+          "subject_key": "s06.mail.f_gm_139.subject",
+          "body_key": "s06.mail.f_gm_139.body",
+          "timestamp": "2025-04-21T02:50:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": true,
+          "must_delete_after_use": false,
+          "category": "personal"
+        },
+        {
+          "id": "f_gm_140",
+          "from": {
+            "display_name": "Emeka",
+            "email": "e.nwachukwu.lagos@mail.com",
+            "person_id": "p000"
+          },
+          "to": [
+            "chidinma.nwachukwu@mail.com"
+          ],
+          "subject_key": "s06.mail.f_gm_140.subject",
+          "body_key": "s06.mail.f_gm_140.body",
+          "timestamp": "2025-05-09T03:30:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": true,
+          "must_delete_after_use": false,
+          "category": "personal"
+        },
+        {
+          "id": "f_gm_141",
+          "from": {
+            "display_name": "Emeka",
+            "email": "e.nwachukwu.lagos@mail.com",
+            "person_id": "p000"
+          },
+          "to": [
+            "chidinma.nwachukwu@mail.com"
+          ],
+          "subject_key": "s06.mail.f_gm_141.subject",
+          "body_key": "s06.mail.f_gm_141.body",
+          "timestamp": "2025-05-24T02:20:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": true,
+          "must_delete_after_use": false,
+          "category": "personal"
+        },
+        {
+          "id": "f_gm_142",
+          "from": {
+            "display_name": "Emeka",
+            "email": "e.nwachukwu.lagos@mail.com",
+            "person_id": "p000"
+          },
+          "to": [
+            "chidinma.nwachukwu@mail.com"
+          ],
+          "subject_key": "s06.mail.f_gm_142.subject",
+          "body_key": "s06.mail.f_gm_142.body",
+          "timestamp": "2025-06-11T03:55:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": true,
+          "must_delete_after_use": false,
+          "category": "personal"
+        },
+        {
+          "id": "f_gm_143",
+          "from": {
+            "display_name": "Emeka",
+            "email": "e.nwachukwu.lagos@mail.com",
+            "person_id": "p000"
+          },
+          "to": [
+            "chidinma.nwachukwu@mail.com"
+          ],
+          "subject_key": "s06.mail.f_gm_143.subject",
+          "body_key": "s06.mail.f_gm_143.body",
+          "timestamp": "2025-06-28T02:35:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": true,
+          "must_delete_after_use": false,
+          "category": "personal"
+        },
+        {
+          "id": "f_gm_144",
+          "from": {
+            "display_name": "Emeka",
+            "email": "e.nwachukwu.lagos@mail.com",
+            "person_id": "p000"
+          },
+          "to": [
+            "chidinma.nwachukwu@mail.com"
+          ],
+          "subject_key": "s06.mail.f_gm_144.subject",
+          "body_key": "s06.mail.f_gm_144.body",
+          "timestamp": "2025-07-14T01:10:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": true,
+          "must_delete_after_use": false,
+          "category": "personal"
+        },
+        {
+          "id": "f_gm_145",
+          "from": {
+            "display_name": "Emeka",
+            "email": "e.nwachukwu.lagos@mail.com",
+            "person_id": "p000"
+          },
+          "to": [
+            "chidinma.nwachukwu@mail.com"
+          ],
+          "subject_key": "s06.mail.f_gm_145.subject",
+          "body_key": "s06.mail.f_gm_145.body",
+          "timestamp": "2025-07-30T03:15:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": true,
+          "must_delete_after_use": false,
+          "category": "personal"
+        },
+        {
+          "id": "f_gm_146",
+          "from": {
+            "display_name": "Emeka",
+            "email": "e.nwachukwu.lagos@mail.com",
+            "person_id": "p000"
+          },
+          "to": [
+            "chidinma.nwachukwu@mail.com"
+          ],
+          "subject_key": "s06.mail.f_gm_146.subject",
+          "body_key": "s06.mail.f_gm_146.body",
+          "timestamp": "2025-08-15T02:45:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": true,
+          "must_delete_after_use": false,
+          "category": "personal"
+        },
+        {
+          "id": "f_gm_147",
+          "from": {
+            "display_name": "Emeka",
+            "email": "e.nwachukwu.lagos@mail.com",
+            "person_id": "p000"
+          },
+          "to": [
+            "chidinma.nwachukwu@mail.com"
+          ],
+          "subject_key": "s06.mail.f_gm_147.subject",
+          "body_key": "s06.mail.f_gm_147.body",
+          "timestamp": "2025-08-31T04:05:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": true,
+          "must_delete_after_use": false,
+          "category": "personal"
+        },
+        {
+          "id": "f_gm_148",
+          "from": {
+            "display_name": "Emeka",
+            "email": "e.nwachukwu.lagos@mail.com",
+            "person_id": "p000"
+          },
+          "to": [
+            "chidinma.nwachukwu@mail.com"
+          ],
+          "subject_key": "s06.mail.f_gm_148.subject",
+          "body_key": "s06.mail.f_gm_148.body",
+          "timestamp": "2025-09-16T02:25:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": true,
+          "must_delete_after_use": false,
+          "category": "personal"
+        },
+        {
+          "id": "f_gm_149",
+          "from": {
+            "display_name": "Emeka",
+            "email": "e.nwachukwu.lagos@mail.com",
+            "person_id": "p000"
+          },
+          "to": [
+            "chidinma.nwachukwu@mail.com"
+          ],
+          "subject_key": "s06.mail.f_gm_149.subject",
+          "body_key": "s06.mail.f_gm_149.body",
+          "timestamp": "2025-10-02T03:40:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": true,
+          "must_delete_after_use": false,
+          "category": "personal"
+        },
+        {
+          "id": "f_gm_150",
+          "from": {
+            "display_name": "Emeka",
+            "email": "e.nwachukwu.lagos@mail.com",
+            "person_id": "p000"
+          },
+          "to": [
+            "chidinma.nwachukwu@mail.com"
+          ],
+          "subject_key": "s06.mail.f_gm_150.subject",
+          "body_key": "s06.mail.f_gm_150.body",
+          "timestamp": "2025-10-19T02:05:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": true,
+          "must_delete_after_use": false,
+          "category": "personal"
+        },
+        {
+          "id": "f_gm_151",
+          "from": {
+            "display_name": "Emeka",
+            "email": "e.nwachukwu.lagos@mail.com",
+            "person_id": "p000"
+          },
+          "to": [
+            "chidinma.nwachukwu@mail.com"
+          ],
+          "subject_key": "s06.mail.f_gm_151.subject",
+          "body_key": "s06.mail.f_gm_151.body",
+          "timestamp": "2025-11-04T03:25:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": true,
+          "must_delete_after_use": false,
+          "category": "personal"
+        },
+        {
+          "id": "f_gm_152",
+          "from": {
+            "display_name": "Emeka",
+            "email": "e.nwachukwu.lagos@mail.com",
+            "person_id": "p000"
+          },
+          "to": [
+            "chidinma.nwachukwu@mail.com"
+          ],
+          "subject_key": "s06.mail.f_gm_152.subject",
+          "body_key": "s06.mail.f_gm_152.body",
+          "timestamp": "2025-11-20T02:50:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": true,
+          "must_delete_after_use": false,
+          "category": "personal"
+        },
+        {
+          "id": "f_gm_153",
+          "from": {
+            "display_name": "Emeka",
+            "email": "e.nwachukwu.lagos@mail.com",
+            "person_id": "p000"
+          },
+          "to": [
+            "chidinma.nwachukwu@mail.com"
+          ],
+          "subject_key": "s06.mail.f_gm_153.subject",
+          "body_key": "s06.mail.f_gm_153.body",
+          "timestamp": "2025-12-07T04:15:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": true,
+          "must_delete_after_use": false,
+          "category": "personal"
+        },
+        {
+          "id": "f_gm_154",
+          "from": {
+            "display_name": "Emeka",
+            "email": "e.nwachukwu.lagos@mail.com",
+            "person_id": "p000"
+          },
+          "to": [
+            "chidinma.nwachukwu@mail.com"
+          ],
+          "subject_key": "s06.mail.f_gm_154.subject",
+          "body_key": "s06.mail.f_gm_154.body",
+          "timestamp": "2025-12-25T02:00:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": true,
+          "must_delete_after_use": false,
+          "category": "personal"
+        },
+        {
+          "id": "f_gm_155",
+          "from": {
+            "display_name": "Emeka",
+            "email": "e.nwachukwu.lagos@mail.com",
+            "person_id": "p000"
+          },
+          "to": [
+            "chidinma.nwachukwu@mail.com"
+          ],
+          "subject_key": "s06.mail.f_gm_155.subject",
+          "body_key": "s06.mail.f_gm_155.body",
+          "timestamp": "2026-01-13T03:10:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": true,
+          "must_delete_after_use": false,
+          "category": "personal"
+        },
+        {
+          "id": "f_gm_156",
+          "from": {
+            "display_name": "Emeka",
+            "email": "e.nwachukwu.lagos@mail.com",
+            "person_id": "p000"
+          },
+          "to": [
+            "chidinma.nwachukwu@mail.com"
+          ],
+          "subject_key": "s06.mail.f_gm_156.subject",
+          "body_key": "s06.mail.f_gm_156.body",
+          "timestamp": "2026-02-01T02:40:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": true,
+          "must_delete_after_use": false,
+          "category": "personal"
+        },
+        {
+          "id": "f_gm_157",
+          "from": {
+            "display_name": "Emeka",
+            "email": "e.nwachukwu.lagos@mail.com",
+            "person_id": "p000"
+          },
+          "to": [
+            "chidinma.nwachukwu@mail.com"
+          ],
+          "subject_key": "s06.mail.f_gm_157.subject",
+          "body_key": "s06.mail.f_gm_157.body",
+          "timestamp": "2026-02-22T03:50:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": true,
+          "must_delete_after_use": false,
+          "category": "personal"
+        },
+        {
+          "id": "f_gm_158",
+          "from": {
+            "display_name": "Emeka",
+            "email": "e.nwachukwu.lagos@mail.com",
+            "person_id": "p000"
+          },
+          "to": [
+            "chidinma.nwachukwu@mail.com"
+          ],
+          "subject_key": "s06.mail.f_gm_158.subject",
+          "body_key": "s06.mail.f_gm_158.body",
+          "timestamp": "2026-03-01T02:30:00",
+          "is_read": true,
+          "is_starred": false,
+          "is_deleted": false,
+          "is_draft": true,
+          "must_delete_after_use": false,
+          "category": "personal"
         }
       ],
       "trash": []
@@ -2452,7 +3417,8 @@
         {
           "id": "ph_027",
           "asset": "assets/cases/s06/photos/floor.jpg",
-          "taken_at": "2025-04-11T19:05:00"
+          "taken_at": "2025-04-11T19:05:00",
+          "document_key": "s06.photos.ph_027.document"
         },
         {
           "id": "ph_021",
@@ -2487,12 +3453,14 @@
         {
           "id": "ph_030",
           "asset": "assets/cases/s06/photos/emeka_mama_2024.jpg",
-          "taken_at": "2024-11-18T16:40:00"
+          "taken_at": "2024-11-18T16:40:00",
+          "document_key": "s06.photos.ph_030.document"
         },
         {
           "id": "ph_031",
           "asset": "assets/cases/s06/photos/lagos_street.jpg",
-          "taken_at": "2024-11-17T10:20:00"
+          "taken_at": "2024-11-17T10:20:00",
+          "document_key": "s06.photos.ph_031.document"
         }
       ]
     },
@@ -3160,7 +4128,7 @@
     },
     "vault": {
       "login_required": true,
-      "master": "14skp2025",
+      "master": "14072002",
       "master_hint_key": "s06.keychain.master_hint",
       "account_label": "Station 14 — Keychain",
       "entries": [
@@ -3332,6 +4300,11 @@
               "sender_person_id": "p003",
               "text_key": "s06.slate.wc_107",
               "timestamp": "2026-02-05T06:00:00"
+            },
+            {
+              "id": "wc_108",
+              "text_key": "s06.slate.wc_108",
+              "timestamp": "2025-03-10T06:20:00"
             }
           ]
         },

@@ -1,3 +1,5 @@
+import 'dart:ui' show ImageFilter;
+
 import 'package:flutter/material.dart';
 
 import '../../core/theme/cold_theme.dart';
@@ -39,10 +41,15 @@ class ProButton extends StatelessWidget {
     final label = strings?.c('ui.cases.pro') ?? 'GET PRO';
     const radius = BorderRadius.all(Radius.circular(999));
 
-    return Material(
-      // Filled amber against the graphite deck; a dark chip on the phone, where
-      // it floats over somebody's wallpaper and must not compete with it.
-      color: large ? desk.highlight : Colors.black.withValues(alpha: 0.38),
+    final button = Material(
+      // Amber against the graphite deck; a dark chip on the phone, where it
+      // floats over somebody's wallpaper and must not compete with it. Both
+      // are translucent rather than flat now — see the blur this is wrapped
+      // in below — so whatever is moving underneath still shows through
+      // instead of the button reading as a sticker pasted over the glass.
+      color: large
+          ? desk.highlight.withValues(alpha: 0.82)
+          : Colors.black.withValues(alpha: 0.32),
       borderRadius: radius,
       child: InkWell(
         onTap: () => Navigator.of(context).push(
@@ -84,6 +91,19 @@ class ProButton extends StatelessWidget {
             ],
           ),
         ),
+      ),
+    );
+
+    // The deck's ground is flat graphite, so a blur behind the button there
+    // has nothing under it to blur — harmless, just quietly doing nothing.
+    // On the phone it floats over somebody's wallpaper, and that is where the
+    // blur earns its keep: without it a translucent fill still reads as a
+    // sticker pasted over the glass rather than a control floating on it.
+    return ClipRRect(
+      borderRadius: radius,
+      child: BackdropFilter(
+        filter: ImageFilter.blur(sigmaX: 14, sigmaY: 14),
+        child: button,
       ),
     );
   }

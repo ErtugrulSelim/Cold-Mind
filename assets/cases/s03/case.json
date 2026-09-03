@@ -336,6 +336,13 @@
           "delay_ms": 11000
         },
         {
+          "id": "cc_004b",
+          "sender": "client",
+          "text_key": "s03.client_chat.cc_004b",
+          "timestamp": "2026-01-19T20:40:29",
+          "delay_ms": 11000
+        },
+        {
           "id": "cc_005",
           "sender": "client",
           "text_key": "s03.client_chat.cc_005",
@@ -752,7 +759,7 @@
     },
     {
       "index": 6,
-      "app": "photos",
+      "app": "notes",
       "kind": "free_text",
       "title_key": "s03.question.q06.title",
       "prompt_key": "s03.question.q06.question",
@@ -6985,7 +6992,7 @@
     },
     "vault": {
       "login_required": true,
-      "master": "the-long-way-down",
+      "master": "141103",
       "master_hint_key": "s03.keychain.master_hint",
       "account_label": "Sander Merckx — Keychain",
       "entries": [

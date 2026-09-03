@@ -51,6 +51,20 @@ dev_dependencies:
   riverpod_generator: ^4.0.0+1
   custom_lint: ^0.8.1
   riverpod_lint: ^3.1.0
+  flutter_native_splash: ^2.4.8
+
+# Generates the native splash Android and iOS show before the Flutter engine
+# has drawn a single frame — the one place a Dart-level splash widget cannot
+# reach. The background is the device register's own graphite
+# (`palette.dart`'s `background: Color(0xFF0A0C10)`), so the logo's own dark
+# ground meets it without a seam. Regenerate with
+# `dart run flutter_native_splash:create` after changing either.
+flutter_native_splash:
+  color: "0A0C10"
+  image: assets/icons/app_logo.jpeg
+  android_12:
+    color: "0A0C10"
+    image: assets/icons/app_logo.jpeg
 
 flutter:
   uses-material-design: true
@@ -69,32 +83,42 @@ flutter:
     - assets/cases/
     - assets/cases/s01/
     - assets/cases/s01/photos/
+    - assets/cases/s01/endings/
     - assets/cases/s01/audio/
     - assets/cases/s02/
     - assets/cases/s02/photos/
+    - assets/cases/s02/endings/
     - assets/cases/s02/audio/
     - assets/cases/s03/
     - assets/cases/s03/photos/
+    - assets/cases/s03/endings/
     - assets/cases/s04/
     - assets/cases/s04/photos/
+    - assets/cases/s04/endings/
     - assets/cases/s04/audio/
     - assets/cases/s05/
     - assets/cases/s05/photos/
+    - assets/cases/s05/endings/
     - assets/cases/s05/audio/
     - assets/cases/s06/
     - assets/cases/s06/photos/
+    - assets/cases/s06/endings/
     - assets/cases/s06/audio/
     - assets/cases/s07/
     - assets/cases/s07/photos/
+    - assets/cases/s07/endings/
     - assets/cases/s07/audio/
     - assets/cases/s08/
     - assets/cases/s08/photos/
+    - assets/cases/s08/endings/
     - assets/cases/s08/audio/
     - assets/cases/s09/
     - assets/cases/s09/photos/
+    - assets/cases/s09/endings/
     - assets/cases/s09/audio/
     - assets/cases/s10/
     - assets/cases/s10/photos/
+    - assets/cases/s10/endings/
     - assets/cases/s10/audio/
 
     # Cast files, shared across the apps that render people.

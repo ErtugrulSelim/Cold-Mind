@@ -52,6 +52,28 @@ class ColdType {
     height: 1.45,
   );
 
+  /// A document whose columns carry its meaning: an export, a log, a CSV, a
+  /// properties sheet, a photographed printout.
+  ///
+  /// These are the one place the device genuinely needs a monospace, and it
+  /// took a player to find out why. s06's third question asks what a
+  /// spreadsheet's **last column** says beside one name; the row is
+  /// `HALVORSEN, I., NO, 212, 2 100 000, house — DONE`, and drawn in a
+  /// proportional face at 15pt on a 390pt phone it wraps into a paragraph.
+  /// The words are all still there and "the last column" has stopped meaning
+  /// anything.
+  ///
+  /// No font is shipped for it: `monospace` is the family Android resolves
+  /// itself, and the fallbacks cover the rest. That was the objection to
+  /// having one at all — it does not apply to a face nobody has to bundle.
+  static const TextStyle document = TextStyle(
+    fontSize: 12.5,
+    fontWeight: FontWeight.w400,
+    height: 1.5,
+    fontFamily: 'monospace',
+    fontFamilyFallback: ['Menlo', 'Courier New', 'Courier', 'DejaVu Sans Mono'],
+  );
+
   /// A row's secondary line: the message preview, the subtitle.
   static const TextStyle bodySmall = TextStyle(
     fontSize: 13.5,

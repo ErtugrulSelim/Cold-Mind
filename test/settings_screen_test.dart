@@ -1,10 +1,10 @@
+import 'package:coldmind/core/app_config.dart';
 import 'package:coldmind/core/theme/cold_theme.dart';
 import 'package:coldmind/data/l10n/case_strings.dart';
 import 'package:coldmind/data/providers/case_providers.dart';
 import 'package:coldmind/data/providers/settings_providers.dart';
 import 'package:coldmind/data/repository/case_repository.dart';
 import 'package:coldmind/features/paywall/store.dart';
-import 'package:coldmind/features/settings/app_links.dart';
 import 'package:coldmind/features/settings/settings_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -81,15 +81,15 @@ void main() {
     // URL in, this test should expect the row rather than start failing.
     expect(
       find.text(common.c('settings.terms')),
-      AppLinks.hasTerms ? findsOneWidget : findsNothing,
+      AppConfig.hasTerms ? findsOneWidget : findsNothing,
     );
     expect(
       find.text(common.c('settings.privacy')),
-      AppLinks.hasPrivacy ? findsOneWidget : findsNothing,
+      AppConfig.hasPrivacy ? findsOneWidget : findsNothing,
     );
     expect(
       find.text(common.c('settings.send_link')),
-      AppLinks.hasDownloadLink ? findsOneWidget : findsNothing,
+      AppConfig.hasDownloadLink ? findsOneWidget : findsNothing,
     );
   });
 

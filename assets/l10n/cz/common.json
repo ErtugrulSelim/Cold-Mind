@@ -337,5 +337,11 @@
   "notif.update.body": "Vyšla nová verze Cold Mind — podívej se, co je nového!",
   "q.audio_hint": "🎧 Vodítko: poslechněte si nahrávku",
   "ui.photo_read": "Přečíst",
-  "ui.photo_document": "DOKUMENT"
+  "ui.photo_document": "DOKUMENT",
+  "ui.weekdays_short": "po,út,st,čt,pá,so,ne",
+  "q.solved_title": "Co už jsi zjistil",
+  "q.solved_none": "Zatím nic.",
+  "q.solved_unrecorded": "Nezaznamenáno",
+  "q.solved_briefing": "Klient, na začátku",
+  "q.solved_interstitial": "Klient se ozval"
 }

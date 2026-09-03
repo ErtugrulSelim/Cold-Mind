@@ -10,6 +10,13 @@ import 'settings_providers.dart';
 
 part 'case_providers.g.dart';
 
+/// The one case a player can open without a subscription, and the one every
+/// onboarding prompt (the hint offer, the rating popup) is scoped to as "the
+/// first case" — see `case_list_screen.dart`'s lock and `question_screen.dart`'s
+/// triggers, which both read this rather than each hard-coding their own copy
+/// of the id.
+const String freeCaseId = 's01';
+
 /// Asset access. Overridden in tests with a repository over a fake bundle.
 @Riverpod(keepAlive: true)
 CaseRepository caseRepository(Ref ref) => CaseRepository();

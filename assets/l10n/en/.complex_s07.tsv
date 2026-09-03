@@ -1,0 +1,77 @@
+s07.interstitial.is2_003	And Bríd Sheridan was fourteen miles up the road with the same hole in her accounts two years earlier, paying it out of her own savings so that nobody would ever have to use that word about her.
+s07.interstitial.is3_002	Eleven fault reports, one engineer, and a defect with a name, sitting in a document eight months before my mother stood up in a courtroom and said the word guilty.
+s07.closing_chat.cl_001	The fault list went to every area manager in the country on the eighth of September 2016 and he opened it, because the read receipt is in her own mailbox on a thread he copied her into by accident.
+s07.closing_chat.cl_007	Fast, loud, and it clears my mother's name in the only place my mother actually lives, which is a village of nine hundred and forty people.
+s07.closing_chat.cl_015	I will ring her tonight and I will ring Bríd first, which is going to be the worst phone call of my life and I am not going to make somebody else make it.
+s07.ending.court	The conviction of Máire Conneely was quashed in November 2029 on the grounds that the prosecution had failed to disclose material bearing directly on the reliability of the evidence — specifically fault report MER-2016-0114, defect OVERNIGHT, and the eleven duplicate reports filed against it before her trial.
+s07.ending.press	On the twelfth, the shutter of the shop went up for the first time in nine years, because the man who bought the building put a table outside it and about two hundred people came, and Máire Conneely stood at the door of her own post office and shook hands until her arm hurt.
+s07.ending.mother	Aoife drove down on the Saturday morning and put four hundred and sixteen photographs, one fault list and one read receipt on her mother's kitchen table, and then sat there for two hours while Máire went through them in order without saying anything.
+s07.mail.gm_004.body	> ---------- Forwarded message ----------
+> Subject: Regional distribution — known error log Q3 (RESTRICTED)
+> Date: 8 September 2016
+> To: Area Managers (All Regions)
+>
+> Attached is the Q3 known error log for MERIDIAN branch accounting.
+s07.mail.gm_007.body	Máire — I don't know if you remember me, I wrote to you in 2019 and you asked me not to write again, and I've respected that for six years.
+s07.photos.ph_005.document	MERIDIAN — BRANCH 4471 CLOGHMORE
+  TRADING POSITION — 20/03/2016 08:04
+
+  CASH ON HAND (SYSTEM)      9,331.40
+  CASH ON HAND (DECLARED)    4,531.40
+  VARIANCE                   4,800.00
+
+  Last reconciliation: 20/03/2016 02:14 (RESTARTED)
+
+Below the screen, propped against the keyboard, is a handwritten slip: '4,531.40 — counted 3x — 23:40 19/3'.
+s07.photos.ph_006.document	MÁIRE CONNEELY
+
+  COUNT 1  Theft contrary to s.4 Criminal Justice (Theft and Fraud
+           Offences) Act 2001 — €41,300
+  COUNT 2  False accounting contrary to s.10 of the said Act
+
+  Particulars: that between 2 March 2016 and 20 May 2016 at Cloghmore
+  Post Office, branch 4471, the accused did steal €41,300 the property
+  of An Post, and did falsify records with a view to gain.
+s07.notes.note_004.block_001	Four hundred and sixteen of them altogether — the phone filled up, so the rest are on the laptop and I kept four here: the first, the second, the nineteenth of March, and the last one.
+s07.cloud.cf_001.body	DATE, TIME, NOTES, COIN, COUNTED TOTAL, TERMINAL, VARIANCE
+01/03, 23:20, 5 180.00, 288.60, 5 468.60, 5 468.60, 0.00
+02/03, 23:35, 4 910.00, 301.20, 5 211.20, 9 211.20, 4 000.00
+03/03, 23:15, 5 042.00, 264.80, 5 306.80, 9 306.80, 4 000.00
+...
+s07.cloud.cf_002.body	Conneely)     opening 1,204.66   closing 908.12
+Credit union share account         opening 3,110.00   closing 3,110.00
+Branch float (An Post, separate)    reconciled weekly, no exceptions
+
+Largest single credit in the period: €18,000.00, 17/05, P.
+s07.cloud.cf_003.body	MERIDIAN — KNOWN ERROR LOG, Q3 2016 (RESTRICTED)
+
+REF             NAME        SEV  RAISED  BRANCHES  STATUS
+MER-2015-0881   PRINTQ      4    3       3         CLOSED
+MER-2016-0047   STOCKSYNC   3    6       5         OPEN
+MER-2016-0114   OVERNIGHT   2    11      9         OPEN
+MER-2016-0203   CARDTIMEOUT 3    4       4         OPEN
+
+MER-2016-0114 — OVERNIGHT
+Overnight reconciliation re-posts the branch remittance batch when the
+job is restarted following a timeout.
+s07.cloud.cf_004.body	Doyle, Branch Audit — 26 and 27 April 2016
+
+Scope: full physical cash count (both days), stock reconciliation,
+remittance check to dockets (6 weeks), safe and key procedure.
+s07.mail.f_gm_122.body	I have read Tuesday's judgment and I am writing to you before you read about it anywhere else, because I think you will have questions and I would rather you put them to me than to a newspaper.
+s07.notes.f_note_111.block_002	A woman stopped me at the church and said she was sorry and I could not tell whether she was sorry it happened or sorry I did it, and I did not ask, and I have thought about it every week since.
+s07.notes.f_note_112.block_001	I counted the shopping twice today, on the table, in front of Peadar, and I did not know I was doing it until he went out of the room.
+s07.mail.f2_gm_202.body	Nobody was at the counter of the area office so I put them through the letterbox in an envelope with the branch number on it, and I stood outside for a minute afterwards because I did not know what to do next.
+s07.mail.f2_gm_205.body	I have said it about the trains and about the shopping and about the phone calls, but not about the second row, because to say thank you for it I would have to say what you were sitting through.
+s07.mail.f2_gm_209.body	Before I ring you I want to ask you one thing and I would rather ask it in writing because I will not be able to ask it out loud.
+s07.mail.f2_gm_233.body	Every year we hear from customers about a postmaster who has gone beyond what the job asks — who has walked a pension up a lane, who has known when something was wrong.
+s07.memos.f2_vm_104.transcript	I said a word in a room in Galway that was not true because a man in a wig told me it would cost me less, and it has cost me every single day since, and I would like somebody to have heard me say that.
+s07.chats.f2_wa_328	You are the straightest person I have ever met in my life and I have never once thought otherwise, not for a second, not in the room, not after.
+s07.notes.f2_note_212.block_003	It is that every one of those people said they were innocent, and kept saying it, for years, to anybody who would listen, and that is why there is a programme about them.
+s07.photos.ph_003.document	4 220.00   notes
+        311.40   coin
+      4 531.40
+      counted 3x
+      23:40  19/3
+
+  Beside the safe, on the floor, a stack of the same slips going back weeks, held together with a bulldog clip.

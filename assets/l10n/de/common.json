@@ -338,5 +338,11 @@
   "notif.update.body": "Eine neue Version von Cold Mind ist da — schau dir die Neuigkeiten an!",
   "q.audio_hint": "🎧 Hinweis: Aufnahme anhören",
   "ui.photo_read": "Lesen",
-  "ui.photo_document": "DOKUMENT"
+  "ui.photo_document": "DOKUMENT",
+  "ui.weekdays_short": "Mo,Di,Mi,Do,Fr,Sa,So",
+  "q.solved_title": "Was du herausgefunden hast",
+  "q.solved_none": "Noch nichts.",
+  "q.solved_unrecorded": "Nicht erfasst",
+  "q.solved_briefing": "Die Klientin, zu Beginn",
+  "q.solved_interstitial": "Die Klientin meldete sich"
 }

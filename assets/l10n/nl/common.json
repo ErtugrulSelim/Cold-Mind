@@ -337,5 +337,11 @@
   "notif.update.body": "Er is een nieuwe versie van Cold Mind — kom kijken wat er nieuw is!",
   "q.audio_hint": "🎧 Aanwijzing: beluister de opname",
   "ui.photo_read": "Lezen",
-  "ui.photo_document": "DOCUMENT"
+  "ui.photo_document": "DOCUMENT",
+  "ui.weekdays_short": "ma,di,wo,do,vr,za,zo",
+  "q.solved_title": "Wat je hebt uitgezocht",
+  "q.solved_none": "Nog niets.",
+  "q.solved_unrecorded": "Niet vastgelegd",
+  "q.solved_briefing": "De cliënt, aan het begin",
+  "q.solved_interstitial": "De cliënt nam contact op"
 }

@@ -337,5 +337,11 @@
   "notif.update.body": "Вийшла нова версія Cold Mind — подивіться, що нового!",
   "q.audio_hint": "🎧 Підказка: послухайте запис",
   "ui.photo_read": "Читати",
-  "ui.photo_document": "ДОКУМЕНТ"
+  "ui.photo_document": "ДОКУМЕНТ",
+  "ui.weekdays_short": "пн,вт,ср,чт,пт,сб,нд",
+  "q.solved_title": "Що ви вже з’ясували",
+  "q.solved_none": "Поки нічого.",
+  "q.solved_unrecorded": "Не записано",
+  "q.solved_briefing": "Клієнт, на самому початку",
+  "q.solved_interstitial": "Клієнт написав"
 }

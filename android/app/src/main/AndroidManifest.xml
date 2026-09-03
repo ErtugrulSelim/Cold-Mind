@@ -1,4 +1,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Atlas draws a real map, and a map is tiles fetched over the network.
+         This lived only in the debug manifest, which Flutter writes for hot
+         reload — so the map worked while developing and would never have
+         loaded a single tile in a release build. -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:label="Cold Mind"
         android:name="${applicationName}"

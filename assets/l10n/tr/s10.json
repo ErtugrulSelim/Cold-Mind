@@ -1,0 +1,877 @@
+{
+  "s10.meta.title": "Hayat Kanıtı",
+  "s10.board.elena.title": "Elena Christofi",
+  "s10.board.elena.sub": "38, paralegal, Bristol. Müvekkilin. Bu onun telefonu, dokuz yıllık; o ise masanın karşısında oturuyor, sen okurken.",
+  "s10.board.bobby.title": "Bobby",
+  "s10.board.bobby.sub": "Andreas Solomou. Anestezi uzmanı, Londra. 2022'den beri onunla nişanlı. Dokuz yıllık mesajlar ve o gün çekilen tek bir fotoğraf yok.",
+  "s10.board.andreas.title": "Gerçek Andreas Solomou",
+  "s10.board.andreas.sub": "41. Evli, iki çocuk. Yılda iki kez kullandığı bir kamu profili ve üzerindeki her fotoğraf ona gönderilmiş. Onu hiç duymamış.",
+  "s10.board.family.title": "Dört kişi için inşa edilmiş bir evde kırkımız",
+  "s10.board.family.sub": "İsim günleri, vaftizler, Marianna'da perşembe. Yedi yıllık fotoğraflar ve herkes içinde.",
+  "s10.board.accounts.title": "Otuz dokuz hesap",
+  "s10.board.accounts.sub": "Bir eş. Bir doktor. Bir kardeş. Bir hastane yöneticisi. Bunlardan ikisi kendi adlarıyla iletişimde.",
+  "s10.board.money.title": "£312",
+  "s10.board.money.sub": "Gönderdiği toplam. Dokuz yılda üç transfer. Bu hiç para hakkında değildi.",
+  "s10.board.nia.title": "Nia",
+  "s10.board.nia.sub": "2016'dan beri arkadaşı. 2018'de, 2020'de, 2023'te söyledi. Her seferinde nazikçe söyledi.",
+  "s10.board.e1": "sevdi",
+  "s10.board.e2": "değil",
+  "s10.board.e3": "ona yazdı",
+  "s10.board.e4": "hepsinde vardı",
+  "s10.board.e5": "söylemeye devam etti",
+  "s10.board.e6": "ona mal oldu",
+  "s10.board.e7": "onun ailesi",
+  "s10.board.nadia.title": "Nadia Solomou",
+  "s10.board.nadia.sub": "Eşi. 2019'da ve 2024'te Elena'ya yazdı, her iki seferde de ona ne tür bir kadın olduğunu söyledi. Elena hiç yüzünü görmedi ve ona hiç şüphe duymadı.",
+  "s10.board.e8": "bir kez bile tanışmadı",
+  "s10.board.e9": "onu uyardı",
+  "s10.relationship.p001.note": "Sophia. Marianna'nın kızı.",
+  "s10.relationship.p002.note": "❤️",
+  "s10.relationship.p003.note": "Nia, karşıdaki masa.",
+  "s10.relationship.p004.note": "Thia Marianna.",
+  "s10.relationship.p006.note": "onun karısı. yanıt vermeyin.",
+  "s10.relationship.p007.note": "kardiyoloji, Bobby'nin danışmanı",
+  "s10.relationship.p008.note": "Wexley, medeni.",
+  "s10.contact.p006.label": "yanıt vermeyin",
+  "s10.contact.p007.label": "Bobby, hastane",
+  "s10.contact.p008.label": "avukat",
+  "s10.client_chat.cc_001": "Bunların hepsini bir anda ve çabuk söyleyeceğim, çünkü durursam bir daha başlamam.",
+  "s10.client_chat.cc_002": "Benim adım Elena Christofi. Dokuz yıldır Andreas Solomou adında bir adamla ilişkim vardı, herkes ona Bobby der. 2022'de nişanlandık. Onu hiç görmedim.",
+  "s10.client_chat.cc_003": "Bunun nasıl bir şey gibi geldiğini biliyorum. Ben bir paralegalım. Yaşamımı belge kontrolüyle sürdürüyorum. Bu sandalyede dokuz yıldır oturuyorum, her odada en dikkatli kişi olarak, ama önemli olan tek şeyi kontrol etmedim.",
+  "s10.client_chat.cc_007": "Polis bana muhtemelen bir suç olmadığını söyledi. Avukatım bir medeni dava olabileceğini söylüyor. Bunların hepsinden önce kimin olduğunu bilmek istiyorum. Öğrenecek misin?",
+  "s10.client_chat.cc_007.accept": "Kim olduğunu öğreneceğim.",
+  "s10.client_chat.cc_007.decline": "Bu sefer değil.",
+  "s10.client_chat.cc_008": "Teşekkür ederim. Baştan başla ve benimle temkinli olma. Dokuz yıl birileri tarafından nazikçe yönlendirildim; bak nereye vardım.",
+  "s10.client_chat.cc_009": "Bir şey. Her şey hâlâ orada. Tek bir mesaj bile silmedim ve bilmeni isterim ki bu bir karardı; tesadüf değil.",
+  "s10.interstitial.is1_001": "Dokuz yıl ve tek bir görüntülü arama bile yok. Bunu yazdın ve gerçekten güldüm.",
+  "s10.interstitial.is1_002": "Her zaman bir sebep vardı. Kötü hat. Bir serviste. Gece vardiyası. Telefon kırık. Eski eş onu takip ediyor. Ve her bir sebep mantıklıydı, işte kimsenin anlamadığı şey bu.",
+  "s10.interstitial.is1_003": "Haftada bir, dokuz yıl boyunca dört yüz altmış sekiz neden demek. Hiçbir zaman hepsini bir araya koymadım. Devam et.",
+  "s10.interstitial.is2_001": "Perşembe.",
+  "s10.interstitial.is2_002": "Her bir hesap: Bobby, Nadia, doktor, kardeş; hepsi perşembe akşamı yedi ile dokuz arası sessiz, dokuz yıl boyunca.",
+  "s10.interstitial.is2_003": "Perşembe, teyzem Marianna'nın günü. Ben doğmadan önce de Marianna'da perşembe olurdu. Kırkımız masada otururken telefon yoktu; o telefonları kapıdaki kulüpteki gibi alır.",
+  "s10.interstitial.is2_004": "Dokuz yıldır o odadayım. Bana henüz söyleme. Sadece devam et.",
+  "s10.interstitial.is3_001": "Fotograflara baktım.",
+  "s10.interstitial.is3_004": "Başladığında o on sekiz yaşındaydı. Bunu düzgün bitirmeni ve emin olmanı istiyorum.",
+  "s10.closing_chat.cl_001": "Salı günü itiraf etti. Bana değil, annesine; gece saat on bir buçukta beni arayan ve cümleyi söyleyemeyen.",
+  "s10.closing_chat.cl_002": "Dokuz yıl, otuz dokuz hesap ve o, bunun bir şaka olarak başladığını söylüyor. Bunu inanmaya karar verdim; çünkü alternatif bir on sekiz yaşındaki birinin oturup bunu planlaması ve bir şeyi tutmak istiyorum.",
+  "s10.closing_chat.cl_003": "Doğru. Wexley ne yapabileceğimi açıkladı ve hiçbiri istediğim şey değil; bu da son dokuz yılın gerçekleşmemiş olması demek.",
+  "s10.closing_chat.cl_004": "Bir. Hukuki dava. Taciz. Tek uyan bu, çünkü bu ülkede dokuz yıl boyunca birini taklit etmek diye bir suç yok. Muhtemelen kazanırım. İkimizin adının da olduğu bir kamu kararı olur ve akrabalarımız bunu okur.",
+  "s10.closing_chat.cl_005": "İki. Polisle yine de ilerlemek. Onların bir ifade almasını sağla, bir dosya açtır, hiçbir şey suçlanmasa bile kaydetmelerini temin et. Bana hiçbir maliyeti olmaz ve hiçbir kazancı da yok; sadece sistemde bir yerde var olması dışında.",
+  "s10.closing_chat.cl_006": "Üç, bu sabah dörtte sürekli aklıma gelen şey.",
+  "s10.closing_chat.cl_007": "Mahkeme yok. Perşembe, Marianna'da; hepsi odada ve ben kendim masaya koyarım, ailenin onunla ne yapılacağına karar vermesine izin veririm.",
+  "s10.closing_chat.cl_008": "Cevap vermeden önce bunun ne kadar maliyetli olduğunu bilmelisin. Yarıları bana inanmayacak; bazıları ise inanacak ve bir daha hiç bahsedilmemesinin herkes için daha nazik olacağına karar verecek. Ayrıca annesi, hayatımın her Perşembe gününü ev sahipliği yaptı.",
+  "s10.closing_chat.cl_009": "Onun ne kadar maliyetli olduğunu da düşündüm; bunun artık benim işim olmadığının farkındayım.",
+  "s10.closing_chat.cl_010": "Yirmi yedi yaşında ve o da dokuz yıl içinde başka bir şey yapmadı. Bu, bırakamadığım kısım.",
+  "s10.closing_chat.cl_011": "Söyle. Şimdi hepsini okudun; bu da seni bunu okuyan tek yaşayan kişi yapıyor.",
+  "s10.closing_chat.cl_011.opt1": "Hukuki dava. Bir karar ver.",
+  "s10.closing_chat.cl_011.opt2": "Polis dosyası. Var olsun.",
+  "s10.closing_chat.cl_011.opt3": "Perşembe. Masaya koy.",
+  "s10.closing_chat.cl_013": "O zaman dava. Wexley memnun olacak; iki hafta boyunca benim söylememi bekliyordu.",
+  "s10.closing_chat.cl_015": "O zaman dosya. Bir ifade, bir suç numarası ve muhtemelen sonrasında hiçbir şey.",
+  "s10.closing_chat.cl_017": "Perşembe, o zaman. Tanrı yardım et.",
+  "s10.closing_chat.cl_018": "Eğer bir mahkemeye götürürsem, işi yabancılara teslim eder ve bir sonuç alırım. Eğer odaya götürürsem, işi gerçekten orada olan tek insanlara teslim eder ve onların ne yapacağını öğrenirim. Oda içinde olmayı tercih etmeye karar verdim.",
+  "s10.closing_chat.cl_019": "Teşekkür ederim. Gerçekten. Dokuz yılda ilk kez bütününe bakan ve bir kez bile bana nasıl bu kadar aptal olabildiğimi sormayan kişi sensin.",
+  "s10.chats.b1_001": "yani üç saatti. üç saat boyunca birisiyle konuştuğumdan beri ne kadar zaman geçti biliyor musun",
+  "s10.chats.b1_002": "aslında yapıyorum. aynı.",
+  "s10.chats.b1_003": "tamam. uyku. saat 7'de açığım.",
+  "s10.chats.b1_010": "bu akşam video görüşmesi yapabilir miyiz. bunu söylerken yüzünü görmek istiyorum",
+  "s10.chats.b1_011": "Bu akşam olmaz; ben servisteyim ve buradaki wifi bir savaş suçudur. Sesli?",
+  "s10.chats.b1_012": "sesli not",
+  "s10.chats.b1_013": "tamam bu adil değil, bu ses",
+  "s10.chats.b1_020": "video? sadece 2 dakika",
+  "s10.chats.b1_021": "Telefon kırık, ön kamera yok. Cumartesi halledeceğim.",
+  "s10.chats.b1_022": "geçen cumartesi cumartesi dediğin",
+  "s10.chats.b1_023": "biliyorum. özür dilerim. felaketim. saat 9'da arayayım mı?",
+  "s10.chats.b1_030": "Elena bir şey söylemem lazım ve bitirene kadar tepki vermemen gerekiyor.",
+  "s10.chats.b1_031": "İşteki şey, konuşamadığım dava. Söylediğimden daha ileri gitti. Bir süre bir yere konuluyorum. Sana ulaşamayacağım ve sen de beni arayamazsın.",
+  "s10.chats.b1_032": "bir yere koyulmak. bu ne demek",
+  "s10.chats.b1_033": "Korunmuş. Kullandıkları kelime bu. Söyleyebileceğim tek şey bu ve zaten çok fazla söyledim. Seni seviyorum. Bu numarayı arama.",
+  "s10.chats.b1_040": "Benim. Geri döndüm. Geri dönmeme izin var.",
+  "s10.chats.b1_041": "dört ay",
+  "s10.chats.b1_042": "Dört ay. Biliyorum. Bana bir şey sor, cevaplayacağım.",
+  "s10.chats.b1_050": "Sana bir şey isteyeceğim ve sadece yapmanı istiyorum; açıklama yok, neden yapmasan diye bir sebep de yok.",
+  "s10.chats.b1_051": "Herhangi bir şey.",
+  "s10.chats.b1_052": "Şu anda kendinin fotoğrafını çek, elinde bugünün gazetesini tutarken. Herhangi bir gazete. Ön sayfası görünür olsun. Hepsi bu.",
+  "s10.chats.b1_053": "Elena.",
+  "s10.chats.b1_054": "Bobby.",
+  "s10.chats.b1_055": "Yarın yapacağım. Bunu böyle, gece yarısı, bir rehin gibi yapmayacağım. Yarın yapacağım ve sen berbat hissedeceksin.",
+  "s10.chats.b1_056": "tamam",
+  "s10.chats.b1_057": "tamam",
+  "s10.chats.b1_060": "Uyanık mısın?",
+  "s10.chats.b1_062": "Uyu Bobby.",
+  "s10.chats.n1_001": "Kim olduğunu bilmiyorum ama kocama mesaj atmayı bırakmalısın.",
+  "s10.chats.n1_002": "Bana ayrıldığınızı söyledi.",
+  "s10.chats.n1_003": "Tabii ki söyledi. İki çocuğumuz var. İsimlerini ister misin.",
+  "s10.chats.n1_004": "Hayır.",
+  "s10.chats.n1_010": "Sana bir özür borçluyum. Onunla konuştum ve bizim hakkımızda gerçeği bana söyledi, sana böyle davranmam yanlıştı. Ne olursa olsun, o bir yalancı değil.",
+  "s10.chats.n1_011": "Tamam.",
+  "s10.chats.n1_012": "Ona bak. İnsanlara söylediği kadar iyi değil.",
+  "s10.chats.n1_020": "Boşanma gerçekleşti. Senin adına mutlu olduğumu iddia etmeyeceğim ama aynı zamanda kötü adam da olmayacağım. Ona iyi davran.",
+  "s10.chats.f1_001": "Christofi Hanım: Dr. Rachel Ferris, kardiyoloji. Andreas, sizinle bir sonraki akrabası olarak konuşmam için izin verdi.",
+  "s10.chats.f1_002": "İyi mi",
+  "s10.chats.f1_003": "Durumu stabil. Aritmisi ilaçla kontrol edilebiliyor ama stres ona yardımcı olmuyor. Sessizliğe ihtiyacı var ve senin endişelenmemen gerekiyor; söylemesi kolay bir şey, ama takdir ediyorum.",
+  "s10.chats.f1_010": "Doktor, hastaneye gelebilir miyim?",
+  "s10.chats.f1_011": "Bunu yapmamanı istedi. Normalde buna karşı çıkardım ama o çok kararlıydı ve benim hastam. Üzgünüm.",
+  "s10.chats.nia_001": "El. Şeyi tekrar söyleyebilir miyim.",
+  "s10.chats.nia_002": "Hayır",
+  "s10.chats.nia_003": "Nazikçe söyleyeceğim ve sonra iki yıl daha susacağım. Sekiz yıldır o seninle aynı odada bulunmadı. Tek sefer bile. Bir kahve bile, bir istasyon peronu bile, bir cenaze bile.",
+  "s10.chats.nia_004": "Onun hayatının nasıl olduğunu anlamıyorsun.",
+  "s10.chats.nia_005": "Biliyorum. Bunu 2018'de ve 2020'de söylemiştin. Tamam. Susuyorum. Yarın öğle yemeği?",
+  "s10.chats.nia_010": "Sana hak ettiğini söylemeyeceğim ve asla söylemeyeceğim; bil ki bu bana bir şeyin maliyetine.",
+  "s10.chats.nia_011": "Söyle. İçtenlikle. Söyle.",
+  "s10.chats.nia_012": "Hayır. Bana gel. Hiçbir şey getirme.",
+  "s10.chats.s1_001": "Elena mou. Anne, perşembesi gelmeyeceğini söylüyor.",
+  "s10.chats.s1_002": "Bu hafta değil.",
+  "s10.chats.s1_003": "O mu? Biliyorsan söyleyebilirsin. Bana hiçbir şey söylemezsin ve ben artık çocuk değilim.",
+  "s10.chats.s1_010": "Nasıldı? Pazar günü biraz tuhaf görünüyordun.",
+  "s10.chats.s1_011": "Yine hastanede. Gidemedim. Sorun değil.",
+  "s10.chats.s1_012": "Bu berbat. Çok üzgünüm El. Gelmemi ister misin? İyi cipsler getirebilirim.",
+  "s10.chats.s1_020": "Elena lütfen telefonu aç.",
+  "s10.chats.s1_021": "Elena, telefon açman için yalvarıyorum.",
+  "s10.chats.s1_030": "ses kaydı",
+  "s10.feed.bio": "Bristol. Hukuk asistanı. Altı çocuğun teyzesiyim. Çoğunlukla başkalarının köpekleri için buradayım.",
+  "s10.feed.dm_b1_001": "Profilin, tanıyabileceğin kişiler arasında çıktı, bu İngilizcede en romantik olmayan cümle. Merhaba.",
+  "s10.feed.dm_b1_002": "Merhaba. Bu gerçekten aldığım en kötü açılış cümlesi.",
+  "s10.feed.dm_b1_003": "Başkaları da var ama onlar daha kötü. Sen Bristol'daki Christofi ailesinden Elena mısın? Annem Yiannis Christofi'yi tanıyor. Küçük bir dünya, küçük insanlar.",
+  "s10.feed.dm_b1_004": "Herkes babamı tanıyor. Kırk yıl boyunca herkesin saçını kestirdi.",
+  "s10.feed.dm_b1_010": "Fotoğraf isteği reddedildi. Çöp kutusu gibi görünüyorum.",
+  "s10.feed.dm_b1_011": "Çöp kutusu fotoğrafını gönder.",
+  "s10.feed.dm_b1_012": "İşte 2019'da Barry Island'dan bir fotoğraf, o zaman daha iyiydim ve aksiymiş gibi davranmayacağım.",
+  "s10.feed.dm_a1_001": "Merhaba. Üzgünüm, bu çok garip bir mesaj olacak ve söz veriyorum sonunda gerçek bir soru var. Bu Andreas Solomou, anestezi uzmanı mı? Cardiff'ten?",
+  "s10.feed.dm_a1_002": "Bu doğru. Seni tanımalı mıyım? Üzgünüm, bu uygulamada berbatım, yılda iki kez kullanıyorum.",
+  "s10.feed.dm_a1_003": "Hayır. Olmamalı. Bunu kanıtlamaya çalışıyorum. Hiç Londra'da yaşadın mı?",
+  "s10.feed.dm_a1_004": "2011'de altı ay ve nefret ettim. Her şey yolunda mı? Sessizleştin.",
+  "s10.feed.dm_a1_005": "Üzgünüm. Evet. Bir tane daha ve sonra seni rahat bırakacağım. Bu yıl 14 Mart'ta bir düğünde miydin?",
+  "s10.feed.dm_a1_006": "Costas ve Eleni'nin, evet, sayfamda. Neden?",
+  "s10.feed.dm_a1_007": "Çünkü o gün Royal Free'de bir defibrilatör taktırdığını duymuştum.",
+  "s10.feed.dm_a1_008": "…",
+  "s10.feed.dm_a1_009": "Tamam. Beni arasan iyi olur. İşte numaram. Oturacağım.",
+  "s10.messages.sms_001": "Elena sevgili, baban. Annen yemek yemediğini söylüyor. Pazar gel, sana bir şey sormayacağım.",
+  "s10.messages.sms_002": "Pazar geleceğim.",
+  "s10.messages.sms_010": "Elena, Hannah Wexley. Gelmen için teşekkürler. Görüşüldüğü gibi: telefonu getir, ekran görüntüsü değil, ve kronolojinizi de getirin. Kronoloji, dört yılda bana verilen en faydalı belge; başka bir şey konuşmadan önce bunu bilmeni istiyorum.",
+  "s10.messages.sms_011": "Bu, elektronik bir tabloda dokuz yıl. Akıllıca değil, sadece uzun.",
+  "s10.messages.sms_012": "Bu delil. Perşembe saat dokuz.",
+  "s10.messages.sms_020": "Elena, ben Marianna. Lütfen telefonu bana al. Ne yaptıysa, o benim kızım; sen ise kız kardeşimin kızı ve hayatınız boyunca her perşembe sizin ikiniz için yemek yaptım.",
+  "s10.mail.gm_001.subject": "Re: sorgunuz: hesap oluşturma ve erişim kayıtları",
+  "s10.mail.gm_001.body": "Sayın Bayan Christofi,\n\nTarafımıza tebliğ edilen mahkeme emrine istinaden, Ek A'da listelenen otuz dokuz hesabın istenen kayıtlarını ekte bulabilirsiniz.\n\nBulguların özeti:\n\n  Ek A'daki hesaplar:                39\n  Oluşturulma aralığı:               03/2017 – 02/2026\n  Ayrı kayıt e-posta alan adları:    2\n  Ayrı kurtarma telefon numaraları:   3\n  Ayrı cihaz tanımlayıcıları:         2\n  Ayrı IP aralıkları (konut):         1\n\nTüm otuz dokuz hesap, BS5 posta kodu bölgesindeki tek bir konut bağlantısından oluşturulmuş ve ağırlıklı olarak bu bağlantı üzerinden erişilmiştir. Hesapların ikisinde aynı bağlantıya kayıtlı ikinci bir cihazdan erişilmiştir.\n\nBu modelin otuz dokuz bireyle tutarlı olmadığına dikkat çekiyoruz.\n\nSaygılarımızla,\nDisclosure Team",
+  "s10.mail.gm_002.subject": "Kronoloji: v11 (bunu kimseye göndermeyin)",
+  "s10.mail.gm_002.body": "SÜTUNLAR: tarih | hesap | kanal | yapılan iddia | doğrulanabilir? | doğrulandı?\n\n  Satırlar: 4,118\n  Tarih aralığı: 09/03/2017 – 14/03/2026\n  Görülen hesaplar: 39\n\n  Doğrulanabilir iddialar:               61\n  O anda gerçekten doğruladığım iddialar: 0\n\nDAVRANIŞ NOTLARI (04/2026 eklenmiştir)\n\n  1. Hiç iki hesap aynı dakikada aktif olmamıştır.\n  2. Tüm hesaplar perşembe günleri 19:00–21:00 arasında sessiz kalır. Dokuz yılda istisna yok.\n  3. Tüm hesaplar 'definately' kelimesini yanlış yazar. Hepsi. Her seferinde.\n  4. Hiçbir hesap gönderildiği gün çekilen bir fotoğrafı göndermemiştir.\n  5. 'Bobby' den gelen her arama gelen aramadır. Dokuz yılda ona bağlanan bir arama hiç yapamadım.\n\n  Kendime not: bunların her biri tek başına bir şey değildir. Hepsini bir yerde yazdım\n  ve hiç bir şey değildir.",
+  "s10.mail.gm_003.subject": "Düğün: 14 Mart, Cardiff",
+  "s10.mail.gm_004.subject": "Taciz: ön tavsiye",
+  "s10.mail.gm_005.subject": "(no subject)",
+  "s10.maps.loc_001.name": "Ev",
+  "s10.maps.loc_001.address": "Chelsea Road, Easton, Bristol",
+  "s10.maps.loc_002.name": "Thia Marianna",
+  "s10.maps.loc_002.address": "Fishponds Road, Bristol",
+  "s10.maps.loc_002.note": "Perşembe. Doğduğumdan beri her perşembe.",
+  "s10.maps.loc_003.name": "İş",
+  "s10.maps.loc_003.address": "Queen Square, Bristol",
+  "s10.maps.loc_004.name": "Royal Free Hospital",
+  "s10.maps.loc_004.address": "Hampstead, London",
+  "s10.maps.loc_004.note": "Kırk bir kez aradım. Hiç gitmedim.",
+  "s10.maps.loc_005.name": "Wexley & Co",
+  "s10.maps.loc_005.address": "Berkeley Square, Bristol",
+  "s10.maps.loc_006.name": "Cardiff",
+  "s10.maps.loc_006.address": "Cardiff",
+  "s10.maps.loc_006.note": "19 Mart. Yetmiş kilometre. Elli bir dakika.",
+  "s10.calendar.ev_001": "Perşembe, Marianna'nın",
+  "s10.calendar.ev_002": "B, ameliyat",
+  "s10.calendar.ev_002.notes": "Saat 6'dan sonra mesaj atma.",
+  "s10.calendar.ev_003": "Yıldönümü, 9 Kas",
+  "s10.calendar.ev_004": "Wexley 09:00",
+  "s10.calendar.ev_005": "Sophia, doğum günü",
+  "s10.calendar.ev_006": "Cardiff",
+  "s10.photos.album_001": "Kamera Albümü",
+  "s10.photos.album_002": "Aile",
+  "s10.photos.album_003": "her şey",
+  "s10.photos.album_004": "B",
+  "s10.photos.ph_010.document": "Satırların iplik gibi göründüğü, metin yerine satırların iplik olduğu bir elektronik tablo ekran görüntüsü.\n\n  chronology_v11.xlsx\n  DATE | ACCOUNT | CHANNEL | CLAIM | VERIFIABLE? | VERIFIED?\n\n  4,118 satır. Bu yakınlaştırmada yalnızca son iki sütun okunabilir,\n  çünkü bunlar tek karakter genişliğinde.\n\n  VERIFIABLE sütunu Y, N, N, Y, N, Y, Y, N şeklinde ilerliyor.\n  VERIFIED sütunu 4,118 ardışık N.",
+  "s10.photos.ph_011.document": "Ekran görüntüsü bir mesaj dizisi, sadece dört mesaj ve zaman damgaları görünür şekilde kırpılmış.\n\n  23:58  Şu anda kendinizin bir fotoğrafını çekin, bugünün\n         gazetesini tutarak. Herhangi bir gazete. Ön sayfa gösterilsin. Hepsi bu.\n  23:58  Elena.\n  23:59  Bobby.\n  00:04  Yarın yapacağım. Bunu bu şekilde, gece yarısı, bir rehin gibi\n         yapmayacağım. Yarın yapacağım ve\n         kendini berbat hissedeceksin.\n\nSon mesajın altında hiçbir şey yok. Ekran görüntüsü gönderildikten 1,094 gün sonra alındı.",
+  "s10.photos.ph_012.document": "Mutfak masasında basılı bir açıklama tablosunun fotoğrafı, bir kupa bir köşeyi tutuyor.\n\n  SCHEDULE A: ACCOUNT RECORDS\n\n  Accounts                            39\n  Registration email domains           2\n  Recovery telephone numbers           3\n  Device identifiers                   2\n  Residential IP ranges                1\n\n  Postcode area of origin: BS5\n\nBirisi son satırın yanına, kurşun kalemle, kendini dengeleyen bir el ile şunu yazmış: 'benden dört sokak uzakta'.",
+  "s10.photos.ph_013.document": "Kişi listesi ekran görüntüsü, S girişlerine kaydırılmış.\n\n  Solomou, Andreas          ❤️\n  Solomou, Nadia            yanıt verme\n  Christofi, Sophia         Marianna'nın kızı\n\nBu üç kişiden ikisi var olmayan. Üçüncü, diğer ikisini yaratmış.",
+  "s10.notes.folder_001": "Notlar",
+  "s10.notes.folder_002": "—",
+  "s10.notes.note_001.title": "Nedenler",
+  "s10.notes.note_001.block_001": "Bunu 2021'de Nia'ya her zaman bir neden olduğunu kanıtlamak için başlattım ve ardından sürdürdüm; bu da sana bir şey anlatıyor.",
+  "s10.notes.note_001.block_002": "kötü satır · bir serviste · gece vardiyası · telefon bir dolapta · ön kamera kırık · güven video uygulamalarını engelliyor · eski eş onun bulutuna erişebiliyor · beni onun bu kadar ince görmesini istemiyor",
+  "s10.notes.note_001.block_003": "ilk kez bir ekran üzerinden olmasını istemiyor · iyi fotoğraf çekmiyor · bununla ilgili batıl inancı var · iyi olduğunda yapacağını söylüyor",
+  "s10.notes.note_001.block_004": "Bunların her biri gerçek bir neden. Bu nedenlerden birini söyleyecek kişileri tanıyorum.",
+  "s10.notes.note_001.block_005": "Haftada bir, dokuz yıl boyunca toplam dört yüz altmış sekiz kez ve bugün bile bunları bir kez dahi sıraya koymadım.",
+  "s10.notes.note_002.title": "Perşembe Günleri",
+  "s10.notes.note_002.block_001": "Marianna, benim doğmadan beri, 7'den geç saate kadar telefonları kapıdaki kutuya koyar; bu konuda katıdır.",
+  "s10.notes.note_002.block_002": "Bobby, Perşembe akşamları bana hiç mesaj atmadı; dokuz yılda bir kez bile. Eskiden bunun, aile gecesi olduğunu bildiği ve saygı duyduğu için olduğunu düşünürdüm.",
+  "s10.notes.note_002.block_003": "Nadia, Perşembe akşamı bana hiç mesaj atmadı.",
+  "s10.notes.note_002.block_004": "Dr. Ferris, Perşembe akşamı bana hiç mesaj atmadı.",
+  "s10.notes.note_002.block_005": "Kardeşi. Hastane yöneticisi. Sigortadan adam. Hiçbiri. Dokuz yılda, Perşembe günleri saat yedi ile dokuz arasında, otuz dokuz kişiden biri bile yok.",
+  "s10.notes.note_002.block_006": "(Mart'tan beri ekran görüntüsü aldığım her şey, everything adlı albümde ve diğer klasördeki notta. İkisi de 0911. Bunu araştırmak zorunda kalmadım, bu da benimle ilgili küçük bir kanıt.)",
+  "s10.notes.note_003.title": "—",
+  "s10.notes.note_003.block_001": "20 Mart sabah saat dörtte yazıldı; bunu üstte koyuyorum ki daha sonra sakin olmadığımı bilebileyim.",
+  "s10.notes.note_003.block_003": "Hissettiğim şey onun için yas tutmak değil. O hiç orada olmadı, bu yüzden yas tutacak bir şey yok. Hissettiğim şey, birinin beni dokuz yıl bir program izler gibi izlemesi.",
+  "s10.notes.note_003.block_004": "Ve bunun çoğu zaman odada olmaları; kanepe koltuğunun kolunda oturmak. Bana onun nasıl olduğunu sormak.",
+  "s10.notes.note_003.block_005": "Henüz ismi yazmadım. Emin olduğumda yazacağım. Emin olmak, bana kalan tek şey.",
+  "s10.search.gs_001": "Royal Free kardiyoloji servisi ziyaret saatleri",
+  "s10.search.gs_002": "Birleşik Krallık tanık koruma programı aileye bildirilebilir mi",
+  "s10.search.gs_003": "Birinin seni kandırıp kandırmadığını nasıl anlarsın",
+  "s10.search.gs_004": "Profil fotoğrafı için ters görsel arama",
+  "s10.search.gs_005": "Andreas Solomou anestezi uzmanı GMC kaydı",
+  "s10.search.gs_006": "Birinin yerine çevrimiçi olarak davranmak Birleşik Krallık'ta suç mu",
+  "s10.search.gs_007": "1997 Tacizden Korunma Yasası 3. bölüm sivil",
+  "s10.search.gs_008": "Kendi ailenizdeki birini nasıl affedersiniz",
+  "s10.payments.tx_001.note": "Hastane otoparkı: B",
+  "s10.payments.tx_002.note": "Koja'ya çiçekler",
+  "s10.payments.tx_003.note": "B: telefon tamiri",
+  "s10.payments.tx_004.note": "Perşembe: Marianna (katkı)",
+  "s10.payments.tx_005.note": "Nia: öğle yemeği",
+  "s10.payments.tx_006.note": "Wexley & Co: hesabına",
+  "s10.payments.tx_007.note": "Tren: Cardiff",
+  "s10.cloud.cfo_001": "her şey",
+  "s10.cloud.cf_001.name": "chronology_v11.xlsx",
+  "s10.cloud.cf_001.body": "KRONOLOJİ: 09/03/2017 to 14/03/2026\n\nRows: 4,118\nAccounts appearing: 39\nChannels: Chats, Feed DM, SMS, voice\n\nCLAIMS CAPABLE OF VERIFICATION AT THE TIME: 61\nCLAIMS VERIFIED AT THE TIME: 0\n\nBEHAVIOURAL NOTES (added April 2026)\n  1. No two accounts have ever been active within the same minute.\n  2. All accounts silent Thursdays 19:00–21:00. No exceptions in nine years.\n  3. All accounts spell 'definately'. Every account. Every time.\n  4. No account has ever sent a photograph taken the day it was sent.\n  5. Every call from 'Bobby' is an incoming call. Nine years, no exceptions.\n\nAny one of these is nothing.",
+  "s10.cloud.cf_002.name": "schedule_A_accounts.pdf",
+  "s10.cloud.cf_002.body": "SCHEDULE A: THIRTY-NINE ACCOUNTS\n\n  a.solomou.md            Feed   created 03/2017\n  bobby.solomou           Facebook    created 03/2017\n  nadia_solomou_          Feed   created 03/2019\n  nadiasolomou81          Facebook    created 03/2019\n  dr.r.ferris             Chats    created 06/2021\n  solomou.c (brother)     Feed   created 08/2021\n  rfh.admin.cardio        Email       created 06/2021\n  ...\n\n  39 accounts.\n  2 registration email domains.\n  3 recovery telephone numbers.\n  2 device identifiers.\n  1 residential IP range: BS5.",
+  "s10.cloud.cf_003.name": "reasons.txt",
+  "s10.cloud.cf_003.body": "Every reason given, in nine years, for why there could not be a video call.\n\nCounted: 468.\nDistinct: 11.\nRepeated across accounts: 11 of 11.\n\nThe eleven reasons are given by Bobby, by his brother, by Nadia and, on two\noccasions in 2021, by a consultant cardiologist.",
+  "s10.cloud.cf_004.name": "andreas_thread.pdf",
+  "s10.cloud.cf_004.body": "EXPORT: Feed DM with a.solomou (the real account)\n19 March 2026\n\nNine messages. The thread ends with a telephone number and the words\n'I'm going to sit down.'\n\nThe call that followed lasted 71 minutes. He rang her back the next morning\nand the morning after that.",
+  "s10.cloud.cf_005.name": "thursday.csv",
+  "s10.cloud.cf_005.body": "ACCOUNT ACTIVITY: THURSDAYS 19:00–21:00 (protected)\n\nWeeks in period: 462\nThursdays with any activity from any Schedule A account: 0\n\nWeeks in period with activity in every other 2-hour window: 462\n\nThere is no other two-hour window in the week, on any day, with a zero.",
+  "s10.memos.vm_001.title": "9 Nov",
+  "s10.memos.vm_002.title": "—",
+  "s10.clock.al_001": "Work",
+  "s10.clock.al_002": "Thursday",
+  "s10.lock.step_001.hint": "Her own note gives the album code outright: the day he first messaged her, day and month, four digits.",
+  "s10.question.q01.title": "Nine years",
+  "s10.question.q01.question": "Across nine years and thousands of hours of contact, there is one ordinary thing that never once happened between them. What?",
+  "s10.question.q01.opt0": "A photograph together",
+  "s10.question.q01.opt1": "Bir doğum günü kartı",
+  "s10.question.q01.opt2": "Bir görüntülü arama",
+  "s10.question.q01.opt3": "Bir ortak tatil",
+  "s10.question.q01.answers": [
+    [
+      "video"
+    ],
+    [
+      "görüntülü"
+    ],
+    [
+      "görüntülü arama"
+    ],
+    [
+      "vido"
+    ],
+    [
+      "goruntulu"
+    ],
+    [
+      "yüz"
+    ],
+    [
+      "yuz"
+    ]
+  ],
+  "s10.question.q02.title": "Yetmiş kilometre",
+  "s10.question.q02.question": "Kendisine gönderilen her fotoğraf, sıradan bir kamu profiline sahip gerçek bir adama ait. O aslında nerede yaşıyor?",
+  "s10.question.q02.opt0": "Manchester",
+  "s10.question.q02.opt1": "Cardiff",
+  "s10.question.q02.opt2": "Nicosia",
+  "s10.question.q02.opt3": "London",
+  "s10.question.q02.answers": [
+    [
+      "cardiff"
+    ],
+    [
+      "kardif"
+    ],
+    [
+      "cardif"
+    ],
+    [
+      "galler"
+    ]
+  ],
+  "s10.question.q03.title": "Arama günlüğü",
+  "s10.question.q03.question": "Bu numaradan dokuz yıl içinde binlerce arama var. Hepsinde ortak bir şey var. Nedir?",
+  "s10.question.q03.opt0": "Hepsi kısaydı",
+  "s10.question.q03.opt1": "Her arama gelen bir aramaydı",
+  "s10.question.q03.opt2": "Hepsi geceydi",
+  "s10.question.q03.opt3": "Hepsi aynı kuleden geliyordu",
+  "s10.question.q03.answers": [
+    [
+      "gelen"
+    ],
+    [
+      "alin"
+    ],
+    [
+      "aramış"
+    ]
+  ],
+  "s10.question.q04.title": "Dört ay",
+  "s10.question.q04.question": "2019'da dört ay boyunca kayboldu ve kabul ettiği bir açıklamayla geri döndü. O, aslında nerede olduğu iddia ediliyordu?",
+  "s10.question.q04.opt0": "Bir hapis cezası",
+  "s10.question.q04.opt1": "Tanık koruması",
+  "s10.question.q04.opt2": "Yurtdışı görev",
+  "s10.question.q04.opt3": "Psikiyatrik birim",
+  "s10.question.q04.answers": [
+    [
+      "tanık"
+    ],
+    [
+      "koruma"
+    ],
+    [
+      "tanık koruma"
+    ],
+    [
+      "tanik"
+    ],
+    [
+      "koruma"
+    ]
+  ],
+  "s10.question.q05.title": "Mart 2021'de bir hafta",
+  "s10.question.q05.question": "Dört hesap aynı hafta içinde ona dört şey söyledi. Bunların üçü aynı anda doğru olabilir. Olmayanı seç.",
+  "s10.question.q05.sn0": "Bobby: 'Serviste Cuma'ya kadar, beni kardiyak birime transfer ettiler, kapıların dışına telefon yok.'",
+  "s10.question.q05.sn1": "Dr Ferris: 'Durumu stabil. Hastaneye gelmemenizi istedi ve normalde buna karşı çıkardım.'",
+  "s10.question.q05.sn2": "Nadia: 'Bu öğleden sonra arabadan beni aradı. Ses tonu berbattı. Ona ne söylediniz olursa olsun, yapmayın.'",
+  "s10.question.q05.sn3": "Bobby'nin kardeşi: 'Aile sadece birimde, üzgünüm. Sana sorduğunu ona söyleyeceğim.'",
+  "s10.question.q05.answers": [
+    [
+      "nadia"
+    ],
+    [
+      "araba"
+    ],
+    [
+      "sn2"
+    ],
+    [
+      "üçüncü"
+    ],
+    [
+      "karı"
+    ]
+  ],
+  "s10.question.q06.title": "Eşi",
+  "s10.question.q06.question": "Üç yıl boyunca bir kadın ona mesaj attı; önce öfkeli, sonra özür dileyen, sonunda neredeyse nazik. O otuz dokuzdan biri. İsmi nedir?",
+  "s10.question.q06.opt0": "Rachel Ferris",
+  "s10.question.q06.opt1": "Nadia Solomou",
+  "s10.question.q06.opt2": "Hannah Wexley",
+  "s10.question.q06.opt3": "Nia Okonjo",
+  "s10.question.q06.answers": [
+    [
+      "nadia"
+    ],
+    [
+      "nadja"
+    ],
+    [
+      "nadya"
+    ],
+    [
+      "solomou"
+    ]
+  ],
+  "s10.question.q07.title": "Haftada iki saat",
+  "s10.question.q07.question": "Otuz dokuz hesabın her biri, dokuz yıl boyunca her hafta aynı iki saatlik pencerede tamamen sessiz kalıyor, tek bir istisna olmadan. Hangi gün?",
+  "s10.question.q07.opt0": "Pazar",
+  "s10.question.q07.opt1": "Perşembe",
+  "s10.question.q07.opt2": "Çarşamba",
+  "s10.question.q07.opt3": "Pazartesi",
+  "s10.question.q07.answers": [
+    [
+      "perşembe"
+    ],
+    [
+      "persembe"
+    ],
+    [
+      "per"
+    ],
+    [
+      "persemb"
+    ],
+    [
+      "per"
+    ]
+  ],
+  "s10.question.q08.title": "Bir şey, açıklama yok",
+  "s10.question.q08.question": "2023'te o, eski olamayacak bir fotoğraf göndermesini istedi. Fotoğrafta ne tutmasını istedi?",
+  "s10.question.q08.opt0": "Ellerinin bir fotoğrafı",
+  "s10.question.q08.opt1": "Bir gazete",
+  "s10.question.q08.opt2": "Onun pasaportu",
+  "s10.question.q08.opt3": "El yazısı not",
+  "s10.question.q08.answers": [
+    [
+      "gazete"
+    ],
+    [
+      "gazet"
+    ],
+    [
+      "haber"
+    ],
+    [
+      "habar"
+    ],
+    [
+      "basın"
+    ]
+  ],
+  "s10.question.q09.title": "14 Mart",
+  "s10.question.q09.question": "Kendisine o gün Londra'da bir hastanede olduğu söylenmişti. Gerçek adam başka bir yerde, fotoğraflanmış ve etiketlenmişti. Nerede?",
+  "s10.question.q09.opt0": "Bir futbol maçında",
+  "s10.question.q09.opt1": "Bir düğünde",
+  "s10.question.q09.opt2": "İspanya'da tatilde",
+  "s10.question.q09.opt3": "Kendi doğum günü partisinde",
+  "s10.question.q09.answers": [
+    [
+      "düğün"
+    ],
+    [
+      "dugun"
+    ],
+    [
+      "evlilik"
+    ],
+    [
+      "nikah"
+    ],
+    [
+      "dügün"
+    ]
+  ],
+  "s10.question.q10.title": "Üç yüz on iki pound",
+  "s10.question.q10.question": "Dokuz yılda üç kez para gönderdi, toplam £312. Üç gönderiden en büyüğü ne için gönderildi?",
+  "s10.question.q10.opt0": "Bir tren bileti",
+  "s10.question.q10.opt1": "Hastane otoparkı",
+  "s10.question.q10.opt2": "Bir taksi ücreti",
+  "s10.question.q10.opt3": "Çiçekler",
+  "s10.question.q10.answers": [
+    [
+      "otopark"
+    ],
+    [
+      "park"
+    ],
+    [
+      "hastane otoparkı"
+    ],
+    [
+      "otop"
+    ]
+  ],
+  "s10.question.q11.title": "İpucu",
+  "s10.question.q11.question": "Otuz dokuz hesaptaki bir kelime her seferinde aynı şekilde hatalı. Otuz dokuz kişi bunu paylaşamaz. Bu ne tür bir hata?",
+  "s10.question.q11.opt0": "Aynı selamlama",
+  "s10.question.q11.opt1": "Yazım hatası",
+  "s10.question.q11.opt2": "Aynı emoji",
+  "s10.question.q11.opt3": "Aynı günün saati",
+  "s10.question.q11.answers": [
+    [
+      "yazım"
+    ],
+    [
+      "yazim"
+    ],
+    [
+      "imla"
+    ],
+    [
+      "hata"
+    ],
+    [
+      "yanlış"
+    ],
+    [
+      "yazımhata"
+    ]
+  ],
+  "s10.question.q12.title": "Dört sokak uzakta",
+  "s10.question.q12.question": "Otuz dokuz hesap, bir bağlantı, bir posta kodu. Her Perşembe orada bulunan ve aile fotoğraflarının çoğunda yer alan kişi kim?",
+  "s10.question.q12.opt0": "Nia Okonjo",
+  "s10.question.q12.opt1": "Sophia Christofi",
+  "s10.question.q12.opt2": "Marianna Christofi",
+  "s10.question.q12.opt3": "Andreas Solomou",
+  "s10.question.q12.answers": [
+    [
+      "sophia"
+    ],
+    [
+      "sofia"
+    ],
+    [
+      "soph"
+    ],
+    [
+      "christofi"
+    ],
+    [
+      "kuzen"
+    ]
+  ],
+  "s10.question.q13.title": "Tekrar bak",
+  "s10.question.q13.question": "Aile albümünü aç ve 2019'dan 2025'e kadar içinde bulunduğu dört fotoğrafı oku. Hepsinde elleri aynı şeyi yapıyor. Ne tutuyor?",
+  "s10.question.q13.opt0": "Bir sigara",
+  "s10.question.q13.opt1": "Bir kadeh şarap",
+  "s10.question.q13.opt2": "Telefonu",
+  "s10.question.q13.opt3": "Çantası",
+  "s10.question.q13.answers": [
+    [
+      "telefon"
+    ],
+    [
+      "fone"
+    ],
+    [
+      "telefon"
+    ],
+    [
+      "mobil"
+    ],
+    [
+      "telefonu"
+    ]
+  ],
+  "s10.question.q14.title": "On birinci deneme",
+  "s10.question.q14.question": "Açıklaması sonunda geldi ve bir açıklama olmaktan kaçındı. Başlangıçta ne olduğunu, dokuz yıl olmadan önce adını söylüyor. Ne?",
+  "s10.question.q14.opt0": "Bir deney",
+  "s10.question.q14.opt1": "Bir şaka",
+  "s10.question.q14.opt2": "Bir meydan okuma",
+  "s10.question.q14.opt3": "Bir hata",
+  "s10.question.q14.answers": [
+    [
+      "şaka"
+    ],
+    [
+      "şak"
+    ],
+    [
+      "saka"
+    ],
+    [
+      "şaka"
+    ],
+    [
+      "şaka"
+    ],
+    [
+      "gülme"
+    ]
+  ],
+  "s10.question.q15.title": "Nasıl adlandırılır",
+  "s10.question.q15.question": "Dokuz yıl başkası gibi olmak burada suç değil. Avukatı uyan şeyi buldu. Bu nedir?",
+  "s10.question.q15.opt0": "Yanıltıcı beyanla dolandırıcılık",
+  "s10.question.q15.opt1": "Taciz",
+  "s10.question.q15.opt2": "Kötü niyetli iletişimler",
+  "s10.question.q15.opt3": "İftira",
+  "s10.question.q15.answers": [
+    [
+      "taciz"
+    ],
+    [
+      "taciz"
+    ],
+    [
+      "taciz"
+    ],
+    [
+      "takip"
+    ],
+    [
+      "koruma"
+    ]
+  ],
+  "s10.chats.b2_101": "Üçüncü mesaj hakkında bütün gün düşündüm. Babanın dükkanıyla ilgili olanı. Hiç kimse babasını bana böyle tarif etmemişti.",
+  "s10.chats.b2_102": "Senin beğenmeni sevmeyecekti.",
+  "s10.chats.b2_103": "O zaman ona söyleme. Bana başka bir tane söyle.",
+  "s10.chats.b2_110": "Uzun bir şey. İki tutuklama ve bir bölüm. İzin veriliyorsa sana bir süre konuşacağım.",
+  "s10.chats.b2_111": "izinli",
+  "s10.chats.b2_112": "Sen, doktor olmam gerekmeyen tek kişisin.",
+  "s10.chats.b2_120": "Saat yedide çıkıyorum. İkiye kadar uyuyorum. Bana mesaj atarsan kesin uyanırım, o yüzden mesaj at.",
+  "s10.chats.b2_121": "uyku",
+  "s10.chats.b2_122": "hayır",
+  "s10.chats.b2_130": "Bir yıl. Saydım.",
+  "s10.chats.b2_131": "ben de öyle",
+  "s10.chats.b2_140": "Delice bir şey söyleyebilir miyim? Sana söyleyecek bir şeyim olsun diye bir şeyler okumaya başladım.",
+  "s10.chats.b2_141": "bu delice değil",
+  "s10.chats.b2_142": "Kırk birde biraz delice.",
+  "s10.chats.b2_150": "Dört ay hakkında konuşmayacağım. Bunun yerine burada olacağım. Kendimle yaptığım anlaşma bu.",
+  "s10.chats.b2_151": "tamam",
+  "s10.chats.b2_152": "Bana bir şey sor, sadece bir şey.",
+  "s10.chats.b2_153": "korkmuş muydun",
+  "s10.chats.b2_154": "Her gün. Bir sonraki soru bir yıl içinde.",
+  "s10.chats.b2_160": "Bizi covid rotasına aldılar. Görünürdeki sürece geceler. Bekleme. Bekle.",
+  "s10.chats.b2_161": "elbette",
+  "s10.chats.b2_162": "Bu gece iki kaybettim. Açıklamayacağım. Bana sıradan bir şey söyle.",
+  "s10.chats.b2_163": "Üst kattaki kadın bir piyano aldı.",
+  "s10.chats.b2_164": "O iyi mi?",
+  "s10.chats.b2_165": "hayır",
+  "s10.chats.b2_166": "Mükemmel. Teşekkür ederim. Bu, bir haftada bana birinin söylediği en iyi şey.",
+  "s10.chats.b2_170": "Kardeşim bir noktada sana mesaj atacak. Ben evde olduğumda telefonumu alıyor. Ona iyi davran; o açık sözlü ve iyi niyetli.",
+  "s10.chats.b2_171": "tamam",
+  "s10.chats.b2_180": "Kalp meselesi. Bunu Google'lamanı istemiyorum. Bunu benden duymanı istiyorum; ardından ana konu yapmayacağız.",
+  "s10.chats.b2_181": "Bunu söyleyip sonra google'lamama diyemezsin",
+  "s10.chats.b2_182": "Kesinlikle yapabilirim. İzle beni.",
+  "s10.chats.b2_190": "Seni dokuzda arayacağım. Her zamanki gibi.",
+  "s10.chats.b2_191": "Her zaman dokuz diyorsun ama sonra 9:40'da arıyorsun",
+  "s10.chats.b2_192": "Hayatımda sana hiç 9:40'da aramadım.",
+  "s10.chats.b2_193": "O zaman 9:41",
+  "s10.chats.b2_200": "Mutlu Noeller. Ben hazırım. Daha önce oturmadığım bir masa hakkında düşüneceğim.",
+  "s10.chats.b2_201": "Bir sandalye var",
+  "s10.chats.b2_202": "Bir sandalye olduğunu biliyorum.",
+  "s10.chats.b2_210": "Üç haftadır benimle sessiz kaldın; bunu fark etmediğimi iddia etmeyeceğim.",
+  "s10.chats.b2_211": "buradayım",
+  "s10.chats.b2_212": "Buradasın. Benimle değilsin. Bir fark var ve daha önce bunun yanlış tarafında oldum.",
+  "s10.chats.b2_220": "Çiçekler dükkanla birlikte bu sabah gelecek. Bu yıl zamanında sipariş ettiğimden eminim.",
+  "s10.chats.b2_221": "Dün sipariş ettin, değil mi?",
+  "s10.chats.b2_222": "Dün sipariş ettim.",
+  "s10.chats.b2_230": "Doğru bir şekilde uyuduğumdan beri dokuz gün oldu. Beni hastane dışı bir şey hakkında konuş.",
+  "s10.chats.b2_231": "Sophia işi aldı. Gerçek iş, hastane eczanesi, düzenli saatler.",
+  "s10.chats.b2_232": "Onun adına sevindim. Cipsleri yapan o mu?",
+  "s10.chats.b2_233": "Cipsleri yapan o.",
+  "s10.chats.b2_240": "Bir odada nasıl olurduk diye hiç düşündün mü?",
+  "s10.chats.b2_241": "her gün",
+  "s10.chats.b2_242": "Ben de. Sanırım on dakikaya yakın sessiz olurduk, sonra dayanılmaz.",
+  "s10.chats.b2_250": "Sekiz yıl.",
+  "s10.chats.b2_251": "sekiz yıl",
+  "s10.chats.b2_252": "Bana soruyu sor.",
+  "s10.chats.b2_253": "hayır",
+  "s10.chats.b2_254": "Bana sor.",
+  "s10.chats.b2_255": "hayır. tekrar sormuyorum.",
+  "s10.chats.b2_260": "Günaydın. Uzun bir gün var. Kalktığında bir şey söyle.",
+  "s10.chats.b2_261": "Elena",
+  "s10.chats.b2_262": "Elena bir şey olduğunu biliyorum. Konuş.",
+  "s10.chats.b2_263": "Lütfen.",
+  "s10.chats.s2_101": "Anne dışarıda, işten 8'de beni alabilir misin?",
+  "s10.chats.s2_102": "evet",
+  "s10.chats.s2_103": "Sen en iyisin. Sana cips alırım",
+  "s10.chats.s2_110": "yıldönümü nasıldı? bir şeyler yaptı mı",
+  "s10.chats.s2_111": "gece yarısı aradı.",
+  "s10.chats.s2_112": "Gerçekten çok romantik. Kıskanıyorum",
+  "s10.chats.s2_120": "EL. Beni kalıcı yaptılar!!!",
+  "s10.chats.s2_121": "SOPHIA",
+  "s10.chats.s2_122": "Biliyorum!!! Anne ağladı. Baba görmezden geldi",
+  "s10.chats.s2_130": "haber var mı?",
+  "s10.chats.s2_131": "hayır",
+  "s10.chats.s2_132": "Geri gelecek. Böyle insanlar geri döner. İçimde bir his var ve hislerim asla yanılmaz.",
+  "s10.chats.s2_140": "Mrs. Kyriacou hakkında duydun mu",
+  "s10.chats.s2_141": "Anne söyledi",
+  "s10.chats.s2_142": "Herkes ölüyor ve arka odada amoksisilin kutularını sayıyorum",
+  "s10.chats.s2_150": "Sana bir şey sorabilir miyim, ve sen garipleşmez misin?",
+  "s10.chats.s2_151": "bağlı",
+  "s10.chats.s2_152": "Birinin sadece burada olmasıyla daha mutlu olabileceğini hiç düşündün mü?",
+  "s10.chats.s2_153": "sophia",
+  "s10.chats.s2_154": "Özür dilerim. Boş ver. Sadece masada birinin olmasını istiyorum; demek istediğim bu kadar",
+  "s10.chats.s2_160": "Nasıl? Anne dedi ki tekrar hastanede",
+  "s10.chats.s2_161": "Bana ziyaret etmeme izin vermiyorlar",
+  "s10.chats.s2_162": "bu deli gibi. gerçekten deli. Kapıyı kırardım, kırardım",
+  "s10.chats.s2_170": "Santa, 12'de annenin evinde ol demiş",
+  "s10.chats.s2_171": "santa 22 yaşında",
+  "s10.chats.s2_172": "santa zamansız",
+  "s10.chats.s2_180": "el hayatımdaki en berbat randevuyu yaşadım ve senin duyman gerekiyor",
+  "s10.chats.s2_181": "git",
+  "s10.chats.s2_182": "o ANNESİNİ getirdi",
+  "s10.chats.s2_183": "randevuya",
+  "s10.chats.s2_184": "RANDEVUYA",
+  "s10.chats.s2_190": "bugün 5 yıl, değil mi",
+  "s10.chats.s2_191": "hatırladın",
+  "s10.chats.s2_192": "Tabii ki hatırladım. Seninle ilgili her şeyi hatırlıyorum; bu benim yaptığım bütün bir şey",
+  "s10.chats.s2_200": "anne masada onun hakkında soruyor ve sonra bana bakıyor",
+  "s10.chats.s2_201": "neden sana bakıyor",
+  "s10.chats.s2_202": "çünkü ben ona yalnız bırak dedim",
+  "s10.chats.s2_210": "Babanın kartı var mı? İkimizin adını koyacağım",
+  "s10.chats.s2_211": "evet lütfen",
+  "s10.chats.s2_220": "el iyi misin. haftalardır uzaksın",
+  "s10.chats.s2_221": "iyiyim",
+  "s10.chats.s2_222": "iyi diyorsun, annemin söylediği gibi",
+  "s10.chats.s2_223": "bu korkunç bir şey söylemek",
+  "s10.chats.s2_224": "biliyorum. Üzgünüm. Ama sen yapıyorsun.",
+  "s10.chats.s2_230": "ANLADIM. Hastane eczanesi. Düzgün iş, düzgün saatler.",
+  "s10.chats.s2_231": "Sophia, bu harika",
+  "s10.chats.s2_232": "Artık çok sıkıcı olacağım. 9'dan 5'e. Kesinlikle akşamlarımı geri alacağım",
+  "s10.chats.s2_240": "Mutlu Uluslararası Kadınlar Günü bize",
+  "s10.chats.s2_241": "bize",
+  "s10.chats.s2_250": "8 yıl!! Aradı mı?",
+  "s10.chats.s2_251": "henüz değil",
+  "s10.chats.s2_252": "aracak",
+  "s10.chats.s2_253": "aradı",
+  "s10.chats.s2_254": "sana söylemiştim 🥹",
+  "s10.chats.s2_260": "El?",
+  "s10.chats.s2_270": "Sana mesaj atmaya devam etmeyeceğim. Sadece bilmeni istiyorum ki bunu da göz ardı etmeyeceğim. Ne zaman istersen, ya da hiç.",
+  "s10.chats.s2_271": "Anne iyi değil. Bunun tek nedeni yazıyorum ve bunu kullanmıyorum. Daha fazlasını öğrenmek istersen, baba sana söyleyecek ve benim söylemem gerekmeyecek.",
+  "s10.chats.n2_101": "cumartesi etkinliğine geliyor mu",
+  "s10.chats.n2_102": "çalışıyor",
+  "s10.chats.n2_103": "Tamam. Beni getir, daha ucuzum ve gelirim",
+  "s10.chats.n2_110": "El, onu araştırdım. Sana yaptığımı söylüyorum; yapıp söylememek yerine.",
+  "s10.chats.n2_111": "ve?",
+  "s10.chats.n2_112": "Tam olarak söylediği kişi o. GMC kaydı, hepsi. Bakınca üzgünüm ama memnunum.",
+  "s10.chats.n2_120": "Bu ay bir iş görüşmesi, bir Zoom sınavı ve bir ekip etkinliğine katıldın. Bu, sevmediğin insanlarla dört hafta içinde üç video görüşmesi demek.",
+  "s10.chats.n2_121": "nia",
+  "s10.chats.n2_122": "Bu bütün mesaj. Geri kalanını söylemiyorum.",
+  "s10.chats.n2_130": "Öğle yemeği? Kendimden bahsettiğim şeyi yaparım",
+  "s10.chats.n2_131": "Evet, lütfen",
+  "s10.chats.n2_140": "Gelecek hafta yedi yıl. Senin için mutlu olmama izin var mı yoksa bu yanlış bir şey mi?",
+  "s10.chats.n2_141": "İzin var",
+  "s10.chats.n2_142": "O zaman senin için mutluyum. Ciddiyim ve bana hiçbir şey maliyet etmiyor.",
+  "s10.chats.n2_150": "Avukat nasıl gitti? Ve cevaplamadan önce, doğru olan ben değilim. O kişiyi kalıcı olarak emekli ettim.",
+  "s10.chats.n2_151": "O, bir yol olduğunu söylüyor. Bu medeni, yavaş ve tek mevcut yol.",
+  "s10.chats.n2_152": "O zaman o yolu izleriz. İkimiz de. Hiçbir şey getirme.",
+  "s10.chats.n2_160": "İki ay. İşe geri döndün, Rahman paketini yaptın ve ofisteki kimse hiçbir şey bilmiyor. Bugün seni izledim ve düşündüm ki, Tanrım, o bir şeylerden oluşmuş.",
+  "s10.chats.nd2_101": "Ne kadar süredir devam ediyor? Bir sayı istiyorum.",
+  "s10.chats.nd2_102": "Bir buçuk yıl. Senden habersizdim.",
+  "s10.chats.nd2_103": "Bir buçuk yıl. Bir buçuk yıl önce ne yaptığımı biliyor musun? İkinci bir şey yaşıyorduk.",
+  "s10.chats.nd2_110": "Bundan sonra sana bir daha mesaj atmayacağım. Tek istediğim dünyada bir kişinin benim bildiğimi bilmesi.",
+  "s10.chats.nd2_111": "Biliyorum.",
+  "s10.chats.nd2_120": "İyi değil ve sana nasıl iyi olmadığını söylemez. Birinin söylemesi lazım ve bu kişi o olmayacak.",
+  "s10.chats.nd2_130": "Tekrar yazmayacağımı kesinlikle söylemiştim. İşte buradayım. Kötü bir haftası oldu ve bunu söyleyecek birine de sahip değilim.",
+  "s10.chats.nd2_131": "Bana söyleyebilirsin.",
+  "s10.chats.nd2_132": "Senden böyle garip bir cümle duymak tuhaf ve buna minnettarım; bu da daha da tuhaf.",
+  "s10.chats.nd2_140": "Aranızda ne olursa olsun, bana senin olduğundan daha nazik davrandın ve bunu üç yıldır düşünüyorum.",
+  "s10.chats.fr2_101": "Ms Christofi, Dr. Ferris. Sonuçların rahatlatıcı olduğunu size bildirmemi istedi. Bugün başka bir şeye gerek yok.",
+  "s10.chats.fr2_102": "Teşekkür ederim doktor. Planın ne olduğunu sorabilir miyim?",
+  "s10.chats.fr2_103": "İlaç altı ayda bir gözden geçirilmeli ve onu uyanık tutan şeyden daha az olmalı. O kesinlikle sana bunun bir iş olduğunu söyleyecek; sadece iş değil.",
+  "s10.chats.fr2_111": "Dr. Ferris, bir danışmanın hastanın eşine böyle mesaj atması alışılmış mı? Kaba davranmıyorum. Yıllar önce sormam gereken soruları sormaya başladım.",
+  "s10.chats.fr2_112": "Alışılmış değil. O istedi ve ben kabul ettim, ve bunun yazılı olarak nasıl göründüğünü anlayabiliyorum. Eğer durmamı tercih edersen, söyle; yaparım.",
+  "s10.messages.f_sms_101": "Elena sevgili. Teyzen perşembe günü sessiz olduğunu söylüyor. Sormuyorum, rapor ediyorum. Baba.",
+  "s10.messages.f_sms_102": "İyiyim baba. Önümüzdeki hafta daha iyi olacağım.",
+  "s10.messages.f_sms_103": "Dükkan Türk çocuğa geçti; Cuma günü imzaladım. Kırk bir yıl. Değiştirmeden önce bir sandalye al.",
+  "s10.messages.f_sms_104": "Pencere kenarındakini istiyorum.",
+  "s10.messages.f_sms_105": "Teyzen Ağustos için büyük bir işi yapıyor. Onu getirmemi söylüyor. Ben de ileteceğimi söyledim ve sadece bunu yapıyorum, iletiyorum.",
+  "s10.messages.f_sms_106": "Pazar gel. Sadece ikimiz, başkalarını orada tutmayacağım. Sandalyeyi van içinde taşıyorum.",
+  "s10.messages.f_sms_107": "Saat 2'de geleceğim.",
+  "s10.messages.f_sms_108": "Bunu hiç anlamıyorum sevgilim ve anlamış gibi davranmayacağım. Mutfakta oturanı biliyorum, oturmayanı da biliyorum ve bildiğim tek şey bu.",
+  "s10.messages.f_sms_121": "Elena mou, yarın saat 7'de, 7:30 değil, kuzu beklemeyecek. Telefonları kaseye koyun, ikiniz de; ciddiyim.",
+  "s10.messages.f_sms_122": "Onu bir perşembe getir. Dokuz yıldır bir yer ayırdım ve ayırmaya devam edeceğim, ama aptalca davranıyorsam durmamı söyleyin.",
+  "s10.messages.f_sms_123": "Bırak. İyileştiğinde gelecek.",
+  "s10.messages.f_sms_124": "Üç haftadır bana telefon açmadın. Aramayı bırakmayacağım. Bu bir tehdit değil, bir takvim.",
+  "s10.messages.f_sms_125": "Bana söyledi; hepsini Çarşamba günü, iki saat boyunca, o masada otururken. Ne yapacağımı bilmiyorum ve senden yardım istemeyeceğim.",
+  "s10.messages.f_sms_126": "Perşembe hâlâ perşembe. Sen doğmadan önce de perşembe vardı. Gelmeni istemiyorum. Sadece orada olduğunu söylüyorum.",
+  "s10.messages.f_sms_141": "Elena, kronolojiyi iki kez okudum. Daha ilerlemeden, içinde hiçbir şey senin suçun değil ve akıllı bir kişinin fark edeceği bir versiyon yok; sen fark etmedin.",
+  "s10.messages.f_sms_142": "Bunu söylemek zorundasın.",
+  "s10.messages.f_sms_143": "Bunu söylemek zorunda değilim. Saat başı £280 ücret alıyorum ve hiç nazik olduğumu söylemedim.",
+  "s10.messages.f_sms_144": "Benden ne istiyorsun.",
+  "s10.messages.f_sms_145": "Zaten sahip olduğun her şey, zaten sahip olduğun sırada. Düzenleme. Düzenlemek bir davalı yapar.",
+  "s10.messages.f_sms_146": "Sağlayıcı emri tamamen yerine getirdi. Otuz dokuz hesap ve teknik tablo, notların söylediği gibi tam olarak.",
+  "s10.messages.f_sms_147": "Demek o.",
+  "s10.mail.f_gm_101.subject": "Müşteri bakım mektubu — Christofi",
+  "s10.mail.f_gm_101.body": "Sevgili Elena,\n\nGörüşüldüğü gibi, bu mektup bize verilen talimatların temelini ortaya koymaktadır.\n\n1997 tarihli Tacizden Korunma Yasası kapsamında bir medeni dava için talimat aldık. Herhangi bir suç şikayetiyle ilgili talimat almadık. Nedenini açıkladım ve sen zaten kendin çözdün dedin, buna şüphem yok.\n\nSaatlik ücretimiz £280. İlk aşamayı £1,500 ile sınırladım ve aşımı geçmeden sana bildireceğim.\n\nHannah Wexley",
+  "s10.mail.f_gm_102.subject": "Fatura 4471 — ilk aşama",
+  "s10.mail.f_gm_102.body": "İlk aşama çalışması için fatura, sınırlı olarak.\n\n  Ön danışmanlık, kronoloji incelemesi, açıklama emri başvurusu, sağlayıcıyla yazışma.\n\n  Toplam: £750.00 (sınırlı; kaydedilen süre £2,240.00)\n\nBakiye, denetleyen ortağın takdirine göre silinmiştir.",
+  "s10.mail.f_gm_103.subject": "Sonraki adımlar",
+  "s10.mail.f_gm_103.body": "Elena,\n\nŞimdi teknik tablo elimizde. Herhangi bir şey kararlaştırmadan önce bilmen gereken üç şey var ve bunların hiçbiri tavsiye değildir:\n\n1. Bir dava kamu belgesidir. Onun adı içinde yer alacak.\n2. Bunun hızlı çözüldüğü bir versiyon yok.\n3. Bir dava açmamayı seçmek senin hakkın ve ben senden daha az düşünmeyeceğim.\n\nPerşembe bana söylemek zorunda değilsin. Bu ay bana söylemek zorunda değilsin.",
+  "s10.mail.f_gm_104.subject": "Veri indirme dosyanız hazır",
+  "s10.mail.f_gm_104.body": "Talep ettiğiniz bilgi kopyası indirmeye hazır. Bağlantı 14 gün içinde süresi dolacak.\n\n  Mesajlar: 61,204\n  Kaydedilen aramalar: 3,118\n  Tarih aralığı: 09/03/2017 – 19/03/2026",
+  "s10.mail.f_gm_105.subject": "Hesap raporu — sonuç",
+  "s10.mail.f_gm_105.body": "Raporunuz için teşekkür ederiz.\n\nRaporladığınız hesapları inceledik ve politikalarımızın ihlal edildiği durumlarda işlem yaptık. Hangi işlemin yapıldığını size bildiremiyoruz.\n\nBunun sinir bozucu olduğunu biliyoruz. Bu posta kutusu izlenmemektedir.",
+  "s10.mail.f_gm_106.subject": "Hesabınıza yeni oturum açıldı",
+  "s10.mail.f_gm_106.body": "Yeni bir oturum açılması tespit edildi.\n\n  Cihaz: masaüstü\n  Konum: Bristol, Birleşik Krallık\n\nEğer bu sizseniz, herhangi bir işlem yapmanıza gerek yok.",
+  "s10.mail.f_gm_107.subject": "Randevu onayı",
+  "s10.mail.f_gm_107.body": "Uygulama hemşiresiyle bir randevunuz var.\n\n  14 Nisan, 11:00\n  Sebep: kan basıncı kontrolü\n\nLütfen kullandığınız ilaçların bir listesini getirin. 20 dakika ayırın.",
+  "s10.mail.f_gm_108.subject": "Faturanız hazır",
+  "s10.mail.f_gm_108.body": "Aylık faturanız görüntülenmeye hazır.\n\n  Bu ay: £24.00\n  Kullanılan veri: 41.2 GB\n\nKullanımınız için doğru planı seçtiniz.",
+  "s10.mail.f_gm_109.subject": "Şefkat izni: onay",
+  "s10.mail.f_gm_109.body": "Sevgili Elena,\n\nBu, 30 Mart'tan itibaren iki haftalık şefkat izninizin, talebiniz üzerine bir hafta daha uzatıldığını ve kademeli dönüş seçeneğinin onaylandığını bildirir.\n\nSebep göstermenize gerek yok; zaten bir sebep de göstermediniz. Firmanın çalışan destek hattı intranette bulunuyor ve kullanım zamanı kimseye bildirilmemektedir.",
+  "s10.mail.f_gm_110.subject": "Sekiz yıl: teşekkürler",
+  "s10.mail.f_gm_110.body": "Sevgili Elena,\n\nFirmadaki sekiz yılınız için tebrikler.\n\nOrtaklar, aile ekibinin siz olmadan işleyemeyeceğini ve Rahman paketinin hâlâ denetimlerde nasıl yapılması gerektiğine dair bir örnek konuşulduğunu bana iletmemi istedi.",
+  "s10.mail.f_gm_111.subject": "Rahman paketi (ve diğer şeyler)",
+  "s10.mail.f_gm_112.subject": "Üyelik yenileme: 2026",
+  "s10.mail.f_gm_112.body": "Üyeliğiniz 1 Şubat'ta yenileniyor. Yıl için CPD kaydınız tamamlandı.\n\nParalegal üye olarak artık Chartered rotasına başvurabilirsiniz. Başvurular Mart ayında açılacak.",
+  "s10.mail.f_gm_113.subject": "Belediye Vergisi 2026/27",
+  "s10.mail.f_gm_113.body": "Yıllık faturanız £2,020.80 tutarındadır, Nisan'dan itibaren on taksitte ödenecektir. Tek kişilik indirim uygulanmıştır.",
+  "s10.mail.f_gm_114.subject": "Bize ulaştığınız için teşekkür ederiz",
+  "s10.mail.f_gm_115.subject": "Andreas Solomou'dan (gerçek olanı)",
+  "s10.mail.f_gm_115.body": "Elena,\n\nBunu e-postaya taşıdım; dört satır yazıp silmeye devam ediyordum.\n\nKendi yüzümün fotoğraflarına beş gün baktım, sana ne söyleyeceğimi anlamaya çalıştım. Bazılarını hatırlıyorum: biri 2016’da kız kardeşimin mutfağından, diğeri ise o kadar nefret ettiğim bir konferans rozeti ki yeniden bastırılmasını istedim.\n\nÇok üzgünüm. Bunun benim için aptalca bir özür olduğunu biliyorum.\n\nTelefonla, bana sürekli özür dilediğini söylemiştin; açıkça söylemek istiyorum ki özür dileyecek bir şeyin yok ve ben burada mağdur taraf değilim. Bazı fotoğrafları kaybettim; sen dokuz yılı kaybettin.\n\nAndreas",
+  "s10.mail.f_gm_116.subject": "Re: konu yok",
+  "s10.mail.f_gm_131.subject": "Veri talebi",
+  "s10.mail.f_gm_131.body": "Hesabımda tuttuğunuz tüm bilgilerin, mesaj meta verileri ve arama kayıtları dahil, bir kopyasını 15. Madde kapsamında talep ediyorum.\n\nBunun genellikle bir ay sürdüğünün farkındayım; yine de sabah beşte, başka bir şey yapamadığım için istiyorum.\n\nE. Christofi",
+  "s10.mail.f_gm_132.subject": "Rapor — 39 hesap",
+  "s10.mail.f_gm_133.subject": "Talimat",
+  "s10.mail.f_gm_133.body": "Ms Wexley,\n\nSize talimat vermek istiyorum. Müşteri bakım mektubunu okudum ve limit ile sonrasında neler olacağını anladım.\n\nYazılı olarak ihtiyacım olan bir koşul var: herhangi bir noktada bunu onu incitmek için değil, sonlandırmak için yaptığımı düşünürseniz, bana söylemenizi ve tam da o sözlerle ifade etmenizi istiyorum.\n\nElena Christofi",
+  "s10.mail.f_gm_134.subject": "Re: Rahman paketi (ve diğer şeyler)",
+  "s10.mail.f_gm_134.body": "Nia,\n\nAnahtarı aldım.\n\nE x",
+  "s10.mail.f_gm_135.subject": "Açıklama",
+  "s10.mail.f_gm_135.body": "Andreas,\n\nTeşekkür ederim. Avukatım size düzgün bir şekilde yazacak.\n\nSormak istediğim bir şey var ve bu talep için değil. O rozet fotoğrafını yeniden bastırdığınızda, öğle yemeğinde ne yediniz, hava nasıldı ya da o gün gerçekte ne oluyordu?\n\nBu fotoğrafı dokuz yıldır bir telefonda taşıyorum ve arkasına bir gerçek eklemek istiyorum.\n\nElena",
+  "s10.mail.f_gm_136.subject": "(konu yok)",
+  "s10.mail.f_gm_141.subject": "(konu yok)",
+  "s10.mail.f_gm_141.body": "8 Eylül 2020'de bana sadece burada olan biriyle daha mutlu olup olmayacağımı sordun.\n\nGeri dönüp buldum. Akşam sekiz yirmi geçidi; sen bunu hayatımın her Perşembesinde yemek yediğim evin yatak odasından göndermişsin.\n\nŞimdiye kadar yaklaşık kırk kez okudum ve bunun zulüm mü yoksa seni durdurma çabası mı olduğunu karar veremiyorum; aynı zamanda asla anlayamayacağımı fark ettim ve anlayamamak aslında …",
+  "s10.mail.f_gm_142.subject": "(konu yok)",
+  "s10.mail.f_gm_143.subject": "(konu yok)",
+  "s10.mail.f_gm_143.body": "Marianna,\n\nPerşembe gelmeyeceğim ve nedenini, seni bir seçim yapmaya zorlamayacak bir şekilde açıklamak istiyorum.\n\nSorun onunla bakamıyor olmam değil. Bakabiliyorum, dokuz yıl boyunca farkında olmadan baktım ve muhtemelen şimdi de yapabilirim.\n\nSorun kapının yanındaki kase. O kasenin yanından geçip telefonumu içine koyup oturamıyorum, iki saatin ne için olduğunu bilerek, kuzu etini yiyerek ve olmak",
+  "s10.notes.f_note_101.title": "Ona söylediğim şeyler",
+  "s10.notes.f_note_101.block_001": "Bunu Nia'nın kimseyle konuşmadığını söylemesi üzerine başlattım. Konuştuğumun kanıtı.",
+  "s10.notes.f_note_101.block_002": "Anne. Hepsi, son hafta da dahil, ki bunu babaya da dahil hiç kimseye yüksek sesle söylemedim.",
+  "s10.notes.f_note_101.block_003": "Düşüklük. Salı günü ona söyledim. Cuma günü Nia'ya söyledim. Ailede kimseye, asla söylemedim.",
+  "s10.notes.f_note_101.block_004": "Marchbank hakkında gerçekten ne düşündüğüm.",
+  "s10.notes.f_note_101.block_005": "On dokuz yaşındayken yaptığım şey. Bunu bilen hayatta kalan tek kişi o.",
+  "s10.notes.f_note_101.block_006": "Sekiz şey. Başkalarının sahip olmadığı sekiz şey ve o hepsine sahip.",
+  "s10.notes.f_note_102.title": "Arama zamanları",
+  "s10.notes.f_note_102.block_001": "O arar. Ben aramam; numara asla bağlanmaz, bu bir iş telefonu ve kilitli.",
+  "s10.notes.f_note_102.block_002": "Salı ve Cuma günleri yaklaşık dokuz. Bazen Pazar. Perşembe asla, o bunun aile olduğunu biliyor.",
+  "s10.notes.f_note_102.block_003": "En uzun 3 saat 50 dakikaydı, anne yıldönümünün ertesi gecesi.",
+  "s10.notes.f_note_102.block_004": "Dokuz yılda iki kez numarasını denedim. Bir kez 2025'te ve bir kez Ocak'ta. Her iki seferde de bir şey olmadı, ama her iki seferde de on dakikada beni aradı ve çok nazikti.",
+  "s10.notes.f_note_102.block_005": "Bunu yazmak bir şeymiş gibi gösterdi. O bir şey değil. O kilitli bir iş telefonu.",
+  "s10.notes.f_note_103.title": "Yapmam gerekenler",
+  "s10.notes.f_note_103.block_001": "Veri talebi: 21/3 gönderildi.",
+  "s10.notes.f_note_103.block_002": "Hesapları raporla: 25/3 gönderildi. Hiçbir şey bekleme.",
+  "s10.notes.f_note_103.block_003": "Wexley: 2/4 talimat verildi.",
+  "s10.notes.f_note_103.block_004": "Babaya söyle. Marianna'ya değil. Önce baba, kendi başına, mutfağında.",
+  "s10.notes.f_note_103.block_005": "Perşembe hakkında karar ver. Bu hafta değil. Önümüzdeki hafta da değil.",
+  "s10.notes.f_note_111.title": "—",
+  "s10.notes.f_note_111.block_001": "Sabah dört, beş gün içinde. Gerçekten neyin gittiğinin bir listesini yapıyorum, çünkü sürekli \"her şey\" diyorum ve her şey bir şey değil.",
+  "s10.notes.f_note_111.block_002": "Giden: geceleri dokuz yıl konuştuğum kişi. O gerçek ve buna izin veriyorum.",
+  "s10.notes.f_note_111.block_003": "Giden: dokuz yıllık perşembe günleri. Gelecek olanlar değil. Zaten sahip olduğum, o zaman iyi olan ama şimdi iyi olmayanlar.",
+  "s10.notes.f_note_111.block_004": "Gitti: kendi yüzümün ona nasıl göründüğünü bilmek. O, yazarken benim mutlu olduğumu izledi. O, bunu yaparken yüzünü açmış olmalı. Ne olduğunu asla bilemeyeceğim.",
+  "s10.notes.f_note_111.block_005": "Gelmeyen: Baba. Nia. İş. Daire. Ben. Bunu yazıyorum çünkü sabah dörtte liste olduğundan daha kısa görünüyor.",
+  "s10.notes.f_note_112.title": "—",
+  "s10.notes.f_note_112.block_001": "Wexley, bir talebin kamu belgesi olduğunu ve adının içine konulacağını söylüyor.",
+  "s10.notes.f_note_112.block_002": "O yirmi yedi yaşında. Kendi başına elde ettiği bir işi var. O, hatırladığım bir şekilde ona gurur duymuş, çünkü oradaydım. Memnun oldum. Ona üç ünlem işaretiyle bir mesaj gönderdim.",
+  "s10.notes.f_note_112.block_003": "Hayatımın kalanının her iki versiyonunu yazdım. Bunlardan birinde bunu yapıyorum. Diğerinde yapmıyorum. Hiçbirinde dokuz yıl geri alamıyorum. Bunun karar verici faktör olacağını beklemiyordum, ve değil. Ama yazmaya devam ediyorum.",
+  "s10.notes.f_note_112.block_004": "Hannah'ın gerçekten söylediği şey: birini getirmemek, yapabileceğin bir karardır.",
+  "s10.notes.f_note_112.block_005": "Dokuz yıldır kimse bana bununla ilgili bir şey söylemedi. Her şey her zaman sabretmem gereken bir şey oldu.",
+  "s10.search.f_gs_101": "tanık koruması genellikle ne kadar sürer",
+  "s10.search.f_gs_102": "hastane wifi'si video aramaları engelleyebilir mi",
+  "s10.search.f_gs_103": "neden biri o gün çekilen fotoğrafı hiç göndermez",
+  "s10.search.f_gs_104": "konu erişim talebi şablonu madde 15",
+  "s10.search.f_gs_105": "bir kişi için birden fazla sahte hesabı nasıl bildiririm",
+  "s10.search.f_gs_106": "para alınmadıysa polis bir şey yapabilir mi",
+  "s10.search.f_gs_107": "catfish'i kontrol etmemek benim hatam mı",
+  "s10.search.f_gs_108": "taciz davası ilçe mahkemesi ne kadar tutar",
+  "s10.search.f_gs_109": "bir medeni dava halka açık olur mu kim okuyabilir",
+  "s10.search.f_gs_110": "şefkat izni aşamalı dönüş paralegal",
+  "s10.search.f_gs_111": "gerçek olmayan birini nasıl yas tutarım",
+  "s10.search.f_gs_112": "var olmayan birini sevebilir misin",
+  "s10.calendar.f_ev_101": "Perşembe: Marianna'nın",
+  "s10.calendar.f_ev_102": "Perşembe: Marianna'nın",
+  "s10.calendar.f_ev_103": "Perşembe: Marianna'nın",
+  "s10.calendar.f_ev_104": "Perşembe: Marianna'nın",
+  "s10.calendar.f_ev_105": "Ferrier: duruşma hazırlığı",
+  "s10.calendar.f_ev_106": "Rahman: dosya teslim tarihi",
+  "s10.calendar.f_ev_107": "A. Solomou: arama (gerçek olan)",
+  "s10.calendar.f_ev_108": "Wexley: talimat ver",
+  "s10.calendar.f_ev_109": "Wexley 09:00",
+  "s10.calendar.f_ev_110": "Wexley 09:00: açıklama",
+  "s10.calendar.f_ev_111": "Hemşire: BP",
+  "s10.calendar.f_ev_112": "Perşembe",
+  "s10.payments.f_tx_101.note": "Perşembe: Marianna (katkı)",
+  "s10.payments.f_tx_102.note": "Perşembe: Marianna (katkı)",
+  "s10.payments.f_tx_103.note": "Sophia: doğum günü",
+  "s10.payments.f_tx_104.note": "Sophia: sinema",
+  "s10.payments.f_tx_105.note": "Nia, öğle yemeği",
+  "s10.payments.f_tx_106.note": "Wexley & Co, fatura 4471",
+  "s10.payments.f_tx_107.note": "Wexley & Co, hesabına",
+  "s10.payments.f_tx_108.note": "Otobüs kartı, Ocak",
+  "s10.payments.f_tx_109.note": "Baba, sandalye (reddetti)",
+  "s10.payments.f_tx_110.note": "Belediye vergisi, Nisan",
+  "s10.maps.f_sp_001.name": "Marianna'nın",
+  "s10.maps.f_sp_001.address": "Fishponds, Bristol",
+  "s10.maps.f_sp_002.name": "Marchbank Aile Hukuku",
+  "s10.maps.f_sp_002.address": "Queen Square, Bristol",
+  "s10.maps.f_sp_003.name": "Wexley & Co",
+  "s10.maps.f_sp_003.address": "Park Street, Bristol",
+  "s10.photos.ph_020.document": "Bir kilise salonunda yapılan bir vaftiz partisi fotoğrafı. Yirmi civarında insan, kağıt bardaklar, üzerine bir pasta konmuş bir sehpa.\n\n  Elena bebeği tutuyor ve fotoğrafı çeken kişiye bakıyor. Grubun kenarında, kameraya yarı dönük şekilde, Sophia kalçasına düşük tutmuş bir telefonla ayakta duruyor, ekranı açık, başparmağı ona basıyor.",
+  "s10.photos.ph_021.document": "Aile öğle yemeği fotoğrafı, masanın uzunluğu boyunca çekilmiş.\n\n  Dokuz kişi. Elena solda ortada, yanındaki kadının kolunu omzunda tutuyor. Masanın karşısında Sophia bir elini tabağının yanındaki, yüzü yukarı bakacak şekilde duran telefona düz bir şekilde koymuş, birinin bardağa elini koyması gibi.",
+  "s10.photos.ph_022.document": "Yoğun öğleden sonra ışığında bir bahçe fotoğrafı.\n\n  Çimlerde iki çocuk ve bir köpek. Elena merdivende dizlerinin üzerinde bir tabakla oturuyor. Sophia arkasındaki bahçe sandalyesinde, kucağında bir telefon ve başparmağı ekranda, çocuklara bakmadan.",
+  "s10.photos.ph_023.document": "Noel Arifesi mutfağının fotoğrafı, geç saatlerde çekilmiş, ışığın çoğu ocak üzerindeki davlattan geliyor.\n\n  Elena lavaboda, kollarını kıvırmış. Sophia arkasındaki tezgaha yaslanmış, sol elinde bir telefon tutuyor, yukarı kaldırılmış ve açıyla, yüzü telefonun ışığıyla aydınlanıyor.",
+  "s10.photos.ph_034.document": "Salon masasındaki ahşap bir kase içinde dört telefonla çekilmiş yukarıdan fotoğraf.\n\n  Açıkça bir ev kuralı: telefonlar kaseye konur. Dört telefon ve o akşamki diğer fotoğraflardaki aile beş kişidir."
+}

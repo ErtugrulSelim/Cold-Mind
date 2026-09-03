@@ -150,6 +150,56 @@
         "oblivious",
         "photographed constantly"
       ]
+    },
+    {
+      "id": "p008",
+      "tier": 3,
+      "contact": {
+        "first_name": "Chinedu",
+        "last_name": "Okafor",
+        "phone_number": "+234 803 447 1180",
+        "avatar_color": "#B45309"
+      },
+      "age": 23,
+      "home_city": "Lagos",
+      "occupation": "Apprentice electrician",
+      "personality_tags": [
+        "loyal",
+        "does not give up"
+      ]
+    },
+    {
+      "id": "p009",
+      "tier": 3,
+      "contact": {
+        "first_name": "Amara",
+        "last_name": "Nwosu",
+        "phone_number": "+234 806 210 9354",
+        "avatar_color": "#0F766E"
+      },
+      "age": 27,
+      "home_city": "Lagos",
+      "occupation": "Nurse",
+      "personality_tags": [
+        "practical",
+        "the cousin who checks"
+      ]
+    },
+    {
+      "id": "p010",
+      "tier": 3,
+      "contact": {
+        "first_name": "Segun",
+        "last_name": "Adeleke",
+        "phone_number": "+234 810 662 7724",
+        "avatar_color": "#4338CA"
+      },
+      "age": 22,
+      "home_city": "Lagos",
+      "occupation": "Student",
+      "personality_tags": [
+        "borrows books"
+      ]
     }
   ],
   "instagram_posts": []

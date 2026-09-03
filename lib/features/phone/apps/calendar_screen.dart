@@ -56,8 +56,11 @@ class CalendarScreen extends StatelessWidget {
                     ColdSpace.lg,
                     ColdSpace.sm,
                   ),
+                  // With the weekday, not without it. Half the questions in
+                  // this game name a day of the week and the agenda was the
+                  // only place that could answer which date that was.
                   child: Text(
-                    format.dateWithYear(day),
+                    format.dayAndDate(day),
                     style: ColdType.label.copyWith(color: device.textSecondary),
                   ),
                 ),
@@ -107,6 +110,13 @@ class CalendarScreen extends StatelessWidget {
                                   : null,
                             ),
                           ),
+                          if (event.recurrence case final repeat?)
+                            Text(
+                              _repeatLabel(repeat, event.start, strings),
+                              style: ColdType.micro.copyWith(
+                                color: device.textTertiary,
+                              ),
+                            ),
                           if (event.locationKey != null)
                             Text(
                               strings?.t(event.locationKey!) ?? '',
@@ -134,6 +144,26 @@ class CalendarScreen extends StatelessWidget {
     );
   }
 
+  /// What a repeating event says under its own title.
+  ///
+  /// A weekly one names its weekday, because that is the fact the case is
+  /// built on and "Repeats every week" would throw it away. The weekday comes
+  /// from the same short list the day separator uses, so the agenda never
+  /// writes one day two ways.
+  static String _repeatLabel(
+    String recurrence,
+    DateTime start,
+    CaseStrings? strings,
+  ) {
+    if (strings == null) return '';
+    return switch (recurrence) {
+      'weekly' => strings.cp('ui.calendar.repeats.weekly', {
+        'weekday': strings.weekdayShort(start.weekday),
+      }),
+      _ => strings.c('ui.calendar.repeats.$recurrence'),
+    };
+  }
+
   static Color _parse(String? hex, Color fallback) {
     if (hex == null) return fallback;
     final value = int.tryParse(hex.replaceAll('#', ''), radix: 16);
@@ -159,6 +189,17 @@ class _Event {
   final bool isDeleted;
   final DateTime start;
 
+  /// "daily", "weekly", "monthly", "yearly", or null for a one-off.
+  ///
+  /// The agenda draws one row per authored event and does not generate the
+  /// repeats — s07's nightly safe count runs from 2016 and would be thousands
+  /// of rows, and a generated occurrence would put a person somewhere the
+  /// case's own story says they were not. So the row says what it is instead.
+  /// Losing that was losing the clue: a standing Thursday appointment drawn
+  /// once is an appointment, and drawn as standing it is a habit — which is
+  /// what s10, s07, s06 and s05 are actually built on.
+  final String? recurrence;
+
   const _Event({
     required this.titleKey,
     required this.locationKey,
@@ -167,6 +208,7 @@ class _Event {
     required this.isAllDay,
     required this.isDeleted,
     required this.start,
+    required this.recurrence,
   });
 
   static _Event? fromJson(Map<String, dynamic> json) {
@@ -180,6 +222,11 @@ class _Event {
       isAllDay: json['is_all_day'] == true,
       isDeleted: json['is_deleted'] == true,
       start: start,
+      recurrence: switch (json['recurrence']) {
+        'daily' || 'weekly' || 'monthly' || 'yearly' =>
+          json['recurrence'] as String,
+        _ => null,
+      },
     );
   }
 }

@@ -1,0 +1,14 @@
+[
+  {
+    "name": "floor",
+    "dir": "photos",
+    "asset": "assets/cases/s06/photos/floor.jpg",
+    "aspect": "landscape_16_9",
+    "size": "1280x720",
+    "reads_back": "s06.photos.ph_027.document",
+    "answers": ["s06 q06", "s06 q13"],
+    "note": "The accidental frame two questions rest on. q06 asks what is across the windows and q13 asks what the man at the far end is holding, so the bars and the passport are not decoration here — they are the answers. Neither was in the image and neither was in words either; the transcript was written first and this prompt is written from it.",
+    "must_show": ["bars", "passport", "desks"],
+    "prompt": "A long open-plan office photographed by accident: the frame is slightly tilted and a blurred out-of-focus thumb covers the bottom left corner. Two rows of cheap identical desks run away from the camera, twenty to a row, each with a monitor, most of the screens lit, headsets lying on the empty ones. Every person at the desks is facing their own screen and nobody is looking towards the camera. The far wall is floor-to-ceiling windows, and across the outside of every pane there is a grille of flat welded steel bars, set close together, throwing striped daylight onto the floor. At the far end of the room, standing between the last desk and the wall, a man in a pale short-sleeved shirt is half turned away, holding a small passport booklet open at its photograph page and reading from it to somebody outside the frame. Daylight through the bars, fluorescent strip lighting overhead, one tube dead. Documentary snapshot quality, slight motion blur, photographic realism, no text, no logos, no alcohol, no weapons."
+  }
+]

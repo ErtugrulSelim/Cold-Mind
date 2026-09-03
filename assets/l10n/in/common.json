@@ -336,5 +336,11 @@
   "notif.update.title": "नया अपडेट उपलब्ध है",
   "notif.update.body": "Cold Mind का नया वर्ज़न आ गया है — नई चीज़ें देखें!",
   "ui.photo_read": "Read",
-  "ui.photo_document": "DOCUMENT"
+  "ui.photo_document": "DOCUMENT",
+  "ui.weekdays_short": "Sen,Sel,Rab,Kam,Jum,Sab,Min",
+  "q.solved_title": "Yang sudah kamu pecahkan",
+  "q.solved_none": "Belum ada.",
+  "q.solved_unrecorded": "Tidak tercatat",
+  "q.solved_briefing": "Klien, di awal",
+  "q.solved_interstitial": "Klien menghubungi"
 }

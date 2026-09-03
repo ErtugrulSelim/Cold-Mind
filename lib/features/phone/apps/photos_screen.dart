@@ -4,6 +4,7 @@ import '../../../core/theme/cold_theme.dart';
 import '../../../data/l10n/case_strings.dart';
 import '../../../data/models/case_file.dart';
 import '../phone_format.dart';
+import '../widgets/document_body.dart';
 import '../widgets/password_dialog.dart';
 
 /// Photos.
@@ -50,6 +51,35 @@ class _PhotosScreenState extends State<PhotosScreen> {
         if (raw is Map<String, dynamic>) _Album.fromJson(raw, byId),
     ];
 
+    // Recents is its own authored list, not "every photo on the phone".
+    //
+    // This tab used to draw `items`, which is the pool every album is built
+    // out of — so every locked album's contents sat in Recents in plain view.
+    // The passcode still worked, the album still said it was locked, and the
+    // photographs behind it had already been seen. In all ten cases. On s07
+    // that was the four hundred and sixteen counts, which two questions are
+    // answered by.
+    //
+    // The cases author `recents` correctly and always did; nothing read it.
+    // Where a case has none, everything inside a locked album is held back
+    // rather than shown, so a new case cannot leak by omission.
+    final lockedIds = {
+      for (final album in albums)
+        if (!album.isOpen(_unlocked))
+          for (final photo in album.photos) photo.id,
+    };
+    final recentIds = _ids(data['recents']);
+    final recents = recentIds.isEmpty
+        ? [
+            for (final item in items)
+              if (!lockedIds.contains(item.id)) item,
+          ]
+        : [
+            for (final id in recentIds)
+              if (byId[id] case final photo? when !lockedIds.contains(id))
+                photo,
+          ];
+
     final utilities = [
       _Album(
         id: '_hidden',
@@ -84,7 +114,7 @@ class _PhotosScreenState extends State<PhotosScreen> {
         ),
         body: TabBarView(
           children: [
-            _Grid(photos: items, strings: strings),
+            _Grid(photos: recents, strings: strings),
             ListView(
               padding: const EdgeInsets.fromLTRB(
                 ColdSpace.lg,
@@ -393,8 +423,52 @@ class _ViewerState extends State<_Viewer> {
   /// the one arrived at.
   bool _showDocument = false;
 
+  /// The zoom on the photo being looked at.
+  ///
+  /// Pinching inside a [PageView] is a fight between two gestures: the second
+  /// finger reaches the zoom, but the moment either finger moves sideways the
+  /// pager takes the drag and turns the page. So the pager is switched off
+  /// while a photo is zoomed in, and back on when it returns to fit — which is
+  /// what [_zoomed] is watching for.
+  final TransformationController _zoom = TransformationController();
+  bool _zoomed = false;
+
+  /// Where a double-tap landed, so the zoom goes to the thing that was tapped
+  /// rather than to the middle. On these photographs the thing worth looking
+  /// at is almost never in the middle: it is a note on a desk, a face at the
+  /// end of a room, a number on a screen in the corner.
+  TapDownDetails? _lastTap;
+
+  @override
+  void initState() {
+    super.initState();
+    _zoom.addListener(_onZoom);
+  }
+
+  void _onZoom() {
+    final zoomed = _zoom.value.getMaxScaleOnAxis() > 1.01;
+    if (zoomed != _zoomed) setState(() => _zoomed = zoomed);
+  }
+
+  /// Double-tap in, double-tap out. Pinching on a 6-inch phone with one hand
+  /// is the kind of thing that works in a demo.
+  void _toggleZoom() {
+    if (_zoomed) {
+      _zoom.value = Matrix4.identity();
+      return;
+    }
+    final at = _lastTap?.localPosition;
+    if (at == null) return;
+    const scale = 3.0;
+    _zoom.value = Matrix4.identity()
+      ..translateByDouble(-at.dx * (scale - 1), -at.dy * (scale - 1), 0, 1)
+      ..scaleByDouble(scale, scale, scale, 1);
+  }
+
   @override
   void dispose() {
+    _zoom.removeListener(_onZoom);
+    _zoom.dispose();
     _controller.dispose();
     super.dispose();
   }
@@ -408,113 +482,170 @@ class _ViewerState extends State<_Viewer> {
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(backgroundColor: Colors.black, title: const Text('')),
-      body: Column(
-        children: [
-          Expanded(
-            child: PageView.builder(
-              controller: _controller,
-              onPageChanged: (i) => setState(() {
-                _current = i;
-                _showDocument = false;
-              }),
-              itemCount: widget.photos.length,
-              itemBuilder: (context, i) => InteractiveViewer(
-                maxScale: 5,
-                child: Center(
-                  child: Image.asset(
-                    widget.photos[i].asset,
-                    fit: BoxFit.contain,
-                    errorBuilder: (_, _, _) =>
-                        ColoredBox(color: device.surfaceRaised),
-                  ),
-                ),
+      // The caption sits at the very bottom of the screen and the transcript
+      // opens underneath it, so without this the panel grows straight into the
+      // system navigation bar. On s04 that put the last third of a torn
+      // notepad page — the third with the password on it — behind the gesture
+      // bar, on the one photograph the lock chain depends on being read.
+      body: SafeArea(
+        top: false,
+        child: Column(
+          children: [
+            Expanded(
+              child: PageView.builder(
+                controller: _controller,
+                // Locked while a photo is zoomed in, or panning across a
+                // document turns the page instead.
+                physics: _zoomed
+                    ? const NeverScrollableScrollPhysics()
+                    : const PageScrollPhysics(),
+                onPageChanged: (i) => setState(() {
+                  _current = i;
+                  _showDocument = false;
+                  _zoom.value = Matrix4.identity();
+                }),
+                itemCount: widget.photos.length,
+                itemBuilder: (context, i) {
+                  final image = Center(
+                    child: Image.asset(
+                      widget.photos[i].asset,
+                      fit: BoxFit.contain,
+                      errorBuilder: (_, _, _) =>
+                          ColoredBox(color: device.surfaceRaised),
+                    ),
+                  );
+                  // Only the page being looked at gets the controller; the
+                  // neighbours PageView keeps built would otherwise share one
+                  // transform and zoom in unison.
+                  if (i != _current) return image;
+
+                  return GestureDetector(
+                    onDoubleTapDown: (d) => _lastTap = d,
+                    onDoubleTap: _toggleZoom,
+                    child: InteractiveViewer(
+                      transformationController: _zoom,
+                      maxScale: 6,
+                      // Room to pull a corner into the middle of the screen.
+                      // Without it the edges of a document stay unreachable
+                      // at exactly the zoom you needed them at.
+                      boundaryMargin: const EdgeInsets.all(80),
+                      child: image,
+                    ),
+                  );
+                },
               ),
             ),
-          ),
-          // Under the picture, not behind an info button: a photograph without
-          // its timestamp is decoration, and with it, it is evidence.
-          Container(
-            width: double.infinity,
-            padding: const EdgeInsets.all(ColdSpace.lg),
-            color: Colors.black,
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  format.dateTime(photo.takenAt),
-                  style: ColdType.subtitle.copyWith(
-                    color: Colors.white,
-                    fontSize: 15,
-                  ),
-                ),
-                if (photo.location != null)
+            // Under the picture, not behind an info button: a photograph without
+            // its timestamp is decoration, and with it, it is evidence.
+            //
+            // The picture itself sits on black, the way a lightbox should.
+            // Everything under it is the app again and takes the app's skin —
+            // Photos is a light one, and a strip of hardcoded black under a
+            // white app was only ever half the problem the white-on-white
+            // transcript was.
+            Container(
+              width: double.infinity,
+              padding: const EdgeInsets.all(ColdSpace.lg),
+              color: device.background,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
                   Text(
-                    photo.location!,
-                    style: ColdType.meta.copyWith(color: device.textTertiary),
+                    format.dateTime(photo.takenAt),
+                    style: ColdType.subtitle.copyWith(
+                      color: device.textPrimary,
+                      fontSize: 15,
+                    ),
                   ),
-                if (photo.documentKey != null) ...[
-                  const SizedBox(height: ColdSpace.sm),
-                  InkWell(
-                    onTap: () => setState(() => _showDocument = !_showDocument),
-                    child: Row(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        Icon(
-                          Icons.description_outlined,
-                          size: 14,
-                          color: device.accent,
-                        ),
-                        const SizedBox(width: 4),
-                        Text(
-                          _showDocument
-                              ? (widget.strings?.c('ui.photo_hide') ?? 'Hide')
-                              : (widget.strings?.c('ui.photo_read') ?? 'Read'),
-                          style: ColdType.micro.copyWith(
+                  if (photo.location != null)
+                    Text(
+                      photo.location!,
+                      style: ColdType.meta.copyWith(color: device.textTertiary),
+                    ),
+                  if (photo.documentKey != null) ...[
+                    const SizedBox(height: ColdSpace.sm),
+                    InkWell(
+                      onTap: () =>
+                          setState(() => _showDocument = !_showDocument),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Icon(
+                            Icons.description_outlined,
+                            size: 14,
                             color: device.accent,
-                            letterSpacing: 0.6,
+                          ),
+                          const SizedBox(width: 4),
+                          Text(
+                            _showDocument
+                                ? (widget.strings?.c('ui.photo_hide') ?? 'Hide')
+                                : (widget.strings?.c('ui.photo_read') ??
+                                      'Read'),
+                            style: ColdType.micro.copyWith(
+                              color: device.accent,
+                              letterSpacing: 0.6,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    if (_showDocument)
+                      Container(
+                        width: double.infinity,
+                        margin: const EdgeInsets.only(top: ColdSpace.sm),
+                        padding: const EdgeInsets.all(ColdSpace.md),
+                        // Two fifths of the screen rather than a fixed 220.
+                        // These transcripts are the reading of a photograph
+                        // that cannot be read, so the panel is the evidence;
+                        // a fixed cap put s04's notepad page — four lines of
+                        // prose and then the password — into a window that
+                        // showed two thirds of it and made the rest a scroll
+                        // inside a scroll.
+                        constraints: BoxConstraints(
+                          maxHeight: MediaQuery.sizeOf(context).height * 0.4,
+                        ),
+                        decoration: BoxDecoration(
+                          color: device.surfaceRaised,
+                          borderRadius: ColdRadius.card,
+                        ),
+                        child: SingleChildScrollView(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                widget.strings?.c('ui.photo_document') ??
+                                    'DOCUMENT',
+                                style: ColdType.micro.copyWith(
+                                  color: device.textTertiary,
+                                  letterSpacing: 0.8,
+                                ),
+                              ),
+                              const SizedBox(height: 4),
+                              DocumentBody(
+                                text:
+                                    widget.strings?.t(photo.documentKey!) ??
+                                    '',
+                                // From the skin, not hardcoded. Photos runs
+                                // the light skin, where `surfaceRaised` is
+                                // white — so white text meant the transcript
+                                // was drawn, laid out and completely
+                                // invisible. On s04 the invisible thing was
+                                // the notepad page with the password on it.
+                                color: device.textPrimary,
+                                proseStyle: ColdType.bodySmall.copyWith(
+                                  height: 1.45,
+                                ),
+                              ),
+                            ],
                           ),
                         ),
-                      ],
-                    ),
-                  ),
-                  if (_showDocument)
-                    Container(
-                      width: double.infinity,
-                      margin: const EdgeInsets.only(top: ColdSpace.sm),
-                      padding: const EdgeInsets.all(ColdSpace.md),
-                      constraints: const BoxConstraints(maxHeight: 220),
-                      decoration: BoxDecoration(
-                        color: device.surfaceRaised,
-                        borderRadius: ColdRadius.card,
                       ),
-                      child: SingleChildScrollView(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              widget.strings?.c('ui.photo_document') ??
-                                  'DOCUMENT',
-                              style: ColdType.micro.copyWith(
-                                color: device.textTertiary,
-                                letterSpacing: 0.8,
-                              ),
-                            ),
-                            const SizedBox(height: 4),
-                            Text(
-                              widget.strings?.t(photo.documentKey!) ?? '',
-                              style: ColdType.bodySmall.copyWith(
-                                color: Colors.white,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
+                  ],
                 ],
-              ],
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

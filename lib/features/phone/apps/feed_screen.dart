@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:video_player/video_player.dart';
 
 import '../../../core/theme/cold_theme.dart';
 import '../../../data/l10n/case_strings.dart';
@@ -493,6 +494,9 @@ class _FeedTab extends StatelessWidget {
           ),
         for (final post in posts)
           _PostCard(
+            spansYears: PhoneFormat.spanYears([
+              for (final post in posts) ?post.timestamp,
+            ]),
             post: post,
             likedAt: likedAt[post.id],
             contacts: contacts,
@@ -580,7 +584,11 @@ class _PostCard extends StatelessWidget {
   final ContactBook contacts;
   final CaseStrings? strings;
 
+  /// Whether the list this row is in runs across more than one year.
+  final bool spansYears;
+
   const _PostCard({
+    required this.spansYears,
     required this.post,
     required this.likedAt,
     required this.contacts,
@@ -637,7 +645,7 @@ class _PostCard extends StatelessWidget {
                 ),
                 if (post.timestamp != null)
                   Text(
-                    format.shortDate(post.timestamp!),
+                    format.listDate(post.timestamp!, spansYears: spansYears),
                     style: ColdType.meta.copyWith(color: device.textTertiary),
                   ),
               ],
@@ -851,6 +859,109 @@ class _PostScreen extends StatelessWidget {
   }
 }
 
+/// One clip in the Reels tab.
+///
+/// Muted and looping. This is filler on somebody else's phone — a reel that
+/// started talking the moment the tab opened would be the loudest thing in the
+/// game, and there is nothing in the audio to hear.
+///
+/// It falls back to `poster` — the still the clip was generated from, and the
+/// same frame the Explore grid draws — twice over: while the first frame is
+/// still decoding, and permanently if the video cannot be opened at all. The
+/// second case is the one that matters. `video_player` has no implementation
+/// in a widget test, so every test that draws this app would otherwise be
+/// asserting against a plugin exception rather than against the screen.
+class _ReelVideo extends StatefulWidget {
+  final String asset;
+  final String? poster;
+  final bool active;
+
+  const _ReelVideo({
+    required this.asset,
+    required this.poster,
+    required this.active,
+  });
+
+  @override
+  State<_ReelVideo> createState() => _ReelVideoState();
+}
+
+class _ReelVideoState extends State<_ReelVideo> {
+  VideoPlayerController? _controller;
+
+  @override
+  void initState() {
+    super.initState();
+    _open();
+  }
+
+  Future<void> _open() async {
+    final controller = VideoPlayerController.asset(widget.asset);
+    try {
+      await controller.initialize();
+      await controller.setLooping(true);
+      await controller.setVolume(0);
+    } catch (_) {
+      await controller.dispose();
+      return; // The poster stays.
+    }
+    if (!mounted) {
+      await controller.dispose();
+      return;
+    }
+    setState(() => _controller = controller);
+    if (widget.active) await controller.play();
+  }
+
+  @override
+  void didUpdateWidget(_ReelVideo old) {
+    super.didUpdateWidget(old);
+    final controller = _controller;
+    if (controller == null) return;
+    if (widget.active && !controller.value.isPlaying) {
+      controller.play();
+    } else if (!widget.active && controller.value.isPlaying) {
+      controller.pause();
+    }
+  }
+
+  @override
+  void dispose() {
+    _controller?.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final controller = _controller;
+    if (controller == null) {
+      final poster = widget.poster;
+      if (poster == null) {
+        return ColoredBox(color: context.device.surfaceRaised);
+      }
+      return Image.asset(
+        poster,
+        fit: BoxFit.cover,
+        errorBuilder: (_, _, _) =>
+            ColoredBox(color: context.device.surfaceRaised),
+      );
+    }
+
+    // Cover, the way a reel fills a phone: the clip is 16:9 and the page is
+    // taller than it is wide, so anything that fits it inside leaves two black
+    // bands and stops looking like the app it is imitating.
+    return FittedBox(
+      fit: BoxFit.cover,
+      clipBehavior: Clip.hardEdge,
+      child: SizedBox(
+        width: controller.value.size.width,
+        height: controller.value.size.height,
+        child: VideoPlayer(controller),
+      ),
+    );
+  }
+}
+
 class _Empty extends StatelessWidget {
   final String text;
 
@@ -1058,6 +1169,10 @@ class _ReelsTab extends StatefulWidget {
 }
 
 class _ReelsTabState extends State<_ReelsTab> {
+  /// Which page is on screen. Only that one plays — a tab that started every
+  /// clip it was holding would be decoding four videos to show one.
+  int _current = 0;
+
   @override
   Widget build(BuildContext context) {
     final device = context.device;
@@ -1073,6 +1188,7 @@ class _ReelsTabState extends State<_ReelsTab> {
       child: PageView.builder(
         scrollDirection: Axis.vertical,
         itemCount: widget.posts.length,
+        onPageChanged: (i) => setState(() => _current = i),
         itemBuilder: (context, i) {
           final post = widget.posts[i];
           final name = widget.contacts.displayName(post.personId);
@@ -1080,7 +1196,13 @@ class _ReelsTabState extends State<_ReelsTab> {
           return Stack(
             fit: StackFit.expand,
             children: [
-              if (post.imageAsset != null)
+              if (post.videoAsset != null)
+                _ReelVideo(
+                  asset: post.videoAsset!,
+                  poster: post.imageAsset,
+                  active: i == _current,
+                )
+              else if (post.imageAsset != null)
                 Image.asset(
                   post.imageAsset!,
                   fit: BoxFit.cover,

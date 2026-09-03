@@ -465,23 +465,23 @@ final _group = <Map<String, dynamic>>[
 
 const _inbox = <List<String>>[
   // Before.
-  ['Szkoła Podstawowa nr 26', 'sekretariat@sp26.krakow.pl', '2025-11-28T14:00:00'],
+  ['Primary School No. 26', 'sekretariat@sp26.krakow.pl', '2025-11-28T14:00:00'],
   ['Dziennik Elektroniczny', 'noreply@dziennik-vulcan.pl', '2025-12-16T16:00:00'],
   ['MPK Kraków', 'noreply@mpk.krakow.pl', '2026-01-26T07:00:00'],
   ['Tauron', 'ebok@tauron.pl', '2026-01-06T07:00:00'],
-  ['Szkoła Podstawowa nr 26', 'sekretariat@sp26.krakow.pl', '2026-02-09T14:00:00'],
+  ['Primary School No. 26', 'sekretariat@sp26.krakow.pl', '2026-02-09T14:00:00'],
   ['Speak Easy Language School', 'admin@speakeasy.pl', '2026-02-16T10:00:00'],
   ['Ratownictwo Medyczne Kraków', 'grafik@rmk.krakow.pl', '2026-01-29T06:00:00'],
   ['Dziennik Elektroniczny', 'noreply@dziennik-vulcan.pl', '2026-03-04T16:00:00'],
   // After. Nobody opens any of these.
   ['Dziennik Elektroniczny', 'noreply@dziennik-vulcan.pl', '2026-03-24T16:00:00'],
-  ['Szkoła Podstawowa nr 26', 'sekretariat@sp26.krakow.pl', '2026-03-30T14:00:00'],
-  ['Szkoła Podstawowa nr 26', 'biblioteka@sp26.krakow.pl', '2026-04-08T14:00:00'],
+  ['Primary School No. 26', 'sekretariat@sp26.krakow.pl', '2026-03-30T14:00:00'],
+  ['Primary School No. 26', 'biblioteka@sp26.krakow.pl', '2026-04-08T14:00:00'],
   ['Dziennik Elektroniczny', 'noreply@dziennik-vulcan.pl', '2026-04-15T16:00:00'],
   ['Rada Rodziców 6b', 'rada6b@gmail.com', '2026-04-20T20:00:00'],
   ['Nordfon', 'no-reply@nordfon.com', '2026-04-28T12:00:00'],
   ['Chór "Podgórze"', 'chor@sp26.krakow.pl', '2026-05-05T18:00:00'],
-  ['Szkoła Podstawowa nr 26', 'sekretariat@sp26.krakow.pl', '2026-05-18T14:00:00'],
+  ['Primary School No. 26', 'sekretariat@sp26.krakow.pl', '2026-05-18T14:00:00'],
   ['Dziennik Elektroniczny', 'noreply@dziennik-vulcan.pl', '2026-05-22T16:00:00'],
   ['Nordfon', 'no-reply@nordfon.com', '2026-05-26T04:00:00'],
 ];

@@ -86,7 +86,7 @@ class AccessScreen extends StatelessWidget {
                         ),
                       ),
                       Text(
-                        format.shortDate(event.at),
+                        format.dayAndShortDate(event.at),
                         style: ColdType.micro.copyWith(
                           color: device.textTertiary,
                         ),

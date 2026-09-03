@@ -1,0 +1,942 @@
+{
+  "s07.meta.title": "Eksik",
+  "s07.board.maire.title": "Máire Conneely",
+  "s07.board.maire.sub": "Postacı, Cloghmore, 1995–2017. Hırsızlık ve sahte muhasebe suçundan mahkum edildi. Dokuz ay hapis yattı.",
+  "s07.board.aoife.title": "Aoife Conneely",
+  "s07.board.aoife.sub": "Kızı. Müvekkilin. Olay gerçekleştiğinde on dokuz yaşındaydı ve buna inandı.",
+  "s07.board.branch.title": "Cloghmore Post Office",
+  "s07.board.branch.sub": "Bir gişe, bir kasa, bir terminal. 2017'den beri kapalı. Kapak dokuz yıldır açılmadı.",
+  "s07.board.money.title": "€41,300",
+  "s07.board.money.sub": "Eksik miktar. 2016 baharında on bir hafta içinde ortaya çıktı. Asla geri alınmadı, asla izlenmedi.",
+  "s07.board.meridian.title": "MERIDIAN",
+  "s07.board.meridian.sub": "Şubenin muhasebe sistemi. Sayıları delil olarak kullanıldı. Mahkemede kimse bunları sorgulamadı.",
+  "s07.board.plea.title": "Suçlu itirafı",
+  "s07.board.plea.sub": "9 May 2017'de avukatının tavsiyesiyle girildi, daha ağır suçtan kaçınmak için. O, bunu hiç açıklamadı.",
+  "s07.board.village.title": "Köy",
+  "s07.board.village.sub": "Dokuz yüz kırk kişi. Kardeşi €18,000 yatırdı. O, geri dönmedi.",
+  "s07.board.e1": "annesi",
+  "s07.board.e2": "21 yıl boyunca yönetti",
+  "s07.board.e3": "kayıp olduğunu söyledi",
+  "s07.board.e4": "tek kanıt",
+  "s07.board.e5": "asla mücadele etmedi",
+  "s07.board.e6": "bunu ödedi",
+  "s07.board.e7": "seni tuttu",
+  "s07.board.e8": "geri dönemiyor",
+  "s07.relationship.p001.note": "Aoife. Pazar günleri hatırladığında.",
+  "s07.relationship.p002.note": "Area. Bir saat içinde geri arayın.",
+  "s07.relationship.p003.note": "Bríd, Letterfrack.",
+  "s07.relationship.p004.note": "Peadar.",
+  "s07.relationship.p008.note": "Yardım hattı.",
+  "s07.contact.p002.label": "bölge yöneticisi",
+  "s07.contact.p008.label": "Meridian hizmet masası",
+  "s07.client_chat.cc_001": "Benim adım Aoife Conneely. Annem Máire Conneely, 2017'de posta ofisini yirmi bir yıl yönettiği yerden kırk bir bin üç yüz euro çaldığı için suçunu itiraf etti.",
+  "s07.client_chat.cc_002": "On dokuz yaşındaydım. O mahkeme salonunda ikinci sırada oturdum, her kelimesine inandım ve dokuz yıldır buna inandım.",
+  "s07.client_chat.cc_003": "Geçen ay Wexford'da bir kadının mahkumiyetinin bozulduğunu okudum. Aynı sistem. Suçlamada aynı ifadeler. Her şey aynı.",
+  "s07.client_chat.cc_004": "Bu yüzden anneme sordum. Şöyle dedi ve tam alıntılayarak: ne istersen yap, Aoife, ben bir yalancı olduğum için tekrar söylenmeye çok yaşlıyım.",
+  "s07.client_chat.cc_005": "Hâlâ aynı telefonu var. Yeni bir telefon almadı, üzerindeki hiçbir şeyi silmedi ve bana ona erişim verebileceğimi söyledi. Telefon hâlâ aktif; masamızda oturuyor ve üzerine hâlâ şeyler geliyor.",
+  "s07.client_chat.cc_006": "Parayı bulmanı istiyorum. Bu gerçek iş. Kırk bir bin üç yüz euro bir yere gitti ve eğer o aldıysa, bileceğim ve durduracağım.",
+  "s07.client_chat.cc_007": "Dürüst olmam gerekiyor; hangi cevabı umduğumdan emin değilim, çünkü bunlardan biri ona dokuz yıl borçlu olduğum anlamına geliyor. Bakacak mısın?",
+  "s07.client_chat.cc_007.accept": "Nereye gittiğini bulacağım.",
+  "s07.client_chat.cc_007.decline": "Olduğu yerde bırak.",
+  "s07.client_chat.cc_008": "Teşekkür ederim. Fotoğraflarla başla. Yüzlercesi var, hepsi aynı resim gibi görünüyor ve bir kez bile onlardan ne olduklarını sormadım.",
+  "s07.client_chat.cc_009": "Bir şey. Eğer o aldığı ortaya çıkarsa, bana söyle, ona değil. Ona yeterince çok insan bir şeyler söyledi.",
+  "s07.interstitial.is1_001": "Hiçbir yere. Bana hiçbir yere gitmediğini söylüyorsun.",
+  "s07.interstitial.is1_002": "Onun bankası, kredi birliği, dükkan nakdi, amcamın hesabı ve ev var. On bir hafta var ve en büyük hareket, bir yağ teslimatı için yüz kırk euro.",
+  "s07.interstitial.is1_003": "Peki kırk bir bin üç yüz euro nereye gidiyor, eğer hiçbir yere gitmiyorsa? Devam et. Gerçek cevabı istiyorum, teselli edeni değil.",
+  "s07.interstitial.is2_001": "Yalnız.",
+  "s07.interstitial.is2_002": "Her aramadan sonra kelimeyi not etti çünkü delirdiğini düşündü ve kendisine söylenenlerin kaydını istedi. Altmış bir arama. Yalnız, yalnız, yalnız.",
+  "s07.interstitial.is2_003": "Bríd Sheridan, yolun on dört milinde yer alıyordu. İki yıl önceki gibi hesaplarında aynı boşluk vardı. Kendi birikimlerinden ödeyerek, kimsenin onun hakkında o kelimeyi kullanmasına gerek kalmaması için.",
+  "s07.interstitial.is2_004": "Bríd'i beş yaşından beri tanıyorum. Bununla ne yapacağımı henüz bilmiyorum. Devam et.",
+  "s07.interstitial.is3_001": "GECE BOYU.",
+  "s07.interstitial.is3_002": "On bir hata raporu. Bir mühendis. Adlı bir kusur, bir belgede oturuyor. Tüm bunlar, annemin mahkemede durup \"suçlu\" kelimesini söylediği sekiz ay önce.",
+  "s07.interstitial.is3_003": "Bir saat önce onu aradım. Ne olduğunu ona söylemedim. Neden fotoğraflamayı bıraktığını sordum ve o, kimsenin okumayacağı bir şeyi saymanın bir anlamı olmadığını söyledi.",
+  "s07.interstitial.is3_004": "Bir tane daha. O belgeye sahip olan ve ona yine de ödemesini söyleyen birinin adını istiyorum.",
+  "s07.closing_chat.cl_001": "Declan Moran. Batı bölgesi alan yöneticisi. Hata listesi 8 Eylül 2016’da ülkenin her alan yöneticisine gönderildi. O açtı. Bunu biliyorum çünkü okundu bildirimi kendi posta kutusunda, bir konuya onu kopyalayarak yanlışlıkla eklediği bir yığın içinde.",
+  "s07.closing_chat.cl_002": "Sekiz ay sonra ona Cuma gününe kadar düzeltmesini söyledi.",
+  "s07.closing_chat.cl_003": "Salı gününden beri düzgün uyumadım ve uygulamaya geçmeden bir şey söylemek istiyorum.",
+  "s07.closing_chat.cl_004": "O, o kasayı dört yüz on altı kez fotoğrafladı. Bir yıldan fazla her gece. Bunu inşa ediyordu ve kimse ona ne yaptığını sormadı, ben de dahil, ve ben evde yaşıyormuş gibi...",
+  "s07.closing_chat.cl_005": "Tamam. Avukatım, bulduklarınla yapabileceğim üç şey olduğunu ve birini seçmem gerektiğini söylüyor, çünkü bunlar birlikte yapılamaz.",
+  "s07.closing_chat.cl_006": "Bir. Temyiz Mahkemesine dosyalamak. Bu, mahkumiyeti kaldıran tek şey. İki ila dört yıl sürer ve o, altmış üç yaşında; bir başka mahkeme salonunda oturmayacağını söylüyor.",
+  "s07.closing_chat.cl_007": "İki. Tümünü Eibhlín Ní Chonaill’e ver, bu dört yıldır bu işte ve iki hafta içinde yayınlayacak. Hızlı, gürültülü, ve annemin adını temizliyor. O gerçekten yaşadığı tek yer: dokuz yüz kırk kişilik bir köy.",
+  "s07.closing_chat.cl_008": "Ama Bríd’i adlandırıyor. Olmalı. Bríd’in sessizliği, şirketin bildiğinin yarı kanıtı ve Bríd kendi cebinden altmış sekiz bin euro harcamış, hâlâ o tezgahın arkasında ve yanlış bir şey yapmamış, sadece annem kadar korkmuş.",
+  "s07.closing_chat.cl_009": "Üç, bu avukatımın yumuşak olduğunu düşündüğü seçenek.",
+  "s07.closing_chat.cl_010": "İlk önce anneme götürüyorum. Hepsini, fotoğrafları, hata listesini, Moran’ın okundu bildirimini, ve annemin dediğini yapıyorum. Hiçbir şey de dahil. O hiçbir şey söyleyebilir. Hiçbir şey söyleyebilecek tamamen yetenekli.",
+  "s07.closing_chat.cl_011": "Bu gece karar vermeliyim çünkü Eibhlín’in editörü bir cevap istiyor. Ne yapmalıyım?",
+  "s07.closing_chat.cl_011.opt1": "Temyizi dosyalayın. Mahkumiyeti ondan kaldırın.",
+  "s07.closing_chat.cl_011.opt2": "Bunu muhabire ver. Köyde onun adını temizle.",
+  "s07.closing_chat.cl_011.opt3": "Bunu annenize götür ve onun dediğine uymalısın.",
+  "s07.closing_chat.cl_013": "O zaman mahkeme. Yavaş olan.",
+  "s07.closing_chat.cl_014": "Bundan nefret edecek ve yapacak, çünkü o, hiç kimse için kasayı dört yüz on altı kez sayan bir kadın.",
+  "s07.closing_chat.cl_015": "Eibhlín, sonra. Bu gece ona telefon edeceğim. Önce Bríd'ye. Bu arama hayatımın en kötü anı olacak, ve başkasının bunu benim için yapmasını istemiyorum.",
+  "s07.closing_chat.cl_016": "Annem tekrar o dükkâna girebilir. Bu satın aldığım şey ve ne için ödeme yaptığımı tam olarak biliyorum.",
+  "s07.closing_chat.cl_017": "O zaman o. Sabah arabayla gideceğim ve tüm şeyi mutfak masasına koyacağım.",
+  "s07.closing_chat.cl_018": "Dokuz yıl önce bir odadaki insanlar, ona tek bir soru sormadan ne olacağına karar verdiler. Ben de, doğru olsam bile, bunu yapan son kişi olmayacağım.",
+  "s07.closing_chat.cl_019": "Teşekkür ederim. Annemin hırsız mı olduğunu öğrenmek için buraya geldim ve bunun yerine her gece on ikiye yirmi kala ne yaptığını öğrendim, ve bunun üstesinden gelmem uzun zaman alacak.",
+  "s07.ending.court": "Başvuru Ekim ayında Tümsekiz Mahkemesine taşındı. Üç yıl ve bir ay sürdü.\n\nMáire Conneely’nin suçlaması Kasım 2029’da iptal edildi. Sebebi: savcılık, delillerin güvenilirliğiyle ilgili materyali açıklamayı başaramamıştı. O materyal, MER-2016-0114 hata raporu, OVERNIGHT kusuru ve yargılamasından önce bu konuda dosyalanan on bir kopya rapor idi. Karar, Declan Moran’ı iki kez adlandırdı. Mahkeme, şirketin açıklamasıyla ilgili dil, kararın en soğuk kısmı ve o zamandan beri yazılan her makalede alıntılanıyor.\n\nO katılmadı. Başka bir mahkemede oturmayacağını söylemişti ve o da yapmadı, Aoife ise tek başına ikinci sırada oturdu, aynı koltukta.\n\nO tarihten beri aynı belgenin gücüyle yetmiş dört başka suçlama da başvuruldu. Hiçbir kez yargılanmamış ve bu yüzden iptal edilecek bir suçlaması olmayan Bríd Sheridan, altmış sekiz bin euro’sunun hiçbirini geri kazanmadı ve tazminat planına uygun değil, çünkü plan, suçlananlar için.\n\nMáire altmış altı yaşında. İki kez Cloghmore’a geri döndü, her iki kez de mezarlığa, her iki kez de hafta içi sabahı, dükkan kapalıyken.",
+  "s07.ending.press": "Parça dört sayfada bir Cumartesi günü yayımlandı ve iki gün boyunca radyo haberine öncülük etti. 14 Mart 2016’dan güvenlik kutusunun fotoğrafını aynı gece terminal okumasıyla birlikte taşıdı, ve o andan itibaren İrlanda’da kimseye makalenin geri kalanını açıklamak gerekmedi.\n\nCloghmore on iki gün sürdü. Onuncu gün, dükkanın perdesi ilk kez dokuz yıldır açıldı. Bina satın alan adam dışarıda bir masa koydu. Yaklaşık iki yüz kişi geldi. Máire Conneely, kendi postane kapısında durdu ve kolunu ağrıyana kadar el sıkıştı. Aoife’nin o akşam notu tek satırdı: o, ağlayan bir kadın değil, ama Peadar’ın elini bırakamadı.\n\nSuçlama hâlâ geçerli. Bir gazete haberinde yayımlanan hiçbir şey suçlamayı kaldırmaz, ve itiraz hâlâ yapılmadı, ve altmış üç yaşında, Dublin’deki bir dosyanın onun hakkındaki sözünü umursamaz.\n\nBríd Sheridan, dokuzuncu paragrafta adı geçiyor. Letterfrack’teki tezgahı bıraktı, Şubat ayında Roscommon’daki kız kardeşinin yanına taşındı. Aoife’nin aramalarına cevap vermedi. Aoife, haftada bir kez aramaya devam etti ve aramaya devam etmeyi planladığını söyledi.\n\nDeclan Moran, yayından dört gün sonra erken emekliliğe geçti.",
+  "s07.ending.mother": "Aoife Cumartesi sabahı aşağı indi. Dört yüz altmış altı fotoğraf, bir hata listesi ve bir okundu bildirimi annesinin mutfak masasına koydu. Sonra iki saat boyunca orada oturdu, Máire onları sırayla, bir kelime söylemeden gezdi.\n\nMáire’nin sonunda söylediği, Aoife’nin masada çalışan bir sesli not bırakması ve onu silmeye cesaret edememesi nedeniyle kaydedildi. Şöyle dedi: Biliyordum. Senin anladığını istiyorum, çünkü her zaman biliyordum. Ne yapmadığımı bilmiyordum, kimsenin ne zaman yapacağına dair.\n\nİki hafta aldı. Sonra gazeteye evet, mahkemeye hayır dedi ve her iki taraf için de tek koşul, Bríd Sheridan’ın, yazdırılmadan önce Máire’nin kendisi tarafından telefon edilmesiydi. O arama elli dakika sürdü. Hiçbir kadın ne olduğunu söylemedi. Her Salı tekrar konuşmaya başladılar.\n\nParça bahar aylarında yayımlandı. Köy ortaya çıktı. Suçlama hâlâ geçerli ve Máire, hazır olduğunda itirazı düşüneceğini ve öncesinde değil, Aoife’nin itirazı durdurduğunu söyledi.\n\nEn çok değişen şey herhangi bir kayıtta yok. Máire, güvenlik kutusunu tekrar fotoğraflamaya başladı — yeni, Letterfrack dükkanında, Bríd’in tezgahının arkasında iki sabah çalışıyor. O, bunun bir alışkanlık olduğunu ve zararı olmadığını söylüyor. Aoife, bunun başka bir şey olduğunu düşünüyor ve sormadı.",
+  "s07.messages.sms_001": "Máire, Declan burada. Kapanmadan beni arar mısın, Mart rakamlarıyla ilgili.",
+  "s07.messages.sms_002": "İki kez aradım, cevap yok. Şubedeyim saat 6'ya kadar.",
+  "s07.messages.sms_003": "Üzgünüm, yoldaydım. Bak, pozisyon değişmedi. Cuma gününe kadar düzeltilmeli. Bu ben değilim, sözleşmenin işleyişi böyle.",
+  "s07.messages.sms_004": "Declan, onu on bir hafta boyunca her gece saydım. Para gitmedi çünkü para hiç gitmeyecek bir yerde değildi.",
+  "s07.messages.sms_005": "Böyle hissettiğini anlıyorum. Cuma.",
+  "s07.messages.sms_010": "Máire, Peadar burada. Aoife, ona cevap vermediğini söylüyor. Parayı Salı günü yatırdım, iş bitti, bunun hakkında beni arama.",
+  "s07.messages.sms_011": "Peadar, geri ödeyeceğim.",
+  "s07.messages.sms_012": "Biliyorum.",
+  "s07.messages.sms_020": "Mam, yayında. Sky News'te. Wexford versiyonu. Aynı sistem, aynı sözler, aynı her şey.",
+  "s07.messages.sms_021": "Gördüm.",
+  "s07.messages.sms_022": "Hiçbir şey söylemeyecek misin?",
+  "s07.messages.sms_023": "2016'da söylemem gereken her şeyi söyledim ve bu bana evimi ve sevgiyi kaybettirdi. Bu sefer sen söylüyorsun.",
+  "s07.chats.wa_001": "Máire, Bríd burada. Yarın müsait misin? Belki sürerek gelirim.",
+  "s07.chats.wa_002": "Hayatımın her günü buradayım, Bríd, nerede olduğumu biliyorsun.",
+  "s07.chats.wa_003": "Tamam. Nasıl gideceğime bakacağım.",
+  "s07.chats.wa_004": "Bríd?",
+  "s07.chats.wa_005": "Üzgünüm, araba. Başka zaman.",
+  "s07.chats.wa_010": "Sana bir şey sorabilir miyim ve dürüstçe söyleyecek misin? Şubenizde. Makine hiç kasada olmayan bir sayı söylemiş mi?",
+  "s07.chats.wa_011": "Bunu bana neden soruyorsun?",
+  "s07.chats.wa_012": "Çünkü bana ülkedeki tek kişi olduğumu söylüyorlar ve artık onlara inanmıyorum.",
+  "s07.chats.wa_013": "ses notu",
+  "s07.chats.wa_014": "Bríd, bu bir cevap değil.",
+  "s07.chats.wa_015": "Sahip olduğum tek şey bu. Üzgünüm Máire. Çok özür dilerim.",
+  "s07.chats.wa_020": "Duydum. Çok üzgünüm. Eğer bir şey varsa.",
+  "s07.chats.wa_021": "Yok. Teşekkürler Bríd.",
+  "s07.chats.wa_030": "Máire. Bunu okuyup okuyacağından emin değilim. Gazetedeki Wexford kadınıyla ilgili haberi dört kez okudum. Birini aramalısın diye düşünüyorum. Birini aramalısın diye düşünüyorum ve bunu 2016'da söylemiş olmam gerektiğini düşünüyorum ve o zamandan beri her gün bunu düşünüyorum.",
+  "s07.chats.wa_031": "Biliyorum, senin var.",
+  "s07.mail.gm_001.subject": "4471 Şube Cloghmore: açık pozisyon",
+  "s07.mail.gm_001.body": "Máire,\n\nTelefonla görüştüğümüz gibi. Cuma iş günü kapanışı itibarıyla pozisyon, şube hesabına karşı €41,300 tutarında bir açık.\n\nSözleşmenin 12. maddesine göre alt posta müdürü, kendi ihmali, dikkatsizliği veya hatası nedeniyle oluşan tüm kayıplardan ve bu kayıpların telafisi için sorumludur. Bunun küçük bir rakam olduğunu iddia etmeyeceğim ama süreç süreçtir ve sana söylediğimi kaydetmem gerekiyor.\n\nSistem pozisyonu sistem pozisyonudur. Dublin'e, MERIDIAN'ın söylediğinden farklı bir rakam veremem, sen de veremezsin.\n\nCuma gününe kadar düzelt ve şube seviyesinde kapatabiliriz. Cuma'yı aşarsa dosyamdan çıkar ve Güvenliğe gider, ikimiz de bunu istemeyiz.\n\nDeclan Moran\nBölge Müdürü, Batı Bölgesi",
+  "s07.mail.gm_002.subject": "Ynt: 4471 Şube Cloghmore: açık pozisyon",
+  "s07.mail.gm_002.body": "Declan,\n\n2 Mart'tan beri her gece kasayı saydım. 2 Mart'tan beri her gece fotoğrafını çektim. Banknotları ve madeni paraları ayrı ayrı listeledim ve zamanlarını da kaydettim.\n\nSayım her gece doğru ve terminal dört ila altı bin arasında yüksek gösteriyor. Gece kendi kendine artıyor. 19'unda şubeyi 11:40'da €4,531.40 ile kilitledim; sabah 8:00'de terminalin €9,331.40 gösterdiğini gördüm, benden başka o binada kimse yoktu.\n\nSenden inanmanı istemiyorum. Senden birini gönderip makineye bakmasını istiyorum.\n\nMáire",
+  "s07.mail.gm_003.subject": "Ynt: 4471 Şube Cloghmore: açık pozisyon",
+  "s07.mail.gm_003.body": "Máire,\n\nBunu gündeme getirdim. Servis masası görüşü, bunun şube seviyesinde izole bir sorun olduğu ve bu davranışa uyan bildirilen bir kusur olmadığı yönünde.\n\nSana nazikçe öneririm ki bu yola girmek yardımcı olmaz. Rakamları itiraz eden şubeler daha iyi sonuç alamaz, sadece daha yavaş ilerler.\n\nCuma.\n\nDeclan",
+  "s07.mail.gm_004.subject": "İLT: Bölgesel dağıtım: bilinen hata kaydı Q3 (KISITLI)",
+  "s07.mail.gm_004.body": "Declan, talep edildiği gibi, kişisel e-posta adresine yönlendiriyorum, böylece yolda elinde olur. Lütfen dağıtmayın, bu sadece bölge yöneticileri içindir.\n\n> ---------- Forwarded message ----------\n> Subject: Bölgesel dağıtım: bilinen hata kaydı Q3 (KISITLI)\n> Date: 8 September 2016\n> To: Bölge Yöneticileri (Tüm Bölgeler)\n>\n> Ek, MERIDIAN şube muhasebesi için Q3 bilinen hata kaydıdır.\n> İşlem: KISITLI. Şube seviyesine dağıtım için değildir.\n> Alt posta müdürleriyle yapılan yazışmalarda referans gösterilmemelidir.\n>\n> Attachment: known_error_log_q3.pdf\n\n[Bu mesaj, Máire Conneely'nin posta kutusunda görünüyor çünkü orijinal konudan yönlendirildiği alıcı listesinde yer alıyordu. Mesajın alt kısmındaki okuma bildirimi 8 September 2016, 16:41 zaman damgasıyla.]",
+  "s07.mail.gm_005.subject": "4471 Şube denetimi: ziyaret raporu",
+  "s07.mail.gm_005.body": "Máire,\n\nSöz verildiği gibi, raporum Cuma günü Dublin'e gönderildi. Senin istediğin ve buna hak ettiğini düşündüğüm için seni kopyaladım.\n\nÖzet: sahada iki gün, her iki gün tam fiziksel sayım, stok uzlaştırıldı, gönderimler altı hafta geriye doğru dekontlarla kontrol edildi, kasa prosedürü gözlemlendi, anahtar kontrolü doğru.\n\nBulgular: bu şubede nakit, stok ya da gönderim eksik değildir. Fiziksel pozisyon, alt posta müdürünün tuttuğu manuel kayıtlarla uyuşuyor. Terminalle uyuşmuyor.\n\nSon cümleyi bulduğum gibi tam olarak yazdım ve bunun raporun amaçladığı bulgu türü olmadığını söylediler. Şimdi ne olacağını bilmiyorum.\n\nYazıya dökmekten fazlasını yapamadığım için üzgünüm.\n\nFiona Doyle\nŞube Denetimi",
+  "s07.mail.gm_006.subject": "MER-2016-0114",
+  "s07.mail.gm_006.body": "Mrs Conneely,\n\nBunu servis masasından alamazsınız, bu yüzden kendi adresimden gönderiyorum ve nereden geldiğini söylememenizi rica ederim.\n\n24'ünde telefonda bana anlattığınız davranış, bilinen bir kusurdur. Bir referansı ve bir adı vardır. 2014'ten beri dokuz şubeye karşı on bir kez rapor edildi ve bunların dördünü ben kendim rapor ettim.\n\nNe yapar: gece uzlaştırma işi, zaman aşımından sonra yeniden başlatıldığında şubenin gönderim partisini yeniden gönderir. Şubenin bakiyesi partinin değeri kadar artar. Para mevcut değildir. Şubeden hiçbir şey eksik değildir çünkü hiçbir şey hiç çıkmamıştır.\n\nBu, Q3 bilinen hata kaydında yer alıyor. Bölge yöneticinizin bu kaydı var.\n\nBunu yazmamam gerekirdi. Yine de yazdım.\n\nT. Geraghty",
+  "s07.mail.gm_007.subject": "Wexford: mahkumiyet iptal edildi",
+  "s07.mail.gm_007.body": "Máire, seni hatırlıyor muyum bilmiyorum. 2019’da sana yazdım, ve tekrar yazmamamı istedin. Altı yıl boyunca bunu saygıyla tuttum.\n\nBir kez daha yazıyorum, Wexford’da Salı günü olan olaylar yüzünden ve sonra seni yalnız bırakacağım.\n\nTümsekiz Mahkemesi iptal etti. Sebepler, MERIDIAN delillerinin güvenilirliğiyle ilgili materyali açıklamamak. Bu senin davasın. Kelime kelime senin davasın.\n\nHer zaman konuşmak istersen, kayıtlı olsun ya da olmasın, numaram değişmedi.\n\nEibhlín Ní Chonaill",
+  "s07.maps.loc_001.name": "Cloghmore Postanesi",
+  "s07.maps.loc_001.address": "Main Street, Cloghmore, Co. Galway",
+  "s07.maps.loc_001.note": "Yirmi bir yıl. Son ziyaret 9 Mayıs 2017.",
+  "s07.maps.loc_002.name": "Letterfrack",
+  "s07.maps.loc_002.address": "Co. Galway",
+  "s07.maps.loc_003.name": "Ev",
+  "s07.maps.loc_003.address": "Bóthar na Trá, Galway",
+  "s07.maps.loc_004.name": "Mahkeme Binası",
+  "s07.maps.loc_004.address": "Courthouse Square, Galway",
+  "s07.maps.loc_004.note": "9 Mayıs 2017.",
+  "s07.maps.loc_005.name": "Kredi Birliği",
+  "s07.maps.loc_005.address": "Clifden, Co. Galway",
+  "s07.maps.loc_006.name": "Cloghmore Mezarlığı",
+  "s07.maps.loc_006.address": "Cloghmore, Co. Galway",
+  "s07.calendar.ev_001": "Sayım + fotoğraf",
+  "s07.calendar.ev_002": "Declan, Cuma",
+  "s07.calendar.ev_003": "Denetim ziyareti, F. Doyle",
+  "s07.calendar.ev_003.notes": "İki gün. Ona her şeyi görsün.",
+  "s07.calendar.ev_004": "Mahkeme, 10:30",
+  "s07.calendar.ev_005": "Aoife, Pazar",
+  "s07.calendar.ev_006": "Peadar, doğum günü",
+  "s07.photos.album_001": "Kamera Rulosu",
+  "s07.photos.album_002": "Sayımlar",
+  "s07.photos.album_003": "Mahkeme",
+  "s07.photos.album_004": "Cloghmore",
+  "s07.photos.ph_005.document": "Arka ofiste bir terminal ekranının açıyla çekilmiş fotoğrafı, ekran parlaması bir köşeyi kesiyor.\n\n  MERIDIAN: BRANCH 4471 CLOGHMORE\n  TRADING POSITION: 20/03/2016 08:04\n\n  CASH ON HAND (SYSTEM)      9,331.40\n  CASH ON HAND (DECLARED)    4,531.40\n  VARIANCE                   4,800.00\n\n  Last reconciliation: 20/03/2016 02:14 (RESTARTED)\n\nEkranın altında, klavyeye dayalı, el yazısı bir not: '4,531.40, counted 3x, 23:40 19/3'.",
+  "s07.photos.ph_006.document": "Mutfak masasında düz tutulan bir suçlama belgesinin fotoğrafı.\n\n  HALK (KAMU KOTUARLARI DİREKTÖRÜNÜN DAVA SAHİBİ)\n  v. MÁIRE CONNEELY\n\n  COUNT 1  Hırsızlık, s.4 Criminal Justice (Theft and Fraud\n           Suçlar) Act 2001: €41,300\n  COUNT 2  Yanlış muhasebe, s.10 söz konusu Yasa\n\n  Ayrıntılar: that between 2 March 2016 and 20 May 2016 at Cloghmore\n  Post Office, branch 4471, sanık €41,300 tutarındaki mülkü çaldı\n  of An Post, ve kazanç sağlamak amacıyla kayıtları sahtecilik yaptı.\n\nBirisi 'did steal' ifadesini kurşun kalemle altını çizmiş ve yanına çok küçük bir şekilde: 'from where' yazmış.",
+  "s07.photos.ph_007.document": "Photograph of a printed page from a restricted document, taken quickly, the top and bottom edges cut off by the frame.\n\n  MERIDIAN: BİLİNEN HATA GÜNLÜĞÜ, Q3 2016\n  HANDLING: KISITLI, ŞUBE DAĞITIMI İÇİN DEĞİL\n\n  REF          İSİM        SEV   YÜKSELEN   ŞUBELER   DURUM\n  ...\n  MER-2016-0114  GECE   2    11       9          AÇIK\n  ...\n\n  MER-2016-0114 GECE, gece uzlaştırması gönderim yeniden gönderir\n  toplu işlem zaman aşımından sonra iş yeniden başlatıldığında. Şube bakiyesi toplu işlem tarafından şişirildi\n  değeri. İlgili nakit hareketi yok. Etkilenen şubeler rapor ediyor\n  fiziksel sayım karşısında sistem konumunda açıklanamayan fazla\n\n  Geçici Çözüm: şube seviyesinde yok.\n  Not: bu davranışı rapor eden şubeler bilgilendirilmelidir ki sorun\n  izole, düzeltme bekleniyor.",
+  "s07.photos.ph_010.document": "Denetim raporunun son sayfasının fotoğrafı, üst kısmı hafifçe odak dışı.\n\n  BRANCH AUDIT: 4471 CLOGHMORE\n  F. DOYLE, BRANCH AUDIT, 26–27 APRIL 2016\n\n  SONUÇ\n\n  Bu şubede nakit, stok veya havale eksik değildir.\n  Fiziksel durum, alt postmaster tarafından tutulan manuel kayıtlarla uyumlu, ancak terminal konumuyla uyuşmamaktadır.\n\n  Öneri: Alt postmaster aleyhine herhangi bir geri kazanım eylemi alınmadan önce terminal konumu merkezi olarak doğrulansın.\n\nSayfanın alt kısmında, farklı bir el yazısıyla: 'Not for the file. DM.'.",
+  "s07.notes.folder_001": "Şube",
+  "s07.notes.folder_002": "—",
+  "s07.notes.note_001.title": "Masaya yapılan aramalar",
+  "s07.notes.note_001.block_001": "Bunları yazıyorum çünkü sonuncusunu hayal ettiğimi düşünmeye başladım.",
+  "s07.notes.note_001.block_002": "9 Mar, 10:20, kız Sinéad aradı. Şube seviyesinde izole bir sorun olduğunu söyledi.",
+  "s07.notes.note_001.block_003": "14 Mar, 09:05, adam, adı verilmedi. İzole bir sorun. Yeniden sayması tavsiye edildi.",
+  "s07.notes.note_001.block_004": "21 Mar, 16:50. Şubenizde izole bir sorun. Başka şubeler rapor vermiyor.",
+  "s07.notes.note_001.block_005": "4 Apr. Onunla kelimeyi benim için yazmasını istedim. Yazılı bir şey koyamadığını, ancak bunun izole bir sorun olduğunu söyledi.",
+  "s07.notes.note_001.block_006": "Hepsi aynı şekilde söylüyor. İşte beni korkutan bu.",
+  "s07.notes.note_002.title": "Prosedür",
+  "s07.notes.note_002.block_001": "17:30'da kapat. Çekmeceden parayı tepsiye boşalt.",
+  "s07.notes.note_002.block_002": "Notlar önce, elliliklerde. Madeni para ikinci, değerine göre. Her iki rakamı da slip'e yaz.",
+  "s07.notes.note_002.block_003": "İki kez say. Mart'tan beri üç kez say.",
+  "s07.notes.note_002.block_004": "Slip, notlarla birlikte tepsiye konur. Açık kasanın fotoğrafını çek, slip görünür olsun.",
+  "s07.notes.note_002.block_005": "Kasa fotoğraf albümünün şifresi 0203, başladığı gün. Değiştirme, unutacağım.",
+  "s07.notes.note_003.title": "—",
+  "s07.notes.note_003.block_001": "Bunları yüksek sesle söyleyemeyeceğim, bu yüzden buraya yazıyorum.",
+  "s07.notes.note_003.block_002": "Peadar Salı günü on sekiz bin koydu ve bana bakmadı. Bunu benim yaptığımı düşünüyor. Yine de ödedi. Bu iki şeyden hangisinin daha kötü olduğunu bilmiyorum ve dörtten beri uyanık, bunun üzerinde çalışıyorum.",
+  "s07.notes.note_003.block_003": "Avukat, hırsızlık suçunun hapis cezası, muhasebe suçunun ise para cezası olduğunu ve eğer muhasebe suçundan suçlu bulursam hırsızlık suçunu alacaklarını söylüyor. Jürinin bir makineyi ve beni göreceğini, bize kime inanacaklarını soracaklarını belirtiyor.",
+  "s07.notes.note_003.block_004": "Bu yüzden Salı günü Galway'de ayağa kalkıp doğru olmayan bir söz söyleyeceğim, büyük bir yalan yerine daha küçük bir yalanın gerçekleşmesini sağlayacağım.",
+  "s07.notes.note_003.block_005": "Yirmi bir yıl boyunca bir damga bile almadım. Aoife bunu duyacak ve inanacak, Salı günü bunun gerçekleşmediği bir versiyon yok.",
+  "s07.notes.note_004.title": "Sonrası için",
+  "s07.notes.note_004.block_001": "Fotoğraflar Counts adlı albümde. Toplam dört yüz altmış altı adet. Telefon doldu, bu yüzden gerisi dizüstü bilgisayarda. Burada dört tanesini sakladım: ilk, ikinci, Mart ayının on dokuzuncusu ve sonuncusu.",
+  "s07.notes.note_004.block_002": "Her birinde slip var. Slip'te zaman yazıyor. Hepsi açık kasayı gösteriyor.",
+  "s07.notes.note_004.block_003": "Mühendisin adı e-postada. Düşündüğüm gibi iyi biriydi ve mümkünse ona bulaşmamalı.",
+  "s07.notes.note_004.block_004": "Denetim 29 Nisan'da Dublin'e gitti ve kapıda bir kopya istedim, bu yüzden bir kopyasını aldım.",
+  "s07.notes.note_004.block_005": "Bunların kimsenin okuyacağını sanmıyorum. Temiz bırakıyorum çünkü benim tarzım bu.",
+  "s07.search.gs_001": "meridian terminal bakiyesi kasadaki nakitten yüksek",
+  "s07.search.gs_002": "posta ofisi muhasebe sistemi olmayan bir parayı ekleyebilir mi",
+  "s07.search.gs_003": "subpostmaster sözleşmesi kayıp maddesini 12. maddeyi düzelt",
+  "s07.search.gs_004": "diğer postmaster'lar aynı sorun forum",
+  "s07.search.gs_005": "yanlış muhasebe cümlesi irlanda ilk suç",
+  "s07.search.gs_006": "suçlu bulursanız emekliliğiniz ne olur",
+  "s07.search.gs_007": "wexford postacı kadının mahkumiyeti iptal edildi",
+  "s07.search.gs_008": "temyiz mahkemesi bir ceza davası ne kadar sürer",
+  "s07.payments.tx_001.note": "Petrol teslimatı",
+  "s07.payments.tx_002.note": "Kredi birliği: kredi geri ödemesi",
+  "s07.payments.tx_003.note": "P. Conneely: transfer alımı",
+  "s07.payments.tx_004.note": "An Post: şube havalesi",
+  "s07.payments.tx_005.note": "Avukat: hesabına",
+  "s07.payments.tx_006.note": "Aoife, kitaplar",
+  "s07.payments.tx_007.note": "Elektrik",
+  "s07.payments.tx_008.note": "Kredi birliği, kredi geri ödemesi",
+  "s07.payments.tx_009.note": "An Post, şube havalesi",
+  "s07.payments.tx_010.note": "Eczane",
+  "s07.cloud.cfo_001": "Şube",
+  "s07.cloud.cf_001.name": "counts_march_may_2016.csv",
+  "s07.cloud.cf_001.body": "TARİH, SAAT, NOTLAR, PARA, SAYILAN TOPLAM, TERMINAL, VARYANS\n01/03, 23:20, 5 180.00, 288.60, 5 468.60, 5 468.60, 0.00\n02/03, 23:35, 4 910.00, 301.20, 5 211.20, 9 211.20, 4 000.00\n03/03, 23:15, 5 042.00, 264.80, 5 306.80, 9 306.80, 4 000.00\n...\n19/03, 23:40, 4 220.00, 311.40, 4 531.40, 9 331.40, 4 800.00\n...\n20/05, 23:25, 4 806.00, 297.10, 5 103.10, 46 403.10, 41 300.00\n\nVaryans ilk kez 02/03 tarihinde ortaya çıkar. Asla sıfıra dönmez.\nSayılan toplam fiziksel sayımdır. Terminal, sistemin gösterdiği değerdir.\nHer satırda, fiziksel sayım daha düşük sayıdır.",
+  "s07.cloud.cf_002.name": "bank_and_credit_union_2016.pdf",
+  "s07.cloud.cf_002.body": "TÜM HESAPLAR: 01/03/2016 - 31/05/2016\n\nCari hesap (M. Conneely)     açılış 1,204.66   kapanış 908.12\nKredi birliği pay hesabı         açılış 3,110.00   kapanış 3,110.00\nŞube nakit (An Post, ayrı)    haftalık mutabakat, istisna yok\n\nDönemdeki en büyük tek kredi: €18,000.00, 17/05, P. CONNEELY\nDönemdeki en büyük tek borç: €18,000.00, 18/05, AN POST\n\nDönemde €412.00'ı aşan başka kredi yok.\nDönemde €300.00'ı aşan nakit yatırma yok.\nM. Conneely tarafından ortak ya da tek başına tutulan hiçbir hesap dönemde değer kazandı.",
+  "s07.cloud.cf_003.name": "known_error_log_q3.pdf",
+  "s07.cloud.cf_003.body": "MERIDAN: BİLİNEN HATA GÜNLÜĞÜ, Q3 2016 (KISITLI)\n\nREF             İSİM        SEV  AÇILDI  ŞUBELER  DURUM\nMER-2015-0881   PRINTQ      4    3       3         KAPALI\nMER-2016-0047   STOCKSYNC   3    6       5         AÇIK\nMER-2016-0114   OVERNIGHT   2    11      9         AÇIK\nMER-2016-0203   CARDTIMEOUT 3    4       4         AÇIK\n\nMER-2016-0114: OVERNIGHT\nGeceleme mutabakatı, şube tahsilat toplu işlemini yeniden gönderir, zaman\niş yeniden başlatıldığında bir zaman aşımının ardından. Şube bakiyesi, toplu işlemin değeriyle şişirilir.\ntoplu işlemin değeri. Buna karşılık nakit hareketi yoktur.\n\nEtkilenen şubeler, sistem konumunda açıklanamayan bir fazla rapor eder\nfiziksel sayımla karşılaştırıldığında, gecelik tekrarlayan, birikimli.\n\nYükseltildi: 04/2014'ten beri 11 kez. Dördü T. Geraghty (destek) tarafından yükseltildi.\nŞu ana kadar etkilenen şubeler: 9. Cloghmore (4471) 03/2016'da eklendi.\nGeçici çözüm: şube seviyesinde mevcut değil.\n\nİLETİŞİM NOTU: bu davranışı rapor eden şubelere bildirilmelidir\nsorunun, bir düzeltme beklenirken yalnızca kendi şubelerine özgü olduğu. Bu günlük\nsubpostmaster'larla yazışmalarda referans olarak kullanılmamalıdır.\n\nDağıtım: Bölge Yöneticileri (Tüm Bölgeler), 08/09/2016.",
+  "s07.cloud.cf_004.name": "audit_4471_doyle.pdf",
+  "s07.cloud.cf_004.body": "ŞUBE DENETİM RAPORU: 4471 CLOGHMORE\nF. Doyle, Şube Denetimi: 26 ve 27 Nisan 2016\n\nKapsam: tam fiziksel nakit sayımı (her iki gün), stok mutabakatı,\ntahsilat kontrolü makbuzlara (6 hafta), kasa ve anahtar prosedürü.\n\nBulgular:\n  Nakit            manuel kayda uygun, her iki gün\n  Stok           uygun\n  Tahsilatlar     makbuzlarla uyumlu, istisna yok\n  Anahtar kontrolü     doğru, tek anahtar sahibi\n  Kayıtlar         manuel fişler günlük olarak saklanıyor, zamanlar kaydedildi\n\nSONUÇ: Bu şubede nakit, stok veya tahsilat eksik değildir\nşube. Fiziksel durum, tutulan manuel kayıtlarla uyumludur\nsubpostmaster tarafından tutulur ve terminal konumuyla uyumlu değildir.\n\nTAVSİYE: terminal konumu, herhangi bir\ngeri alma eylemi subpostmaster aleyhine alınmadan önce merkezi olarak doğrulanmalıdır.\n\n[Rapor, delil kitabına dahil edilmedi. Tarafa açıklanmadı\nsavunma. Dosya kopyasına el yazısı: 'Dosya için değil. DM.']",
+  "s07.cloud.cf_005.name": "trial_bundle_index.pdf",
+  "s07.cloud.cf_005.body": "DELİL KİTABI: İNDİS\nDPP v. CONNEELY, Galway Çevrim Mahkemesi, 2017\n\n 1. D. Moran, Bölge Yöneticisi beyanı\n 2. MERIDIAN şube ticaret beyanları, 4471, 01/03/16 – 20/05/16\n 3. MERIDIAN işlem günlüğü özeti, 4471\n 4. J. Ruane, Güvenlik beyanı\n 5. MERIDIAN sisteminin işletilmesine dair sertifika\n 6. Ekler: havale belgeleri\n\nDAHİL DEĞİL:\n  Şube denetim raporu, F. Doyle, 26–27/04/2016\n  Bilinen hata kaydı 3. Çeyrek 2016\n  Yazışma: T. Geraghty'den M. Conneely'ye, 26/04/2016\n  Manuel sayım kayıtları ve alt postmasterın fotoğrafları",
+  "s07.memos.vm_001.title": "19 Mart",
+  "s07.memos.vm_001.transcript": "Tamam. Cumartesi, 19 Mart. Saat on bir kırk. Notlar, dört bin iki yüz yirmi. Kuruş, üç yüz on bir kırk. Toplam dört bin beş yüz otuz bir kırk. Ve makine dokuz bin üç yüz otuz bir kırk diyor. Yani dört bin sekiz yüz pound, yani dört bin sekiz yüz euro istiyor, bu bina içinde yok. Bina içinde dört bin sekiz yüz yok. Üç kez saydım ve bir kez daha sayacağım, sonra eve gideceğim.",
+  "s07.memos.vm_002.title": "Servis masası",
+  "s07.memos.vm_002.transcript": "Hanımefendi Conneely, bu MERIDIAN servis masası bu sabahki aramanıza geri dönüyor. Takım liderimle kontrol ettim ve şu anda bu tür bir tutarsızlık bildiren başka şube olmadığını teyit edebilirim, bu yüzden sorunun şubenizde izole bir durum olduğu görünüyor. Ne yazık ki bu tür bir varyans için sahaya gelemiyoruz. Eğer eksik devam ederse, bunu düzeltmek için bölge yöneticinizle görüşmeniz gerekecek. Çok teşekkür ederiz ve verdiğimiz rahatsızlık için özür dileriz.",
+  "s07.memos.vm_003.title": "8 Mayıs",
+  "s07.memos.vm_003.transcript": "Yarın. Ayağa kalkıp söyleyeceğim. Ve sabahın bu saatinde aklıma sürekli gelen şey para değil ve dokuz ay da değil. Aoife'nin orada oturup annesinin bunu söylemesini duyacak olması, ardından benim de bunu söylemiş olmam, ve ona bunu bir daha geri alamamam. İşte bütün bunlar. İşte satın aldığım şeyin tamamı.",
+  "s07.clock.al_001": "Açık",
+  "s07.clock.al_002": "Sayım",
+  "s07.lock.step_001.hint": "Kendi prosedür notu albüm şifresini harf harf yazar: bu, varyansın ilk ortaya çıktığı gün, gün ve ay, dört basamaklı bir sayıdır.",
+  "s07.lock.step_003.hint": "Mühendisin e-postası hataya referans verir. Bu referans, küçük harfle, kısıtlı logu açan şeydir.",
+  "s07.question.q01.title": "Yirmiden on ikiye",
+  "s07.question.q01.question": "Bir yıldan uzun bir süredir, kilitlemeden önce her gece aynı şeyi fotoğraflıyordu. Fotoğraflarda ne var?",
+  "s07.question.q01.opt0": "Ön kapı",
+  "s07.question.q01.opt1": "Kasa sayısı",
+  "s07.question.q01.opt2": "Defteri",
+  "s07.question.q01.opt3": "Posta damgası",
+  "s07.question.q01.answers": [
+    [
+      "kasa"
+    ],
+    [
+      "kas"
+    ],
+    [
+      "para"
+    ],
+    [
+      "par"
+    ],
+    [
+      "nakit"
+    ],
+    [
+      "nak"
+    ]
+  ],
+  "s07.question.q02.title": "Altmış bir arama",
+  "s07.question.q02.question": "On bir hafta içinde bir numarayı altmış bir kez aradı. Kişi rehberinde nasıl görünüyor?",
+  "s07.question.q02.opt0": "Kızı",
+  "s07.question.q02.opt1": "Yardım hattı",
+  "s07.question.q02.opt2": "Merkez ofis",
+  "s07.question.q02.opt3": "Kredi birliği",
+  "s07.question.q02.answers": [
+    [
+      "yardım"
+    ],
+    [
+      "yardim"
+    ],
+    [
+      "destek"
+    ],
+    [
+      "destek"
+    ],
+    [
+      "servis"
+    ],
+    [
+      "masa"
+    ]
+  ],
+  "s07.question.q03.title": "Cuma'ya kadar",
+  "s07.question.q03.question": "Bölge yöneticisinin üç harfi aynı talimatla bitiyor. Eksikliği ne yapması söyleniyor?",
+  "s07.question.q03.opt0": "Merkez ofise bildir",
+  "s07.question.q03.opt1": "Düzelt",
+  "s07.question.q03.opt2": "Şubeyi kapat",
+  "s07.question.q03.opt3": "Denetçi bekle",
+  "s07.question.q03.answers": [
+    [
+      "iyi"
+    ],
+    [
+      "iy"
+    ],
+    [
+      "düzelt"
+    ],
+    [
+      "duzelt"
+    ],
+    [
+      "öde"
+    ],
+    [
+      "ode"
+    ]
+  ],
+  "s07.question.q04.title": "Takip et",
+  "s07.question.q04.question": "Kırk bir bin üç yüz euro'nun o şubeden çıktığı söyleniyor. Sahip olduğu her hesaba bakıldığında, nereye gitti?",
+  "s07.question.q04.opt0": "Bir kredi birliği hesabına",
+  "s07.question.q04.opt1": "Hiçbir yere",
+  "s07.question.q04.opt2": "Kızının ücretlerine",
+  "s07.question.q04.opt3": "Şubenin nakit akışına",
+  "s07.question.q04.answers": [
+    [
+      "hicbir",
+      "hic bir"
+    ],
+    [
+      "hic"
+    ],
+    [
+      "hicbirsey",
+      "hic birsey"
+    ],
+    [
+      "yok"
+    ],
+    [
+      "asla"
+    ],
+    [
+      "hicbir"
+    ]
+  ],
+  "s07.question.q05.title": "On bir hafta",
+  "s07.question.q05.question": "2016 baharını gerçekleşme sırasına koy.",
+  "s07.question.q05.ev0": "26–27 Nisan: bir denetçi şubede iki gün geçirir ve her şeyi iki kez sayar",
+  "s07.question.q05.ev1": "2 Mart: terminal, kasa miktarından ilk kez 4.000 € daha yüksek",
+  "s07.question.q05.ev2": "17 Mayıs: kardeşi hesabına 18.000 € transfer eder",
+  "s07.question.q05.ev3": "20 Mayıs: varyans 41.300 €'a ulaşır ve şube askıya alınır",
+  "s07.question.q05.ev4": "9 Mart: hizmet masasına yapılan ilk arama; sorunun izole olduğu söylenir",
+  "s07.question.q05.ev5": "28 Nisan: bir mühendis ona özel bir hata referansı ile e-posta gönderir",
+  "s07.question.q05.answers": [
+    [
+      "sira"
+    ]
+  ],
+  "s07.question.q06.title": "Kelime",
+  "s07.question.q06.question": "Hizmet masasının her aramadan sonra ona söylediği şeyi not etti. Her seferde aynı kelimeyi kullandılar. Hangisi?",
+  "s07.question.q06.opt0": "Mutabık",
+  "s07.question.q06.opt1": "İzole",
+  "s07.question.q06.opt2": "Yükseltilmiş",
+  "s07.question.q06.opt3": "Çoğaltılmış",
+  "s07.question.q06.answers": [
+    [
+      "izol"
+    ],
+    [
+      "izole"
+    ],
+    [
+      "tek"
+    ],
+    [
+      "tek"
+    ]
+  ],
+  "s07.question.q07.title": "On dört mil yolda",
+  "s07.question.q07.question": "Sonraki köydeki postacı, Máire'den önce aynı hesap açığını yaşadı. Hangi yıl?",
+  "s07.question.q07.opt0": "2011",
+  "s07.question.q07.opt1": "2014",
+  "s07.question.q07.opt2": "2009",
+  "s07.question.q07.opt3": "2016",
+  "s07.question.q07.answers": [
+    [
+      "2014"
+    ],
+    [
+      "14"
+    ]
+  ],
+  "s07.question.q08.title": "Sessizce",
+  "s07.question.q08.question": "Bríd hiç rapor etmedi. Kendisi örtbas etti. Para nereden geldi?",
+  "s07.question.q08.opt0": "Bir banka kredisi",
+  "s07.question.q08.opt1": "Kendi birikimleri",
+  "s07.question.q08.opt2": "Şube nakit rezervi",
+  "s07.question.q08.opt3": "Merkez ofis sildi",
+  "s07.question.q08.answers": [
+    [
+      "tasarruf"
+    ],
+    [
+      "tasaruf"
+    ],
+    [
+      "tasarruflar"
+    ],
+    [
+      "tasarrufl"
+    ],
+    [
+      "kendi"
+    ],
+    [
+      "kend"
+    ],
+    [
+      "emekli"
+    ],
+    [
+      "emekli"
+    ],
+    [
+      "birikim"
+    ],
+    [
+      "birikm"
+    ]
+  ],
+  "s07.question.q09.title": "Şirketin söylediği dört şey",
+  "s07.question.q09.question": "2017'de mahkemeye dört beyan sunuldu. Üçü doğru. Bu telefonun yanlış olduğunu kanıtladığı beyanı seç.",
+  "s07.question.q09.sn0": "Şube terminali, 2 Mart ile 20 Mayıs 2016 arasında €41,300 tutarında birikimli bir fark kaydetti.",
+  "s07.question.q09.sn1": "Alt posta müdürü, şube kasasının tek anahtar sahibiydi.",
+  "s07.question.q09.sn2": "Şirketin, şube seviyesinde bu tür bir fark yaratabilecek bir kusurunun olduğu bilinmiyordu.",
+  "s07.question.q09.sn3": "Eksik miktar, alt posta müdürü tarafından anlaşma kapsamında izin verilen süre içinde telafi edilmedi.",
+  "s07.question.q09.answers": [
+    [
+      "kusur"
+    ],
+    [
+      "bilinen"
+    ],
+    [
+      "üçüncü"
+    ],
+    [
+      "sn2"
+    ]
+  ],
+  "s07.question.q10.title": "Bir adı var",
+  "s07.question.q10.question": "Bunu yapan hata, referans ve isimle sınırlı bir belgede listelenmiş. İsim nedir?",
+  "s07.question.q10.opt0": "Cascade",
+  "s07.question.q10.opt1": "Overnight",
+  "s07.question.q10.opt2": "Rollback",
+  "s07.question.q10.opt3": "Phantom",
+  "s07.question.q10.answers": [
+    [
+      "overnight"
+    ],
+    [
+      "over night"
+    ],
+    [
+      "overnite"
+    ],
+    [
+      "0114"
+    ]
+  ],
+  "s07.question.q11.title": "On bir kez",
+  "s07.question.q11.question": "Şirket içinde bir kişi bu hatayı tekrar tekrar gündere getirdi ve ardından kuralları çiğneyerek ona bildirdi. Kim?",
+  "s07.question.q11.opt0": "Fiona Doyle",
+  "s07.question.q11.opt1": "Tomás Geraghty",
+  "s07.question.q11.opt2": "Bríd Sheridan",
+  "s07.question.q11.opt3": "Eibhlín Ní Chonaill",
+  "s07.question.q11.answers": [
+    [
+      "geraghty"
+    ],
+    [
+      "tomas"
+    ],
+    [
+      "tomás"
+    ],
+    [
+      "geraghy"
+    ],
+    [
+      "gerahty"
+    ],
+    [
+      "muhendis"
+    ]
+  ],
+  "s07.question.q12.title": "İki gün sahada",
+  "s07.question.q12.question": "Bir denetçi tüm şubeyi iki kez saydı ve rapor mahkemeye ulaşmadı. Eksik bulduğu şey neydi?",
+  "s07.question.q12.opt0": "€41,300",
+  "s07.question.q12.opt1": "Hiçbir şey",
+  "s07.question.q12.opt2": "€12,700",
+  "s07.question.q12.opt3": "€900",
+  "s07.question.q12.answers": [
+    [
+      "hicbir"
+    ],
+    [
+      "yok"
+    ],
+    [
+      "yok"
+    ],
+    [
+      "yok"
+    ],
+    [
+      "hicbir"
+    ]
+  ],
+  "s07.question.q13.title": "Son fotoğraf",
+  "s07.question.q13.question": "Dört yüz on altı fotoğraf var ve sonra hiç fotoğraf kalmadı. Saymayı bıraktığı gün ne oldu?",
+  "s07.question.q13.opt0": "Şube kapandı",
+  "s07.question.q13.opt1": "Suçu kabul etti",
+  "s07.question.q13.opt2": "Emekli oldu",
+  "s07.question.q13.opt3": "Merkez ofis anahtarları aldı",
+  "s07.question.q13.answers": [
+    [
+      "suclu"
+    ],
+    [
+      "itiraf"
+    ],
+    [
+      "suclu"
+    ],
+    [
+      "mahkeme"
+    ],
+    [
+      "ceza"
+    ],
+    [
+      "dava"
+    ]
+  ],
+  "s07.question.q14.title": "On sekiz bin",
+  "s07.question.q14.question": "Bir kişi eksikliği büyük ölçüde kendi cebinden ödedi ve o zamandan beri onunla neredeyse hiç konuşmadı. Kim?",
+  "s07.question.q14.opt0": "Bríd Sheridan",
+  "s07.question.q14.opt1": "Peadar, kardeşi",
+  "s07.question.q14.opt2": "Fiona Doyle",
+  "s07.question.q14.opt3": "Tomás Geraghty",
+  "s07.question.q14.answers": [
+    [
+      "peadar"
+    ],
+    [
+      "pedar"
+    ],
+    [
+      "peader"
+    ],
+    [
+      "brother"
+    ],
+    [
+      "conneely"
+    ],
+    [
+      "kardes"
+    ]
+  ],
+  "s07.question.q15.title": "Masasında kim vardı",
+  "s07.question.q15.question": "Kısıtlı kayıt bölge yöneticilerine ulaştıktan sekiz ay sonra, onu açan yöneticilerden biri, ona Cuma'ya kadar ödeme yapmasını söyledi. Onun adını söyle.",
+  "s07.question.q15.opt0": "Fiona Doyle",
+  "s07.question.q15.opt1": "Declan Moran",
+  "s07.question.q15.opt2": "Bríd Sheridan",
+  "s07.question.q15.opt3": "Tomás Geraghty",
+  "s07.question.q15.answers": [
+    [
+      "moran"
+    ],
+    [
+      "declan"
+    ],
+    [
+      "morran"
+    ],
+    [
+      "moren"
+    ],
+    [
+      "dm"
+    ]
+  ],
+  "s07.messages.f_sms_201": "Máire: Dublin, şubenin haftalık raporda işaretlenmesini bildiriyor. Bunu bir listeden okumaktansa senden duymayı tercih ederim. Beni ara.",
+  "s07.messages.f_sms_202": "Saat altıda seni arayacağım. O zamana kadar burada tek başımayım.",
+  "s07.messages.f_sms_203": "Cuma geldi ve gitti. Bunu kendi masamda on bir gün boyunca tuttum, ki bunu yapmak zorunda değildim.",
+  "s07.messages.f_sms_204": "Declan, önümüzdeki hafta bir denetçi gelecek. Onu bekleyecek misin.",
+  "s07.messages.f_sms_205": "Denetim şube ile ilgili. Pozisyon pozisyon.",
+  "s07.messages.f_sms_206": "Yirmi bir yıldır bir gönderide bile bir gün gecikmedim.",
+  "s07.messages.f_sms_207": "Biliyorum. Bu durumla ilgisi yok.",
+  "s07.messages.f_sms_208": "Bir ziyaret raporunun Dublin'e gönderildiği söylendi. Bu Dublin'in işi. Pozisyonum değişmedi.",
+  "s07.messages.f_sms_209": "Peadar'dan parayı istedim. Ona sormanın ne kadar çaba gerektirdiğini bilmeni istiyorum.",
+  "s07.messages.f_sms_210": "Çözüldüğüne sevindim.",
+  "s07.messages.f_sms_211": "Tamamlandı. Bunu gazetede okuyacaksın.",
+  "s07.messages.f_sms_221": "Peadar. Sana bir şey istemek zorundayım ve bunu evde yapamıyorum.",
+  "s07.messages.f_sms_222": "Evde sor.",
+  "s07.messages.f_sms_223": "Yapamıyorum.",
+  "s07.messages.f_sms_224": "Mahkeme binasının dışındayım. İstersen içeri gelmem.",
+  "s07.messages.f_sms_225": "İçeri gel.",
+  "s07.messages.f_sms_226": "Arka odada bir sızı var. Bir kova koydum.",
+  "s07.messages.f_sms_227": "Tekne Perşembe'ye kadar dışarıda. Dondurucuda uskumru var.",
+  "s07.messages.f_sms_228": "Köpek yine kapıda. Hâlâ posta kamyonunu bekliyor. Dokuz yıl oldu ve hâlâ bekliyor.",
+  "s07.messages.f_sms_229": "Ben de.",
+  "s07.messages.f_sms_230": "Uyanık mısın? Duvarda bir balıkçıl var.",
+  "s07.messages.f_sms_231": "Uyanığım.",
+  "s07.messages.f_sms_232": "Aoife beni aradı. Hazır olduğunda, ondan önce değil, onunla konuşacağını ona söyledim.",
+  "s07.messages.f_sms_241": "Anne, Salı günü saat yedideki trene bineceğim. Başlamadan orada olacağım.",
+  "s07.messages.f_sms_242": "Gelmen gerekmiyor.",
+  "s07.messages.f_sms_243": "Gelmem gerekmediğini biliyorum.",
+  "s07.messages.f_sms_244": "Yiyor musun?",
+  "s07.messages.f_sms_245": "Evet.",
+  "s07.messages.f_sms_246": "Bugün iki yıl. Hangi gün olduğunu bildiğini biliyorum. Sadece senin tek kişi olmasını istemedim.",
+  "s07.messages.f_sms_247": "Mutlu Noeller, Anne. Uyanınca beni ara.",
+  "s07.messages.f_sms_248": "Seyahat etmemizi engellediler, bu yüzden inemiyorum. Sen ve Baban alışveriş için iyi misiniz?",
+  "s07.messages.f_sms_249": "Biz iyiyiz. Olduğun yerde kal.",
+  "s07.messages.f_sms_250": "Anladım. Galway'de tam zamanlı. Şimdi sana kırk dakikada gelebilirim, üç saat yerine.",
+  "s07.messages.f_sms_251": "Bu, son altı yılda aldığım en iyi haber.",
+  "s07.messages.f_sms_252": "Anne, İngiltere'deki postacıları hakkında radyo'da bir şey var. Dinliyor musun?",
+  "s07.messages.f_sms_253": "Kapatttım.",
+  "s07.messages.f_sms_254": "Tamam.",
+  "s07.messages.f_sms_261": "MERIDIAN Servis Masası: CAS-118442 numaralı davanız kaydedildi. 5 iş günü içinde yanıt vermeyi hedefliyoruz. Lütfen bu mesaja yanıt vermeyin.",
+  "s07.messages.f_sms_262": "MERIDIAN Servis Masası: CAS-118442 numaralı dava bir danışmana atandı.",
+  "s07.messages.f_sms_263": "MERIDIAN Servis Masası: CAS-118442 numaralı dava kapatıldı. Yanlış olduğunu düşünüyorsanız, yeni bir dava açmak için bizimle iletişime geçin.",
+  "s07.messages.f_sms_264": "MERIDIAN Servis Masası: Performansımız nasıldı? 1 ile 5 arasında bir sayı ile yanıtlayın, 5 çok memnun olduğunuz anlamına gelir.",
+  "s07.messages.f_sms_265": "MERIDIAN Servis Masası: CAS-119017 numaralı davanız kaydedildi. 5 iş günü içinde yanıt vermeyi hedefliyoruz.",
+  "s07.messages.f_sms_266": "MERIDIAN Service Desk: CAS-119017 numaralı vaka kapatıldı.",
+  "s07.messages.f_sms_267": "MERIDIAN Service Desk: Nasıl yaptık? 1 ile 5 arasında bir sayı ile yanıtlayın, 5 çok memnun olduğunuz anlamına gelir.",
+  "s07.messages.f_sms_268": "MERIDIAN Service Desk: CAS-120336 numaralı vakanız kaydedildi.",
+  "s07.messages.f_sms_269": "MERIDIAN Service Desk: CAS-120336 numaralı vaka kapatıldı.",
+  "s07.messages.f_sms_270": "MERIDIAN Service Desk: Nasıl yaptık? 1 ile 5 arasında bir sayı ile yanıtlayın, 5 çok memnun olduğunuz anlamına gelir.",
+  "s07.messages.f_sms_271": "MERIDIAN Service Desk: CAS-121880 numaralı vaka, CAS-118442 numaralı vakayla ilişkilendirildi ve kapatıldı.",
+  "s07.messages.f_sms_272": "MERIDIAN Service Desk: Nasıl yaptık? 1 ile 5 arasında bir sayı ile yanıtlayın, 5 çok memnun olduğunuz anlamına gelir.",
+  "s07.messages.f_sms_281": "Máire, Fiona Doyle, Şube Denetimi. Yarın saat dokuzda ve Çarşamba da yine seninle olacağım. Kasayı ve son altı haftanın dosyalarını isteyeceğim.",
+  "s07.messages.f_sms_282": "Her şey senin için masaya konulacak.",
+  "s07.messages.f_sms_283": "Bana açıklama. Onu senin sakladığın şekilde görmek isterim.",
+  "s07.messages.f_sms_284": "Ben de onu böyle saklarım. İşte sorun bu.",
+  "s07.messages.f_sms_285": "Bu sabah Dublin'e gönderildi. Bir kopyasının sana da gitmesini istedim.",
+  "s07.messages.f_sms_286": "Teşekkürler Fiona.",
+  "s07.chats.f_wa_101": "Máire, emekliler grubu bana Perşembe'nin değiştiğini söylüyor. Bu konuda bir şey duydun mu",
+  "s07.chats.f_wa_102": "Bir kelime bile. Bize son olarak söylüyorlar, Bríd, sen de benim gibi biliyorsun.",
+  "s07.chats.f_wa_103": "Mutlu Yıllar aşkım. Mart'taki postacıların buluşması hâlâ planlandığı gibi mi",
+  "s07.chats.f_wa_104": "Evet. Yılın tek gecesi ki camın arkasında değilim.",
+  "s07.chats.f_wa_105": "Bugün şubeyi geçtim. Şimdi pencerenin içinde bir kart makinesi ve paketler için bir tabela var.",
+  "s07.chats.f_wa_106": "Biliyorum. Aoife bana söyledi. Henüz aşağı inmedim.",
+  "s07.chats.f_wa_107": "Ay sonuna kadar kapatıyorum. Otuz bir yıl. Onu dükkâna taşıyorlar.",
+  "s07.chats.f_wa_108": "Ah Bríd.",
+  "s07.chats.f_wa_109": "Doğru zaman. Bunu herkese söylüyorum.",
+  "s07.chats.f_wa_110": "Mutlu Noeller Máire. Seni düşünüyorum ve bundan fazlasını söylemeyeceğim.",
+  "s07.chats.f_wa_111": "Nuala'nın torununun Leaving sınavını kazandığını duydun mu? O ailede ilk kez.",
+  "s07.chats.f_wa_112": "Bu çok güzel.",
+  "s07.chats.f_wa_113": "Neden bugün hangi gün olduğunu her zaman bildiğimi bilmiyorum. Sadece biliyorum.",
+  "s07.chats.f_wa_114": "Bir şey söylemek zorunda değilsin, Bríd. Hiç söylemedin.",
+  "s07.chats.f_wa_115": "İyi misin?",
+  "s07.chats.f_wa_116": "Ben iyiyim. Ya sen?",
+  "s07.chats.f_wa_117": "Ben iyiyim.",
+  "s07.chats.f_wa_201": "Dairenin fotoğrafını gönderdim. Tüm mutfak, salonunuz kadar büyük.",
+  "s07.chats.f_wa_202": "Çok güzel. Köşedeki nem mi yoksa ışık mı?",
+  "s07.chats.f_wa_203": "Işık. Işık bu, Anne.",
+  "s07.chats.f_wa_204": "Ekmek yaptım. Herkes ekmek yapıyor.",
+  "s07.chats.f_wa_205": "Bu ekmek değil, bir kapı tokmağı. Daha az su.",
+  "s07.chats.f_wa_206": "Bugün Roscommon'dan bir postacı kadın geldi. Neredeyse bir şey söyleyecektim ama söylemedim.",
+  "s07.chats.f_wa_207": "Söyleme.",
+  "s07.chats.f_wa_208": "İlk gün. Bana şans dile.",
+  "s07.chats.f_wa_209": "Buna ihtiyacın yok. Saat altıda ara beni.",
+  "s07.chats.f_wa_210": "Baba bugün telefonu açtı ve on bir dakika konuştu. On bir. Süreyi ölçtüm.",
+  "s07.chats.f_wa_211": "Ne hakkında?",
+  "s07.chats.f_wa_212": "Tekne. Ama on bir dakika, Anne.",
+  "s07.chats.f_wa_213": "Paskalya için sana mı geliyorum yoksa sen bana mı geliyorsun?",
+  "s07.chats.f_wa_214": "Buraya gel. Çıkış yolu kötü.",
+  "s07.chats.f_wa_215": "Clifden'deki yürüyüş grubuna adını kaydediyorum. Gitmek zorunda değilsin. Kaydediyorum.",
+  "s07.chats.f_wa_216": "Aoife.",
+  "s07.chats.f_wa_217": "Kaydettim.",
+  "s07.chats.f_wa_218": "Anne, Pazar günü sana bir şey soracağım ve sormadan önce bunu düşünmeni istiyorum.",
+  "s07.mail.f_gm_101.subject": "Şube işlem raporu — 11/03/2016 hafta sonu",
+  "s07.mail.f_gm_101.body": "Haftalık şube işlem raporunuz terminalde artık mevcut. Bu otomatik bir mesajdır. Lütfen bu adrese yanıt vermeyin.",
+  "s07.mail.f_gm_102.subject": "Şube işlem özeti — w/e 15/04/2016",
+  "s07.mail.f_gm_102.body": "Haftalık şube işlem özetiniz artık terminalde mevcut. Bu otomatik bir mesajdır. Lütfen bu adrese yanıt vermeyiniz.",
+  "s07.mail.f_gm_103.subject": "Şube işlem özeti — w/e 20/05/2016",
+  "s07.mail.f_gm_103.body": "Haftalık şube işlem özetiniz artık terminalde mevcut. Bu otomatik bir mesajdır. Lütfen bu adrese yanıt vermeyiniz.",
+  "s07.mail.f_gm_104.subject": "Stok siparişi — onay",
+  "s07.mail.f_gm_104.body": "Siparişiniz Perşembe günü teslimat için onaylandı: pullar (N ve W), TV lisans formları, motor vergisi formları, ön ödemeli zarflar, iki rulo kağıt. Dökümanı imzalayın ve üst kopyasını saklayın.",
+  "s07.mail.f_gm_105.subject": "Yeni ürün — döviz",
+  "s07.mail.f_gm_105.body": "Tüm şubeler Haziran'dan itibaren döviz hizmeti sunacak. Çevrimiçi eğitim zorunludur ve Mayıs sonuna kadar tamamlanmalıdır. İki saat ayırın. Modül başlatıldıktan sonra duraklatılamaz.",
+  "s07.mail.f_gm_106.subject": "Yıllık konferans — Athlone",
+  "s07.mail.f_gm_106.body": "Yıllık konferans için rezervasyonlar açık. Teklifler ay sonuna kadar ofise iletilmelidir. Kırsal şube sürdürülebilirliği dördüncü yılın gündeminde.",
+  "s07.mail.f_gm_107.subject": "Abonelik 2016 — makbuz",
+  "s07.mail.f_gm_107.body": "Teşekkürle alındı, 2016 üyelik aboneliği. Kartınız posta yoluyla gönderilecektir. Yirmi bir yıl kesintisiz üyelik. Teşekkür ederiz.",
+  "s07.mail.f_gm_108.subject": "Kredi ekstresi",
+  "s07.mail.f_gm_108.body": "118 ile biten hesap için ekstre. Kalan bakiye €7,412.00. Geri ödemeler güncel. Hisse bakiyesi €3,110.00. Sürekli üyeliğiniz için teşekkür ederiz.",
+  "s07.mail.f_gm_109.subject": "Faturanız",
+  "s07.mail.f_gm_109.body": "30 Nisan'a kadar iki ay için faturanız €187.44, son ödeme tarihi 24 Mayıs. Kullanımınız geçen yılın aynı dönemine göre %6 daha düşük.",
+  "s07.mail.f_gm_110.subject": "Teşekkürler",
+  "s07.mail.f_gm_110.body": "Sevgili Máire, yönetim kurulu adına, bu yıl tekrar çekiliş biletlerini paketleyip sattığınız ve tezgahı ödünç verdiğiniz için teşekkür ederiz. Çocuklar €1,140 topladı. Köyde size sahip olduğumuz için çok şanslıyız.",
+  "s07.mail.f_gm_111.subject": "Şube 4471: yönlendirme",
+  "s07.mail.f_gm_111.body": "Bu, şube 4471 ile ilgili konunun Batı Bölgesi tarafından bu bölüme yönlendirildiğini teyit eder. Görüşme ayarlamak için sizinle iletişime geçilecektir. Yanınızda bir kişi bulunabilir. Bu sadece bir bildirimdir ve yanıt gerektirmez.",
+  "s07.mail.f_gm_112.subject": "Konunuz: ücret notu",
+  "s07.mail.f_gm_112.body": "Sevgili Bayan Conneely, lütfen yukarıdaki konu ile ilgili ücret notumuzu ekte bulunuz. Hesabınıza €250 yatırmanız bizi memnun eder. Konu duruşmaya ilerlerse ek bir tahmin gönderilecektir.",
+  "s07.mail.f_gm_113.subject": "Konunuz: danışma",
+  "s07.mail.f_gm_113.body": "Sevgili Bayan Conneely, avukat Perşembe saat iki de müsaittir. Bu görüşmeye kimseyi getirmemenizi tercih ettiğinizi söylememi istedi. Lütfen bir buçuk saat ayırın.",
+  "s07.mail.f_gm_114.subject": "Listeleme bildirimi",
+  "s07.mail.f_gm_114.body": "Yukarıdaki konu, Galway'de oturan Devre Ceza Mahkemesi önünde 9 Mayıs 2017 Salı saat 10:30'da listelendi. Katılım zorunludur. Bu bildirim, sanığa ve kayıtlı avukata gönderilmektedir.",
+  "s07.mail.f_gm_115.subject": "Sözleşmenin feshi: şube 4471",
+  "s07.mail.f_gm_115.body": "İşlemlerin sonuçlanmasının ardından, bu belge 4471 Cloghmore şubesine ilişkin postacı sözleşmesinin 30 Haziran 2017 tarihinden itibaren feshedildiğini resmi olarak bildirir. Ekipman ve tabela kaldırma düzenlemeleri bölge tarafından yapılacaktır. Lütfen tüm anahtarları bölge ofisine iade edin.",
+  "s07.mail.f_gm_116.subject": "Hesabın nihai tasfiyesi",
+  "s07.mail.f_gm_116.body": "4471 şubesine ilişkin nihai hesap tasfiye edilmiş ve kapatılmıştır. Bu şube ile ilgili size ya da sizden daha fazla bir tutar ödenmesi ya da alınması söz konusu değildir. Gelecekteki çalışmalarınızda başarılar dileriz.",
+  "s07.mail.f_gm_117.subject": "Üyeliğin sona erdiğine dair bildirim",
+  "s07.mail.f_gm_117.body": "Üyelik, postacı sözleşmesinin sona ermesiyle otomatik olarak sona erer. Aboneliğiniz orantılı olarak iade edilmiştir. Bu, tüm benzer durumlarda verilen standart bir bildiridir.",
+  "s07.mail.f_gm_118.subject": "Kredi kapatıldı",
+  "s07.mail.f_gm_118.body": "Sevgili Máire, 118 ile biten kredi hesabınız tamamen kapatıldı ve kapanışa alındı. Hisse bakiyeniz etkilenmedi. Uzun bir süreçti ve bunu kutlamak istedik. Bu ofisin her üyesi, yirmi bir yıl boyunca bu parish için kim olduğunuzu ve ne yaptığınızı biliyor.",
+  "s07.mail.f_gm_119.subject": "Devlet Emekliliği (Katkı): karar",
+  "s07.mail.f_gm_119.body": "Başvurunuz üzerine bir karar verilmiştir. 66. doğum gününüzden itibaren maksimum kişisel oranla hak kazandınız. Ödemeler haftalık olarak yapılacaktır. Bu karardan memnun değilseniz, 21 gün içinde itiraz etme hakkınız bulunmaktadır.",
+  "s07.mail.f_gm_120.subject": "Bizden biri misiniz?",
+  "s07.mail.f_gm_120.body": "Ülke genelindeki her bir alt postacıya, 2012 ile 2019 yılları arasında bir açığı kapatmakla sorumlu tutulanlara yazıyoruz. Bize hiçbir şey söylemek zorunda değilsiniz. Adınızı vermek zorunda değilsiniz. Başkalarının ne yazdığını okumak isterseniz, adres aşağıdadır ve siz bize izin verene kadar kimse sizinle iletişime geçmeyecektir.",
+  "s07.mail.f_gm_121.subject": "Wexford: sizin için ne anlama geliyor",
+  "s07.mail.f_gm_121.body": "Salı günü verilen karar, bu yargı bölgesinde benzeri olmayan bir karardır. Aynı sistemden elde edilen kanıtlara dayanarak hüküm giymişseniz, artık bir yol var. Zaman aşımı başvurusu için bir süre sınırı vardır ve bu sınır cömert değildir. Lütfen tek başınıza çok geç olduğunu düşünmeyin. Bu, tek başınıza vermeniz gereken bir karar değildir.",
+  "s07.mail.f_gm_122.subject": "Wexford kararı",
+  "s07.mail.f_gm_122.body": "Sayın Bayan Conneely, 2017’de sizin için çalıştım. Salı gününün kararını okudum. Başka yerde okumadan önce size yazıyorum. Sorularınız olacağını düşünüyorum, ve bir gazete yerine bana sormanızı tercih ederim. Konuşma için ücret yok ve sonunda size herhangi bir yükümlülük yok.",
+  "s07.mail.f_gm_131.subject": "Şube 4471: talep",
+  "s07.mail.f_gm_131.body": "İlgili Makama,\n\nBu sefer yazılı olarak, birinin bu şubeye gelerek terminali incelemesini talep ediyorum. Telefonla on bir kez istedim.\n\nKendi sayımımı tartışmıyorum. Sayım bende. Makinenin sayımını tartışıyorum.\n\nMáire Conneely\nPostacı, 4471 Cloghmore",
+  "s07.mail.f_gm_132.subject": "Teşekkürler",
+  "s07.mail.f_gm_132.body": "Fiona,\n\nKopya için teşekkür ederim, iki gün için de teşekkürler. Üç ay içinde kasayı ekrana bakmadan inceleyen ilk kişiydiniz.\n\nMáire",
+  "s07.mail.f_gm_133.subject": "Perşembe",
+  "s07.mail.f_gm_133.body": "İki de orada olacağım. Tek başıma geleceğim.\n\nM. Conneely",
+  "s07.mail.f_gm_134.subject": "Re: Kredi kapatıldı",
+  "s07.mail.f_gm_134.body": "Mektubunuzun son paragrafı için teşekkür ederim. Onu birkaç kez okudum.\n\nMáire",
+  "s07.notes.f_note_101.title": "Stok",
+  "s07.notes.f_note_101.block_001": "Pazartesi sipariş ver Perşembe için. Geç sipariş, hafta sonuna kadar pul olmaması demektir ve hafta sonu onların istediği zamandır.",
+  "s07.notes.f_note_101.block_002": "Aralık ayında N pullarını her zaman fazla sipariş et ve W pullarını asla. Bunu 1998'de zor yoldan öğrendim.",
+  "s07.notes.f_note_101.block_003": "TV lisans formları her şeyden daha hızlı gider. Yedek bir demeti tezgahın altına koy, basında değil.",
+  "s07.notes.f_note_101.block_004": "Kasa rulosu: iki kutu, bir değil. Makine onu yutar.",
+  "s07.notes.f_note_101.block_005": "Belgeyi sürücünün önünde imzala. O gittikten sonra asla.",
+  "s07.notes.f_note_102.title": "Perşembe",
+  "s07.notes.f_note_102.block_001": "Emeklilik günü. Saat sekiz buçukta aç, dokuzda değil. Saat yirmi geçe kadar kapıda bekliyorlar.",
+  "s07.notes.f_note_102.block_002": "Nuala önce, her zaman, otobüs yüzünden. Sonra ayakta duran kimse.",
+  "s07.notes.f_note_102.block_003": "Seán'ın kitabına dikkat et. Artık satırı göremiyor ve söylemiyor, bu yüzden onu ona çevir ve başparmağını nereye koyması gerektiğini işaretle.",
+  "s07.notes.f_note_102.block_004": "Perşembe günü ekstra para. İkili iki yüz, aynı şekilde ellili olarak da.",
+  "s07.notes.f_note_111.title": "—",
+  "s07.notes.f_note_111.block_001": "Altı ay. Şehre inmedim. Peadar artık Clifden'de alışveriş yapıyor ve ikimiz de nedenini söylemedik.",
+  "s07.notes.f_note_111.block_002": "Bir kadın beni kilisede durdurarak özür diledi. O olayın özür dilediğini mi yoksa yaptığım için özür dilediğini mi anlayamadım. Sormadım. O zamandan beri her hafta düşündüm.",
+  "s07.notes.f_note_111.block_003": "İşte kimsenin söylemediği şey bu. Dokuz ay değil. Tekrar asla birinin ne demek istediğini bilemezsin.",
+  "s07.notes.f_note_112.title": "—",
+  "s07.notes.f_note_112.block_001": "Üç yıl. Bugün alışverişi iki kez saydım, masada, Peadar’ın önünde. Ne yaptığımı bilmiyordum, o odadan ayrılana kadar.",
+  "s07.notes.f_note_112.block_002": "Hâlâ saat dört eksi onda uyanıyorum. Saat on bir yirmi üç geç ve dört eksi on, artık başka bir şeye ait iki zaman.",
+  "s07.notes.f_note_112.block_003": "Bunların hiçbirini Aoife'ye söylemiyorum. O zaten benden yeterince fazlasını alıyor.",
+  "s07.notes.f_note_113.title": "—",
+  "s07.notes.f_note_113.block_001": "Avukat yazdı. Gazeteden kız yazdı. Bir web sitesine sahip bir kalabalık iki kez yazdı.",
+  "s07.notes.f_note_113.block_002": "Dokuz yıldır birisi beni düzgün bir şekilde sorarsa ne söyleyeceğimi tam olarak biliyorum. Şimdi bir hafta içinde üç kişi düzgün bir şekilde sordu, ama ben hiç birini açmadım.",
+  "s07.notes.f_note_113.block_003": "Beni korkutan şey, tekrar hayır duyulmamak değil; evet duyulmak ve sonra Aoife'ye bakıp, o odada hiçbir şey için oturmasına izin verdiğimi bilmek.",
+  "s07.notes.f_note_113.block_004": "Pazar günü geliyor. Bana bir şey sormak istiyor. Ne olduğunu biliyorum.",
+  "s07.search.f_gs_101": "bir postane şubesinin ticari beyanı nasıl hesaplanır",
+  "s07.search.f_gs_102": "posta müdürleri sendika avukat galway",
+  "s07.search.f_gs_103": "kocandan büyük bir miktar para nasıl istersin",
+  "s07.search.f_gs_104": "güvenliğe atıfta bulunmak ne anlama geliyor ve post",
+  "s07.search.f_gs_105": "galway ceza devriyesi mahkemesi salı listesi",
+  "s07.search.f_gs_106": "bir mahkumiyet garda sorgulamasında görülür mü",
+  "s07.search.f_gs_107": "savunucu olarak mahkemeye ne giyilir",
+  "s07.search.f_gs_108": "kredi birliği kredisi erken ödeme cezası",
+  "s07.search.f_gs_109": "devlet katkı emekliliği kaç katkı gerektirir",
+  "s07.search.f_gs_110": "İrlanda geçmiş mahkumiyetleri kaç yıl",
+  "s07.search.f_gs_111": "arka odadaki nemi nasıl giderilir",
+  "s07.search.f_gs_112": "Clifden Connemara yürüyüş grupları",
+  "s07.search.f_gs_113": "postmasters ingiltere televizyon programı hangi kanal",
+  "s07.search.f_gs_114": "İrlanda temyiz mahkemesi ceza davası zaman aşımı başvurusu",
+  "s07.search.f_gs_115": "adalet yanılgısı ne demektir yasal anlamı",
+  "s07.search.f_gs_116": "bir mahkumiyeti temyiz etmek için dokuz yıl çok mu geç",
+  "s07.calendar.f_ev_101": "Emeklilik Perşembe, 08:30'da açık",
+  "s07.calendar.f_ev_102": "Emeklilik Perşembe, 08:30'da açık",
+  "s07.calendar.f_ev_103": "Emeklilik Perşembe, 08:30'da açık",
+  "s07.calendar.f_ev_104": "Stok siparişi 10'a kadar",
+  "s07.calendar.f_ev_105": "Postmasters etkinliği, Clifden",
+  "s07.calendar.f_ev_106": "FX eğitim modülü, 2 saat",
+  "s07.calendar.f_ev_107": "Danışma, 14:00, yalnız",
+  "s07.calendar.f_ev_108": "Anahtarlar bölge ofisine geri",
+  "s07.calendar.f_ev_109": "Kredi birliği, son ödeme",
+  "s07.calendar.f_ev_110": "Yürüyüş grubu (Aoife adımı kaydetti)",
+  "s07.calendar.f_ev_111": "Aoife, Pazar",
+  "s07.calendar.f_ev_112": "Aoife, Pazar",
+  "s07.payments.f_tx_101.note": "Petrol teslimatı",
+  "s07.payments.f_tx_102.note": "Kömür ve briketler",
+  "s07.payments.f_tx_103.note": "Eczane",
+  "s07.payments.f_tx_104.note": "Petrol teslimatı",
+  "s07.payments.f_tx_105.note": "Kredi birliği, kredi geri ödemesi",
+  "s07.payments.f_tx_106.note": "Gaz",
+  "s07.payments.f_tx_107.note": "Eczane",
+  "s07.payments.f_tx_108.note": "Avukat, hesabına",
+  "s07.payments.f_tx_109.note": "Avukat, hesabına",
+  "s07.payments.f_tx_110.note": "Kredi birliği, kredi geri ödemesi",
+  "s07.payments.f_tx_111.note": "Veteriner, köpek",
+  "s07.payments.f_tx_112.note": "Kredi birliği, kredi geri ödemesi",
+  "s07.payments.f_tx_113.note": "Petrol teslimatı",
+  "s07.payments.f_tx_114.note": "Eczane",
+  "s07.mail.f2_gm_201.subject": "(konusuz)",
+  "s07.mail.f2_gm_201.body": "Declan,\n\n\"I understand you feel that way.\" cümlesini yazdın. Bu cümleyle bir haftadır oturuyorum. Çok özenle inşa edilmiş bir cümle. Birisi sana bunu yazdırmış.\n\nArtık bana inanmamı istemiyorum. Sadece bir zaman olup olmadığını soruyorum; eğer olduysa, ne yaptığını.\n\nSeni on bir yıldır tanıyorum. Annen hayattayken onun emekli maaşı için tezgâhimde durdun ve her zaman sıranı bekledin, ama ...",
+  "s07.mail.f2_gm_202.subject": "Şube 4471: anahtarlar",
+  "s07.mail.f2_gm_202.body": "İlgili kişiye,\n\nYirmi dokuzuncu gün talimat gibi anahtarları geri döndürdüm. Alan ofisinin tezgahında kimse yoktu. Onları mektup kutusuna, şube numarasıyla birlikte bir zarf içinde bıraktım. Daha sonra bir dakika dışarıda durdum. Ne yapacağımı bilmiyordum.\n\nOnlar için bir makbuz isterim. Yazdığım tek şey bu. Ne kadarını biliyorum",
+  "s07.mail.f2_gm_203.subject": "(konusuz)",
+  "s07.mail.f2_gm_203.body": "Bríd,\n\nBugün iki yıl.\n\nSana bir kez bile kızmadım ve bunu bir yere yazılı olarak bırakmak istiyorum; okumasan bile. En kötü anında bir arkadaşının sorusunu sordu; sen bir aileye, bir şubeye ve otuz bir yıllık kendi hayatına sahiptin ve söyleyebileceğin tek şey iki kez özür dilemekti.\n\nBen de aynı şeyi yapardım. İşte geçemediğim kısım bu. Tam olarak aynı şeyi yapardım.",
+  "s07.mail.f2_gm_204.subject": "Ynt: mesajın",
+  "s07.mail.f2_gm_204.body": "Ms Ní Chonaill,\n\nHepsini yazacağım, sonra size üç satır göndereceğim ve bir şey söyleyecek bir kadın olduğumu düşüneceksiniz.\n\nOn bir hafta. Altmış bir telefon görüşmesi. Dört yüz on altı fotoğraf. İki gün boyunca gelen ve bulduklarını yazan bir denetçi. Ödeyen ve bana bakamayan bir eş. İkinci sırada oturan bir kız.\n\nVe Galway'de bir odada yüksek sesle söylediğim doğru olmayan bir kelime.\n\nBunu size verirsem, size ait olur, bana ait olmaz ve bende bana ait tek şey kalmaz.",
+  "s07.mail.f2_gm_205.subject": "(konusuz)",
+  "s07.mail.f2_gm_205.body": "Aoife,\n\nBaşlangıçta yirmi yaşındaydın ve şimdi otuz iki, ve ikinci sıradan dolayı bir kez de teşekkür etmedim. Trenler, alışveriş ve telefon görüşmeleri için söyledim. Ama ikinci sıradan dolayı değil. Bunun için teşekkür etmek istiyorsam, senin geçirdiğin şeyi söylemem gerekirdi.\n\nŞöyle. İkinci sıradan dolayı teşekkürler.\n\nBunu göndermeyeceğim çünkü sen beni ararsın ve ikimiz de",
+  "s07.mail.f2_gm_206.subject": "(konusuz)",
+  "s07.mail.f2_gm_206.body": "Beş yıl. Kendime yazmaya başladım; bu bence yaptığım ilk gerçekten çılgın şey.\n\nYazmak istediğim şey, bunu yapmadığım. Bir tartışma olarak değil; sabah dörtte burada tartışacak kimse yok. Sadece noktalı bir cümle olarak, kendi kelimelerimle, kendi el yazımla, bir kez.\n\nBunu yapmadım.\n\nİşte. Hepsi bu kadar olacaktı ve şimdi ne yapacağımı bilmiyorum",
+  "s07.mail.f2_gm_207.subject": "Tekrar teşekkürler",
+  "s07.mail.f2_gm_207.body": "Fiona,\n\nBeni hatırlamayacaksın. Cloghmore, 2016, kapıdaki kötü basamaklı şube.\n\nYedi yıl boyunca seni çok düşündüm ve hep aynı şeyi: raporun amacı olmadığını söyleyenlere rağmen bulduklarını yazdın. Bu bir şey gerektiriyordu. Ne kadar maliyetli olduğunu bilmiyorum ve kimseye sormadım.\n\nUmarım sana bir şey maliyet etmedi. Bunun olmadığından eminim.",
+  "s07.mail.f2_gm_208.subject": "Re: Aramızdan biri misin?",
+  "s07.mail.f2_gm_208.body": "Bana senin birin olup olmadığımı sordun.\n\nBunu bütün olarak söylemeden nasıl cevaplayacağımı bilmiyorum ve bütününü kimseye, odadaki insanlara bile söylemedim.\n\nCloghmore, County Galway. 2016‑2017. Sayımları, fotoğrafları, tarihleri ve saatleri var ve dokuz yıl boyunca her bir kağıdı, geri dönmeyecek birine ev tutan çılgın bir kadın gibi sakladım.\n\nAma ayağa kalktım ve söyledim; kimse bana söylettirmedi ve bunun beni senin içinde bir yere koyup koymadığını bilmiyorum...",
+  "s07.mail.f2_gm_209.subject": "(konusuz)",
+  "s07.mail.f2_gm_209.body": "Sayın Mr Ó Flaithbheartaigh,\n\nMektubunuz için teşekkür ederim. Konuşma için ücret yok ve sonunda herhangi bir yükümlülük yok, ve bu cümleyi mantıklı saydığımdan daha fazla okudum.\n\nSeni aramadan önce, bir şey sormak istiyorum. Yazılı olarak sormayı tercih ederim, çünkü yüksek sesle söyleyemeyeceğim.\n\nBir mahkeme önünde geri dönerse, Aoife’nin ne söylemesi gerektiğini",
+  "s07.mail.f2_gm_231.subject": "Noel stok siparişi Pazartesi açılıyor",
+  "s07.mail.f2_gm_231.body": "Noel siparişi tüm şubeler için Pazartesi açılıyor. N ve W pulları için erken sipariş verin; geçen yıl şubelerin üçte biri Aralık'ın ikinci haftasında stokta eksik kaldı. Portalda şube numaranızla oturum açın.",
+  "s07.mail.f2_gm_232.subject": "Şube Bülteni: Sonbahar",
+  "s07.mail.f2_gm_232.body": "Bu sayıda: paket hacmi yıllık %14 artış, ön büro için yeni tezgah paspası ve kuzey‑batı bölgesi yılın postacı kadını ile tanışıyoruz. Portalda okuyun.",
+  "s07.mail.f2_gm_233.subject": "Yılın Postacısı: adaylıklar açık",
+  "s07.mail.f2_gm_233.body": "Nominasyonlar şimdi açık. Her yıl, işin ötesine geçen bir postamaster’dan haber alıyoruz. Bir yol kenarında emeklilik yürüyen biri. Bir şeyin yanlış olduğunu bildiği biri. Eğer bu, topluluğunuzda birisi ise, bize anlatın.",
+  "s07.mail.f2_gm_234.subject": "Şube Bülteni: Yaz",
+  "s07.mail.f2_gm_234.body": "Bu sayıda: yeni mobil bakiye yükleme ekranı, tatil temini ve nasıl düzenleneceği, ve üç şubede kutlanan yirmi beş yıllık hizmet. Portalda okuyun.",
+  "s07.mail.f2_gm_235.subject": "Noel stok siparişi Pazartesi açılıyor",
+  "s07.mail.f2_gm_235.body": "Noel siparişi tüm şubeler için Pazartesi açılıyor. Erken sipariş verin. Portalda şube numaranızla oturum açın.",
+  "s07.mail.f2_gm_236.subject": "Yılın Postacısı: adaylıklar açık",
+  "s07.mail.f2_gm_236.body": "Adaylıklar şimdi açık. Görev tanımının ötesine geçen bir postacı hakkında bize bilgi verin. Adaylıklar Mart sonuna kadar kapanır.",
+  "s07.mail.f2_gm_237.subject": "Şube Bülteni: Yaz",
+  "s07.mail.f2_gm_237.body": "Bu sayıda: tezgâhta temassız ödeme, yaz paket kampanyası ve kırsal şubelerin neden artık daha önemli olduğu. Portalda okuyun.",
+  "s07.mail.f2_gm_238.subject": "Yıllık uyum modülü: hatırlatma",
+  "s07.mail.f2_gm_238.body": "Kayıtlarımız bu yıl yıllık uyum modülünü tamamlamadığınızı gösteriyor. Modül 40 dakika sürer ve ay sonuna kadar tamamlanmalıdır. Bunu tamamlamayan şubeler bölgeye yükseltilir.",
+  "s07.mail.f2_gm_239.subject": "Postmaster portalını güncelliyoruz",
+  "s07.mail.f2_gm_239.body": "Portal yeni bir görünüme kavuşuyor. Şube numaranız ve şifreniz değişmeyecek. Girişte herhangi bir zorluk yaşarsanız, bölge yöneticiniz yardımcı olacaktır.",
+  "s07.mail.f2_gm_240.subject": "Noel stok siparişi Pazartesi açılıyor",
+  "s07.mail.f2_gm_240.body": "Noel siparişi tüm şubeler için Pazartesi açılıyor. Portalda şube numaranızla oturum açın.",
+  "s07.mail.f2_gm_241.subject": "Aboneliğiniz yenilenmek üzere",
+  "s07.mail.f2_gm_241.body": "Gazete'ye yıllık aboneliğiniz yenilenmek üzere. Ay sonuna kadar yenilerseniz teslimatlar kesintisiz devam eder.",
+  "s07.mail.f2_gm_242.subject": "Seçildiniz",
+  "s07.mail.f2_gm_242.body": "TEBRİKLER! E-posta adresiniz bu ayın çekilişinde seçildi. Talep etmek için, aşağıdaki bağlantıdaki bilgilerinizi 48 saat içinde onaylayın. Bu mesajı paylaşmayın.",
+  "s07.mail.f2_gm_243.subject": "İki dakikanızı ayırabilir misiniz?",
+  "s07.mail.f2_gm_243.body": "Kırsal hizmetler hakkında kısa bir anket yürütüyoruz ve cevaplarınız bizim için çok değerli. İki dakikanızı alacak ve sonunda bir ödül çekilişi olacak.",
+  "s07.mail.f2_gm_244.subject": "Şube Bülteni: Kış",
+  "s07.mail.f2_gm_244.body": "Bu sayıda: olağanüstü bir yıl için her şubeye teşekkür, Noel posta son tarihleri ve CEO'dan bir söz. Portalda okuyun.",
+  "s07.memos.f2_vm_101.title": "Liste",
+  "s07.memos.f2_vm_101.transcript": "Tamam, unutmadan önce. Ham, küçüğü büyük değil. İyi bisküvilerin iki kutusu, biri tezgâh için diğeri ev için. Kartlar, yirmi. Bant, yine kalmadı, nereye gittiğini bilmiyorum. Ve arka ofis için bir ampul, uzun olan. Peadar, bunu dinleyen sen isen, uzun olan bu.",
+  "s07.memos.f2_vm_102.title": "İlk günün ardından",
+  "s07.memos.f2_vm_102.transcript": "Şey. O, saat dokuzdan altı yirmi geçe kadar burada kaldı ve bu binadaki her notayı ve her madeni parayı iki kez kendi iki eliyle saydı, ve bir kez bile bana, diğerlerinin bana baktığı gibi bakmadı. Yarın geri gelecek. 2 Mart'tan beri düzgün uyumadım ve bu gece uyuyabilirim sanıyorum.",
+  "s07.memos.f2_vm_103.title": "17 Mayıs",
+  "s07.memos.f2_vm_103.transcript": "Bu sabah koydu. Bunun hakkında hiçbir şey söylemedi ve masada da bir şey söylemedi ve kulübeye çıktı. Kırk bir yıldır o adamı tanıyorum ve sessiz kalması ile bana sessiz kalması arasındaki farkı biliyorum. Bunu kaydediyorum çünkü daha sonra kendime fark ettiğimi kanıtlayabilmek istiyorum. Sadece alıp kulübeye gitmesine izin vermediğimi.",
+  "s07.memos.f2_vm_104.title": "(başlıksız)",
+  "s07.memos.f2_vm_104.transcript": "Saat üçe on dakikası. Doğru. Tekrar söyleyeceğim, yüksek sesle, kendi evimde, sonra tekrar yatağa döneceğim. O şubeden yirmi bir yılda bir kuruş bile almadım. Bir damga yok. Bir pound yok. Galway’de bir odada gerçek olmayan bir sözü söyledim. Bir sakallı adam bana daha az maliyetli olacağını söyledi. O zamandan beri her gün bana maliyeti oldu. Birinin beni duyduğunu duymak isterdim. İşte. İşte bu. Yatağa geri dön.",
+  "s07.memos.f2_vm_105.title": "Temizlendi",
+  "s07.memos.f2_vm_105.transcript": "İşte bu ödenmiş. Altı yıl dört ay. Kredi birliğindeki kız masanın arkasından çıktı, elimi sıktı ve arabaya oturmak zorunda kaldım. Bu aptalca bir şey değil mi. Altı yıl dört ay ve çıkmadan önce otoparka çıkıyorum.",
+  "s07.memos.f2_vm_106.title": "(başlıksız)",
+  "s07.memos.f2_vm_106.transcript": "Saat dört çeyrek. Avukattan bir mektup ve o kalabalıktan bir mektup, web sitesi ve Aoife'den bir mesaj var, ve hiç birini açmadım. Dokuz yıldır cevabı hazır tutuyorum. Dokuz yıl. Ve şimdi birisi kapıda soru ile geldiğinde ben sabah dört çeyrek karanlıkta telefona konuşuyorum. Korktuğum şey onların hayır demesi değil. Hayır demedim. Korktuğum şey evet demeleri ve sonra Aoife'ye bakıp o odanın ne için olduğunu söylemek zorunda kalmam.",
+  "s07.messages.f2_sms_301": "Mrs Conneely: adım Eibhlín Ní Chonaill, Tribune'da bir muhabirim. Bana adınızı kimse vermedi. Bir mahkeme listesinde buldum ve bir yıldır mahkeme listelerini okuyorum.",
+  "s07.messages.f2_sms_302": "Aynı sistem hakkında bir dizi eski alt postmaster'a yazıyorum. Bana konuşmak zorunda değilsiniz ve izniniz olmadan adınızı yayınlamayacağım. Bunu tamamen size bırakıyorum.",
+  "s07.messages.f2_sms_303": "Lütfen bana bir daha yazma.",
+  "s07.messages.f2_sms_304": "Yapmayacağım. Eğer bir gün fikrinizi değiştirirseniz numara aynı.",
+  "s07.messages.f2_sms_311": "Máire, Perşembe Clifden'deyim. Geri dönerken arayabilirim, eğer faydalı bulursan.",
+  "s07.messages.f2_sms_312": "Beş buçukta gel ve beni sayarken izleyebilirsin. Tek istediğim bu, Declan. Bunu yaparken orada birinin durmasını istiyorum.",
+  "s07.messages.f2_sms_313": "Denetçinin iki gün seninle olduğunu duydum. Bu, çoğu şubenin aldığı zamandan daha fazla.",
+  "s07.messages.f2_sms_314": "Bir tane istedim. Bir tane alırdım.",
+  "s07.messages.f2_sms_315": "Güvenliğe gönderildi. Elimde tutabildiğim kadar süre sakladı ve bunu bilmeni istiyorum.",
+  "s07.messages.f2_sms_316": "Declan, on bir hafta içinde o şirketten hiç kimse bu şubede akşam beş buçukta durmadı. Hiç kimse.",
+  "s07.messages.f2_sms_321": "Kapıda bir kamera ile bir adam var.",
+  "s07.messages.f2_sms_322": "Açma. Geliyorum.",
+  "s07.messages.f2_sms_323": "Alışverişi basamağa bıraktım. Aoife aradı, içeride kalmamı söyledi.",
+  "s07.messages.f2_sms_324": "Hazır mısın?",
+  "s07.messages.f2_sms_325": "Hazırım.",
+  "s07.messages.f2_sms_326": "Kendisi yine kapıda. Ona söylemeyi bıraktım.",
+  "s07.messages.f2_sms_331": "MERIDIAN Servis Masası: CAS-120774 numaralı dosyanız kaydedildi.",
+  "s07.messages.f2_sms_332": "MERIDIAN Servis Masası: CAS-120774 numaralı dosya kapatıldı.",
+  "s07.messages.f2_sms_333": "MERIDIAN Servis Masası: CAS-122019 numaralı dosyanız kaydedildi.",
+  "s07.messages.f2_sms_334": "MERIDIAN Servis Masası: CAS-122019 numaralı dosya kapatıldı.",
+  "s07.messages.f2_sms_335": "MERIDIAN Servis Masası: Nasıl yaptık? 1 ile 5 arasında bir sayı ile yanıtlayın, 5 çok memnun olduğunuz anlamına gelir.",
+  "s07.messages.f2_sms_336": "MERIDIAN Servis Masası: Bu numara artık 4471 şubesinden gelen sorguları kabul etmeyecek. Lütfen bölge yöneticinizle iletişime geçin.",
+  "s07.chats.f2_wa_301": "İyi misin? Kapıda değildin.",
+  "s07.chats.f2_wa_302": "Bir oda postmaster'la yüzleşemezdim, Bríd.",
+  "s07.chats.f2_wa_303": "Hayır. Sanmıyorum ki yapabilirsin.",
+  "s07.chats.f2_wa_304": "Eski şubenin üzerine bir plaka koymuşlar. \"Cloghmore Post Office, 1911 to 2017.\" Bunu önce benden duyman gerektiğini düşündüm.",
+  "s07.chats.f2_wa_305": "Yüz altı yıl ve onları hatırlayacak kişi ben olacağım.",
+  "s07.chats.f2_wa_306": "Salı günü bir şeye gitmeye başladım. Eskiden şubeleri olan kadınlar. Aramızda on bir kişi var.",
+  "s07.chats.f2_wa_307": "On bir.",
+  "s07.chats.f2_wa_308": "On bir. Ve bunun hakkında bir kelime daha söylemeyeceğim, sadece sayıyı söylüyorum.",
+  "s07.chats.f2_wa_321": "Mam, iş hakkında bir konuşma yapmam istendi. Bu çılgınca mı",
+  "s07.chats.f2_wa_322": "Bu çılgınca değil. Yeşili giy.",
+  "s07.chats.f2_wa_323": "Perşembe günü yapılacak şey için seni listede tutuyorum ve kendini çıkarabilirsin, ama yine de ekliyorum.",
+  "s07.chats.f2_wa_324": "Baban gibi çok benziyorsun.",
+  "s07.chats.f2_wa_325": "Anneler Günün kutlu olsun. Bundan fazlasını söylemiyorum.",
+  "s07.chats.f2_wa_326": "Köpek komşunun evine girdi ve eve bütün bir somunla döndü. Bütün bir somun, Mam.",
+  "s07.chats.f2_wa_327": "O her zaman bir hırsız olmuştur. Bu ailede var.",
+  "s07.chats.f2_wa_328": "Mutlu Noeller Mam. Bir şey söyleyeceğim ve sonra duracağım. En iyi insanı asla tanımadığım için, hiçbir zaman düşündüm. Bir saniye bile değil. O odada değil. Sonra.",
+  "s07.chats.f2_wa_329": "Yat Aoife.",
+  "s07.chats.f2_wa_330": "Pazar. Akşam yemeğini ben getireceğim, sen hiçbir şey yapma. Mam, Pazar günü hiçbir şey kararlaştırılmayacak; gelmeden önce bunu söylemek istiyorum.",
+  "s07.notes.f2_note_201.title": "Köy",
+  "s07.notes.f2_note_201.block_001": "Nuala, otobüs 11:40'da. Eğer 11:30'a kadar dışarı çıkmazsa, kapıya onunla yürüyün.",
+  "s07.notes.f2_note_201.block_002": "Seán, satırı göremiyor. Kitabı çevir, parmağınla nereye gittiğini işaretle.",
+  "s07.notes.f2_note_201.block_003": "Duggins'ların hiç postası yok ve Mary yine de arıyor. Cuma günleri çaydanlığı aç.",
+  "s07.notes.f2_note_201.block_004": "Máirtín'in formu her ayın 20'sinde teslim edilecek ve o hatırlamayacak. 18'inde hatırlat.",
+  "s07.notes.f2_note_201.block_005": "Ryan kızı İngiltere'den eve döndü ve bunun konuşulmasını istemiyor. Konuşma.",
+  "s07.notes.f2_note_202.title": "Haziran'da yirmi bir yıl",
+  "s07.notes.f2_note_202.block_001": "1995. 9 Haziran'da Bayan Folan'dan üç günlük eğitim ve bir anahtar seti alarak devraldım.",
+  "s07.notes.f2_note_202.block_002": "İki sel, bir soygun, euroya geçiş ve yirmi bir yılda dört gün kapalı, bunların hepsi bir cenaze için.",
+  "s07.notes.f2_note_202.block_003": "Gönderide asla bir gün gecikmem. Bunu yüksek sesle söylemek zorunda kalmadan birinin bilmesini isterim.",
+  "s07.notes.f2_note_202.block_004": "Peadar bir parti yapmamı söylüyor. Düşüneceğimi söyledim, ki onun bildiği gibi bu hayır demek.",
+  "s07.notes.f2_note_211.title": "—",
+  "s07.notes.f2_note_211.block_001": "Bir yıl iki ay. En kötüsünün ne olduğunu çözdüm ve sabah üçte tekrar çözmemek için bunu yazıyorum.",
+  "s07.notes.f2_note_211.block_002": "Bunun, benim yaptığımı düşünmeleri değil. Yarımına kesinlikle inanmaz. Ben yaptığımı söylediğim için, kimse beni yalancı demeden beni savunamaz ve kimse de bunu yüzüme söylemez. Bu yüzden ne nazik ne de acımasız bir şey söylerler ve karşıya geçerler.",
+  "s07.notes.f2_note_211.block_003": "O tuzağı ben kurdum ve içinde durdum. Beni kimse oraya koymadı.",
+  "s07.notes.f2_note_212.title": "—",
+  "s07.notes.f2_note_212.block_001": "Aoife İngilizler hakkında radyo açmıştı. Kapatıp ona nedenini söylemedim.",
+  "s07.notes.f2_note_212.block_002": "Sebep onun düşündüğü şey değil. Bunu duymaktan dayanamayacağım değil.",
+  "s07.notes.f2_note_212.block_003": "Bu insanların her biri kendilerini masum diyordu. Yıllarca, dinleyen herkese söylüyorlardı. İşte bu yüzden onlar hakkında bir program var.",
+  "s07.notes.f2_note_212.block_004": "Suçlu olduğumu söyledim. Bir odada, yüksek sesle, kendi sesimle. Bunun için bir program yok.",
+  "s07.search.f2_gs_201": "bir mağaza kasası alınmamış parayı ekleyebilir mi",
+  "s07.search.f2_gs_202": "İrlanda'da posta ofisi terminallerini kim denetler",
+  "s07.search.f2_gs_203": "bir posta güvenlik mülakatında ne olur",
+  "s07.search.f2_gs_204": "daha hafif bir suç için suçlu olduğunu itiraf etmek ne anlama gelir",
+  "s07.search.f2_gs_205": "bir circuit mahkeme duruşması ne kadar sürer",
+  "s07.search.f2_gs_206": "cezadan sonra suçlu itirafını geri çekebilir misiniz",
+  "s07.search.f2_gs_207": "gece aynı şey hakkında düşünmeyi nasıl durdurabilirim",
+  "s07.search.f2_gs_208": "60 yaş üstü evde ekipmansız egzersiz",
+  "s07.search.f2_gs_209": "kendi kendine yüksek sesle konuşmak normal mi",
+  "s07.search.f2_gs_210": "yıllardır konuşmadığınız birine nasıl yazılır",
+  "s07.search.f2_gs_211": "postacı kadın plaka eski posta ofisi binaları irlanda",
+  "s07.search.f2_gs_212": "avukat mektubunda 'no obligation' ne demek",
+  "s07.calendar.f2_ev_201": "Emeklilik Perşembe, 08:30'da açık",
+  "s07.calendar.f2_ev_202": "Emeklilik Perşembe, 08:30'da açık",
+  "s07.calendar.f2_ev_203": "Emeklilik Perşembe, 08:30'da açık",
+  "s07.calendar.f2_ev_204": "Denetim, iki gün",
+  "s07.calendar.f2_ev_205": "Güvenlik, görüşme",
+  "s07.calendar.f2_ev_206": "Avukat, hesabına",
+  "s07.calendar.f2_ev_207": "Emeklilik dairesi, Clifden",
+  "s07.calendar.f2_ev_208": "Kütüphane, 15:00",
+  "s07.payments.f2_tx_201.note": "Eczane",
+  "s07.payments.f2_tx_202.note": "Petrol teslimatı",
+  "s07.payments.f2_tx_203.note": "Kömür",
+  "s07.payments.f2_tx_204.note": "Avukat, hesabına",
+  "s07.payments.f2_tx_205.note": "Gaz",
+  "s07.payments.f2_tx_206.note": "Kredi birliği, kredi geri ödemesi",
+  "s07.payments.f2_tx_207.note": "Veteriner, köpek bacağı",
+  "s07.payments.f2_tx_208.note": "Petrol teslimatı",
+  "s07.payments.f2_tx_209.note": "Eczane",
+  "s07.payments.f2_tx_210.note": "Yürüyüş kulübü, yıl",
+  "s07.maps.sp_002.name": "Ó Flaithbheartaigh & Co.",
+  "s07.maps.sp_002.address": "Market Street, Clifden, Co. Galway",
+  "s07.maps.sp_003.name": "Clifden Library",
+  "s07.maps.sp_003.address": "Clifden, Co. Galway",
+  "s07.maps.sp_004.name": "Aoife",
+  "s07.maps.sp_004.address": "Bóthar na Trá, Galway",
+  "s07.clock.f2_al_003": "Perşembe",
+  "s07.photos.ph_001.document": "Photograph of an open floor safe, taken from above, the flash hard on the metal.\n\n  Bundled notes in a shallow tray, banded in fifties. Two rolls of coin at the back. A brown envelope, sealed.\n\n  Laid on top of the notes, a slip torn from a counter pad, filled in by hand:\n\n      5 180.00   notes\n        288.60   coin\n      5 468.60\n      counted 2x\n      23:20  1/3\n\n  The edge of a cardigan sleeve is in the top of the frame.",
+  "s07.photos.ph_002.document": "Photograph of the same open safe, same angle, the tray pulled slightly forward this time.\n\n  The slip on top of the notes has been written, crossed through and written again:\n\n      4 910.00   notes\n        301.20   coin\n      5 211.20\n      counted 3x\n      23:35  2/3\n\n  Under the figure, in smaller writing pressed hard enough to score the paper: \"screen says 9 211.20. counted three times. it is not here.\"",
+  "s07.photos.ph_003.document": "Photograph of the open safe, taken later than the others — the office light is off and the flash is the only light in the room.\n\n  Less in the tray than at the start of the month. One band of notes, loose coin, no envelope.\n\n      4 220.00   notes\n        311.40   coin\n      4 531.40\n      counted 3x\n      23:40  19/3\n\n  Beside the safe, on the floor, a stack of the same slips going back weeks, held together with a bulldog clip.",
+  "s07.photos.ph_004.document": "Photograph of the open safe. Fourteen months after the first one and the framing has not changed by an inch.\n\n      2 780.00   notes\n        226.75   coin\n      3 006.75\n      counted 3x\n      23:52  8/5\n\n  The slip has one more line on it than any of the others, in the same hand and written slowly: \"416.\"\n\n  There are no photographs in this album after this one.",
+  "s07.chats.f2_wa_401": "Aoife bu sabah beni aradı. O zamandan beri telefonu elimde tutuyorum ve ara ara bırakıyorum.",
+  "s07.chats.f2_wa_402": "2016'da sana düzgün bir şekilde cevap vermeliydim. Beni doğrudan sordun ve sana hiçbir şey söylemeyen bir ses notu gönderdim, ve bunu senin tahmin edeceğinden çok daha sık düşündüm.",
+  "s07.chats.f2_wa_403": "Benimki 2014. Seninkinden iki yıl önce. On bir bin dört yüz, ve ekran bunun hakkında senin kadar emindi.",
+  "s07.chats.f2_wa_404": "Kendi birikimlerimden dokuz ay boyunca geri ödedim ve kimseye söylemedim. Kimseye söylemediğim için, senin ülkedeki tek kişi olduğun gerçeğini sana söylemeye devam edebildiler.",
+  "s07.chats.f2_wa_405": "Bríd.",
+  "s07.chats.f2_wa_406": "Biliyorum. Biliyorum, Máire. Kızına söyle, istediği kişiye, istediği herkese söyleyeceğimi."
+}

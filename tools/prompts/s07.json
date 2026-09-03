@@ -1,0 +1,95 @@
+[
+  {
+    "name": "safe_count_01",
+    "dir": "photos",
+    "asset": "assets/cases/s07/photos/safe_count_01.jpg",
+    "aspect": "portrait_3_4",
+    "size": "896x1152",
+    "reads_back": "s07.photos.ph_001.document",
+    "answers": ["s07 q01"],
+    "note": "The last ordinary night, and the first frame of the album. Counted twice, because in February that was still the procedure. Nothing is wrong in this one and it has to look like nothing is wrong — it is the control the other three are read against.",
+    "must_show": ["safe", "slip", "notes"],
+    "prompt": "Photographed from directly above with a phone flash: a small open floor safe set into the boards of a back office, its door swung out of frame. Inside, a shallow metal tray holding banded bundles of banknotes and two paper rolls of coin at the back, and one sealed brown envelope. Lying flat on top of the notes is a small slip torn from a counter pad, filled in by hand in blue biro with a figure, a short note and a time. The edge of a knitted cardigan sleeve intrudes at the top of the frame. Hard flash, cold linoleum, a chair leg at the edge, late at night. Photographic realism, phone-camera snapshot, slight overexposure where the flash hits the metal, no text large enough to read as a headline, no logos, no alcohol, no weapons."
+  },
+  {
+    "name": "safe_count_02",
+    "dir": "photos",
+    "asset": "assets/cases/s07/photos/safe_count_02.jpg",
+    "aspect": "portrait_3_4",
+    "size": "896x1152",
+    "reads_back": "s07.photos.ph_002.document",
+    "answers": ["s07 q01"],
+    "note": "The night it starts — 2 March, which is what the album passcode 0203 is named for. The slip has been written, crossed out and written again, and that correction is the whole difference between this frame and the one before it.",
+    "must_show": ["safe", "slip"],
+    "prompt": "The same small open floor safe photographed from above with a phone flash, the tray pulled slightly forward this time. Banded banknotes and loose coin inside. On top of the notes a handwritten slip from a counter pad on which a figure has been written, struck through with a single line, and written again below; underneath it a second, smaller line of handwriting pressed hard enough to dent the paper. The biro is lying beside the slip. Hard flash, back office at night, worn linoleum. Photographic realism, phone-camera snapshot, no logos, no alcohol, no weapons."
+  },
+  {
+    "name": "safe_count_19",
+    "dir": "photos",
+    "asset": "assets/cases/s07/photos/safe_count_19.jpg",
+    "aspect": "portrait_3_4",
+    "size": "896x1152",
+    "reads_back": "s07.photos.ph_003.document",
+    "answers": ["s07 q01"],
+    "note": "The one that matters. The slip written in this frame at 23:40 is the same slip propped against the keyboard in `terminal.jpg` at 08:04 the next morning — the two photographs are one fact eight hours apart. So the slip here and the slip there have to look like the same piece of paper: same pad, same hand, same biro. Note how much less is in the tray than in March; the branch is running down.",
+    "must_show": ["safe", "slip", "slips"],
+    "prompt": "A small open floor safe photographed from above with a phone flash in a dark room — the office light is off and the flash is the only light. Noticeably less inside than a full night: one band of banknotes, loose coin, no envelope. A handwritten slip from a counter pad lies on the notes, blue biro, a figure and a time. On the floor beside the safe, just inside the frame, a thick stack of identical slips going back weeks held together with a black bulldog clip. Hard flash, deep shadow beyond it, late. Photographic realism, phone-camera snapshot, no logos, no alcohol, no weapons."
+  },
+  {
+    "name": "safe_count_last",
+    "dir": "photos",
+    "asset": "assets/cases/s07/photos/safe_count_last.jpg",
+    "aspect": "portrait_3_4",
+    "size": "896x1152",
+    "reads_back": "s07.photos.ph_004.document",
+    "answers": ["s07 q01", "s07 q13"],
+    "note": "Fourteen months after the first and the framing has not moved an inch, which is the point: she did this the same way four hundred and sixteen times. It is also the last photograph in the album, and q13 asks what happened on the day she stopped.",
+    "must_show": ["safe", "slip"],
+    "prompt": "A small open floor safe photographed from above with a phone flash, framed almost identically to a photograph taken fourteen months earlier — same angle, same distance, same corner of linoleum in shot. Little inside: one short band of banknotes and some coin. A handwritten slip lies on top with a figure, a time, and one extra line of handwriting below them, written more slowly than the rest. The stack of previous slips beside the safe is now several inches thick. Hard flash, night, an empty back office. Photographic realism, phone-camera snapshot, no logos, no alcohol, no weapons."
+  },
+
+  {
+    "name": "slip_stack",
+    "dir": "photos",
+    "asset": "assets/cases/s07/photos/slip_stack.jpg",
+    "aspect": "portrait_3_4",
+    "size": "896x1152",
+    "pending": true,
+    "note": "Not generated yet. The four hundred and sixteen slips as an object — the thing the closing conversation means by \"she was building this and nobody ever asked her what she was building\". Wanted for the album so the count is a quantity and not a claim.",
+    "must_show": ["slips"],
+    "prompt": "A thick stack of small handwritten paper slips on a kitchen table, photographed from above in daylight. Several hundred of them, curled and softened at the corners from handling, held in four bundles with elastic bands, each slip carrying a figure and a time in blue biro. One slip has been lifted off the top and lies apart from the rest. A cup of tea at the edge of the frame, a wipe-clean tablecloth. Photographic realism, ordinary domestic daylight, no logos, no alcohol."
+  },
+  {
+    "name": "shutter",
+    "dir": "photos",
+    "asset": "assets/cases/s07/photos/shutter.jpg",
+    "aspect": "landscape_16_9",
+    "size": "1280x720",
+    "pending": true,
+    "note": "Not generated yet. The branch after it closed — \"the shutter has not been up in nine years\" is on the board and there is no picture of it.",
+    "must_show": ["shutter"],
+    "prompt": "A closed metal roller shutter across the front of a small village shop unit on a wet street in the west of Ireland, photographed from across the road. Faded paint on the render above it where a sign has been taken down, leaving a clean rectangle. A brass letter slot in the door frame beside the shutter, taped over. Weeds at the base of the wall, a puddle in the gutter reflecting grey sky. Nobody in frame. Photographic realism, overcast flat light, no text, no logos."
+  },
+  {
+    "name": "counter_queue",
+    "dir": "photos",
+    "asset": "assets/cases/s07/photos/counter_queue.jpg",
+    "aspect": "landscape_16_9",
+    "size": "1280x720",
+    "pending": true,
+    "note": "Not generated yet. The branch working, before any of it — the one frame in the case that shows why the village cared. Nobody in it is a character; faces should be indistinct.",
+    "must_show": ["counter"],
+    "prompt": "The inside of a very small rural post office counter on a busy morning, photographed from behind the counter looking out. A glass screen with a low gap under it, a set of weighing scales, a rubber date stamp on a wooden block, a spike of receipts. Four or five people waiting in a short queue in outdoor coats, seen from behind and at an angle so no face is legible. Daylight through a shop window, worn wooden counter top, a rack of envelopes. Photographic realism, ordinary daylight, no readable text, no logos."
+  },
+  {
+    "name": "kitchen_evidence",
+    "dir": "photos",
+    "asset": "assets/cases/s07/photos/kitchen_evidence.jpg",
+    "aspect": "landscape_16_9",
+    "size": "1280x720",
+    "pending": true,
+    "note": "Not generated yet. What one of the three endings actually is — the photographs, the fault list and the read receipt laid out on her mother's kitchen table. Wanted as the case's last image rather than as evidence for a question.",
+    "must_show": ["table"],
+    "prompt": "A scrubbed kitchen table in a small Irish farmhouse, photographed from above in morning light. Laid out across it in three neat groups: a thick banded stack of small handwritten slips, a printed document of several pages, and a single printed sheet turned face up slightly apart from the others. A pair of reading glasses folded on the corner, a cold cup of tea, a chair pulled out. Nobody in frame. Photographic realism, soft daylight from a window at the left, no readable text, no logos, no alcohol."
+  }
+]

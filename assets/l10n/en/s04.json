@@ -12,7 +12,7 @@
   "s04.client_chat.cc_002": "Rui Andrade. My partner. We started FAROL in a garage on Rua do Aleixo in 2014 and last Thursday I found him on his own kitchen floor.",
   "s04.client_chat.cc_003": "You will not have heard of us. We make a wristband. You press it, it calls whoever you told it to call. Forty thousand people wear one. Rui's mother wore one for two years before she died, that is the whole origin story, there isn't a cleverer one.",
   "s04.client_chat.cc_004": "His wife was there that night. Marta. They were signing the divorce on Thursday and she came round on Wednesday instead, and I do not know what happened in that house but I know she was in it.",
-  "s04.client_chat.cc_005": "The police have been polite and slow. Nobody has opened his phone. I have the admin account for our whole fleet, so I can put you on his device — properly, live, as it sits.",
+  "s04.client_chat.cc_005": "The police have been polite and slow. Nobody has opened his phone. I have the admin account for our whole fleet. That means I can put you on his device now, live, exactly as it sits.",
   "s04.client_chat.cc_006": "I am not asking you to agree with me. I am asking you to read it and tell me what is in there. If it says I am wrong about her I will take that too.",
   "s04.client_chat.cc_007": "Will you look?",
   "s04.client_chat.cc_007.accept": "Put me on the phone.",
@@ -35,22 +35,22 @@
   "s04.closing_chat.cl_003": "The numbers were mine. Beatriz gave me thirty-eight per cent failure indoors and I gave the board four. Not to get rich — to get to the next round, so we could fix it with money we did not have yet. That is what I told myself in March and it was even true in March.",
   "s04.closing_chat.cl_004": "Rui found it in October. He wasn't angry. That was the unbearable part. He sat in my kitchen and said we'd recall everything and stand in front of it together and I'd probably do eighteen months, and he said it kindly, like he was offering me something.",
   "s04.closing_chat.cl_005": "I let myself into his house to change his mind. That is the truth and it is also the excuse, and I know the difference.",
-  "s04.closing_chat.cl_006": "He pressed it. Do you understand what I am telling you? He was on the floor and he pressed our button, the one we drew on a napkin, and my phone lit up in my hand while I was standing over him. It worked. The one time it mattered in my whole life, it worked, and I turned it off.",
+  "s04.closing_chat.cl_006": "He pressed it. Do you understand what I am telling you? He was on the floor when he pressed our button, the one we drew on a napkin years ago. My phone lit up in my hand while I stood over him. It worked. The one time it mattered in my whole life, it worked, and I turned it off.",
   "s04.closing_chat.cl_007": "The recording was Marta at the theatre in March. He recorded all of them. I renamed a file. Two weeks of my life gone into a scheduled task, like a man doing his job.",
   "s04.closing_chat.cl_008": "Now listen to me, because this part is not about me.",
-  "s04.closing_chat.cl_009": "Turn me in and FAROL dies inside a month. The recall takes a year, and for that year forty thousand people wear nothing at all, and the firmware never gets fixed because there is nobody left to fix it. Leave me where I am and I have it done in three months. Quietly. Properly.",
+  "s04.closing_chat.cl_009": "Turn me in and FAROL dies inside a month. The recall takes a year. For that whole year, forty thousand people wear nothing at all, and the firmware never gets fixed, because there is nobody left to fix it. Leave me where I am and I have it done in three months. Quietly. Properly.",
   "s04.closing_chat.cl_010": "That was Rui's plan too. He just didn't want it to be me who did it.",
   "s04.closing_chat.cl_011": "So. It's yours now. What do you do with it?",
   "s04.closing_chat.cl_011.opt1": "All of it. Tonight.",
   "s04.closing_chat.cl_011.opt2": "Only what clears Marta.",
   "s04.closing_chat.cl_011.opt3": "Fix the device. I never opened the phone.",
   "s04.closing_chat.cl_013": "Of course. I'd have thought less of you.",
-  "s04.closing_chat.cl_014": "They'll have me by Sunday and the company by Christmas. Two hundred people who did nothing wrong will find that out from a news alert. I'm not arguing — I'm telling you what you bought, because you should know what it cost and not just what it was worth.",
+  "s04.closing_chat.cl_014": "They'll have me by Sunday and the company by Christmas. Two hundred people who did nothing wrong will find that out from a news alert. I'm not arguing with you. I'm telling you what you bought. You should know what it cost, not just what it was worth.",
   "s04.closing_chat.cl_015": "Half, then.",
   "s04.closing_chat.cl_016": "Marta walks, which she should. And I keep the company, and I fix the thing, and Rui's file sits open in a drawer in Matosinhos until everyone in it is dead. You've decided the living are worth more than him. I'd probably have decided the same. It still makes me sick that you did.",
   "s04.closing_chat.cl_017": "You're serious.",
   "s04.closing_chat.cl_018": "Then it gets fixed. February, maybe March. Nobody dies in a stairwell with a dead button on their wrist and nobody ever knows why not. And Marta spends the rest of her life being the woman they could not quite prove it against, in a city where everyone is quite sure. You have made that happen, not me. I want you to hold that, since I have to.",
-  "s04.closing_chat.cl_019": "This account closes in a minute. You were better than I needed you to be — that was the whole risk and I took it anyway, because I thought a professional would stop where the evidence was tidy. Everyone does. You didn't.",
+  "s04.closing_chat.cl_019": "This account closes in a minute. You were better than I needed you to be. That was the whole risk, and I took it anyway. I thought a professional would stop once the evidence looked tidy. Everyone does. You didn't.",
   "s04.board.rui.title": "Rui Andrade",
   "s04.board.rui.sub": "41 · FOUND 14 NOVEMBER",
   "s04.board.vasco.title": "Vasco Pinto",
@@ -63,7 +63,7 @@
   "s04.board.house.sub": "PORTO · SMART LOCK, NO CAMERAS INSIDE",
   "s04.board.farol.title": "FAROL",
   "s04.board.farol.sub": "40,000 WORN. ONE PRESSED THAT NIGHT.",
-  "s04.board.night.title": "Wed 14 Nov",
+  "s04.board.night.title": "Wed 12 Nov",
   "s04.board.night.sub": "21:40 she arrives. 23:31 the band fires. 23:40 a recording.",
   "s04.board.divorce.title": "Signing on Thursday",
   "s04.board.divorce.sub": "She asked for no shares.",
@@ -84,10 +84,10 @@
   "s04.messages.sms_006": "I know. It was there anyway.",
   "s04.messages.sms_010": "Mr Andrade — the revised settlement is attached to my email. Mrs Andrade has asked me to remove the share clause entirely, which is unusual and which I have advised her against twice.",
   "s04.messages.sms_011": "She's not going to change her mind. She never does.",
-  "s04.messages.sms_012": "Understood. The document portal password is on the account: farol-porto-2014. Same as your other filings. Please don't write it anywhere.",
+  "s04.messages.sms_012": "Understood. The document portal password is on the account: 04.09.2014. Same as your other filings. Please don't write it anywhere.",
   "s04.messages.sms_013": "Nowhere but here.",
-  "s04.messages.sms_020": "ALERT · FAROL — DEVICE 8842 (R. ANDRADE) — BUTTON PRESSED — 14/11 23:31 — CONTACT NOTIFIED",
-  "s04.messages.sms_021": "ALERT · FAROL — DEVICE 8842 — ALERT CLOSED BY CONTACT — 14/11 23:33 — REASON: FALSE ALARM",
+  "s04.messages.sms_020": "ALERT · FAROL — DEVICE 8842 (R. ANDRADE) — BUTTON PRESSED — 12/11 23:31 — CONTACT NOTIFIED",
+  "s04.messages.sms_021": "ALERT · FAROL — DEVICE 8842 — ALERT CLOSED BY CONTACT — 12/11 23:33 — REASON: FALSE ALARM",
   "s04.messages.sms_030": "Mr Andrade, I'm sorry to message so late. I've sent the March raw logs to your personal address, not the company one. Please don't reply from the company one.",
   "s04.messages.sms_031": "You did the right thing. Nobody is going to touch you over this, I promise you that.",
   "s04.messages.sms_032": "It isn't me I'm worried about.",
@@ -116,15 +116,15 @@
   "s04.feed.ig_004": "they are going to arrest me. nogueira says friday. rui, i did not do this.",
   "s04.feed.ig_005": "if i stop writing to you then you are actually dead.",
   "s04.mail.gm_001.subject": "Revised settlement — Andrade",
-  "s04.mail.gm_001.body": "Dear Mr Andrade,\n\nAttached is the revised settlement reflecting your wife's instruction of 3 November.\n\nI want to be clear on the record, for the third time, that Mrs Andrade has declined any interest in the shares of FAROL Lda, including the deferred class B allocation she is entitled to under the 2014 agreement. I have advised her twice in writing that this is materially against her interest. She has confirmed twice in writing that she understands.\n\nHer words, which she asked me to include: \"He built it before me and he'll be building it after me. I'm not taking a piece of it to punish him.\"\n\nSigning is scheduled for Thursday 15 November, 11:00, at my offices.\n\nCarla Nogueira",
+  "s04.mail.gm_001.body": "Dear Mr Andrade,\n\nAttached is the revised settlement reflecting your wife's instruction of 1 November.\n\nI want to be clear, for the third time and on the record: Mrs Andrade has declined any interest in the shares of FAROL Lda. This includes the deferred class B allocation she is entitled to under the 2014 agreement. I have advised her twice in writing that this is materially against her interest. She has confirmed twice in writing that she understands.\n\nHer words, which she asked me to include: \"He built it before me and he'll be building it after me. I'm not taking a piece of it to punish him.\"\n\nSigning is scheduled for Thursday 13 November, 11:00, at my offices.\n\nCarla Nogueira",
   "s04.mail.gm_002.subject": "March field data — raw",
   "s04.mail.gm_002.body": "Rui,\n\nThese are the unedited logs from the March programme. 412 activations across 60 devices, indoor and enclosed environments.\n\nSuccessful transmission: 255.\nFailed or delayed beyond 90 seconds: 157.\n\nThat is 38.1 per cent. The figure that went to the board in April was 4 per cent, and I do not know how to say the next part politely, so: the 4 per cent number is the subset of open-air tests only. Somebody chose that subset.\n\nI am not sending this from my work account and I would ask you not to forward it from yours.\n\nBeatriz",
   "s04.mail.gm_003.subject": "Re: March field data — raw",
-  "s04.mail.gm_003.body": "Beatriz,\n\nI've read it four times. You're not wrong and I'm not going to pretend to look for a reading where you are.\n\nI'm going to do this properly and slowly, which means I am going to say nothing for three weeks while I check every number myself, because if I'm going to end a man's career I'd like to be certain rather than furious.\n\nYou did the right thing. Don't carry it in the meantime.\n\nRui",
+  "s04.mail.gm_003.body": "Beatriz,\n\nI've read it four times. You're not wrong and I'm not going to pretend to look for a reading where you are.\n\nI'm going to do this properly and slowly. That means I will say nothing for three weeks, while I check every number myself. If I'm going to end a man's career, I want to be certain, not just furious.\n\nYou did the right thing. Don't carry it in the meantime.\n\nRui",
   "s04.mail.gm_004.subject": "Recall scenarios — DRAFT, do not circulate",
   "s04.mail.gm_004.body": "Working notes to myself.\n\nIf we recall: 40,200 units, ~€3.1m, insurance covers none of it. Company is finished inside a quarter. Two hundred and six people out of work, most of them junior.\n\nIf we don't: the failure rate stands and the next person it happens to has a name.\n\nThere is no version of this where I get to be clever. Recall.\n\nTell V. on Thursday, face to face, alone. He'll take it better without the room.",
   "s04.mail.gm_005.subject": "Your FAROL alert history",
-  "s04.mail.gm_005.body": "Automated summary for device 8842 (R. Andrade).\n\nThis device generated 1 alert in the last 30 days.\n\n14/11 23:31 — button pressed — contact notified (V. Pinto)\n14/11 23:33 — alert closed by contact — reason given: false alarm\n\nIf an alert was closed in error, please contact support. Alert audio and location for this event are retained for 90 days and can be exported from your account.",
+  "s04.mail.gm_005.body": "Automated summary for device 8842 (R. Andrade).\n\nThis device generated 1 alert in the last 30 days.\n\n12/11 23:31 — button pressed — contact notified (V. Pinto)\n12/11 23:33 — alert closed by contact — reason given: false alarm\n\nIf an alert was closed in error, please contact support. Alert audio and location for this event are retained for 90 days and can be exported from your account.",
   "s04.mail.gm_006.subject": "Your home hub is set up",
   "s04.mail.gm_006.body": "Installation complete — Rua do Passeio Alegre.\n\nHub admin password: admin-8842\n(You asked us to reuse your device number. We recommend changing it.)\n\nThe app shows household members only. Guest and temporary codes appear in the full access export, which you can download from the hub's admin page using the password above.\n\nThank you for choosing us.",
   "s04.mail.gm_010.subject": "Re: Revised settlement — Andrade",
@@ -160,8 +160,8 @@
   "s04.photos.album_002": "FAROL",
   "s04.photos.album_003": "Audit",
   "s04.photos.album_004": "Before",
-  "s04.photos.ph_002.document": "Photograph of a desk in a home office, taken from above. Among the cables and a soldering iron there is a torn notepad page with three lines in blue biro:\n\n  portal — farol-porto-2014\n  keychain — same\n  STOP REUSING THIS\n\nThe last line is underlined twice.",
-  "s04.photos.ph_003.document": "Still from the front-door camera.\n\n  14/11  21:40:12\n  A woman in a dark coat at the door, a document wallet under one arm, waiting rather than knocking. The door opens inward and she steps in without being greeted.\n\nNo further motion events are recorded until 22:31:04, when the same woman leaves alone, still carrying the wallet.",
+  "s04.photos.ph_002.document": "Photograph of a desk in a home office, taken from above. Among the cables and a soldering iron there is a torn notepad page with three lines in blue biro:\n\n  portal — 04.09.2014\n  keychain — same\n  STOP REUSING THIS\n\nThe last line is underlined twice.",
+  "s04.photos.ph_003.document": "Still from the front-door camera.\n\n  12/11  21:40:12\n  A woman in a dark coat at the door, a document wallet under one arm, waiting rather than knocking. The door opens inward and she steps in without being greeted.\n\nNo further motion events are recorded until 22:31:04, when the same woman leaves alone, still carrying the wallet.",
   "s04.photos.ph_010.document": "Photograph of a laptop screen showing a spreadsheet, taken quickly and slightly off-square.\n\n  INDOOR / ENCLOSED — MARCH PROGRAMME\n  activations .......... 412\n  transmitted .......... 255\n  failed / >90s ........ 157\n  rate ................. 38.1%\n\nA second window behind it shows a slide reading \"field reliability: 96%\". A hand-written sticky note on the bezel says: this is the same month.",
   "s04.photos.ph_011.document": "Photograph of a printed investor deck, one slide, held flat under a desk lamp.\n\n  FAROL — SERIES A\n  \"Field reliability: 96%\"\n  \"n = 412 activations, March programme\"\n\nSomeone has written across the bottom margin in blue biro: n is 412 for both numbers. He didn't run a different test. He ran the same test and kept the outdoor half.",
   "s04.photos.ph_012.document": "Photograph of a poster in a theatre foyer, taken on a phone.\n\n  TEATRO DO BOLHÃO\n  A CASA VAZIA\n  14 – 16 MARCH\n\nBelow it, a smaller card: DRESS REHEARSAL — 14 MARCH, 21:00 — CLOSED TO PUBLIC.",
@@ -177,7 +177,7 @@
   "s04.notes.note_002.block_001": "Phone made a voice memo at 03:02 last night. Forty seconds. Nothing on it but the fridge.",
   "s04.notes.note_002.block_002": "I did not record anything at three in the morning. I was asleep. Marta has been gone since August so nobody else touched it.",
   "s04.notes.note_002.block_003": "Settings say it came from a scheduled automation. I have never made an automation on this phone in my life — I build hardware, I don't play with the phone.",
-  "s04.notes.note_002.block_004": "Created 31 October. I was in Matosinhos on the 31st. Vasco had the flat keys that week for the boiler man.",
+  "s04.notes.note_002.block_004": "Created 29 October. I was in Matosinhos on the 29th. Vasco had the flat keys that week for the boiler man.",
   "s04.notes.note_002.block_005": "Probably nothing. Ask him Thursday, after the other thing, when we're both still speaking.",
   "s04.notes.note_003.title": "For Marta, if I ever send it",
   "s04.notes.note_003.block_001": "You asked me once what I would do if the company went. I said I'd start another one and you said that wasn't an answer, it was a symptom.",
@@ -199,7 +199,7 @@
   "s04.search.gs_006": "teatro do bolhao a casa vazia march",
   "s04.search.gs_007": "who can access smart lock guest codes",
   "s04.search.gs_008": "is it fraud if the number was technically true",
-  "s04.keychain.master_hint": "It's written on the notepad on his desk, in the camera roll. He reused it for everything and knew he shouldn't.",
+  "s04.keychain.master_hint": "A date, on the notepad on his desk, in the camera roll. He reused it for everything and knew he shouldn't.",
   "s04.keychain.v_001.label": "Nogueira — document portal",
   "s04.keychain.v_001.username": "rui@farol.pt",
   "s04.keychain.v_002.label": "Photos — Audit album",
@@ -214,13 +214,13 @@
   "s04.cloud.cf_001.name": "march_raw_indoor.csv",
   "s04.cloud.cf_001.body": "device,run,environment,pressed,transmitted,latency_s\n8801,1,stairwell -2,yes,no,—\n8801,2,stairwell -2,yes,no,—\n8802,1,lift car,yes,no,—\n8802,2,lift car,yes,yes,140\n8803,1,basement,yes,no,—\n… 412 rows …\n\nSUMMARY — INDOOR / ENCLOSED\ntransmitted 255 / 412\nfailed or >90s 157 / 412\nrate 38.1%",
   "s04.cloud.cf_002.name": "backup_manifest.txt",
-  "s04.cloud.cf_002.body": "DEVICE BACKUP — R. ANDRADE — last run 14/11 02:11\n\nfile                          first seen    last modified   size\n----                          ----------    -------------   ----\nvm/matosinhos_run3.m4a        02/11         02/11           1.9 MB\nvm/untitled_0302.m4a          01/11         01/11           0.6 MB\nvm/ARGUMENT_2340.m4a          14/03         14/03           4.2 MB\nvm/napkin_drawer.m4a          04/09/2014    04/09/2014      2.8 MB\n\nNote: 'first seen' is the date this backup first received the file.\nA file that appears in a backup dated 14/03 existed on 14/03.",
+  "s04.cloud.cf_002.body": "DEVICE BACKUP — R. ANDRADE — last run 12/11 02:11\n\nfile                          first seen    last modified   size\n----                          ----------    -------------   ----\nvm/matosinhos_run3.m4a        31/10         31/10           1.9 MB\nvm/untitled_0302.m4a          30/10         30/10           0.6 MB\nvm/ARGUMENT_2340.m4a          12/03         12/03           4.2 MB\nvm/napkin_drawer.m4a          04/09/2014    04/09/2014      2.8 MB\n\nNote: 'first seen' is the date this backup first received the file.\nA file that appears in a backup dated 12/03 existed on 12/03.",
   "s04.cloud.cf_003.name": "properties_ARGUMENT_2340.txt",
-  "s04.cloud.cf_003.body": "FILE PROPERTIES — ARGUMENT_2340.m4a\n\nDisplay name ............ ARGUMENT_2340.m4a\nShown in Voice Memos as . 14/11/2025 23:40\nContainer created ....... 14/11/2025 23:40:02\nMedia recorded date ..... 14/03/2025 21:14:38\nLast modified ........... 14/03/2025 21:22:10\nSize .................... 4,402,118 bytes\nSize at 14/03 backup .... 4,402,118 bytes\nSource .................. renamed copy (original: rehearsal_0314.m4a)\nCreated by .............. Automation \"night capture\" (scheduled)\n\nThe container was written on 14/11. The audio inside it was recorded on 14/03.",
+  "s04.cloud.cf_003.body": "FILE PROPERTIES — ARGUMENT_2340.m4a\n\nDisplay name ............ ARGUMENT_2340.m4a\nShown in Voice Memos as . 12/11/2025 23:40\nContainer created ....... 12/11/2025 23:40:02\nMedia recorded date ..... 12/03/2025 21:14:38\nLast modified ........... 12/03/2025 21:22:10\nSize .................... 4,402,118 bytes\nSize at 12/03 backup .... 4,402,118 bytes\nSource .................. renamed copy (original: rehearsal_0312.m4a)\nCreated by .............. Automation \"night capture\" (scheduled)\n\nThe container was written on 12/11. The audio inside it was recorded on 12/03.",
   "s04.cloud.cf_004.name": "automations_export.txt",
-  "s04.cloud.cf_004.body": "SCHEDULED AUTOMATIONS — device 8842\n\n[1] \"night capture\"\n    created ......... 31/10/2025 22:47\n    created on ...... hub-linked session (not this device)\n    action .......... open Voice Memos → create entry from /vm/rehearsal_0314.m4a → rename ARGUMENT_{HHMM}\n    trigger ......... manual, remote\n    fired ........... 01/11 03:02  (test)\n                      14/11 23:40\n    disabled ........ no\n\nNo other automations exist on this device.",
+  "s04.cloud.cf_004.body": "SCHEDULED AUTOMATIONS — device 8842\n\n[1] \"night capture\"\n    created ......... 29/10/2025 22:47\n    created on ...... hub-linked session (not this device)\n    action .......... open Voice Memos → create entry from /vm/rehearsal_0314.m4a → rename ARGUMENT_{HHMM}\n    trigger ......... manual, remote\n    fired ........... 01/11 03:02  (test)\n                      12/11 23:40\n    disabled ........ no\n\nNo other automations exist on this device.",
   "s04.cloud.cf_005.name": "home_export_full.csv",
-  "s04.cloud.cf_005.body": "HUB ACCESS EXPORT — Rua do Passeio Alegre — 14/11/2025\nIncludes guest and temporary codes. Household view omits these.\n\ntime      code            holder              event\n07:02     household 1     R. Andrade          unlocked\n19:00     household 3     F. Sousa            unlocked\n19:48     household 3     F. Sousa            locked (departed)\n21:40     household 2     M. Andrade          unlocked\n22:31     household 2     M. Andrade          locked (departed)\n23:22     guest 4         V. Pinto            unlocked\n23:31     —               —                   FAROL alert raised (device 8842)\n23:33     —               —                   FAROL alert closed by contact\n23:58     guest 4         V. Pinto            locked (departed)\n06:41     household 1     —                   forced entry — emergency services",
+  "s04.cloud.cf_005.body": "HUB ACCESS EXPORT — Rua do Passeio Alegre — 12/11/2025\nIncludes guest and temporary codes. Household view omits these.\n\ntime      code            holder              event\n07:02     household 1     R. Andrade          unlocked\n19:00     household 3     F. Sousa            unlocked\n19:48     household 3     F. Sousa            locked (departed)\n21:40     household 2     M. Andrade          unlocked\n22:31     household 2     M. Andrade          locked (departed)\n23:22     guest 4         V. Pinto            unlocked\n23:31     —               —                   FAROL alert raised (device 8842)\n23:33     —               —                   FAROL alert closed by contact\n23:58     guest 4         V. Pinto            locked (departed)\n06:41     household 1     —                   forced entry — emergency services",
   "s04.music.pl_001": "late",
   "s04.clock.al_001": "lab",
   "s04.access.account_label": "Casa — Passeio Alegre",
@@ -410,10 +410,10 @@
       "mrach"
     ],
     [
-      "1403"
+      "1203"
     ],
     [
-      "14 03"
+      "12 03"
     ]
   ],
   "s04.question.q09.title": "The case against her",
@@ -429,34 +429,37 @@
     ]
   ],
   "s04.question.q10.title": "23:31",
-  "s04.question.q10.question": "Nine minutes before the recording, the phone sent an automated alert. What set it off?",
+  "s04.question.q10.question": "At 23:31, nine minutes before the last voice memo was recorded, the phone received an automated alert from Rui's own wristband. What does the alert say happened?",
   "s04.question.q10.opt0": "The smoke detector",
-  "s04.question.q10.opt1": "FAROL",
+  "s04.question.q10.opt1": "The button was pressed",
   "s04.question.q10.opt2": "The alarm system",
   "s04.question.q10.opt3": "A missed call",
   "s04.question.q10.answers": [
     [
-      "farol"
+      "button"
     ],
     [
-      "frol"
+      "buton"
     ],
     [
-      "farrol"
+      "butto"
     ],
     [
-      "band"
+      "pressed"
     ],
     [
-      "wristband"
+      "presed"
+    ],
+    [
+      "press"
     ]
   ],
   "s04.question.q11.title": "Two dates",
   "s04.question.q11.question": "Four lines from the file's own properties. Three describe the same object. One cannot be true.",
-  "s04.question.q11.sn0": "VOICE MEMOS — ARGUMENT_2340.m4a · recorded 14/11 23:40",
-  "s04.question.q11.sn1": "PROPERTIES — media recorded date · 14/03 21:14:38",
-  "s04.question.q11.sn2": "BACKUP — first seen in backup · 14/03",
-  "s04.question.q11.sn3": "PROPERTIES — size 4,402,118 bytes · unchanged since 14/03",
+  "s04.question.q11.sn0": "VOICE MEMOS — ARGUMENT_2340.m4a · recorded 12/11 23:40",
+  "s04.question.q11.sn1": "PROPERTIES — media recorded date · 12/03 21:14:38",
+  "s04.question.q11.sn2": "BACKUP — first seen in backup · 12/03",
+  "s04.question.q11.sn3": "PROPERTIES — size 4,402,118 bytes · unchanged since 12/03",
   "s04.question.q11.answers": [
     [
       "contradiction"
@@ -711,7 +714,7 @@
   "s04.mail.f_gm_160.subject": "Re: Farol — seed round",
   "s04.mail.f_gm_160.body": "I want to be straight with you about the runway, because I think you already know and are waiting to see whether I will say it. We have until",
   "s04.mail.f_gm_161.subject": "(no subject)",
-  "s04.mail.f_gm_161.body": "Vasco — I have written this four times and deleted it four times and the fact that I cannot say it to your face is the part that worries me most, so I am going to",
+  "s04.mail.f_gm_161.body": "Vasco, I have written this four times and deleted it four times. I can't say this to your face, and that worries me more than anything else. So I am going to",
   "s04.mail.f_gm_162.subject": "Re: Contrato de arrendamento",
   "s04.mail.f_gm_162.body": "Three years is a long time to promise anything. Can we do one with an option, and if the answer is no then",
   "s04.notes.folder_f_farol": "Farol",
@@ -726,7 +729,7 @@
   "s04.notes.f_note_103.title": "Battery — measured, not hoped",
   "s04.notes.f_note_103.body": "Idle, 20°C, radio down: 11 days 4 hours.\nIdle, 20°C, radio up: 9 days 1 hour.\nWorn, normal use, radio up: 8 days 6 hours.\nWorn, one trigger per day: 7 days 20 hours.\n\nWe print nine. Anybody can reproduce nine. Eleven is a number from a drawer.",
   "s04.notes.f_note_104.title": "The threshold argument",
-  "s04.notes.f_note_104.body": "Raise it and the thing is polite and useless. Lower it and it interrupts people who are fine.\n\nEverybody in this market has chosen polite. They chose it because a device that speaks up when nothing is wrong looks bad in a room full of investors, and a device that stays quiet when something is wrong looks like nothing at all.\n\nWe are choosing the one that looks bad. Write that down somewhere it cannot be quietly reversed.",
+  "s04.notes.f_note_104.body": "Raise it and the thing is polite and useless. Lower it and it interrupts people who are fine.\n\nEverybody in this market has chosen polite. They chose it for a simple reason. A device that speaks up when nothing is wrong looks bad in a room full of investors. A device that stays quiet when something is wrong looks like nothing at all.\n\nWe are choosing the one that looks bad. Write that down somewhere it cannot be quietly reversed.",
   "s04.notes.f_note_105.title": "Names we did not use",
   "s04.notes.f_note_105.block_001": "Guardião — too much",
   "s04.notes.f_note_105.block_002": "Halo — taken, twice",
@@ -753,7 +756,7 @@
   "s04.notes.f_note_112.block_003": "Pilot units stay on 0.9.2",
   "s04.notes.f_note_112.block_004": "Write the changelog properly this time",
   "s04.notes.f_note_113.title": "What Tiago's mother said",
-  "s04.notes.f_note_113.body": "\"It is for emergencies.\" And then she decides nothing is an emergency.\n\nThat is not a user problem. A product that requires somebody to classify their own situation as an emergency has already failed, because the people who need it most are exactly the people who will not do that.",
+  "s04.notes.f_note_113.body": "\"It is for emergencies.\" And then she decides nothing is an emergency.\n\nThat is not a user problem. A product that needs someone to call their own situation an emergency has already failed. The people who need it most are exactly the people who will not do that.",
   "s04.notes.f_note_114.title": "Guimarães — the seam",
   "s04.notes.f_note_114.body": "Third revision. The seam has moved twice and both times it moved to a face somebody touches.\n\nThey are not careless. They are quoting for a tool that does not have this constraint written into it, because I did not write it in. Write it in. Say \"no parting line on any user-contact surface\" in the document, not in a meeting.",
   "s04.notes.f_note_115.title": "Shopping",
@@ -906,7 +909,7 @@
   "s04.mail.f_gm_223.subject": "Revestimento dos contactos — proposta",
   "s04.mail.f_gm_223.body": "For the plating change you asked about: hard gold over nickel, minimum 0.8 microns. Tooling is unaffected. Lead time six weeks and the unit cost rises by about forty cents.",
   "s04.mail.f_gm_224.subject": "Retest — marcação confirmada",
-  "s04.mail.f_gm_224.body": "Your retest is booked for 8 December. Please deliver three samples one week beforehand. This is the final slot of the year.",
+  "s04.mail.f_gm_224.body": "Your retest is booked for 6 December. Please deliver three samples one week beforehand. This is the final slot of the year.",
   "s04.mail.f_gm_225.subject": "Concorrência — nota de mercado",
   "s04.mail.f_gm_225.body": "A competing device launched this week at four times your price point. Our read is that it is aimed at insurers rather than families, which may not be your fight.",
   "s04.mail.f_gm_226.subject": "Re: Curriculum — segunda tentativa",
@@ -970,11 +973,11 @@
   "s04.notes.f_note_206.block_004": "Sea water — two, same man",
   "s04.notes.f_note_206.block_005": "Battery lower than printed — three",
   "s04.notes.f_note_207.title": "The base unit question",
-  "s04.notes.f_note_207.body": "A man wrote asking whether it needs a telephone, because his father does not have one and will not have one.\n\nEvery competing product assumes a smartphone in the house. That assumption quietly excludes exactly the people the category claims to serve, and nobody has said so because saying so means building a base unit and a base unit is unglamorous.\n\nWe built the unglamorous thing. Lead with it.",
+  "s04.notes.f_note_207.body": "A man wrote asking whether it needs a telephone, because his father does not have one and will not have one.\n\nEvery competing product assumes a smartphone in the house. That assumption quietly excludes the very people the category claims to serve. Nobody says so, because saying so means building a base unit, and a base unit is unglamorous.\n\nWe built the unglamorous thing. Lead with it.",
   "s04.notes.f_note_208.title": "Braga — thirty units",
   "s04.notes.f_note_208.body": "Thirty is more than we have ever sent anywhere. The honest answer is that our stock is 214 enclosures and our support is two people, one of whom is me at midnight.\n\nGo and see the building. If it is two floors like São Bento we can do it. If it is four we will fail in public and the failure will be the story.",
   "s04.notes.f_note_209.title": "Not for children",
-  "s04.notes.f_note_209.body": "A teacher has asked. Tiago's daughter wore one to school and told the class she has a tracker.\n\nWe are not making one for children. Not because it would not sell — it would sell enormously — but because the moment it is on a child it stops being a way of asking for help and becomes a way of knowing where somebody is. Those are opposite products with the same components.\n\nWrite this down properly before somebody offers us money.",
+  "s04.notes.f_note_209.body": "A teacher has asked. Tiago's daughter wore one to school and told the class she has a tracker.\n\nWe are not making one for children. Not because it would not sell. It would sell enormously. But the moment it is on a child, it stops being a way to ask for help and becomes a way to know where somebody is. Those are opposite products with the same components.\n\nWrite this down properly before somebody offers us money.",
   "s04.notes.f_note_210.title": "The talk — actual notes",
   "s04.notes.f_note_210.body": "Open with the radio report that came back twice. Everybody has that drawer.\n\nThe middle is the eleven months, honestly told, including the two months where nothing happened because I was waiting for an email.\n\nDo not end on the daughter and the eleven minutes. It is true and it will work and using it to end a talk would be the cheapest thing I have ever done.",
   "s04.notes.f_note_211.title": "Stock",
@@ -1012,5 +1015,5 @@
   "s04.calendar.f_ev_206": "Mesa redonda — panel",
   "s04.calendar.f_ev_206.loc": "Lisboa",
   "s04.calendar.f_ev_207": "Stock count",
-  "s04.calendar.f_ev_208": "Retest — 8 Dec"
+  "s04.calendar.f_ev_208": "Retest — 6 Dec"
 }

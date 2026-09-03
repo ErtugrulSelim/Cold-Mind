@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../core/theme/cold_theme.dart';
 import '../../data/l10n/case_strings.dart';
 import '../../data/providers/case_providers.dart';
+import '../../data/providers/settings_providers.dart';
 import 'store.dart';
 
 /// The subscription screen.
@@ -80,7 +81,15 @@ class _PaywallScreenState extends ConsumerState<PaywallScreen> {
       if (!mounted) return;
       // False is a cancellation, not a failure: the player closed the store
       // sheet, and telling them something went wrong would be a lie.
-      if (granted) Navigator.of(context).pop(true);
+      if (granted) {
+        // Persisted here rather than re-derived from the store on every
+        // launch, because [UnconfiguredStore] has no notion of "already
+        // owns this" to ask — the moment of purchase is the only moment
+        // this app ever learns the answer.
+        await ref.read(isSubscribedProvider.notifier).grant();
+        if (!mounted) return;
+        Navigator.of(context).pop(true);
+      }
     } on StoreException catch (error) {
       if (mounted) setState(() => _failure = error.failure);
     } catch (_) {

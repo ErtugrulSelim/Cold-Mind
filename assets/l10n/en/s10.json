@@ -7,7 +7,7 @@
   "s10.board.andreas.title": "The real Andreas Solomou",
   "s10.board.andreas.sub": "41. Married, two children. A public profile he uses about twice a year, and every photograph on it has been sent to her. He has never heard of her.",
   "s10.board.family.title": "Forty of us in a house built for four",
-  "s10.board.family.sub": "Name days, christenings, Sunday at Marianna's. Nine years of photographs, and everybody is in them.",
+  "s10.board.family.sub": "Name days, christenings, Thursday at Marianna's. Seven years of photographs, and everybody is in them.",
   "s10.board.accounts.title": "Thirty-nine accounts",
   "s10.board.accounts.sub": "A wife. A doctor. A brother. A hospital administrator. Two of them are in her contacts under their own names.",
   "s10.board.money.title": "£312",
@@ -38,9 +38,9 @@
   "s10.client_chat.cc_001": "I am going to say all of this at once and quickly, because if I stop I will not start again.",
   "s10.client_chat.cc_002": "My name is Elena Christofi. For nine years I was in a relationship with a man called Andreas Solomou, who everybody calls Bobby. We were engaged in 2022. I have never met him.",
   "s10.client_chat.cc_003": "I know how that sounds. I am a paralegal. I check documents for a living. I have sat in this chair for nine years being the most careful person in every room and I did not check the only thing that mattered.",
-  "s10.client_chat.cc_004": "In March I found the real Andreas Solomou. He is married, he has two children, he lives close enough that I could have driven there any weekend of the last nine years, and he had never heard my name in his life. He was very kind about it, which was somehow the worst part of that day.",
-  "s10.client_chat.cc_005": "So somebody has been writing to me since 2017. Not one person — a wife, a doctor, a brother, a hospital. I have counted thirty-nine accounts and I am not confident that is all of them.",
-  "s10.client_chat.cc_006": "It is my phone. I am giving you my own phone, and I am going to sit here while you read it, because I have already read it and I would rather not be alone with it.",
+  "s10.client_chat.cc_004": "In March I found the real Andreas Solomou. He is married. He has two children. He lives close enough that I could have driven there any weekend of the last nine years, and he had never heard my name in his life. He was very kind about it, which was somehow the worst part of that day.",
+  "s10.client_chat.cc_005": "So somebody has been writing to me since 2017. Not one person. Not a wife, a doctor, a brother, a hospital. I have counted thirty-nine accounts and I am not confident that is all of them.",
+  "s10.client_chat.cc_006": "It is my phone. I am giving you my own phone. I am going to sit here while you read it. I have already read it, and I would rather not be alone with it.",
   "s10.client_chat.cc_007": "The police have told me there is probably no offence. My solicitor says there might be a civil claim. Before any of that I want to know who. Will you find out?",
   "s10.client_chat.cc_007.accept": "I'll find out who.",
   "s10.client_chat.cc_007.decline": "Not this one.",
@@ -54,11 +54,11 @@
   "s10.interstitial.is2_003": "Thursday is my aunt Marianna's. It has been Thursday at Marianna's since before I was born. Forty of us, no phones at the table, she takes them off you at the door like a nightclub.",
   "s10.interstitial.is2_004": "I have been in that room for nine years. Do not tell me yet. Just keep going.",
   "s10.interstitial.is3_001": "I have looked at the photographs.",
-  "s10.interstitial.is3_002": "Sixty-one family photographs on this phone since 2017 and she is in fifty-four of them, which is not strange, she is my cousin and she is at everything.",
-  "s10.interstitial.is3_003": "In fourteen of them she is holding her phone. In nine of those I am also in the frame, and in four of those I am looking at my own phone, and I know exactly what I was reading.",
+  "s10.interstitial.is3_002": "Six photographs in the family album, going back to 2019. She is in four of them. That is not strange. She is my cousin. She is at everything.",
+  "s10.interstitial.is3_003": "I am in all four of them too. Holding the baby. My arm around somebody. A plate on my knees. At the sink. My hands are full in every single one. Hers are not.",
   "s10.interstitial.is3_004": "She was eighteen when it started. I want you to finish it properly and I want you to be sure.",
   "s10.closing_chat.cl_001": "She admitted it on Tuesday. Not to me — to her mother, who rang me at half past eleven at night and could not get the sentence out.",
-  "s10.closing_chat.cl_002": "Nine years, thirty-nine accounts, and she says it started as a joke. I have decided to believe that, because the alternative is that a nineteen-year-old sat down and planned this, and I would like to keep one thing.",
+  "s10.closing_chat.cl_002": "Nine years, thirty-nine accounts, and she says it started as a joke. I have decided to believe that, because the alternative is that an eighteen-year-old sat down and planned this, and I would like to keep one thing.",
   "s10.closing_chat.cl_003": "Right. Wexley has laid out what I can do and none of it is what I want, which is for the last nine years not to have happened.",
   "s10.closing_chat.cl_004": "One. Civil claim. Harassment. It is the only thing that fits, because there is no offence in this country called pretending to be somebody for nine years. I would probably win. It would be a public judgment with both our names on it and every person we are related to would read it.",
   "s10.closing_chat.cl_005": "Two. Push the police anyway. Make them take a statement, make them open a file, make them write it down even if nothing is ever charged. It costs me nothing and buys me nothing except that it exists on a system somewhere.",
@@ -72,15 +72,15 @@
   "s10.closing_chat.cl_011.opt2": "The police file. Make it exist.",
   "s10.closing_chat.cl_011.opt3": "Thursday. Put it on the table.",
   "s10.closing_chat.cl_013": "The claim, then. Wexley will be pleased, she has been waiting for me to say it for a fortnight.",
-  "s10.closing_chat.cl_014": "I want it written down somewhere that I did not do this to be paid. I did it so that a judge would put in writing that it happened, because for nine years the only person who could confirm anything about my life was her.",
+  "s10.closing_chat.cl_014": "I want it written down somewhere that I did not do this to be paid. I did it so a judge would put in writing that it happened. For nine years, the only person who could confirm anything about my life was her.",
   "s10.closing_chat.cl_015": "The file, then. A statement, a crime number, and almost certainly nothing after that.",
-  "s10.closing_chat.cl_016": "Nia asked me why I would bother and I said because in thirty years somebody is going to do this to somebody else and there should be more than nothing in the drawer. She said that was the most paralegal sentence she had ever heard.",
+  "s10.closing_chat.cl_016": "Nia asked me why I would bother. I said: in thirty years, somebody is going to do this to somebody else. There should be more than nothing in the drawer. She said that was the most paralegal sentence she had ever heard.",
   "s10.closing_chat.cl_017": "Thursday, then. God help me.",
   "s10.closing_chat.cl_018": "If I take it to a court I hand it to strangers and I get an outcome. If I take it to that room I hand it to the only people who were actually there, and I get whatever they are. I have decided I would rather be in the room.",
   "s10.closing_chat.cl_019": "Thank you. Genuinely. You are the first person in nine years who looked at all of it and did not once ask me how I could have been so stupid.",
-  "s10.ending.civil": "The claim was issued in the September and settled eleven months later, four days before trial, for a sum neither side is permitted to state and which Elena has described in writing as 'less than the legal costs and more than I expected'.\n\nThe settlement carries an admission and a letter of apology. The letter runs to two pages. Elena has read it once.\n\nBecause it settled, there is no judgment, which is the thing she actually wanted. Her solicitor had warned her this was the likeliest outcome and she pressed on anyway, and says she would again.\n\nSophia Christofi was dismissed from the pharmacy in the November after the firm's insurers made enquiries. She lives in Swindon now. Marianna still hosts Thursday. Elena has not been since the claim was issued, and Marianna has telephoned her every single Thursday at half past eight, for eleven months, and left the same message, which is: the plate is out.\n\nThe real Andreas Solomou gave a two-paragraph witness statement confirming he does not know Elena Christofi and never has. He asked, through his solicitor, whether she was all right. Nobody had asked her that in a legal document before and she says it undid her more than the settlement did.",
-  "s10.ending.police": "Avon and Somerset took a statement over two visits totalling nine hours. The crime number exists. Nothing was ever charged.\n\nThe file records the offence considered as harassment under section 2, and records the reason for no further action as evidential: nine years of contact that the complainant, on the face of the record, welcomed and reciprocated, from accounts she was not deceived into contacting but chose to reply to. Elena has read that sentence perhaps forty times and has stopped arguing with it.\n\nWhat the file does is exist. In the third year an officer from another force rang her about a case with the same shape in Swansea — thirty-plus accounts, one operator, six years — because a search had surfaced her statement. She spoke to that woman for two hours. That call is the only outcome of this route and Elena considers it sufficient.\n\nSophia was interviewed under caution once and answered every question. Nothing followed. She is still in Bristol, still at the pharmacy, and still at Thursday. Elena is not.\n\nThe last message Elena sent was: I did the boring one. Somebody has to be in the drawer.",
-  "s10.ending.family": "She did it on the fourth Thursday in June, in her aunt's front room, with thirty-one people in it and the food already on the table.\n\nWhat happened is not fully recorded because Elena has only ever described it once. Her father stood up first. Her aunt Marianna did not speak for eleven minutes and then asked Sophia one question, in Greek, which Elena has not translated for anybody. Sophia answered it. Four people left before the answer.\n\nThere was no court, no claim, no crime number, and nothing at all in writing until Elena sat down two days later and typed it herself, for herself, and saved it in the folder with everything else.\n\nThe family split roughly as she predicted, though not along the lines she predicted. Two people she had counted on told her to let it go for her aunt's sake. Three she had barely spoken to in a decade rang her that week and have rung her since. Her father has not spoken to his sister since June and has begun to.\n\nSophia is in a supervised programme through her GP and writes to Elena about once a month. Elena does not reply and does not delete them, which she says is exactly what she did for nine years and she is aware of that and is doing it anyway.\n\nMarianna hosts Thursday. Elena goes. They have never discussed it again and both of them know the other one is not going to be the first to.",
+  "s10.ending.civil": "The claim was issued in September. It settled eleven months later, four days before trial, for a sum neither side is allowed to state. Elena has described it in writing as 'less than the legal costs and more than I expected'.\n\nThe settlement carries an admission and a letter of apology. The letter runs to two pages. Elena has read it once.\n\nBecause it settled, there is no judgment, which is the thing she actually wanted. Her solicitor had warned her this was the likeliest outcome and she pressed on anyway, and says she would again.\n\nSophia Christofi was dismissed from the pharmacy in the November after the firm's insurers made enquiries. She lives in Swindon now. Marianna still hosts Thursday. Elena has not been since the claim was issued, and Marianna has telephoned her every single Thursday at half past eight, for eleven months, and left the same message, which is: the plate is out.\n\nThe real Andreas Solomou gave a two-paragraph witness statement confirming he does not know Elena Christofi and never has. He asked, through his solicitor, whether she was all right. Nobody had asked her that in a legal document before and she says it undid her more than the settlement did.",
+  "s10.ending.police": "Avon and Somerset took a statement over two visits totalling nine hours. The crime number exists. Nothing was ever charged.\n\nThe file records the offence as harassment, considered under section 2. It gives the reason for no further action as evidential: nine years of contact that the complainant, on the face of the record, welcomed and returned. She was not tricked into contacting these accounts. She chose to reply to them. Elena has read that sentence perhaps forty times and has stopped arguing with it.\n\nWhat the file does is exist. In the third year an officer from another force rang her about a case with the same shape in Swansea — thirty-plus accounts, one operator, six years — because a search had surfaced her statement. She spoke to that woman for two hours. That call is the only outcome of this route and Elena considers it sufficient.\n\nSophia was interviewed under caution once and answered every question. Nothing followed. She is still in Bristol, still at the pharmacy, and still at Thursday. Elena is not.\n\nThe last message Elena sent was: I did the boring one. Somebody has to be in the drawer.",
+  "s10.ending.family": "She did it on the fourth Thursday in June, in her aunt's front room, with thirty-one people in it and the food already on the table.\n\nWhat happened is not fully recorded because Elena has only ever described it once. Her father stood up first. Her aunt Marianna did not speak for eleven minutes and then asked Sophia one question, in Greek, which Elena has not translated for anybody. Sophia answered it. Four people left before the answer.\n\nThere was no court, no claim, no crime number. Nothing at all in writing. Until Elena sat down two days later and typed it herself, for herself, and saved it in the folder with everything else.\n\nThe family split roughly as she predicted, though not along the lines she predicted. Two people she had counted on told her to let it go for her aunt's sake. Three she had barely spoken to in a decade rang her that week and have rung her since. Her father has not spoken to his sister since June and has begun to.\n\nSophia is in a supervised programme through her GP and writes to Elena about once a month. Elena does not reply and does not delete them, which she says is exactly what she did for nine years and she is aware of that and is doing it anyway.\n\nMarianna hosts Thursday. Elena goes. They have never discussed it again and both of them know the other one is not going to be the first to.",
   "s10.chats.b1_001": "so that was three hours. do you know how long it's been since i talked to anyone for three hours",
   "s10.chats.b1_002": "I do actually. Same.",
   "s10.chats.b1_003": "Right. Sleep. I'm on at 7.",
@@ -108,7 +108,7 @@
   "s10.chats.b1_056": "ok",
   "s10.chats.b1_057": "ok",
   "s10.chats.b1_060": "Are you awake",
-  "s10.chats.b1_061": "It's been three years since you asked me for that photograph and you have never asked again and I have never taken it and I think about that constantly.",
+  "s10.chats.b1_061": "It's been three years since you asked me for that photograph. You have never asked again. I have never taken it. I think about that constantly.",
   "s10.chats.b1_062": "Go to sleep Bobby.",
   "s10.chats.n1_001": "I don't know who you are but you need to stop messaging my husband.",
   "s10.chats.n1_002": "He told me you were separated.",
@@ -164,15 +164,15 @@
   "s10.messages.sms_012": "It's evidence. Nine o'clock Thursday.",
   "s10.messages.sms_020": "Elena it's Marianna. Please pick up the phone to me. Whatever she has done she is my daughter and you are my sister's girl and I have cooked for both of you every Thursday of your lives.",
   "s10.mail.gm_001.subject": "Re: your enquiry — account creation and access records",
-  "s10.mail.gm_001.body": "Dear Ms Christofi,\n\nFurther to the court order served on us, please find the requested records for the thirty-nine accounts listed in Schedule A.\n\nSummary of findings:\n\n  Accounts in Schedule A:              39\n  Created between:                     11/2017 and 02/2026\n  Distinct registration email domains:  2\n  Distinct recovery telephone numbers:  3\n  Distinct device identifiers:          2\n  Distinct IP ranges (residential):     1\n\nAll thirty-nine accounts were created from, and predominantly accessed from, a single residential connection in the BS5 postcode area. Two of the accounts have been accessed from a second device registered to the same connection.\n\nWe note that this pattern is not consistent with thirty-nine individuals.\n\nYours faithfully,\nDisclosure Team",
+  "s10.mail.gm_001.body": "Dear Ms Christofi,\n\nFurther to the court order served on us, please find the requested records for the thirty-nine accounts listed in Schedule A.\n\nSummary of findings:\n\n  Accounts in Schedule A:              39\n  Created between:                     03/2017 and 02/2026\n  Distinct registration email domains:  2\n  Distinct recovery telephone numbers:  3\n  Distinct device identifiers:          2\n  Distinct IP ranges (residential):     1\n\nAll thirty-nine accounts were created from, and predominantly accessed from, a single residential connection in the BS5 postcode area. Two of the accounts have been accessed from a second device registered to the same connection.\n\nWe note that this pattern is not consistent with thirty-nine individuals.\n\nYours faithfully,\nDisclosure Team",
   "s10.mail.gm_002.subject": "Chronology — v11 (do not send this to anyone)",
-  "s10.mail.gm_002.body": "COLUMNS: date | account | channel | claim made | verifiable? | verified?\n\n  Rows: 4,118\n  Date range: 09/11/2017 – 14/03/2026\n  Accounts appearing: 39\n\n  Claims capable of verification:        61\n  Claims I actually verified at the time: 0\n\nBEHAVIOURAL NOTES (added 04/2026)\n\n  1. No two accounts have ever been active in the same minute.\n  2. All accounts go silent Thursdays 19:00–21:00. No exceptions in nine years.\n  3. All accounts spell 'definately'. All of them. Every time.\n  4. No account has ever sent a photograph taken on the day it was sent.\n  5. Every call from 'Bobby' is an incoming call. In nine years I have never\n     once successfully placed a call to him that connected.\n\n  Note to self: any one of these is nothing. I have written them in one place\n  and they are not nothing.",
+  "s10.mail.gm_002.body": "COLUMNS: date | account | channel | claim made | verifiable? | verified?\n\n  Rows: 4,118\n  Date range: 09/03/2017 – 14/03/2026\n  Accounts appearing: 39\n\n  Claims capable of verification:        61\n  Claims I actually verified at the time: 0\n\nBEHAVIOURAL NOTES (added 04/2026)\n\n  1. No two accounts have ever been active in the same minute.\n  2. All accounts go silent Thursdays 19:00–21:00. No exceptions in nine years.\n  3. All accounts spell 'definately'. All of them. Every time.\n  4. No account has ever sent a photograph taken on the day it was sent.\n  5. Every call from 'Bobby' is an incoming call. In nine years I have never\n     once successfully placed a call to him that connected.\n\n  Note to self: any one of these is nothing. I have written them in one place\n  and they are not nothing.",
   "s10.mail.gm_003.subject": "Wedding — 14 March, Cardiff",
-  "s10.mail.gm_003.body": "El — you asked me to send this and I've been sitting on it for two days because I didn't want to be the one.\n\nIt's Costas and Eleni's wedding. My cousin was there. She tagged about ninety people and one of them is a consultant anaesthetist from Cardiff called Andreas Solomou, and El, it's him. It's the face. It's the same face as every photograph you have ever shown me.\n\nHe was on a dance floor in Cardiff on the 14th of March at half past nine at night.\n\nI'm sorry. Ring me whenever, I don't care what time.\n\nNia x",
+  "s10.mail.gm_003.body": "El, you asked me to send this. I have been sitting on it for two days. I didn't want to be the one.\n\nIt's Costas and Eleni's wedding. My cousin was there. She tagged about ninety people and one of them is a consultant anaesthetist from Cardiff called Andreas Solomou, and El, it's him. It's the face. It's the same face as every photograph you have ever shown me.\n\nHe was on a dance floor in Cardiff on the 14th of March at half past nine at night.\n\nI'm sorry. Ring me whenever, I don't care what time.\n\nNia x",
   "s10.mail.gm_004.subject": "Harassment — preliminary advice",
-  "s10.mail.gm_004.body": "Elena,\n\nAs promised, the short version in writing.\n\nThere is no criminal offence in England and Wales of impersonating a person online in order to conduct a relationship. Fraud requires a gain or a loss and £312 over nine years will not carry it. Malicious communications requires the communications to be grossly offensive or false with intent to cause distress — arguable, but the messages you received were, on their face, affectionate.\n\nWhat fits is harassment: a course of conduct, over a period, causing alarm or distress, which the perpetrator knew or ought to have known amounted to harassment. Both criminal (s.2) and civil (s.3) routes exist. The civil route does not require the police or the CPS to be interested, which on the facts is likely to be the deciding factor.\n\nI want to be straight with you about the cost of the civil route, and I do not mean the fees. It will be public, it will carry both names, and every member of your family will read it.\n\nCome in Thursday. Bring the chronology.\n\nHannah Wexley",
+  "s10.mail.gm_004.body": "Elena,\n\nAs promised, the short version in writing.\n\nThere is no criminal offence in England and Wales of impersonating a person online in order to conduct a relationship. Fraud requires a gain or a loss and £312 over nine years will not carry it. Malicious communications requires the messages to be grossly offensive, or false with intent to cause distress. That could be argued. But the messages you received were, on their face, affectionate.\n\nWhat fits is harassment: a course of conduct, over a period, causing alarm or distress, which the perpetrator knew or ought to have known amounted to harassment. Both criminal (s.2) and civil (s.3) routes exist. The civil route does not require the police or the CPS to be interested, which on the facts is likely to be the deciding factor.\n\nI want to be straight with you about the cost of the civil route, and I do not mean the fees. It will be public, it will carry both names, and every member of your family will read it.\n\nCome in Thursday. Bring the chronology.\n\nHannah Wexley",
   "s10.mail.gm_005.subject": "(no subject)",
-  "s10.mail.gm_005.body": "I have started this eleven times.\n\nI am not going to explain it because there is no explanation that is not an excuse, and I have read enough of my own excuses for one lifetime.\n\nIt started as a joke. I was eighteen and you were sad about Michalis and I made an account for about a week to make you laugh and then you were happy and I did not know how to stop being the reason.\n\nEvery year it got harder to stop and easier to keep going and I know exactly how that sounds.\n\nI am not asking you for anything. I am telling you because Mum asked me a question on Tuesday and I could not lie to her face, which I want you to notice, because I could always lie to yours.\n\nS.",
+  "s10.mail.gm_005.body": "I have started this eleven times.\n\nI am not going to explain it. There is no explanation that is not an excuse. I have read enough of my own excuses for one lifetime.\n\nIt started as a joke. I was eighteen and you were sad about Michalis and I made an account for about a week to make you laugh and then you were happy and I did not know how to stop being the reason.\n\nEvery year it got harder to stop and easier to keep going and I know exactly how that sounds.\n\nI am not asking you for anything. I am telling you because Mum asked me a question on Tuesday and I could not lie to her face, which I want you to notice, because I could always lie to yours.\n\nS.",
   "s10.maps.loc_001.name": "Home",
   "s10.maps.loc_001.address": "Chelsea Road, Easton, Bristol",
   "s10.maps.loc_002.name": "Thia Marianna",
@@ -220,7 +220,7 @@
   "s10.notes.note_002.block_006": "(Everything I have screenshotted since March is in the album called everything, and the note in the other folder. Both 0911. I did not have to look that up, which is its own small piece of evidence about me.)",
   "s10.notes.note_003.title": "—",
   "s10.notes.note_003.block_001": "Written at four in the morning on the twentieth of March, which I am putting at the top so that later I know I was not calm.",
-  "s10.notes.note_003.block_002": "I am writing this down because in about a year I am going to want to know exactly what I thought on the day I found out, and I do not trust myself to remember it kindly.",
+  "s10.notes.note_003.block_002": "I am writing this down because in about a year, I am going to want to know exactly what I thought on the day I found out. I do not trust myself to remember it kindly.",
   "s10.notes.note_003.block_003": "What I feel is not grief for him. He was never there, so there is nothing to grieve. What I feel is that somebody watched me for nine years the way you watch a programme.",
   "s10.notes.note_003.block_004": "And that they were in the room for a lot of it. Sitting on the arm of the sofa. Asking me how he was.",
   "s10.notes.note_003.block_005": "I have not written the name yet. I will when I am sure. Being sure is the only thing I have left that is mine.",
@@ -241,9 +241,9 @@
   "s10.payments.tx_007.note": "Train — Cardiff",
   "s10.cloud.cfo_001": "everything",
   "s10.cloud.cf_001.name": "chronology_v11.xlsx",
-  "s10.cloud.cf_001.body": "CHRONOLOGY — 09/11/2017 to 14/03/2026\n\nRows: 4,118\nAccounts appearing: 39\nChannels: Chats, Feed DM, SMS, voice\n\nCLAIMS CAPABLE OF VERIFICATION AT THE TIME: 61\nCLAIMS VERIFIED AT THE TIME: 0\n\nBEHAVIOURAL NOTES (added April 2026)\n  1. No two accounts have ever been active within the same minute.\n  2. All accounts silent Thursdays 19:00–21:00. No exceptions in nine years.\n  3. All accounts spell 'definately'. Every account. Every time.\n  4. No account has ever sent a photograph taken the day it was sent.\n  5. Every call from 'Bobby' is an incoming call. Nine years, no exceptions.\n\nAny one of these is nothing.",
+  "s10.cloud.cf_001.body": "CHRONOLOGY — 09/03/2017 to 14/03/2026\n\nRows: 4,118\nAccounts appearing: 39\nChannels: Chats, Feed DM, SMS, voice\n\nCLAIMS CAPABLE OF VERIFICATION AT THE TIME: 61\nCLAIMS VERIFIED AT THE TIME: 0\n\nBEHAVIOURAL NOTES (added April 2026)\n  1. No two accounts have ever been active within the same minute.\n  2. All accounts silent Thursdays 19:00–21:00. No exceptions in nine years.\n  3. All accounts spell 'definately'. Every account. Every time.\n  4. No account has ever sent a photograph taken the day it was sent.\n  5. Every call from 'Bobby' is an incoming call. Nine years, no exceptions.\n\nAny one of these is nothing.",
   "s10.cloud.cf_002.name": "schedule_A_accounts.pdf",
-  "s10.cloud.cf_002.body": "SCHEDULE A — THIRTY-NINE ACCOUNTS\n\n  a.solomou.md            Feed   created 11/2017\n  bobby.solomou           Facebook    created 11/2017\n  nadia_solomou_          Feed   created 03/2019\n  nadiasolomou81          Facebook    created 03/2019\n  dr.r.ferris             Chats    created 06/2021\n  solomou.c (brother)     Feed   created 08/2021\n  rfh.admin.cardio        Email       created 06/2021\n  ...\n\n  39 accounts.\n  2 registration email domains.\n  3 recovery telephone numbers.\n  2 device identifiers.\n  1 residential IP range — BS5.",
+  "s10.cloud.cf_002.body": "SCHEDULE A — THIRTY-NINE ACCOUNTS\n\n  a.solomou.md            Feed   created 03/2017\n  bobby.solomou           Facebook    created 03/2017\n  nadia_solomou_          Feed   created 03/2019\n  nadiasolomou81          Facebook    created 03/2019\n  dr.r.ferris             Chats    created 06/2021\n  solomou.c (brother)     Feed   created 08/2021\n  rfh.admin.cardio        Email       created 06/2021\n  ...\n\n  39 accounts.\n  2 registration email domains.\n  3 recovery telephone numbers.\n  2 device identifiers.\n  1 residential IP range — BS5.",
   "s10.cloud.cf_003.name": "reasons.txt",
   "s10.cloud.cf_003.body": "Every reason given, in nine years, for why there could not be a video call.\n\nCounted: 468.\nDistinct: 11.\nRepeated across accounts: 11 of 11.\n\nThe eleven reasons are given by Bobby, by his brother, by Nadia and, on two\noccasions in 2021, by a consultant cardiologist.",
   "s10.cloud.cf_004.name": "andreas_thread.pdf",
@@ -251,18 +251,18 @@
   "s10.cloud.cf_005.name": "thursday.csv",
   "s10.cloud.cf_005.body": "ACCOUNT ACTIVITY — THURSDAYS 19:00–21:00 (protected)\n\nWeeks in period: 462\nThursdays with any activity from any Schedule A account: 0\n\nWeeks in period with activity in every other 2-hour window: 462\n\nThere is no other two-hour window in the week, on any day, with a zero.",
   "s10.memos.vm_001.title": "9 Nov",
-  "s10.memos.vm_001.transcript": "It's me. I know it's late. I'm not going to keep you, I just wanted to say the thing I couldn't say on the phone with people around, which is that today is nine years since the people-you-may-know message, and I have counted every one of them. Right. Go to sleep. I'll ring you tomorrow at the usual.",
+  "s10.memos.vm_001.transcript": "It's me. I know it's late. I'm not going to keep you. I just wanted to say the thing I couldn't say on the phone with people around. Today is nine years since the people-you-may-know message. I have counted every one of them. Right. Go to sleep. I'll ring you tomorrow at the usual.",
   "s10.memos.vm_002.title": "—",
-  "s10.memos.vm_002.transcript": "It is quarter to four in the morning on the twentieth of March and I am recording this because I want to know later what my own voice sounded like tonight. [pause] I am fine. That is the strange part. I keep waiting to fall apart about a man and it is not happening, because there was no man. What I keep getting instead is small things. I told her about the miscarriage before I told my mother. She was in the kitchen when I did it. She made me tea and then she went home and wrote to me as him about it. [pause] I have not said that out loud before and I am not going to again.",
+  "s10.memos.vm_002.transcript": "It is quarter to four in the morning on the twentieth of March. I am recording this because I want to know later what my own voice sounded like tonight. [pause] I am fine. That is the strange part. I keep waiting to fall apart about a man and it is not happening, because there was no man. What I keep getting instead is small things. I told her about the miscarriage before I told my mother. She was in the kitchen when I did it. She made me tea and then she went home and wrote to me as him about it. [pause] I have not said that out loud before and I am not going to again.",
   "s10.clock.al_001": "Work",
   "s10.clock.al_002": "Thursday",
   "s10.lock.step_001.hint": "Her own note gives the album code outright: the day he first messaged her, day and month, four digits.",
   "s10.question.q01.title": "Nine years",
   "s10.question.q01.question": "Across nine years and thousands of hours of contact, there is one ordinary thing that never once happened between them. What?",
-  "s10.question.q01.opt0": "Open Chats",
-  "s10.question.q01.opt1": "Read the thread from 2019 onward",
-  "s10.question.q01.opt2": "Open her note called 'Reasons'",
-  "s10.question.q01.opt3": "Check the call log",
+  "s10.question.q01.opt0": "A photograph together",
+  "s10.question.q01.opt1": "A birthday card",
+  "s10.question.q01.opt2": "A video call",
+  "s10.question.q01.opt3": "A shared holiday",
   "s10.question.q01.answers": [
     [
       "video"
@@ -284,11 +284,11 @@
     ]
   ],
   "s10.question.q02.title": "Seventy kilometres",
-  "s10.question.q02.question": "Every photograph she was ever sent belongs to a real man who has an ordinary public profile and uses it twice a year. Where does he actually live?",
-  "s10.question.q02.opt0": "Open Feed",
-  "s10.question.q02.opt1": "Open the thread with the real account",
-  "s10.question.q02.opt2": "Read the message from Nia",
-  "s10.question.q02.opt3": "Check Maps",
+  "s10.question.q02.question": "Every photograph she was sent belongs to a real man with an ordinary public profile. Where does he actually live?",
+  "s10.question.q02.opt0": "Manchester",
+  "s10.question.q02.opt1": "Cardiff",
+  "s10.question.q02.opt2": "Nicosia",
+  "s10.question.q02.opt3": "London",
   "s10.question.q02.answers": [
     [
       "cardiff"
@@ -304,11 +304,11 @@
     ]
   ],
   "s10.question.q03.title": "The call log",
-  "s10.question.q03.question": "There are thousands of calls in this phone from that number. One thing is true of every single one of them, in nine years, without exception. What?",
-  "s10.question.q03.opt0": "Open Phone",
-  "s10.question.q03.opt1": "Look at the direction of every call",
-  "s10.question.q03.opt2": "Read the chronology",
-  "s10.question.q03.opt3": "Open Chats",
+  "s10.question.q03.question": "There are thousands of calls from that number over nine years. One thing is true of every one of them. What?",
+  "s10.question.q03.opt0": "They were all short",
+  "s10.question.q03.opt1": "Every call was incoming",
+  "s10.question.q03.opt2": "They were all at night",
+  "s10.question.q03.opt3": "They were all from the same mast",
   "s10.question.q03.answers": [
     [
       "incoming"
@@ -328,19 +328,19 @@
   ],
   "s10.question.q04.title": "Four months",
   "s10.question.q04.question": "In 2019 he vanished for four months and came back with an explanation that she accepted. What was he supposedly in?",
-  "s10.question.q04.opt0": "Open Chats",
-  "s10.question.q04.opt1": "Read the messages from August 2019",
-  "s10.question.q04.opt2": "Check the search history",
-  "s10.question.q04.opt3": "Read the chronology",
+  "s10.question.q04.opt0": "A prison sentence",
+  "s10.question.q04.opt1": "Witness protection",
+  "s10.question.q04.opt2": "A tour of duty abroad",
+  "s10.question.q04.opt3": "A psychiatric ward",
   "s10.question.q04.answers": [
     [
       "witness"
     ],
     [
-      "protection"
+      "protect"
     ],
     [
-      "witness protection"
+      "witness protect"
     ],
     [
       "tanik"
@@ -350,7 +350,7 @@
     ]
   ],
   "s10.question.q05.title": "One week in March 2021",
-  "s10.question.q05.question": "Four things she was told in the same seven days, by four different accounts. Three of them can all be true at once. Tap the one that cannot sit with the others.",
+  "s10.question.q05.question": "Four accounts told her four things in the same week. Three of them can be true at once. Tap the one that cannot.",
   "s10.question.q05.sn0": "Bobby: 'On the ward till Friday, they've moved me to the cardiac unit, no phones past the doors.'",
   "s10.question.q05.sn1": "Dr Ferris: 'He's stable. He has asked that you don't come to the hospital and I'd normally push back on that.'",
   "s10.question.q05.sn2": "Nadia: 'He rang me from the car this afternoon. He sounded terrible. Whatever you said to him, don't.'",
@@ -374,10 +374,10 @@
   ],
   "s10.question.q06.title": "His wife",
   "s10.question.q06.question": "For three years a woman messaged her — first furious, then apologetic, finally almost kind. She is one of the thirty-nine. What is her name?",
-  "s10.question.q06.opt0": "Open Chats",
-  "s10.question.q06.opt1": "Open the thread labelled 'do not reply'",
-  "s10.question.q06.opt2": "Check the contacts",
-  "s10.question.q06.opt3": "Open Schedule A",
+  "s10.question.q06.opt0": "Rachel Ferris",
+  "s10.question.q06.opt1": "Nadia Solomou",
+  "s10.question.q06.opt2": "Hannah Wexley",
+  "s10.question.q06.opt3": "Nia Okonjo",
   "s10.question.q06.answers": [
     [
       "nadia"
@@ -394,10 +394,10 @@
   ],
   "s10.question.q07.title": "Two hours a week",
   "s10.question.q07.question": "Every one of the thirty-nine accounts goes completely silent in the same two-hour window every week, for nine years, without a single exception. Which day?",
-  "s10.question.q07.opt0": "Open Files",
-  "s10.question.q07.opt1": "Open thursday.csv",
-  "s10.question.q07.opt2": "Read her note about it",
-  "s10.question.q07.opt3": "Check the calendar",
+  "s10.question.q07.opt0": "Sunday",
+  "s10.question.q07.opt1": "Thursday",
+  "s10.question.q07.opt2": "Wednesday",
+  "s10.question.q07.opt3": "Monday",
   "s10.question.q07.answers": [
     [
       "thursday"
@@ -416,11 +416,11 @@
     ]
   ],
   "s10.question.q08.title": "One thing, no explanation",
-  "s10.question.q08.question": "In 2023 she asked for a single thing that would have ended all of it in ten seconds. She never asked again and it never came. What did she ask him to hold?",
-  "s10.question.q08.opt0": "Open Photos",
-  "s10.question.q08.opt1": "Open the screenshot she kept",
-  "s10.question.q08.opt2": "Read the Chats thread",
-  "s10.question.q08.opt3": "Check the chronology",
+  "s10.question.q08.question": "In 2023 she asked him to send a photograph of himself that could not be an old one. What did she ask him to hold up in it?",
+  "s10.question.q08.opt0": "A photograph of his hands",
+  "s10.question.q08.opt1": "A newspaper",
+  "s10.question.q08.opt2": "His passport",
+  "s10.question.q08.opt3": "A handwritten note",
   "s10.question.q08.answers": [
     [
       "newspaper"
@@ -439,11 +439,11 @@
     ]
   ],
   "s10.question.q09.title": "14 March",
-  "s10.question.q09.question": "On the day she was told he was in a London hospital having a defibrillator fitted, the real man was somewhere else, photographed, tagged and public. Where was he?",
-  "s10.question.q09.opt0": "Open Mail",
-  "s10.question.q09.opt1": "Read the message from Nia",
-  "s10.question.q09.opt2": "Open the real account",
-  "s10.question.q09.opt3": "Check the chronology",
+  "s10.question.q09.question": "She was told he was in a London hospital that day. The real man was somewhere else, photographed and tagged. Where?",
+  "s10.question.q09.opt0": "At a football match",
+  "s10.question.q09.opt1": "At a wedding",
+  "s10.question.q09.opt2": "On holiday in Spain",
+  "s10.question.q09.opt3": "At his own birthday party",
   "s10.question.q09.answers": [
     [
       "wedding"
@@ -462,11 +462,11 @@
     ]
   ],
   "s10.question.q10.title": "Three hundred and twelve pounds",
-  "s10.question.q10.question": "In nine years she sent money three times and the total is £312, which is the strongest evidence in the file that this was never a fraud. What was the largest of the three for?",
-  "s10.question.q10.opt0": "Open Payments",
-  "s10.question.q10.opt1": "Read the three references",
-  "s10.question.q10.opt2": "Check the chronology",
-  "s10.question.q10.opt3": "Open Mail",
+  "s10.question.q10.question": "She sent money three times in nine years, £312 in total. What was the largest of the three for?",
+  "s10.question.q10.opt0": "A train ticket",
+  "s10.question.q10.opt1": "Hospital parking",
+  "s10.question.q10.opt2": "A taxi fare",
+  "s10.question.q10.opt3": "Flowers",
   "s10.question.q10.answers": [
     [
       "parking"
@@ -482,11 +482,11 @@
     ]
   ],
   "s10.question.q11.title": "The tell",
-  "s10.question.q11.question": "Thirty-nine people cannot share a habit. One of these accounts' habits is the one no group of thirty-nine could ever have. It is a single word, and every account gets it wrong the same way. What kind of mistake is it?",
-  "s10.question.q11.opt0": "Open Files",
-  "s10.question.q11.opt1": "Read the behavioural notes in the chronology",
-  "s10.question.q11.opt2": "Compare the threads side by side",
-  "s10.question.q11.opt3": "Open Schedule A",
+  "s10.question.q11.question": "One word appears in all thirty-nine accounts, wrong the same way every time. Thirty-nine people could not share that. What kind of mistake is it?",
+  "s10.question.q11.opt0": "The same greeting",
+  "s10.question.q11.opt1": "A spelling mistake",
+  "s10.question.q11.opt2": "The same emoji",
+  "s10.question.q11.opt3": "The same time of day",
   "s10.question.q11.answers": [
     [
       "spelling"
@@ -508,7 +508,7 @@
     ]
   ],
   "s10.question.q12.title": "Four streets away",
-  "s10.question.q12.question": "Thirty-nine accounts, one residential connection, one postcode. There is exactly one person who was inside every Thursday, at every christening, and in fifty-four of the sixty-one family photographs on this phone. Who?",
+  "s10.question.q12.question": "Thirty-nine accounts, one connection, one postcode. One person was there every Thursday and in most of the family photographs. Who?",
   "s10.question.q12.opt0": "Nia Okonjo",
   "s10.question.q12.opt1": "Sophia Christofi",
   "s10.question.q12.opt2": "Marianna Christofi",
@@ -534,11 +534,11 @@
     ]
   ],
   "s10.question.q13.title": "Look again",
-  "s10.question.q13.question": "Now go back through the family album with that in your head. In fourteen of those photographs she is doing the same thing, and in nine of them Elena is in the frame doing it too. What is in her hand?",
-  "s10.question.q13.opt0": "Open Photos",
-  "s10.question.q13.opt1": "Open the album called Family",
-  "s10.question.q13.opt2": "Look at what she is holding, not at her face",
-  "s10.question.q13.opt3": "Check the chronology",
+  "s10.question.q13.question": "Open the Family album and read the four photographs she is in, from 2019 to 2025. In every one of them her hands are doing the same thing. What is she holding?",
+  "s10.question.q13.opt0": "A cigarette",
+  "s10.question.q13.opt1": "A glass of wine",
+  "s10.question.q13.opt2": "Her phone",
+  "s10.question.q13.opt3": "Her handbag",
   "s10.question.q13.answers": [
     [
       "phone"
@@ -557,11 +557,11 @@
     ]
   ],
   "s10.question.q14.title": "The eleventh attempt",
-  "s10.question.q14.question": "Her explanation, when it finally came, was five paragraphs and refused to be an explanation. She names what it was at the start, before it became nine years. What?",
-  "s10.question.q14.opt0": "Open Mail",
-  "s10.question.q14.opt1": "Read the message with no subject",
-  "s10.question.q14.opt2": "Play her voice note",
-  "s10.question.q14.opt3": "Check the messages",
+  "s10.question.q14.question": "Her explanation came at last, and refused to be one. She names what it was at the start, before it became nine years. What?",
+  "s10.question.q14.opt0": "An experiment",
+  "s10.question.q14.opt1": "A joke",
+  "s10.question.q14.opt2": "A dare",
+  "s10.question.q14.opt3": "A mistake",
   "s10.question.q14.answers": [
     [
       "joke"
@@ -583,11 +583,11 @@
     ]
   ],
   "s10.question.q15.title": "What it is called",
-  "s10.question.q15.question": "There is no offence in England and Wales of being somebody else for nine years. Her solicitor has found the one thing that fits, and it is the reason the civil route exists at all. What is it?",
-  "s10.question.q15.opt0": "Open Mail",
-  "s10.question.q15.opt1": "Read the preliminary advice",
-  "s10.question.q15.opt2": "Check the search history",
-  "s10.question.q15.opt3": "Open Files",
+  "s10.question.q15.question": "Being somebody else for nine years is not an offence here. Her solicitor found the one thing that fits. What is it?",
+  "s10.question.q15.opt0": "Fraud by false representation",
+  "s10.question.q15.opt1": "Harassment",
+  "s10.question.q15.opt2": "Malicious communications",
+  "s10.question.q15.opt3": "Defamation",
   "s10.question.q15.answers": [
     [
       "harass"
@@ -754,7 +754,7 @@
   "s10.chats.fr2_101": "Ms Christofi — Dr Ferris. He's asked me to let you know the results were reassuring. Nothing further needed today.",
   "s10.chats.fr2_102": "Thank you doctor. Can I ask what the plan is.",
   "s10.chats.fr2_103": "Medication, review in six months, and less of whatever is keeping him awake. He will definately tell you it is work. It is not only work.",
-  "s10.chats.fr2_110": "A short note as he asked. Bloods are stable, device is behaving, and he is being an appalling patient, which I gather is normal.",
+  "s10.chats.fr2_110": "A short note as he asked. Bloods are stable. Device is behaving. He is being an appalling patient, which I gather is normal.",
   "s10.chats.fr2_111": "Dr Ferris — is it usual for a consultant to message a patient's partner like this? I'm not being rude. I've started asking questions I should have asked years ago.",
   "s10.chats.fr2_112": "It is not usual. He asked and I agreed, and I can see how that looks written down. If you would rather I stopped, say so and I will.",
   "s10.messages.f_sms_101": "Elena love. Your aunt says you were quiet Thursday. I'm not asking, I'm reporting. Dad.",
@@ -778,7 +778,7 @@
   "s10.messages.f_sms_145": "Everything you have already got, in the order you already have it. Do not tidy it. Tidy is what a defendant does.",
   "s10.messages.f_sms_146": "The provider has complied with the order in full. Thirty-nine accounts, and the technical picture is exactly what your notes said it would be.",
   "s10.messages.f_sms_147": "So it's her.",
-  "s10.messages.f_sms_148": "It is. I am sorry. Come in on Thursday morning — deliberately the morning, so that the rest of that day is yours to do what you like with.",
+  "s10.messages.f_sms_148": "It is. I am sorry. Come in on Thursday morning. I mean the morning, on purpose, so the rest of that day is yours to do what you like with.",
   "s10.mail.f_gm_101.subject": "Client care letter — Christofi",
   "s10.mail.f_gm_101.body": "Dear Elena,\n\nAs discussed, this letter sets out the basis on which we are instructed.\n\nWe are instructed on a civil claim under the Protection from Harassment Act 1997. We are not instructed in relation to any criminal complaint. I have explained why and you told me you had already worked it out yourself, which I do not doubt.\n\nOur charging rate is £280 per hour. I have capped the first stage at £1,500 and I will tell you before we go past it.\n\nHannah Wexley",
   "s10.mail.f_gm_102.subject": "Invoice 4471 — first stage",
@@ -786,7 +786,7 @@
   "s10.mail.f_gm_103.subject": "Next steps",
   "s10.mail.f_gm_103.body": "Elena,\n\nWe now have the technical picture. Before you decide anything, three things you should know and none of them is advice:\n\n1. A claim is a public document. Her name will be in it.\n2. There is no version where this is resolved quickly.\n3. Not bringing one is a decision you are allowed to make and I will not think less of you.\n\nYou do not have to tell me on Thursday. You do not have to tell me this month.",
   "s10.mail.f_gm_104.subject": "Your data download is ready",
-  "s10.mail.f_gm_104.body": "The copy of your information you requested is ready to download. The link expires in 14 days.\n\n  Messages: 61,204\n  Calls logged: 3,118\n  Date range: 09/11/2017 – 19/03/2026",
+  "s10.mail.f_gm_104.body": "The copy of your information you requested is ready to download. The link expires in 14 days.\n\n  Messages: 61,204\n  Calls logged: 3,118\n  Date range: 09/03/2017 – 19/03/2026",
   "s10.mail.f_gm_105.subject": "Account report — outcome",
   "s10.mail.f_gm_105.body": "Thank you for your report.\n\nWe have reviewed the accounts you reported and taken action where our policies were breached. We are not able to tell you what action was taken.\n\nWe know this is frustrating. This mailbox is not monitored.",
   "s10.mail.f_gm_106.subject": "New sign-in to your account",
@@ -800,21 +800,21 @@
   "s10.mail.f_gm_110.subject": "Eight years — thank you",
   "s10.mail.f_gm_110.body": "Dear Elena,\n\nCongratulations on eight years with the firm.\n\nThe partners have asked me to pass on that the family team would not function without you and that the Rahman bundle is still spoken about in supervision as an example of how it should be done.",
   "s10.mail.f_gm_111.subject": "the Rahman bundle (and other things)",
-  "s10.mail.f_gm_111.body": "El,\n\nYou left the office at 4 and you didn't say goodbye, which you have never done in eight years, so I am writing you an email like a Victorian.\n\nI am not going to ask how you are. Here is what I have done instead: I have taken the Ferrier hearing off you and told Marchbank it was a diary clash, and I have put a key to mine in the usual envelope in your top drawer.\n\nUse it or don't. It's a key, it isn't a summons.\n\nN x",
+  "s10.mail.f_gm_111.body": "El,\n\nYou left the office at 4 and didn't say goodbye. You have never done that in eight years. So I am writing you an email like a Victorian.\n\nI am not going to ask how you are. Here is what I have done instead: I have taken the Ferrier hearing off you and told Marchbank it was a diary clash, and I have put a key to mine in the usual envelope in your top drawer.\n\nUse it or don't. It's a key, it isn't a summons.\n\nN x",
   "s10.mail.f_gm_112.subject": "Membership renewal — 2026",
   "s10.mail.f_gm_112.body": "Your membership renews on 1 February. Your CPD record for the year is complete.\n\nAs a paralegal member you may now apply for the Chartered route. Applications open in March.",
   "s10.mail.f_gm_113.subject": "Council Tax 2026/27",
   "s10.mail.f_gm_113.body": "Your bill for the year is £2,020.80, payable in ten instalments from April. Single person discount has been applied.",
   "s10.mail.f_gm_114.subject": "Thank you for contacting us",
-  "s10.mail.f_gm_114.body": "Thank you for getting in touch.\n\nWhat you have described — a relationship conducted entirely through a person who was not who they said they were, over many years — is something we hear about more often than people imagine, and it is not a category of person it happens to.\n\nOur line is open 24 hours. You do not have to have decided anything before you ring, and you can ring and say nothing.",
+  "s10.mail.f_gm_114.body": "Thank you for getting in touch.\n\nWhat you have described is a relationship conducted entirely through a person who was not who they said they were, over many years. We hear about this more often than people imagine. There is no category of person it happens to.\n\nOur line is open 24 hours. You do not have to have decided anything before you ring, and you can ring and say nothing.",
   "s10.mail.f_gm_115.subject": "From Andreas Solomou (the actual one)",
   "s10.mail.f_gm_115.body": "Elena,\n\nI've moved this to email because I kept writing four lines and deleting them.\n\nI have spent five days looking at photographs of my own face and trying to work out what to say to you. Some of them I remember taking. One is from my sister's kitchen in 2016. One is from a conference badge photo I hated so much I asked them to reprint it.\n\nI am so sorry. I know that is a stupid thing for me to be sorry about.\n\nYou said on the phone that you kept apologising to me and I want to say plainly: you have nothing to apologise for and I am not the injured party here. I lost some photographs. You lost nine years.\n\nAndreas",
   "s10.mail.f_gm_116.subject": "Re: no subject",
-  "s10.mail.f_gm_116.body": "Elena,\n\nOf course I'll give a statement. Whatever your solicitor needs and in whatever form.\n\nOne thing I want to say and then I'll let you get on with it.\n\nYou wrote that you feel stupid. In nine years nobody ever sent you a photograph taken on the day it was sent, and you noticed, and you wrote it down in a spreadsheet in 2021, and then you talked yourself out of it. That is not stupidity. That is somebody being worked on by a person who knew exactly which of your kindnesses to use.\n\nAndreas",
+  "s10.mail.f_gm_116.body": "Elena,\n\nOf course I'll give a statement. Whatever your solicitor needs and in whatever form.\n\nOne thing I want to say and then I'll let you get on with it.\n\nYou wrote that you feel stupid. In nine years, nobody ever sent you a photograph taken on the day it was sent. You noticed. You wrote it down in a spreadsheet in 2021. Then you talked yourself out of it. That is not stupidity. That is somebody being worked on by a person who knew exactly which of your kindnesses to use.\n\nAndreas",
   "s10.mail.f_gm_131.subject": "Data request",
   "s10.mail.f_gm_131.body": "I am requesting a copy of all information you hold on my account, including message metadata and call logs, under Article 15.\n\nI am aware this normally takes a month. I am asking anyway, at five in the morning, because I cannot do anything else.\n\nE. Christofi",
   "s10.mail.f_gm_132.subject": "Report — 39 accounts",
-  "s10.mail.f_gm_132.body": "I am reporting thirty-nine accounts, listed below.\n\nThey are all operated by one person. I know this because they have never once been active in the same minute, they are all silent for the same two hours every week, and they all make the same spelling mistake.\n\nI am not expecting you to act on any of that. I am sending it so that it has been sent.\n\nE. Christofi",
+  "s10.mail.f_gm_132.body": "I am reporting thirty-nine accounts, listed below.\n\nThey are all operated by one person. I know this because they have never once been active in the same minute. They are all silent for the same two hours every week, and they all make the same spelling mistake.\n\nI am not expecting you to act on any of that. I am sending it so that it has been sent.\n\nE. Christofi",
   "s10.mail.f_gm_133.subject": "Instruction",
   "s10.mail.f_gm_133.body": "Ms Wexley,\n\nI would like to instruct you. I have read the client care letter and I understand the cap and what happens after it.\n\nOne condition, which I need in writing. If at any point you think I am doing this to hurt her rather than to end it, I want you to tell me, and I want you to tell me in those words.\n\nElena Christofi",
   "s10.mail.f_gm_134.subject": "Re: the Rahman bundle (and other things)",
@@ -822,11 +822,11 @@
   "s10.mail.f_gm_135.subject": "Statement",
   "s10.mail.f_gm_135.body": "Andreas,\n\nThank you. My solicitor will write to you properly.\n\nI have one thing to ask and it is not for the claim. When you had that badge photograph reprinted, what did you have for lunch, or what was the weather, or anything at all that was actually happening that day.\n\nI have carried that photograph on a phone for nine years and I would like one true fact to sit behind it.\n\nElena",
   "s10.mail.f_gm_136.subject": "(no subject)",
-  "s10.mail.f_gm_136.body": "Sophia,\n\nI read your five paragraphs.\n\nI am not answering them yet. I am writing to tell you that I read them, because you will be sitting there wondering and I have decided that I am not going to be a person who uses silence as a weapon, even now, even on you.\n\nDon't write again until I do.\n\nElena",
+  "s10.mail.f_gm_136.body": "Sophia,\n\nI read your five paragraphs.\n\nI am not answering them yet. I am writing to tell you that I read them. You will be sitting there wondering. I have decided I am not going to be a person who uses silence as a weapon. Not even now. Not even on you.\n\nDon't write again until I do.\n\nElena",
   "s10.mail.f_gm_141.subject": "(no subject)",
   "s10.mail.f_gm_141.body": "You asked me on the 8th of September 2020 whether I would be happier with somebody who was just here.\n\nI have gone back and found it. It is at twenty past eight in the evening and you sent it from your bedroom in a house I have eaten in every Thursday of my life.\n\nI have read it about forty times now and I cannot decide whether it was cruelty or whether it was you trying to stop, and I have realised that I am never going to be able to tell, and that not being able to tell is the thing I am actually going to have to",
   "s10.mail.f_gm_142.subject": "(no subject)",
-  "s10.mail.f_gm_142.body": "Bobby,\n\nI know. I know exactly what I am doing, writing to an address that is a girl in Fishponds with a laptop.\n\nBut you are the person I told about my mother, and about the miscarriage, and about the thing with Dad and the shop, and there is nine years of a person here even if there was never a man, and I do not know where to put him.\n\nWhere do I put you. That is the whole email. Where do I put",
+  "s10.mail.f_gm_142.body": "Bobby,\n\nI know. I know exactly what I am doing, writing to an address that is a girl in Fishponds with a laptop.\n\nBut you are the person I told about my mother. About the miscarriage. About the thing with Dad and the shop. There are nine years of a person here, even if there was never a man. I do not know where to put him.\n\nWhere do I put you. That is the whole email. Where do I put",
   "s10.mail.f_gm_143.subject": "(no subject)",
   "s10.mail.f_gm_143.body": "Marianna,\n\nI am not coming Thursday and I want to explain why in a way that does not make you choose.\n\nIt is not that I cannot look at her. I can look at her, I did it for nine years without knowing and I could probably do it now.\n\nIt is the bowl by the door. I cannot walk past that bowl and put my phone in it and sit down, knowing what those two hours were for, and eat your lamb, and be",
   "s10.notes.f_note_101.title": "Things I have told him",
@@ -852,12 +852,12 @@
   "s10.notes.f_note_111.block_001": "Four in the morning, five days in. Making a list of what is actually gone, because I keep saying \"everything\" and everything is not a thing.",
   "s10.notes.f_note_111.block_002": "Gone: the person I talked to at night for nine years. That one is real and I am allowed it.",
   "s10.notes.f_note_111.block_003": "Gone: nine years of Thursdays. Not the future ones. The ones I already had, which were fine at the time and are not fine now.",
-  "s10.notes.f_note_111.block_004": "Gone: knowing what my own face looked like to her. She watched me being happy about something she was typing and she must have had a face on while she did it and I will never know what it was.",
+  "s10.notes.f_note_111.block_004": "Gone: knowing what my own face looked like to her. She watched me being happy about something she was typing. She must have had a face on while she did it. I will never know what it was.",
   "s10.notes.f_note_111.block_005": "Not gone: Dad. Nia. The job. The flat. Me. Writing that down because at four in the morning the list looks shorter than it is.",
   "s10.notes.f_note_112.title": "—",
   "s10.notes.f_note_112.block_001": "Wexley says a claim is a public document and her name goes in it.",
-  "s10.notes.f_note_112.block_002": "She is twenty-seven. She has a job she got by herself and was proud of in a way that I remember, because I was there, and I was pleased, and I sent her a message with three exclamation marks.",
-  "s10.notes.f_note_112.block_003": "I have written out both versions of the rest of my life. In one of them I do it. In the other I don't. In neither of them do I get the nine years back, which I did not expect to be the deciding factor and it is not, but I keep writing it down.",
+  "s10.notes.f_note_112.block_002": "She is twenty-seven. She has a job she got by herself. She was proud of it, in a way I remember, because I was there. I was pleased. I sent her a message with three exclamation marks.",
+  "s10.notes.f_note_112.block_003": "I have written out both versions of the rest of my life. In one of them I do it. In the other I don't. In neither of them do I get the nine years back. I did not expect that to be the deciding factor, and it is not. But I keep writing it down.",
   "s10.notes.f_note_112.block_004": "What Hannah actually said: not bringing one is a decision you are allowed to make.",
   "s10.notes.f_note_112.block_005": "Nobody has said that to me about anything in nine years. Everything has always been a thing I had to be patient about.",
   "s10.search.f_gs_101": "witness protection how long does it usually last uk",
@@ -899,5 +899,10 @@
   "s10.maps.f_sp_002.name": "Marchbank Family Law",
   "s10.maps.f_sp_002.address": "Queen Square, Bristol",
   "s10.maps.f_sp_003.name": "Wexley & Co",
-  "s10.maps.f_sp_003.address": "Park Street, Bristol"
+  "s10.maps.f_sp_003.address": "Park Street, Bristol",
+  "s10.photos.ph_020.document": "Photograph of a christening party in a church hall. Twenty-odd people, paper cups, a trestle table with a cake on it.\n\n  Elena is holding the baby and looking at whoever is taking the picture. At the edge of the group, half turned away from the camera, Sophia is standing with a phone held low against her hip, screen up, thumb resting on it.",
+  "s10.photos.ph_021.document": "Photograph of a family lunch, taken down the length of the table.\n\n  Nine people. Elena is halfway down on the left with her arm around the woman beside her. Across the table from her Sophia has one hand flat on a phone lying face up next to her plate, the way somebody keeps a hand on a glass.",
+  "s10.photos.ph_022.document": "Photograph of a garden in strong afternoon light.\n\n  Two children on the grass and a dog. Elena is on the step with a plate on her knees. Sophia is in the garden chair behind her with a phone in her lap and her thumb on the screen, not looking at the children.",
+  "s10.photos.ph_023.document": "Photograph of a kitchen on Christmas Eve, taken late, most of the light coming from the hood over the cooker.\n\n  Elena is at the sink with her sleeves pushed up. Sophia is standing against the counter behind her with a phone in her left hand, held up and angled away, her face lit by it.",
+  "s10.photos.ph_034.document": "Photograph of a wooden bowl on a hall table with four phones in it, taken from above.\n\n  A house rule, evidently: phones go in the bowl. Four of them, and the family in that evening's other photographs is five."
 }

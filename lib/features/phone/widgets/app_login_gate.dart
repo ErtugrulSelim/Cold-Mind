@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../../core/answers/normalize.dart';
 import '../../../core/theme/cold_theme.dart';
 import '../../../data/l10n/case_strings.dart';
 import '../../../data/providers/progress_providers.dart';
@@ -71,11 +72,16 @@ class _AppLoginGateState extends ConsumerState<AppLoginGate> {
 
   Future<void> _submit() async {
     final expected = widget.expected;
-    // Case and surrounding space are forgiven; the password itself is not. A
-    // player who read "rand-halo-2019" off a note should not fail on the
-    // capital their keyboard added.
+    // Graded the way a typed answer is graded, by [normalizeAnswer]: case,
+    // spacing, punctuation and diacritics forgiven, the letters and digits
+    // not. A player who read "rand-halo-2019" off a note should not fail on
+    // the capital their keyboard added — and neither should the one who read
+    // "Halcyon is not mine." in a text message and typed it back with the
+    // spaces it was written with, against a password stored with hyphens.
+    // That was s02, and comparing on case alone shut the vault on anybody who
+    // did exactly what the phone told them to.
     if (expected == null ||
-        _password.text.trim().toLowerCase() != expected.toLowerCase()) {
+        normalizePassword(_password.text) != normalizePassword(expected)) {
       setState(() => _wrong = true);
       return;
     }

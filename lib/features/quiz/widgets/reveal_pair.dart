@@ -36,7 +36,10 @@ class RevealPair extends StatefulWidget {
   final bool missed;
 
   /// Called with whether the tapped line was the answer.
-  final ValueChanged<bool> onPick;
+  /// Whether the pick was the answer, and the text of the option picked — the
+  /// screen records what the player chose the same way it records what they
+  /// typed.
+  final void Function(bool isAnswer, String text) onPick;
 
   const RevealPair({
     super.key,
@@ -104,7 +107,10 @@ class _RevealPairState extends State<RevealPair> {
           Padding(
             padding: const EdgeInsets.only(bottom: ColdSpace.sm),
             child: InkWell(
-              onTap: () => widget.onPick(option.isAnswer),
+              onTap: () => widget.onPick(
+                option.isAnswer,
+                strings?.t(option.key) ?? '',
+              ),
               borderRadius: ColdRadius.card,
               child: Container(
                 width: double.infinity,

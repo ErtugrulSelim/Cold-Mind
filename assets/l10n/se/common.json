@@ -337,5 +337,11 @@
   "notif.update.body": "En ny version av Cold Mind är ute — kom och se vad som är nytt!",
   "q.audio_hint": "🎧 Ledtråd: lyssna på inspelningen",
   "ui.photo_read": "Läs",
-  "ui.photo_document": "DOKUMENT"
+  "ui.photo_document": "DOKUMENT",
+  "ui.weekdays_short": "mån,tis,ons,tors,fre,lör,sön",
+  "q.solved_title": "Vad du har kommit fram till",
+  "q.solved_none": "Inget än.",
+  "q.solved_unrecorded": "Inte sparat",
+  "q.solved_briefing": "Klienten, i början",
+  "q.solved_interstitial": "Klienten hörde av sig"
 }

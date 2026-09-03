@@ -1,0 +1,338 @@
+[
+  {
+    "name": "stock_f01",
+    "asset": "assets/stock/photos/f01.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "A flat white coffee on a small marble café table beside a folded pair of sunglasses, shot from directly above. Ordinary smartphone social media snapshot, natural available light, casual off-centre composition, slight handheld imperfection, photographic realism, no people, no faces, no text, no writing, no signage, no brand names, no logos."
+  },
+  {
+    "name": "stock_f02",
+    "asset": "assets/stock/photos/f02.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "A narrow old-town side street of pastel render and shuttered windows in early morning light, nobody in it. Ordinary smartphone social media snapshot, natural available light, casual off-centre composition, slight handheld imperfection, photographic realism, no people, no faces, no text, no writing, no signage, no brand names, no logos."
+  },
+  {
+    "name": "stock_f03",
+    "asset": "assets/stock/photos/f03.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "A ginger cat asleep in a patch of sun on a wooden windowsill, curled with one paw over its face. Ordinary smartphone social media snapshot, natural available light, casual off-centre composition, slight handheld imperfection, photographic realism, no people, no faces, no text, no writing, no signage, no brand names, no logos."
+  },
+  {
+    "name": "stock_f04",
+    "asset": "assets/stock/photos/f04.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "A plate of grilled fish, lemon and boiled potatoes on a paper tablecloth at a harbourside table. Ordinary smartphone social media snapshot, natural available light, casual off-centre composition, slight handheld imperfection, photographic realism, no people, no faces, no text, no writing, no signage, no brand names, no logos."
+  },
+  {
+    "name": "stock_f05",
+    "asset": "assets/stock/photos/f05.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "A row of bicycles chained to a black iron railing on a wet cobbled street. Ordinary smartphone social media snapshot, natural available light, casual off-centre composition, slight handheld imperfection, photographic realism, no people, no faces, no text, no writing, no signage, no brand names, no logos."
+  },
+  {
+    "name": "stock_f06",
+    "asset": "assets/stock/photos/f06.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "Steam rising from a bowl of noodle soup on a laminate counter, chopsticks resting across the rim. Ordinary smartphone social media snapshot, natural available light, casual off-centre composition, slight handheld imperfection, photographic realism, no people, no faces, no text, no writing, no signage, no brand names, no logos."
+  },
+  {
+    "name": "stock_f07",
+    "asset": "assets/stock/photos/f07.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "A dense monstera and a trailing pothos on a white painted shelf in front of a rain-streaked window. Ordinary smartphone social media snapshot, natural available light, casual off-centre composition, slight handheld imperfection, photographic realism, no people, no faces, no text, no writing, no signage, no brand names, no logos."
+  },
+  {
+    "name": "stock_f08",
+    "asset": "assets/stock/photos/f08.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "A stretch of empty motorway seen through a windscreen at dusk, wipers at the edge of frame. Ordinary smartphone social media snapshot, natural available light, casual off-centre composition, slight handheld imperfection, photographic realism, no people, no faces, no text, no writing, no signage, no brand names, no logos."
+  },
+  {
+    "name": "stock_f09",
+    "asset": "assets/stock/photos/f09.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "Fresh snow on a park bench and the tops of black iron park railings, early morning, no footprints. Ordinary smartphone social media snapshot, natural available light, casual off-centre composition, slight handheld imperfection, photographic realism, no people, no faces, no text, no writing, no signage, no brand names, no logos."
+  },
+  {
+    "name": "stock_f10",
+    "asset": "assets/stock/photos/f10.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "A stack of second-hand paperbacks with sun-faded spines on a bedside table, spines turned away. Ordinary smartphone social media snapshot, natural available light, casual off-centre composition, slight handheld imperfection, photographic realism, no people, no faces, no text, no writing, no signage, no brand names, no logos."
+  },
+  {
+    "name": "stock_f11",
+    "asset": "assets/stock/photos/f11.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "A dog lead and a muddy pair of walking boots by a back door, seen from above. Ordinary smartphone social media snapshot, natural available light, casual off-centre composition, slight handheld imperfection, photographic realism, no people, no faces, no text, no writing, no signage, no brand names, no logos."
+  },
+  {
+    "name": "stock_f12",
+    "asset": "assets/stock/photos/f12.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "A rooftop view over a European city of red tiles and television aerials at golden hour. Ordinary smartphone social media snapshot, natural available light, casual off-centre composition, slight handheld imperfection, photographic realism, no people, no faces, no text, no writing, no signage, no brand names, no logos."
+  },
+  {
+    "name": "stock_f13",
+    "asset": "assets/stock/photos/f13.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "A half-finished jigsaw puzzle on a dining table under a hanging lamp, pieces spread around it. Ordinary smartphone social media snapshot, natural available light, casual off-centre composition, slight handheld imperfection, photographic realism, no people, no faces, no text, no writing, no signage, no brand names, no logos."
+  },
+  {
+    "name": "stock_f14",
+    "asset": "assets/stock/photos/f14.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "A cast-iron pan of roasted vegetables on a hob, oven glove beside it. Ordinary smartphone social media snapshot, natural available light, casual off-centre composition, slight handheld imperfection, photographic realism, no people, no faces, no text, no writing, no signage, no brand names, no logos."
+  },
+  {
+    "name": "stock_f15",
+    "asset": "assets/stock/photos/f15.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "Long shadows across an empty basketball court with a sagging net, late afternoon. Ordinary smartphone social media snapshot, natural available light, casual off-centre composition, slight handheld imperfection, photographic realism, no people, no faces, no text, no writing, no signage, no brand names, no logos."
+  },
+  {
+    "name": "stock_f16",
+    "asset": "assets/stock/photos/f16.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "Condensation on a bus window with the blurred lights of a street beyond. Ordinary smartphone social media snapshot, natural available light, casual off-centre composition, slight handheld imperfection, photographic realism, no people, no faces, no text, no writing, no signage, no brand names, no logos."
+  },
+  {
+    "name": "stock_f17",
+    "asset": "assets/stock/photos/f17.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "A market stall of tomatoes, peppers and aubergines in crates, hands out of frame. Ordinary smartphone social media snapshot, natural available light, casual off-centre composition, slight handheld imperfection, photographic realism, no people, no faces, no text, no writing, no signage, no brand names, no logos."
+  },
+  {
+    "name": "stock_f18",
+    "asset": "assets/stock/photos/f18.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "A tabby cat sitting upright on the roof of a parked car in the rain. Ordinary smartphone social media snapshot, natural available light, casual off-centre composition, slight handheld imperfection, photographic realism, no people, no faces, no text, no writing, no signage, no brand names, no logos."
+  },
+  {
+    "name": "stock_f19",
+    "asset": "assets/stock/photos/f19.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "A cheap hotel room with the curtains half open and an unmade single bed, morning. Ordinary smartphone social media snapshot, natural available light, casual off-centre composition, slight handheld imperfection, photographic realism, no people, no faces, no text, no writing, no signage, no brand names, no logos."
+  },
+  {
+    "name": "stock_f20",
+    "asset": "assets/stock/photos/f20.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "An old upright piano with the lid up and sheet music with no readable notation. Ordinary smartphone social media snapshot, natural available light, casual off-centre composition, slight handheld imperfection, photographic realism, no people, no faces, no text, no writing, no signage, no brand names, no logos."
+  },
+  {
+    "name": "stock_f21",
+    "asset": "assets/stock/photos/f21.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "A sea wall with waves breaking over it and spray in the air, grey weather. Ordinary smartphone social media snapshot, natural available light, casual off-centre composition, slight handheld imperfection, photographic realism, no people, no faces, no text, no writing, no signage, no brand names, no logos."
+  },
+  {
+    "name": "stock_f22",
+    "asset": "assets/stock/photos/f22.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "A tangle of charging cables and a desk lamp on a plywood desk, monitor dark. Ordinary smartphone social media snapshot, natural available light, casual off-centre composition, slight handheld imperfection, photographic realism, no people, no faces, no text, no writing, no signage, no brand names, no logos."
+  },
+  {
+    "name": "stock_f23",
+    "asset": "assets/stock/photos/f23.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "A pot of soup on a stove with the wooden spoon left in it, kitchen tiles behind. Ordinary smartphone social media snapshot, natural available light, casual off-centre composition, slight handheld imperfection, photographic realism, no people, no faces, no text, no writing, no signage, no brand names, no logos."
+  },
+  {
+    "name": "stock_f24",
+    "asset": "assets/stock/photos/f24.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "Three glasses of beer on a pub table with beer mats, seen from a seated height. Ordinary smartphone social media snapshot, natural available light, casual off-centre composition, slight handheld imperfection, photographic realism, no people, no faces, no text, no writing, no signage, no brand names, no logos."
+  },
+  {
+    "name": "stock_f25",
+    "asset": "assets/stock/photos/f25.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "A regional train platform at night with the yellow line and one empty bench. Ordinary smartphone social media snapshot, natural available light, casual off-centre composition, slight handheld imperfection, photographic realism, no people, no faces, no text, no writing, no signage, no brand names, no logos."
+  },
+  {
+    "name": "stock_f26",
+    "asset": "assets/stock/photos/f26.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "A single deckchair on a stony beach facing an overcast sea. Ordinary smartphone social media snapshot, natural available light, casual off-centre composition, slight handheld imperfection, photographic realism, no people, no faces, no text, no writing, no signage, no brand names, no logos."
+  },
+  {
+    "name": "stock_f27",
+    "asset": "assets/stock/photos/f27.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "A vinyl record on a turntable, tonearm resting, dust visible in the light. Ordinary smartphone social media snapshot, natural available light, casual off-centre composition, slight handheld imperfection, photographic realism, no people, no faces, no text, no writing, no signage, no brand names, no logos."
+  },
+  {
+    "name": "stock_f28",
+    "asset": "assets/stock/photos/f28.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "A close-up of a knitted jumper in progress on circular needles in a lap. Ordinary smartphone social media snapshot, natural available light, casual off-centre composition, slight handheld imperfection, photographic realism, no people, no faces, no text, no writing, no signage, no brand names, no logos."
+  },
+  {
+    "name": "stock_f29",
+    "asset": "assets/stock/photos/f29.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "An allotment shed with a watering can and a row of runner beans on canes. Ordinary smartphone social media snapshot, natural available light, casual off-centre composition, slight handheld imperfection, photographic realism, no people, no faces, no text, no writing, no signage, no brand names, no logos."
+  },
+  {
+    "name": "stock_f30",
+    "asset": "assets/stock/photos/f30.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "Frost on a windscreen with a scraper lying on the bonnet. Ordinary smartphone social media snapshot, natural available light, casual off-centre composition, slight handheld imperfection, photographic realism, no people, no faces, no text, no writing, no signage, no brand names, no logos."
+  },
+  {
+    "name": "stock_f31",
+    "asset": "assets/stock/photos/f31.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "A tram stopped at a junction seen from the pavement in the rain, its windows lit. Ordinary smartphone social media snapshot, natural available light, casual off-centre composition, slight handheld imperfection, photographic realism, no people, no faces, no text, no writing, no signage, no brand names, no logos."
+  },
+  {
+    "name": "stock_f32",
+    "asset": "assets/stock/photos/f32.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "A birthday cake with the candles blown out and smoke still rising. Ordinary smartphone social media snapshot, natural available light, casual off-centre composition, slight handheld imperfection, photographic realism, no people, no faces, no text, no writing, no signage, no brand names, no logos."
+  },
+  {
+    "name": "stock_f33",
+    "asset": "assets/stock/photos/f33.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "A wet dog shaking itself on a beach at low tide, motion blur. Ordinary smartphone social media snapshot, natural available light, casual off-centre composition, slight handheld imperfection, photographic realism, no people, no faces, no text, no writing, no signage, no brand names, no logos."
+  },
+  {
+    "name": "stock_f34",
+    "asset": "assets/stock/photos/f34.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "A bowl of cherries and a folded newspaper with illegible print on a garden table. Ordinary smartphone social media snapshot, natural available light, casual off-centre composition, slight handheld imperfection, photographic realism, no people, no faces, no text, no writing, no signage, no brand names, no logos."
+  },
+  {
+    "name": "stock_f35",
+    "asset": "assets/stock/photos/f35.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "Laundry drying on a line strung between two balconies over a narrow street. Ordinary smartphone social media snapshot, natural available light, casual off-centre composition, slight handheld imperfection, photographic realism, no people, no faces, no text, no writing, no signage, no brand names, no logos."
+  },
+  {
+    "name": "stock_f36",
+    "asset": "assets/stock/photos/f36.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "A climbing wall with coloured holds, ropes coiled on the mat below. Ordinary smartphone social media snapshot, natural available light, casual off-centre composition, slight handheld imperfection, photographic realism, no people, no faces, no text, no writing, no signage, no brand names, no logos."
+  },
+  {
+    "name": "stock_f37",
+    "asset": "assets/stock/photos/f37.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "A ferry wake seen from the stern rail, gulls following. Ordinary smartphone social media snapshot, natural available light, casual off-centre composition, slight handheld imperfection, photographic realism, no people, no faces, no text, no writing, no signage, no brand names, no logos."
+  },
+  {
+    "name": "stock_f38",
+    "asset": "assets/stock/photos/f38.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "An empty swimming pool at a leisure centre with the lane ropes coiled at the end. Ordinary smartphone social media snapshot, natural available light, casual off-centre composition, slight handheld imperfection, photographic realism, no people, no faces, no text, no writing, no signage, no brand names, no logos."
+  },
+  {
+    "name": "stock_f39",
+    "asset": "assets/stock/photos/f39.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "Rain on a skylight over a dim attic room with a bed under it. Ordinary smartphone social media snapshot, natural available light, casual off-centre composition, slight handheld imperfection, photographic realism, no people, no faces, no text, no writing, no signage, no brand names, no logos."
+  },
+  {
+    "name": "stock_f40",
+    "asset": "assets/stock/photos/f40.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "A workbench with hand tools laid in order and a half-planed piece of pine. Ordinary smartphone social media snapshot, natural available light, casual off-centre composition, slight handheld imperfection, photographic realism, no people, no faces, no text, no writing, no signage, no brand names, no logos."
+  },
+  {
+    "name": "stock_f41",
+    "asset": "assets/stock/photos/f41.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "A church interior with a shaft of light across empty wooden pews. Ordinary smartphone social media snapshot, natural available light, casual off-centre composition, slight handheld imperfection, photographic realism, no people, no faces, no text, no writing, no signage, no brand names, no logos."
+  },
+  {
+    "name": "stock_f42",
+    "asset": "assets/stock/photos/f42.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "A gravel track between hedgerows with a five-bar gate at the end, summer. Ordinary smartphone social media snapshot, natural available light, casual off-centre composition, slight handheld imperfection, photographic realism, no people, no faces, no text, no writing, no signage, no brand names, no logos."
+  },
+  {
+    "name": "stock_f43",
+    "asset": "assets/stock/photos/f43.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "A city bus stop in the dark with the timetable case lit and no readable text on it. Ordinary smartphone social media snapshot, natural available light, casual off-centre composition, slight handheld imperfection, photographic realism, no people, no faces, no text, no writing, no signage, no brand names, no logos."
+  },
+  {
+    "name": "stock_f44",
+    "asset": "assets/stock/photos/f44.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "A cutting board with bread, cheese and a knife, crumbs scattered. Ordinary smartphone social media snapshot, natural available light, casual off-centre composition, slight handheld imperfection, photographic realism, no people, no faces, no text, no writing, no signage, no brand names, no logos."
+  },
+  {
+    "name": "stock_f45",
+    "asset": "assets/stock/photos/f45.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "A tent pitched on grass at dusk with a head torch glowing inside it. Ordinary smartphone social media snapshot, natural available light, casual off-centre composition, slight handheld imperfection, photographic realism, no people, no faces, no text, no writing, no signage, no brand names, no logos."
+  },
+  {
+    "name": "stock_f46",
+    "asset": "assets/stock/photos/f46.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "A lit swimming pool at night from the water's edge, nobody in it. Ordinary smartphone social media snapshot, natural available light, casual off-centre composition, slight handheld imperfection, photographic realism, no people, no faces, no text, no writing, no signage, no brand names, no logos."
+  },
+  {
+    "name": "stock_f47",
+    "asset": "assets/stock/photos/f47.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "A supermarket aisle of tinned goods with unbranded plain labels, fluorescent light. Ordinary smartphone social media snapshot, natural available light, casual off-centre composition, slight handheld imperfection, photographic realism, no people, no faces, no text, no writing, no signage, no brand names, no logos."
+  },
+  {
+    "name": "stock_f48",
+    "asset": "assets/stock/photos/f48.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "A window seat on a plane above a solid deck of cloud at sunrise. Ordinary smartphone social media snapshot, natural available light, casual off-centre composition, slight handheld imperfection, photographic realism, no people, no faces, no text, no writing, no signage, no brand names, no logos."
+  }
+]

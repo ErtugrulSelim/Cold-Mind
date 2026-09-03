@@ -4735,25 +4735,29 @@
           "id": "ph_020",
           "asset": "assets/cases/s10/photos/family_christening.jpg",
           "taken_at": "2019-06-16T15:40:00",
-          "location": "Bristol"
+          "location": "Bristol",
+          "document_key": "s10.photos.ph_020.document"
         },
         {
           "id": "ph_021",
           "asset": "assets/cases/s10/photos/family_table.jpg",
           "taken_at": "2022-04-24T20:15:00",
-          "location": "Bristol"
+          "location": "Bristol",
+          "document_key": "s10.photos.ph_021.document"
         },
         {
           "id": "ph_022",
           "asset": "assets/cases/s10/photos/family_garden.jpg",
           "taken_at": "2023-07-30T17:05:00",
-          "location": "Bristol"
+          "location": "Bristol",
+          "document_key": "s10.photos.ph_022.document"
         },
         {
           "id": "ph_023",
           "asset": "assets/cases/s10/photos/family_kitchen.jpg",
           "taken_at": "2025-12-24T22:40:00",
-          "location": "Bristol"
+          "location": "Bristol",
+          "document_key": "s10.photos.ph_023.document"
         },
         {
           "id": "ph_030",
@@ -4782,7 +4786,8 @@
           "id": "ph_034",
           "asset": "assets/cases/s10/photos/phone_bowl.jpg",
           "taken_at": "2024-02-15T19:04:00",
-          "location": "Bristol"
+          "location": "Bristol",
+          "document_key": "s10.photos.ph_034.document"
         }
       ]
     },

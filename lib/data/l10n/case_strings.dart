@@ -72,8 +72,14 @@ class CaseStrings {
   /// Localized full month name for a 1-based [month].
   String monthLong(int month) => _list('ui.months_long')[month - 1];
 
-  /// Localized single-letter weekday headers, Sunday first.
+  /// Localized single-letter weekday headers, Sunday first — these head a
+  /// month grid, which starts on Sunday.
   List<String> get weekdayLetters => _list('ui.weekday_letters');
+
+  /// Localized short weekday name for a 1-based [weekday], **Monday first**,
+  /// because that is what `DateTime.weekday` returns and this one is read off
+  /// a date rather than laid out in a grid.
+  String weekdayShort(int weekday) => _list('ui.weekdays_short')[weekday - 1];
 
   /// The connector between a date and a time, spacing baked in (" at " gives
   /// "Jan 5 at 14:30"). Some locales have no word for it and use a bare space.

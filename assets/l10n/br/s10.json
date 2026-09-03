@@ -1,0 +1,889 @@
+{
+  "s10.meta.title": "Prova de Vida",
+  "s10.board.elena.title": "Elena Christofi",
+  "s10.board.elena.sub": "38 anos, assistente jurídica, de Bristol. Sua cliente. É o telefone dela há nove anos, e ela está sentada do outro lado da mesa enquanto você o lê.",
+  "s10.board.bobby.title": "Bobby",
+  "s10.board.bobby.sub": "Andreas Solomou. Anestesiologista, Londres. Noivo dela desde 2022. Nove anos de mensagens e nenhuma fotografia tirada naquele dia.",
+  "s10.board.andreas.title": "O verdadeiro Andreas Solomou",
+  "s10.board.andreas.sub": "41 anos, casado, dois filhos. Um perfil público que ele usa cerca de duas vezes por ano, e toda fotografia nele foi enviada a ela. Ele nunca ouviu falar dela.",
+  "s10.board.family.title": "Quarenta de nós em uma casa feita para quatro",
+  "s10.board.family.sub": "Dia dos santos, batizados, quinta-feira na casa da Marianna. Sete anos de fotografias, e todos estão nelas.",
+  "s10.board.accounts.title": "Trinta e nove contas",
+  "s10.board.accounts.sub": "Uma esposa. Um médico. Um irmão. Um administrador de hospital. Dois deles estão nos contatos dela com seus próprios nomes.",
+  "s10.board.money.title": "£312",
+  "s10.board.money.sub": "O total que ela enviou. Três transferências em nove anos. Nunca se tratou de dinheiro.",
+  "s10.board.nia.title": "Nia",
+  "s10.board.nia.sub": "Amiga dela desde 2016. Disse isso em 2018, em 2020, em 2023. Sempre disse com gentileza.",
+  "s10.board.e1": "amava",
+  "s10.board.e2": "não é",
+  "s10.board.e3": "escreveu para ela",
+  "s10.board.e4": "estava em todos eles",
+  "s10.board.e5": "continuava dizendo",
+  "s10.board.e6": "custou a ela",
+  "s10.board.e7": "sua família",
+  "s10.board.nadia.title": "Nadia Solomou",
+  "s10.board.nadia.sub": "Esposa dela. Escreveu para Elena em 2019 e novamente em 2024, ambas as vezes para lhe dizer que tipo de mulher ela era. Elena nunca viu o rosto dela e nunca duvidou dela.",
+  "s10.board.e8": "nunca a conheceu",
+  "s10.board.e9": "a avisou para ficar longe",
+  "s10.relationship.p001.note": "Sophia. Menina da Marianna.",
+  "s10.relationship.p002.note": "❤️",
+  "s10.relationship.p003.note": "Nia, mesa oposta.",
+  "s10.relationship.p004.note": "Thia Marianna.",
+  "s10.relationship.p006.note": "esposa dele. não responder.",
+  "s10.relationship.p007.note": "cardiologia, consultor do Bobby",
+  "s10.relationship.p008.note": "Wexley, civil.",
+  "s10.contact.p006.label": "não responder",
+  "s10.contact.p007.label": "Bobby, hospital",
+  "s10.contact.p008.label": "advogado",
+  "s10.client_chat.cc_001": "Vou dizer tudo de uma vez e rápido, porque se eu parar, não volto a começar.",
+  "s10.client_chat.cc_002": "Meu nome é Elena Christofi. Por nove anos estive em um relacionamento com um homem chamado Andreas Solomou, que todos chamam de Bobby. Ficamos noivos em 2022. Nunca o conheci.",
+  "s10.client_chat.cc_003": "Eu sei como isso soa. Sou assistente jurídica. Verifico documentos para viver. Sentei nesta cadeira por nove anos, sendo a pessoa mais cuidadosa em cada sala, e não verifiquei a única coisa que importava.",
+  "s10.client_chat.cc_007": "A polícia me disse que provavelmente não há crime. Meu advogado diz que pode haver uma ação civil. Antes de tudo isso, quero saber quem. Você vai descobrir?",
+  "s10.client_chat.cc_007.accept": "Vou descobrir quem.",
+  "s10.client_chat.cc_007.decline": "Não este.",
+  "s10.client_chat.cc_008": "Obrigado. Comece do início e não seja cuidadoso comigo. Passei nove anos sendo tratado gentilmente por alguém e veja onde isso me levou.",
+  "s10.client_chat.cc_009": "Uma coisa. Tudo ainda está lá. Não deletei uma única mensagem e quero que você saiba que foi uma decisão, não um acidente.",
+  "s10.interstitial.is1_001": "Nove anos e nem uma videochamada. Você digitou isso e eu realmente ri.",
+  "s10.interstitial.is1_002": "Sempre havia um motivo. Linha ruim. Em um quarto. Turno da noite. Telefone quebrado. Ex‑esposa o rastreando. E cada motivo era razoável, isso é o que ninguém entende sobre isso.",
+  "s10.interstitial.is1_003": "Um por semana durante nove anos são quatrocentos e sessenta e oito motivos. Nunca os coloquei em sequência. Continue.",
+  "s10.interstitial.is2_001": "Quinta-feira.",
+  "s10.interstitial.is2_002": "Todas as contas. Bobby, Nadia, o médico, o irmão, todos eles, silenciosos entre sete e nove numa noite de quinta-feira, há nove anos.",
+  "s10.interstitial.is2_003": "Quinta-feira é da minha tia Marianna. Tem sido quinta-feira na casa da Marianna desde antes de eu nascer. Quarenta de nós, sem celulares na mesa, ela os retira de você na porta como numa boate.",
+  "s10.interstitial.is2_004": "Eu estive naquela sala por nove anos. Não me conte ainda. Apenas continue.",
+  "s10.interstitial.is3_001": "Eu olhei as fotografias.",
+  "s10.interstitial.is3_004": "Ela tinha dezoito quando começou. Quero que você termine isso corretamente e quero que tenha certeza.",
+  "s10.closing_chat.cl_001": "Ela admitiu isso na terça-feira. Não para mim: para a mãe dela, que me ligou às onze e meia da noite e não conseguia formar a frase.",
+  "s10.closing_chat.cl_002": "Nove anos, trinta e nove contas, e ela diz que começou como uma piada. Decidi acreditar nisso, porque a alternativa seria que uma garota de dezoito se sentou e planejou tudo, e eu gostaria de manter uma coisa.",
+  "s10.closing_chat.cl_003": "Certo. Wexley explicou o que eu posso fazer e nada disso é o que eu quero, que eu quero é que os últimos nove anos nunca tivessem acontecido.",
+  "s10.closing_chat.cl_004": "Um. Ação civil. Assédio. É a única que cabe, porque não existe crime neste país chamado fingir ser outra pessoa por nove anos. Eu provavelmente ganharia. Seria um julgamento público com os nossos nomes e todo parente nosso leria.",
+  "s10.closing_chat.cl_005": "Dois. Acionar a polícia de qualquer forma. Fazer com que tomem uma declaração, abram um processo, anotem mesmo que nada seja acusado. Não me custa nada e não me traz nada, exceto que exista em algum sistema.",
+  "s10.closing_chat.cl_006": "Três, e é a que eu continuo voltando às quatro da manhã.",
+  "s10.closing_chat.cl_007": "Sem tribunal. Quinta-feira, na casa da Marianna, todos na sala, e eu coloco na mesa eu mesmo e deixo a família decidir o que fazer com ela.",
+  "s10.closing_chat.cl_008": "Você deve saber o que isso custa antes de responder. Metade deles não vai acreditar em mim. Alguns vão acreditar e decidir que é mais gentil com todos se nunca for mencionado novamente. E a mãe dela recebeu todas as quintas-feiras da minha vida.",
+  "s10.closing_chat.cl_009": "Eu também pensei no que isso custa a ela, o que sei que não é mais minha responsabilidade.",
+  "s10.closing_chat.cl_010": "Ela tem vinte e sete anos e também não fez nada mais com esses nove anos. Essa é a parte que não consigo deixar de lado.",
+  "s10.closing_chat.cl_011": "Me diga. Você leu tudo agora, o que faz de você a única pessoa viva que leu.",
+  "s10.closing_chat.cl_011.opt1": "A ação civil. Transforme em julgamento.",
+  "s10.closing_chat.cl_011.opt2": "O inquérito policial. Faça-o existir.",
+  "s10.closing_chat.cl_011.opt3": "Quinta-feira. Coloque na mesa.",
+  "s10.closing_chat.cl_013": "A ação, então. Wexley ficará satisfeita, ela tem esperado que eu diga isso por duas semanas.",
+  "s10.closing_chat.cl_015": "O inquérito, então. Uma declaração, um número de crime, e quase certamente nada depois disso.",
+  "s10.closing_chat.cl_017": "Quinta-feira, então. Que Deus me ajude.",
+  "s10.closing_chat.cl_018": "Se eu levar isso ao tribunal, entrego a estranhos e obtenho um resultado. Se eu levar para aquela sala, entrego às únicas pessoas que realmente estavam lá e recebo o que quer que elas sejam. Decidi que prefiro estar na sala.",
+  "s10.closing_chat.cl_019": "Obrigado. De verdade. Você é a primeira pessoa em nove anos que analisou tudo isso e nem uma vez me perguntou como eu poderia ter sido tão estúpido.",
+  "s10.chats.b1_001": "Então foram três horas. Você sabe quanto tempo faz que eu não falo com ninguém por três horas",
+  "s10.chats.b1_002": "Eu realmente faço. Igual",
+  "s10.chats.b1_003": "Certo. Dormir. Eu fico de plantão às 7",
+  "s10.chats.b1_010": "Podemos fazer uma chamada de vídeo hoje à noite? Quero ver seu rosto quando você disser isso",
+  "s10.chats.b1_011": "Não dá hoje à noite, estou na enfermaria e o wifi aqui é um crime de guerra. Voz?",
+  "s10.chats.b1_012": "Nota de voz",
+  "s10.chats.b1_013": "Ok, isso não é justo, essa é a voz",
+  "s10.chats.b1_020": "Vídeo? Só 2 minutos",
+  "s10.chats.b1_021": "O telefone está trincado, a câmera frontal sumiu. Vou consertar no sábado",
+  "s10.chats.b1_022": "Você disse sábado no sábado passado",
+  "s10.chats.b1_023": "Sei. Desculpa. Sou um desastre. Te ligo às 9?",
+  "s10.chats.b1_030": "Elena, preciso te contar algo e preciso que você não reaja até eu terminar.",
+  "s10.chats.b1_031": "A coisa no trabalho, o caso que eu não podia falar. Foi além do que eu disse. Vou ser colocado em algum lugar por um tempo. Não poderei te contatar e você não pode me procurar.",
+  "s10.chats.b1_032": "Colocado em algum lugar. O que isso significa",
+  "s10.chats.b1_033": "Protegido. Essa é a palavra que eles usam. É tudo que posso dizer e já falei demais. Eu te amo. Não ligue para este número",
+  "s10.chats.b1_040": "Sou eu. Voltei. Posso voltar",
+  "s10.chats.b1_041": "Quatro meses",
+  "s10.chats.b1_042": "Quatro meses. Eu sei. Pergunte o que quiser e eu responderei",
+  "s10.chats.b1_050": "Vou te pedir uma coisa e quero que você simplesmente faça, sem explicação, sem motivo para não fazer.",
+  "s10.chats.b1_051": "Qualquer coisa.",
+  "s10.chats.b1_052": "Tire uma foto sua agora segurando o jornal de hoje. Qualquer jornal. Mostrando a primeira página. Só isso.",
+  "s10.chats.b1_053": "Elena.",
+  "s10.chats.b1_054": "Bobby.",
+  "s10.chats.b1_055": "Vou fazer isso amanhã. Não vou fazer assim, à meia-noite, como se eu fosse refém. Vou fazer amanhã e você vai se sentir péssimo.",
+  "s10.chats.b1_056": "ok",
+  "s10.chats.b1_057": "ok",
+  "s10.chats.b1_060": "Você está acordado",
+  "s10.chats.b1_062": "Vá dormir, Bobby.",
+  "s10.chats.n1_001": "Não sei quem você é, mas precisa parar de mandar mensagens para o meu marido.",
+  "s10.chats.n1_002": "Ele me disse que vocês estavam separados.",
+  "s10.chats.n1_003": "Claro que sim. Temos dois filhos. Quer os nomes deles.",
+  "s10.chats.n1_004": "Não.",
+  "s10.chats.n1_010": "Eu te devo um pedido de desculpas. Conversei com ele e ele me contou a verdade sobre nós e eu estava errado ao te atacar assim. Seja como for, ele não é mentiroso.",
+  "s10.chats.n1_011": "Certo.",
+  "s10.chats.n1_012": "Cuide dele. Ele não está tão bem quanto diz às pessoas.",
+  "s10.chats.n1_020": "O divórcio foi finalizado. Não vou fingir que estou feliz por você, mas também não serei a vilã nisso. Seja boa com ele.",
+  "s10.chats.f1_001": "Sra. Christofi, Dra. Rachel Ferris, cardiologia. Andreas deu consentimento para que eu fale com você como seu próximo parente.",
+  "s10.chats.f1_002": "Ele está bem?",
+  "s10.chats.f1_003": "Ele está estável. A arritmia é controlável com a medicação, mas o estresse não o ajuda. Ele precisa de silêncio e que você não se preocupe, o que reconheço ser fácil de dizer.",
+  "s10.chats.f1_010": "Doutor, posso ir ao hospital?",
+  "s10.chats.f1_011": "Ele pediu que você não vá. Normalmente eu contestaria, mas ele foi bastante firme e é meu paciente. Desculpe.",
+  "s10.chats.nia_001": "El. Posso dizer isso de novo.",
+  "s10.chats.nia_002": "Não",
+  "s10.chats.nia_003": "Vou dizer isso gentilmente e então ficarei calado por mais dois anos. Em oito anos ele não esteve em uma sala com você. Nem uma vez. Nem um café, nem uma plataforma de estação, nem um funeral.",
+  "s10.chats.nia_004": "Você não entende como é a vida dele.",
+  "s10.chats.nia_005": "Eu sei. Foi isso que você disse em 2018 e em 2020. Ok. Ficarei calado. Almoço amanhã?",
+  "s10.chats.nia_010": "Não vou dizer 'eu avisei' e nunca direi isso, e quero que você saiba que isso me custa algo.",
+  "s10.chats.nia_011": "Diga. Honestamente. Diga.",
+  "s10.chats.nia_012": "Não. Venha à minha. Não traga nada.",
+  "s10.chats.s1_001": "Elena, mou. Mamãe disse que você não vem quinta-feira.",
+  "s10.chats.s1_002": "Não esta semana.",
+  "s10.chats.s1_003": "É ele? Você pode me dizer o que sabe. Você nunca me conta nada e eu não sou mais uma criança.",
+  "s10.chats.s1_010": "Como ele está. Você pareceu estranha no domingo",
+  "s10.chats.s1_011": "Ele está no hospital de novo. Não posso ir. Tudo bem.",
+  "s10.chats.s1_012": "Isso é terrível. Sinto muito, El. Quer que eu vá até aí? Posso trazer os salgadinhos bons?",
+  "s10.chats.s1_020": "Elena, por favor, atenda o telefone",
+  "s10.chats.s1_021": "Elena, estou implorando para que atenda o telefone",
+  "s10.chats.s1_030": "nota de voz",
+  "s10.feed.bio": "Bristol. Assistente jurídica. Tia de seis. Principalmente aqui pelos cachorros dos outros.",
+  "s10.feed.dm_b1_001": "Seu perfil apareceu em 'pessoas que você talvez conheça', que é a frase menos romântica da língua inglesa. Olá.",
+  "s10.feed.dm_b1_002": "Olá. Essa é genuinamente a pior frase de abertura que já recebi.",
+  "s10.feed.dm_b1_003": "Tenho outras, mas são piores. Você é a Elena da família Christofi em Bristol? Minha mãe conhece um Yiannis Christofi. Mundo pequeno, gente pequena.",
+  "s10.feed.dm_b1_004": "Todo mundo conhece meu pai. Ele cortou o cabelo de todo mundo por quarenta anos.",
+  "s10.feed.dm_b1_010": "Pedido de foto negado. Eu pareço uma lixeira.",
+  "s10.feed.dm_b1_011": "Envie a foto da lixeira.",
+  "s10.feed.dm_b1_012": "Aqui está uma de Barry Island em 2019, eu estava melhor naquela época e não vou fingir o contrário.",
+  "s10.feed.dm_a1_001": "Olá. Desculpe, esta será uma mensagem extremamente estranha e prometo que há uma pergunta real no final. É este o Andreas Solomou, o anestesista? De Cardiff?",
+  "s10.feed.dm_a1_002": "É. Eu deveria te conhecer? Desculpe, sou péssimo neste app, uso ele cerca de duas vezes por ano.",
+  "s10.feed.dm_a1_003": "Não. Você não deveria. É isso que estou tentando estabelecer. Você já morou em Londres.",
+  "s10.feed.dm_a1_004": "Seis meses em 2011 e eu odiava. Está tudo bem? Você ficou quieto.",
+  "s10.feed.dm_a1_005": "Desculpe. Sim. Mais uma e então te deixo em paz. No dia 14 de março deste ano, você estava em um casamento.",
+  "s10.feed.dm_a1_006": "Do Costas e Eleni, sim, está na minha página. Por quê?",
+  "s10.feed.dm_a1_007": "Porque me disseram que naquele dia você estava no Royal Free tendo um desfibrilador instalado.",
+  "s10.feed.dm_a1_008": "…",
+  "s10.feed.dm_a1_009": "Certo. Acho que é melhor você me ligar. Este é o meu número. Vou sentar.",
+  "s10.messages.sms_001": "Elena, amor, é o Papai. Sua mãe diz que você não está comendo. Venha no domingo e eu não vou te perguntar nada.",
+  "s10.messages.sms_002": "Vou chegar no domingo.",
+  "s10.messages.sms_010": "Elena. Hannah Wexley. Obrigada por vir. Conforme combinado: traga o próprio telefone, não capturas de tela, e traga sua cronologia. A cronologia é o documento mais útil que recebi nos últimos quatro anos e quero que você saiba disso antes de falarmos de qualquer outra coisa.",
+  "s10.messages.sms_011": "São nove anos em uma planilha. Não é esperto, é só extenso.",
+  "s10.messages.sms_012": "É prova. Nove horas da quinta-feira.",
+  "s10.messages.sms_020": "Elena, aqui é a Marianna. Por favor atenda o telefone para mim. Seja o que for que ela tenha feito, ela é minha filha e você é a filha da minha irmã e eu cozinhei para vocês duas todas as quintas-feiras de suas vidas.",
+  "s10.mail.gm_001.subject": "Re: sua consulta: criação de contas e registros de acesso",
+  "s10.mail.gm_001.body": "Prezada Sra. Christofi,\n\nEm atenção à ordem judicial que nos foi enviada, segue os registros solicitados para as trinta e nove contas listadas no Schedule A.\n\nResumo dos achados:\n\n  Accounts in Schedule A:              39\n  Created between:                     03/2017 and 02/2026\n  Distinct registration email domains:  2\n  Distinct recovery telephone numbers:  3\n  Distinct device identifiers:          2\n  Distinct IP ranges (residential):     1\n\nTodas as trinta e nove contas foram criadas a partir, e predominantemente acessadas a partir, de uma única conexão residencial na área de código postal BS5. Duas das contas foram acessadas a partir de um segundo dispositivo registrado na mesma conexão.\n\nObservamos que esse padrão não é consistente com trinta e nove indivíduos.\n\nAtenciosamente,\nDisclosure Team",
+  "s10.mail.gm_002.subject": "Cronologia: v11 (não envie isso a ninguém)",
+  "s10.mail.gm_002.body": "COLUMNS: date | account | channel | claim made | verifiable? | verified?\n\n  Rows: 4,118\n  Date range: 09/03/2017 – 14/03/2026\n  Accounts appearing: 39\n\n  Claims capable of verification:        61\n  Claims I actually verified at the time: 0\n\nBEHAVIOURAL NOTES (added 04/2026)\n\n  1. Nenhum par de contas esteve ativo no mesmo minuto.\n  2. Todas as contas ficam silenciosas nas quintas das 19:00 às 21:00. Nenhuma exceção em nove anos.\n  3. Todas as contas escrevem 'definately'. Todas elas. Sempre.\n  4. Nenhuma conta jamais enviou uma fotografia tirada no dia em que foi enviada.\n  5. Toda chamada de 'Bobby' é uma chamada recebida. Em nove anos nunca\n     consegui fazer uma chamada para ele que fosse completada.\n\n  Nota para mim: qualquer um desses não é nada. Eu os escrevi em um só lugar e eles não são nada.",
+  "s10.mail.gm_003.subject": "Casamento: 14 de março, Cardiff",
+  "s10.mail.gm_004.subject": "Assédio: aconselhamento preliminar",
+  "s10.mail.gm_005.subject": "(sem assunto)",
+  "s10.maps.loc_001.name": "Casa",
+  "s10.maps.loc_001.address": "Chelsea Road, Easton, Bristol",
+  "s10.maps.loc_002.name": "Thia Marianna",
+  "s10.maps.loc_002.address": "Fishponds Road, Bristol",
+  "s10.maps.loc_002.note": "Quinta-feira. Toda quinta-feira desde que nasci.",
+  "s10.maps.loc_003.name": "Trabalho",
+  "s10.maps.loc_003.address": "Queen Square, Bristol",
+  "s10.maps.loc_004.name": "Royal Free Hospital",
+  "s10.maps.loc_004.address": "Hampstead, London",
+  "s10.maps.loc_004.note": "Pesquisei quarenta e uma vezes. Nunca fui.",
+  "s10.maps.loc_005.name": "Wexley & Co",
+  "s10.maps.loc_005.address": "Berkeley Square, Bristol",
+  "s10.maps.loc_006.name": "Cardiff",
+  "s10.maps.loc_006.address": "Cardiff",
+  "s10.maps.loc_006.note": "19 de março. Setenta quilômetros. Cinquenta e um minutos.",
+  "s10.calendar.ev_001": "Quinta-feira, da Marianna",
+  "s10.calendar.ev_002": "B, cirurgia",
+  "s10.calendar.ev_002.notes": "Não envie mensagem até depois das 6.",
+  "s10.calendar.ev_003": "Aniversário, 9 de nov",
+  "s10.calendar.ev_004": "Wexley 09:00",
+  "s10.calendar.ev_005": "Sophia, aniversário",
+  "s10.calendar.ev_006": "Cardiff",
+  "s10.photos.album_001": "Rolo da Câmera",
+  "s10.photos.album_002": "Família",
+  "s10.photos.album_003": "tudo",
+  "s10.photos.album_004": "B",
+  "s10.photos.ph_010.document": "Captura de tela de uma planilha, ampliada até que as linhas sejam fios ao invés de texto.\n\n  chronology_v11.xlsx\n  DATA | CONTA | CANAL | RECLAMAÇÃO | VERIFICÁVEL? | VERIFICADO?\n\n  4,118 linhas. As duas últimas colunas são as únicas legíveis neste zoom\n  porque são as únicas que têm largura de um único caractere.\n\n  A coluna VERIFICÁVEL contém Y, N, N, Y, N, Y, Y, N ao longo da página.\n  A coluna VERIFICADO tem 4,118 N consecutivos.",
+  "s10.photos.ph_011.document": "Captura de tela de uma conversa, recortada para que apenas quatro mensagens e os horários sejam visíveis.\n\n  23:58  Tire uma foto de você mesmo agora segurando o jornal de hoje\n         qualquer jornal. Mostre a primeira página. Só isso.\n  23:58  Elena.\n  23:59  Bobby.\n  00:04  Eu farei isso amanhã. Não vou fazer isso assim, à\n         meia‑noite, como se eu fosse refém. Eu farei isso amanhã e\n         você vai se sentir horrível.\n\nNão há nada abaixo da última mensagem. A captura foi feita 1,094 dias após o envio.",
+  "s10.photos.ph_012.document": "Fotografia de uma tabela de divulgação impressa sobre a mesa da cozinha, com uma caneca segurando um canto.\n\n  ANEXO A, REGISTROS DE CONTA\n\n  Contas                            39\n  Domínios de e‑mail de registro   2\n  Números de telefone de recuperação 3\n  Identificadores de dispositivo   2\n  Faixas de IP residenciais          1\n\n  Área de código postal de origem: BS5\n\nAlguém escreveu ao lado da linha seguinte, a lápis, com uma mão que está se estabilizando: 'fica a quatro ruas de mim'.",
+  "s10.photos.ph_013.document": "Captura de tela de uma lista de contatos, rolada até as entradas com S.\n\n  Solomou, Andreas          ❤️\n  Solomou, Nadia            não responder\n  Christofi, Sophia         garota da Marianna\n\nDuas dessas três pessoas não existem. A terceira criou as outras duas.",
+  "s10.notes.folder_001": "Anotações",
+  "s10.notes.folder_002": "—",
+  "s10.notes.note_001.title": "Motivos",
+  "s10.notes.note_001.block_001": "Comecei isso em 2021 para provar à Nia que sempre havia um motivo, e então continuei, o que diz algo.",
+  "s10.notes.note_001.block_002": "linha ruim · em um setor · turno da noite · telefone em um armário · câmera frontal trincada · a confiança bloqueia apps de vídeo · ex-esposa tem acesso ao cloud dele · não quer que eu o veja tão magro",
+  "s10.notes.note_001.block_003": "não quer que a primeira vez seja através de uma tela · não sai bem em foto · supersticioso a respeito disso · diz que fará isso quando estiver bem",
+  "s10.notes.note_001.block_004": "Cada um desses é um motivo real. Conheço homens que diriam qualquer um deles.",
+  "s10.notes.note_001.block_005": "Um por semana, durante nove anos, totalizam quatrocentos e sessenta e oito, e nunca os coloquei em sequência até hoje.",
+  "s10.notes.note_002.title": "Quintas-feiras",
+  "s10.notes.note_002.block_001": "Marianna's, 7 até tarde, desde antes de eu nascer. Telefones na tigela na porta, ela é militante a respeito disso.",
+  "s10.notes.note_002.block_002": "Bobby nunca me enviou mensagem numa noite de quinta-feira. Nem uma vez em nove anos. Eu costumava pensar que era porque ele sabia que era noite de família e estava sendo respeitoso.",
+  "s10.notes.note_002.block_003": "Nadia nunca me enviou mensagem numa noite de quinta-feira.",
+  "s10.notes.note_002.block_004": "Dr Ferris nunca me enviou mensagem numa noite de quinta-feira.",
+  "s10.notes.note_002.block_005": "O irmão dele. O administrador do hospital. O homem da seguradora. Nenhum deles. Nenhum dos trinta e nove, em nove anos, entre sete e nove numa quinta-feira.",
+  "s10.notes.note_002.block_006": "(Tudo o que eu capturei em tela desde março está no álbum chamado tudo, e a nota na outra pasta. Ambos 0911. Eu não precisei procurar isso, o que é sua própria pequena prova sobre mim.)",
+  "s10.notes.note_003.title": "—",
+  "s10.notes.note_003.block_001": "Escrito às quatro da manhã do vigésimo de março, que estou colocando no topo para que depois eu saiba que não estava calmo.",
+  "s10.notes.note_003.block_003": "O que sinto não é luto por ele. Ele nunca esteve presente, então não há nada a lamentar. O que sinto é que alguém me observou por nove anos como se assiste a um programa.",
+  "s10.notes.note_003.block_004": "E que eles estavam na sala na maior parte disso. Sentados no braço do sofá. Perguntando-me como ele estava.",
+  "s10.notes.note_003.block_005": "Ainda não escrevi o nome. Escrevei quando estiver certo. Ter certeza é a única coisa que me resta e que é minha.",
+  "s10.search.gs_001": "horário de visita da ala de cardiologia do Royal Free",
+  "s10.search.gs_002": "proteção a testemunhas no Reino Unido pode a família ser informada",
+  "s10.search.gs_003": "como descobrir se alguém está te enganando",
+  "s10.search.gs_004": "pesquisa reversa de imagem foto de perfil",
+  "s10.search.gs_005": "andreas solomou anestesista registro GMC",
+  "s10.search.gs_006": "é crime fingir ser alguém online no Reino Unido",
+  "s10.search.gs_007": "Lei de Proteção contra Assédio 1997 seção 3 civil",
+  "s10.search.gs_008": "como perdoar alguém da sua própria família",
+  "s10.payments.tx_001.note": "Estacionamento do hospital, B",
+  "s10.payments.tx_002.note": "Flores para a enfermaria",
+  "s10.payments.tx_003.note": "B, conserto de telefone",
+  "s10.payments.tx_004.note": "Quinta-feira, Marianna (contribuição)",
+  "s10.payments.tx_005.note": "Nia — almoço",
+  "s10.payments.tx_006.note": "Wexley & Co — na conta",
+  "s10.payments.tx_007.note": "Trem — Cardiff",
+  "s10.cloud.cfo_001": "tudo",
+  "s10.cloud.cf_001.name": "chronology_v11.xlsx",
+  "s10.cloud.cf_001.body": "CRONOLOGIA: 09/03/2017 a 14/03/2026\n\nLinhas: 4,118\nContas aparecendo: 39\nCanais: Chats, Feed DM, SMS, voz\n\nREIVINDICAÇÕES PASSÍVEIS DE VERIFICAÇÃO NA ÉPOCA: 61\nREIVINDICAÇÕES VERIFICADAS NA ÉPOCA: 0\n\nNOTAS COMPORTAMENTAIS (adicionado em abril de 2026)\n  1. Nenhum par de contas jamais esteve ativo no mesmo minuto.\n  2. Todas as contas ficam silenciosas nas quintas-feiras das 19:00–21:00. Sem exceções em nove anos.\n  3. Todas as contas escrevem 'definately'. Cada conta. Sempre.\n  4. Nenhuma conta jamais enviou uma fotografia tirada no dia em que foi enviada.\n  5. Toda chamada de 'Bobby' é uma chamada recebida. Nove anos, sem exceções.\n\nQualquer uma dessas não significa nada.",
+  "s10.cloud.cf_002.name": "schedule_A_accounts.pdf",
+  "s10.cloud.cf_002.body": "PROGRAMA A: TRINTA E NOVE CONTAS\n\n  a.solomou.md            Feed   criado 03/2017\n  bobby.solomou           Facebook    criado 03/2017\n  nadia_solomou_          Feed   criado 03/2019\n  nadiasolomou81          Facebook    criado 03/2019\n  dr.r.ferris             Chats    criado 06/2021\n  solomou.c (brother)     Feed   criado 08/2021\n  rfh.admin.cardio        Email       criado 06/2021\n  ...\n\n  39 contas.\n  2 domínios de e‑mail de registro.\n  3 números de telefone de recuperação.\n  2 identificadores de dispositivo.\n  1 faixa de IP residencial — BS5.",
+  "s10.cloud.cf_003.name": "reasons.txt",
+  "s10.cloud.cf_003.body": "Todo motivo apresentado, em nove anos, para explicar por que não poderia haver uma chamada de vídeo.\n\nContadas: 468.\nDistintas: 11.\nRepetidas entre contas: 11 de 11.\n\nOs onze motivos são dados por Bobby, por seu irmão, por Nadia e, em duas\nocasiões em 2021, por um cardiologista consultor.",
+  "s10.cloud.cf_004.name": "andreas_thread.pdf",
+  "s10.cloud.cf_004.body": "EXPORT: Feed DM com a.solomou (a conta real)\n19 de março de 2026\n\nNove mensagens. A conversa termina com um número de telefone e as palavras\n'Vou sentar.'\n\nA chamada que se seguiu durou 71 minutos. Ele retornou a ligação para ela na manhã seguinte\ne na manhã seguinte a isso.",
+  "s10.cloud.cf_005.name": "thursday.csv",
+  "s10.cloud.cf_005.body": "ATIVIDADE DE CONTA: QUINTAS-FEIRAS 19:00–21:00 (protegido)\n\nSemanas no período: 462\nQuintas-feiras com qualquer atividade de qualquer conta do Programa A: 0\n\nSemanas no período com atividade em todos os demais intervalos de 2 horas: 462\n\nNão há nenhum outro intervalo de duas horas na semana, em qualquer dia, com zero.",
+  "s10.memos.vm_001.title": "9 de nov",
+  "s10.memos.vm_002.title": "—",
+  "s10.clock.al_001": "Trabalho",
+  "s10.clock.al_002": "Quinta-feira",
+  "s10.lock.step_001.hint": "A própria anotação dela fornece o código do álbum diretamente: o dia em que ele a enviou a primeira mensagem, dia e mês, quatro dígitos.",
+  "s10.question.q01.title": "Nove anos",
+  "s10.question.q01.question": "Ao longo de nove anos e milhares de horas de contato, há uma coisa comum que nunca aconteceu entre eles. O que é?",
+  "s10.question.q01.opt0": "Uma fotografia juntos",
+  "s10.question.q01.opt1": "Um cartão de aniversário",
+  "s10.question.q01.opt2": "Uma chamada de vídeo",
+  "s10.question.q01.opt3": "Um feriado compartilhado",
+  "s10.question.q01.answers": [
+    [
+      "vídeo"
+    ],
+    [
+      "chamada"
+    ],
+    [
+      "vido"
+    ],
+    [
+      "görüntülü"
+    ],
+    [
+      "goruntulu"
+    ],
+    [
+      "face"
+    ]
+  ],
+  "s10.question.q02.title": "Setenta quilômetros",
+  "s10.question.q02.question": "Cada fotografia que ela recebeu pertence a um homem real com um perfil público comum. Onde ele realmente mora?",
+  "s10.question.q02.opt0": "Manchester",
+  "s10.question.q02.opt1": "Cardiff",
+  "s10.question.q02.opt2": "Nicosia",
+  "s10.question.q02.opt3": "London",
+  "s10.question.q02.answers": [
+    [
+      "cardiff"
+    ],
+    [
+      "kardif"
+    ],
+    [
+      "cardif"
+    ],
+    [
+      "wales"
+    ]
+  ],
+  "s10.question.q03.title": "O registro de chamadas",
+  "s10.question.q03.question": "Há milhares de chamadas desse número ao longo de nove anos. Uma coisa é verdadeira em todas elas. O que é?",
+  "s10.question.q03.opt0": "Todas eram curtas",
+  "s10.question.q03.opt1": "Todas as chamadas eram recebidas",
+  "s10.question.q03.opt2": "Todas eram à noite",
+  "s10.question.q03.opt3": "Todas eram da mesma antena",
+  "s10.question.q03.answers": [
+    [
+      "receb"
+    ],
+    [
+      "entrada"
+    ],
+    [
+      "ligou"
+    ],
+    [
+      "gelen"
+    ],
+    [
+      "receb"
+    ]
+  ],
+  "s10.question.q04.title": "Quatro meses",
+  "s10.question.q04.question": "Em 2019 ele desapareceu por quatro meses e voltou com uma explicação que ela aceitou. Onde ele supostamente estava?",
+  "s10.question.q04.opt0": "Uma pena de prisão",
+  "s10.question.q04.opt1": "Proteção de testemunha",
+  "s10.question.q04.opt2": "Um serviço no exterior",
+  "s10.question.q04.opt3": "Um ala psiquiátrica",
+  "s10.question.q04.answers": [
+    [
+      "testemunha"
+    ],
+    [
+      "proteção"
+    ],
+    [
+      "testemunha proteção"
+    ],
+    [
+      "tanik"
+    ],
+    [
+      "koruma"
+    ]
+  ],
+  "s10.question.q05.title": "Uma semana em março de 2021",
+  "s10.question.q05.question": "Quatro relatos contaram a ela quatro coisas na mesma semana. Três delas podem ser verdadeiras ao mesmo tempo. Toque na que não pode.",
+  "s10.question.q05.sn0": "Bobby: 'Na enfermaria até sexta, me transferiram para a unidade cardíaca, sem telefones além das portas.'",
+  "s10.question.q05.sn1": "Dr. Ferris: 'Ele está estável. Ele pediu que você não venha ao hospital e eu normalmente contestaria isso.'",
+  "s10.question.q05.sn2": "Nadia: 'Ele me ligou do carro esta tarde. Ele parecia terrível. Seja o que for que você tenha dito a ele, não faça.'",
+  "s10.question.q05.sn3": "Irmão de Bobby: 'Somente família na unidade, sinto muito. Vou dizer a ele que você pediu.'",
+  "s10.question.q05.answers": [
+    [
+      "nadia"
+    ],
+    [
+      "carro"
+    ],
+    [
+      "sn2"
+    ],
+    [
+      "terc"
+    ],
+    [
+      "espos"
+    ]
+  ],
+  "s10.question.q06.title": "A esposa dele",
+  "s10.question.q06.question": "Por três anos, uma mulher lhe enviou mensagens: primeiro furiosa, depois apologética, finalmente quase gentil. Ela é uma das trinta e nove. Qual é o nome dela?",
+  "s10.question.q06.opt0": "Rachel Ferris",
+  "s10.question.q06.opt1": "Nadia Solomou",
+  "s10.question.q06.opt2": "Hannah Wexley",
+  "s10.question.q06.opt3": "Nia Okonjo",
+  "s10.question.q06.answers": [
+    [
+      "nadia"
+    ],
+    [
+      "nadja"
+    ],
+    [
+      "nadya"
+    ],
+    [
+      "solomou"
+    ]
+  ],
+  "s10.question.q07.title": "Duas horas por semana",
+  "s10.question.q07.question": "Cada um dos trinta e nove relatos fica completamente silencioso na mesma janela de duas horas toda semana, por nove anos, sem exceção. Qual dia?",
+  "s10.question.q07.opt0": "Domingo",
+  "s10.question.q07.opt1": "Quinta-feira",
+  "s10.question.q07.opt2": "Quarta-feira",
+  "s10.question.q07.opt3": "Segunda-feira",
+  "s10.question.q07.answers": [
+    [
+      "quint"
+    ],
+    [
+      "quint"
+    ],
+    [
+      "quint"
+    ],
+    [
+      "quint"
+    ],
+    [
+      "quint"
+    ]
+  ],
+  "s10.question.q08.title": "Uma coisa, sem explicação",
+  "s10.question.q08.question": "Em 2023, ela pediu que ele enviasse uma fotografia dele mesmo, que não pudesse ser antiga. O que ela pediu que ele segurasse na foto?",
+  "s10.question.q08.opt0": "Uma fotografia de suas mãos",
+  "s10.question.q08.opt1": "Um jornal",
+  "s10.question.q08.opt2": "Passaporte dele",
+  "s10.question.q08.opt3": "Um bilhete manuscrito",
+  "s10.question.q08.answers": [
+    [
+      "jornal"
+    ],
+    [
+      "papel"
+    ],
+    [
+      "gazeta"
+    ],
+    [
+      "jorna"
+    ],
+    [
+      "jornal notícias"
+    ]
+  ],
+  "s10.question.q09.title": "14 de março",
+  "s10.question.q09.question": "Disseram a ela que ele estava em um hospital de Londres naquele dia. O homem de verdade estava em outro lugar, fotografado e marcado. Onde?",
+  "s10.question.q09.opt0": "Em uma partida de futebol",
+  "s10.question.q09.opt1": "Em um casamento",
+  "s10.question.q09.opt2": "De férias na Espanha",
+  "s10.question.q09.opt3": "Em sua própria festa de aniversário",
+  "s10.question.q09.answers": [
+    [
+      "casamento"
+    ],
+    [
+      "casament"
+    ],
+    [
+      "casamento"
+    ],
+    [
+      "casamento"
+    ],
+    [
+      "casamento"
+    ]
+  ],
+  "s10.question.q10.title": "Trezentas e doze libras",
+  "s10.question.q10.question": "Ela enviou dinheiro três vezes em nove anos, £312 no total. Para que foi a maior das três?",
+  "s10.question.q10.opt0": "Um bilhete de trem",
+  "s10.question.q10.opt1": "Estacionamento de hospital",
+  "s10.question.q10.opt2": "Uma tarifa de táxi",
+  "s10.question.q10.opt3": "Flores",
+  "s10.question.q10.answers": [
+    [
+      "estacionamento"
+    ],
+    [
+      "parque"
+    ],
+    [
+      "estacionamento hospital"
+    ],
+    [
+      "estacionamento"
+    ]
+  ],
+  "s10.question.q11.title": "A pista",
+  "s10.question.q11.question": "Uma palavra aparece em todas as trinta e nove declarações, errada da mesma forma todas as vezes. Trinta e nove pessoas não poderiam compartilhar isso. Que tipo de erro é?",
+  "s10.question.q11.opt0": "A mesma saudação",
+  "s10.question.q11.opt1": "Um erro de ortografia",
+  "s10.question.q11.opt2": "O mesmo emoji",
+  "s10.question.q11.opt3": "O mesmo horário do dia",
+  "s10.question.q11.answers": [
+    [
+      "ortografia"
+    ],
+    [
+      "definitiv"
+    ],
+    [
+      "definitivamente"
+    ],
+    [
+      "erro"
+    ],
+    [
+      "ortografia"
+    ],
+    [
+      "erro ortografia"
+    ]
+  ],
+  "s10.question.q12.title": "A quatro ruas de distância",
+  "s10.question.q12.question": "Trinta e nove contas, uma conexão, um código postal. Uma pessoa estava lá todas as quintas-feiras e na maioria das fotografias de família. Quem?",
+  "s10.question.q12.opt0": "Nia Okonjo",
+  "s10.question.q12.opt1": "Sophia Christofi",
+  "s10.question.q12.opt2": "Marianna Christofi",
+  "s10.question.q12.opt3": "Andreas Solomou",
+  "s10.question.q12.answers": [
+    [
+      "sophia"
+    ],
+    [
+      "sofia"
+    ],
+    [
+      "soph"
+    ],
+    [
+      "christofi"
+    ],
+    [
+      "prima"
+    ],
+    [
+      "primo"
+    ]
+  ],
+  "s10.question.q13.title": "Olhe novamente",
+  "s10.question.q13.question": "Abra o álbum da Família e veja as quatro fotografias em que ela aparece, de 2019 a 2025. Em todas elas, as mãos dela estão fazendo a mesma coisa. O que ela está segurando?",
+  "s10.question.q13.opt0": "Um cigarro",
+  "s10.question.q13.opt1": "Um copo de vinho",
+  "s10.question.q13.opt2": "O celular dela",
+  "s10.question.q13.opt3": "A bolsa dela",
+  "s10.question.q13.answers": [
+    [
+      "celular"
+    ],
+    [
+      "fone"
+    ],
+    [
+      "telefone"
+    ],
+    [
+      "celular"
+    ],
+    [
+      "seu telefone"
+    ]
+  ],
+  "s10.question.q14.title": "A décima primeira tentativa",
+  "s10.question.q14.question": "Sua explicação finalmente chegou, mas recusou‑se a ser uma. Ela nomeia o que era no início, antes de se tornar nove anos. O que foi?",
+  "s10.question.q14.opt0": "Um experimento",
+  "s10.question.q14.opt1": "Uma piada",
+  "s10.question.q14.opt2": "Um desafio",
+  "s10.question.q14.opt3": "Um erro",
+  "s10.question.q14.answers": [
+    [
+      "piada"
+    ],
+    [
+      "piad"
+    ],
+    [
+      "brincadeira"
+    ],
+    [
+      "trote"
+    ],
+    [
+      "risada"
+    ]
+  ],
+  "s10.question.q15.title": "Como se chama",
+  "s10.question.q15.question": "Ser outra pessoa por nove anos não é crime aqui. Seu advogado encontrou a única coisa que se encaixa. O que é?",
+  "s10.question.q15.opt0": "Fraude por representação falsa",
+  "s10.question.q15.opt1": "Assédio",
+  "s10.question.q15.opt2": "Comunicações maliciosas",
+  "s10.question.q15.opt3": "Difamação",
+  "s10.question.q15.answers": [
+    [
+      "assedi"
+    ],
+    [
+      "assedi"
+    ],
+    [
+      "taciz"
+    ],
+    [
+      "persegui"
+    ],
+    [
+      "proteç"
+    ],
+    [
+      "assediar"
+    ],
+    [
+      "perseg"
+    ],
+    [
+      "protec"
+    ]
+  ],
+  "s10.chats.b2_101": "Tenho pensado na sua terceira mensagem o dia todo. Aquela sobre a loja do seu pai. Ninguém jamais me descreveu o pai assim.",
+  "s10.chats.b2_102": "ele odiaria que você gostasse disso",
+  "s10.chats.b2_103": "Então não conte a ele. Me conte outra.",
+  "s10.chats.b2_110": "Longa. Dois prisões e uma seção. Vou falar com você um pouco se isso for permitido.",
+  "s10.chats.b2_111": "permitido",
+  "s10.chats.b2_112": "Você é a única pessoa com quem eu não preciso ser médico.",
+  "s10.chats.b2_120": "Desligado às sete. Dormindo até duas. Se você me mandar mensagem eu definitivamente vou acordar, então me mande mensagem.",
+  "s10.chats.b2_121": "dormir",
+  "s10.chats.b2_122": "não",
+  "s10.chats.b2_130": "Um ano. Eu contei.",
+  "s10.chats.b2_131": "eu também",
+  "s10.chats.b2_140": "Posso dizer algo louco. Comecei a ler coisas porque quero ter algo para te contar.",
+  "s10.chats.b2_141": "isso não é louco",
+  "s10.chats.b2_142": "É meio louco aos quarenta e um.",
+  "s10.chats.b2_150": "Não vou falar dos quatro meses. Vou ficar aqui, ao invés disso. Esse é o acordo que fiz comigo mesmo.",
+  "s10.chats.b2_151": "ok",
+  "s10.chats.b2_152": "Me pergunte uma coisa, porém. Uma.",
+  "s10.chats.b2_153": "você ficou assustado",
+  "s10.chats.b2_154": "Todo dia. Próxima pergunta em um ano.",
+  "s10.chats.b2_160": "Eles nos colocaram na escala de covid. Noites por enquanto. Não fique acordado. Fique acordado.",
+  "s10.chats.b2_161": "obviamente",
+  "s10.chats.b2_162": "Perdi dois esta noite. Não vou descrever. Só me diga algo comum.",
+  "s10.chats.b2_163": "a mulher de cima comprou um piano",
+  "s10.chats.b2_164": "Ela é boa?",
+  "s10.chats.b2_165": "não",
+  "s10.chats.b2_166": "Perfeito. Obrigado. Isso é a melhor coisa que alguém me disse em uma semana.",
+  "s10.chats.b2_170": "Meu irmão vai te mandar mensagem em algum momento. Ele pega meu telefone quando eu estou dentro. Seja gentil com ele, ele é direto e tem boas intenções.",
+  "s10.chats.b2_171": "ok",
+  "s10.chats.b2_180": "É algo do coração. Não quero que você procure no Google; quero que ouça de mim e, então, não vamos transformar isso no assunto principal.",
+  "s10.chats.b2_181": "Você não pode dizer isso e depois dizer para não pesquisar no Google",
+  "s10.chats.b2_182": "Eu definitivamente posso. Me veja.",
+  "s10.chats.b2_190": "Ligar para você às nove, como sempre.",
+  "s10.chats.b2_191": "Você sempre diz nove e depois liga às 9:40",
+  "s10.chats.b2_192": "Eu nunca, na vida, liguei para você às 9:40.",
+  "s10.chats.b2_193": "9:41, então",
+  "s10.chats.b2_200": "Feliz Natal. Estou dentro. Vou ficar pensando numa mesa em que nunca sentei.",
+  "s10.chats.b2_201": "tem uma cadeira",
+  "s10.chats.b2_202": "Eu sei que tem uma cadeira.",
+  "s10.chats.b2_210": "Você ficou quieto comigo por três semanas e não vou fingir que não percebi.",
+  "s10.chats.b2_211": "estou aqui",
+  "s10.chats.b2_212": "Você está aqui. Você não está comigo. Há uma diferença e eu já estive do lado errado antes.",
+  "s10.chats.b2_220": "As flores estão na loja, chegarão esta manhã. Eu definitivamente as encomendei a tempo este ano.",
+  "s10.chats.b2_221": "Você as encomendou ontem, não foi?",
+  "s10.chats.b2_222": "Eu as encomendei ontem.",
+  "s10.chats.b2_230": "Nove dias desde que dormi direito. Fale comigo sobre qualquer coisa que não seja um hospital.",
+  "s10.chats.b2_231": "Sophia conseguiu o emprego. O certo: farmácia de hospital, horário decente.",
+  "s10.chats.b2_232": "Bom para ela. Ela é quem faz as batatas fritas?",
+  "s10.chats.b2_233": "Ela é quem faz as batatas fritas.",
+  "s10.chats.b2_240": "Você já pensa em como seríamos num quarto.",
+  "s10.chats.b2_241": "Todo dia",
+  "s10.chats.b2_242": "Eu também. Acho que ficaríamos quietos por uns dez minutos e depois seria insuportável.",
+  "s10.chats.b2_250": "Oito anos.",
+  "s10.chats.b2_251": "Oito anos",
+  "s10.chats.b2_252": "Me faça a pergunta.",
+  "s10.chats.b2_253": "Não",
+  "s10.chats.b2_254": "Pergunte-me isso.",
+  "s10.chats.b2_255": "Não. Não vou perguntar de novo.",
+  "s10.chats.b2_260": "Bom dia. Dia longo pela frente. Me diga uma coisa quando você levantar.",
+  "s10.chats.b2_261": "Elena",
+  "s10.chats.b2_262": "Elena, eu sei que algo aconteceu. Fala comigo.",
+  "s10.chats.b2_263": "Por favor.",
+  "s10.chats.s2_101": "El, pode me buscar no trabalho às 8? A mãe saiu",
+  "s10.chats.s2_102": "Sim",
+  "s10.chats.s2_103": "Você é o melhor. Eu compro batatas pra você",
+  "s10.chats.s2_110": "Como foi a comemoração de aniversário? Ele fez algo legal",
+  "s10.chats.s2_111": "Ele ligou à meia‑noite",
+  "s10.chats.s2_112": "Isso é realmente muito romântico. Estou com ciúmes",
+  "s10.chats.s2_120": "EL. Eles me tornaram permanente!!!",
+  "s10.chats.s2_121": "SOPHIA",
+  "s10.chats.s2_122": "Eu sei!!! A mãe chorou. O pai fingiu que não viu",
+  "s10.chats.s2_130": "Alguma novidade?",
+  "s10.chats.s2_131": "Não",
+  "s10.chats.s2_132": "Ele vai voltar. Gente assim volta. Eu tenho um pressentimento sobre isso e meus sentimentos nunca erram",
+  "s10.chats.s2_140": "Você ouviu falar da sra. Kyriacou",
+  "s10.chats.s2_141": "Mamãe me contou",
+  "s10.chats.s2_142": "Todo mundo está morrendo e eu estou contando caixas de amoxicilina numa sala dos fundos",
+  "s10.chats.s2_150": "Posso te perguntar algo e você não ficar estranho?",
+  "s10.chats.s2_151": "Depende",
+  "s10.chats.s2_152": "Você já pensou que seria mais feliz com alguém que estivesse só aqui.",
+  "s10.chats.s2_153": "sophia",
+  "s10.chats.s2_154": "Desculpa. Esquece. Eu só quero que você tenha alguém à mesa; foi só isso que eu quis dizer",
+  "s10.chats.s2_160": "Como ele está? Mamãe disse que ele estava no hospital de novo",
+  "s10.chats.s2_161": "Eles não me deixam visitar",
+  "s10.chats.s2_162": "Isso é louco. Realmente louco. Eu arrombaria a porta, faria.",
+  "s10.chats.s2_170": "Santa diz para estar na casa da mamãe às 12.",
+  "s10.chats.s2_171": "Santa tem 22 anos.",
+  "s10.chats.s2_172": "Santa é atemporal.",
+  "s10.chats.s2_180": "El, eu tive o pior encontro da minha vida e preciso que você escute.",
+  "s10.chats.s2_181": "Vai.",
+  "s10.chats.s2_182": "Ele trouxe sua MÃE.",
+  "s10.chats.s2_183": "Para o encontro.",
+  "s10.chats.s2_184": "PARA O ENCONTRO.",
+  "s10.chats.s2_190": "5 anos hoje, não é?",
+  "s10.chats.s2_191": "Você lembrou.",
+  "s10.chats.s2_192": "Claro que eu lembrei. Eu lembro de tudo sobre você, é algo que faço por completo.",
+  "s10.chats.s2_200": "Mamãe está fazendo algo na mesa, onde pergunta sobre ele e depois me olha.",
+  "s10.chats.s2_201": "Por que ela olha pra você?",
+  "s10.chats.s2_202": "Porque eu sou quem diz para deixá‑la em paz.",
+  "s10.chats.s2_210": "Tem um cartão pro papai? Vou colocar os dois nomes.",
+  "s10.chats.s2_211": "Sim, por favor.",
+  "s10.chats.s2_220": "El, você está bem? Tem sumido nas últimas semanas.",
+  "s10.chats.s2_221": "Tô bem.",
+  "s10.chats.s2_222": "Você diz bem do jeito que a mãe diz bem.",
+  "s10.chats.s2_223": "isso é horrível de se dizer",
+  "s10.chats.s2_224": "Sei. Desculpa, mas você faz.",
+  "s10.chats.s2_230": "ENTENDI. Farmácia do hospital. Trabalho decente, horário decente.",
+  "s10.chats.s2_231": "sophia, isso é incrível",
+  "s10.chats.s2_232": "Vou ficar tão entediante agora. Das 9 às 17. Vou ter minhas noites de volta, com certeza",
+  "s10.chats.s2_240": "Feliz Dia Internacional da Mulher pra gente",
+  "s10.chats.s2_241": "pra gente",
+  "s10.chats.s2_250": "8 anos!! Ele ligou?",
+  "s10.chats.s2_251": "ainda não",
+  "s10.chats.s2_252": "ele vai",
+  "s10.chats.s2_253": "ele ligou",
+  "s10.chats.s2_254": "te avisei 🥹",
+  "s10.chats.s2_260": "el?",
+  "s10.chats.s2_270": "Não vou ficar te mandando mensagens. Só preciso que saiba que não vou fingir que isso não existe, quando quiser, ou nunca.",
+  "s10.chats.s2_271": "A mãe não está bem. Essa é a única razão de eu estar escrevendo, e não estou usando isso. Se quiser saber mais, o pai vai te contar; não precisa vir de mim.",
+  "s10.chats.n2_101": "ele vai ao evento sábado?",
+  "s10.chats.n2_102": "Ele tá trabalhando",
+  "s10.chats.n2_103": "Ok. Traz eu no lugar, sou mais barato e apareço",
+  "s10.chats.n2_110": "El, eu procurei ele. Tô te dizendo que fiz isso ao invés de fazer e não te contar.",
+  "s10.chats.n2_111": "e?",
+  "s10.chats.n2_112": "Ele é exatamente quem diz ser. Registro GMC, tudo isso. Desculpe ter olhado e fico feliz por ter feito isso.",
+  "s10.chats.n2_120": "Você esteve em uma chamada de trabalho, um quiz no Zoom e um evento de equipe este mês. São três chamadas de vídeo em quatro semanas com pessoas que você nem gosta.",
+  "s10.chats.n2_121": "nia",
+  "s10.chats.n2_122": "Essa é a mensagem completa. Não estou dizendo o resto.",
+  "s10.chats.n2_130": "almoço? vou fazer aquela coisa onde falo sobre mim",
+  "s10.chats.n2_131": "sim, por favor",
+  "s10.chats.n2_140": "Sete anos na próxima semana. Posso ficar feliz por você ou isso está errado.",
+  "s10.chats.n2_141": "você tem permissão",
+  "s10.chats.n2_142": "Então fico feliz por você. Falo sério e não me custa nada.",
+  "s10.chats.n2_150": "Como foi o advogado? E antes de você responder, não estou perguntando como quem estava certo. Eu já demiti essa pessoa permanentemente.",
+  "s10.chats.n2_151": "Ela diz que há um caminho. É civil, é lento e é o único que existe.",
+  "s10.chats.n2_152": "Então é isso que vamos fazer. Nós dois. Não traga nada.",
+  "s10.chats.n2_160": "Dois meses. Você voltou ao trabalho, fez o pacote Rahman, e ninguém naquele escritório tem ideia. Eu te observei hoje e pensei: \"Deus, ela tem algo\".",
+  "s10.chats.nd2_101": "Há quanto tempo isso está acontecendo? Quero um número.",
+  "s10.chats.nd2_102": "Um ano e meio. Eu não sabia de você.",
+  "s10.chats.nd2_103": "Um ano e meio. Você sabe o que eu estava fazendo um ano e meio atrás? Eu estava tendo o nosso segundo.",
+  "s10.chats.nd2_110": "Não vou te mandar mensagem novamente depois disso. Só quero que uma pessoa no mundo saiba que eu sei.",
+  "s10.chats.nd2_111": "Eu sei.",
+  "s10.chats.nd2_120": "Ele não está bem e não vai te dizer como não está. Alguém tem que fazer isso e não será ele.",
+  "s10.chats.nd2_130": "Eu definitivamente disse que não escreveria mais. Aqui estou. Ele teve uma semana ruim e eu não tenho ninguém para dizer isso também.",
+  "s10.chats.nd2_131": "Você pode me dizer.",
+  "s10.chats.nd2_132": "É uma frase estranha de se ouvir de você, e sou grato por isso, o que é ainda mais estranho.",
+  "s10.chats.nd2_140": "Aconteça o que acontecer entre vocês dois, você foi mais gentil comigo do que eu fui com você, e eu penso nisso há três anos.",
+  "s10.chats.fr2_101": "Sra. Christofi, Dr. Ferris. Ele me pediu para informar que os resultados foram tranquilizadores. Não é necessário mais nada hoje.",
+  "s10.chats.fr2_102": "Obrigado, doutor. Posso perguntar qual é o plano?",
+  "s10.chats.fr2_103": "Medicação, revisão em seis meses, e menos de tudo que o mantém acordado. Ele definitivamente vai dizer que é o trabalho. Não é só trabalho.",
+  "s10.chats.fr2_111": "Dr. Ferris, é comum um consultor mandar mensagem ao parceiro do paciente assim? Não estou sendo rude. Comecei a fazer perguntas que deveria ter feito há anos.",
+  "s10.chats.fr2_112": "Não é comum. Ele pediu e eu concordei, e consigo entender como isso parece escrito. Se preferir que eu pare, diga e eu o farei.",
+  "s10.messages.f_sms_101": "Elena, querida. Sua tia disse que você ficou quieta na quinta. Não estou perguntando, estou informando. Pai.",
+  "s10.messages.f_sms_102": "Estou bem, pai. Ficarei melhor na próxima semana.",
+  "s10.messages.f_sms_103": "A loja foi para o garoto turco, eu a transferi na sexta. Quarenta e um anos. Venha e pegue uma cadeira antes que ele as troque.",
+  "s10.messages.f_sms_104": "Quero a que fica perto da janela.",
+  "s10.messages.f_sms_105": "Sua tia está organizando o grande para agosto. Ela diz para levar ele. Eu disse que passaria adiante e é só isso que estou fazendo, estou passando adiante.",
+  "s10.messages.f_sms_106": "Venha no domingo. Só nós dois, não vou deixar os outros lá. Tenho a cadeira na van.",
+  "s10.messages.f_sms_107": "Chegarei às 2.",
+  "s10.messages.f_sms_108": "Não entendo nada disso, querida, e não vou fingir que entendo. Sei qual de vocês está na minha cozinha e sei qual não está, e isso é tudo o que sei.",
+  "s10.messages.f_sms_121": "Elena, mou, 7 horas amanhã, não 7:30, o cordeiro não vai esperar. E telefones na tigela, vocês duas, estou falando sério.",
+  "s10.messages.f_sms_122": "Leve-o numa quinta. Reservei um lugar há nove anos e vou continuar reservando, mas gostaria que me dissessem para parar se eu estiver sendo tolo.",
+  "s10.messages.f_sms_123": "Deixe assim. Ele virá quando estiver bem.",
+  "s10.messages.f_sms_124": "Você não atende meu telefone há três semanas. Não vou parar de ligar. Isso não é ameaça, é um cronograma.",
+  "s10.messages.f_sms_125": "Ela me contou. Tudo, sentada naquela mesa, na quarta, por duas horas. Não sei o que fazer com isso e não vou pedir sua ajuda.",
+  "s10.messages.f_sms_126": "Quinta ainda é quinta. Tem sido quinta desde antes de você nascer. Não estou pedindo que você venha. Estou dizendo que está lá.",
+  "s10.messages.f_sms_141": "Elena, li a cronologia duas vezes. Antes de prosseguirmos, nada nela é sua culpa, e não existe versão em que uma pessoa razoável perceba e você não.",
+  "s10.messages.f_sms_142": "Você tem que dizer isso.",
+  "s10.messages.f_sms_143": "Eu não preciso dizer isso. Cobro £280 por hora e nunca disse isso para ser gentil.",
+  "s10.messages.f_sms_144": "O que você precisa de mim.",
+  "s10.messages.f_sms_145": "Tudo que você já tem, na ordem que já tem. Não organize. Organizar é o que um réu faz.",
+  "s10.messages.f_sms_146": "O provedor cumpriu totalmente a ordem. Trinta e nove contas, e o panorama técnico é exatamente o que suas notas previam.",
+  "s10.messages.f_sms_147": "Então é ela.",
+  "s10.mail.f_gm_101.subject": "Carta de atendimento ao cliente: Christofi",
+  "s10.mail.f_gm_101.body": "Prezada Elena,\n\nConforme discutido, esta carta estabelece a base sobre a qual fomos contratados.\n\nFomos contratados para uma ação civil sob a Lei de Proteção contra Assédio de 1997. Não fomos contratados em relação a qualquer denúncia criminal. Expliquei o motivo e você me disse que já havia resolvido sozinha, o que não duvido.\n\nNossa tarifa é £280 por hora. Limitei a primeira fase a £1.500 e avisarei antes de ultrapassá‑la.\n\nHannah Wexley",
+  "s10.mail.f_gm_102.subject": "Fatura 4471: primeira fase",
+  "s10.mail.f_gm_102.body": "Fatura da primeira fase do trabalho, conforme o limite.\n\n  Assessoria preliminar, revisão da cronologia, pedido de ordem de divulgação, correspondência com o provedor.\n\n  Total: £750.00 (limite; tempo registrado £2,240.00)\n\nO saldo foi baixado a critério do sócio supervisor.",
+  "s10.mail.f_gm_103.subject": "Próximos passos",
+  "s10.mail.f_gm_103.body": "Elena,\n\nAgora temos o panorama técnico. Antes de decidir qualquer coisa, três coisas que você deve saber e nenhuma delas é aconselhamento:\n\n1. Uma ação é um documento público. O nome dela constará nele.\n2. Não existe versão em que isso seja resolvido rapidamente.\n3. Não entrar com uma ação é uma decisão que você pode tomar e eu não irei julgá‑la por isso.\n\nVocê não precisa me contar na quinta‑feira. Você não precisa me contar este mês.",
+  "s10.mail.f_gm_104.subject": "Seu download de dados está pronto",
+  "s10.mail.f_gm_104.body": "A cópia das suas informações solicitadas está pronta para download. O link expira em 14 dias.\n\n  Mensagens: 61,204\n  Chamadas registradas: 3,118\n  Período: 09/03/2017 – 19/03/2026",
+  "s10.mail.f_gm_105.subject": "Relatório de conta: resultado",
+  "s10.mail.f_gm_105.body": "Obrigado pelo seu relatório.\n\nRevisamos as contas que você informou e tomamos medidas onde nossas políticas foram violadas. Não podemos informar qual ação foi tomada.\n\nSabemos que isso é frustrante. Esta caixa de correio não é monitorada.",
+  "s10.mail.f_gm_106.subject": "Novo acesso à sua conta",
+  "s10.mail.f_gm_106.body": "Foi detectado um novo acesso.\n\n  Dispositivo: desktop\n  Localização: Bristol, Reino Unido\n\nSe foi você, nenhuma ação é necessária.",
+  "s10.mail.f_gm_107.subject": "Confirmação de consulta",
+  "s10.mail.f_gm_107.body": "Você tem uma consulta com a enfermeira da clínica.\n\n  14 de abril, 11:00\n  Motivo: revisão da pressão arterial\n\nTraga uma lista de quaisquer medicações. Reserve 20 minutos.",
+  "s10.mail.f_gm_108.subject": "Sua fatura está pronta",
+  "s10.mail.f_gm_108.body": "Sua fatura mensal está pronta para visualização.\n\n  Este mês: £24.00\n  Dados usados: 41.2 GB\n\nVocê está no plano adequado para o seu consumo.",
+  "s10.mail.f_gm_109.subject": "Licença compassiva: confirmação",
+  "s10.mail.f_gm_109.body": "Prezada Elena,\n\nEsta mensagem confirma duas semanas de licença compassiva a partir de 30 de março, estendida por mais uma semana a seu pedido, com a opção de retorno gradual.\n\nVocê não precisa apresentar um motivo e não apresentou nenhum. A linha de apoio ao empregado da empresa está na intranet e ninguém é informado quando ela é utilizada.",
+  "s10.mail.f_gm_110.subject": "Oito anos: obrigado",
+  "s10.mail.f_gm_110.body": "Prezada Elena,\n\nParabéns pelos oito anos na empresa.\n\nOs sócios pediram que eu lhe transmitisse que a equipe familiar não funcionaria sem você e que o conjunto Rahman ainda é mencionado na supervisão como exemplo de como deve ser feito.",
+  "s10.mail.f_gm_111.subject": "o conjunto Rahman (e outras coisas)",
+  "s10.mail.f_gm_112.subject": "Renovação de associação: 2026",
+  "s10.mail.f_gm_112.body": "Sua associação renova em 1 de fevereiro. Seu registro de CPD para o ano está completo.\n\nComo membro paralegal, você pode agora solicitar a via Chartered. As inscrições abrem em março.",
+  "s10.mail.f_gm_113.subject": "Imposto Municipal 2026/27",
+  "s10.mail.f_gm_113.body": "Sua conta para o ano é £2,020.80, pagável em dez parcelas a partir de abril. O desconto para pessoa solteira foi aplicado.",
+  "s10.mail.f_gm_114.subject": "Obrigado por entrar em contato",
+  "s10.mail.f_gm_115.subject": "De Andreas Solomou (o verdadeiro)",
+  "s10.mail.f_gm_115.body": "Elena,\n\nMudei isso para e‑mail porque ficava escrevendo quatro linhas e apagando‑as.\n\nPassei cinco dias olhando fotografias do meu próprio rosto e tentando descobrir o que dizer a você. Lembro‑me de ter tirado algumas delas. Uma foi feita na cozinha da minha irmã, em 2016. Outra é de um crachá de conferência que eu odiava tanto que pedi a reimpressão.\n\nSinto muito. Sei que é uma coisa estúpida pela qual devo me desculpar.\n\nVocê disse ao telefone que continuava pedindo desculpas a mim e quero deixar claro: você não tem nada do que se desculpar e eu não sou a parte lesada aqui. Eu perdi algumas fotografias. Você perdeu nove anos.\n\nAndreas",
+  "s10.mail.f_gm_116.subject": "Re: sem assunto",
+  "s10.mail.f_gm_131.subject": "Solicitação de dados",
+  "s10.mail.f_gm_131.body": "Estou solicitando uma cópia de todas as informações que vocês possuem sobre minha conta, incluindo metadados de mensagens e registros de chamadas, conforme o Artigo 15.\n\nSei que isso normalmente leva um mês. Estou pedindo mesmo assim, às cinco da manhã, porque não consigo fazer outra coisa.\n\nE. Christofi",
+  "s10.mail.f_gm_132.subject": "Relatório — 39 contas",
+  "s10.mail.f_gm_133.subject": "Instrução",
+  "s10.mail.f_gm_133.body": "Sra. Wexley,\n\nGostaria de lhe dar instruções. Li a carta de atendimento ao cliente e compreendo o limite e o que acontece depois dele.\n\nUma condição, que preciso que esteja por escrito. Se em algum momento você achar que estou fazendo isso para machucá‑la em vez de terminar, quero que me diga exatamente com essas palavras.\n\nElena Christofi",
+  "s10.mail.f_gm_134.subject": "Re: o pacote Rahman (e outras coisas)",
+  "s10.mail.f_gm_134.body": "Nia,\n\nPeguei a chave.\n\nE x",
+  "s10.mail.f_gm_135.subject": "Declaração",
+  "s10.mail.f_gm_135.body": "Andreas,\n\nObrigado. Meu advogado lhe escreverá adequadamente.\n\nTenho uma pergunta que não está relacionada à reclamação. Quando você fez a reimpressão da foto do crachá, gostaria de saber o que almoçou, como estava o tempo, ou qualquer outro detalhe que realmente aconteceu naquele dia.\n\nCarrego essa fotografia no celular há nove anos e gostaria de ter um fato verdadeiro por trás dela.\n\nElena",
+  "s10.mail.f_gm_136.subject": "(sem assunto)",
+  "s10.mail.f_gm_141.subject": "(sem assunto)",
+  "s10.mail.f_gm_141.body": "Você me perguntou em 8 de setembro de 2020 se eu seria mais feliz com alguém que estava apenas aqui.\n\nVoltei e encontrei. São vinte e cinco horas da noite e você enviou a mensagem a partir do seu quarto, numa casa onde passei todas as quintas‑feiras da minha vida.\n\nLi isso cerca de quarenta vezes agora e não consigo decidir se foi crueldade ou se foi você tentando impedir, e percebi que nunca serei capaz de dizer, e que não poder dizer é a coisa que realmente vou ter que...",
+  "s10.mail.f_gm_142.subject": "(sem assunto)",
+  "s10.mail.f_gm_143.subject": "(sem assunto)",
+  "s10.mail.f_gm_143.body": "Marianna,\n\nNão vou na quinta-feira e quero explicar o porquê de um jeito que não te faça escolher.\n\nNão é que eu não possa olhar para ela. Eu consigo olhar para ela, fiz isso por nove anos sem saber e provavelmente poderia fazer agora.\n\nÉ a tigela perto da porta. Não consigo passar por aquela tigela, colocar meu telefone nela e sentar, sabendo para que serviam aquelas duas horas, e comer o seu cordeiro, e ser",
+  "s10.notes.f_note_101.title": "Coisas que eu lhe contei",
+  "s10.notes.f_note_101.block_001": "Comecei isso porque a Nia disse que eu não falo com ninguém. Prova de que eu falo.",
+  "s10.notes.f_note_101.block_002": "Mãe. Tudo, inclusive a última semana, que nunca falei em voz alta para ninguém, nem mesmo para o pai.",
+  "s10.notes.f_note_101.block_003": "O aborto espontâneo. Contei a ele na terça-feira. Contei à Nia na sexta-feira. Nunca contei a ninguém da família.",
+  "s10.notes.f_note_101.block_004": "O que realmente penso sobre Marchbank.",
+  "s10.notes.f_note_101.block_005": "A coisa que fiz aos dezenove anos. Ele é a única pessoa viva que sabe disso.",
+  "s10.notes.f_note_101.block_006": "Oito coisas. Oito coisas que ninguém mais tem e ele tem todas as oito.",
+  "s10.notes.f_note_102.title": "Horários de chamadas",
+  "s10.notes.f_note_102.block_001": "Ele liga. Eu não ligo, pois o número nunca conecta; é um telefone de trabalho e está bloqueado.",
+  "s10.notes.f_note_102.block_002": "Terças e sextas por volta das nove. Às vezes domingo. Nunca quinta, ele sabe que é família.",
+  "s10.notes.f_note_102.block_003": "A mais longa durou 3 horas e 50 minutos, na noite após o aniversário da mãe.",
+  "s10.notes.f_note_102.block_004": "Liguei para o número dele duas vezes em nove anos. Uma vez em 2025 e outra em janeiro. Em ambas as vezes nada, e ambas as vezes ele me ligou dentro de dez minutos e foi adorável.",
+  "s10.notes.f_note_102.block_005": "Anotar isso fez parecer algo. Não é algo. É um telefone de trabalho bloqueado.",
+  "s10.notes.f_note_103.title": "O que eu preciso fazer",
+  "s10.notes.f_note_103.block_001": "Solicitação de dados, enviada em 21/3.",
+  "s10.notes.f_note_103.block_002": "Relatar as contas, enviada em 25/3. Não espere nada.",
+  "s10.notes.f_note_103.block_003": "Wexley, instruído em 2/4.",
+  "s10.notes.f_note_103.block_004": "Contar ao pai. Não à Marianna. Primeiro ao pai, sozinho, na cozinha dele.",
+  "s10.notes.f_note_103.block_005": "Decidir sobre quinta-feira. Não esta semana. Nem na próxima.",
+  "s10.notes.f_note_111.title": "—",
+  "s10.notes.f_note_111.block_001": "Quatro da manhã, cinco dias dentro. Fazendo uma lista do que realmente se foi, porque continuo dizendo \"tudo\" e tudo não é uma coisa.",
+  "s10.notes.f_note_111.block_002": "Desaparecido: a pessoa com quem conversei à noite por nove anos. Essa é real e eu tenho permissão.",
+  "s10.notes.f_note_111.block_003": "Desaparecido: nove anos de quintas-feiras. Não as futuras. As que já tive, que eram boas na época e agora não são.",
+  "s10.notes.f_note_111.block_004": "Gone: conhecer como meu próprio rosto parecia para ela. Ela me via feliz por algo que ela estava digitando. Ela deve ter mantido a expressão séria enquanto fazia isso. Eu nunca saberei o que era.",
+  "s10.notes.f_note_111.block_005": "Não se foi: Pai. Nia. O trabalho. O apartamento. Eu. Escrevendo isso porque às quatro da manhã a lista parece mais curta do que realmente é.",
+  "s10.notes.f_note_112.title": "—",
+  "s10.notes.f_note_112.block_001": "Wexley diz que uma reclamação é um documento público e o nome dela vai nele.",
+  "s10.notes.f_note_112.block_002": "Ela tem vinte e sete anos. Ela tem um emprego que conseguiu por conta própria. Ela estava orgulhosa disso, de uma forma que lembro, porque eu estava lá. Eu fiquei satisfeito. Eu lhe enviei uma mensagem com três exclamações.",
+  "s10.notes.f_note_112.block_003": "Eu escrevi ambas as versões do resto da minha vida. Em uma delas eu faço isso. Na outra não. Em nenhuma delas eu recupero os nove anos. Eu não esperava que isso fosse o fator decisivo, e não é. Mas continuo escrevendo isso.",
+  "s10.notes.f_note_112.block_004": "O que Hannah realmente disse: não trazer um é uma decisão que você tem permissão para tomar.",
+  "s10.notes.f_note_112.block_005": "Ninguém me disse isso sobre nada em nove anos. Sempre tudo exigiu que eu fosse paciente.",
+  "s10.search.f_gs_101": "proteção de testemunhas quanto tempo costuma durar uk",
+  "s10.search.f_gs_102": "wifi de hospital pode bloquear chamadas de vídeo",
+  "s10.search.f_gs_103": "por que alguém nunca enviaria uma foto tirada naquele dia",
+  "s10.search.f_gs_104": "modelo de solicitação de acesso ao assunto artigo 15",
+  "s10.search.f_gs_105": "como denunciar múltiplas contas falsas uma pessoa",
+  "s10.search.f_gs_106": "polícia pode fazer algo se nenhum dinheiro foi levado",
+  "s10.search.f_gs_107": "é culpa minha por não verificar catfish",
+  "s10.search.f_gs_108": "reclamação de assédio tribunal de condado quanto custa",
+  "s10.search.f_gs_109": "uma ação civil se torna pública quem pode lê-la",
+  "s10.search.f_gs_110": "licença por compaixão retorno faseado paralegal",
+  "s10.search.f_gs_111": "como lamentar alguém que nunca foi real",
+  "s10.search.f_gs_112": "você pode amar alguém que não existe",
+  "s10.calendar.f_ev_101": "Quinta‑feira, de Marianna",
+  "s10.calendar.f_ev_102": "Quinta‑feira, de Marianna",
+  "s10.calendar.f_ev_103": "Quinta‑feira, de Marianna",
+  "s10.calendar.f_ev_104": "Quinta‑feira, de Marianna",
+  "s10.calendar.f_ev_105": "Ferrier: preparação de audiência",
+  "s10.calendar.f_ev_106": "Rahman: prazo de dossiê",
+  "s10.calendar.f_ev_107": "A. Solomou: ligar (o verdadeiro)",
+  "s10.calendar.f_ev_108": "Wexley: instruir",
+  "s10.calendar.f_ev_109": "Wexley 09:00",
+  "s10.calendar.f_ev_110": "Wexley 09:00: a divulgação",
+  "s10.calendar.f_ev_111": "Enfermeira: PA",
+  "s10.calendar.f_ev_112": "Quinta-feira",
+  "s10.payments.f_tx_101.note": "Quinta-feira: Marianna (contribuição)",
+  "s10.payments.f_tx_102.note": "Quinta-feira: Marianna (contribuição)",
+  "s10.payments.f_tx_103.note": "Sophia: aniversário",
+  "s10.payments.f_tx_104.note": "Sophia: cinema",
+  "s10.payments.f_tx_105.note": "Nia: almoço",
+  "s10.payments.f_tx_106.note": "Wexley & Co: fatura 4471",
+  "s10.payments.f_tx_107.note": "Wexley & Co: a prazo",
+  "s10.payments.f_tx_108.note": "Passe de ônibus: janeiro",
+  "s10.payments.f_tx_109.note": "Pai: a cadeira (ele recusou)",
+  "s10.payments.f_tx_110.note": "Imposto municipal: abril",
+  "s10.maps.f_sp_001.name": "de Marianna",
+  "s10.maps.f_sp_001.address": "Fishponds, Bristol",
+  "s10.maps.f_sp_002.name": "Marchbank Direito de Família",
+  "s10.maps.f_sp_002.address": "Queen Square, Bristol",
+  "s10.maps.f_sp_003.name": "Wexley & Co",
+  "s10.maps.f_sp_003.address": "Park Street, Bristol",
+  "s10.photos.ph_020.document": "Fotografia de uma festa de batismo em um salão de igreja. Vinte e poucos convidados, copos de papel, uma mesa de apoio com um bolo.\n\n  Elena segura o bebê e olha para quem está tirando a foto. Na borda do grupo, meio de costas para a câmera, Sophia está de pé com um telefone segurado baixo contra o quadril, tela virada para cima, polegar repousando sobre ele.",
+  "s10.photos.ph_021.document": "Fotografia de um almoço familiar, tirada ao longo da mesa.\n\n  Nove pessoas. Elena está a meio caminho à esquerda com o braço ao redor da mulher ao seu lado. Do outro lado da mesa, Sophia tem uma mão plana sobre um telefone deitado com a tela virada para cima ao lado do seu prato, como quem mantém a mão sobre um copo.",
+  "s10.photos.ph_022.document": "Fotografia de um jardim sob forte luz da tarde.\n\n  Duas crianças na grama e um cachorro. Elena está no degrau com um prato no colo. Sophia está na cadeira de jardim atrás dela com um telefone no colo e o polegar na tela, sem olhar para as crianças.",
+  "s10.photos.ph_023.document": "Fotografia de uma cozinha na véspera de Natal, tirada tarde, com a maior parte da luz vindo da coifa sobre o fogão.\n\n  Elena está na pia com as mangas arregaçadas. Sophia está de pé encostada no balcão atrás dela com um telefone na mão esquerda, levantado e inclinado para longe, o rosto iluminado por ele.",
+  "s10.photos.ph_034.document": "Fotografia de uma tigela de madeira sobre a mesa do salão com quatro telefones dentro, tirada de cima.\n\n  Uma regra da casa, evidentemente: telefones vão para a tigela. Quatro deles, e a família nas outras fotografias daquela noite é composta por cinco."
+}

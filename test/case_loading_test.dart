@@ -67,12 +67,30 @@ void main() {
   });
 
   test('an untranslated pack falls back to English key by key', () async {
-    // Turkish ships common.json only, so the case strings come back in English
-    // while the shared UI strings come back translated.
+    // German ships common.json only, so the case strings come back in English
+    // while the shared UI strings come back translated. This used to be
+    // Turkish, which was true of every language and is now true of most: tr
+    // ships a case pack, and the merge is the mechanism that lets a language
+    // land one at a time rather than all ten at once.
+    final de = await repo.loadStrings('s01', 'de');
+    final en = await repo.loadStrings('s01', 'en');
+    expect(de.t('s01.meta.title'), en.t('s01.meta.title'));
+    expect(de.c('ui.months_short'), isNot(en.c('ui.months_short')));
+  });
+
+  test('a translated pack overrides English key by key', () async {
+    // The other half, and the half that matters once a language ships a case:
+    // the overlay wins where it has a key and falls through where it does not.
+    // s01's Turkish pack translates the title and deliberately leaves the
+    // street addresses alone.
     final tr = await repo.loadStrings('s01', 'tr');
     final en = await repo.loadStrings('s01', 'en');
-    expect(tr.t('s01.meta.title'), en.t('s01.meta.title'));
-    expect(tr.c('ui.months_short'), isNot(en.c('ui.months_short')));
+    expect(tr.t('s01.meta.title'), isNot(en.t('s01.meta.title')));
+    expect(
+      tr.t('s01.maps.loc_001.address'),
+      en.t('s01.maps.loc_001.address'),
+      reason: 'an address is not a thing to translate',
+    );
   });
 
   test('a missing key is visible rather than silently empty', () async {

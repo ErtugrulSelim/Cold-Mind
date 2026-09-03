@@ -112,6 +112,9 @@ class _PaymentsScreenState extends State<PaymentsScreen> {
           ),
           for (final tx in shown)
             _TxRow(
+              spansYears: PhoneFormat.spanYears([
+                for (final tx in shown) tx.at,
+              ]),
               tx: tx,
               name: _name(tx),
               photo: tx.personId == null
@@ -285,7 +288,11 @@ class _TxRow extends StatelessWidget {
   final PhoneFormat format;
   final VoidCallback onTap;
 
+  /// Whether the list this row is in runs across more than one year.
+  final bool spansYears;
+
   const _TxRow({
+    required this.spansYears,
     required this.tx,
     required this.name,
     required this.photo,
@@ -378,7 +385,7 @@ class _TxRow extends StatelessWidget {
                 ),
                 const SizedBox(height: 2),
                 Text(
-                  format.shortDate(tx.at),
+                  format.listDate(tx.at, spansYears: spansYears),
                   style: ColdType.micro.copyWith(color: device.textTertiary),
                 ),
                 // A payment the owner hid from their friends list is a choice

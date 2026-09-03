@@ -1,0 +1,920 @@
+{
+  "s07.meta.title": "Déficit",
+  "s07.board.maire.title": "Máire Conneely",
+  "s07.board.maire.sub": "Jefa de correos, Cloghmore, 1995–2017. Condenada por robo y falsificación de cuentas. Cumplió nueve meses.",
+  "s07.board.aoife.title": "Aoife Conneely",
+  "s07.board.aoife.sub": "Su hija. Tu cliente. Tenía diecinueve cuando ocurrió, y lo creyó.",
+  "s07.board.branch.title": "Cloghmore Post Office",
+  "s07.board.branch.sub": "Un mostrador, una caja fuerte, una terminal. Cerrada desde 2017. La persiana no se ha levantado en nueve años.",
+  "s07.board.money.title": "€41,300",
+  "s07.board.money.sub": "El déficit. Apareció durante once semanas en la primavera de 2016. Nunca recuperado, nunca localizado.",
+  "s07.board.meridian.title": "MERIDIAN",
+  "s07.board.meridian.sub": "El sistema contable de la sucursal. Sus cifras fueron la prueba. Nadie las ha cuestionado jamás en un tribunal.",
+  "s07.board.plea.title": "Declaración de culpabilidad",
+  "s07.board.plea.sub": "Presentada el 9 de mayo de 2017 por consejo del abogado, para evitar el cargo más grave. Ella nunca lo ha explicado.",
+  "s07.board.village.title": "El pueblo",
+  "s07.board.village.sub": "Novecientos cuarenta personas. Su hermano aportó €18,000. Ella no ha vuelto.",
+  "s07.board.e1": "su madre",
+  "s07.board.e2": "lo dirigió durante 21 años",
+  "s07.board.e3": "dijo que faltaba",
+  "s07.board.e4": "la única evidencia",
+  "s07.board.e5": "nunca se opuso",
+  "s07.board.e6": "lo pagó",
+  "s07.board.e7": "te contrató",
+  "s07.board.e8": "no puede volver",
+  "s07.relationship.p001.note": "Aoife. Domingos, cuando lo recuerda.",
+  "s07.relationship.p002.note": "Área. Devolver la llamada dentro de la hora.",
+  "s07.relationship.p003.note": "Bríd, Letterfrack.",
+  "s07.relationship.p004.note": "Peadar.",
+  "s07.relationship.p008.note": "La línea de ayuda.",
+  "s07.contact.p002.label": "gerente de zona",
+  "s07.contact.p008.label": "Meridian service desk",
+  "s07.client_chat.cc_001": "Me llamo Aoife Conneely. Mi madre es Máire Conneely y en 2017 se declaró culpable de robar cuarenta y un mil trescientos euros de la oficina de correos que dirigió durante veintiún años.",
+  "s07.client_chat.cc_002": "Tenía diecinueve años. Me senté en la segunda fila de esa sala del tribunal y creí cada palabra, y lo he creído durante nueve años.",
+  "s07.client_chat.cc_003": "El mes pasado leí sobre una mujer en Wexford cuya condena fue anulada. Mismo sistema. Mismo texto en la acusación. Lo mismo en todo.",
+  "s07.client_chat.cc_004": "Así que le pregunté a mi madre. Ella dijo, y la cito literalmente: haz lo que quieras, Aoife, ya soy demasiado mayor para que me vuelvan a decir que soy una mentirosa.",
+  "s07.client_chat.cc_005": "Todavía tiene el mismo teléfono. Nunca se ha comprado uno nuevo y nunca ha borrado nada, y ha dicho que puedo darte acceso a él. Está activo; está sobre la mesa entre nosotras y siguen llegando cosas.",
+  "s07.client_chat.cc_006": "Quiero que encuentres el dinero. Ese es el trabajo real. Cuarenta y un mil trescientos euros se fueron a algún sitio y, si ella los tomó, lo sabré y lo detendré.",
+  "s07.client_chat.cc_007": "Tengo que ser honesta; no estoy segura de qué respuesta espero, porque una de ellas implica que le debo nueve años. ¿Lo buscarás?",
+  "s07.client_chat.cc_007.accept": "Encontraré a dónde fue.",
+  "s07.client_chat.cc_007.decline": "Déjalo donde está.",
+  "s07.client_chat.cc_008": "Gracias. Empieza por las fotografías. Hay cientos y todas parecen la misma imagen y nunca le pregunté qué eran.",
+  "s07.client_chat.cc_009": "Una cosa. Si resulta que ella lo tomó, tú me lo dices a mí, no a ella. Ya ha tenido a demasiadas personas diciéndole cosas.",
+  "s07.interstitial.is1_001": "En ninguna parte. Me dices que no fue a ningún sitio.",
+  "s07.interstitial.is1_002": "Tengo su banco, la cooperativa de crédito, la caja de la tienda, la cuenta de mi tío y la casa. Once semanas y lo más grande que se mueve es ciento cuarenta euros por una entrega de aceite.",
+  "s07.interstitial.is1_003": "Entonces, ¿a dónde va cuarenta y un mil trescientos euros, si no va a ningún sitio? Sigue. Quiero la respuesta real, no la reconfortante.",
+  "s07.interstitial.is2_001": "Aislada.",
+  "s07.interstitial.is2_002": "Anotó la palabra después de cada llamada porque creía que se estaba volviendo loca y quería un registro de lo que le habían dicho. Sesenta y una llamadas. Aislada, aislada, aislada.",
+  "s07.interstitial.is2_004": "Conozco a Bríd desde que tenía cinco años. Aún no sé qué hacer con eso. Sigue.",
+  "s07.interstitial.is3_001": "DE UNA NOCHE.",
+  "s07.interstitial.is3_003": "Le llamé hace una hora. No le dije lo que tenía. Le preguntó por qué dejó de tomar las fotografías y ella respondió que no tenía sentido contar algo que nadie iba a leer.",
+  "s07.interstitial.is3_004": "Una más. Quiero el nombre de alguien que tuvo ese documento y le dijo que pagara de todos modos.",
+  "s07.closing_chat.cl_002": "Ocho meses después le dijo que lo arregara para el viernes.",
+  "s07.closing_chat.cl_003": "No he dormido bien desde el martes y quiero decir algo antes de que hagamos la parte práctica.",
+  "s07.closing_chat.cl_004": "Fotografió esa caja fuerte cuatrocientos dieciséis veces. Cada noche durante más de un año. Ella estaba construyendo eso y nadie le preguntó nunca qué hacía, ni siquiera yo, y yo vivía en la casa.",
+  "s07.closing_chat.cl_005": "Vale. Mi abogado dice que hay tres cosas que puedo hacer con lo que has encontrado y tengo que elegir una, porque no son compatibles.",
+  "s07.closing_chat.cl_006": "Una. Presentarlo ante el Tribunal de Apelación. Es lo único que elimina la condena. Dura entre dos y cuatro años y ella tiene sesenta y tres años y dice que no volverá a entrar en otra sala de juzgados.",
+  "s07.closing_chat.cl_008": "Pero menciona a Bríd. Tiene que hacerlo. El silencio de Bríd es la mitad de la prueba de que la empresa lo sabía, y Bríd ha gastado sesenta y ocho mil euros de su propio bolsillo y sigue detrás del mostrador y no ha hecho nada malo, salvo estar tan asustada como estaba mi madre.",
+  "s07.closing_chat.cl_009": "Tres, y ésta es la que mi abogado considera la más suave.",
+  "s07.closing_chat.cl_010": "Primero se lo llevo a mi madre: todo, las fotografías, la lista de fallos y el acuse de recibo de Moran; haré lo que ella diga. Incluso nada. Puede que ella no diga nada. Es perfectamente capaz de no decir nada.",
+  "s07.closing_chat.cl_011": "Tengo que decidir esta noche porque el editor de Eibhlín quiere una respuesta. ¿Qué hago?",
+  "s07.closing_chat.cl_011.opt1": "Presentar la apelación. Eliminar la condena.",
+  "s07.closing_chat.cl_011.opt2": "Entregarlo al periodista. Limpiar su nombre en el pueblo.",
+  "s07.closing_chat.cl_011.opt3": "Llevarlo a tu madre y cumplir lo que ella diga.",
+  "s07.closing_chat.cl_013": "El tribunal, entonces. El lento.",
+  "s07.closing_chat.cl_014": "Lo odiará y lo hará, porque es la mujer que contó una caja fuerte cuatrocientos dieciséis veces para nadie.",
+  "s07.closing_chat.cl_016": "Mi madre puede volver a entrar en esa tienda. Eso es lo que estoy comprando y sé exactamente por qué lo pago.",
+  "s07.closing_chat.cl_017": "Ella, entonces. Iré en coche por la mañana y pondré todo sobre la mesa de la cocina.",
+  "s07.closing_chat.cl_018": "Hace nueve años, una sala llena de gente decidió lo que le sucedía sin hacerle una sola pregunta. No seré el último en hacer eso, aunque tenga razón.",
+  "s07.closing_chat.cl_019": "Gracias. Vine aquí para averiguar si mi madre era una ladrona y, en su lugar, descubrí lo que hacía cada noche a las once y cuarenta, y me va a costar mucho superarlo.",
+  "s07.messages.sms_001": "Máire, Declan aquí. ¿Me llamas antes de cerrar? Es sobre las cifras de marzo.",
+  "s07.messages.sms_002": "Llamé dos veces, sin respuesta. Estoy en la sucursal hasta las 6.",
+  "s07.messages.sms_003": "Perdón, estaba en la carretera. Mira, la posición no ha cambiado. Hay que regularizarla antes del viernes. No soy yo, es como funciona el contrato.",
+  "s07.messages.sms_004": "Declan, lo he contado cada noche durante once semanas. El dinero no se ha ido porque nunca estuvo allí para irse.",
+  "s07.messages.sms_005": "Entiendo que lo sientas así. Viernes.",
+  "s07.messages.sms_010": "Máire, soy Peadar. Aoife dice que no le contestas. Deposité el dinero el martes, ya está, no me llames por eso.",
+  "s07.messages.sms_011": "Peadar, lo devolveré.",
+  "s07.messages.sms_012": "Lo sé.",
+  "s07.messages.sms_020": "Mam, está en marcha. Sky News lo tiene. El de Wexford. Mismo sistema, mismas palabras, todo igual.",
+  "s07.messages.sms_021": "Lo vi.",
+  "s07.messages.sms_022": "¿No vas a decir nada?",
+  "s07.messages.sms_023": "Dije todo lo que tenía que decir en 2016 y me costó la casa, cariño. Tú lo dices esta vez.",
+  "s07.chats.wa_001": "Máire, soy Bríd. ¿Qué tal mañana? Puede que conduzca hasta allí.",
+  "s07.chats.wa_002": "Estoy aquí cada día de mi vida, Bríd, sabes dónde estoy.",
+  "s07.chats.wa_003": "Vale. Veré cómo me va.",
+  "s07.chats.wa_004": "¿Bríd?",
+  "s07.chats.wa_005": "Perdón, el coche. Otra vez.",
+  "s07.chats.wa_010": "¿Puedo preguntarte algo y que me lo respondas claramente? En tu sucursal. ¿Alguna vez la máquina ha indicado un número que no estaba en la caja fuerte?",
+  "s07.chats.wa_011": "¿Por qué me preguntarías eso?",
+  "s07.chats.wa_012": "Porque me dicen que soy el único del país y he dejado de creerles.",
+  "s07.chats.wa_013": "nota de voz",
+  "s07.chats.wa_014": "Bríd, eso no es una respuesta.",
+  "s07.chats.wa_015": "Es la única que tengo. Lo siento, Máire. Lo siento mucho.",
+  "s07.chats.wa_020": "Te escuché. Lo siento mucho. Si hay algo, sea lo que sea.",
+  "s07.chats.wa_021": "No hay. Gracias Bríd.",
+  "s07.chats.wa_030": "Máire. No sé si leerás esto. He leído el artículo del periódico sobre la mujer de Wexford cuatro veces ya. Creo que deberías llamar a alguien; pienso que debí decirlo en 2016 y lo he pensado todos los días desde entonces.",
+  "s07.chats.wa_031": "Sé que lo tienes.",
+  "s07.mail.gm_001.subject": "Sucursal 4471 Cloghmore: posición pendiente",
+  "s07.mail.gm_001.body": "Máire,\n\nComo se comentó por teléfono. La posición al cierre de la jornada del viernes muestra un déficit de €41,300 respecto a la cuenta de la sucursal.\n\nSegún la cláusula 12 del acuerdo, el subpostmaster es responsable de todas las pérdidas causadas por su propia negligencia, descuido o error, y de reparar cualquier pérdida. No voy a pretender que esta cifra sea pequeña, pero el proceso es el proceso y tengo que dejar constancia de que te lo he comunicado.\n\nLa posición del sistema es la posición del sistema. No puedo presentar una cifra ante Dublín que difiera de lo que dice MERIDIAN, y tú tampoco puedes.\n\nCorrígelo antes del viernes y podremos cerrarlo a nivel de sucursal. Si se prolonga más allá del viernes, pasará de mi escritorio a Seguridad, y ninguno de los dos lo desea.\n\nDeclan Moran\nGerente de Área, Región Occidental",
+  "s07.mail.gm_002.subject": "Re: Sucursal 4471 Cloghmore: posición pendiente",
+  "s07.mail.gm_002.body": "Declan,\n\nHe contado la caja fuerte cada noche desde el 2 de marzo. La he fotografiado cada noche desde el 2 de marzo. Tengo los billetes y las monedas listados por separado y tengo los horarios.\n\nCada noche mi recuento es correcto y el terminal muestra entre cuatro y seis mil de más. Sube solo durante la noche. El día 19 cerré la sucursal a las 11:40 con €4,531.40 en la caja fuerte y llegué a las 8:00 a un terminal que mostraba €9,331.40 y no había nadie en el edificio salvo yo.\n\nNo te estoy pidiendo que me creas. Te estoy pidiendo que envíes a alguien a revisar la máquina.\n\nMáire",
+  "s07.mail.gm_003.subject": "Re: Sucursal 4471 Cloghmore: posición pendiente",
+  "s07.mail.gm_003.body": "Máire,\n\nLo he elevado. La posición del servicio de asistencia es que se trata de un problema aislado a nivel de sucursal y no hay ningún defecto reportado que coincida con este comportamiento.\n\nSugeriría suavemente que seguir por este camino no te ayuda. Las sucursales que disputan las cifras no lo hacen mejor, solo lo hacen más despacio.\n\nViernes.\n\nDeclan",
+  "s07.mail.gm_004.subject": "FW: Distribución regional: registro de errores conocidos Q3 (RESTRINGIDO)",
+  "s07.mail.gm_004.body": "Declan, como se solicitó, reenvío a tu correo personal para que lo tengas a mano. Por favor, no lo distribuyas, este es solo para gerentes de zona.\n\n> ---------- Mensaje reenviado ----------\n> Asunto: Distribución regional — registro de errores conocidos Q3 (RESTRINGIDO)\n> Fecha: 8 de septiembre de 2016\n> Para: Gerentes de zona (Todas las regiones)\n>\n> Se adjunta el registro de errores conocidos del Q3 para la contabilidad de sucursales MERIDIAN.\n> Manejo: RESTRINGIDO. No para distribución posterior a nivel de sucursal.\n> No debe ser citado en correspondencia con subpostmasters.\n>\n> Adjunto: known_error_log_q3.pdf\n\n[Este mensaje aparece en el buzón de Máire Conneely porque estaba en la lista de destinatarios del hilo original del que se reenviaba. El acuse de lectura al pie del mensaje está fechado el 8 de septiembre de 2016, 16:41.]",
+  "s07.mail.gm_005.subject": "Auditoría de sucursal 4471: informe de visita",
+  "s07.mail.gm_005.body": "Máire,\n\nComo prometí, mi informe se envió a Dublín el viernes. Te lo copio porque lo solicitaste y porque creo que tienes derecho a él.\n\nResumen: dos días en el sitio, recuento físico completo ambos días, existencias conciliadas, remesas verificadas contra los albaranes de hace seis semanas, procedimiento de caja fuerte observado, control de llaves correcto.\n\nConclusión: no hay efectivo, existencias ni remesas sin contabilizar en esta sucursal. La posición física coincide con los registros manuales llevados por el subpostmaster. No coincide con el terminal.\n\nHe escrito la última frase exactamente como la encontré y me han dicho que no es el tipo de conclusión para la que sirve el informe. No sé qué pasará con ella ahora.\n\nLamento no poder hacer más que anotarla.\n\nFiona Doyle\nAuditoría de sucursal",
+  "s07.mail.gm_006.subject": "MER-2016-0114",
+  "s07.mail.gm_006.body": "Sra. Conneely,\n\nNo obtendrás esto del servicio de asistencia, así que lo envío desde mi propia dirección y agradecería que no indicaras su origen.\n\nEl comportamiento que me describiste por teléfono el día 24 es un defecto conocido. Tiene una referencia y un nombre. Se ha registrado once veces en nueve sucursales desde 2014 y yo he registrado cuatro de esas yo mismo.\n\nQué hace: el trabajo de conciliación nocturna vuelve a publicar el lote de remesas de una sucursal cuando el trabajo se reinicia tras un tiempo de espera. El saldo de la sucursal aumenta por el valor del lote. El dinero no existe. No falta nada en la sucursal porque nada salió nunca de ella.\n\nEstá en el registro de errores conocidos del Q3. Tu gerente de zona tiene ese registro.\n\nNo debería estar escribiendo esto. Lo he escrito de todas formas.\n\nT. Geraghty",
+  "s07.mail.gm_007.subject": "Wexford: condena anulada",
+  "s07.maps.loc_001.name": "Oficina de correos de Cloghmore",
+  "s07.maps.loc_001.address": "Main Street, Cloghmore, Co. Galway",
+  "s07.maps.loc_001.note": "Veintiún años. Última visita 9 de mayo de 2017.",
+  "s07.maps.loc_002.name": "Letterfrack",
+  "s07.maps.loc_002.address": "Co. Galway",
+  "s07.maps.loc_003.name": "Casa",
+  "s07.maps.loc_003.address": "Bóthar na Trá, Galway",
+  "s07.maps.loc_004.name": "Palacio de justicia",
+  "s07.maps.loc_004.address": "Courthouse Square, Galway",
+  "s07.maps.loc_004.note": "9 de mayo de 2017.",
+  "s07.maps.loc_005.name": "Cooperativa de crédito",
+  "s07.maps.loc_005.address": "Clifden, Co. Galway",
+  "s07.maps.loc_006.name": "Cementerio de Cloghmore",
+  "s07.maps.loc_006.address": "Cloghmore, Co. Galway",
+  "s07.calendar.ev_001": "Recuento + foto",
+  "s07.calendar.ev_002": "Declan, viernes",
+  "s07.calendar.ev_003": "Visita de auditoría, F. Doyle",
+  "s07.calendar.ev_003.notes": "Dos días. Que ella vea todo.",
+  "s07.calendar.ev_004": "Tribunal, 10:30",
+  "s07.calendar.ev_005": "Aoife, domingo",
+  "s07.calendar.ev_006": "Peadar, cumpleaños",
+  "s07.photos.album_001": "Carrete",
+  "s07.photos.album_002": "Cargos",
+  "s07.photos.album_003": "Tribunal",
+  "s07.photos.album_004": "Cloghmore",
+  "s07.photos.ph_005.document": "Fotografía de la pantalla de un terminal en una oficina trasera, tomada en ángulo, el reflejo de la pantalla corta una esquina.\n\n  MERIDIAN, SUCURSAL 4471 CLOGHMORE\n  POSICIÓN DE OPERACIÓN, 20/03/2016 08:04\n\n  EFECTIVO DISPONIBLE (SISTEMA)      9,331.40\n  EFECTIVO DISPONIBLE (DECLARADO)    4,531.40\n  DIFERENCIA                   4,800.00\n\n  Última conciliación: 20/03/2016 02:14 (REINICIADO)\n\nAbajo de la pantalla, apoyada contra el teclado, hay un papel manuscrito: '4,531.40, counted 3x, 23:40 19/3'.",
+  "s07.photos.ph_006.document": "Fotografía de una hoja de cargos, sostenida plana sobre una mesa de cocina.\n\n  EL PUEBLO (EN LA DEMANDA DEL DIRECTOR DE LA PROSECUCIÓN PÚBLICA)\n  v. MÁIRE CONNEELY\n\n  CARGO 1  Robo contrario a s.4 Criminal Justice (Theft and Fraud\n           Offences) Act 2001, €41,300\n  CARGO 2  Contabilidad falsa contraria a s.10 de la citada Ley\n\n  Detalles: que entre el 2 de marzo de 2016 y el 20 de mayo de 2016 en Cloghmore\n  Oficina de Correos, sucursal 4471, el acusado did steal €41,300 the property\n  de An Post, y did falsify records con ánimo de lucro.\n\nAlguien ha subrayado 'did steal' con lápiz y ha escrito al lado, muy pequeño: 'from where'.",
+  "s07.photos.ph_007.document": "Photograph of a printed page from a restricted document, taken quickly, the top and bottom edges cut off by the frame.\n\n  MERIDIAN, REGISTRO DE ERRORES CONOCIDO, Q3 2016\n  MANEJO: RESTRINGIDO, NO PARA DISTRIBUCIÓN EN SUCURSALES\n\n  REF          NOMBRE        SEV   ELEVADO   SUCURSALES   ESTADO\n  ...\n  MER-2016-0114  OVERNIGHT   2    11       9          ABIERTO\n  ...\n\n  MER-2016-0114 OVERNIGHT, reconciliación nocturna vuelve a publicar la remesa\n  lote al reiniciar el trabajo tras el tiempo de espera. El saldo de la sucursal se infló por el lote\n  valor. No hay movimiento de efectivo correspondiente. Las sucursales afectadas informan\n  superávit inexplicado en la posición del sistema frente al recuento físico.\n\n  Solución alternativa: ninguna a nivel de sucursal.\n  Nota: se debe avisar a las sucursales que informen este comportamiento que el problema está\n  aislado mientras se espera la corrección.",
+  "s07.photos.ph_010.document": "Fotografía de la última página de un informe de auditoría, ligeramente desenfocada en la parte superior.\n\n  AUDITORÍA DE SUCURSAL — 4471 CLOGHMORE\n  F. DOYLE, AUDITORÍA DE SUCURSAL, 26–27 DE ABRIL DE 2016\n\n  CONCLUSIÓN\n\n  No hay efectivo, existencias ni remesas sin contabilizar en esta sucursal.\n  La posición física coincide con los registros manuales mantenidos por el subdirector de correos y no coincide con la posición del terminal.\n\n  Recomendación: verificar la posición del terminal de forma centralizada antes de que se tome cualquier acción de recuperación contra el subdirector de correos.\n\nAl pie de la página, en otra letra: 'No para el expediente. DM.'",
+  "s07.notes.folder_001": "Sucursal",
+  "s07.notes.folder_002": "—",
+  "s07.notes.note_001.title": "Llamadas al mostrador",
+  "s07.notes.note_001.block_001": "Anoto esto porque empiezo a pensar que imaginé la última.",
+  "s07.notes.note_001.block_002": "9 mar, 10:20, chica llamada Sinéad. Me dijo que es un problema aislado a nivel de sucursal.",
+  "s07.notes.note_001.block_003": "14 mar, 09:05, hombre, sin nombre. Problema aislado. Se aconsejó volver a contar.",
+  "s07.notes.note_001.block_004": "21 mar, 16:50. Problema aislado en tu sucursal. Ninguna otra sucursal lo reporta.",
+  "s07.notes.note_001.block_005": "4 abr. Le pedí que anotara la palabra para mí. Dijo que no podía poner nada por escrito pero que era un problema aislado.",
+  "s07.notes.note_001.block_006": "Todos lo dicen de la misma manera. Esa es la parte que me asusta.",
+  "s07.notes.note_002.title": "Procedimiento",
+  "s07.notes.note_002.block_001": "Cierre a las 17:30. Saque el efectivo del cajón a la bandeja.",
+  "s07.notes.note_002.block_002": "Primero los billetes, en cincuenta. Después las monedas, por denominación. Escriba ambas cifras en el talón.",
+  "s07.notes.note_002.block_003": "Cuéntelo dos veces. Desde marzo, cuéntelo tres veces.",
+  "s07.notes.note_002.block_004": "El talón va en la bandeja con los billetes. Fotografe la caja fuerte abierta con el talón visible.",
+  "s07.notes.note_002.block_005": "El código del álbum de fotos de la caja fuerte es 0203, el día en que empezó. No lo cambie, lo olvidaré.",
+  "s07.notes.note_003.title": "—",
+  "s07.notes.note_003.block_001": "No podré decir nada de esto en voz alta, así que lo pongo aquí.",
+  "s07.notes.note_003.block_002": "Peadar ingresó dieciocho mil el martes y no me miró. Él cree que fui yo. Lo pagó de todos modos. No sé cuál de esas dos cosas es peor y he estado despierto desde las cuatro trabajando en ello.",
+  "s07.notes.note_003.block_003": "El abogado dice que el cargo de hurto conlleva prisión y el de contabilidad una multa, y que, si me declaro culpable del cargo de contabilidad, tomarán el de hurto. Dice que al jurado se le mostrará una máquina y a mí, y se les preguntará cuál de los dos creen.",
+  "s07.notes.note_003.block_004": "Así que el martes me levantaré en Galway y diré una palabra que no es cierta, para que ocurra una cosa pequeña falsa en lugar de una grande.",
+  "s07.notes.note_003.block_005": "Veintiún años y nunca he tomado un sello. Aoife me escuchará decirlo y lo creerá, y no hay versión del martes en la que eso no ocurra.",
+  "s07.notes.note_004.title": "Para después",
+  "s07.notes.note_004.block_002": "Cada una lleva el talón dentro. El talón tiene la hora. La caja fuerte está abierta en todas ellas.",
+  "s07.notes.note_004.block_003": "El nombre del ingeniero está en el correo electrónico. Era decente y no debería involucrarse si se puede evitar.",
+  "s07.notes.note_004.block_004": "La auditoría fue a Dublín el 29 de abril y obtuve una copia porque la solicité en la puerta.",
+  "s07.notes.note_004.block_005": "No espero que nadie lea nada de esto. Lo dejo ordenado porque es lo que hago.",
+  "s07.search.gs_001": "saldo del terminal meridian superior al efectivo en la caja fuerte",
+  "s07.search.gs_002": "puede un sistema contable de oficina de correos añadir dinero que no existe",
+  "s07.search.gs_003": "contrato de subdirector de correos compensar la cláusula de pérdida 12",
+  "s07.search.gs_004": "otros directores de correos mismo problema foro",
+  "s07.search.gs_005": "sentencia de contabilidad falsa Irlanda primer delito",
+  "s07.search.gs_006": "qué pasa con tu pensión si te declaras culpable",
+  "s07.search.gs_007": "condena de la postmaster de Wexford anulada",
+  "s07.search.gs_008": "tribunal de apelación cuánto tiempo lleva un caso penal",
+  "s07.payments.tx_001.note": "Entrega de petróleo",
+  "s07.payments.tx_002.note": "Cooperativa de crédito: reembolso de préstamo",
+  "s07.payments.tx_003.note": "P. Conneely: transferencia entrante",
+  "s07.payments.tx_004.note": "An Post: remesa de sucursal",
+  "s07.payments.tx_005.note": "Abogado: a cuenta",
+  "s07.payments.tx_006.note": "Aoife, libros",
+  "s07.payments.tx_007.note": "Electricidad",
+  "s07.payments.tx_008.note": "Cooperativa de crédito, reembolso de préstamo",
+  "s07.payments.tx_009.note": "An Post, remesa de sucursal",
+  "s07.payments.tx_010.note": "Farmacia",
+  "s07.cloud.cfo_001": "Sucursal",
+  "s07.cloud.cf_001.name": "counts_march_may_2016.csv",
+  "s07.cloud.cf_001.body": "FECHA, HORA, NOTAS, MONEDAS, TOTAL CONTADO, TERMINAL, VARIACIÓN\n01/03, 23:20, 5 180.00, 288.60, 5 468.60, 5 468.60, 0.00\n02/03, 23:35, 4 910.00, 301.20, 5 211.20, 9 211.20, 4 000.00\n03/03, 23:15, 5 042.00, 264.80, 5 306.80, 9 306.80, 4 000.00\n...\n19/03, 23:40, 4 220.00, 311.40, 4 531.40, 9 331.40, 4 800.00\n...\n20/05, 23:25, 4 806.00, 297.10, 5 103.10, 46 403.10, 41 300.00\n\nLa variación aparece por primera vez el 02/03. Nunca vuelve a cero.\nEl total contado es el recuento físico. Terminal es lo que indica el sistema.\nEn cada línea, el recuento físico es la cifra más baja.",
+  "s07.cloud.cf_002.name": "bank_and_credit_union_2016.pdf",
+  "s07.cloud.cf_002.body": "TODAS LAS CUENTAS, 01/03/2016 a 31/05/2016\n\nCuenta corriente (M. Conneely)     apertura 1,204.66   cierre 908.12\nCuenta de participación de cooperativa de crédito         apertura 3,110.00   cierre 3,110.00\nFlotante de sucursal (An Post, separado)    conciliado semanalmente, sin excepciones\n\nMayor crédito único en el período: €18,000.00, 17/05, P. CONNEELY\nMayor débito único en el período:  €18,000.00, 18/05, AN POST\n\nNingún otro crédito en el período supera €412.00.\nNingún ingreso de efectivo en el período supera €300.00.\nNinguna cuenta, conjunta o individual, de M. Conneely ganó valor en el período.",
+  "s07.cloud.cf_003.name": "known_error_log_q3.pdf",
+  "s07.cloud.cf_003.body": "MERIDIAN — REGISTRO DE ERRORES CONOCIDOS, T3 2016 (RESTRINGIDO)\n\nREF             NOMBRE        GRAV  ELEVA  SUCURSALES  ESTADO\nMER-2015-0881   PRINTQ      4    3       3         CERRADO\nMER-2016-0047   STOCKSYNC   3    6       5         ABIERTO\nMER-2016-0114   OVERNIGHT   2    11      9         ABIERTO\nMER-2016-0203   CARDTIMEOUT 3    4       4         ABIERTO\n\nMER-2016-0114, OVERNIGHT\nLa reconciliación nocturna vuelve a publicar el lote de remesas de la sucursal cuando el\nel trabajo se reinicia tras un tiempo de espera. El saldo de la sucursal se infla por el\nvalor del lote. No hay movimiento de efectivo correspondiente.\n\nLas sucursales afectadas informan de un superávit inexplicado en la posición del sistema\ncontra el recuento físico, recurrente nocturno, acumulativo.\n\nGenerado: 11 ocasiones desde 04/2014. Cuatro generadas por T. Geraghty (soporte).\nSucursales afectadas hasta la fecha: 9. Cloghmore (4471) añadido 03/2016.\nSolución alternativa: ninguna disponible a nivel de sucursal.\n\nNOTA DE COMUNICACIONES: se debe avisar a las sucursales que informan este comportamiento\nde que el problema está aislado a su sucursal a la espera de una solución. Este registro no está\npara ser referenciado en la correspondencia con los subgerentes.\n\nDistribución: Gerentes de Área (Todas las Regiones), 08/09/2016.",
+  "s07.cloud.cf_004.name": "audit_4471_doyle.pdf",
+  "s07.cloud.cf_004.body": "INFORME DE AUDITORÍA DE SUCURSAL, 4471 CLOGHMORE\nF. Doyle, Auditoría de Sucursal, 26 y 27 de abril de 2016\n\nAlcance: recuento físico completo de efectivo (ambos días), conciliación de existencias,\nverificación de remesas con los talonarios (6 semanas), procedimiento de caja fuerte y llaves.\n\nHallazgos:\n  Efectivo            concuerda con el registro manual, ambos días\n  Existencias          concuerdan\n  Remesas              concuerdan con los talonarios, sin excepciones\n  Control de llaves    correcto, único responsable de llaves\n  Registros            albaranes manuales conservados diariamente, horarios registrados\n\nCONCLUSIÓN: No hay efectivo, existencias ni remesas sin contabilizar en esta\nsucursal. La posición física concuerda con los registros manuales mantenidos\npor el subpostmaster y no concuerda con la posición del terminal.\n\nRECOMENDACIÓN: la posición del terminal debe verificarse centralmente antes de que se tome cualquier\nacción de recuperación contra el subpostmaster.\n\n[Informe no incluido en el libro de pruebas. No divulgado a la\ndefensa. Escrito a mano en la copia del expediente: 'No para el expediente. DM.']",
+  "s07.cloud.cf_005.name": "trial_bundle_index.pdf",
+  "s07.cloud.cf_005.body": "LIBRO DE PRUEBAS — ÍNDICE\nDPP v. CONNEELY, Tribunal de Circuito de Galway, 2017\n\n 1. Declaración de D. Moran, Gerente de Área\n 2. Declaraciones comerciales de la sucursal MERIDIAN, 4471, 01/03/16 – 20/05/16\n 3. Extracto del registro de transacciones MERIDIAN, 4471\n 4. Declaración de J. Ruane, Seguridad\n 5. Certificado sobre el funcionamiento del sistema MERIDIAN\n 6. Exhibiciones: talonarios de remesas\n\nNO INCLUIDO:\n  Informe de auditoría de sucursal, F. Doyle, 26–27/04/2016\n  Registro de errores conocidos T3 2016\n  Correspondencia: T. Geraghty a M. Conneely, 26/04/2016\n  Registros de recuento manual y fotografías del subpostmaster",
+  "s07.memos.vm_001.title": "19 de marzo",
+  "s07.memos.vm_001.transcript": "Vale. Sábado diecinueve de marzo. Veinte para las doce. Notas, cuatro mil doscientos veinte. Monedas, trescientos once cuarenta. Total cuatro mil quinientos treinta y uno cuarenta. Y la máquina indica nueve mil trescientos treinta y uno cuarenta. Así que quiere cuatro mil ochocientos euros, es decir, cuatro mil ochocientos euros que no están en este edificio. No hay cuatro mil ochocientos en este edificio. Lo he contado tres veces y lo voy a contar una vez más y luego me voy a casa.",
+  "s07.memos.vm_002.title": "Servicio de asistencia",
+  "s07.memos.vm_002.transcript": "Sra. Conneely, habla el servicio de asistencia MERIDIAN devolviendo su llamada de esta mañana. He consultado con mi líder de equipo y puedo confirmar que no hay otras sucursales que estén informando actualmente una discrepancia de este tipo, así que parece ser un problema aislado en su sucursal. Lamentablemente no podemos acudir al sitio por una variación de esta naturaleza. Si la diferencia persiste, deberá hablar con su gerente de área para regularizarla. Muchas gracias y disculpe las molestias.",
+  "s07.memos.vm_003.title": "8 de mayo",
+  "s07.memos.vm_003.transcript": "Mañana. Me voy a poner de pie y decirlo. Y lo que sigo recordando a esta hora de la mañana no es el dinero ni los nueve meses. Es que Aoife va a estar allí y va a oír a su madre decirlo, y después ella habrá escuchado que yo lo dije, y nunca podré desdecírselo. Eso es todo. Eso es todo lo que estoy comprando.",
+  "s07.clock.al_001": "Abierto",
+  "s07.clock.al_002": "Recuento",
+  "s07.lock.step_001.hint": "Su propia nota de procedimiento deletrea la contraseña del álbum: es el día en que la variación apareció por primera vez, día y mes, cuatro dígitos.",
+  "s07.lock.step_003.hint": "El correo del ingeniero da a la avería su referencia. Esa referencia, en minúsculas, es lo que abre el registro restringido.",
+  "s07.question.q01.title": "Veinte para las doce",
+  "s07.question.q01.question": "Durante más de un año fotografió lo mismo cada noche antes de cerrar. ¿Qué aparece en las fotografías?",
+  "s07.question.q01.opt0": "La puerta principal",
+  "s07.question.q01.opt1": "El recuento de la caja fuerte",
+  "s07.question.q01.opt2": "Su libro de contabilidad",
+  "s07.question.q01.opt3": "El sello postal",
+  "s07.question.q01.answers": [
+    [
+      "caja"
+    ],
+    [
+      "caj"
+    ],
+    [
+      "dinero"
+    ],
+    [
+      "din"
+    ],
+    [
+      "efectivo"
+    ],
+    [
+      "efec"
+    ],
+    [
+      "plata"
+    ],
+    [
+      "plat"
+    ]
+  ],
+  "s07.question.q02.title": "Sesenta y una llamadas",
+  "s07.question.q02.question": "En once semanas marcó un número sesenta y una veces. ¿Cómo aparece en sus contactos?",
+  "s07.question.q02.opt0": "Su hija",
+  "s07.question.q02.opt1": "La línea de ayuda",
+  "s07.question.q02.opt2": "Oficina central",
+  "s07.question.q02.opt3": "La cooperativa de crédito",
+  "s07.question.q02.answers": [
+    [
+      "ayuda"
+    ],
+    [
+      "ayud"
+    ],
+    [
+      "asistencia"
+    ],
+    [
+      "asist"
+    ],
+    [
+      "servicio"
+    ],
+    [
+      "serv"
+    ],
+    [
+      "soporte"
+    ],
+    [
+      "soport"
+    ],
+    [
+      "meridian"
+    ]
+  ],
+  "s07.question.q03.title": "Para el viernes",
+  "s07.question.q03.question": "Las tres letras de su gerente de zona terminan todas con la misma instrucción. ¿Qué le dice que haga con el déficit?",
+  "s07.question.q03.opt0": "Informarlo a la oficina central",
+  "s07.question.q03.opt1": "Compensarlo",
+  "s07.question.q03.opt2": "Cerrar la sucursal",
+  "s07.question.q03.opt3": "Esperar al auditor",
+  "s07.question.q03.answers": [
+    [
+      "compens"
+    ],
+    [
+      "liquid"
+    ],
+    [
+      "pagar"
+    ],
+    [
+      "pag"
+    ],
+    [
+      "cubr"
+    ],
+    [
+      "buen"
+    ]
+  ],
+  "s07.question.q04.title": "Síguelo",
+  "s07.question.q04.question": "Cuarenta y un mil trescientos euros se dice que han salido de esa sucursal. En todas sus cuentas, ¿a dónde fueron?",
+  "s07.question.q04.opt0": "A una cuenta de cooperativa de crédito",
+  "s07.question.q04.opt1": "En ninguna parte",
+  "s07.question.q04.opt2": "En las cuotas de su hija",
+  "s07.question.q04.opt3": "En el fondo de la sucursal",
+  "s07.question.q04.answers": [
+    [
+      "ningun"
+    ],
+    [
+      "ninguna"
+    ],
+    [
+      "nada"
+    ],
+    [
+      "nada"
+    ],
+    [
+      "nunca"
+    ],
+    [
+      "hicbir"
+    ]
+  ],
+  "s07.question.q05.title": "Once semanas",
+  "s07.question.q05.question": "Coloca la primavera de 2016 en el orden en que ocurrió.",
+  "s07.question.q05.ev0": "26–27 de abril, un auditor pasa dos días en la sucursal y cuenta todo dos veces",
+  "s07.question.q05.ev1": "2 de marzo, el terminal supera €4,000 al caja fuerte por primera vez",
+  "s07.question.q05.ev2": "17 de mayo, su hermano transfiere €18,000 a su cuenta",
+  "s07.question.q05.ev3": "20 de mayo, la variación alcanza €41,300 y la sucursal es suspendida",
+  "s07.question.q05.ev4": "9 de marzo, la primera llamada al servicio de asistencia; le informan que el problema está aislado",
+  "s07.question.q05.ev5": "28 de abril, un ingeniero le envía un correo electrónico privado con una referencia de defecto",
+  "s07.question.q05.answers": [
+    [
+      "orden"
+    ]
+  ],
+  "s07.question.q06.title": "La palabra",
+  "s07.question.q06.question": "Anotó lo que el servicio de asistencia le dijo después de cada llamada. Usaron siempre la misma palabra. ¿Cuál?",
+  "s07.question.q06.opt0": "Conciliado",
+  "s07.question.q06.opt1": "Aislado",
+  "s07.question.q06.opt2": "Escalado",
+  "s07.question.q06.opt3": "Duplicado",
+  "s07.question.q06.answers": [
+    [
+      "aisl"
+    ],
+    [
+      "aisla"
+    ],
+    [
+      "solo"
+    ],
+    [
+      "únic"
+    ]
+  ],
+  "s07.question.q07.title": "Catorce millas por la carretera",
+  "s07.question.q07.question": "La carterista del pueblo vecino tenía el mismo agujero en sus cuentas antes que Máire. ¿Qué año?",
+  "s07.question.q07.opt0": "2011",
+  "s07.question.q07.opt1": "2014",
+  "s07.question.q07.opt2": "2009",
+  "s07.question.q07.opt3": "2016",
+  "s07.question.q07.answers": [
+    [
+      "2014"
+    ],
+    [
+      "14"
+    ]
+  ],
+  "s07.question.q08.title": "Silenciosamente",
+  "s07.question.q08.question": "Bríd nunca lo informó. Ella lo cubrió ella misma. ¿De dónde vino el dinero?",
+  "s07.question.q08.opt0": "Un préstamo bancario",
+  "s07.question.q08.opt1": "Sus propios ahorros",
+  "s07.question.q08.opt2": "El fondo de caja de la sucursal",
+  "s07.question.q08.opt3": "La oficina central lo dio de baja",
+  "s07.question.q08.answers": [
+    [
+      "ahorro"
+    ],
+    [
+      "ahorros"
+    ],
+    [
+      "propio"
+    ],
+    [
+      "pensión"
+    ],
+    [
+      "birikim"
+    ]
+  ],
+  "s07.question.q09.title": "Cuatro cosas que dijo la empresa",
+  "s07.question.q09.question": "Se presentaron cuatro declaraciones ante el tribunal en 2017. Tres de ellas son verdaderas. Selecciona la que este teléfono demuestra que es falsa.",
+  "s07.question.q09.sn0": "La terminal de la sucursal registró una variación acumulada de €41.300 entre el 2 de marzo y el 20 de mayo de 2016.",
+  "s07.question.q09.sn1": "El subdirector de correos era el único titular de la llave de la caja fuerte de la sucursal.",
+  "s07.question.q09.sn2": "La empresa no conocía ningún defecto que pudiera producir una variación de esta naturaleza a nivel de sucursal.",
+  "s07.question.q09.sn3": "El déficit no fue compensado por el subdirector de correos dentro del plazo permitido por el acuerdo.",
+  "s07.question.q09.answers": [
+    [
+      "defecto"
+    ],
+    [
+      "conocido"
+    ],
+    [
+      "tercero"
+    ],
+    [
+      "sn2"
+    ]
+  ],
+  "s07.question.q10.title": "Tiene un nombre",
+  "s07.question.q10.question": "El fallo que provocó esto está listado en un documento restringido, con una referencia y un nombre. ¿Cuál es el nombre?",
+  "s07.question.q10.opt0": "Cascada",
+  "s07.question.q10.opt1": "Nocturno",
+  "s07.question.q10.opt2": "Reversión",
+  "s07.question.q10.opt3": "Fantasma",
+  "s07.question.q10.answers": [
+    [
+      "nocturno"
+    ],
+    [
+      "nocturno"
+    ],
+    [
+      "nocturn"
+    ],
+    [
+      "0114"
+    ]
+  ],
+  "s07.question.q11.title": "Once veces",
+  "s07.question.q11.question": "Una persona señaló ese fallo una y otra vez desde dentro de la empresa, y luego rompió las normas para contárselo a ella. ¿Quién?",
+  "s07.question.q11.opt0": "Fiona Doyle",
+  "s07.question.q11.opt1": "Tomás Geraghty",
+  "s07.question.q11.opt2": "Bríd Sheridan",
+  "s07.question.q11.opt3": "Eibhlín Ní Chonaill",
+  "s07.question.q11.answers": [
+    [
+      "geraghty"
+    ],
+    [
+      "tomas"
+    ],
+    [
+      "tomás"
+    ],
+    [
+      "geraghy"
+    ],
+    [
+      "gerahty"
+    ],
+    [
+      "ingenier"
+    ]
+  ],
+  "s07.question.q12.title": "Dos días en el sitio",
+  "s07.question.q12.question": "Una auditora contó toda la sucursal dos veces, y su informe nunca llegó al tribunal. ¿Qué encontró sin contabilizar?",
+  "s07.question.q12.opt0": "€41,300",
+  "s07.question.q12.opt1": "Nada",
+  "s07.question.q12.opt2": "€12,700",
+  "s07.question.q12.opt3": "€900",
+  "s07.question.q12.answers": [
+    [
+      "nada"
+    ],
+    [
+      "nulo"
+    ],
+    [
+      "ninguno"
+    ],
+    [
+      "nota"
+    ],
+    [
+      "hicbir"
+    ]
+  ],
+  "s07.question.q13.title": "La última fotografía",
+  "s07.question.q13.question": "Hay cuatrocientos dieciséis fotografías y luego no hay ninguna. ¿Qué ocurrió el día que dejó de contar?",
+  "s07.question.q13.opt0": "La sucursal cerró",
+  "s07.question.q13.opt1": "Se declaró culpable",
+  "s07.question.q13.opt2": "Se jubiló",
+  "s07.question.q13.opt3": "La oficina central tomó las llaves",
+  "s07.question.q13.answers": [
+    [
+      "culp"
+    ],
+    [
+      "aleg"
+    ],
+    [
+      "culp"
+    ],
+    [
+      "trib"
+    ],
+    [
+      "sentenci"
+    ],
+    [
+      "juic"
+    ]
+  ],
+  "s07.question.q14.title": "Dieciocho mil",
+  "s07.question.q14.question": "Una persona pagó una gran parte del déficit de su propio bolsillo y apenas ha hablado con ella desde entonces. ¿Quién?",
+  "s07.question.q14.opt0": "Bríd Sheridan",
+  "s07.question.q14.opt1": "Peadar, su hermano",
+  "s07.question.q14.opt2": "Fiona Doyle",
+  "s07.question.q14.opt3": "Tomás Geraghty",
+  "s07.question.q14.answers": [
+    [
+      "peadar"
+    ],
+    [
+      "pedar"
+    ],
+    [
+      "peader"
+    ],
+    [
+      "brother"
+    ],
+    [
+      "conneely"
+    ],
+    [
+      "kardes"
+    ]
+  ],
+  "s07.question.q15.title": "Quién lo tenía en su escritorio",
+  "s07.question.q15.question": "Ocho meses después de que el registro restringido llegara a los gerentes de zona, uno de ellos, que lo abrió, le dijo que pagara antes del viernes. Nómbralo.",
+  "s07.question.q15.opt0": "Fiona Doyle",
+  "s07.question.q15.opt1": "Declan Moran",
+  "s07.question.q15.opt2": "Bríd Sheridan",
+  "s07.question.q15.opt3": "Tomás Geraghty",
+  "s07.question.q15.answers": [
+    [
+      "moran"
+    ],
+    [
+      "declan"
+    ],
+    [
+      "morran"
+    ],
+    [
+      "moren"
+    ],
+    [
+      "dm"
+    ]
+  ],
+  "s07.messages.f_sms_201": "Máire: Dublín tiene la sucursal señalada en el semanal. Preferiría oírlo de ti que leerlo de una lista. Llámame.",
+  "s07.messages.f_sms_202": "Te llamaré a las seis. Estoy solo aquí hasta entonces.",
+  "s07.messages.f_sms_203": "El viernes vino y se fue. He mantenido esto en mi propio escritorio durante once días, lo cual no estaba obligado a hacer.",
+  "s07.messages.f_sms_204": "Declan, hay una auditora que vendrá la próxima semana. ¿La esperarás?",
+  "s07.messages.f_sms_205": "Una auditoría es sobre la sucursal. La posición es la posición.",
+  "s07.messages.f_sms_206": "Nunca he llegado ni un día tarde con una remesa en veintiún años.",
+  "s07.messages.f_sms_207": "Lo sé. No tiene nada que ver.",
+  "s07.messages.f_sms_208": "Me han dicho que un informe de visita ha subido a Dublín. Eso es asunto de Dublín. Mi posición no ha cambiado.",
+  "s07.messages.f_sms_209": "Le he pedido el dinero a Peadar. Quiero que sepas lo que supuso pedirle.",
+  "s07.messages.f_sms_210": "Me alegra que esté resuelto.",
+  "s07.messages.f_sms_211": "Está hecho. Lo habrás leído en el periódico.",
+  "s07.messages.f_sms_221": "Peadar. Tengo que pedirte algo y no puedo hacerlo en la casa.",
+  "s07.messages.f_sms_222": "Pídeme en la casa.",
+  "s07.messages.f_sms_223": "No puedo.",
+  "s07.messages.f_sms_224": "Estoy fuera del juzgado. No entraré si lo prefieres.",
+  "s07.messages.f_sms_225": "Entra.",
+  "s07.messages.f_sms_226": "Hay una fuga en la trastienda. He puesto un cubo.",
+  "s07.messages.f_sms_227": "El barco está fuera hasta el jueves. Hay caballa en el congelador.",
+  "s07.messages.f_sms_228": "El perro está en la puerta otra vez. Sigue esperando la furgoneta del correo. Nueve años y sigue esperándola.",
+  "s07.messages.f_sms_229": "Yo también.",
+  "s07.messages.f_sms_230": "¿Estás despierto? Hay una garza en la pared.",
+  "s07.messages.f_sms_231": "Yo ya estoy despierto.",
+  "s07.messages.f_sms_232": "Aoife me llamó. Le dije que le hablarías cuando estuvieras listo y no antes.",
+  "s07.messages.f_sms_241": "Mamá, el martes tomo el tren de las siete. Llegaré antes de que empiece.",
+  "s07.messages.f_sms_242": "No tienes que venir.",
+  "s07.messages.f_sms_243": "Sé que no tengo que venir.",
+  "s07.messages.f_sms_244": "¿Estás comiendo?",
+  "s07.messages.f_sms_245": "Yo sí.",
+  "s07.messages.f_sms_246": "Hoy cumplo dos años. Sé que sabes qué día es. Simplemente no quería que fueras el único que lo supiera.",
+  "s07.messages.f_sms_247": "Feliz Navidad, mamá. Llámame cuando estés despierta.",
+  "s07.messages.f_sms_248": "Nos han impedido viajar, así que no puedo bajar. ¿Están tú y papá bien para ir de compras?",
+  "s07.messages.f_sms_249": "Estamos bien. Quédate donde estás.",
+  "s07.messages.f_sms_250": "Lo tengo. Tiempo completo, en Galway. Puedo estar contigo en cuarenta minutos ahora, en vez de tres horas.",
+  "s07.messages.f_sms_251": "Es la mejor noticia que he tenido en seis años.",
+  "s07.messages.f_sms_252": "Mamá, hay algo en la radio sobre los jefes de correos de Inglaterra. ¿Lo estás escuchando?",
+  "s07.messages.f_sms_253": "Lo apagué.",
+  "s07.messages.f_sms_254": "Ok.",
+  "s07.messages.f_sms_261": "MERIDIAN Service Desk: su caso CAS-118442 ha sido registrado. Nuestro objetivo es responder en un plazo de 5 días laborables. Por favor, no responda a este mensaje.",
+  "s07.messages.f_sms_262": "MERIDIAN Service Desk: el caso CAS-118442 ha sido asignado a un asesor.",
+  "s07.messages.f_sms_263": "MERIDIAN Service Desk: el caso CAS-118442 ha sido cerrado. Si considera que es incorrecto, por favor contacte con nosotros para abrir un nuevo caso.",
+  "s07.messages.f_sms_264": "MERIDIAN Service Desk: ¿Cómo lo hemos hecho? Responda con un número del 1 al 5, donde 5 es muy satisfecho.",
+  "s07.messages.f_sms_265": "MERIDIAN Service Desk: su caso CAS-119017 ha sido registrado. Nuestro objetivo es responder en un plazo de 5 días laborables.",
+  "s07.messages.f_sms_266": "MERIDIAN Service Desk: el caso CAS-119017 ha sido cerrado.",
+  "s07.messages.f_sms_267": "MERIDIAN Service Desk: ¿cómo lo hemos hecho? Responde con un número del 1 al 5, donde 5 es muy satisfecho.",
+  "s07.messages.f_sms_268": "MERIDIAN Service Desk: tu caso CAS-120336 ha sido registrado.",
+  "s07.messages.f_sms_269": "MERIDIAN Service Desk: el caso CAS-120336 ha sido cerrado.",
+  "s07.messages.f_sms_270": "MERIDIAN Service Desk: ¿cómo lo hemos hecho? Responde con un número del 1 al 5, donde 5 es muy satisfecho.",
+  "s07.messages.f_sms_271": "MERIDIAN Service Desk: el caso CAS-121880 ha sido vinculado al caso CAS-118442 y cerrado.",
+  "s07.messages.f_sms_272": "MERIDIAN Service Desk: ¿cómo lo hemos hecho? Responde con un número del 1 al 5, donde 5 es muy satisfecho.",
+  "s07.messages.f_sms_281": "Máire: Fiona Doyle, Auditoría de Sucursal. Estaré contigo a las nueve de la mañana y de nuevo el miércoles. Querré la caja fuerte y las últimas seis semanas de expedientes.",
+  "s07.messages.f_sms_282": "Todo estará sobre la mesa para ti.",
+  "s07.messages.f_sms_283": "No me lo expongas. Prefiero verlo tal como lo guardas.",
+  "s07.messages.f_sms_284": "Así es como lo guardo. Ese es el problema.",
+  "s07.messages.f_sms_285": "Esta mañana se envió a Dublín. He pedido que también te llegue una copia.",
+  "s07.messages.f_sms_286": "Gracias, Fiona.",
+  "s07.chats.f_wa_101": "Máire, la gente de pensiones me dice que el jueves está cambiando. ¿Has oído algo al respecto?",
+  "s07.chats.f_wa_102": "Ni una palabra. Nos dicen al final, Bríd, lo sabes tan bien como yo.",
+  "s07.chats.f_wa_103": "Feliz Año Nuevo, cariño. ¿Seguimos de acuerdo para la fiesta de los jefes de correos en marzo?",
+  "s07.chats.f_wa_104": "Sí. Es la única noche del año en la que no estoy detrás del cristal.",
+  "s07.chats.f_wa_105": "Pasé por la sucursal hoy. Ahora hay una máquina de tarjetas en la ventanilla y un cartel de paquetes.",
+  "s07.chats.f_wa_106": "Lo sé. Aoife me lo dijo. No he bajado.",
+  "s07.chats.f_wa_107": "Cierro a fin de mes. Treinta y un años. Lo van a trasladar a la tienda.",
+  "s07.chats.f_wa_108": "Ah, Bríd.",
+  "s07.chats.f_wa_109": "Es el momento adecuado. Eso es lo que le digo a todo el mundo.",
+  "s07.chats.f_wa_110": "Feliz Navidad, Máire. Estoy pensando en ti y no voy a decir nada más.",
+  "s07.chats.f_wa_111": "¿Supiste que la nieta de Nuala aprobó el Leaving? La primera de esa familia.",
+  "s07.chats.f_wa_112": "Qué bonito.",
+  "s07.chats.f_wa_113": "No sé por qué siempre sé qué día es hoy. Simplemente lo sé.",
+  "s07.chats.f_wa_114": "No tienes que decir nada, Bríd. Nunca lo hiciste.",
+  "s07.chats.f_wa_115": "¿Estás bien?",
+  "s07.chats.f_wa_116": "Yo sí. ¿Y tú?",
+  "s07.chats.f_wa_117": "Yo sí.",
+  "s07.chats.f_wa_201": "Te envié una foto del piso. Toda la cocina tiene el tamaño de tu salón.",
+  "s07.chats.f_wa_202": "Es precioso. ¿Eso es humedad en la esquina o es la luz?",
+  "s07.chats.f_wa_203": "Es la luz. Es la luz, Mam.",
+  "s07.chats.f_wa_204": "Hice pan. Todos están haciendo pan.",
+  "s07.chats.f_wa_205": "Eso no es pan, es una cuña. Menos agua.",
+  "s07.chats.f_wa_206": "Hoy me encontré con una mujer que era la cartera de correos en Roscommon. Casi dije algo, pero al final no lo hice.",
+  "s07.chats.f_wa_207": "No lo hagas.",
+  "s07.chats.f_wa_208": "Primer día. Deséame suerte.",
+  "s07.chats.f_wa_209": "No lo necesitas. Llámame a las seis.",
+  "s07.chats.f_wa_210": "Papá contestó el teléfono hoy y habló durante once minutos. Once. Lo cronometré.",
+  "s07.chats.f_wa_211": "¿Sobre qué?",
+  "s07.chats.f_wa_212": "El barco. Pero once minutos, Mam.",
+  "s07.chats.f_wa_213": "¿Iré a verte en Semana Santa o vendrás tú a verme?",
+  "s07.chats.f_wa_214": "Ven aquí. La carretera de salida está en mal estado.",
+  "s07.chats.f_wa_215": "Voy a apuntar tu nombre al grupo de caminatas en Clifden. No tienes que ir. Ya lo he anotado.",
+  "s07.chats.f_wa_216": "Aoife.",
+  "s07.chats.f_wa_217": "Lo he anotado.",
+  "s07.chats.f_wa_218": "Mam, voy a preguntarte algo el domingo y quiero que lo pienses antes de que lo haga.",
+  "s07.mail.f_gm_101.subject": "Informe de operaciones de sucursal: fin de semana 11/03/2016",
+  "s07.mail.f_gm_101.body": "Tu informe semanal de operaciones de sucursal ya está disponible en el terminal. Este es un mensaje automático. Por favor, no respondas a esta dirección.",
+  "s07.mail.f_gm_102.subject": "Extracto de operaciones de sucursal: semana que termina 15/04/2016",
+  "s07.mail.f_gm_102.body": "Su extracto semanal de operaciones de sucursal ya está disponible en el terminal. Este es un mensaje automático. Por favor, no responda a esta dirección.",
+  "s07.mail.f_gm_103.subject": "Extracto de operaciones de sucursal: semana que termina 20/05/2016",
+  "s07.mail.f_gm_103.body": "Su extracto semanal de operaciones de sucursal ya está disponible en el terminal. Este es un mensaje automático. Por favor, no responda a esta dirección.",
+  "s07.mail.f_gm_104.subject": "Pedido de existencias: confirmación",
+  "s07.mail.f_gm_104.body": "Su pedido ha sido confirmado para entrega el jueves: sellos (N y W), formularios de licencia de TV, formularios de impuesto de vehículos, sobres prepagados, dos rollos de papel de toalla. Firma el albarán y conserva la copia superior.",
+  "s07.mail.f_gm_105.subject": "Nuevo producto: cambio de divisas",
+  "s07.mail.f_gm_105.body": "Todas las sucursales ofrecerán cambio de divisas a partir de junio. La formación en línea es obligatoria y debe completarse antes de finales de mayo. Reserve dos horas. El módulo no puede pausarse una vez iniciado.",
+  "s07.mail.f_gm_106.subject": "Conferencia anual: Athlone",
+  "s07.mail.f_gm_106.body": "Las reservas están abiertas para la conferencia anual. Las mociones deben estar en la oficina antes de fin de mes. La viabilidad de las sucursales rurales está en la agenda por cuarto año consecutivo.",
+  "s07.mail.f_gm_107.subject": "Suscripción 2016: recibo",
+  "s07.mail.f_gm_107.body": "Recibida con agradecimiento, suscripción de membresía para 2016. Su tarjeta llegará por correo. Veintiún años de membresía continua: gracias.",
+  "s07.mail.f_gm_108.subject": "Extracto de préstamo",
+  "s07.mail.f_gm_108.body": "Extracto de la cuenta terminada en 118. Saldo pendiente €7,412.00. Reembolsos al día. Saldo de acciones €3,110.00. Gracias por su continua membresía.",
+  "s07.mail.f_gm_109.subject": "Su factura",
+  "s07.mail.f_gm_109.body": "Su factura correspondiente a los dos meses hasta el 30 de abril es €187.44, con vencimiento el 24 de mayo. Su consumo es un 6 % inferior al mismo período del año pasado.",
+  "s07.mail.f_gm_110.subject": "Gracias",
+  "s07.mail.f_gm_110.body": "Estimada Máire, en nombre del consejo de administración, le agradecemos por envolver y vender los boletos de la rifa nuevamente este año y por el préstamo del mostrador. Los niños recaudaron €1,140. Tenemos mucha suerte de contar con usted en el pueblo.",
+  "s07.mail.f_gm_111.subject": "Sucursal 4471: derivación",
+  "s07.mail.f_gm_111.body": "Por la presente confirmamos que el asunto relacionado con la sucursal 4471 ha sido remitido a este departamento por la Región Occidental. Se le contactará para concertar una entrevista. Puede ir acompañado. Esto es solo una notificación y no se requiere respuesta.",
+  "s07.mail.f_gm_112.subject": "Su asunto: nota de honorarios",
+  "s07.mail.f_gm_112.body": "Estimada Sra. Conneely, adjuntamos nuestra nota de honorarios relativa al asunto mencionado hasta la fecha. Le agradeceríamos que nos transfiriera €250 a cuenta. Si el asunto procede a audiencia, se emitirá una estimación adicional.",
+  "s07.mail.f_gm_113.subject": "Su asunto: consulta",
+  "s07.mail.f_gm_113.body": "Estimada Sra. Conneely, el abogado está disponible el jueves a las dos. Me ha pedido que le indique que prefiere que no traiga a nadie a esta consulta. Por favor, reserve una hora y media.",
+  "s07.mail.f_gm_114.subject": "Aviso de publicación",
+  "s07.mail.f_gm_114.body": "El asunto anterior ha sido citado para el martes 9 de mayo de 2017 a las 10:30 ante el Tribunal Penal de Circuito que se celebra en Galway. Se requiere asistencia. Este aviso se emite al acusado y al abogado del expediente.",
+  "s07.mail.f_gm_115.subject": "Rescisión de contrato: sucursal 4471",
+  "s07.mail.f_gm_115.body": "En seguimiento a la conclusión de los procedimientos, le comunicamos formalmente que el contrato de jefe de oficina correspondiente a la sucursal 4471 Cloghmore queda rescindido con efecto a partir del 30 de junio de 2017. Los arreglos para la retirada del equipo y la señalización serán gestionados por la región. Por favor, devuelva todas las llaves a la oficina de zona.",
+  "s07.mail.f_gm_116.subject": "Liquidación final de la cuenta",
+  "s07.mail.f_gm_116.body": "La cuenta final correspondiente a la sucursal 4471 ha sido liquidada y cerrada. No se adeudan ni se le deben más sumas en relación con esta sucursal. Le deseamos lo mejor para el futuro.",
+  "s07.mail.f_gm_117.subject": "Aviso de cese de afiliación",
+  "s07.mail.f_gm_117.body": "La afiliación cesa automáticamente al terminar un contrato de jefe de oficina. Su suscripción ha sido reembolsada prorrateadamente. Este es un aviso estándar emitido en todos estos casos.",
+  "s07.mail.f_gm_118.subject": "Préstamo saldado",
+  "s07.mail.f_gm_118.body": "Estimada Máire, su cuenta de préstamo terminada en 118 ha sido saldada en su totalidad y cerrada. Su saldo de acciones no se ha visto afectado. Ha sido un largo trayecto y queríamos reconocerlo. Cada miembro de esta oficina sabe quién es usted y lo que hizo por esta parroquia durante veintiún años.",
+  "s07.mail.f_gm_119.subject": "Pensión Estatal (Contributiva): decisión",
+  "s07.mail.f_gm_119.body": "Se ha tomado una decisión sobre su solicitud. Usted califica al tipo máximo personal a partir de su 66.º cumpleaños. El pago se emitirá semanalmente. Si no está satisfecho con esta decisión, tiene derecho a presentar un recurso dentro de los 21 días.",
+  "s07.mail.f_gm_120.subject": "¿Eres uno de nosotros?",
+  "s07.mail.f_gm_120.body": "Nos dirigimos a todos los subjefes de oficina del país que fueron responsabilizados por un déficit entre 2012 y 2019. No tiene que decirnos nada. No tiene que dar su nombre. Si desea leer lo que otras personas han escrito, la dirección está a continuación y nadie le contactará a menos que nos lo solicite.",
+  "s07.mail.f_gm_121.subject": "Wexford: lo que significa para usted",
+  "s07.mail.f_gm_121.body": "El fallo del martes es el primero de su tipo en esta jurisdicción. Si fue condenado con pruebas del mismo sistema, ahora existe una vía. Existe un plazo límite para presentar una solicitud fuera de tiempo y no es generoso. Por favor, no decida por su cuenta que es demasiado tarde para usted. Esa no es una decisión que deba tomar solo.",
+  "s07.mail.f_gm_122.subject": "Fallo de Wexford",
+  "s07.mail.f_gm_131.subject": "Sucursal 4471: solicitud",
+  "s07.mail.f_gm_131.body": "A quien corresponda,\n\nSolicito, en esta ocasión por escrito, que alguien acuda a esta sucursal y revise la terminal. He pedido por teléfono en once ocasiones.\n\nNo estoy disputando mi propio recuento. Tengo mi recuento. Estoy disputando el de la máquina.\n\nMáire Conneely\nJefa de oficina, 4471 Cloghmore",
+  "s07.mail.f_gm_132.subject": "Gracias",
+  "s07.mail.f_gm_132.body": "Fiona,\n\nGracias por la copia y gracias por los dos días. Fue la primera persona en tres meses que miró la caja fuerte en lugar de la pantalla.\n\nMáire",
+  "s07.mail.f_gm_133.subject": "Jueves",
+  "s07.mail.f_gm_133.body": "Estaré allí a las dos. Iré por mi cuenta.\n\nM. Conneely",
+  "s07.mail.f_gm_134.subject": "Re: Préstamo saldado",
+  "s07.mail.f_gm_134.body": "Gracias por el último párrafo de su carta. Lo he leído varias veces.\n\nMáire",
+  "s07.notes.f_note_101.title": "Inventario",
+  "s07.notes.f_note_101.block_001": "Ordenar el lunes para el jueves. Un pedido tardío significa que no habrá sellos para el fin de semana y el fin de semana es cuando los quieren.",
+  "s07.notes.f_note_101.block_002": "Siempre pide de más los sellos N en diciembre y nunca los W. Lo aprendí de la manera difícil en 1998.",
+  "s07.notes.f_note_101.block_003": "Los formularios de licencia de TV se procesan más rápido que cualquier cosa. Guarda un paquete de repuesto bajo el mostrador, no en la prensa.",
+  "s07.notes.f_note_101.block_004": "Rollo de caja: dos cajas, no una. La máquina se lo come.",
+  "s07.notes.f_note_101.block_005": "Firma el albarán delante del conductor. Nunca después de que se haya ido.",
+  "s07.notes.f_note_102.title": "Jueves",
+  "s07.notes.f_note_102.block_001": "Día de pensión. Abre a las ocho y media, no a las nueve. Están en la puerta a partir de las veinte.",
+  "s07.notes.f_note_102.block_002": "Nuala siempre va primero en el autobús. Después, quien esté de pie.",
+  "s07.notes.f_note_102.block_003": "Cuida el libro de Seán. Ya no puede ver la línea y no la dirá, así que gírala para él y pon el pulgar donde corresponde.",
+  "s07.notes.f_note_102.block_004": "Moneda extra un jueves. Doscientos en pares, y lo mismo de nuevo en cincuentas.",
+  "s07.notes.f_note_111.title": "—",
+  "s07.notes.f_note_111.block_001": "Seis meses. No he bajado al pueblo. Peadar hace la compra en Clifden ahora y ninguno de los dos ha dicho por qué.",
+  "s07.notes.f_note_111.block_003": "Eso es lo que nadie te dice. No son los nueve meses. Es que nunca volverás a saber lo que cualquiera quiere decir.",
+  "s07.notes.f_note_112.title": "—",
+  "s07.notes.f_note_112.block_002": "Sigo despertándome a las diez para las cuatro. Veintitrés minutos después de las once y diez para las cuatro son las dos horas del día que ahora pertenecen a otra cosa.",
+  "s07.notes.f_note_112.block_003": "No le diré nada de esto a Aoife. Ya tiene suficiente de mí.",
+  "s07.notes.f_note_113.title": "—",
+  "s07.notes.f_note_113.block_001": "El abogado ha escrito. La chica del periódico ha escrito. Hay una multitud con un sitio web que ha escrito dos veces.",
+  "s07.notes.f_note_113.block_002": "Durante nueve años supe exactamente qué diría si alguien me preguntara de verdad, y ahora tres personas me han preguntado de verdad en una semana y no he abierto ninguna de ellas.",
+  "s07.notes.f_note_113.block_003": "Lo que me asusta no es que me vuelvan a decir que no; es que me digan que sí y luego tenga que mirar a Aoife y saber por qué la dejé pasar por esa habitación sin nada.",
+  "s07.notes.f_note_113.block_004": "Llega el domingo. Tiene algo que pedirme. Sé lo que es.",
+  "s07.search.f_gs_101": "una declaración de negociación de sucursal de correos, ¿cómo se calcula?",
+  "s07.search.f_gs_102": "abogado del sindicato postmasters galway",
+  "s07.search.f_gs_103": "cómo le pides a tu marido una gran cantidad de dinero",
+  "s07.search.f_gs_104": "qué significa \"referred to security\" en post",
+  "s07.search.f_gs_105": "lista del tribunal criminal de circuito galway martes",
+  "s07.search.f_gs_106": "aparece una condena en la verificación de antecedentes de la garda",
+  "s07.search.f_gs_107": "qué llevas al juzgado como acusado",
+  "s07.search.f_gs_108": "penalización por pago anticipado de préstamo de cooperativa de crédito",
+  "s07.search.f_gs_109": "pensión estatal contributiva cuántas cotizaciones",
+  "s07.search.f_gs_110": "condenas previas irlanda cuántos años",
+  "s07.search.f_gs_111": "cómo eliminar la humedad de una habitación trasera",
+  "s07.search.f_gs_112": "grupos de senderismo clifden connemara",
+  "s07.search.f_gs_113": "programa de televisión postmasters england qué canal",
+  "s07.search.f_gs_114": "tribunal de apelación irlanda solicitar fuera de plazo criminal",
+  "s07.search.f_gs_115": "qué es una injusticia judicial significado legal",
+  "s07.search.f_gs_116": "nueve años es demasiado tarde para apelar una condena",
+  "s07.calendar.f_ev_101": "Pensión jueves, abierto a las 08:30",
+  "s07.calendar.f_ev_102": "Pensión jueves, abierto a las 08:30",
+  "s07.calendar.f_ev_103": "Pensión jueves, abierto a las 08:30",
+  "s07.calendar.f_ev_104": "Orden de acciones antes de las 10",
+  "s07.calendar.f_ev_105": "Evento de Postmasters — Clifden",
+  "s07.calendar.f_ev_106": "Módulo de entrenamiento FX, 2h",
+  "s07.calendar.f_ev_107": "Consulta, 14:00, solo",
+  "s07.calendar.f_ev_108": "Llaves de vuelta a la oficina de zona",
+  "s07.calendar.f_ev_109": "Cooperativa de crédito, último pago",
+  "s07.calendar.f_ev_110": "Grupo de caminata (Aoife anotó mi nombre)",
+  "s07.calendar.f_ev_111": "Aoife, Domingo",
+  "s07.calendar.f_ev_112": "Aoife, Domingo",
+  "s07.payments.f_tx_101.note": "Entrega de petróleo",
+  "s07.payments.f_tx_102.note": "Carbón y briquetas",
+  "s07.payments.f_tx_103.note": "Farmacia",
+  "s07.payments.f_tx_104.note": "Entrega de petróleo",
+  "s07.payments.f_tx_105.note": "Cooperativa de crédito, reembolso de préstamo",
+  "s07.payments.f_tx_106.note": "Gas",
+  "s07.payments.f_tx_107.note": "Farmacia",
+  "s07.payments.f_tx_108.note": "Abogado, a cuenta",
+  "s07.payments.f_tx_109.note": "Abogado, a cuenta",
+  "s07.payments.f_tx_110.note": "Cooperativa de crédito, reembolso de préstamo",
+  "s07.payments.f_tx_111.note": "Veterinario, el perro",
+  "s07.payments.f_tx_112.note": "Cooperativa de crédito, reembolso de préstamo",
+  "s07.payments.f_tx_113.note": "Entrega de petróleo",
+  "s07.payments.f_tx_114.note": "Farmacia",
+  "s07.mail.f2_gm_201.subject": "(sin asunto)",
+  "s07.mail.f2_gm_201.body": "Declan,\n\nEscribiste \"Entiendo que te sientes así\". He estado dándole vueltas a esa frase durante una semana. Es una frase muy cuidadosamente construida. Alguien te enseñó a escribirla.\n\nNo te estoy pidiendo que me creas más. Te estoy preguntando si hubo algún momento en el que lo hiciste, y, de ser así, qué hiciste con ello.\n\nTe conozco desde hace once años. Viniste a mi mostrador por la pensión de tu madre cuando ella estaba viva y siempre esperaste tu turno aunque",
+  "s07.mail.f2_gm_202.subject": "Sucursal 4471: las llaves",
+  "s07.mail.f2_gm_203.subject": "(sin asunto)",
+  "s07.mail.f2_gm_203.body": "Bríd,\n\nDos años hoy.\n\nNunca me he enfadado contigo y quiero que quede escrito en algún sitio aunque nunca lo leas. Te hizo una pregunta una amiga en el peor momento de su vida y tenías una familia y una sucursal y treinta y un años propios, y dijiste lo único que podías decir y luego dijiste lo siento dos veces.\n\nYo habría hecho lo mismo. Esa es la parte que no puedo superar. Yo habría hecho exactamente lo",
+  "s07.mail.f2_gm_204.subject": "Re: tu mensaje",
+  "s07.mail.f2_gm_204.body": "Sra. Ní Chonaill,\n\nVoy a escribirlo todo y luego te enviaré tres líneas en su lugar, y pensarás que soy una mujer sin nada que decir.\n\nOnce semanas. Sesenta y una llamadas telefónicas. Cuatrocientos dieciséis fotografías. Una auditora que vino durante dos días y anotó lo que encontró. Un marido que pagó y no pudo mirarme. Una hija que se sentó en la segunda fila.\n\nY una palabra que dije en voz alta en una sala de Galway que no era cierta.\n\nSi te doy esto le pertenece a ti y no a mí, y no me queda nada que me pertenezca excepto",
+  "s07.mail.f2_gm_205.subject": "(sin asunto)",
+  "s07.mail.f2_gm_206.subject": "(no subject)",
+  "s07.mail.f2_gm_206.body": "Cinco años. He empezado a escribirle a mí mismo, lo que creo que es lo primero que he hecho realmente loco.\n\nLo que quiero dejar por escrito es que no lo hice. No como un argumento, no hay nadie aquí con quien discutir a las diez y diez de la mañana. Sólo como una frase con punto al final, con mis propias palabras, con mi propia letra, una vez.\n\nNo lo hice.\n\nAhí. Eso era todo lo que iba a ser y ahora no sé qué hacer con",
+  "s07.mail.f2_gm_207.subject": "Gracias, de nuevo",
+  "s07.mail.f2_gm_207.body": "Fiona,\n\nNo me recordarás. Cloghmore, 2016, la sucursal con el escalón defectuoso en la puerta.\n\nHe pensado mucho en ti durante siete años, y siempre en lo mismo: anotaste lo que encontraste aunque te dijeron que no era para lo que servía el informe. Eso supuso algo. No sé qué te costó y nunca le he preguntado a nadie.\n\nEspero que no te haya costado nada. Estoy bastante seguro de que no es así",
+  "s07.mail.f2_gm_208.subject": "Re: ¿Eres uno de nosotros?",
+  "s07.mail.f2_gm_208.body": "Preguntaste si soy uno de vosotros.\n\nNo sé cómo responder eso sin decirlo todo, y no le he dicho todo a nadie, incluidas las personas que estaban en la habitación.\n\nCloghmore, condado de Galway. 2016 a 2017. Tengo los recuentos, tengo las fotografías, tengo las fechas y las horas y he guardado cada último papel durante nueve años como una mujer loca guardando una casa para alguien que nunca volverá.\n\nPero me puse de pie y lo dije, y nadie me obligó a decirlo, y no sé si eso me coloca dentro de vuestro",
+  "s07.mail.f2_gm_209.subject": "(no subject)",
+  "s07.mail.f2_gm_231.subject": "Apertura de pedidos de stock navideño el lunes",
+  "s07.mail.f2_gm_231.body": "Los pedidos navideños se abren el lunes para todas las sucursales. Ordene con antelación los sellos N y W; el año pasado, un tercio de las sucursales se quedó sin stock en la segunda semana de diciembre. Inicie sesión en el portal con el número de su sucursal.",
+  "s07.mail.f2_gm_232.subject": "Boletín de sucursal: Otoño",
+  "s07.mail.f2_gm_232.body": "En esta edición: volumen de paquetes ↑ 14 % interanual, una nueva alfombra para el mostrador de atención, y conocemos al cartero del año del noroeste. Léalo en el portal.",
+  "s07.mail.f2_gm_233.subject": "Cartero del año: aperturanse nominaciones",
+  "s07.mail.f2_gm_234.subject": "Boletín de sucursal: Verano",
+  "s07.mail.f2_gm_234.body": "En esta edición: la nueva pantalla de recarga móvil, cobertura de vacaciones y cómo organizarla, y veinticinco años de servicio celebrados en tres sucursales. Léalo en el portal.",
+  "s07.mail.f2_gm_235.subject": "Apertura de pedidos de stock navideño el lunes",
+  "s07.mail.f2_gm_235.body": "Los pedidos navideños se abren el lunes para todas las sucursales. Ordene con antelación. Inicie sesión en el portal con el número de su sucursal.",
+  "s07.mail.f2_gm_236.subject": "Cartero del año: aperturanse nominaciones",
+  "s07.mail.f2_gm_236.body": "Las nominaciones ya están abiertas. Cuéntenos sobre un cartero que haya ido más allá de lo que exige el puesto. Las nominaciones cierran a finales de marzo.",
+  "s07.mail.f2_gm_237.subject": "Boletín de sucursal: Verano",
+  "s07.mail.f2_gm_237.body": "En esta edición: pagos sin contacto en el mostrador, el impulso de paquetes de verano, y por qué las sucursales rurales importan más que nunca. Léalo en el portal.",
+  "s07.mail.f2_gm_238.subject": "Módulo anual de cumplimiento: recordatorio",
+  "s07.mail.f2_gm_238.body": "Nuestros registros indican que no ha completado el módulo anual de cumplimiento de este año. El módulo dura 40 minutos y debe completarse antes de que finalice el mes. Las sucursales que no lo completen son escaladas a la región.",
+  "s07.mail.f2_gm_239.subject": "Estamos actualizando el portal del director de correos",
+  "s07.mail.f2_gm_239.body": "El portal tendrá un nuevo aspecto. Su número de sucursal y contraseña no cambiarán. Si tiene alguna dificultad para iniciar sesión, su responsable de zona podrá ayudarle.",
+  "s07.mail.f2_gm_240.subject": "Abren los pedidos de stock navideño el lunes",
+  "s07.mail.f2_gm_240.body": "Los pedidos navideños se abren el lunes para todas las sucursales. Inicie sesión en el portal con su número de sucursal.",
+  "s07.mail.f2_gm_241.subject": "Su suscripción está pendiente de renovación",
+  "s07.mail.f2_gm_241.body": "Su suscripción anual al Gazette está pendiente de renovación. Las entregas continuarán sin interrupciones si renueva antes de fin de mes.",
+  "s07.mail.f2_gm_242.subject": "Ha sido seleccionado",
+  "s07.mail.f2_gm_242.body": "¡FELICIDADES! Su dirección de correo electrónico ha sido seleccionada en el sorteo de este mes. Para reclamar, confirme sus datos en el enlace de abajo dentro de las 48 horas. No comparta este mensaje.",
+  "s07.mail.f2_gm_243.subject": "¿Dos minutos de su tiempo?",
+  "s07.mail.f2_gm_243.body": "Estamos realizando una breve encuesta sobre servicios rurales y sus respuestas serían muy valiosas para nosotros. Dura dos minutos y al final hay un sorteo de premios.",
+  "s07.mail.f2_gm_244.subject": "Boletín de sucursal: Invierno",
+  "s07.mail.f2_gm_244.body": "En esta edición: agradecimiento a cada sucursal por un año extraordinario, los plazos postales de Navidad y una palabra del director ejecutivo. Léalo en el portal.",
+  "s07.memos.f2_vm_101.title": "Lista",
+  "s07.memos.f2_vm_101.transcript": "Vale, antes de que se me olvide. Jamón, el pequeño, no el grande. Dos cajas de las galletas buenas, una para el mostrador y una para la casa. Tarjetas, veinte. Cinta adhesiva, se nos ha acabado la cinta otra vez, no sé a dónde va. Y una bombilla para la oficina trasera, la larga. Peadar, si eres tú quien escucha esto, es la larga.",
+  "s07.memos.f2_vm_102.title": "Después del primer día",
+  "s07.memos.f2_vm_102.transcript": "Bueno. Ella estuvo aquí desde las nueve hasta las seis y veinte, y contó cada billete y cada moneda en este edificio con sus propias dos manos, dos veces, sin mirarme ni una sola vez como lo hacen los demás. Volverá mañana. No he dormido bien desde el dos de marzo y creo que podré dormir esta noche.",
+  "s07.memos.f2_vm_103.title": "17 de mayo",
+  "s07.memos.f2_vm_103.transcript": "Lo puso esta mañana. No dijo nada al respecto y no dijo nada en la mesa y se ha ido al cobertizo. Cuarenta y un años conozco a ese hombre y sé la diferencia entre que él esté callado y que él esté callado conmigo. Grabo esto porque quiero poder probarme más tarde que lo noté. Que no simplemente lo tomé y lo dejé ir al cobertizo.",
+  "s07.memos.f2_vm_104.title": "(sin título)",
+  "s07.memos.f2_vm_105.title": "Despejado",
+  "s07.memos.f2_vm_105.transcript": "Eso es, pagado. Seis años y cuatro meses. La chica de la cooperativa salió de detrás del mostrador y me estrechó la mano y tuve que ir a sentarme en el coche. Qué cosa más tonta. Seis años y cuatro meses y salgo al aparcamiento antes de irme.",
+  "s07.memos.f2_vm_106.title": "(sin título)",
+  "s07.memos.f2_vm_106.transcript": "Las cuatro y cuarto. Hay una carta del abogado y una carta de esa gente con la página web y un mensaje de texto de Aoife, y no he abierto ninguna. Nueve años he tenido la respuesta lista. Nueve años. Y ahora que alguien está en la puerta con la pregunta, estoy sentado en la oscuridad a las cuatro y cuarto de la mañana hablando por teléfono. Lo que me asusta no es que digan no. He tenido no. Lo que me asusta es que digan sí y entonces tenga que mirar a Aoife y decirle para qué servía esa habitación.",
+  "s07.messages.f2_sms_301": "Sra. Conneely, me llamo Eibhlín Ní Chonaill, soy reportera del Tribune. Nadie me dio su nombre. Lo encontré en una lista judicial y llevo un año leyendo listas judiciales.",
+  "s07.messages.f2_sms_302": "Estoy escribiendo a varios ex subpostmasters sobre el mismo sistema. No tienes que hablar conmigo y no publicaré tu nombre sin tu consentimiento. Lo dejo totalmente en tus manos.",
+  "s07.messages.f2_sms_303": "Por favor, no me vuelvas a escribir.",
+  "s07.messages.f2_sms_304": "No lo haré. Si alguna vez cambias de opinión, el número sigue siendo el mismo.",
+  "s07.messages.f2_sms_311": "Máire, estaré en Clifden el jueves. Podría pasar por el camino de regreso si te resulta útil.",
+  "s07.messages.f2_sms_312": "Ven a las cinco y media y podrás verme contarlo. Eso es todo lo que quiero, Declan. Una persona que se quede allí mientras lo hago.",
+  "s07.messages.f2_sms_313": "Me han dicho que el auditor estuvo contigo dos días. Eso es más de lo que la mayoría de sucursales reciben.",
+  "s07.messages.f2_sms_314": "Pedí uno. Habría tomado uno.",
+  "s07.messages.f2_sms_315": "Ha sido enviado a Seguridad. Lo mantuve tanto tiempo como pude y quiero que lo sepas.",
+  "s07.messages.f2_sms_316": "Declan, en once semanas ninguna persona de esa empresa se ha presentado en esta sucursal a las cinco y media de la tarde. Ninguna.",
+  "s07.messages.f2_sms_321": "Hay un hombre en la puerta con una cámara.",
+  "s07.messages.f2_sms_322": "No lo abras. Ya voy.",
+  "s07.messages.f2_sms_323": "He dejado las compras en el escalón. Aoife llamó, dice que te quedes dentro.",
+  "s07.messages.f2_sms_324": "¿Te animas?",
+  "s07.messages.f2_sms_325": "Yo sí.",
+  "s07.messages.f2_sms_326": "Ella está de nuevo en la puerta. He dejado de decirle.",
+  "s07.messages.f2_sms_331": "MERIDIAN Service Desk: su caso CAS-120774 ha sido registrado.",
+  "s07.messages.f2_sms_332": "MERIDIAN Service Desk: el caso CAS-120774 ha sido cerrado.",
+  "s07.messages.f2_sms_333": "MERIDIAN Service Desk: su caso CAS-122019 ha sido registrado.",
+  "s07.messages.f2_sms_334": "MERIDIAN Service Desk: el caso CAS-122019 ha sido cerrado.",
+  "s07.messages.f2_sms_335": "MERIDIAN Service Desk: ¿Cómo lo hemos hecho? Responda con un número del 1 al 5, donde 5 es muy satisfecho.",
+  "s07.messages.f2_sms_336": "MERIDIAN Service Desk: este número ya no aceptará consultas de la sucursal 4471. Por favor, contacte a su responsable de zona.",
+  "s07.chats.f2_wa_301": "¿Estás bien? No estabas en la puerta.",
+  "s07.chats.f2_wa_302": "No podía enfrentarme a una sala llena de postmasters, Bríd.",
+  "s07.chats.f2_wa_303": "No. No creo que puedas.",
+  "s07.chats.f2_wa_304": "Han puesto una placa en la antigua sucursal. \"Cloghmore Post Office, 1911 to 2017\". Pensé que deberías saberlo de mí primero.",
+  "s07.chats.f2_wa_305": "Ciento seis años y soy yo a quien recordarán.",
+  "s07.chats.f2_wa_306": "He empezado a ir a una cosa los martes. Son mujeres que solían tener sucursales. Somos once.",
+  "s07.chats.f2_wa_307": "Once.",
+  "s07.chats.f2_wa_308": "Once. Y no voy a decir ni una palabra más al respecto, solo te estoy diciendo el número.",
+  "s07.chats.f2_wa_321": "Mamá, me han pedido dar una charla en la universidad sobre el trabajo. ¿Es una locura?",
+  "s07.chats.f2_wa_322": "No es una locura. Lleva lo verde.",
+  "s07.chats.f2_wa_323": "Te tengo en la lista para lo del jueves y puedes borrarte, pero te estoy añadiendo.",
+  "s07.chats.f2_wa_324": "Te pareces mucho a tu padre.",
+  "s07.chats.f2_wa_325": "Feliz Día de la Madre. No digo nada más.",
+  "s07.chats.f2_wa_326": "El perro se metió en la casa del vecino y volvió con una barra entera. Una barra entera, mamá.",
+  "s07.chats.f2_wa_327": "Siempre ha sido ladrona. Es cosa de familia.",
+  "s07.chats.f2_wa_329": "Acuéstate, Aoife.",
+  "s07.chats.f2_wa_330": "Domingo. Yo llevo la cena, tú no haces nada. Y mamá, no tiene que decidir nada el domingo. Quería decirlo antes de llegar.",
+  "s07.notes.f2_note_201.title": "El pueblo",
+  "s07.notes.f2_note_201.block_001": "Nuala, autobús a las 11:40. Si no está fuera a las 11:30, camina a la puerta con ella.",
+  "s07.notes.f2_note_201.block_002": "Seán, no puede ver la línea. Da la vuelta al libro, pulsa con el pulgar donde va.",
+  "s07.notes.f2_note_201.block_003": "Los Duggans no tienen correo en absoluto y Mary llama igual. Pon la tetera los viernes.",
+  "s07.notes.f2_note_201.block_004": "El formulario de Máirtín vence el día 20 de cada mes y no lo recordará. Recuérdaselo el día 18.",
+  "s07.notes.f2_note_201.block_005": "La chica Ryan está en casa desde Inglaterra y no quiere que se hable de ello. No hables de ello.",
+  "s07.notes.f2_note_202.title": "Veintiún años en junio",
+  "s07.notes.f2_note_202.block_001": "1995. Lo asumí de la Sra. Folan el nueve de junio, con tres días de formación y un juego de llaves.",
+  "s07.notes.f2_note_202.block_002": "Dos inundaciones, un allanamiento, el cambio al euro y cuatro días cerrados en veintiún años, los cuatro por un funeral.",
+  "s07.notes.f2_note_202.block_003": "Nunca un día tarde con una remesa. Me gustaría que alguien lo supiera sin que tenga que decirlo en voz alta.",
+  "s07.notes.f2_note_202.block_004": "Peadar dice que debería hacer una fiesta. Dije que lo pensaría, lo que él sabe que significa \"no\".",
+  "s07.notes.f2_note_211.title": "—",
+  "s07.notes.f2_note_211.block_001": "Un año y dos meses. He averiguado cuál es lo peor y lo estoy anotando para dejar de volver a pensarlo a las tres de la mañana.",
+  "s07.notes.f2_note_211.block_002": "No es que piensen que lo hice. La mitad no lo cree. Es que dije que lo hice, así que nadie puede defenderme sin llamarme mentiroso, y nadie lo hará frente a mi cara. Así que no dicen nada amable ni nada cruel y cruzan la calle.",
+  "s07.notes.f2_note_211.block_003": "Construí esa trampa y me puse dentro. Nadie me puso allí.",
+  "s07.notes.f2_note_212.title": "—",
+  "s07.notes.f2_note_212.block_001": "Aoife tenía la radio puesta sobre los ingleses. La apagué y no le dije nada sobre el porqué.",
+  "s07.notes.f2_note_212.block_002": "La razón no es lo que ella piensa. No es que no pueda soportar escucharlo.",
+  "s07.notes.f2_note_212.block_004": "Dije que era culpable. En una habitación, en voz alta, con mi propia voz. No hay programa para eso.",
+  "s07.search.f2_gs_201": "puede una caja registradora añadir dinero que nunca se tomó",
+  "s07.search.f2_gs_202": "quién inspecciona terminales de oficina de correos irlanda",
+  "s07.search.f2_gs_203": "una entrevista de seguridad postal qué ocurre",
+  "s07.search.f2_gs_204": "declararse culpable de un cargo menor qué significa",
+  "s07.search.f2_gs_205": "cuánto tiempo dura una audiencia en corte de circuito",
+  "s07.search.f2_gs_206": "puedes retirar una declaración de culpabilidad después de la sentencia",
+  "s07.search.f2_gs_207": "cómo dejar de pensar en lo mismo por la noche",
+  "s07.search.f2_gs_208": "más de 60 ejercicios en casa sin equipamiento",
+  "s07.search.f2_gs_209": "es normal hablarte a ti mismo en voz alta",
+  "s07.search.f2_gs_210": "cómo escribir a alguien con quien no has hablado en años",
+  "s07.search.f2_gs_211": "placa de la jefa de correos edificios antiguos de correos irlanda",
+  "s07.search.f2_gs_212": "qué significa sin obligación carta de abogado",
+  "s07.calendar.f2_ev_201": "Pensiones jueves, abre a las 08:30",
+  "s07.calendar.f2_ev_202": "Pensiones jueves, abre a las 08:30",
+  "s07.calendar.f2_ev_203": "Pensiones jueves, abre a las 08:30",
+  "s07.calendar.f2_ev_204": "Auditoría, dos días",
+  "s07.calendar.f2_ev_205": "Seguridad, entrevista",
+  "s07.calendar.f2_ev_206": "Abogado, a cuenta",
+  "s07.calendar.f2_ev_207": "Oficina de pensiones, Clifden",
+  "s07.calendar.f2_ev_208": "Biblioteca, 15:00",
+  "s07.payments.f2_tx_201.note": "Farmacia",
+  "s07.payments.f2_tx_202.note": "Entrega de petróleo",
+  "s07.payments.f2_tx_203.note": "Carbón",
+  "s07.payments.f2_tx_204.note": "Abogado, a cuenta",
+  "s07.payments.f2_tx_205.note": "Gas",
+  "s07.payments.f2_tx_206.note": "Cooperativa de crédito, reembolso de préstamo",
+  "s07.payments.f2_tx_207.note": "Veterinario, el perro, su pierna",
+  "s07.payments.f2_tx_208.note": "Entrega de petróleo",
+  "s07.payments.f2_tx_209.note": "Farmacia",
+  "s07.payments.f2_tx_210.note": "Club de caminatas, el año",
+  "s07.maps.sp_002.name": "Ó Flaithbheartaigh & Co.",
+  "s07.maps.sp_002.address": "Market Street, Clifden, Co. Galway",
+  "s07.maps.sp_003.name": "Biblioteca de Clifden",
+  "s07.maps.sp_003.address": "Clifden, Co. Galway",
+  "s07.maps.sp_004.name": "Aoife",
+  "s07.maps.sp_004.address": "Bóthar na Trá, Galway",
+  "s07.clock.f2_al_003": "Jueves",
+  "s07.photos.ph_001.document": "Fotografía de una caja fuerte de suelo abierta, tomada desde arriba, con el flash fuerte sobre el metal.\n\n  Billetes agrupados en una bandeja poco profunda, atados en cincuentas. Dos rollos de monedas al fondo. Un sobre marrón, sellado.\n\n  Sobre los billetes, un papel arrancado de una hoja de mostrador, rellenado a mano:\n\n      5 180.00   billetes\n        288.60   monedas\n      5 468.60\n      contado 2x\n      23:20  1/3\n\n  El borde de una manga de cárdigan está en la parte superior del encuadre.",
+  "s07.photos.ph_002.document": "Fotografía de la misma caja fuerte abierta, mismo ángulo, la bandeja tirada ligeramente hacia adelante esta vez.\n\n  El papel sobre los billetes ha sido escrito, tachado y escrito de nuevo:\n\n      4 910.00   billetes\n        301.20   monedas\n      5 211.20\n      contado 3x\n      23:35  2/3\n\n  Bajo la cifra, en escritura más pequeña presionada lo suficiente como para rasgar el papel: \"la pantalla dice 9 211.20. contado tres veces. no está aquí.\"",
+  "s07.photos.ph_003.document": "Fotografía de la caja fuerte abierta, tomada más tarde que las demás, la luz de la oficina está apagada y el flash es la única luz en la habitación.\n\n  Menos en la bandeja que al comienzo del mes. Una banda de billetes, monedas sueltas, sin sobre.\n\n      4 220.00   billetes\n        311.40   monedas\n      4 531.40\n      contado 3x\n      23:40  19/3\n\n  Al lado de la caja fuerte, en el suelo, una pila de los mismos papeles que se remontan semanas, sujetados con una abrazadera tipo bulldog.",
+  "s07.photos.ph_004.document": "Fotografía de la caja fuerte abierta. Catorce meses después de la primera y el encuadre no ha cambiado ni una pulgada.\n\n      2 780.00   billetes\n        226.75   monedas\n      3 006.75\n      contado 3x\n      23:52  8/5\n\n  El papel tiene una línea más que los demás, con la misma mano y escrito despacio: \"416.\"\n\n  No hay más fotografías en este álbum después de esta.",
+  "s07.chats.f2_wa_401": "Aoife me llamó esta mañana. He estado con el teléfono en la mano desde entonces y lo he ido dejando.",
+  "s07.chats.f2_wa_402": "Debí haberte respondido correctamente en 2016. Me preguntaste directamente y te envié una nota de voz que no decía nada, y he pensado en eso más a menudo de lo que creerías.",
+  "s07.chats.f2_wa_403": "La mía fue 2014. Dos años antes que la tuya. Once mil cuatrocientos, y la pantalla estaba tan segura de ello como lo estaba de ti.",
+  "s07.chats.f2_wa_404": "Lo devolví de mis propios ahorros durante nueve meses y no le dije a nadie. Porque no le dije a nadie, pudieron seguir diciéndote que eras el único del país.",
+  "s07.chats.f2_wa_405": "Bríd.",
+  "s07.chats.f2_wa_406": "Lo sé. Lo sé, Máire. Dile a tu hija que lo diré a quien ella quiera que se lo diga."
+}

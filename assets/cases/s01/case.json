@@ -350,6 +350,13 @@
           "delay_ms": 9000
         },
         {
+          "id": "cc_005b",
+          "sender": "client",
+          "text_key": "s01.client_chat.cc_005b",
+          "timestamp": "2025-04-22T09:00:33",
+          "delay_ms": 9000
+        },
+        {
           "id": "cc_006",
           "sender": "client",
           "text_key": "s01.client_chat.cc_006",
@@ -6546,7 +6553,7 @@
     },
     "vault": {
       "login_required": true,
-      "master": "rand-halo-2019",
+      "master": "05032025",
       "master_hint_key": "s01.keychain.master_hint",
       "account_label": "Elias Rand — Keychain",
       "entries": [

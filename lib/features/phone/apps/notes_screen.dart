@@ -72,6 +72,12 @@ class _NotesScreenState extends State<NotesScreen> {
             ),
             for (final note in folder.notes)
               _NoteRow(
+                // Across every folder, not just this one: a phone whose notes
+                // run from 2015 has to say so on all of them.
+                spansYears: PhoneFormat.spanYears([
+                  for (final f in folders)
+                    for (final n in f.notes) n.createdAt,
+                ]),
                 note: note,
                 strings: widget.strings,
                 format: format,
@@ -113,7 +119,11 @@ class _NoteRow extends StatelessWidget {
   final bool isOpen;
   final VoidCallback onOpen;
 
+  /// Whether the list this row is in runs across more than one year.
+  final bool spansYears;
+
   const _NoteRow({
+    required this.spansYears,
     required this.note,
     required this.strings,
     required this.format,
@@ -158,7 +168,7 @@ class _NoteRow extends StatelessWidget {
                   // last touched are different facts and either can be the one
                   // that matters.
                   Text(
-                    'written ${format.shortDate(note.createdAt)}'
+                    'written ${format.listDate(note.createdAt, spansYears: spansYears)}'
                     '   ·   edited ${format.dateTime(note.updatedAt)}',
                     style: ColdType.micro.copyWith(color: device.textTertiary),
                   ),

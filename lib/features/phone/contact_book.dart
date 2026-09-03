@@ -46,7 +46,19 @@ class ContactBook {
     final pack = strings;
     if (label != null && pack != null) return pack.t(label);
 
-    if (contact != null && !contact.isSaved) return phoneNumber(personId);
+    // Not in the address book is not saved.
+    //
+    // This used to read `contact != null && !contact.isSaved`, which only
+    // honoured the flag for somebody who was **in** the list — so a person
+    // left out of it entirely, which is the strongest form of not being
+    // saved, was drawn by their full name anyway. Seven of the ten cases have
+    // such a person.
+    //
+    // s05's fourteenth question is the one it cost. It asks who sent a message
+    // "from a number that is not in the contacts", and the phone put the name
+    // at the top of the thread: the question's own premise was false on
+    // screen, and its answer was free.
+    if (!isSaved(personId)) return phoneNumber(personId);
 
     final nickname = _cast[personId]?.nickname;
     if (nickname != null && nickname.isNotEmpty) return nickname;

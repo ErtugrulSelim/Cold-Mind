@@ -530,9 +530,9 @@ final _group = <Map<String, dynamic>>[
 // ── Data ────────────────────────────────────────────────────────────────────
 
 const _inbox = <List<String>>[
-  ['Szkoła Podstawowa nr 26', 'sekretariat@sp26.krakow.pl', '2025-09-03T08:00:00'],
-  ['Szkoła Podstawowa nr 26', 'sekretariat@sp26.krakow.pl', '2025-04-02T08:00:00'],
-  ['Szkoła Podstawowa nr 26', 'biblioteka@sp26.krakow.pl', '2025-11-25T14:00:00'],
+  ['Primary School No. 26', 'sekretariat@sp26.krakow.pl', '2025-09-03T08:00:00'],
+  ['Primary School No. 26', 'sekretariat@sp26.krakow.pl', '2025-04-02T08:00:00'],
+  ['Primary School No. 26', 'biblioteka@sp26.krakow.pl', '2025-11-25T14:00:00'],
   ['Dziennik Elektroniczny', 'noreply@dziennik-vulcan.pl', '2025-10-20T16:00:00'],
   ['Dziennik Elektroniczny', 'noreply@dziennik-vulcan.pl', '2026-01-30T16:00:00'],
   ['Chór "Podgórze"', 'chor@sp26.krakow.pl', '2025-09-29T18:00:00'],

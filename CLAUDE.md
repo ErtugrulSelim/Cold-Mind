@@ -41,6 +41,8 @@ lib/
   core/
     answers/           normalize.dart, answer_evaluator.dart
     theme/             palette, typography, dimensions, cold_theme
+    app_config.dart    outward-facing URLs, and the review-mode flag that
+                       bypasses the paywall for App/Play review
   data/
     models/            case_file, question, lock, chat, board, person, case_summary
     l10n/              case_strings.dart
@@ -62,8 +64,8 @@ lib/
                        (desk register)
     paywall/           the subscription screen, and the store behind it
     settings/          language, and the outward-facing
-                       rows — restore, rate, share, the legal pages.
-                       `app_links.dart` is the one place their URLs live
+                       rows — restore, rate, share, the legal pages, all
+                       reading their URLs from `core/app_config.dart`
 
 assets/
   cases/index.json     generated case list
@@ -361,8 +363,24 @@ before the player has chosen again.
 are merged per key (`{...en, ...overlay}`) — a partial translation degrades key
 by key instead of breaking.
 
-**Only `en` ships case packs.** Every other folder holds `common.json` alone, so
-all 17 other languages read the cases in English. A real outstanding task.
+**Case packs land one language and one case at a time.** English is complete;
+`tr` ships s01. Every other folder still holds `common.json` alone and reads the
+cases in English. Seven languages are in scope — es, it, fr, br, pl, ru, tr —
+and the merge is what makes a partial pack safe: an untranslated key falls back
+rather than breaking.
+
+`tools/build_pack.dart` assembles a pack from flat `key<TAB>value` files, so a
+translator never hand-escapes JSON. **A pack translates `*.answers` too** — it
+is a key like any other, so translating a case also translates what the
+evaluator accepts, which is the point (a player reading a Turkish phone types
+Turkish) and the one place a translation can break a case. Two things stay in
+the source language on purpose alongside the three surfaces below: street
+addresses and the file names in cloud storage.
+
+`localized_packs_test.dart` holds the lines that matter for every language that
+ships a pack, found by looking rather than from a list: every question still
+accepts its own answer, and no translated decoy grades as correct — two English
+words that share nothing can land on the same Turkish stem.
 
 Keys carrying `{{placeholders}}` are resolved with `strings.cp(key, {...})`, not
 spliced in Dart — word order around a number is not the same in every language,
@@ -477,10 +495,14 @@ about. Two rules shape it.
 
 **A row with no destination is not drawn.** Rate, share and the two legal
 pages all point outside the app, and their URLs live in one block —
-`settings/app_links.dart` — which ships empty. Each row appears the moment its
+`core/app_config.dart` — which ships empty. Each row appears the moment its
 URL is filled in. A row that does nothing when tapped reads as broken rather
 than as unfinished, and the previous build shipped another product's URLs
 precisely because they were literals scattered down the middle of the screen.
+`AppConfig.openStoreListing()` is the one door to the store's own listing —
+used by Settings' own Rate Us row and by the post-second-question rating
+prompt alike — because it is never the OS's in-app review sheet, which is
+throttled and shows nothing on most builds.
 
 **Restore goes through `Store` like everything else,** and reports with the
 paywall's own messages — it is the same operation reached by a different door.
@@ -515,3 +537,56 @@ account expects, and rebuilding that here gets it wrong for most of the world.
 The phone opens it — the GET PRO pill on the status row, beside the gear — and
 so does Settings. A gate on a locked case can push
 `PaywallScreen` too — nothing about the screen assumes how it was reached.
+
+## First run
+
+Three things happen automatically the first time a player actually plays,
+never on a later launch and never for a returning player — each is a
+`SharedPreferences` flag that persists on its own, not a check against
+session state.
+
+**The hint offer.** Hints are closed by default; asking is a one-time upfront
+choice rather than something a player discovers mid-struggle. It fires from
+`case_list_screen.dart`'s `onOpen`, the moment `freeCaseId` — the only case
+reachable before a subscription — is opened for the very first time
+(`progress.solved == 0` and `hintsProvider` still `HintOffer.unset`), through
+the same `HelpOfferDialog` the in-question fallback (three wrong answers on
+any question) also shows. That dialog is public rather than private to either
+screen, because a dialog two screens show is not owned by whichever one
+happened to be written first.
+
+**The rating prompt.** Fires once, ever, the instant any case's second
+question is solved, gated by `ratingPromptedProvider` — a flag that never
+resets, even across a replay. "Yes" goes straight to
+`AppConfig.openStoreListing()`; "no" just closes it.
+
+**The free trial.** `freeCaseId` (`s01`) is the only case a player can open
+without a subscription — every other case is locked shut on the deck itself
+(`_LockableCard` in `case_list_screen.dart`), and tapping one pushes
+`PaywallScreen(source: 'case_lock')` instead of opening it. Inside the free
+case, the trial ends after its own third question: `question_screen.dart`
+pushes `PaywallScreen(source: 'question_3')` there, and declining leaves the
+case parked at question three, solved and waiting, rather than losing
+progress.
+
+**`AppConfig.reviewMode`** is the escape hatch for both locks — the one flag
+a reviewer needs, since `UnconfiguredStore` throws on purchase exactly as it
+would for a paying player. Flip it to `true` for the build submitted to
+App/Play review, back to `false` before it ships. **Until a real `Store`
+replaces `UnconfiguredStore`, this is also the *only* way s02–s10 are
+reachable at all** — `purchase()`/`restore()` always throw rather than ever
+returning `true`, so nothing in the current build can actually grant
+`isSubscribedProvider`.
+
+## Launch
+
+The native splash — shown before the Flutter engine has drawn a single frame,
+which no Dart-level widget can reach — is generated by `flutter_native_splash`
+from `assets/icons/app_logo.jpeg` against the device register's own graphite
+(`palette.dart`'s `Color(0xFF0A0C10)`), so the logo's own dark ground meets it
+without a seam. Configured under `flutter_native_splash:` in `pubspec.yaml`;
+regenerate with `dart run flutter_native_splash:create` after changing either
+the image or the color. It writes directly into the native Android and iOS
+projects (launch backgrounds, styles, `LaunchScreen.storyboard`,
+`Info.plist`) — nothing here is reachable by `flutter test`, so check it on a
+real device or simulator rather than trusting the test suite for it.

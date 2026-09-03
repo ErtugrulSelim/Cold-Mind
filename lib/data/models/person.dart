@@ -65,6 +65,12 @@ abstract class InstagramPost with _$InstagramPost {
     required String personId,
     @Default('') String caption,
     String? imageAsset,
+
+    /// A clip instead of a still. Only the Reels tab plays it — everywhere
+    /// else the post keeps drawing `imageAsset`, which is the frame the clip
+    /// grew out of, so a grid tile never has to decode video to show a
+    /// thumbnail and a post without a clip loses nothing.
+    String? videoAsset,
     String? location,
     @Default(0) int likeCount,
     DateTime? timestamp,

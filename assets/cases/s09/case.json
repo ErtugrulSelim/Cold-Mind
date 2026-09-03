@@ -159,7 +159,7 @@
         "type": "polaroid",
         "title_key": "s09.board.diadem.title",
         "subtitle_key": "s09.board.diadem.sub",
-        "image_asset": "assets/cases/s09/photos/diadem.jpg"
+        "image_asset": "assets/cases/s09/photos/catalogue_proof.jpg"
       },
       {
         "id": "b_lotte",
@@ -593,7 +593,7 @@
       "id": "step_001",
       "order": 1,
       "type": "find_code",
-      "note": "Kendi kurulum notu kodu acikca yaziyor: gunun tarihi, gun ve ay — 0403 (4 Mart, kurulum gunu)",
+      "note": "Kendi kurulum notu kodu acikca yaziyor: gunun tarihi, gun ve ay â€” 0403 (4 Mart, kurulum gunu)",
       "source_app": "notes",
       "source_item_id": "note_001",
       "target_app": "photos",
@@ -1929,6 +1929,24 @@
               "is_read": true,
               "is_delivered": true,
               "is_deleted": false
+            },
+            {
+              "id": "f_wa_161",
+              "sender": "p001",
+              "text_key": "s09.chats.f_wa_161",
+              "timestamp": "2026-03-25T10:00:00"
+            },
+            {
+              "id": "f_wa_162",
+              "sender": "user",
+              "text_key": "s09.chats.f_wa_162",
+              "timestamp": "2026-03-25T10:12:00"
+            },
+            {
+              "id": "f_wa_163",
+              "sender": "p001",
+              "text_key": "s09.chats.f_wa_163",
+              "timestamp": "2026-03-25T10:14:00"
             }
           ]
         },
@@ -2100,7 +2118,7 @@
         {
           "id": "gm_001",
           "from": {
-            "display_name": "Havenkring — Underwriting",
+            "display_name": "Havenkring â€” Underwriting",
             "email": "specified@havenkring.nl",
             "person_id": null
           },
@@ -2140,7 +2158,7 @@
         {
           "id": "gm_003",
           "from": {
-            "display_name": "Vrijthof Fair — Technical",
+            "display_name": "Vrijthof Fair â€” Technical",
             "email": "tech@vrijthoffair.nl",
             "person_id": null
           },
@@ -2201,7 +2219,7 @@
         {
           "id": "gm_007",
           "from": {
-            "display_name": "Vrijthof Fair — Security",
+            "display_name": "Vrijthof Fair â€” Security",
             "email": "security@vrijthoffair.nl",
             "person_id": null
           },
@@ -2281,7 +2299,7 @@
         {
           "id": "f_gm_104",
           "from": {
-            "display_name": "Kamer van Koophandel — ATA",
+            "display_name": "Kamer van Koophandel â€” ATA",
             "email": "ata@kvk.nl",
             "person_id": null
           },
@@ -2301,7 +2319,7 @@
         {
           "id": "f_gm_105",
           "from": {
-            "display_name": "Kamer van Koophandel — ATA",
+            "display_name": "Kamer van Koophandel â€” ATA",
             "email": "ata@kvk.nl",
             "person_id": null
           },
@@ -2321,7 +2339,7 @@
         {
           "id": "f_gm_106",
           "from": {
-            "display_name": "Vrijthof Fair — Exhibitor Services",
+            "display_name": "Vrijthof Fair â€” Exhibitor Services",
             "email": "exhibitors@vrijthoffair.nl",
             "person_id": null
           },
@@ -2341,7 +2359,7 @@
         {
           "id": "f_gm_107",
           "from": {
-            "display_name": "Vrijthof Fair — Exhibitor Services",
+            "display_name": "Vrijthof Fair â€” Exhibitor Services",
             "email": "exhibitors@vrijthoffair.nl",
             "person_id": null
           },
@@ -2361,7 +2379,7 @@
         {
           "id": "f_gm_108",
           "from": {
-            "display_name": "Vrijthof Fair — Exhibitor Services",
+            "display_name": "Vrijthof Fair â€” Exhibitor Services",
             "email": "exhibitors@vrijthoffair.nl",
             "person_id": null
           },
@@ -2561,7 +2579,7 @@
         {
           "id": "f_gm_118",
           "from": {
-            "display_name": "Universiteit van Amsterdam — Alumni",
+            "display_name": "Universiteit van Amsterdam â€” Alumni",
             "email": "alumni@uva.nl",
             "person_id": null
           },
@@ -2661,7 +2679,7 @@
         {
           "id": "f2_gm_201",
           "from": {
-            "display_name": "Kamer van Koophandel — ATA",
+            "display_name": "Kamer van Koophandel â€” ATA",
             "email": "ata@kvk.nl",
             "person_id": null
           },
@@ -2681,7 +2699,7 @@
         {
           "id": "f2_gm_202",
           "from": {
-            "display_name": "Kamer van Koophandel — ATA",
+            "display_name": "Kamer van Koophandel â€” ATA",
             "email": "ata@kvk.nl",
             "person_id": null
           },
@@ -4607,12 +4625,14 @@
         {
           "id": "ph_011",
           "asset": "assets/cases/s09/photos/plinth_ten.jpg",
-          "taken_at": "2026-03-04T16:19:00"
+          "taken_at": "2026-03-04T16:19:00",
+          "document_key": "s09.photos.ph_011.document"
         },
         {
           "id": "ph_012",
           "asset": "assets/cases/s09/photos/diadem.jpg",
-          "taken_at": "2026-03-04T16:14:00"
+          "taken_at": "2026-03-04T16:14:00",
+          "document_key": "s09.photos.ph_012.document"
         },
         {
           "id": "ph_020",
@@ -5709,7 +5729,7 @@
           "requested_at": "2026-03-04T17:12:00",
           "picked_up_at": "2026-03-04T17:18:00",
           "dropped_off_at": "2026-03-04T17:29:00",
-          "fare": "7.60 €",
+          "fare": "7.60 â‚¬",
           "driver": "Joris",
           "distance_km": 3,
           "duration_min": 11,
@@ -5722,7 +5742,7 @@
           "requested_at": "2026-02-27T22:36:00",
           "picked_up_at": "2026-02-27T22:43:00",
           "dropped_off_at": "2026-02-27T22:58:00",
-          "fare": "8.20 €",
+          "fare": "8.20 â‚¬",
           "driver": "Femke",
           "distance_km": 5,
           "duration_min": 15,
@@ -5735,7 +5755,7 @@
           "requested_at": "2026-02-20T08:26:00",
           "picked_up_at": "2026-02-20T08:31:00",
           "dropped_off_at": "2026-02-20T08:41:00",
-          "fare": "5.40 €",
+          "fare": "5.40 â‚¬",
           "driver": "Bram",
           "distance_km": 3,
           "duration_min": 10,
@@ -5757,7 +5777,7 @@
           "requested_at": "2026-03-02T07:20:00",
           "picked_up_at": "2026-03-02T07:25:00.000",
           "dropped_off_at": "2026-03-02T07:33:00.000",
-          "fare": "7.60 €",
+          "fare": "7.60 â‚¬",
           "driver": "Joris",
           "distance_km": 3,
           "duration_min": 8,
@@ -5770,7 +5790,7 @@
           "requested_at": "2026-03-03T07:15:00",
           "picked_up_at": "2026-03-03T07:20:00.000",
           "dropped_off_at": "2026-03-03T07:29:00.000",
-          "fare": "7.60 €",
+          "fare": "7.60 â‚¬",
           "driver": "Joris",
           "distance_km": 3,
           "duration_min": 9,
@@ -5783,7 +5803,7 @@
           "requested_at": "2026-03-03T19:04:00",
           "picked_up_at": "2026-03-03T19:09:00.000",
           "dropped_off_at": "2026-03-03T19:21:00.000",
-          "fare": "7.60 €",
+          "fare": "7.60 â‚¬",
           "driver": "Joris",
           "distance_km": 3,
           "duration_min": 12,
@@ -5796,7 +5816,7 @@
           "requested_at": "2026-02-26T21:40:00",
           "picked_up_at": "2026-02-26T21:45:00.000",
           "dropped_off_at": "2026-02-26T21:52:00.000",
-          "fare": "5.90 €",
+          "fare": "5.90 â‚¬",
           "driver": "Joris",
           "distance_km": 2,
           "duration_min": 7,
@@ -5809,7 +5829,7 @@
           "requested_at": "2026-03-23T07:00:00",
           "picked_up_at": "2026-03-23T07:05:00.000",
           "dropped_off_at": "2026-03-23T09:03:00.000",
-          "fare": "359.50 €",
+          "fare": "359.50 â‚¬",
           "driver": "Joris",
           "distance_km": 210,
           "duration_min": 118,
@@ -5822,7 +5842,7 @@
           "requested_at": "2026-03-13T09:30:00",
           "picked_up_at": "2026-03-13T09:35:00.000",
           "dropped_off_at": "2026-03-13T09:49:00.000",
-          "fare": "9.30 €",
+          "fare": "9.30 â‚¬",
           "driver": "Joris",
           "distance_km": 4,
           "duration_min": 14,
@@ -5835,7 +5855,7 @@
           "requested_at": "2026-04-16T14:20:00",
           "picked_up_at": "2026-04-16T14:25:00.000",
           "dropped_off_at": "2026-04-16T14:38:00.000",
-          "fare": "9.30 €",
+          "fare": "9.30 â‚¬",
           "driver": "Joris",
           "distance_km": 4,
           "duration_min": 13,
@@ -5848,7 +5868,7 @@
           "requested_at": "2026-04-16T17:40:00",
           "picked_up_at": "2026-04-16T17:45:00.000",
           "dropped_off_at": "2026-04-16T18:00:00.000",
-          "fare": "9.30 €",
+          "fare": "9.30 â‚¬",
           "driver": "Joris",
           "distance_km": 4,
           "duration_min": 15,
@@ -5861,7 +5881,7 @@
           "requested_at": "2026-05-08T07:10:00",
           "picked_up_at": "2026-05-08T07:15:00.000",
           "dropped_off_at": "2026-05-08T07:24:00.000",
-          "fare": "5.90 €",
+          "fare": "5.90 â‚¬",
           "driver": "Joris",
           "distance_km": 2,
           "duration_min": 9,
@@ -5874,7 +5894,7 @@
           "requested_at": "2026-05-08T19:50:00",
           "picked_up_at": "2026-05-08T19:55:00.000",
           "dropped_off_at": "2026-05-08T20:06:00.000",
-          "fare": "5.90 €",
+          "fare": "5.90 â‚¬",
           "driver": "Joris",
           "distance_km": 2,
           "duration_min": 11,
@@ -5887,7 +5907,7 @@
           "requested_at": "2026-04-03T18:30:00",
           "picked_up_at": "2026-04-03T18:35:00.000",
           "dropped_off_at": "2026-04-03T18:53:00.000",
-          "fare": "14.40 €",
+          "fare": "14.40 â‚¬",
           "driver": "Joris",
           "distance_km": 7,
           "duration_min": 18,
@@ -5900,7 +5920,7 @@
           "requested_at": "2026-03-16T09:20:00",
           "picked_up_at": "2026-03-16T09:25:00.000",
           "dropped_off_at": "2026-03-16T09:35:00.000",
-          "fare": "7.60 €",
+          "fare": "7.60 â‚¬",
           "driver": "Joris",
           "distance_km": 3,
           "duration_min": 10,
@@ -6051,7 +6071,7 @@
       ]
     },
     "ereader": {
-      "account_label": "Margin — l.vervoort",
+      "account_label": "Margin â€” l.vervoort",
       "books": [
         {
           "id": "bk_001",
@@ -6261,7 +6281,7 @@
       ]
     },
     "cloud": {
-      "account_label": "Drive — l.vervoort",
+      "account_label": "Drive â€” l.vervoort",
       "folders": [
         {
           "id": "cfo_001",

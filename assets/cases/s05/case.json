@@ -581,7 +581,7 @@
       "id": "step_001",
       "order": 1,
       "type": "find_password",
-      "note": "Casa Serena'nın yıllık gözden geçirme e-postası Nadia'nın doğum tarihini her yıl yeniden yazıyor: 11.03.1984. Keychain'in ana parolası nadia-110384",
+      "note": "Casa Serena'nın yıllık gözden geçirme e-postası Nadia'nın doğum tarihini her yıl yeniden yazıyor: 11.03.1984 — Keychain'in ana parolası da bu, aynen yazıldığı gibi",
       "source_app": "gmail",
       "source_item_id": "gm_001",
       "target_app": "vault",
@@ -611,7 +611,7 @@
       "id": "step_004",
       "order": 4,
       "type": "find_code",
-      "note": "Keychain'deki 'Photos — Nessuno album' kaydı Durrës'teki günü taşır — gün ve ay, dört hane: 0912",
+      "note": "Keychain'deki 'Photos — Nessuno album' kaydı Durrës'teki günü taşır — gün ve ay, dört hane: 1209",
       "source_app": "vault",
       "source_item_id": "v_002",
       "target_app": "photos",
@@ -2197,6 +2197,36 @@
               "text_key": "s05.chats.f2_wa_462",
               "timestamp": "2025-12-30T18:02:00",
               "is_read": true,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f2_wa_470",
+              "sender": "p006",
+              "type": "text",
+              "text_key": "s05.chats.f2_wa_470",
+              "timestamp": "2026-01-16T02:20:00",
+              "is_read": false,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f2_wa_471",
+              "sender": "p006",
+              "type": "text",
+              "text_key": "s05.chats.f2_wa_471",
+              "timestamp": "2026-01-16T02:24:00",
+              "is_read": false,
+              "is_delivered": true,
+              "is_deleted": false
+            },
+            {
+              "id": "f2_wa_472",
+              "sender": "p006",
+              "type": "text",
+              "text_key": "s05.chats.f2_wa_472",
+              "timestamp": "2026-01-19T03:40:00",
+              "is_read": false,
               "is_delivered": true,
               "is_deleted": false
             }
@@ -4716,7 +4746,7 @@
             "ph_030"
           ],
           "is_locked": true,
-          "lock_password": "0912"
+          "lock_password": "1209"
         },
         {
           "id": "album_004",
@@ -4782,7 +4812,8 @@
         {
           "id": "ph_011",
           "asset": "assets/cases/s05/photos/marco_photo.jpg",
-          "taken_at": "2013-08-04T13:20:00"
+          "taken_at": "2013-08-04T13:20:00",
+          "document_key": "s05.photos.ph_011.document"
         },
         {
           "id": "ph_012",
@@ -4862,7 +4893,8 @@
         {
           "id": "ph_030",
           "asset": "assets/cases/s05/photos/ilija_marco_2013.jpg",
-          "taken_at": "2013-08-04T13:25:00"
+          "taken_at": "2013-08-04T13:25:00",
+          "document_key": "s05.photos.ph_030.document"
         },
         {
           "id": "ph_031",
@@ -6345,7 +6377,7 @@
     },
     "vault": {
       "login_required": true,
-      "master": "nadia-110384",
+      "master": "11031984",
       "master_hint_key": "s05.keychain.master_hint",
       "account_label": "Beltrame — Keychain",
       "entries": [
@@ -6360,7 +6392,7 @@
           "id": "v_002",
           "label_key": "s05.keychain.v_002.label",
           "username_key": "s05.keychain.v_002.username",
-          "password": "0912",
+          "password": "1209",
           "last_modified": "2025-09-12T19:02:00",
           "note_key": "s05.keychain.v_002.note"
         },

@@ -1,0 +1,52 @@
+s04.client_chat.cc_005	I have the admin account for our whole fleet, so I can put you on his device — properly, live, as it sits.
+s04.closing_chat.cl_006	He was on the floor and he pressed our button, the one we drew on a napkin, and my phone lit up in my hand while I was standing over him.
+s04.closing_chat.cl_009	The recall takes a year, and for that year forty thousand people wear nothing at all, and the firmware never gets fixed because there is nobody left to fix it.
+s04.closing_chat.cl_014	I'm not arguing — I'm telling you what you bought, because you should know what it cost and not just what it was worth.
+s04.closing_chat.cl_019	You were better than I needed you to be — that was the whole risk and I took it anyway, because I thought a professional would stop where the evidence was tidy.
+s04.mail.gm_001.body	I want to be clear on the record, for the third time, that Mrs Andrade has declined any interest in the shares of FAROL Lda, including the deferred class B allocation she is entitled to under the 2014 agreement.
+s04.mail.gm_003.body	I'm going to do this properly and slowly, which means I am going to say nothing for three weeks while I check every number myself, because if I'm going to end a man's career I'd like to be certain rather than furious.
+s04.photos.ph_002.document	Among the cables and a soldering iron there is a torn notepad page with three lines in blue biro:
+
+  portal — 04.09.2014
+  keychain — same
+  STOP REUSING THIS
+
+The last line is underlined twice.
+s04.photos.ph_011.document	FAROL — SERIES A
+  "Field reliability: 96%"
+  "n = 412 activations, March programme"
+
+Someone has written across the bottom margin in blue biro: n is 412 for both numbers.
+s04.memos.vm_001.transcript	A man's voice, distant, not in the scene: "Hold there — Marta, from 'eleven years' again, and take the pause." Two or three people laugh quietly.
+s04.memos.vm_003.transcript	(A man's voice, close, tired, in a concrete stairwell — his own echo two syllables behind him.)
+
+"Run three, stairwell, minus two.
+s04.cloud.cf_001.body	device,run,environment,pressed,transmitted,latency_s
+8801,1,stairwell -2,yes,no,—
+8801,2,stairwell -2,yes,no,—
+8802,1,lift car,yes,no,—
+8802,2,lift car,yes,yes,140
+8803,1,basement,yes,no,—
+… 412 rows …
+
+SUMMARY — INDOOR / ENCLOSED
+transmitted 255 / 412
+failed or >90s 157 / 412
+rate 38.1%
+s04.cloud.cf_002.body	ANDRADE — last run 12/11 02:11
+
+file                          first seen    last modified   size
+----                          ----------    -------------   ----
+vm/matosinhos_run3.m4a        31/10         31/10           1.9 MB
+vm/untitled_0302.m4a          30/10         30/10           0.6 MB
+vm/ARGUMENT_2340.m4a          12/03         12/03           4.2 MB
+vm/napkin_drawer.m4a          04/09/2014    04/09/2014      2.8 MB
+
+Note: 'first seen' is the date this backup first received the file.
+s04.question.q11.sn3	PROPERTIES — size 4,402,118 bytes · unchanged since 12/03
+s04.mail.f_gm_161.body	Vasco — I have written this four times and deleted it four times and the fact that I cannot say it to your face is the part that worries me most, so I am going to
+s04.notes.f_note_104.body	They chose it because a device that speaks up when nothing is wrong looks bad in a room full of investors, and a device that stays quiet when something is wrong looks like nothing at all.
+s04.notes.f_note_113.body	A product that requires somebody to classify their own situation as an emergency has already failed, because the people who need it most are exactly the people who will not do that.
+s04.notes.f_note_207.body	That assumption quietly excludes exactly the people the category claims to serve, and nobody has said so because saying so means building a base unit and a base unit is unglamorous.
+s04.notes.f_note_209.body	Not because it would not sell — it would sell enormously — but because the moment it is on a child it stops being a way of asking for help and becomes a way of knowing where somebody is.
+s04.notes.f_note_211.block_003	Straps — 240, of which 60 are the old clasp

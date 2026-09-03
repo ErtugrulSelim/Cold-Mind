@@ -1,3 +1,5 @@
+import 'dart:ui' show ImageFilter;
+
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -409,15 +411,23 @@ class _Chrome extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Material(
-      color: Colors.black.withValues(alpha: 0.38),
-      shape: const CircleBorder(),
-      child: InkWell(
-        onTap: onTap,
-        customBorder: const CircleBorder(),
-        // Sized to the pill beside it, so the two read as one control strip
-        // rather than a button and an afterthought.
-        child: SizedBox(width: 40, height: 40, child: Center(child: child)),
+    // A flat tint over the wallpaper read as a sticker rather than a control
+    // floating on the glass — a real blur behind it lets whatever is moving
+    // underneath (the wallpaper, a scrolling photo) still show through.
+    return ClipOval(
+      child: BackdropFilter(
+        filter: ImageFilter.blur(sigmaX: 14, sigmaY: 14),
+        child: Material(
+          color: Colors.black.withValues(alpha: 0.32),
+          shape: const CircleBorder(),
+          child: InkWell(
+            onTap: onTap,
+            customBorder: const CircleBorder(),
+            // Sized to the pill beside it, so the two read as one control
+            // strip rather than a button and an afterthought.
+            child: SizedBox(width: 40, height: 40, child: Center(child: child)),
+          ),
+        ),
       ),
     );
   }

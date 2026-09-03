@@ -1,0 +1,59 @@
+[
+  {
+    "name": "family_christening",
+    "dir": "photos",
+    "asset": "assets/cases/s10/photos/family_christening.jpg",
+    "aspect": "portrait_3_4",
+    "size": "896x1152",
+    "reads_back": "s10.photos.ph_020.document",
+    "answers": ["s10 q13"],
+    "note": "One of five family frames the thirteenth question rests on. The phone in the older woman's hand is the answer, and in every one of these it has to be present and never the subject — the picture is of the occasion, and she happens to be holding it. A viewer who notices it in the first frame has been handed the case.",
+    "must_show": ["phone"],
+    "prompt": "A christening party in a plain church hall, photographed from the side. Twenty-odd people standing in loose groups, paper cups, a trestle table with a cake and a stack of plates. In the middle a woman in her thirties is holding a baby in a long white gown and looking straight at whoever is taking the picture, smiling. At the left edge of the group, half turned away and slightly out of the light, an older woman in her seventies stands with a mobile phone held low against her hip, screen upward, her thumb resting on it. She is not looking at the phone and not looking at the baby. Warm indoor light, hall windows behind, ordinary family snapshot composition, photographic realism, no text, no logos, no alcohol."
+  },
+  {
+    "name": "family_table",
+    "dir": "photos",
+    "asset": "assets/cases/s10/photos/family_table.jpg",
+    "aspect": "portrait_3_4",
+    "size": "896x1152",
+    "reads_back": "s10.photos.ph_021.document",
+    "answers": ["s10 q13"],
+    "must_show": ["phone"],
+    "prompt": "A family lunch photographed down the length of a long table, nine people seated along both sides. Plates, water jugs, a bowl of salad, mismatched chairs. Halfway down the left-hand side a woman in her thirties has her arm around the shoulders of the woman next to her and is laughing. At the head of the table an older woman in her seventies sits upright with one hand laid flat on a mobile phone lying face up on the cloth beside her plate, the way somebody keeps a hand on a glass. Daylight from a window at the far end, ordinary family snapshot composition, photographic realism, no text, no logos, no alcohol."
+  },
+  {
+    "name": "family_garden",
+    "dir": "photos",
+    "asset": "assets/cases/s10/photos/family_garden.jpg",
+    "aspect": "portrait_3_4",
+    "size": "896x1152",
+    "reads_back": "s10.photos.ph_022.document",
+    "answers": ["s10 q13"],
+    "must_show": ["phone"],
+    "prompt": "A small back garden in strong late-afternoon sunlight. Two young children are on the grass with a dog between them. On the back step a woman in her thirties sits with a plate balanced on her knees, watching the children. Behind her, in a folding garden chair in the shade of the house, an older woman in her seventies sits with a mobile phone flat in her lap and her thumb on the screen; she is looking down at it, not at the children. Long shadows, washing line at the edge of frame, ordinary family snapshot composition, photographic realism, no text, no logos, no alcohol."
+  },
+  {
+    "name": "family_kitchen",
+    "dir": "photos",
+    "asset": "assets/cases/s10/photos/family_kitchen.jpg",
+    "aspect": "portrait_3_4",
+    "size": "896x1152",
+    "reads_back": "s10.photos.ph_023.document",
+    "answers": ["s10 q13"],
+    "must_show": ["phone"],
+    "prompt": "A domestic kitchen late on Christmas Eve, most of the light coming from the strip light under the cooker hood. A woman in her thirties stands at the sink with her sleeves pushed up, washing a large dish, her back three-quarters to the camera. Behind her, leaning against the opposite counter, an older woman in her seventies holds a mobile phone up in her left hand, angled away from the room, her face lit from below by the screen. Foil trays, a tea towel over the oven rail, a dark window. Ordinary family snapshot composition, warm and dim, photographic realism, no text, no logos, no alcohol."
+  },
+  {
+    "name": "phone_bowl",
+    "dir": "photos",
+    "asset": "assets/cases/s10/photos/phone_bowl.jpg",
+    "aspect": "portrait_3_4",
+    "size": "896x1152",
+    "reads_back": "s10.photos.ph_034.document",
+    "answers": ["s10 q13"],
+    "note": "The house rule, and the one frame where the absence is the point: four phones in the bowl and five people at the table that evening.",
+    "must_show": ["phone"],
+    "prompt": "A shallow wooden bowl on a narrow hall table, photographed from directly above. Four mobile phones lie in it face down, different sizes and cases, one of them with a cracked corner. Beside the bowl are a set of keys and an unopened envelope. Warm hallway light, a coat sleeve just visible at the edge of frame. Still-life snapshot, shallow depth of field, photographic realism, no text, no logos, no alcohol."
+  }
+]

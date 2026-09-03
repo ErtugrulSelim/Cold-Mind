@@ -1,0 +1,242 @@
+[
+  {
+    "name": "s01_police",
+    "asset": "assets/cases/s01/endings/police.jpg",
+    "model": "mystic",
+    "aspect": "widescreen_16_9",
+    "note": "An indictment nobody can serve. The file exists and the person does not.",
+    "prompt": "An empty courthouse corridor early in the morning, photographed level and straight down its length. A wooden bench along one wall with a tall stack of bound case files sitting on it, tied with tape, nobody beside them. Stone floor, tall windows on the left throwing long pale rectangles of light, doors closed all the way down. Cold northern European institutional architecture. Quiet documentary photograph, natural available light, muted desaturated colour, photographic realism, no people, no text, no writing, no signage, no logos."
+  },
+  {
+    "name": "s01_erase",
+    "asset": "assets/cases/s01/endings/erase.jpg",
+    "model": "mystic",
+    "aspect": "widescreen_16_9",
+    "note": "She reads the coverage of her own perfect crime and finds someone else's silence in the byline.",
+    "prompt": "A folded newspaper lying open on a small café table by a window, photographed from a steep angle so the columns of print are blurred and completely illegible. A cup of coffee gone cold beside it with a skin on the surface, one chair pushed back and empty. Grey daylight through the glass, wet street outside thrown out of focus. Quiet documentary photograph, natural available light, muted desaturated colour, shallow depth of field, photographic realism, no people, no readable text, no writing, no headlines, no logos."
+  },
+  {
+    "name": "s01_silence",
+    "asset": "assets/cases/s01/endings/silence.jpg",
+    "model": "mystic",
+    "aspect": "widescreen_16_9",
+    "note": "A brother buried on borrowed money by a man who never learns who did it.",
+    "prompt": "A new grave in a northern cemetery in late winter, photographed from a few paces back. Bare turned earth, a plain temporary metal marker pushed into the ground at the head of it with no legible lettering, a single cheap bunch of flowers still in its cellophane laid at the base. Thin snow in the hollows, dark pines behind, low grey sky. Footprints in the mud leading away from the frame. Quiet documentary photograph, natural available light, muted desaturated colour, photographic realism, no people, no text, no writing, no names, no logos."
+  },
+  {
+    "name": "s02_expose",
+    "asset": "assets/cases/s02/endings/expose.jpg",
+    "model": "mystic",
+    "aspect": "widescreen_16_9",
+    "note": "The theft holds, the murder charge collapses, and she is charged in absentia. Nowhere left to run.",
+    "prompt": "The doorway of an artist's studio in a converted industrial building, closed and sealed. A heavy steel door with a paper seal stuck across the join of door and frame, creased and slightly lifted at one corner, no lettering on it. Concrete corridor, a bare bulb in a wire cage overhead, a stack of empty wooden crates against the opposite wall. Quiet documentary photograph, natural available light, muted desaturated colour, photographic realism, no people, no text, no writing, no signage, no logos."
+  },
+  {
+    "name": "s02_fraud_only",
+    "asset": "assets/cases/s02/endings/fraud_only.jpg",
+    "model": "mystic",
+    "aspect": "widescreen_16_9",
+    "note": "Four years for the money, nothing for the person. The file stays open with her name at the top of it.",
+    "prompt": "The public gallery of a small European courtroom after everyone has left, photographed from the back row looking forward. Rows of pale wooden seats, several tipped up, one still down. Beyond a low rail, an empty bench and an empty witness stand. High windows with frosted glass, institutional grey-green walls, a single strip light on. Quiet documentary photograph, natural available light, muted desaturated colour, photographic realism, no people, no text, no writing, no signage, no logos."
+  },
+  {
+    "name": "s02_silence",
+    "asset": "assets/cases/s02/endings/silence.jpg",
+    "model": "mystic",
+    "aspect": "widescreen_16_9",
+    "note": "Flowers left every spring on an empty grave, by the only person who does not know it is empty.",
+    "prompt": "A single upright headstone in a well-kept German cemetery in spring, photographed close and slightly to one side so that the face of the stone is turned away and no inscription is visible. A fresh bunch of cut flowers propped against its base, still tied. Neatly clipped grass, a gravel path, a low box hedge, dappled light through a lime tree. Quiet documentary photograph, natural available light, muted desaturated colour, shallow depth of field, photographic realism, no people, no text, no writing, no names, no logos."
+  },
+  {
+    "name": "s03_truth",
+    "asset": "assets/cases/s03/endings/truth.jpg",
+    "model": "mystic",
+    "aspect": "widescreen_16_9",
+    "note": "The bindery reopens with the workshop rearranged so that nobody has to sit where he sat.",
+    "prompt": "The interior of a traditional bookbinding workshop in early autumn. Long wooden benches with sewing frames, bone folders, stacks of board and cloth, a heavy cast-iron paper guillotine at the far end. One bench has been cleared completely bare and pushed against the side wall, out of the working row, its stool gone. High north-facing windows, dust in the light. Quiet documentary photograph, natural available light, muted desaturated colour, photographic realism, no people, no text, no writing, no signage, no logos."
+  },
+  {
+    "name": "s03_vos_only",
+    "asset": "assets/cases/s03/endings/vos_only.jpg",
+    "model": "mystic",
+    "aspect": "widescreen_16_9",
+    "note": "He takes it out perhaps twice a year, and every time he decides again.",
+    "prompt": "A small old floor safe set into the base of a wall underneath a heavy cast-iron paper guillotine, photographed low and close. The safe door stands slightly ajar; inside, on the single shelf, a hand-sewn manuscript block wrapped in tissue and tied with linen tape. Worn workshop floorboards, the shadow of the guillotine bed across the top of the frame, one warm work lamp out of shot to the left. Quiet documentary photograph, natural available light, muted desaturated colour, photographic realism, no people, no text, no writing, no logos."
+  },
+  {
+    "name": "s03_bury",
+    "asset": "assets/cases/s03/endings/bury.jpg",
+    "model": "mystic",
+    "aspect": "widescreen_16_9",
+    "note": "Nothing is filed. He sells the bindery in the spring.",
+    "prompt": "An emptied workshop with everything taken out of it. Bare boards marked with clean rectangles and bolt holes where heavy machines stood for decades, a coil of dust along the skirting, a blank estate agent's board leaning face-in against the wall with nothing written on it. Windows unshuttered, spring light flat across the empty floor, one forgotten stool in the corner. Quiet documentary photograph, natural available light, muted desaturated colour, photographic realism, no people, no text, no writing, no signage, no logos."
+  },
+  {
+    "name": "s04_expose",
+    "asset": "assets/cases/s04/endings/expose.jpg",
+    "model": "mystic",
+    "aspect": "widescreen_16_9",
+    "note": "Administration before Christmas. The recall is still nineteen per cent complete a year later.",
+    "prompt": "The assembly floor of a small shut electronics factory, photographed down the length of the line. Benches with anti-static mats, pick-and-place machines draped in clear plastic sheeting, coiled air lines hanging unused. In the foreground, shrink-wrapped pallets of plain unlabelled cardboard cartons that were never shipped. Skylights above, dust, half the strip lights off. Quiet documentary photograph, natural available light, muted desaturated colour, photographic realism, no people, no text, no writing, no signage, no logos."
+  },
+  {
+    "name": "s04_marta_only",
+    "asset": "assets/cases/s04/endings/marta_only.jpg",
+    "model": "mystic",
+    "aspect": "widescreen_16_9",
+    "note": "Forty thousand of them start working the way the box always said they did, and nobody is ever told they had not been.",
+    "prompt": "A plain grey medical alert wristband lying on a bedside table at night, photographed close. A single soft button on its face, a fabric strap, no markings. Beside it a glass of water, a folded pair of reading glasses and the edge of a paperback. A low bedside lamp is the only light; the bed itself is out of focus behind. Quiet documentary photograph, warm low available light, muted desaturated colour, shallow depth of field, photographic realism, no people, no text, no writing, no brand marks, no logos."
+  },
+  {
+    "name": "s04_deal",
+    "asset": "assets/cases/s04/endings/deal.jpg",
+    "model": "mystic",
+    "aspect": "widescreen_16_9",
+    "note": "Somewhere in the year that follows a woman in a stairwell presses hers and it transmits, and she never knows she is the reason any of this mattered.",
+    "prompt": "The stairwell of an ordinary older apartment block at night, photographed from a landing looking down the well. Worn stone treads, a single painted iron handrail curving away, tiled walls to waist height. One timed light is on two floors below and the flights above and beneath it are dark. Nobody on the stairs. Quiet documentary photograph, natural available light, muted desaturated colour, photographic realism, no people, no text, no writing, no signage, no logos."
+  },
+  {
+    "name": "s05_name",
+    "asset": "assets/cases/s05/endings/name.jpg",
+    "model": "mystic",
+    "aspect": "widescreen_16_9",
+    "note": "A stone with his own name on it at last, and a line underneath that his sister insisted on and paid for.",
+    "prompt": "A brand new pale stone grave marker in a Mediterranean hillside cemetery, photographed from an oblique low angle so the inscribed face is raked away from the camera and no lettering can be read. The stone is unweathered and the earth in front of it freshly settled. Dark cypresses behind, a whitewashed wall, hard clear Adriatic light, the sea a thin band in the far distance. Quiet documentary photograph, natural available light, muted desaturated colour, photographic realism, no people, no text, no writing, no names, no logos."
+  },
+  {
+    "name": "s05_quiet",
+    "asset": "assets/cases/s05/endings/quiet.jpg",
+    "model": "mystic",
+    "aspect": "widescreen_16_9",
+    "note": "Nadia is still in her room. She still writes the list.",
+    "prompt": "A single room in an old Italian care home in the afternoon. A high-backed armchair by a window with net curtains half drawn, a small table beside it with a lined notebook open and a ballpoint pen laid across the page, the writing on it too small and too far away to read. A neatly made bed, a wardrobe, a radiator under the sill. Warm light across the floor, nobody in the chair. Quiet documentary photograph, natural available light, muted desaturated colour, photographic realism, no people, no readable text, no writing, no signage, no logos."
+  },
+  {
+    "name": "s05_order",
+    "asset": "assets/cases/s05/endings/order.jpg",
+    "model": "mystic",
+    "aspect": "widescreen_16_9",
+    "note": "Eleven kilometres, on the same bus route. Not clean, but the officer existed.",
+    "prompt": "A bus stop on a quiet coastal road in late afternoon, photographed from across the carriageway. A plain metal shelter with a wooden bench inside it, a blank unmarked sign on a pole, a low wall behind and the sea beyond it. The road is empty in both directions. Long light, dry grass at the verge, a single pine leaning over the shelter. Quiet documentary photograph, natural available light, muted desaturated colour, photographic realism, no people, no text, no writing, no route numbers, no signage, no logos."
+  },
+  {
+    "name": "s06_operator",
+    "asset": "assets/cases/s06/endings/operator.jpg",
+    "model": "mystic",
+    "aspect": "widescreen_16_9",
+    "note": "A notice against his name that will outlive the compound, the militia, and the man who ran the floor.",
+    "prompt": "A single sheet of paper pinned to a large cork noticeboard in an institutional office, photographed at a steep oblique angle so the sheet is foreshortened and nothing on it is legible. Other pins and empty staples around it, the board otherwise almost bare. Flat overhead fluorescent light, a grey partition wall behind, the corner of a filing cabinet in shot. Quiet documentary photograph, hard even artificial light, muted desaturated colour, photographic realism, no people, no readable text, no writing, no photographs of faces, no logos."
+  },
+  {
+    "name": "s06_floor",
+    "asset": "assets/cases/s06/endings/floor.jpg",
+    "model": "mystic",
+    "aspect": "widescreen_16_9",
+    "note": "He moved operations twice in the following year and is understood to be running a larger floor forty kilometres north.",
+    "prompt": "A large emptied open-plan work floor under a corrugated metal roof in a hot climate, photographed down the length of it. Long rows of cheap desks with monitors pushed to the back edges, headsets left hanging on the screens, power and network cables looped and taped along the floor. One ceiling fan, barred windows high up, half the lights dead. Nobody at any desk. Quiet documentary photograph, natural available light, muted desaturated colour, photographic realism, no people, no text, no writing, no signage, no logos."
+  },
+  {
+    "name": "s06_witness",
+    "asset": "assets/cases/s06/endings/witness.jpg",
+    "model": "mystic",
+    "aspect": "widescreen_16_9",
+    "note": "Eleven hours, sixty-two pages, and it recovered exactly nothing. A witness is not a remedy.",
+    "prompt": "A small video interview room set up and waiting. One chair on the far side of a plain table facing a camera on a tripod, a microphone on a short stand, a jug of water and two glasses. A blank pale blue backdrop behind the chair, a coil of cable across the carpet tiles, a box of tissues at the table edge. Overhead panel light, door closed, nobody in the room. Quiet documentary photograph, even artificial light, muted desaturated colour, photographic realism, no people, no text, no writing, no signage, no logos."
+  },
+  {
+    "name": "s07_court",
+    "asset": "assets/cases/s07/endings/court.jpg",
+    "model": "mystic",
+    "aspect": "widescreen_16_9",
+    "note": "Three years and one month, and then the conviction is quashed in eleven lines.",
+    "prompt": "The stone entrance steps of a nineteenth-century Irish courthouse in the rain, photographed from the pavement looking up. Wide worn granite treads dark with wet, plain columns either side, tall doors closed at the top. Puddles on the flags in the foreground reflecting the grey sky. Nobody on the steps. Quiet documentary photograph, natural available light, muted desaturated colour, photographic realism, no people, no text, no writing, no signage, no crests, no logos."
+  },
+  {
+    "name": "s07_press",
+    "asset": "assets/cases/s07/endings/press.jpg",
+    "model": "mystic",
+    "aspect": "widescreen_16_9",
+    "note": "On the twelfth day the shutter went up for the first time in nine years, and about two hundred people came.",
+    "prompt": "A small village shopfront on a west of Ireland street with its metal roller shutter raised about two thirds of the way for the first time in years, photographed from across the road. A wooden trestle table set out on the pavement in front of it with a cloth over it. A loose crowd of ordinary people stands along the street, all seen from behind and at a distance, small in the frame and none of their faces visible. Painted render, low afternoon light, wet road. Quiet documentary photograph, natural available light, muted desaturated colour, photographic realism, no identifiable faces, no text, no writing, no shop signage, no logos."
+  },
+  {
+    "name": "s07_mother",
+    "asset": "assets/cases/s07/endings/mother.jpg",
+    "model": "mystic",
+    "aspect": "widescreen_16_9",
+    "note": "Four hundred and sixteen photographs, one fault list and one read receipt, laid out on a kitchen table and gone through in order.",
+    "prompt": "A worn kitchen table covered end to end with small printed photographs laid out in careful overlapping rows, photographed from above and slightly to one side so that the images themselves are indistinct. Two mugs of tea pushed to the far corner, a mobile phone lying face down at the edge, a chair pulled out. Oilcloth, morning light from a window on the left. Quiet documentary photograph, natural available light, muted desaturated colour, photographic realism, no people, no identifiable faces in the photographs, no text, no writing, no logos."
+  },
+  {
+    "name": "s08_address",
+    "asset": "assets/cases/s08/endings/address.jpg",
+    "model": "mystic",
+    "aspect": "widescreen_16_9",
+    "note": "Back for the start of the autumn term, in the next year up, at the same desk.",
+    "prompt": "An empty Polish primary school classroom photographed from the back, late on an autumn afternoon. Rows of small two-seat desks with chairs pushed in, a green board at the front, a radiator under tall windows on the right. One desk in the window row has a chair slightly out of line and a chipped enamel pot of pencils on it. Low golden light across the floor, chestnut leaves visible outside. Quiet documentary photograph, natural available light, muted desaturated colour, photographic realism, no people, no children, no text, no writing, no signage, no logos."
+  },
+  {
+    "name": "s08_nothing",
+    "asset": "assets/cases/s08/endings/nothing.jpg",
+    "model": "mystic",
+    "aspect": "widescreen_16_9",
+    "note": "Fourteen months in a town on the sea by the time it is heard. Nobody has told her any of this.",
+    "prompt": "A North Yorkshire clifftop seaside town seen in winter from the coast path above it, photographed looking down and along. Red pantile roofs stepping down to a small harbour, a stone pier, grey-green sea with white water at the harbour mouth, gulls. Wet grass and a wooden fence post in the near foreground. Low flat winter light, heavy sky. Quiet documentary photograph, natural available light, muted desaturated colour, photographic realism, no people, no text, no writing, no signage, no logos."
+  },
+  {
+    "name": "s08_phone",
+    "asset": "assets/cases/s08/endings/phone.jpg",
+    "model": "mystic",
+    "aspect": "widescreen_16_9",
+    "note": "The hearing ran three days instead of one, and the court listened to fifty-one minutes of a recording made in a hallway.",
+    "prompt": "A small modern English hearing room, empty, photographed from the side. A plain light wood bench at the front, two tables facing it, a lectern. On the clerk's table a laptop lid open and a single small loudspeaker on a short stand angled towards the room, a cable running to the floor. Carpet tiles, blinds half drawn, one bank of lights on. Nobody present. Quiet documentary photograph, natural available light, muted desaturated colour, photographic realism, no people, no text, no writing, no signage, no crests, no logos."
+  },
+  {
+    "name": "s09_policy",
+    "asset": "assets/cases/s09/endings/policy.jpg",
+    "model": "mystic",
+    "aspect": "widescreen_16_9",
+    "note": "The insurer paid nothing, the lending museum received nothing, and the object has not been seen since.",
+    "prompt": "An art fair stand after the fair has been dismantled, photographed straight on from the aisle. Bare grey carpet with four deep rectangular indentations pressed into the pile where the feet of a heavy display case stood, and a lighter unfaded rectangle of carpet between them. A coiled black power cable left on the floor and a strip of gaffer tape half peeled up. Behind it a blank temporary partition wall with two empty screw holes and a pale patch where a panel was unbolted. Overhead hall lighting half switched off, the aisle receding into darkness. Quiet documentary photograph, dim after-hours lighting, muted desaturated colour, photographic realism, an emptied exhibition stand, no display case, no plinths, no objects, no people, no text, no writing, no signage, no logos."
+  },
+  {
+    "name": "s09_everything",
+    "asset": "assets/cases/s09/endings/everything.jpg",
+    "model": "mystic",
+    "aspect": "widescreen_16_9",
+    "note": "Six museums in four countries deaccessioned. Two are litigating. One published everything and nobody had asked it to.",
+    "prompt": "A museum collections store room, photographed down an aisle between tall grey steel shelving racks. Rows of padded archival boxes and objects on foam mounts in bays, a flat trolley parked halfway along. One bay is conspicuously empty: a bare custom-cut foam mount with the shape of a missing object still pressed into it, and nothing sitting in it. Even cool storage lighting, concrete floor. Quiet documentary photograph, flat even artificial light, muted desaturated colour, photographic realism, no people, no text, no writing, no labels, no logos."
+  },
+  {
+    "name": "s09_lotte",
+    "asset": "assets/cases/s09/endings/lotte.jpg",
+    "model": "mystic",
+    "aspect": "widescreen_16_9",
+    "note": "She walked in on the Monday morning with her own photographs and a solicitor she had paid for herself.",
+    "prompt": "The waiting area of a government inspectorate office early on a Monday morning. Two rows of plain padded chairs against a pale wall, a low table with nothing on it, a closed frosted-glass door at the end. On one chair, left alone, a full document wallet with its elastic still fastened. Grey strip lighting, hard-wearing carpet, a dark window. Nobody waiting. Quiet documentary photograph, even artificial light, muted desaturated colour, photographic realism, no people, no text, no writing, no signage, no logos."
+  },
+  {
+    "name": "s10_civil",
+    "asset": "assets/cases/s10/endings/civil.jpg",
+    "model": "mystic",
+    "aspect": "widescreen_16_9",
+    "note": "Issued in the September, settled eleven months later, four days before trial, for a sum neither side may state.",
+    "prompt": "A solicitors' meeting room after a long day, photographed from the doorway. An oval table with a jug of water and upturned glasses on a tray, eight chairs around it, one pushed well back and turned away from the table. A closed folder at one place and nothing at the others. Blinds drawn against the evening, one lamp on in the corner, city light behind the slats. Quiet documentary photograph, warm low available light, muted desaturated colour, photographic realism, no people, no text, no writing, no signage, no logos."
+  },
+  {
+    "name": "s10_police",
+    "asset": "assets/cases/s10/endings/police.jpg",
+    "model": "mystic",
+    "aspect": "widescreen_16_9",
+    "note": "Nine hours of statement over two visits. The crime number exists. Nothing was ever charged.",
+    "prompt": "A police interview room, empty, photographed from the corner. A plain table fixed to the wall with two chairs on one side and one on the other, a wall-mounted recording unit with a small panel of buttons beside it, a red emergency strip along the wall. Bare painted breeze block, a high window with reinforced glass, hard overhead light. A paper cup left on the table. Quiet documentary photograph, hard even artificial light, muted desaturated colour, photographic realism, no people, no text, no writing, no signage, no logos."
+  },
+  {
+    "name": "s10_family",
+    "asset": "assets/cases/s10/endings/family.jpg",
+    "model": "mystic",
+    "aspect": "widescreen_16_9",
+    "note": "The fourth Thursday in June, in her aunt's front room, with thirty-one people in it and the food already on the table.",
+    "prompt": "A modest front room laid out for a very large family meal and not yet occupied, photographed from the doorway. Two tables pushed end to end down the middle under a long cloth, mismatched chairs brought in from other rooms crowded along both sides, more stacked by the wall. Dishes of food set out and covered with clean tea towels, stacks of plates, a jug of squash. Net curtains, a summer evening outside, a sideboard with framed pictures turned away from camera. Nobody in the room. Quiet documentary photograph, warm natural available light, muted desaturated colour, photographic realism, no people, no identifiable faces, no text, no writing, no logos."
+  }
+]

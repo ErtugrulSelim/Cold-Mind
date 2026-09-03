@@ -40,15 +40,26 @@ void main() {
       );
       await tester.pump(const Duration(milliseconds: 300));
 
-      // s01's ph_006 ("badge_log.jpg") carries a document_key. The grid mixes
-      // many GestureDetectors (tabs, other tiles), so this targets the one
-      // wrapping that photo's own asset rather than guessing tree order.
+      // s01's ph_017 ("whiteboard2.jpg") carries a document_key and is in
+      // Recents. It used to be ph_006 — which is inside the locked album, and
+      // was reachable here only because Recents was drawing every photo on
+      // the phone. This test was quietly standing on that bug.
+      //
+      // The grid mixes many GestureDetectors (tabs, other tiles), so this
+      // targets the one wrapping that photo's own asset rather than guessing
+      // tree order.
       final target = find.byWidgetPredicate((widget) {
         if (widget is! Image) return false;
         final image = widget.image;
         final inner = image is ResizeImage ? image.imageProvider : image;
-        return inner is AssetImage && inner.assetName.contains('badge_log');
+        return inner is AssetImage && inner.assetName.contains('whiteboard2');
       });
+      // The grid builds lazily, so a tile below the fold is not in the tree
+      // at all until it is scrolled to.
+      for (var scroll = 0; scroll < 20 && target.evaluate().isEmpty; scroll++) {
+        await tester.drag(find.byType(GridView).first, const Offset(0, -400));
+        await tester.pumpAndSettle();
+      }
       expect(target, findsOneWidget);
       final detector = find.ancestor(
         of: target,

@@ -336,5 +336,11 @@
   "notif.update.title": "新しいアップデートがあります",
   "notif.update.body": "Cold Mindの新しいバージョンが登場 — 新機能をチェック!",
   "ui.photo_read": "Read",
-  "ui.photo_document": "DOCUMENT"
+  "ui.photo_document": "DOCUMENT",
+  "ui.weekdays_short": "月,火,水,木,金,土,日",
+  "q.solved_title": "これまでに分かったこと",
+  "q.solved_none": "まだ何もありません。",
+  "q.solved_unrecorded": "記録なし",
+  "q.solved_briefing": "依頼人、最初のやりとり",
+  "q.solved_interstitial": "依頼人から連絡があった"
 }

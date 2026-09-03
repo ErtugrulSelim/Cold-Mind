@@ -107,3 +107,41 @@ class Hints extends _$Hints {
     state = accepted ? HintOffer.accepted : HintOffer.declined;
   }
 }
+
+/// Whether the "do you like the game?" prompt has ever been shown.
+///
+/// Once, ever, regardless of which case or which answer — a player who said
+/// no should not be asked again next case, and a player who said yes has
+/// already been sent to the store and does not need a second invitation.
+@Riverpod(keepAlive: true)
+class RatingPrompted extends _$RatingPrompted {
+  static const String _key = 'rating_prompted';
+
+  @override
+  bool build() => ref.watch(sharedPreferencesProvider).getBool(_key) ?? false;
+
+  Future<void> markShown() async {
+    await ref.read(sharedPreferencesProvider).setBool(_key, true);
+    state = true;
+  }
+}
+
+/// Whether this player has ever completed a purchase or a restore.
+///
+/// [UnconfiguredStore] cannot produce one — it throws rather than returning
+/// true — so until a real billing SDK is behind [Store], this stays false for
+/// everybody and every case past the first stays gated. That is the correct
+/// behaviour for a build with no payment system connected, not a bug in this
+/// flag: see [PaywallScreen], which is the only place that ever sets it.
+@Riverpod(keepAlive: true)
+class IsSubscribed extends _$IsSubscribed {
+  static const String _key = 'is_subscribed';
+
+  @override
+  bool build() => ref.watch(sharedPreferencesProvider).getBool(_key) ?? false;
+
+  Future<void> grant() async {
+    await ref.read(sharedPreferencesProvider).setBool(_key, true);
+    state = true;
+  }
+}

@@ -52,8 +52,9 @@ void main() {
       because: 'Sander Merckx died on the ninth of November',
     ),
     's04': (
-      date: '2025-11-13',
-      because: 'Rui Andrade died on the night of the thirteenth',
+      date: '2025-11-11',
+      because: 'Rui Andrade died on the night of the twelfth — the case was '
+          'shifted two days so its own weekdays would be true',
     ),
     's05': (
       date: '2026-01-11',

@@ -84,6 +84,25 @@ String normalizeAnswer(String input) {
   return buf.toString().replaceAll(RegExp(r'\s+'), ' ').trim();
 }
 
+/// Normalizes a password or passcode the player types at a lock.
+///
+/// The same folding as [normalizeAnswer], and then the separators come out
+/// altogether rather than becoming spaces. That difference is the whole
+/// function: prose answers are made of words and the gaps between them matter,
+/// while a password is one token somebody read off something and typed back.
+///
+/// The phone prints `11.03.1984` and the case stores `11031984`; it prints
+/// `Halcyon is not mine.` and stores `halcyon-is-not-mine`; it prints
+/// `farol-porto-2014` and the player types `farol porto 2014` because that is
+/// how it looked to them. All three should open the door, and under the prose
+/// rule none of them did — the dots became spaces and the strings stopped
+/// matching.
+///
+/// Only ever more forgiving, never less: nothing that opened a lock before
+/// stops opening it.
+String normalizePassword(String input) =>
+    normalizeAnswer(input).replaceAll(' ', '');
+
 /// True for anything that carries meaning inside a word in a non-Latin script:
 /// letters, digits, and the combining marks that Devanagari matras, Arabic
 /// harakat and Hangul jamo are built from — dropping those would shred the word.

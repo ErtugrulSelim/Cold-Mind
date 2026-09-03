@@ -4,6 +4,7 @@ import '../../../core/theme/cold_theme.dart';
 import '../../../data/l10n/case_strings.dart';
 import '../../../data/models/case_file.dart';
 import '../phone_format.dart';
+import '../widgets/document_body.dart';
 
 /// Cloud storage.
 ///
@@ -118,12 +119,10 @@ class _FileRow extends StatelessWidget {
                   body: ListView(
                     padding: const EdgeInsets.all(ColdSpace.lg),
                     children: [
-                      Text(
-                        strings?.t(bodyKey) ?? '',
-                        style: ColdType.body.copyWith(
-                          color: device.textPrimary,
-                          height: 1.55,
-                        ),
+                      DocumentBody(
+                        text: strings?.t(bodyKey) ?? '',
+                        color: device.textPrimary,
+                        proseStyle: ColdType.body.copyWith(height: 1.55),
                       ),
                     ],
                   ),

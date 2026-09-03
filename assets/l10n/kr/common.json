@@ -337,5 +337,11 @@
   "notif.update.body": "Cold Mind의 새 버전이 나왔어요 — 새로운 소식을 확인해 보세요!",
   "q.audio_hint": "🎧 단서: 녹음을 들어보세요",
   "ui.photo_read": "읽기",
-  "ui.photo_document": "문서"
+  "ui.photo_document": "문서",
+  "ui.weekdays_short": "월,화,수,목,금,토,일",
+  "q.solved_title": "지금까지 밝혀낸 것",
+  "q.solved_none": "아직 없습니다.",
+  "q.solved_unrecorded": "기록 없음",
+  "q.solved_briefing": "의뢰인, 처음의 대화",
+  "q.solved_interstitial": "의뢰인이 연락해 왔다"
 }

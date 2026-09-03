@@ -83,7 +83,7 @@ Widget? buildAppScreen({
           // The vault calls its password `master`; everything else calls it
           // `password`. Both are the same rung of the same chain.
           expected: (data['password'] ?? data['master']) as String?,
-          hintKey: data['master_hint_key'] as String?,
+          hintKey: _hintFor(appKey, data, file),
           strings: strings,
           child: screen,
         );
@@ -92,6 +92,31 @@ Widget? buildAppScreen({
     skin: skinFor(appKey),
     child: AppNavigator(child: gated),
   );
+}
+
+/// Where this app's password is written down, for "Forgot password?".
+///
+/// Two places author it and only one of them used to be read. The vault keeps
+/// its own `master_hint_key`; every other gated app is a rung of the lock
+/// chain, and the chain writes its nudge on the step — `hint_toast_key` on the
+/// step whose `target_app` is this one.
+///
+/// Reading only the first is how s04 shipped a Mail login with no way through.
+/// Its password is a phrase on a torn notepad page in a photograph, and the
+/// photograph is a photograph: the transcript under it is the reading of it,
+/// and the hint on the step is the safety net under that. Neither reached the
+/// door. A chain that can dead-end strands the player permanently, which is
+/// the one thing `hint_toast_key` exists to prevent.
+String? _hintFor(String appKey, Map<String, dynamic> data, CaseFile file) {
+  final own = data['master_hint_key'] as String?;
+  if (own != null && own.isNotEmpty) return own;
+
+  for (final step in file.orderedLocks) {
+    if (step.targetApp != appKey) continue;
+    final hint = step.hintToastKey;
+    if (hint != null && hint.isNotEmpty) return hint;
+  }
+  return null;
 }
 
 Widget? _surfaceFor({

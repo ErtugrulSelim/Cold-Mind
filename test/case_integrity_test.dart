@@ -135,6 +135,79 @@ void main() {
         expect(leaks, isEmpty, reason: '\n${leaks.join('\n')}');
       });
 
+      test('a locked picture is nowhere else in the case at all', () {
+        // The check above asks the question inside Photos. This one asks it of
+        // the whole document, because a photograph is a file path and any
+        // surface in the case can name one.
+        //
+        // s09 did. `diadem.jpg` sat in the locked album `album_003`, and the
+        // corkboard pinned that same file as the node `b_diadem` — so the
+        // picture behind the passcode was the second thing the player saw,
+        // before question one, in the case's own opening picture. The album
+        // still asked for `0403`.
+        final photos = raw['apps']?['photos'] as Map<String, dynamic>?;
+        if (photos == null) return;
+
+        final lockedIds = <String>{
+          for (final album in (photos['albums'] as List? ?? const [])
+              .whereType<Map<String, dynamic>>())
+            if (album['is_locked'] == true ||
+                album['lock_password'] != null)
+              for (final id in (album['photo_ids'] as List? ?? const []))
+                '$id',
+        };
+        if (lockedIds.isEmpty) return;
+
+        // What those ids actually look like on screen. Two ids pointing at
+        // one file is the same leak wearing a different number.
+        final hidden = <String, String>{
+          for (final item in (photos['items'] as List? ?? const [])
+              .whereType<Map<String, dynamic>>())
+            if (lockedIds.contains('${item['id']}'))
+              '${item['asset']}': '${item['id']}',
+        };
+
+        final leaks = <String>[];
+
+        // Every surface except Photos itself, which is allowed to hold the
+        // locked album — the board and the client chat included, since both
+        // are shown before the chain has been climbed.
+        final surfaces = <String, dynamic>{
+          for (final app
+              in (raw['apps'] as Map<String, dynamic>? ?? const {}).entries)
+            if (app.key != 'photos') app.key: app.value,
+          'board': raw['board'],
+          'chats': raw['chats'],
+        };
+
+        for (final surface in surfaces.entries) {
+          final text = jsonEncode(surface.value);
+          for (final asset in hidden.entries) {
+            if (text.contains(asset.key)) {
+              leaks.add(
+                '${asset.value} is behind a passcode and ${surface.key} draws '
+                'the same picture (${asset.key})',
+              );
+            }
+          }
+        }
+
+        // ...and a second, unlocked id for a locked file.
+        for (final item in (photos['items'] as List? ?? const [])
+            .whereType<Map<String, dynamic>>()) {
+          if (lockedIds.contains('${item['id']}')) continue;
+          final twin = hidden['${item['asset']}'];
+          if (twin != null) {
+            leaks.add(
+              '${item['id']} is an unlocked second id for ${item['asset']}, '
+              'which $twin puts behind a passcode',
+            );
+          }
+        }
+
+        expect(leaks, isEmpty, reason: '\n${leaks.join('\n')}');
+      });
+
       test('every locked album actually holds something', () {
         // An empty locked album is a rung the player climbs to reach nothing.
         final albums =

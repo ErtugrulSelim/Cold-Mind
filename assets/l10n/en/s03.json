@@ -10,7 +10,7 @@
   "s03.client_chat.cc_001": "Good evening. My name is Bram Merckx. I don't know how to write a message like this so I will just write it.",
   "s03.client_chat.cc_002": "My son Sander died on the ninth of November. He was eighteen. They found him in the old lock-house on the Coupure, and the room he was found in was not the room of a boy who wanted to be there.",
   "s03.client_chat.cc_003": "They tried to tell me it was suicide. I know my son. It was not suicide.",
-  "s03.client_chat.cc_004": "There was a man following him. Dieter Vos. For two months, outside the school, outside the bindery. Sander photographed his car. Sander called him at ten past ten that night and twenty-nine minutes later he sent me a message asking for help. I did not hear it come in. I was asleep in the next room.",
+  "s03.client_chat.cc_004": "There was a man following him. Dieter Vos. For two months, outside the school, outside the bindery. Sander photographed his car. Sander called him at ten past ten that night and twenty-nine minutes later he sent me a message asking for help.",
   "s03.client_chat.cc_005": "They charged Vos and then they let him go again in January because a photograph of a car is not evidence. So now there is nothing. A file with my son's name on it and nothing inside.",
   "s03.client_chat.cc_006": "I have his phone. The police took what they wanted from it and gave it back, and I have not been able to open a single thing on it since. I bind books for a living. I am not equipped for this.",
   "s03.client_chat.cc_007": "Will you look at it? Properly. I can pay — not much, but properly.",
@@ -132,7 +132,7 @@
   "s03.chats.wa_022": "it's not you",
   "s03.chats.wa_023": "ok well. text me tomorrow or i'm coming to the bindery and speaking to your father which we both know neither of us wants",
   "s03.chats.wa_024": "goodnight femke",
-  "s03.chats.wa_025": "unrelated but is your password still the-long-way-down with the dashes. you told me that in year ten like it was a normal thing to tell someone and i have thought about it roughly once a month since",
+  "s03.chats.wa_025": "unrelated but is your password still 141103. you told me that in year ten like it was a normal thing to tell someone and i have thought about it roughly once a month since",
   "s03.chats.wa_026": "it's a good password. it's four words.",
   "s03.chats.wa_040": "I know what you did.",
   "s03.chats.wa_041": "March. The Coupure. I know.",
@@ -252,7 +252,7 @@
   "s03.search.gs_008": "halloran vance long way down first edition value",
   "s03.search.gs_009": "does a phone log a scheduled message differently",
   "s03.search.gs_010": "e m sarto nine doors dutch first printing",
-  "s03.keychain.master_hint": "Femke knew he used one password for everything and knew where it came from.",
+  "s03.keychain.master_hint": "One number for everything. Femke has known it since year ten.",
   "s03.keychain.v_001.label": "Margin — reader account",
   "s03.keychain.v_001.username": "s.merckx@sintlievens.be",
   "s03.keychain.v_002.label": "Drive — NIGHT REGISTER",
@@ -359,10 +359,10 @@
   ],
   "s03.question.q03.title": "Two hundred and fourteen",
   "s03.question.q03.question": "One book on his reader has been opened 214 times — far more than any other. Name it, or its author.",
-  "s03.question.q03.opt0": "Nine Doors",
+  "s03.question.q03.opt0": "The Quiet Hour",
   "s03.question.q03.opt1": "A Cold Account",
   "s03.question.q03.opt2": "The Long Way Down",
-  "s03.question.q03.opt3": "The Weight of Water",
+  "s03.question.q03.opt3": "Salt and Iron",
   "s03.question.q03.answers": [
     [
       "long way"
@@ -1144,5 +1144,6 @@
   "s03.calendar.f_ev_305": "Winter concert",
   "s03.calendar.f_ev_306": "Bike — collect",
   "s03.calendar.f_ev_307": "Dinner at Femke's (moved)",
-  "s03.calendar.f_ev_308": "Library — three due"
+  "s03.calendar.f_ev_308": "Library — three due",
+  "s03.client_chat.cc_004b": "I rang him three times. He did not pick up, and I told myself he had his headphones in and was walking home, and I went back to sleep. That is the part I do not put down."
 }

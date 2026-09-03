@@ -182,8 +182,26 @@ void main() {
     final prefs = await SharedPreferences.getInstance();
     expect(
       prefs.getInt('progress.solved.s01'),
+      isNot(1),
+      reason:
+          'the answer is held on screen for a second before the case moves '
+          'on — advancing inside that second is what made a right answer '
+          'indistinguishable from a wrong one',
+    );
+
+    // Past the hold.
+    await tester.pump(const Duration(seconds: 1));
+    await tester.pumpAndSettle();
+
+    expect(
+      prefs.getInt('progress.solved.s01'),
       1,
       reason: 'a correct answer must move the cursor to the next question',
+    );
+    expect(
+      prefs.getStringList('progress.answers.s01'),
+      contains(startsWith('1 ')),
+      reason: 'what the player typed is kept, so it can be read back later',
     );
   });
 

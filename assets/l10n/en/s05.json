@@ -40,7 +40,7 @@
   "s05.client_chat.cc_007": "I am not asking you to catch anybody. I am asking you to tell me who he is. Will you take it?",
   "s05.client_chat.cc_007.accept": "I'll find out who he is.",
   "s05.client_chat.cc_007.decline": "Not this one.",
-  "s05.client_chat.cc_008": "Thank you. Everything on that phone says the same name. Start there — and hold it loosely, because I have stopped believing it.",
+  "s05.client_chat.cc_008": "Thank you. Everything on that phone says the same name. Start there. But hold it loosely. I have stopped believing it myself.",
   "s05.client_chat.cc_009": "One more thing, so it does not take you by surprise. Somebody is still messaging him every few days. She does not know.",
   "s05.interstitial.is1_001": "You found the crew list. I have read it four times now.",
   "s05.interstitial.is1_002": "A man who never came back to his ship in 2014 cannot be swiping a gate card in 2019. Two men are wearing this name and only one of them is on my table.",
@@ -57,7 +57,7 @@
   "s05.closing_chat.cl_002": "He did not kill him. I want to be exact about that, because it is going to matter to you in a minute.",
   "s05.closing_chat.cl_003": "Ilija's heart stopped on that quay at about one in the morning. If an ambulance had been called he would most likely have lived.",
   "s05.closing_chat.cl_004": "Zorzi started an emergency call at 01:14 and ended it after three seconds. Then he waited an hour and twenty-six minutes.",
-  "s05.closing_chat.cl_005": "Then he took the wallet, the identity card and the gate lanyard, and he put the man in the water so that he would be found somewhere that was not his quay.",
+  "s05.closing_chat.cl_005": "Then he took the wallet, the identity card, and the gate lanyard. He put the man in the water. He wanted him to be found somewhere else, not at his own quay.",
   "s05.closing_chat.cl_006": "He missed the inside pocket. One of his own crew went back for the phone and zipped it into the jacket. That is the only reason you and I are having this conversation.",
   "s05.closing_chat.cl_007": "So I can write the file now. But writing it does something, and you should hear what before I do it.",
   "s05.closing_chat.cl_008": "The moment I put Ilija Šarić's name on that body, Marco Beltrame stops being a living man on paper.",
@@ -74,8 +74,8 @@
   "s05.closing_chat.cl_017": "That is the harder one to do and the only one I can defend to a magistrate.",
   "s05.closing_chat.cl_018": "Nadia's file goes to the social services desk on Thursday. The identification is filed on Monday. Four days of paperwork, in the right order, and nobody falls through the gap.",
   "s05.closing_chat.cl_019": "Whatever ends up on the stone — somebody knows now. Thank you for that.",
-  "s05.ending.name": "The identification was filed on the ninth of February, two days inside the deadline.\n\nVesna Šarić came to Trieste in March. She was shown a jacket, a savings book and a photograph of a man standing on a quay with his hands in his pockets, and she said yes before anybody asked her the question. She had last seen her brother in the spring of 1998. The stone at Sant'Anna reads ILIJA ŠARIĆ, 1971-2026, and underneath it, because Vesna insisted and paid for the extra line, DOŠAO JE KUĆI.\n\nNadia Beltrame was moved out of Casa Serena on the twenty-second of April. The regional list runs to about nineteen months. She is in a placement forty kilometres inland now, and the staff there report that on Sunday mornings she writes a list and puts it by the door.\n\nBruno Zorzi was convicted of failure to render aid and concealment of a body. Two years and four months, suspended after eleven. The port authority fined the operator and the night crew was re-tendered to a firm that files eight names when eight men work.\n\nElena Furlan sent one message afterwards. It said: I gave a man his name and I took a woman's home. I would do it again and I am not sure that is a good thing to know about myself.",
-  "s05.ending.quiet": "The file was closed on the tenth of February as Marco Beltrame, 61, cardiac arrest, body recovered Porto Vecchio.\n\nThe placement at Casa Serena was never questioned. The standing order kept running from an account nobody looked at, and when the money behind the meter was quietly paid into it there was enough for four more years. Nadia is still in her room. She still writes the list.\n\nBruno Zorzi was convicted of concealment of a body and of the labour offences. The failure-to-render-aid charge did not survive, because the man he failed was legally somebody else and the timeline could not be made to hold in front of a magistrate. Fourteen months, suspended.\n\nIn Bihać, Vesna Šarić's file stayed open. She is on a list of people who are still looking. Nobody in Trieste is permitted to tell her anything, and Elena Furlan drafted a letter to her four times and sent none of them.\n\nThe stone at Sant'Anna reads MARCO BELTRAME. Two men are under that name now, and one of them is still, on paper, at sea.",
+  "s05.ending.name": "The identification was filed on the ninth of February, two days inside the deadline.\n\nVesna Šarić came to Trieste in March. She was shown a jacket, a savings book and a photograph of a man standing on a quay with his hands in his pockets, and she said yes before anybody asked her the question. She had last seen her brother in the spring of 1998. The stone at Sant'Anna reads ILIJA ŠARIĆ, 1971-2026. Underneath it is one more line: DOŠAO JE KUĆI. Vesna insisted on it, and paid for it herself.\n\nNadia Beltrame was moved out of Casa Serena on the twenty-second of April. The regional list runs to about nineteen months. She is in a placement forty kilometres inland now, and the staff there report that on Sunday mornings she writes a list and puts it by the door.\n\nBruno Zorzi was convicted of failure to render aid and concealment of a body. Two years and four months, suspended after eleven. The port authority fined the operator and the night crew was re-tendered to a firm that files eight names when eight men work.\n\nElena Furlan sent one message afterwards. It said: I gave a man his name and I took a woman's home. I would do it again and I am not sure that is a good thing to know about myself.",
+  "s05.ending.quiet": "The file was closed on the tenth of February as Marco Beltrame, 61, cardiac arrest, body recovered Porto Vecchio.\n\nThe placement at Casa Serena was never questioned. The standing order kept running from an account nobody looked at, and when the money behind the meter was quietly paid into it there was enough for four more years. Nadia is still in her room. She still writes the list.\n\nBruno Zorzi was convicted of concealment of a body and of the labour offences. The failure-to-render-aid charge did not survive. Legally, the man he failed was somebody else, and the timeline could not hold up in front of a magistrate. Fourteen months, suspended.\n\nIn Bihać, Vesna Šarić's file stayed open. She is on a list of people who are still looking. Nobody in Trieste is permitted to tell her anything, and Elena Furlan drafted a letter to her four times and sent none of them.\n\nThe stone at Sant'Anna reads MARCO BELTRAME. Two men are under that name now, and one of them is still, on paper, at sea.",
   "s05.ending.order": "Nadia Beltrame's file reached the social services desk on the Thursday, flagged as an active safeguarding case with a named officer attached. The identification of Ilija Šarić was filed on the Monday. Four days, in that order.\n\nIt was not clean. The placement lapsed anyway on the first of May and there were six weeks in a transitional unit that nobody involved will describe as adequate. But the named officer existed, and in June Nadia was placed at Villa Prandi, eleven kilometres from Casa Serena, on the same bus route. The Sunday list survived the move.\n\nIlija Šarić got his name on the ninth of March. Vesna came, and stayed four days, and asked to be shown the quay. Bruno Zorzi was convicted of failure to render aid and concealment of a body: two years and four months.\n\nElena Furlan's last message was shorter than the others. It said: paperwork is not usually a moral instrument. This once, the order of it was the whole thing. Thank you for making me slow down.",
   "s05.messages.sms_001": "Sig. Beltrame, buongiorno. Reminder that the quarterly contribution is due on the 20th. As always, thank you for your punctuality.",
   "s05.messages.sms_002": "It will be there on the 19th like always.",
@@ -141,6 +141,8 @@
   "s05.calendar.ev_005": "12.09",
   "s05.calendar.ev_006": "Nadia — birthday",
   "s05.photos.album_001": "Camera Roll",
+  "s05.photos.ph_011.document": "Photograph of a young man on a quayside in summer, taken from a few metres away. He is squinting into the sun and half laughing at whoever is holding the camera.\n\n  Behind him a white hull, a coil of rope on a bollard, and a strip of harbour wall.\n\n  Nothing is written on the photograph.",
+  "s05.photos.ph_030.document": "Photograph of two men on the same quayside, five minutes later by this phone's own clock. The older one has an arm across the younger one's shoulders and is looking at the camera; the younger one is looking at him.\n\n  Same white hull, same bollard, same light.",
   "s05.photos.album_002": "Sundays",
   "s05.photos.album_003": "Nessuno",
   "s05.photos.album_004": "Work",
@@ -184,7 +186,7 @@
   "s05.search.gs_008": "savings book minor open in another name",
   "s05.search.gs_009": "how to lose a bosnian accent speaking italian",
   "s05.search.gs_010": "bosnian italian keyboard switch android",
-  "s05.keychain.master_hint": "Not a word. The one date I am not allowed to forget.",
+  "s05.keychain.master_hint": "Not a word. The one date I am not allowed to forget, exactly as the review prints it.",
   "s05.keychain.v_001.label": "Phone — unlock",
   "s05.keychain.v_001.username": "device",
   "s05.keychain.v_002.label": "Photos — Nessuno album",
@@ -212,7 +214,7 @@
   "s05.memos.vm_001.title": "Recording 41",
   "s05.memos.vm_001.transcript": "It is ten to one. I do not feel right, I have not felt right since the second pallet. It is probably nothing, it is always nothing. But if it is not nothing — behind the meter. In the hallway, behind the meter, the panel comes off with a coin. It is for Nadia. Not for the flat. Not for a funeral, I do not want one. For Nadia. And do not let Zorzi near any of it.",
   "s05.memos.vm_002.title": "Recording 38",
-  "s05.memos.vm_002.transcript": "Testing this thing. Nadia, if you ever hear this — you asked me why I never sing and I said because I cannot, and that was a lie, I can sing, I just do not want to be looked at. There. Now you know one true thing about me.",
+  "s05.memos.vm_002.transcript": "Testing this thing. Nadia, if you ever hear this. You asked me why I never sing. I said I cannot. That was a lie. I can sing. I just do not want to be looked at. There. Now you know one true thing about me.",
   "s05.memos.vm_003.title": "Recording 12",
   "s05.memos.vm_003.transcript": "Practice. Born Trieste, twelve April nineteen sixty-four. Mother Ines. Father Giulio. Born Trieste, twelve April nineteen sixty-four. Mother Ines. Father Giulio. — It still sounds like somebody else saying it.",
   "s05.clock.al_001": "Shift",
@@ -223,10 +225,10 @@
   "s05.lock.step_005.hint": "The port authority's own email says the export phrase is the quay and the year the card was issued, joined by a dash.",
   "s05.question.q01.title": "The name on everything",
   "s05.question.q01.question": "Every account, every message, every bill on this device carries one name. What is it?",
-  "s05.question.q01.opt0": "Open Messages",
-  "s05.question.q01.opt1": "Read how Casa Serena addresses him",
-  "s05.question.q01.opt2": "Check the tenancy",
-  "s05.question.q01.opt3": "Ask the client",
+  "s05.question.q01.opt0": "Bruno Zorzi",
+  "s05.question.q01.opt1": "Marco Beltrame",
+  "s05.question.q01.opt2": "Sportello Anagrafe",
+  "s05.question.q01.opt3": "Elena Furlan",
   "s05.question.q01.answers": [
     [
       "beltrame"
@@ -244,44 +246,23 @@
       "m.b"
     ]
   ],
-  "s05.question.q02.title": "The second keyboard",
-  "s05.question.q02.question": "He writes to everyone in Italian. But the phone carries a second keyboard, and one folder of notes is written in it. Which language?",
-  "s05.question.q02.opt0": "Open Settings",
-  "s05.question.q02.opt1": "Read the note titled 'Račun'",
-  "s05.question.q02.opt2": "Check the search history",
-  "s05.question.q02.opt3": "Look at the contacts",
+  "s05.question.q02.title": "The one that is not Italian",
+  "s05.question.q02.question": "One note is not titled in Italian like the rest. It lists three payments a month, and what is left. How much is left?",
+  "s05.question.q02.opt0": "84",
+  "s05.question.q02.opt1": "212",
+  "s05.question.q02.opt2": "310",
+  "s05.question.q02.opt3": "400",
   "s05.question.q02.answers": [
     [
-      "bosn"
-    ],
-    [
-      "bosanski"
-    ],
-    [
-      "croat"
-    ],
-    [
-      "hrvat"
-    ],
-    [
-      "serbo"
-    ],
-    [
-      "srpski"
-    ],
-    [
-      "serbian"
-    ],
-    [
-      "bhs"
+      "212"
     ]
   ],
   "s05.question.q03.title": "Every Sunday",
   "s05.question.q03.question": "For eleven years the same address at the same hour, once a week. What is the place called?",
-  "s05.question.q03.opt0": "Open Maps",
-  "s05.question.q03.opt1": "Check the calendar",
-  "s05.question.q03.opt2": "Read the standing order",
-  "s05.question.q03.opt3": "Look at the bus route",
+  "s05.question.q03.opt0": "Casa Serena",
+  "s05.question.q03.opt1": "San Spiridione",
+  "s05.question.q03.opt2": "Sportello Anagrafe",
+  "s05.question.q03.opt3": "Bus 42 — terminus",
   "s05.question.q03.answers": [
     [
       "serena"
@@ -297,7 +278,7 @@
     ]
   ],
   "s05.question.q04.title": "Four things about Marco Beltrame",
-  "s05.question.q04.question": "Four records on this phone describe Marco Beltrame. Three of them describe a man who was alive in Trieste last week. Tap the one that cannot sit beside them.",
+  "s05.question.q04.question": "Four records on this phone describe Marco Beltrame. Three describe a man who was alive in Trieste last week. Tap the one that cannot.",
   "s05.question.q04.sn0": "Gate access: card 4417, BELTRAME M., night loading crew, issued March 2019.",
   "s05.question.q04.sn1": "Casa Serena: family contribution paid by M. Beltrame, uninterrupted since March 2012.",
   "s05.question.q04.sn2": "Tenancy, Via dell'Istria: tenant of record BELTRAME, Marco, since November 2014.",
@@ -329,11 +310,11 @@
     ]
   ],
   "s05.question.q05.title": "The plaque",
-  "s05.question.q05.question": "In the album he named 'Nessuno' there is a photograph of a memorial plaque, with a strip of tape stuck to it by hand. What year is cut into the stone?",
-  "s05.question.q05.opt0": "Open Photos",
-  "s05.question.q05.opt1": "Unlock the Nessuno album",
-  "s05.question.q05.opt2": "Read the archive extract",
-  "s05.question.q05.opt3": "Check the calendar",
+  "s05.question.q05.question": "The album he called 'Nessuno' holds a photograph of a memorial plaque. What year is cut into the stone?",
+  "s05.question.q05.opt0": "1998",
+  "s05.question.q05.opt1": "2014",
+  "s05.question.q05.opt2": "2009",
+  "s05.question.q05.opt3": "1971",
   "s05.question.q05.answers": [
     [
       "2014"
@@ -343,11 +324,11 @@
     ]
   ],
   "s05.question.q06.title": "The locked note",
-  "s05.question.q06.question": "One note on this phone is locked. It is five lines long, it was written to be found, and the last line is a signature. What name does he sign?",
-  "s05.question.q06.opt0": "Open the Keychain",
-  "s05.question.q06.opt1": "Unlock the note",
-  "s05.question.q06.opt2": "Read it to the end",
-  "s05.question.q06.opt3": "Check the search history",
+  "s05.question.q06.question": "One note on this phone is locked. Its last line is a signature. What name does he sign?",
+  "s05.question.q06.opt0": "Marco Beltrame",
+  "s05.question.q06.opt1": "Ilija Šarić",
+  "s05.question.q06.opt2": "Bruno Zorzi",
+  "s05.question.q06.opt3": "Elena Furlan",
   "s05.question.q06.answers": [
     [
       "ilija"
@@ -372,7 +353,7 @@
     ]
   ],
   "s05.question.q07.title": "What actually proves it",
-  "s05.question.q07.question": "Select every item that proves the man carrying this phone was not Marco Beltrame — and nothing that a real Marco Beltrame would also have done.",
+  "s05.question.q07.question": "Select everything that proves the man carrying this phone was not Marco Beltrame — and nothing a real Marco Beltrame would also have done.",
   "s05.question.q07.opt0": "A second keyboard, and a folder of private notes in it",
   "s05.question.q07.opt1": "A locked note signed with another name",
   "s05.question.q07.opt2": "The crew list: Beltrame did not return to the vessel in 2014",
@@ -392,10 +373,10 @@
   ],
   "s05.question.q08.title": "Nineteen ninety-eight",
   "s05.question.q08.question": "He photographed one page of a missing-persons bulletin and kept it for years. The entry is his own. Who reported him missing?",
-  "s05.question.q08.opt0": "Open Photos",
-  "s05.question.q08.opt1": "Read the bulletin page",
-  "s05.question.q08.opt2": "Check Mail",
-  "s05.question.q08.opt3": "Look at the contacts",
+  "s05.question.q08.opt0": "Elena Furlan",
+  "s05.question.q08.opt1": "Vesna Šarić",
+  "s05.question.q08.opt2": "Bruno Zorzi",
+  "s05.question.q08.opt3": "The port authority",
   "s05.question.q08.answers": [
     [
       "vesna"
@@ -412,10 +393,10 @@
   ],
   "s05.question.q09.title": "The place he never went",
   "s05.question.q09.question": "One city appears in his searches every year and never once in his location history. Which?",
-  "s05.question.q09.opt0": "Open the search history",
-  "s05.question.q09.opt1": "Compare it against Maps",
-  "s05.question.q09.opt2": "Read the bulletin page",
-  "s05.question.q09.opt3": "Check the contacts",
+  "s05.question.q09.opt0": "Bihać",
+  "s05.question.q09.opt1": "Trieste",
+  "s05.question.q09.opt2": "Durrës",
+  "s05.question.q09.opt3": "Ljubljana",
   "s05.question.q09.answers": [
     [
       "bihac"
@@ -438,10 +419,10 @@
   ],
   "s05.question.q10.title": "Who the name is for",
   "s05.question.q10.question": "He did not keep Marco Beltrame's name for himself. One person loses everything on the day that name is declared dead. Who?",
-  "s05.question.q10.opt0": "Read the Casa Serena review",
-  "s05.question.q10.opt1": "Check who the guardian is",
-  "s05.question.q10.opt2": "Read the savings book",
-  "s05.question.q10.opt3": "Open Chats",
+  "s05.question.q10.opt0": "Nadia",
+  "s05.question.q10.opt1": "Vesna",
+  "s05.question.q10.opt2": "Elena Furlan",
+  "s05.question.q10.opt3": "Bruno Zorzi",
   "s05.question.q10.answers": [
     [
       "nadia"
@@ -458,10 +439,10 @@
   ],
   "s05.question.q11.title": "The shift that was not filed",
   "s05.question.q11.question": "On the night of 11 January he worked a shift that appears on no roster. Which quay?",
-  "s05.question.q11.opt0": "Read the work messages",
-  "s05.question.q11.opt1": "Check the calendar",
-  "s05.question.q11.opt2": "Open the gate log",
-  "s05.question.q11.opt3": "Look at Maps",
+  "s05.question.q11.opt0": "Molo IV",
+  "s05.question.q11.opt1": "Riva Grumula",
+  "s05.question.q11.opt2": "Punto Franco Vecchio",
+  "s05.question.q11.opt3": "Scalo Legnami",
   "s05.question.q11.answers": [
     [
       "molo"
@@ -497,10 +478,10 @@
   ],
   "s05.question.q13.title": "Behind the meter",
   "s05.question.q13.question": "At 00:58 he recorded forty-one seconds for nobody. He gives one instruction in it. Where did he say to look?",
-  "s05.question.q13.opt0": "Open Voice Memos",
-  "s05.question.q13.opt1": "Play recording 41",
-  "s05.question.q13.opt2": "Read the note in Bosnian",
-  "s05.question.q13.opt3": "Check the savings book",
+  "s05.question.q13.opt0": "Under the mattress",
+  "s05.question.q13.opt1": "Behind the meter",
+  "s05.question.q13.opt2": "In the savings book",
+  "s05.question.q13.opt3": "At Casa Serena",
   "s05.question.q13.answers": [
     [
       "meter"
@@ -520,11 +501,11 @@
   ],
   "s05.question.q13.transcript": "Recording 41 — 00:58, 11 January. Recorded at the quay. Never sent.",
   "s05.question.q14.title": "The one who went back",
-  "s05.question.q14.question": "A message arrived on this phone three days after he died, from a number that is not in the contacts. Whoever sent it is the reason the phone was still in the jacket. Who?",
-  "s05.question.q14.opt0": "Open Chats",
-  "s05.question.q14.opt1": "Play the voice note",
-  "s05.question.q14.opt2": "Check the gate log",
-  "s05.question.q14.opt3": "Read the work messages",
+  "s05.question.q14.question": "Three days after he died, a message arrived from a number that is not in the contacts. Who sent it?",
+  "s05.question.q14.opt0": "Bruno Zorzi",
+  "s05.question.q14.opt1": "Saša Petrović",
+  "s05.question.q14.opt2": "Vesna Šarić",
+  "s05.question.q14.opt3": "Elena Furlan",
   "s05.question.q14.answers": [
     [
       "sasha"
@@ -1007,5 +988,8 @@
   "s05.calendar.f2_ev_211": "Corso antincendio",
   "s05.calendar.f2_ev_212": "Assemblea FILT",
   "s05.calendar.f2_ev_213": "Accessi — rinnovo tessera",
-  "s05.calendar.f2_ev_214": "Ritirare la raccomandata"
+  "s05.calendar.f2_ev_214": "Ritirare la raccomandata",
+  "s05.chats.f2_wa_470": "It is Saša. I do not know who reads this now, or if it is still on.",
+  "s05.chats.f2_wa_471": "Bruno has told the crew not to talk to anybody. I am not talking to anybody. I am talking to you, which he did not think of.",
+  "s05.chats.f2_wa_472": "Your jacket was still on the hook by the cabin door on the Monday. I took it down. It did not seem right, it hanging there all week with everybody walking past it."
 }

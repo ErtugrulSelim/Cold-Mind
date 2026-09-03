@@ -43,6 +43,14 @@ class _BoardScreenState extends ConsumerState<BoardScreen> {
   final TransformationController _view = TransformationController();
   bool _framed = false;
 
+  /// Set during build, read by [_clampView], which runs off a controller
+  /// notification and has no build context of its own.
+  Size? _viewport;
+  Size? _wall;
+
+  /// Guards the listener against the write it makes itself.
+  bool _correcting = false;
+
   /// The footprint the layout keeps pins apart by.
   static const Size _nodeSize = Size(160, 190);
 
@@ -60,9 +68,84 @@ class _BoardScreenState extends ConsumerState<BoardScreen> {
   static const double _maxScale = 2.5;
 
   @override
+  void initState() {
+    super.initState();
+    // `InteractiveViewer.minScale` does not hold this floor. A pinch drives
+    // the matrix straight through it — measured at 0.122 against a minScale
+    // of 0.35 — and at that scale the wall is a stamp in the corner with bare
+    // scaffold under it, which is what the player sees: the board falls off
+    // the bottom of its own screen.
+    //
+    // So the floor is enforced here instead, against the viewport rather than
+    // against a constant: the cork may never be smaller than the screen, and
+    // may never be panned off it. A wall does not run out.
+    _view.addListener(_clampView);
+  }
+
+  @override
   void dispose() {
+    _view.removeListener(_clampView);
     _view.dispose();
     super.dispose();
+  }
+
+  /// The smallest scale at which the cork still covers the whole viewport.
+  double _coverScale(Size viewport, Size wall) => max(
+    viewport.width / wall.width,
+    viewport.height / wall.height,
+  );
+
+  /// Pulls the view back inside the wall, whatever put it outside.
+  void _clampView() {
+    if (_correcting) return;
+    final viewport = _viewport;
+    final wall = _wall;
+    if (viewport == null || wall == null) return;
+
+    final matrix = _view.value;
+    // Only uniform scales are ever applied here, so the x scale is the scale.
+    // `getMaxScaleOnAxis` disagrees with the storage after a pinch, which is
+    // part of how this went unnoticed.
+    final scale = matrix.storage[0];
+    if (scale <= 0) return;
+
+    final corrected = _fit(matrix, viewport, wall);
+    if (corrected == null) return;
+
+    _correcting = true;
+    _view.value = corrected;
+    _correcting = false;
+  }
+
+  /// The nearest matrix to [matrix] that keeps the wall over the whole
+  /// viewport, or null if it is already there.
+  Matrix4? _fit(Matrix4 matrix, Size viewport, Size wall) {
+    final scale = matrix.storage[0];
+    final cover = _coverScale(viewport, wall);
+    final target = scale.clamp(cover, _maxScale);
+
+    var tx = matrix.storage[12];
+    var ty = matrix.storage[13];
+
+    if (target != scale) {
+      // Zoom about the middle of the screen, so a correction does not also
+      // throw the player somewhere else on the board.
+      final change = target / scale;
+      tx = viewport.width / 2 - (viewport.width / 2 - tx) * change;
+      ty = viewport.height / 2 - (viewport.height / 2 - ty) * change;
+    }
+
+    tx = tx.clamp(viewport.width - wall.width * target, 0.0);
+    ty = ty.clamp(viewport.height - wall.height * target, 0.0);
+
+    if (target == scale &&
+        tx == matrix.storage[12] &&
+        ty == matrix.storage[13]) {
+      return null;
+    }
+    return Matrix4.identity()
+      ..translateByDouble(tx, ty, 0, 1)
+      ..scaleByDouble(target, target, 1, 1);
   }
 
   /// Opens the view on the pins rather than on the middle of the cork.
@@ -111,11 +194,23 @@ class _BoardScreenState extends ConsumerState<BoardScreen> {
       ),
     );
 
-    _view.value = Matrix4.identity()
-      ..translateByDouble(viewport.width / 2, viewport.height / 2, 0, 1)
-      ..scaleByDouble(scale, scale, 1, 1)
-      ..translateByDouble(-centre.dx, -centre.dy, 0, 1);
+    _correcting = true;
+    _view.value =
+        _fit(
+          Matrix4.identity()
+            ..translateByDouble(viewport.width / 2, viewport.height / 2, 0, 1)
+            ..scaleByDouble(scale, scale, 1, 1)
+            ..translateByDouble(-centre.dx, -centre.dy, 0, 1),
+          viewport,
+          _wall ?? viewport,
+        ) ??
+        (Matrix4.identity()
+          ..translateByDouble(viewport.width / 2, viewport.height / 2, 0, 1)
+          ..scaleByDouble(scale, scale, 1, 1)
+          ..translateByDouble(-centre.dx, -centre.dy, 0, 1));
+    _correcting = false;
   }
+
 
   @override
   Widget build(BuildContext context) {
@@ -136,6 +231,7 @@ class _BoardScreenState extends ConsumerState<BoardScreen> {
       canvas.width + _overscroll * 2,
       canvas.height + _overscroll * 2,
     );
+    _wall = textured;
 
     return Scaffold(
       // The cork runs behind the bar, which is the point: a board is a wall,
@@ -169,10 +265,15 @@ class _BoardScreenState extends ConsumerState<BoardScreen> {
                 // The body's own box, not the window's: with the cork running
                 // behind a transparent app bar these differ, and framing
                 // against the wrong one opens the board off to one side.
-                _frame(layout, Size(viewport.maxWidth, viewport.maxHeight));
+                final box = Size(viewport.maxWidth, viewport.maxHeight);
+                _viewport = box;
+                _frame(layout, box);
                 return InteractiveViewer(
                   transformationController: _view,
-                  minScale: _minScale,
+                  // The viewer's own floor is set from the screen, not from a
+                  // constant, so it agrees with the clamp instead of fighting
+                  // it. The clamp is what actually holds — see [initState].
+                  minScale: max(_minScale, _coverScale(box, textured)),
                   maxScale: _maxScale,
                   constrained: false,
                   child: SizedBox(

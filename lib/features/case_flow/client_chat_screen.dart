@@ -36,6 +36,20 @@ class ClientChatScreen extends ConsumerStatefulWidget {
   /// conversation that produced it, because the epilogue reads it back.
   final ValueChanged<String?>? onFinished;
 
+  /// Reading it again rather than having it happen.
+  ///
+  /// The briefing plays once and then it is gone, and by question eleven the
+  /// player is working from a memory of what the client actually asked for.
+  /// Opened this way the whole thread is already there — no typing, no beats,
+  /// nothing to accept and nothing to choose. It is a transcript.
+  ///
+  /// A branch the player already took is passed in so a closing conversation
+  /// reads back as the one they had, not as the one they might have had.
+  final bool replay;
+
+  /// The branch already chosen, when replaying.
+  final String? branch;
+
   const ClientChatScreen({
     super.key,
     required this.caseId,
@@ -44,6 +58,8 @@ class ClientChatScreen extends ConsumerStatefulWidget {
     required this.clientPhoto,
     this.onAccepted,
     this.onFinished,
+    this.replay = false,
+    this.branch,
   });
 
   @override
@@ -71,6 +87,21 @@ class _ClientChatScreenState extends ConsumerState<ClientChatScreen> {
   @override
   void initState() {
     super.initState();
+    if (widget.replay) {
+      // The whole thread at once, on the branch the player took. A choice
+      // message is kept — it is part of what was said — but it is drawn as a
+      // record rather than as something still open, because `_awaitingChoice`
+      // is never set here.
+      _branch = widget.branch;
+      _shown.addAll(
+        widget.chat.messages.where(
+          (m) => m.trigger == null || m.trigger == _branch,
+        ),
+      );
+      _next = widget.chat.messages.length;
+      _finished = true;
+      return;
+    }
     _queueNext();
   }
 

@@ -1,17 +1,15 @@
-import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:share_plus/share_plus.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import '../../core/app_config.dart';
 import '../../core/theme/cold_theme.dart';
 import '../../data/l10n/case_strings.dart';
 import '../../data/providers/case_providers.dart';
 import '../../data/providers/settings_providers.dart';
 import '../paywall/paywall_screen.dart';
 import '../paywall/store.dart';
-import 'app_links.dart';
 
 /// The player's own settings.
 ///
@@ -23,7 +21,7 @@ import 'app_links.dart';
 /// **Rows that lead nowhere are not drawn.** The store links and the legal
 /// pages have no destinations yet, and a row that does nothing when tapped
 /// reads as broken rather than as unfinished — so each one appears the moment
-/// its URL is filled in, in [AppLinks], and not before. The exceptions are the
+/// its URL is filled in, in [AppConfig], and not before. The exceptions are the
 /// two the store itself answers for: Restore says what the store said, and
 /// Rate Us on iOS says it is not published yet, because both of those are
 /// states a real user can reach on a shipped build.
@@ -108,7 +106,7 @@ class SettingsScreen extends ConsumerWidget {
                 chevron: false,
                 onTap: () => _rate(context, strings),
               ),
-              if (AppLinks.hasDownloadLink)
+              if (AppConfig.hasDownloadLink)
                 _Row(
                   icon: Icons.ios_share_rounded,
                   label:
@@ -117,17 +115,17 @@ class SettingsScreen extends ConsumerWidget {
                   chevron: false,
                   onTap: () => _share(strings),
                 ),
-              if (AppLinks.hasTerms)
+              if (AppConfig.hasTerms)
                 _Row(
                   icon: Icons.description_outlined,
                   label: strings?.c('settings.terms') ?? 'Terms of Use',
-                  onTap: () => _open(context, AppLinks.termsUrl, strings),
+                  onTap: () => _open(context, AppConfig.termsUrl, strings),
                 ),
-              if (AppLinks.hasPrivacy)
+              if (AppConfig.hasPrivacy)
                 _Row(
                   icon: Icons.verified_user_outlined,
                   label: strings?.c('settings.privacy') ?? 'Privacy Policy',
-                  onTap: () => _open(context, AppLinks.privacyUrl, strings),
+                  onTap: () => _open(context, AppConfig.privacyUrl, strings),
                 ),
             ],
           ),
@@ -176,28 +174,10 @@ class SettingsScreen extends ConsumerWidget {
     return strings?.c(key) ?? '';
   }
 
-  /// Straight to the store listing, not the in-app review prompt.
-  ///
-  /// The OS throttles the in-app prompt and shows nothing at all on most
-  /// builds, so a button wired to it looks broken to the one person who
-  /// deliberately went looking for it. The listing always opens.
+  /// Straight to the store listing — see [AppConfig.openStoreListing] for why
+  /// that is the right destination rather than the OS's own review sheet.
   Future<void> _rate(BuildContext context, CaseStrings? strings) async {
-    final uri = Platform.isIOS
-        ? (AppLinks.appStoreId.isEmpty
-              ? null
-              : Uri.parse(
-                  'https://apps.apple.com/app/id${AppLinks.appStoreId}'
-                  '?action=write-review',
-                ))
-        : Uri.parse(
-            'https://play.google.com/store/apps/details'
-            '?id=${AppLinks.androidPackage}',
-          );
-
-    if (uri != null &&
-        await launchUrl(uri, mode: LaunchMode.externalApplication)) {
-      return;
-    }
+    if (await AppConfig.openStoreListing()) return;
     if (context.mounted) {
       _say(
         context,
@@ -209,8 +189,8 @@ class SettingsScreen extends ConsumerWidget {
 
   Future<void> _share(CaseStrings? strings) async {
     final text =
-        strings?.cp('settings.share_text', {'link': AppLinks.downloadUrl}) ??
-        AppLinks.downloadUrl;
+        strings?.cp('settings.share_text', {'link': AppConfig.downloadUrl}) ??
+        AppConfig.downloadUrl;
     await SharePlus.instance.share(ShareParams(text: text));
   }
 
@@ -646,43 +626,77 @@ class _ProCard extends ConsumerWidget {
           ),
         ),
         borderRadius: ColdRadius.card,
-        child: Padding(
-          padding: const EdgeInsets.all(ColdSpace.lg),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                strings?.c('settings.pro_title') ??
-                    'Unlock all seasons and\nuncover the mysteries.',
-                style: ColdType.subtitle.copyWith(
-                  color: device.textPrimary,
-                  height: 1.3,
-                ),
-              ),
-              const SizedBox(height: ColdSpace.md),
-              Row(
-                children: [
-                  // Flexible, because this line is a full sentence in most of
-                  // the eighteen languages and the card is 326pt wide on a
-                  // 390pt phone. It overflowed by eight pixels in English —
-                  // nothing had ever drawn this screen at phone width, so
-                  // nothing caught it.
-                  Flexible(
-                    child: Text(
-                      strings?.c('settings.pro_cta') ??
-                          'Continue with Pro Access',
-                      style: ColdType.label.copyWith(color: device.accent),
+        child: Container(
+          decoration: BoxDecoration(
+            borderRadius: ColdRadius.card,
+            border: Border.all(color: device.accent.withValues(alpha: 0.35)),
+            gradient: LinearGradient(
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+              colors: [
+                device.accent.withValues(alpha: 0.14),
+                device.surfaceRaised,
+              ],
+            ),
+          ),
+          child: Padding(
+            padding: const EdgeInsets.all(ColdSpace.lg),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  children: [
+                    Container(
+                      width: 36,
+                      height: 36,
+                      decoration: BoxDecoration(
+                        color: device.accent.withValues(alpha: 0.18),
+                        shape: BoxShape.circle,
+                      ),
+                      child: Icon(
+                        Icons.workspace_premium_rounded,
+                        size: 20,
+                        color: device.accent,
+                      ),
                     ),
-                  ),
-                  const SizedBox(width: 4),
-                  Icon(
-                    Icons.arrow_forward_rounded,
-                    size: 16,
-                    color: device.accent,
-                  ),
-                ],
-              ),
-            ],
+                    const SizedBox(width: ColdSpace.sm),
+                    Expanded(
+                      child: Text(
+                        strings?.c('settings.pro_title') ??
+                            'Unlock all seasons and\nuncover the mysteries.',
+                        style: ColdType.subtitle.copyWith(
+                          color: device.textPrimary,
+                          height: 1.3,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: ColdSpace.md),
+                Row(
+                  children: [
+                    // Flexible, because this line is a full sentence in most
+                    // of the eighteen languages and the card is 326pt wide on
+                    // a 390pt phone. It overflowed by eight pixels in English
+                    // — nothing had ever drawn this screen at phone width, so
+                    // nothing caught it.
+                    Flexible(
+                      child: Text(
+                        strings?.c('settings.pro_cta') ??
+                            'Continue with Pro Access',
+                        style: ColdType.label.copyWith(color: device.accent),
+                      ),
+                    ),
+                    const SizedBox(width: 4),
+                    Icon(
+                      Icons.arrow_forward_rounded,
+                      size: 16,
+                      color: device.accent,
+                    ),
+                  ],
+                ),
+              ],
+            ),
           ),
         ),
       ),

@@ -25,6 +25,39 @@ void main() {
       expect(normalizeAnswer('北京'), '北京');
     });
 
+    // Ported from the previous build, which spelled out why this one matters
+    // more than it looks. Matching is `contains`, so a phrase that normalizes
+    // to the empty string matches *every* answer — an Arabic or Devanagari
+    // accepted answer that got shredded would silently mark anything correct.
+    // The folding rules claim to keep the combining marks those scripts are
+    // built from; nothing was checking that claim.
+    test('no script normalizes away to nothing', () {
+      const phrases = {
+        'Cyrillic': 'контроль',
+        'Hangul': '통제',
+        'Han': '控制',
+        'Kana': 'とうけい',
+        'Arabic': 'مراقبة',
+        'Devanagari': 'नियंत्रण',
+        'Greek': 'έλεγχος',
+        'Hebrew': 'בקרה',
+      };
+      for (final e in phrases.entries) {
+        expect(
+          normalizeAnswer(e.value),
+          isNotEmpty,
+          reason:
+              '${e.key} "${e.value}" blanked out — contains("") matches '
+              'anything, so every answer would be graded correct',
+        );
+      }
+    });
+
+    test('a mixed-script phrase keeps both halves', () {
+      expect(normalizeAnswer('FAROL локатор'), 'farol локатор');
+      expect(normalizeAnswer('Halcyon 서울'), 'halcyon 서울');
+    });
+
     test('drops emoji and the variation selectors glued to them', () {
       expect(normalizeAnswer('open ✔️'), 'open');
       expect(normalizeAnswer('🙂'), '');

@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../core/answers/answer_evaluator.dart';
+import '../../core/app_config.dart';
 import '../../core/theme/cold_theme.dart';
 import '../../data/l10n/case_strings.dart';
 import '../../data/models/case_file.dart';
@@ -16,12 +17,15 @@ import '../../data/providers/settings_providers.dart';
 import '../board/board_screen.dart';
 import '../case_flow/client_chat_screen.dart';
 import '../case_flow/client_portrait.dart';
+import '../paywall/paywall_screen.dart';
 import '../phone/app_registry.dart';
 import '../phone/contact_book.dart';
 import 'case_solved_screen.dart';
+import 'solved_questions_screen.dart';
 import 'widgets/answer_field.dart';
 import 'widgets/audio_clue.dart';
 import 'widgets/choice_list.dart';
+import 'widgets/help_offer_dialog.dart';
 import 'widgets/reveal_pair.dart';
 import 'widgets/suspect_lineup.dart';
 import 'widgets/timeline_order.dart';
@@ -75,6 +79,18 @@ class _QuestionScreenState extends ConsumerState<QuestionScreen> {
 
   /// The wrong half of a shown 50/50, if the player has already tried it.
   bool _revealMissed = false;
+
+  /// True for the second the answer is held on screen, ringed in green, before
+  /// the case moves on.
+  ///
+  /// Without it a right answer was indistinguishable from a wrong one for the
+  /// player: the screen simply became the next question, and the only way to
+  /// know you had got it was that the number had gone up. A beat of green is
+  /// the difference between being told and having to infer.
+  bool _flashing = false;
+
+  /// How long that beat lasts.
+  static const _flash = Duration(seconds: 1);
 
   /// Live answer state, one field per interaction. Only the one matching the
   /// current question's kind is ever read.
@@ -212,6 +228,26 @@ class _QuestionScreenState extends ConsumerState<QuestionScreen> {
                     BoardScreen(caseId: widget.caseId, board: board),
               ),
             ),
+            onSolved: solved == 0
+                ? null
+                : () => Navigator.of(context).push(
+                    MaterialPageRoute<void>(
+                      builder: (_) => SolvedQuestionsScreen(
+                        caseId: widget.caseId,
+                        file: widget.file,
+                        strings: strings,
+                        solved: solved,
+                        answers: ref
+                            .read(caseProgressProvider(widget.caseId))
+                            .answers,
+                        branch: ref
+                            .read(caseProgressProvider(widget.caseId))
+                            .ending,
+                      ),
+                    ),
+                  ),
+            solvedTooltip:
+                strings?.c('q.solved_title') ?? 'What you have worked out',
             onClose: () => Navigator.of(context).maybePop(),
           ),
           Expanded(
@@ -251,7 +287,25 @@ class _QuestionScreenState extends ConsumerState<QuestionScreen> {
                     ),
                   ],
                   const SizedBox(height: ColdSpace.md),
-                  _interaction(question, strings),
+                  // Ringed in green for a second when the answer lands, then
+                  // released. The padding is animated with it so the ring does
+                  // not shove the layout sideways as it appears.
+                  AnimatedContainer(
+                    duration: const Duration(milliseconds: 180),
+                    curve: Curves.easeOut,
+                    padding: EdgeInsets.all(_flashing ? ColdSpace.sm : 0),
+                    decoration: BoxDecoration(
+                      borderRadius: ColdRadius.card,
+                      border: Border.all(
+                        color: _flashing ? device.positive : Colors.transparent,
+                        width: 2,
+                      ),
+                      color: _flashing
+                          ? device.positive.withValues(alpha: 0.10)
+                          : Colors.transparent,
+                    ),
+                    child: _interaction(question, strings),
+                  ),
                   if (_revealed && question is FreeTextQuestion) ...[
                     const SizedBox(height: ColdSpace.md),
                     RevealPair(
@@ -259,8 +313,8 @@ class _QuestionScreenState extends ConsumerState<QuestionScreen> {
                       strings: strings,
                       answerable: _revealIsAnswerable(question, strings),
                       missed: _revealMissed,
-                      onPick: (correct) => correct
-                          ? _accept(strings)
+                      onPick: (correct, picked) => correct
+                          ? _accept(question, TextSubmission(picked), strings)
                           : setState(() => _revealMissed = true),
                     ),
                   ],
@@ -380,6 +434,47 @@ class _QuestionScreenState extends ConsumerState<QuestionScreen> {
     };
   }
 
+  /// What the player answered, written the way it should read back later.
+  ///
+  /// Free text is what they typed. The structured kinds have no typed text, so
+  /// each is rendered the way its own screen renders it — a suspect's name, the
+  /// lines they tapped, the order they settled on. Everything the review screen
+  /// shows is the player's own work, never the case's answer key.
+  String _answerText(
+    Question question,
+    Submission submission,
+    CaseStrings? strings,
+  ) {
+    String pick(String key) => strings?.t(key) ?? '';
+
+    return switch ((question, submission)) {
+      (_, TextSubmission(:final text)) => text,
+      (SuspectQuestion(), PersonSubmission(:final personId)) =>
+        widget.contacts.realName(personId),
+      (
+        ContradictionQuestion(:final snippets),
+        ChoiceSubmission(:final index),
+      ) =>
+        index >= 0 && index < snippets.length ? pick(snippets[index]) : '',
+      (ContradictionQuestion(:final snippets), SetSubmission(:final indices)) =>
+        (indices.toList()..sort())
+            .where((i) => i >= 0 && i < snippets.length)
+            .map((i) => pick(snippets[i]))
+            .join('  ·  '),
+      (MultiSelectQuestion(:final options), SetSubmission(:final indices)) =>
+        (indices.toList()..sort())
+            .where((i) => i >= 0 && i < options.length)
+            .map((i) => pick(options[i]))
+            .join('\n'),
+      (TimelineQuestion(:final events), OrderSubmission(:final order)) =>
+        order
+            .where((i) => i >= 0 && i < events.length)
+            .map((i) => pick(events[i]))
+            .join('\n'),
+      _ => '',
+    };
+  }
+
   Submission? _submissionFor(Question question) => switch (question) {
     FreeTextQuestion() => TextSubmission(_text.text),
     TimelineQuestion() => OrderSubmission(
@@ -421,7 +516,7 @@ class _QuestionScreenState extends ConsumerState<QuestionScreen> {
     final result = evaluator.evaluate(question, submission);
 
     if (result.isCorrect) {
-      await _accept(strings);
+      await _accept(question, submission, strings);
       return;
     }
 
@@ -446,18 +541,67 @@ class _QuestionScreenState extends ConsumerState<QuestionScreen> {
   /// than to the phone — an interstitial fires at an authored count, and the
   /// last question hands over to the closing conversation. Doing it here keeps
   /// the sequence inside one screen: answer, hear back, carry on.
-  Future<void> _accept(CaseStrings? strings) async {
+  Future<void> _accept(
+    Question question,
+    Submission submission,
+    CaseStrings? strings,
+  ) async {
     setState(() {
       _verdict = Verdict.correct;
       _revealed = false;
+      _flashing = true;
     });
 
+    // Held, then advanced. The wait is the whole point: the answer stays where
+    // the player left it, ringed, long enough to read.
+    await Future<void>.delayed(_flash);
+    if (!mounted) return;
+    setState(() => _flashing = false);
+
     final progress = ref.read(caseProgressProvider(widget.caseId).notifier);
-    await progress.advance();
+    await progress.advance(
+      questionIndex: question.index,
+      answer: _answerText(question, submission, strings),
+    );
     if (!mounted) return;
 
     final solved = ref.read(caseProgressProvider(widget.caseId)).solved;
     final chats = widget.file.chats;
+
+    // Once, ever, the moment the second question of any case is first
+    // solved — not tied to the free case specifically, because a player who
+    // has bought their way past it has earned the ask just as much as one
+    // who has not.
+    if (solved == 2 && !ref.read(ratingPromptedProvider)) {
+      await ref.read(ratingPromptedProvider.notifier).markShown();
+      if (!mounted) return;
+      await _offerRating(strings);
+      if (!mounted) return;
+    }
+
+    // The free case's own trial ends here: three questions read for free,
+    // then a subscription to keep going. Every other case is already gated
+    // shut on the deck (`case_list_screen.dart`), so this only ever fires
+    // for `freeCaseId`. `AppConfig.reviewMode` skips it the same way the
+    // deck's lock does, for the same reason.
+    if (!AppConfig.reviewMode &&
+        solved == 3 &&
+        widget.caseId == freeCaseId &&
+        !ref.read(isSubscribedProvider)) {
+      final granted = await Navigator.of(context).push<bool>(
+        MaterialPageRoute<bool>(
+          builder: (_) => const PaywallScreen(source: 'question_3'),
+        ),
+      );
+      if (!mounted) return;
+      if (granted != true) {
+        // Declined: the case stays exactly at question three, solved and
+        // waiting — reopening it from the deck lands right back here rather
+        // than repeating the first three questions.
+        Navigator.of(context).popUntil((route) => route.isFirst);
+        return;
+      }
+    }
 
     if (solved >= widget.file.questions.length) {
       await _playClosing();
@@ -481,6 +625,17 @@ class _QuestionScreenState extends ConsumerState<QuestionScreen> {
         ),
       ),
     );
+  }
+
+  /// "Do you like the game?" — yes opens the store listing, no just closes
+  /// the dialog. Neither answer is asked again; see the one-shot check at
+  /// the call site.
+  Future<void> _offerRating(CaseStrings? strings) async {
+    final liked = await showDialog<bool>(
+      context: context,
+      builder: (_) => _RatingOffer(strings: strings),
+    );
+    if (liked == true) await AppConfig.openStoreListing();
   }
 
   /// The last question is answered: the client writes, the player chooses how
@@ -512,13 +667,23 @@ class _QuestionScreenState extends ConsumerState<QuestionScreen> {
 
     await Navigator.of(context).pushReplacement(
       MaterialPageRoute<void>(
-        builder: (_) => CaseSolvedScreen(
+        // The route's own context, not this screen's.
+        //
+        // `pushReplacement` takes the question screen's route away, so by the
+        // time the player presses anything on the epilogue the element this
+        // method was called on is gone. A closure over `context` then looks
+        // up a navigator from a defunct element and the button does nothing —
+        // which is what "Cases doesn't work at the end of the game" was. The
+        // other way into this screen is question_screen's own build, where
+        // `context` is live, so it worked on the way in and not on the way
+        // out.
+        builder: (routeContext) => CaseSolvedScreen(
           caseId: widget.caseId,
           file: widget.file,
           // Out of the question screen and off the phone: the case is closed,
           // and the next thing the player should see is their own desk.
           onClose: () =>
-              Navigator.of(context).popUntil((route) => route.isFirst),
+              Navigator.of(routeContext).popUntil((route) => route.isFirst),
         ),
       ),
     );
@@ -534,7 +699,7 @@ class _QuestionScreenState extends ConsumerState<QuestionScreen> {
     if (stance == HintOffer.unset) {
       final accepted = await showDialog<bool>(
         context: context,
-        builder: (_) => _HelpOffer(strings: strings),
+        builder: (_) => HelpOfferDialog(strings: strings),
       );
       if (!mounted) return;
       await ref.read(hintsProvider.notifier).answer(accepted: accepted == true);
@@ -596,7 +761,7 @@ class _VerdictNote extends StatelessWidget {
           Expanded(
             child: Text(
               text,
-              style: ColdType.handNote.copyWith(color: device.textPrimary),
+              style: ColdType.body.copyWith(color: device.textPrimary),
             ),
           ),
         ],
@@ -699,11 +864,13 @@ class _SubmitBar extends StatelessWidget {
   }
 }
 
-/// Offered once, the third time a question is answered wrong.
-class _HelpOffer extends StatelessWidget {
+/// "Do you like the game?" — shown once, ever, right after the second
+/// question of any case is first solved. Yes sends the player to the store
+/// listing; no just closes it. Neither answer is asked again.
+class _RatingOffer extends StatelessWidget {
   final CaseStrings? strings;
 
-  const _HelpOffer({required this.strings});
+  const _RatingOffer({required this.strings});
 
   @override
   Widget build(BuildContext context) {
@@ -712,25 +879,21 @@ class _HelpOffer extends StatelessWidget {
     return AlertDialog(
       backgroundColor: device.surface,
       title: Text(
-        strings?.c('q.prompt_title') ?? 'Need a hand?',
+        strings?.c('rating.prompt_title') ?? 'Enjoying the case so far?',
         style: ColdType.fileTitle.copyWith(color: device.textPrimary),
-      ),
-      content: Text(
-        strings?.c('q.prompt_body') ?? '',
-        style: ColdType.fileBody.copyWith(color: device.textSecondary),
       ),
       actions: [
         TextButton(
           onPressed: () => Navigator.of(context).pop(false),
           child: Text(
-            strings?.c('q.prompt_no') ?? "No, I'll figure it out",
+            strings?.c('rating.prompt_no') ?? 'Not really',
             style: TextStyle(color: device.textSecondary),
           ),
         ),
         TextButton(
           onPressed: () => Navigator.of(context).pop(true),
           child: Text(
-            strings?.c('q.prompt_yes') ?? 'Yes, help me',
+            strings?.c('rating.prompt_yes') ?? 'Yes',
             style: TextStyle(color: device.warning),
           ),
         ),
@@ -817,6 +980,13 @@ class _Header extends StatelessWidget {
   final Board? board;
   final String boardTooltip;
   final ValueChanged<Board> onBoard;
+
+  /// Opens the reader over what has already been answered. Null before the
+  /// first question is solved: a button onto an empty list is a button that
+  /// teaches the player it is not worth pressing.
+  final VoidCallback? onSolved;
+  final String solvedTooltip;
+
   final VoidCallback onClose;
 
   const _Header({
@@ -826,6 +996,8 @@ class _Header extends StatelessWidget {
     required this.board,
     required this.boardTooltip,
     required this.onBoard,
+    required this.onSolved,
+    required this.solvedTooltip,
     required this.onClose,
   });
 
@@ -847,6 +1019,14 @@ class _Header extends StatelessWidget {
             icon: Icons.push_pin_outlined,
             onTap: () => onBoard(pinned),
           ),
+        if (onSolved case final open?) ...[
+          const SizedBox(width: ColdSpace.xs),
+          _Control(
+            tooltip: solvedTooltip,
+            icon: Icons.history_rounded,
+            onTap: open,
+          ),
+        ],
         const SizedBox(width: ColdSpace.xs),
         _Control(icon: Icons.close_rounded, onTap: onClose),
       ],

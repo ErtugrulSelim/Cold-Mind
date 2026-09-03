@@ -47,6 +47,16 @@ $setDir = if ($Set -eq 'desk') {
 }
 $outDir = Join-Path $setDir 'raw'
 
+# A manifest entry may name the file it is for. An icon lands in raw/ and is
+# normalised afterwards; a case photograph or an ending card goes straight to
+# the path the case already points at, because there is nothing to normalise
+# and nowhere else for it to go. `assets/cases/sNN/endings/` is one of those —
+# the folder is derived from the case id and the branch, never authored.
+function Resolve-Out($job) {
+  if ($job.asset) { return (Join-Path $root $job.asset) }
+  return (Join-Path $outDir "$($job.name).png")
+}
+
 # PS 5.1 negotiates TLS 1.0/1.1 by default, which the image CDN refuses.
 # Without this the API calls succeed and only the download fails, which looks
 # like a random mid-batch crash.
@@ -67,7 +77,7 @@ if ($Only.Count -eq 1 -and $Only[0] -like '*,*') {
 }
 if ($Only.Count) { $jobs = @($jobs | Where-Object { $Only -contains $_.name }) }
 if ($Missing) {
-  $jobs = @($jobs | Where-Object { -not (Test-Path (Join-Path $outDir "$($_.name).png")) })
+  $jobs = @($jobs | Where-Object { -not (Test-Path (Resolve-Out $_)) })
 }
 
 if (-not $jobs.Count) { Write-Host 'no matching jobs in manifest'; exit 0 }
@@ -100,6 +110,11 @@ foreach ($job in $jobs) {
   $endpoint = if ($useMystic) { $api } else { $nanoApi }
 
   if ($useMystic) {
+    # The two endpoints do not share an aspect vocabulary, and only Mystic
+    # validates it. `landscape_16_9` sits in the case-photo manifests and is
+    # harmless there because those go through Nano, which ignores the field
+    # entirely — but Mystic answers it with a bare 400 and no body. Its name
+    # for the same shape is `widescreen_16_9`.
     $payload = @{
       prompt             = $job.prompt
       resolution         = '2k'
@@ -122,7 +137,14 @@ foreach ($job in $jobs) {
     $pending += [pscustomobject]@{ Job = $job; TaskId = $res.data.task_id; Endpoint = $endpoint }
     Write-Host "submitted   $($job.name)$(if (-not $useMystic) { '  [nano]' })"
   } catch {
-    Write-Host "SUBMIT-FAIL $($job.name): $($_.Exception.Message)"
+    # The message alone is "(400) Bad Request" thirty times over and says
+    # nothing about which field was refused. The body does.
+    $detail = ''
+    try {
+      $stream = $_.Exception.Response.GetResponseStream()
+      $detail = (New-Object IO.StreamReader($stream)).ReadToEnd()
+    } catch { }
+    Write-Host "SUBMIT-FAIL $($job.name): $($_.Exception.Message) $detail"
   }
   Start-Sleep -Milliseconds 1200
 }
@@ -142,7 +164,11 @@ for ($round = 0; $round -lt 70 -and $remaining.Count; $round++) {
     }
 
     if ($data.status -eq 'COMPLETED' -and $data.generated -and $data.generated.Count) {
-      $png = Join-Path $outDir "$($item.Job.name).png"
+      $png = Resolve-Out $item.Job
+      $parent = Split-Path -Parent $png
+      if (-not (Test-Path $parent)) {
+        New-Item -ItemType Directory -Path $parent -Force | Out-Null
+      }
       # A download failure must not abandon the rest of the batch — the result
       # URL stays valid for a while, so put the job back and retry next round.
       try {

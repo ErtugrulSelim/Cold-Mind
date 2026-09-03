@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../core/answers/normalize.dart';
 import '../../../core/theme/cold_theme.dart';
 import '../../../data/l10n/case_strings.dart';
 
@@ -46,11 +47,14 @@ class _PasswordDialogState extends State<PasswordDialog> {
 
   void _submit() {
     final expected = widget.expected;
-    // Case and surrounding space are forgiven; the passcode itself is not.
-    // A player who read "5150" off a keychain entry should not fail on a
-    // trailing space their keyboard added.
+    // The same rule the sign-in gate and the quiz both use, so that "the
+    // comparison rule lives in one place" is true of the rule and not only of
+    // the widget: case, spacing, punctuation and diacritics forgiven, the
+    // letters and digits not. A player who read "5150" off a keychain entry
+    // should not fail on a trailing space, and one who read "mer-2016-0114"
+    // should not fail for typing the spaces they saw.
     if (expected != null &&
-        _controller.text.trim().toLowerCase() == expected.toLowerCase()) {
+        normalizePassword(_controller.text) == normalizePassword(expected)) {
       Navigator.of(context).pop(true);
       return;
     }

@@ -8,7 +8,7 @@
   "s01.client_chat.cc_002": "Seven weeks ago they found him at the bottom of the service stairwell at our office. The police wrote it up as a fall and closed it in eleven days.",
   "s01.client_chat.cc_003": "It wasn't a fall. He'd found something in our product — a flaw — and our CEO told him, in writing, that reporting it would end him.",
   "s01.client_chat.cc_004": "Four days later Elias was dead and the flaw was never filed.",
-  "s01.client_chat.cc_005": "I recovered his phone. Everything is still on it. Messages, the audit, the building logs. I can give you full access.",
+  "s01.client_chat.cc_005": "I recovered his phone. It is a company handset and I am the engineer who enrols them, so I did not have to ask anybody for it.",
   "s01.client_chat.cc_006": "I'm not asking you to like me. I'm asking you to read a dead man's phone and tell me what's in it.",
   "s01.client_chat.cc_007": "Will you take it?",
   "s01.client_chat.cc_007.accept": "I'll read the phone.",
@@ -92,7 +92,7 @@
   "s01.notes.folder_002": "Work",
   "s01.notes.note_001.title": "Kestrel onboarding",
   "s01.notes.note_001.block_001": "Desk 4B. Badge collected. Parking not included, obviously.",
-  "s01.notes.note_001.block_002": "Keychain master: rand-halo-2019",
+  "s01.notes.note_001.block_002": "Keychain master: 05.03.2025 — the day of the audit, like an idiot",
   "s01.notes.note_001.block_003": "(Change this. You are a security engineer. This is embarrassing.)",
   "s01.notes.note_002.title": "Weekend",
   "s01.notes.note_002.block_001": "Call Mum back",
@@ -108,7 +108,7 @@
   "s01.search.gs_002": "can an employer sue for reporting a security flaw",
   "s01.search.gs_003": "how to prove a log file was edited after the fact",
   "s01.search.gs_004": "gambling debt help family",
-  "s01.keychain.master_hint": "You wrote it in your oldest note, like an amateur.",
+  "s01.keychain.master_hint": "A date. You wrote it in your oldest note, like an amateur.",
   "s01.keychain.v_001.label": "Kestrel SSO",
   "s01.keychain.v_001.username": "e.rand@kestrel.ee",
   "s01.keychain.v_001.note": "Rotates every 90 days",
@@ -712,7 +712,7 @@
   "s01.question.q01.question": "Tuesday, 4 March. Elias sent one more message that evening, then nothing. Where did he say he was going?",
   "s01.question.q01.opt0": "Home",
   "s01.question.q01.opt1": "The office",
-  "s01.question.q01.opt2": "His brother's",
+  "s01.question.q01.opt2": "Reval Kohvik",
   "s01.question.q01.opt3": "The airport",
   "s01.question.q01.answers": [
     [
@@ -732,7 +732,7 @@
   "s01.question.q02.question": "His calendar has one entry for that night. Who was he meeting?",
   "s01.question.q02.opt0": "Nora Ilves",
   "s01.question.q02.opt1": "Viktor Halme",
-  "s01.question.q02.opt2": "Kilian Rand",
+  "s01.question.q02.opt2": "Piret Sarv",
   "s01.question.q02.opt3": "Ben Krüger",
   "s01.question.q02.answers": [
     [
@@ -751,7 +751,7 @@
   "s01.question.q03.title": "The debt",
   "s01.question.q03.question": "Someone had been asking Elias for money — and was refused a week before he died. Who?",
   "s01.question.q03.opt0": "Ben Krüger",
-  "s01.question.q03.opt1": "Viktor Halme",
+  "s01.question.q03.opt1": "Jaan Tamm",
   "s01.question.q03.opt2": "Kilian Rand",
   "s01.question.q03.opt3": "Nora Ilves",
   "s01.question.q03.answers": [
@@ -973,5 +973,6 @@
   ],
   "s01.ending.police": "Six weeks later the file goes in as evidence and NULLKEY is named in an indictment nobody can serve. Viktor Halme sues the state and wins. Kilian Rand gets a settlement that covers the loan and nothing else. Nora Ilves is never found — but she is on the record now, credited, permanent, exactly as she wanted, and that was the one thing she could not forge for herself.",
   "s01.ending.erase": "The report publishes at six with her name stripped out of it: a murder solved by an anonymous source who cannot be questioned. Prosecutors decline to act on a ghost. Viktor Halme keeps the acquittal and loses everything else, because the public never learns who to blame instead. Somewhere, a woman reads the coverage of her perfect crime and finds someone else's silence in the byline. She never contacts you again.",
-  "s01.ending.silence": "Nothing publishes. Kilian Rand buries his brother on borrowed money and never learns who did it. Viktor Halme stays the man it probably was. The account goes dark on schedule, and the only two people alive who know what happened to Elias Rand are the woman who killed him and you."
+  "s01.ending.silence": "Nothing publishes. Kilian Rand buries his brother on borrowed money and never learns who did it. Viktor Halme stays the man it probably was. The account goes dark on schedule, and the only two people alive who know what happened to Elias Rand are the woman who killed him and you.",
+  "s01.client_chat.cc_005b": "Everything is still on it. Messages, the audit, the building logs. I can put you on the device itself."
 }
