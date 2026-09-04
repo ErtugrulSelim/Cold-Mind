@@ -53,12 +53,19 @@ class AppConfig {
   /// calling `Purchases.configure`, and an unconfigured build keeps running
   /// on `UnconfiguredStore` exactly as it does today.
   static const String revenueCatAppleKey = '';
-  static const String revenueCatGoogleKey = '';
+  static const String revenueCatGoogleKey = 'goog_LcVOeyqgYRNTHEuvGIXXyYlroUs';
 
   /// The entitlement identifier configured in the RevenueCat dashboard.
   /// Every plan (weekly, yearly) grants this same entitlement, so this is
   /// the one string both `purchase()` and `restore()` check.
   static const String revenueCatEntitlementId = 'pro';
+
+  /// The backend that spends a hint token — the only thing that ever
+  /// decrements a player's balance, since RevenueCat's client SDK can read a
+  /// virtual currency but refuses to let a client spend one. Empty until
+  /// that backend is wired up: [HintStore.spend] fails closed on an empty
+  /// URL exactly the way [hasRevenueCatKeys] fails closed on an empty key.
+  static const String hintSpendFunctionUrl = '';
 
   static bool get hasRevenueCatKeys =>
       (Platform.isIOS ? revenueCatAppleKey : revenueCatGoogleKey).isNotEmpty;

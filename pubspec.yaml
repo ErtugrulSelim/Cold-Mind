@@ -42,6 +42,7 @@ dependencies:
   share_plus: ^13.3.0
   purchases_flutter: ^10.11.0
   intl: ^0.20.3
+  http: ^1.6.0
 
 dev_dependencies:
   flutter_test:

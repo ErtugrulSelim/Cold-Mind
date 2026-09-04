@@ -13,7 +13,6 @@ import '../../data/providers/settings_providers.dart';
 import '../case_flow/case_flow_screen.dart';
 import '../paywall/paywall_screen.dart';
 import '../paywall/pro_button.dart';
-import '../quiz/widgets/help_offer_dialog.dart';
 import '../settings/settings_screen.dart';
 import 'widgets/case_card.dart';
 
@@ -160,29 +159,6 @@ class _Deck extends ConsumerWidget {
                               ),
                             );
                             return;
-                          }
-
-                          // Asked once, right here, rather than reactively
-                          // after a wrong answer — a player who has never
-                          // opened this phone before benefits from knowing
-                          // the option exists, not from discovering it by
-                          // struggling. Scoped to the free case's own first
-                          // opening, which is the only "very first case" a
-                          // player who has not subscribed yet can reach.
-                          if (summary.id == freeCaseId &&
-                              progress.solved == 0 &&
-                              ref.read(hintsProvider) == HintOffer.unset) {
-                            final accepted = await showDialog<bool>(
-                              context: context,
-                              builder: (_) => HelpOfferDialog(
-                                strings: ref.read(commonStringsProvider).value,
-                              ),
-                            );
-                            if (!context.mounted) return;
-                            await ref
-                                .read(hintsProvider.notifier)
-                                .answer(accepted: accepted == true);
-                            if (!context.mounted) return;
                           }
 
                           ref.read(openCaseProvider.notifier).open(summary.id);

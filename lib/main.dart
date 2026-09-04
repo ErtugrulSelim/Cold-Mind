@@ -10,6 +10,8 @@ import 'core/app_config.dart';
 import 'core/theme/cold_theme.dart';
 import 'data/providers/settings_providers.dart';
 import 'features/cases/case_list_screen.dart';
+import 'features/hints/hint_store.dart';
+import 'features/hints/revenuecat_hint_store.dart';
 import 'features/paywall/revenuecat_store.dart';
 import 'features/paywall/store.dart';
 
@@ -28,8 +30,10 @@ Future<void> main() async {
   final container = ProviderContainer(
     overrides: [
       sharedPreferencesProvider.overrideWithValue(prefs),
-      if (AppConfig.hasRevenueCatKeys)
+      if (AppConfig.hasRevenueCatKeys) ...[
         storeProvider.overrideWithValue(const RevenueCatStore()),
+        hintStoreProvider.overrideWithValue(const RevenueCatHintStore()),
+      ],
     ],
   );
 

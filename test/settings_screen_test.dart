@@ -61,7 +61,7 @@ void main() {
     }
 
     for (final key in [
-      'settings.answer_hints',
+      'settings.hints',
       'settings.language',
       'settings.faq',
       'settings.restore',

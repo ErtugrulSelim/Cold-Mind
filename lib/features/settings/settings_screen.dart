@@ -7,7 +7,9 @@ import '../../core/app_config.dart';
 import '../../core/theme/cold_theme.dart';
 import '../../data/l10n/case_strings.dart';
 import '../../data/providers/case_providers.dart';
+import '../../data/providers/hint_providers.dart';
 import '../../data/providers/settings_providers.dart';
+import '../hints/hint_store_screen.dart';
 import '../paywall/paywall_screen.dart';
 import '../paywall/store.dart';
 
@@ -428,10 +430,11 @@ class _Row extends StatelessWidget {
   }
 }
 
-/// Whether a stuck player is offered the 50/50.
+/// The way into [HintStoreScreen], and the current balance at a glance.
 ///
-/// The offer is also made in the moment — the third time a question is answered
-/// wrong — and the dialog there says it can be changed here, so it has to be.
+/// A hint used to be a free toggle here — three wrong tries earned an
+/// unlimited 50/50. Now a hint is a token spent from the store, so this row
+/// opens the shop instead of switching anything.
 class _HintRow extends ConsumerWidget {
   final CaseStrings? strings;
 
@@ -439,81 +442,16 @@ class _HintRow extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    // Unset counts as off: the offer has not been made yet, and showing it as
-    // already on would promise help the player never agreed to.
-    final on = ref.watch(hintsProvider) == HintOffer.accepted;
+    final balance = ref.watch(hintBalanceProvider);
 
-    return _Toggle(
+    return _Row(
       icon: Icons.lightbulb_outline_rounded,
-      title: strings?.c('settings.answer_hints') ?? 'Answer hints',
-      subtitle:
-          strings?.c('settings.answer_hints_sub') ??
-          'Show two options after 3 wrong tries on a question',
-      value: on,
-      onChanged: (enabled) =>
-          ref.read(hintsProvider.notifier).answer(accepted: enabled),
-    );
-  }
-}
-
-class _Toggle extends StatelessWidget {
-  final IconData icon;
-  final String title;
-  final String subtitle;
-  final bool value;
-  final ValueChanged<bool> onChanged;
-
-  const _Toggle({
-    required this.icon,
-    required this.title,
-    required this.subtitle,
-    required this.value,
-    required this.onChanged,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final device = context.device;
-
-    return Padding(
-      padding: const EdgeInsets.fromLTRB(
-        ColdSpace.lg,
-        ColdSpace.md,
-        ColdSpace.md,
-        ColdSpace.md,
-      ),
-      child: Row(
-        children: [
-          Icon(icon, size: 22, color: device.accent),
-          const SizedBox(width: ColdSpace.lg),
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  title,
-                  style: ColdType.body.copyWith(
-                    color: device.textPrimary,
-                    fontSize: 16,
-                  ),
-                ),
-                const SizedBox(height: 2),
-                Text(
-                  subtitle,
-                  style: ColdType.bodySmall.copyWith(
-                    color: device.textSecondary,
-                  ),
-                ),
-              ],
-            ),
-          ),
-          Switch(
-            value: value,
-            onChanged: onChanged,
-            activeThumbColor: Colors.white,
-            activeTrackColor: device.accent,
-          ),
-        ],
+      label: strings?.c('settings.hints') ?? 'Hints',
+      value: balance.value?.toString(),
+      onTap: () => Navigator.of(context).push(
+        MaterialPageRoute<void>(
+          builder: (_) => const HintStoreScreen(source: 'settings'),
+        ),
       ),
     );
   }
