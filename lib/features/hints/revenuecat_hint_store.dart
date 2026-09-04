@@ -1,7 +1,11 @@
+import 'dart:convert';
+
 import 'package:collection/collection.dart';
 import 'package:flutter/services.dart' show PlatformException;
+import 'package:http/http.dart' as http;
 import 'package:purchases_flutter/purchases_flutter.dart' hide Store;
 
+import '../../core/app_config.dart';
 import '../paywall/revenuecat_store.dart';
 import '../paywall/store.dart';
 import 'hint_store.dart';
@@ -83,5 +87,31 @@ class RevenueCatHintStore implements HintStore {
       if (code == PurchasesErrorCode.purchaseCancelledError) return false;
       throw StoreException(RevenueCatStore.failureFor(code));
     }
+  }
+
+  @override
+  Future<bool> spend() async {
+    final appUserId = await Purchases.appUserID;
+
+    final http.Response response;
+    try {
+      response = await http.post(
+        Uri.parse(AppConfig.hintSpendFunctionUrl),
+        headers: const {'Content-Type': 'application/json'},
+        body: jsonEncode({'appUserId': appUserId, 'amount': 1}),
+      );
+    } catch (_) {
+      throw const StoreException(StoreFailure.network);
+    }
+
+    // 422 is RevenueCat's own balance check, not this function's — the
+    // real balance lives server-side, never trusted from the client, so a
+    // player who is actually out of tokens gets exactly the same false a
+    // cancelled purchase would.
+    if (response.statusCode == 422) return false;
+    if (response.statusCode != 200) {
+      throw const StoreException(StoreFailure.other);
+    }
+    return true;
   }
 }

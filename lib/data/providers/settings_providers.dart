@@ -79,35 +79,6 @@ class Language extends _$Language {
   }
 }
 
-/// Whether the player accepted the offer of a 50/50 when they are stuck.
-///
-/// Three states, not two. The offer is made **once**, the third time a question
-/// is answered wrong, and until it has been made this is [unset] — which is
-/// what stops the game either nagging a player who said no or quietly helping
-/// one who was never asked.
-enum HintOffer { unset, accepted, declined }
-
-@Riverpod(keepAlive: true)
-class Hints extends _$Hints {
-  static const String _key = 'hints_offer';
-
-  @override
-  HintOffer build() {
-    final saved = ref.watch(sharedPreferencesProvider).getString(_key);
-    return switch (saved) {
-      'accepted' => HintOffer.accepted,
-      'declined' => HintOffer.declined,
-      _ => HintOffer.unset,
-    };
-  }
-
-  Future<void> answer({required bool accepted}) async {
-    final value = accepted ? 'accepted' : 'declined';
-    await ref.read(sharedPreferencesProvider).setString(_key, value);
-    state = accepted ? HintOffer.accepted : HintOffer.declined;
-  }
-}
-
 /// Whether the "do you like the game?" prompt has ever been shown.
 ///
 /// Once, ever, regardless of which case or which answer — a player who said

@@ -5,8 +5,10 @@ import 'package:coldmind/data/models/question.dart';
 import 'package:coldmind/data/providers/case_providers.dart';
 import 'package:coldmind/data/providers/settings_providers.dart';
 import 'package:coldmind/data/repository/case_repository.dart';
+import 'package:coldmind/features/hints/hint_store.dart';
 import 'package:coldmind/features/phone/contact_book.dart';
 import 'package:coldmind/features/quiz/question_screen.dart';
+import 'package:coldmind/features/quiz/widgets/reveal_pair.dart';
 import 'package:coldmind/features/case_flow/client_chat_screen.dart';
 import 'package:coldmind/features/case_flow/client_portrait.dart';
 import 'package:coldmind/features/phone/app_registry.dart';
@@ -222,6 +224,98 @@ void main() {
     expect(find.text(strings.c('eval.wrong')), findsOneWidget);
   });
 
+  testWidgets('a hint can be used any time, no wrong tries required', (
+    tester,
+  ) async {
+    usePhoneSurface(tester);
+
+    final strings = s01Strings;
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setInt('progress.solved.s01', 0);
+
+    await tester.pumpWidget(
+      ProviderScope(
+        overrides: [
+          sharedPreferencesProvider.overrideWithValue(prefs),
+          caseStringsProvider('s01').overrideWith((ref) async => strings),
+          hintStoreProvider.overrideWithValue(const _AlwaysSpendableHintStore()),
+        ],
+        child: MaterialApp(
+          theme: buildColdTheme(),
+          home: QuestionScreen(
+            caseId: 's01',
+            file: loaded['s01']!.file,
+            contacts: loaded['s01']!.contacts,
+          ),
+        ),
+      ),
+    );
+    await tester.pump(const Duration(milliseconds: 400));
+
+    // No wrong answer was ever submitted — the hint is there from the start.
+    expect(find.byType(RevealPair), findsNothing);
+    expect(find.text(strings.c('q.use_hint')), findsOneWidget);
+
+    await tester.tap(find.text(strings.c('q.use_hint')));
+    await tester.pump(const Duration(milliseconds: 400));
+
+    expect(find.byType(RevealPair), findsOneWidget);
+    expect(
+      find.text(strings.c('q.use_hint')),
+      findsNothing,
+      reason: 'the ask disappears once it has already been granted',
+    );
+  });
+
+  testWidgets('an empty hint balance sends the player to the shop, not a free reveal', (
+    tester,
+  ) async {
+    usePhoneSurface(tester);
+
+    final strings = s01Strings;
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setInt('progress.solved.s01', 0);
+
+    await tester.pumpWidget(
+      ProviderScope(
+        overrides: [
+          sharedPreferencesProvider.overrideWithValue(prefs),
+          caseStringsProvider('s01').overrideWith((ref) async => strings),
+          // HintStoreScreen, the fallback this test tap lands on, reads its
+          // own strings from this rather than the case-scoped provider above.
+          commonStringsProvider.overrideWith((ref) async => strings),
+          // Left at its default — UnconfiguredHintStore, whose spend()
+          // reports "not enough" rather than granting a reveal for free.
+        ],
+        child: MaterialApp(
+          theme: buildColdTheme(),
+          home: QuestionScreen(
+            caseId: 's01',
+            file: loaded['s01']!.file,
+            contacts: loaded['s01']!.contacts,
+          ),
+        ),
+      ),
+    );
+    await tester.pump(const Duration(milliseconds: 400));
+
+    await tester.tap(find.text(strings.c('q.use_hint')));
+    // A route push, not just a setState — the transition needs settling,
+    // not a fixed pump, before the shop's own content can be found.
+    await tester.pumpAndSettle();
+
+    expect(
+      find.byType(RevealPair),
+      findsNothing,
+      reason: 'a player with no tokens must not get the reveal for free',
+    );
+    expect(
+      find.text(strings.c('hints.title')),
+      findsOneWidget,
+      reason: 'an unaffordable hint should offer the shop, not silence',
+    );
+  });
+
   testWidgets('the client fills a quarter of both screens they are on', (
     tester,
   ) async {
@@ -275,4 +369,23 @@ void main() {
     // Leaves nothing ticking behind.
     await tester.pumpWidget(const SizedBox.shrink());
   });
+}
+
+/// A [HintStore] that always has a token to spend — the fake behind the
+/// "hint granted" branch of `_useHint`, the same way `UnconfiguredHintStore`
+/// (spend() always false) is the fake behind the "no tokens" branch.
+class _AlwaysSpendableHintStore implements HintStore {
+  const _AlwaysSpendableHintStore();
+
+  @override
+  Future<int> balance() async => 1;
+
+  @override
+  Future<List<HintPackage>> packages() async => const [];
+
+  @override
+  Future<bool> purchase(String packageId) async => false;
+
+  @override
+  Future<bool> spend() async => true;
 }

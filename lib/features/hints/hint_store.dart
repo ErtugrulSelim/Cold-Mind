@@ -46,6 +46,13 @@ abstract class HintStore {
   /// player backed out — a cancellation is not an error, same contract as
   /// `Store.purchase`.
   Future<bool> purchase(String packageId);
+
+  /// Spends one hint token to reveal a 50/50 on the question the player is
+  /// stuck on. True once the token is spent, false when the balance was too
+  /// low to afford it — not an error, just "buy more," the same way a
+  /// cancelled purchase isn't one. Throws [StoreException] for an actual
+  /// failure (offline, the backend unreachable).
+  Future<bool> spend();
 }
 
 /// What ships until a real billing SDK is behind [HintStore] — lists no
@@ -64,6 +71,9 @@ class UnconfiguredHintStore implements HintStore {
 
   @override
   Future<bool> purchase(String packageId) async => false;
+
+  @override
+  Future<bool> spend() async => false;
 }
 
 /// Override this in `main` once a billing SDK is wired in, and in tests.

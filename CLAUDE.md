@@ -540,20 +540,10 @@ so does Settings. A gate on a locked case can push
 
 ## First run
 
-Three things happen automatically the first time a player actually plays,
+Two things happen automatically the first time a player actually plays,
 never on a later launch and never for a returning player — each is a
 `SharedPreferences` flag that persists on its own, not a check against
 session state.
-
-**The hint offer.** Hints are closed by default; asking is a one-time upfront
-choice rather than something a player discovers mid-struggle. It fires from
-`case_list_screen.dart`'s `onOpen`, the moment `freeCaseId` — the only case
-reachable before a subscription — is opened for the very first time
-(`progress.solved == 0` and `hintsProvider` still `HintOffer.unset`), through
-the same `HelpOfferDialog` the in-question fallback (three wrong answers on
-any question) also shows. That dialog is public rather than private to either
-screen, because a dialog two screens show is not owned by whichever one
-happened to be written first.
 
 **The rating prompt.** Fires once, ever, the instant any case's second
 question is solved, gated by `ratingPromptedProvider` — a flag that never

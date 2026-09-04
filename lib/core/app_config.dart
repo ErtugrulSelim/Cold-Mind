@@ -49,6 +49,14 @@ class AppConfig {
   /// the one string both `purchase()` and `restore()` check.
   static const String revenueCatEntitlementId = 'pro';
 
+  /// The `spendHintTokens` Cloud Function — the only thing that ever
+  /// decrements a player's hint balance, since RevenueCat's client SDK can
+  /// read a virtual currency but refuses to let a client spend one. Not a
+  /// secret: it is a public HTTPS endpoint with no key embedded in it, the
+  /// same way a REST API's base URL is not a secret.
+  static const String hintSpendFunctionUrl =
+      'https://us-central1-coldmind-koalacache.cloudfunctions.net/spendHintTokens';
+
   static bool get hasRevenueCatKeys =>
       (Platform.isIOS ? revenueCatAppleKey : revenueCatGoogleKey).isNotEmpty;
 

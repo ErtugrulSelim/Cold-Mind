@@ -14,10 +14,14 @@ import '../../data/models/question.dart';
 import '../../data/providers/case_providers.dart';
 import '../../data/providers/progress_providers.dart';
 import '../../data/providers/settings_providers.dart';
+import '../../data/providers/hint_providers.dart';
 import '../board/board_screen.dart';
 import '../case_flow/client_chat_screen.dart';
 import '../case_flow/client_portrait.dart';
+import '../hints/hint_store.dart';
+import '../hints/hint_store_screen.dart';
 import '../paywall/paywall_screen.dart';
+import '../paywall/store.dart';
 import '../phone/app_registry.dart';
 import '../phone/contact_book.dart';
 import 'case_solved_screen.dart';
@@ -25,7 +29,6 @@ import 'solved_questions_screen.dart';
 import 'widgets/answer_field.dart';
 import 'widgets/audio_clue.dart';
 import 'widgets/choice_list.dart';
-import 'widgets/help_offer_dialog.dart';
 import 'widgets/reveal_pair.dart';
 import 'widgets/suspect_lineup.dart';
 import 'widgets/timeline_order.dart';
@@ -61,12 +64,8 @@ class QuestionScreen extends ConsumerStatefulWidget {
 }
 
 class _QuestionScreenState extends ConsumerState<QuestionScreen> {
-  /// How many times the current question has been answered wrong. Reset when
-  /// the question changes — the count is what earns the 50/50, and carrying it
-  /// across questions would hand it out for somebody else's mistake.
-  int _wrongTries = 0;
-
-  /// Which question `_wrongTries` belongs to.
+  /// Which question the interaction state below belongs to, so a new
+  /// question starts clean rather than carrying over the last one's reveal.
   int? _countingFor;
 
   Verdict? _verdict;
@@ -79,6 +78,10 @@ class _QuestionScreenState extends ConsumerState<QuestionScreen> {
 
   /// The wrong half of a shown 50/50, if the player has already tried it.
   bool _revealMissed = false;
+
+  /// True while a hint spend is in flight, so the button can't be tapped
+  /// twice and charge for the same reveal.
+  bool _spendingHint = false;
 
   /// True for the second the answer is held on screen, ringed in green, before
   /// the case moves on.
@@ -306,6 +309,16 @@ class _QuestionScreenState extends ConsumerState<QuestionScreen> {
                     ),
                     child: _interaction(question, strings),
                   ),
+                  if (!_revealed &&
+                      question is FreeTextQuestion &&
+                      question.reveal != null) ...[
+                    const SizedBox(height: ColdSpace.md),
+                    _HintButton(
+                      label: strings?.c('q.use_hint') ?? 'Use a hint',
+                      busy: _spendingHint,
+                      onTap: () => _useHint(question, strings),
+                    ),
+                  ],
                   if (_revealed && question is FreeTextQuestion) ...[
                     const SizedBox(height: ColdSpace.md),
                     RevealPair(
@@ -350,10 +363,10 @@ class _QuestionScreenState extends ConsumerState<QuestionScreen> {
   void _resetIfNewQuestion(int index) {
     if (_countingFor == index) return;
     _countingFor = index;
-    _wrongTries = 0;
     _verdict = null;
     _revealed = false;
     _revealMissed = false;
+    _spendingHint = false;
     _text.clear();
     _order = null;
     _picked = null;
@@ -520,19 +533,8 @@ class _QuestionScreenState extends ConsumerState<QuestionScreen> {
       return;
     }
 
-    setState(() {
-      _verdict = result.verdict;
-      _wrongTries++;
-    });
+    setState(() => _verdict = result.verdict);
     _showFoot();
-
-    // An empty field is not a wrong answer, so it never counts towards the
-    // offer of help — otherwise three taps on an empty box would earn a hint.
-    if (result.verdict == Verdict.empty) {
-      setState(() => _wrongTries--);
-      return;
-    }
-    await _maybeOfferHelp(question, strings);
   }
 
   /// The question is solved: record it, then let the case react.
@@ -689,26 +691,48 @@ class _QuestionScreenState extends ConsumerState<QuestionScreen> {
     );
   }
 
-  /// Three wrong answers earns the 50/50 — once the player has said they want
-  /// it. The offer itself is made only once, ever.
-  Future<void> _maybeOfferHelp(Question question, CaseStrings? strings) async {
-    if (_wrongTries < 3) return;
-    if (question is! FreeTextQuestion || question.reveal == null) return;
-
-    var stance = ref.read(hintsProvider);
-    if (stance == HintOffer.unset) {
-      final accepted = await showDialog<bool>(
-        context: context,
-        builder: (_) => HelpOfferDialog(strings: strings),
-      );
+  /// Spends one hint token to reveal a 50/50 on the current question. The
+  /// player asks for this whenever they want — there is no wrong-answer
+  /// count to earn it — so the choices stay off screen until they do.
+  Future<void> _useHint(FreeTextQuestion question, CaseStrings? strings) async {
+    setState(() => _spendingHint = true);
+    try {
+      final spent = await ref.read(hintStoreProvider).spend();
       if (!mounted) return;
-      await ref.read(hintsProvider.notifier).answer(accepted: accepted == true);
-      stance = accepted == true ? HintOffer.accepted : HintOffer.declined;
-    }
 
-    if (stance == HintOffer.accepted && mounted) {
-      setState(() => _revealed = true);
-      _showFoot();
+      if (spent) {
+        setState(() => _revealed = true);
+        ref.invalidate(hintBalanceProvider);
+        _showFoot();
+        return;
+      }
+
+      // Not an error — just not enough tokens. Sent straight to the shop
+      // rather than told so in place, since there is nothing else to do
+      // here but buy more.
+      await Navigator.of(context).push(
+        MaterialPageRoute<void>(
+          builder: (_) => const HintStoreScreen(source: 'question_screen'),
+        ),
+      );
+    } on StoreException catch (error) {
+      if (mounted) {
+        final key = switch (error.failure) {
+          StoreFailure.network => 'hints.err_network',
+          StoreFailure.notAllowed => 'hints.err_not_allowed',
+          StoreFailure.unavailable => 'hints.err_unavailable',
+          StoreFailure.nothingToRestore => 'hints.err_generic',
+          StoreFailure.other => 'hints.err_generic',
+        };
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text(strings?.c(key) ?? ''),
+            behavior: SnackBarBehavior.floating,
+          ),
+        );
+      }
+    } finally {
+      if (mounted) setState(() => _spendingHint = false);
     }
   }
 }
@@ -859,6 +883,46 @@ class _SubmitBar extends StatelessWidget {
           shape: const RoundedRectangleBorder(borderRadius: ColdRadius.card),
         ),
         child: Text(label, style: ColdType.label.copyWith(fontSize: 15)),
+      ),
+    );
+  }
+}
+
+/// Spends a hint token to reveal a 50/50 on this question. Outlined rather
+/// than filled — the submit bar is the one action every question wants, this
+/// is an optional one the player reaches for only when stuck.
+class _HintButton extends StatelessWidget {
+  final String label;
+  final bool busy;
+  final VoidCallback onTap;
+
+  const _HintButton({required this.label, required this.busy, required this.onTap});
+
+  @override
+  Widget build(BuildContext context) {
+    final device = context.device;
+
+    return SizedBox(
+      width: double.infinity,
+      child: OutlinedButton.icon(
+        onPressed: busy ? null : onTap,
+        style: OutlinedButton.styleFrom(
+          foregroundColor: device.accent,
+          side: BorderSide(color: device.accent.withValues(alpha: 0.5)),
+          padding: const EdgeInsets.symmetric(vertical: 12),
+          shape: const RoundedRectangleBorder(borderRadius: ColdRadius.card),
+        ),
+        icon: busy
+            ? SizedBox(
+                width: 16,
+                height: 16,
+                child: CircularProgressIndicator(
+                  strokeWidth: 2,
+                  color: device.accent,
+                ),
+              )
+            : const Icon(Icons.lightbulb_outline_rounded, size: 18),
+        label: Text(label, style: ColdType.label.copyWith(fontSize: 14)),
       ),
     );
   }
