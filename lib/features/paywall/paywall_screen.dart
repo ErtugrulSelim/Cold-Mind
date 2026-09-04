@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:url_launcher/url_launcher.dart';
 
+import '../../core/app_config.dart';
 import '../../core/theme/cold_theme.dart';
 import '../../data/l10n/case_strings.dart';
 import '../../data/providers/case_providers.dart';
@@ -554,7 +556,10 @@ class _Continue extends StatelessWidget {
   }
 }
 
-/// Terms and privacy. Both stores require them on the screen that sells.
+/// Terms and privacy. Both stores require them on the screen that sells —
+/// and require them to actually open, not just be printed, which is why
+/// each one reads its URL from [AppConfig] and launches it, the same as the
+/// matching rows in Settings.
 class _LegalLine extends StatelessWidget {
   final CaseStrings? strings;
 
@@ -571,10 +576,43 @@ class _LegalLine extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Text(strings?.c('settings.terms') ?? 'Terms of Use', style: style),
+        _LegalLink(
+          label: strings?.c('settings.terms') ?? 'Terms of Use',
+          url: AppConfig.termsUrl,
+          style: style,
+        ),
         Text('  ·  ', style: style),
-        Text(strings?.c('settings.privacy') ?? 'Privacy Policy', style: style),
+        _LegalLink(
+          label: strings?.c('settings.privacy') ?? 'Privacy Policy',
+          url: AppConfig.privacyUrl,
+          style: style,
+        ),
       ],
+    );
+  }
+}
+
+class _LegalLink extends StatelessWidget {
+  final String label;
+  final String url;
+  final TextStyle style;
+
+  const _LegalLink({
+    required this.label,
+    required this.url,
+    required this.style,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    // Empty until the publisher's own legal pages are ready (AppConfig ships
+    // them empty on purpose) — the line still has to be here for the store
+    // reviewers, but there is nothing to open yet, so it is not tappable.
+    if (url.isEmpty) return Text(label, style: style);
+
+    return GestureDetector(
+      onTap: () => launchUrl(Uri.parse(url), mode: LaunchMode.externalApplication),
+      child: Text(label, style: style),
     );
   }
 }

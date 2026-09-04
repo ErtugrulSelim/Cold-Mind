@@ -45,6 +45,24 @@ class AppConfig {
   static const String termsUrl = '';
   static const String privacyUrl = '';
 
+  /// RevenueCat's public SDK keys, one per store. These are meant to ship
+  /// inside the client binary — RevenueCat does not treat them as secrets —
+  /// so there is nothing to hide here, only something to fill in.
+  ///
+  /// Empty until then: [hasRevenueCatKeys] is what `main.dart` asks before
+  /// calling `Purchases.configure`, and an unconfigured build keeps running
+  /// on `UnconfiguredStore` exactly as it does today.
+  static const String revenueCatAppleKey = '';
+  static const String revenueCatGoogleKey = '';
+
+  /// The entitlement identifier configured in the RevenueCat dashboard.
+  /// Every plan (weekly, yearly) grants this same entitlement, so this is
+  /// the one string both `purchase()` and `restore()` check.
+  static const String revenueCatEntitlementId = 'pro';
+
+  static bool get hasRevenueCatKeys =>
+      (Platform.isIOS ? revenueCatAppleKey : revenueCatGoogleKey).isNotEmpty;
+
   static bool get hasDownloadLink => downloadUrl.isNotEmpty;
   static bool get hasTerms => termsUrl.isNotEmpty;
   static bool get hasPrivacy => privacyUrl.isNotEmpty;

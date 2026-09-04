@@ -132,7 +132,13 @@ class RatingPrompted extends _$RatingPrompted {
 /// true — so until a real billing SDK is behind [Store], this stays false for
 /// everybody and every case past the first stays gated. That is the correct
 /// behaviour for a build with no payment system connected, not a bug in this
-/// flag: see [PaywallScreen], which is the only place that ever sets it.
+/// flag.
+///
+/// [PaywallScreen] is what sets it true, the moment a purchase or restore
+/// succeeds. [revoke] exists for the other direction: `main()` asks
+/// RevenueCat's own cached `CustomerInfo` once at startup and calls it if the
+/// entitlement has lapsed, so a cancelled or refunded subscription does not
+/// stay unlocked on this device forever.
 @Riverpod(keepAlive: true)
 class IsSubscribed extends _$IsSubscribed {
   static const String _key = 'is_subscribed';
@@ -143,5 +149,10 @@ class IsSubscribed extends _$IsSubscribed {
   Future<void> grant() async {
     await ref.read(sharedPreferencesProvider).setBool(_key, true);
     state = true;
+  }
+
+  Future<void> revoke() async {
+    await ref.read(sharedPreferencesProvider).setBool(_key, false);
+    state = false;
   }
 }
