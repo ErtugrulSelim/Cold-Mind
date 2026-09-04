@@ -137,7 +137,7 @@ class _MapsScreenState extends State<MapsScreen>
             // of "the map sometimes doesn't show".
             TileLayer(
               urlTemplate: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
-              userAgentPackageName: 'com.coldmind',
+              userAgentPackageName: 'com.koalacache.coldmind',
               // Keep the device register: the tiles are a warm daylight map
               // and every other pixel on this phone is not.
               tileBuilder: (context, tile, image) => ColorFiltered(

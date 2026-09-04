@@ -34,7 +34,7 @@ class AppConfig {
   static const String appStoreId = '';
 
   /// Already real: this is what the Android build actually ships as.
-  static const String androidPackage = 'com.coldmind';
+  static const String androidPackage = 'com.koalacache.coldmind';
 
   /// Where "Send App Download Link" points. A share sheet with no link in it
   /// is worse than no share button.
