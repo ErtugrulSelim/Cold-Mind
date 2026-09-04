@@ -42,7 +42,7 @@ class AppConfig {
   /// calling `Purchases.configure`, and an unconfigured build keeps running
   /// on `UnconfiguredStore` exactly as it does today.
   static const String revenueCatAppleKey = '';
-  static const String revenueCatGoogleKey = '';
+  static const String revenueCatGoogleKey = 'goog_LcVOeyqgYRNTHEuvGIXXyYlroUs';
 
   /// The entitlement identifier configured in the RevenueCat dashboard.
   /// Every plan (weekly, yearly) grants this same entitlement, so this is
