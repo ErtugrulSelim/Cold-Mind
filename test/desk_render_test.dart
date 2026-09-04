@@ -8,6 +8,7 @@ import 'package:coldmind/data/repository/case_repository.dart';
 import 'package:coldmind/features/case_flow/client_chat_screen.dart';
 import 'package:coldmind/features/case_flow/connecting_screen.dart';
 import 'package:coldmind/features/cases/case_list_screen.dart';
+import 'package:coldmind/features/hints/hint_store_screen.dart';
 import 'package:coldmind/features/paywall/paywall_screen.dart';
 import 'package:coldmind/features/paywall/store.dart';
 import 'package:flutter/material.dart';
@@ -141,6 +142,29 @@ void main() {
       );
     }
     expect(find.text(common.c('paywall.continue')), findsOneWidget);
+    expect([for (final d in caught) '${d.exception}'].where(_isReal), isEmpty);
+  });
+
+  testWidgets('the hint store draws its balance and title on an unconfigured store', (
+    tester,
+  ) async {
+    usePhoneSurface(tester);
+
+    final caught = <FlutterErrorDetails>[];
+    final previous = FlutterError.onError;
+    FlutterError.onError = caught.add;
+
+    await tester.pumpWidget(host(const HintStoreScreen()));
+    await tester.pump(const Duration(milliseconds: 400));
+
+    FlutterError.onError = previous;
+
+    // UnconfiguredHintStore reports a balance of zero and no packs — the
+    // exact state a player with no store connected should see, and the one
+    // this screen has to draw without overflowing rather than throw.
+    expect(find.text(common.c('hints.title')), findsOneWidget);
+    expect(find.text('0'), findsOneWidget);
+    expect(find.text(common.c('hints.empty')), findsOneWidget);
     expect([for (final d in caught) '${d.exception}'].where(_isReal), isEmpty);
   });
 
