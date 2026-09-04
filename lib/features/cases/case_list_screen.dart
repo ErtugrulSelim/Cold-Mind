@@ -3,7 +3,6 @@ import 'dart:ui' show ImageFilter;
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../core/app_config.dart';
 import '../../core/theme/cold_theme.dart';
 import '../../data/l10n/case_strings.dart';
 import '../../data/models/case_summary.dart';
@@ -134,10 +133,10 @@ class _Deck extends ConsumerWidget {
                   // Only the first case is free to open cold. Everything
                   // after it needs a subscription — see `IsSubscribed` for
                   // why that stays false on every build shipped so far.
-                  // `AppConfig.reviewMode` is the one exception: a reviewer
+                  // `reviewModeProvider` is the one exception: a reviewer
                   // cannot subscribe on an unconfigured store either.
                   final locked =
-                      !AppConfig.reviewMode &&
+                      !ref.watch(reviewModeProvider) &&
                       summary.id != freeCaseId &&
                       !ref.watch(isSubscribedProvider);
 

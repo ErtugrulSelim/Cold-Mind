@@ -42,6 +42,8 @@ dependencies:
   share_plus: ^13.3.0
   purchases_flutter: ^10.11.0
   intl: ^0.20.3
+  firebase_core: ^4.14.0
+  firebase_remote_config: ^6.6.0
 
 dev_dependencies:
   flutter_test:

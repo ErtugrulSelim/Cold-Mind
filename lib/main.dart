@@ -1,5 +1,7 @@
 import 'dart:io';
 
+import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_remote_config/firebase_remote_config.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -12,9 +14,11 @@ import 'data/providers/settings_providers.dart';
 import 'features/cases/case_list_screen.dart';
 import 'features/paywall/revenuecat_store.dart';
 import 'features/paywall/store.dart';
+import 'firebase_options.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
 
   // Preferences are resolved once, here, and injected. Everything downstream
   // then reads them synchronously instead of awaiting a future per lookup —
@@ -32,6 +36,26 @@ Future<void> main() async {
         storeProvider.overrideWithValue(const RevenueCatStore()),
     ],
   );
+
+  // Fetched once, here, same as the RevenueCat sync below — a fresh value
+  // every launch rather than something read reactively per-screen, and
+  // swallowed on failure (offline, first launch before anything is cached)
+  // so `reviewModeProvider` just keeps its safe `false` default.
+  try {
+    final remoteConfig = FirebaseRemoteConfig.instance;
+    await remoteConfig.setConfigSettings(
+      RemoteConfigSettings(
+        fetchTimeout: const Duration(seconds: 10),
+        minimumFetchInterval: const Duration(hours: 1),
+      ),
+    );
+    await remoteConfig.fetchAndActivate();
+    container
+        .read(reviewModeProvider.notifier)
+        .set(remoteConfig.getBool('review_mode'));
+  } catch (_) {
+    // Nothing to sync this launch; reviewModeProvider stays false.
+  }
 
   // No keys filled in yet → skip entirely and keep running on
   // UnconfiguredStore, exactly like every other AppConfig field that ships

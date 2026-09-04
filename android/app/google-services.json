@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "578389756091",
+    "project_id": "coldmind-koalacache",
+    "storage_bucket": "coldmind-koalacache.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:578389756091:android:30f2fb47ea3b95c11e019e",
+        "android_client_info": {
+          "package_name": "com.koalacache.coldmind"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA90wFgbulXW2UTWqNi8u99RR3FcrYs0mw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

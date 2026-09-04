@@ -582,9 +582,9 @@ class _QuestionScreenState extends ConsumerState<QuestionScreen> {
     // The free case's own trial ends here: three questions read for free,
     // then a subscription to keep going. Every other case is already gated
     // shut on the deck (`case_list_screen.dart`), so this only ever fires
-    // for `freeCaseId`. `AppConfig.reviewMode` skips it the same way the
+    // for `freeCaseId`. `reviewModeProvider` skips it the same way the
     // deck's lock does, for the same reason.
-    if (!AppConfig.reviewMode &&
+    if (!ref.read(reviewModeProvider) &&
         solved == 3 &&
         widget.caseId == freeCaseId &&
         !ref.read(isSubscribedProvider)) {

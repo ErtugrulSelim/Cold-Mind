@@ -17,17 +17,6 @@ import 'package:url_launcher/url_launcher.dart';
 class AppConfig {
   const AppConfig._();
 
-  /// Flip this to `true` for the build submitted to App/Play review, and
-  /// back to `false` before it ships.
-  ///
-  /// A reviewer cannot subscribe on `UnconfiguredStore` any more than a
-  /// player can — it always throws — so a build gated the normal way is a
-  /// build that cannot be reviewed past its own paywall. This flag is the
-  /// one place that free pass lives: every check that would lock a case or
-  /// stop the game on question 3 also asks this first, so a review build
-  /// plays every case straight through with nothing to unlock.
-  static const bool reviewMode = false;
-
   /// The App Store numeric id — App Store Connect → App Information → Apple
   /// ID, or the digits after `id` in the apps.apple.com URL. Until it is set,
   /// Rate Us says so on iOS rather than opening nothing.

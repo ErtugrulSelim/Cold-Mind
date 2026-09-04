@@ -1,0 +1,13 @@
+{
+  "parameters": {
+    "review_mode": {
+      "defaultValue": {
+        "value": "false"
+      },
+      "valueType": "BOOLEAN",
+      "description": "Bypasses the paywall for App/Play review builds. Flip to true only for the build submitted to review, back to false before it ships. Mirrors AppConfig.reviewMode."
+    }
+  },
+  "parameterGroups": {},
+  "conditions": []
+}

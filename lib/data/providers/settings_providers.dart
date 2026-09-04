@@ -156,3 +156,26 @@ class IsSubscribed extends _$IsSubscribed {
     state = false;
   }
 }
+
+/// Bypasses the paywall for App/Play review builds — the one flag a
+/// reviewer needs, since a reviewer cannot subscribe on `UnconfiguredStore`
+/// any more than a player can. Every check that would lock a case or stop
+/// the game on question 3 asks this first, so a review build plays every
+/// case straight through with nothing to unlock.
+///
+/// Backed by Firebase Remote Config's `review_mode` boolean rather than a
+/// compile-time constant, so it can be flipped for the build under review
+/// and back again without a new submission. `build()` itself has no Firebase
+/// dependency and stays `false` until told otherwise — safe for widget tests,
+/// which never call `main()` — because `main()` is the only place [set] is
+/// ever called, once, right after Remote Config is fetched and activated at
+/// startup. Not persisted to `SharedPreferences`: this is meant to reflect
+/// whatever the remote value says on THIS launch, not to survive a change
+/// while the app was closed.
+@Riverpod(keepAlive: true)
+class ReviewMode extends _$ReviewMode {
+  @override
+  bool build() => false;
+
+  void set(bool value) => state = value;
+}
