@@ -49,7 +49,8 @@
         "following_count": 640,
         "is_private": false,
         "post_ids": [
-          "post_p001_01"
+          "post_p001_01",
+          "post_p001_02"
         ]
       },
       "age": 36,
@@ -107,7 +108,8 @@
         "following_count": 512,
         "is_private": false,
         "post_ids": [
-          "post_p003_01"
+          "post_p003_01",
+          "post_p003_02"
         ]
       },
       "age": 27,
@@ -213,6 +215,19 @@
       "video_asset": "assets/stock/video/f02.mp4"
     },
     {
+      "id": "post_p001_02",
+      "caption": "back to back today, but this is why we do it",
+      "like_count": 214,
+      "tags": [
+        "berlin"
+      ],
+      "comments": [],
+      "person_id": "p001",
+      "timestamp": "2025-02-11T08:20:00",
+      "liked_by_owner": false,
+      "image_asset": "assets/stock/photos/f49.jpg"
+    },
+    {
       "id": "post_p002_01",
       "caption": "Taking commissions again. Independent now — every piece leaves my hands finished.",
       "like_count": 410,
@@ -223,7 +238,7 @@
       "person_id": "p002",
       "timestamp": "2025-02-06T10:20:00",
       "liked_by_owner": true,
-      "image_asset": "assets/stock/photos/f24.jpg"
+      "image_asset": "assets/stock/photos/f40.jpg"
     },
     {
       "id": "post_p003_01",
@@ -235,6 +250,19 @@
       "timestamp": "2025-03-16T23:40:00",
       "liked_by_owner": false,
       "image_asset": "assets/stock/photos/f38.jpg"
+    },
+    {
+      "id": "post_p003_02",
+      "caption": "field recording, unpaid, entirely worth it",
+      "like_count": 176,
+      "tags": [
+        "sound"
+      ],
+      "comments": [],
+      "person_id": "p003",
+      "timestamp": "2025-01-19T15:50:00",
+      "liked_by_owner": true,
+      "image_asset": "assets/stock/photos/f59.jpg"
     },
     {
       "id": "post_stock_01",

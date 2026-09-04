@@ -4673,6 +4673,10 @@
     },
     "photos": {
       "recents": [
+        "ph_035",
+        "ph_036",
+        "ph_033",
+        "ph_034",
         "ph_002",
         "ph_007",
         "ph_001",
@@ -4766,6 +4770,30 @@
       "hidden": [],
       "recently_deleted": [],
       "items": [
+        {
+          "id": "ph_035",
+          "asset": "assets/cases/s05/photos/opicina_tram_stop.jpg",
+          "taken_at": "2025-09-08T14:15:00",
+          "location": "Opicina"
+        },
+        {
+          "id": "ph_036",
+          "asset": "assets/cases/s05/photos/trieste_canal_evening.jpg",
+          "taken_at": "2025-08-22T20:05:00",
+          "location": "Trieste"
+        },
+        {
+          "id": "ph_033",
+          "asset": "assets/cases/s05/photos/trieste_waterfront.jpg",
+          "taken_at": "2025-11-02T19:45:00",
+          "location": "Trieste"
+        },
+        {
+          "id": "ph_034",
+          "asset": "assets/cases/s05/photos/carso_stone_path.jpg",
+          "taken_at": "2025-10-20T15:30:00",
+          "location": "Carso"
+        },
         {
           "id": "ph_001",
           "asset": "assets/cases/s05/photos/quay.jpg",

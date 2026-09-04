@@ -5787,6 +5787,10 @@
     },
     "photos": {
       "recents": [
+        "ph_036",
+        "ph_037",
+        "ph_034",
+        "ph_035",
         "ph_030",
         "ph_031",
         "ph_032",
@@ -5868,6 +5872,30 @@
       "hidden": [],
       "recently_deleted": [],
       "items": [
+        {
+          "id": "ph_036",
+          "asset": "assets/cases/s08/photos/krakow_vistula_riverbank.jpg",
+          "taken_at": "2026-03-01T19:10:00",
+          "location": "Kraków"
+        },
+        {
+          "id": "ph_037",
+          "asset": "assets/cases/s08/photos/whitby_199_steps.jpg",
+          "taken_at": "2025-12-10T13:45:00",
+          "location": "Whitby"
+        },
+        {
+          "id": "ph_034",
+          "asset": "assets/cases/s08/photos/krakow_old_town.jpg",
+          "taken_at": "2026-02-11T19:30:00",
+          "location": "Kraków"
+        },
+        {
+          "id": "ph_035",
+          "asset": "assets/cases/s08/photos/whitby_harbour.jpg",
+          "taken_at": "2026-01-25T15:00:00",
+          "location": "Whitby"
+        },
         {
           "id": "ph_001",
           "asset": "assets/cases/s08/photos/cat.jpg",
@@ -6818,7 +6846,7 @@
         },
         {
           "id": "tr_014",
-          "title": "Champagne",
+          "title": "Quiet Now",
           "artist": "sanah",
           "played_at": "2026-02-21T17:00:00"
         },
@@ -6836,7 +6864,7 @@
         },
         {
           "id": "tr_014",
-          "title": "Champagne",
+          "title": "Quiet Now",
           "artist": "sanah",
           "played_at": "2025-12-20T13:20:00"
         },
@@ -6854,7 +6882,7 @@
         },
         {
           "id": "tr_014",
-          "title": "Champagne",
+          "title": "Quiet Now",
           "artist": "sanah",
           "played_at": "2025-09-19T12:40:00"
         }
@@ -6892,7 +6920,7 @@
         },
         {
           "id": "tr_014",
-          "title": "Champagne",
+          "title": "Quiet Now",
           "artist": "sanah"
         },
         {

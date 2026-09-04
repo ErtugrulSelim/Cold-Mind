@@ -3380,6 +3380,10 @@
     },
     "photos": {
       "recents": [
+        "ph_040",
+        "ph_041",
+        "ph_038",
+        "ph_039",
         "ph_026",
         "ph_001",
         "ph_012",
@@ -3485,6 +3489,30 @@
       "hidden": [],
       "recently_deleted": [],
       "items": [
+        {
+          "id": "ph_040",
+          "asset": "assets/cases/s02/photos/neukolln_market_stall.jpg",
+          "taken_at": "2024-12-15T08:00:00",
+          "location": "Neukölln"
+        },
+        {
+          "id": "ph_041",
+          "asset": "assets/cases/s02/photos/tempelhof_field_kites.jpg",
+          "taken_at": "2024-10-20T16:30:00",
+          "location": "Berlin"
+        },
+        {
+          "id": "ph_038",
+          "asset": "assets/cases/s02/photos/uferhallen_courtyard.jpg",
+          "taken_at": "2025-01-25T19:30:00",
+          "location": "Uferhallen, Wedding"
+        },
+        {
+          "id": "ph_039",
+          "asset": "assets/cases/s02/photos/landwehrkanal_towpath.jpg",
+          "taken_at": "2024-11-09T16:15:00",
+          "location": "Landwehrkanal"
+        },
         {
           "id": "ph_001",
           "asset": "assets/cases/s02/photos/studio.jpg",

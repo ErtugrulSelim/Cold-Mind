@@ -165,7 +165,7 @@
     "asset": "assets/stock/photos/f24.jpg",
     "model": "mystic",
     "aspect": "square_1_1",
-    "prompt": "Three glasses of beer on a pub table with beer mats, seen from a seated height. Ordinary smartphone social media snapshot, natural available light, casual off-centre composition, slight handheld imperfection, photographic realism, no people, no faces, no text, no writing, no signage, no brand names, no logos."
+    "prompt": "Two mismatched mugs of tea on a café windowsill, steam catching the light, seen from a seated height. Ordinary smartphone social media snapshot, natural available light, casual off-centre composition, slight handheld imperfection, photographic realism, no people, no faces, no text, no writing, no signage, no brand names, no logos, no alcohol."
   },
   {
     "name": "stock_f25",
@@ -334,5 +334,89 @@
     "model": "mystic",
     "aspect": "square_1_1",
     "prompt": "A window seat on a plane above a solid deck of cloud at sunrise. Ordinary smartphone social media snapshot, natural available light, casual off-centre composition, slight handheld imperfection, photographic realism, no people, no faces, no text, no writing, no signage, no brand names, no logos."
+  },
+  {
+    "name": "stock_f49",
+    "asset": "assets/stock/photos/f49.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "A busy pedestrian crossing at dusk, city lights blurring, a crowd of commuters seen from behind and side-on, nobody's face turned toward the camera. Ordinary smartphone social media snapshot, natural available light, casual off-centre composition, slight handheld imperfection, motion blur on the walking figures, photographic realism, no faces in focus, no text, no writing, no signage, no brand names, no logos, no alcohol."
+  },
+  {
+    "name": "stock_f50",
+    "asset": "assets/stock/photos/f50.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "Two people's hands passing a plate of food across a small café table, both people cropped out above the wrist. Ordinary smartphone social media snapshot, natural available light, casual off-centre composition, slight handheld imperfection, photographic realism, no faces, no text, no writing, no signage, no brand names, no logos, no alcohol."
+  },
+  {
+    "name": "stock_f51",
+    "asset": "assets/stock/photos/f51.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "A concert crowd seen from behind, raised arms and phone screens glowing toward a distant stage, coloured stage light washing over the backs of heads. Ordinary smartphone social media snapshot, natural available light, casual off-centre composition, slight handheld imperfection, photographic realism, no faces, no text, no writing, no signage, no brand names, no logos, no alcohol."
+  },
+  {
+    "name": "stock_f52",
+    "asset": "assets/stock/photos/f52.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "Two long shadows stretching across sunlit pavement, cast by two people walking away from the camera, neither turned back. Ordinary smartphone social media snapshot, natural available light, casual off-centre composition, slight handheld imperfection, photographic realism, no faces, no text, no writing, no signage, no brand names, no logos, no alcohol."
+  },
+  {
+    "name": "stock_f53",
+    "asset": "assets/stock/photos/f53.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "A crowded morning tram interior seen from behind the standing passengers, coat backs and shoulders filling most of the frame, one hand gripping an overhead strap, every head turned away from the camera toward the windows. Ordinary smartphone social media snapshot, natural available light, casual off-centre composition, slight handheld imperfection, photographic realism, camera at the back of the crowd so no face is visible at all, no text, no writing, no signage, no brand names, no logos, no alcohol."
+  },
+  {
+    "name": "stock_f54",
+    "asset": "assets/stock/photos/f54.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "A queue of people waiting outside a shopfront in light rain, umbrellas up and hoods raised, faces hidden under them. Ordinary smartphone social media snapshot, natural available light, casual off-centre composition, slight handheld imperfection, photographic realism, no faces, no text, no writing, no signage, no brand names, no logos, no alcohol."
+  },
+  {
+    "name": "stock_f55",
+    "asset": "assets/stock/photos/f55.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "A child's hand held in an adult's hand crossing a quiet street, both people cropped out above the shoulder, small shoes and long shoes mid-step. Ordinary smartphone social media snapshot, natural available light, casual off-centre composition, slight handheld imperfection, photographic realism, no faces, no text, no writing, no signage, no brand names, no logos, no alcohol."
+  },
+  {
+    "name": "stock_f56",
+    "asset": "assets/stock/photos/f56.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "A cyclist mid-motion blurring past the camera on a narrow city street, cobbles sharp in focus and the rider streaked with speed. Ordinary smartphone social media snapshot, natural available light, casual off-centre composition, slight handheld imperfection, photographic realism, no faces in focus, no text, no writing, no signage, no brand names, no logos, no alcohol."
+  },
+  {
+    "name": "stock_f57",
+    "asset": "assets/stock/photos/f57.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "A market vendor's hands weighing fruit on an old brass scale, a customer's out-of-focus shoulder waiting behind, neither face in the frame. Ordinary smartphone social media snapshot, natural available light, casual off-centre composition, slight handheld imperfection, photographic realism, no faces, no text, no writing, no signage, no brand names, no logos, no alcohol."
+  },
+  {
+    "name": "stock_f58",
+    "asset": "assets/stock/photos/f58.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "A circle of backpacks, a frisbee and a portable speaker dropped in the middle of a picnic blanket in a park, seen from directly above, a few crossed forearms resting at the edges of frame. Ordinary smartphone social media snapshot, natural available light, casual off-centre composition, slight handheld imperfection, photographic realism, no faces, no bare skin, no feet, no text, no writing, no signage, no brand names, no logos, no alcohol."
+  },
+  {
+    "name": "stock_f59",
+    "asset": "assets/stock/photos/f59.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "A small crowd gathered at a street corner watching a busker play, backs and shoulders in a loose half-circle, an open guitar case with a few coins in it at the front. Ordinary smartphone social media snapshot, natural available light, casual off-centre composition, slight handheld imperfection, photographic realism, no faces, no text, no writing, no signage, no brand names, no logos, no alcohol."
+  },
+  {
+    "name": "stock_f60",
+    "asset": "assets/stock/photos/f60.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "Two people's clasped hands resting on a hospital waiting-room armrest, the rest of both figures out of frame, a vending machine glowing in the background. Ordinary smartphone social media snapshot, natural available light, casual off-centre composition, slight handheld imperfection, photographic realism, no faces, no text, no writing, no signage, no brand names, no logos, no alcohol."
   }
 ]

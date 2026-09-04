@@ -98,7 +98,8 @@
         "is_private": false,
         "post_ids": [
           "post_p003_01",
-          "post_p003_02"
+          "post_p003_02",
+          "post_p003_03"
         ]
       },
       "age": 26,
@@ -171,7 +172,7 @@
       "personality_tags": [
         "sauna",
         "cycling",
-        "beer"
+        "coffee"
       ]
     },
     {
@@ -190,7 +191,8 @@
         "following_count": 890,
         "is_private": false,
         "post_ids": [
-          "post_p007_01"
+          "post_p007_01",
+          "post_p007_02"
         ]
       },
       "age": 29,
@@ -336,6 +338,19 @@
       "image_asset": "assets/stock/photos/f27.jpg"
     },
     {
+      "id": "post_p003_03",
+      "caption": "worth the queue",
+      "like_count": 268,
+      "tags": [
+        "gig"
+      ],
+      "comments": [],
+      "person_id": "p003",
+      "timestamp": "2025-03-22T23:05:00",
+      "liked_by_owner": false,
+      "image_asset": "assets/stock/photos/f51.jpg"
+    },
+    {
       "id": "post_p006_01",
       "caption": "-14°C outside, 92°C inside. Balance.",
       "location": "Viimsi",
@@ -376,6 +391,19 @@
       "timestamp": "2025-02-11T16:30:00",
       "liked_by_owner": true,
       "image_asset": "assets/stock/photos/f01.jpg"
+    },
+    {
+      "id": "post_p007_02",
+      "caption": "market before the studio, every Saturday, no exceptions",
+      "like_count": 189,
+      "tags": [
+        "market"
+      ],
+      "comments": [],
+      "person_id": "p007",
+      "timestamp": "2025-02-22T09:40:00",
+      "liked_by_owner": true,
+      "image_asset": "assets/stock/photos/f57.jpg"
     },
     {
       "id": "f_ig_101",
@@ -518,7 +546,7 @@
       "person_id": "p008",
       "timestamp": "2024-11-11T05:37:00",
       "liked_by_owner": false,
-      "image_asset": "assets/stock/photos/f24.jpg"
+      "image_asset": "assets/stock/photos/f01.jpg"
     },
     {
       "id": "f_ig_114",

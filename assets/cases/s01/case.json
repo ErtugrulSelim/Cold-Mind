@@ -5097,6 +5097,10 @@
     },
     "photos": {
       "recents": [
+        "ph_043",
+        "ph_044",
+        "ph_041",
+        "ph_042",
         "ph_022",
         "ph_014",
         "ph_010",
@@ -5207,6 +5211,30 @@
       "hidden": [],
       "recently_deleted": [],
       "items": [
+        {
+          "id": "ph_043",
+          "asset": "assets/cases/s01/photos/vanalinn_cafe_morning.jpg",
+          "taken_at": "2025-01-20T06:45:00",
+          "location": "Vanalinn"
+        },
+        {
+          "id": "ph_044",
+          "asset": "assets/cases/s01/photos/pirita_marina_winter.jpg",
+          "taken_at": "2025-01-05T09:30:00",
+          "location": "Pirita"
+        },
+        {
+          "id": "ph_041",
+          "asset": "assets/cases/s01/photos/kalamaja_evening.jpg",
+          "taken_at": "2025-02-16T20:40:00",
+          "location": "Kalamaja"
+        },
+        {
+          "id": "ph_042",
+          "asset": "assets/cases/s01/photos/viimsi_sauna_smoke.jpg",
+          "taken_at": "2025-02-15T18:05:00",
+          "location": "Viimsi"
+        },
         {
           "id": "ph_001",
           "asset": "assets/cases/s01/photos/desk.jpg",

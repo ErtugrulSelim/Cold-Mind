@@ -1,0 +1,142 @@
+[
+  {
+    "name": "s01_kalamaja_evening",
+    "asset": "assets/cases/s01/photos/kalamaja_evening.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "A quiet street of wooden Estonian houses in Kalamaja, Tallinn, at dusk, warm window light, bicycles leaning against a fence. Ordinary smartphone snapshot, natural available light, casual off-centre composition, photographic realism, no people, no text, no writing, no signage, no brand names, no logos, no alcohol."
+  },
+  {
+    "name": "s01_viimsi_sauna_smoke",
+    "asset": "assets/cases/s01/photos/viimsi_sauna_smoke.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "Smoke rising from a wooden sauna chimney by the coast at Viimsi near Tallinn, dusk light over calm water, a stack of towels on a bench outside. Ordinary smartphone snapshot, natural available light, casual off-centre composition, photographic realism, no people, no text, no writing, no signage, no brand names, no logos, no alcohol."
+  },
+  {
+    "name": "s02_uferhallen_courtyard",
+    "asset": "assets/cases/s02/photos/uferhallen_courtyard.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "An industrial brick courtyard at the Uferhallen studios in Wedding, Berlin, bicycles chained along a wall, a roller door half open. Ordinary smartphone snapshot, natural available light, casual off-centre composition, photographic realism, no people, no text, no writing, no signage, no brand names, no logos, no alcohol."
+  },
+  {
+    "name": "s02_landwehrkanal_towpath",
+    "asset": "assets/cases/s02/photos/landwehrkanal_towpath.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "The Landwehrkanal towpath in Berlin in autumn, fallen leaves on the path, a jogger blurred with distance in the background, reflections in the still water. Ordinary smartphone snapshot, natural available light, casual off-centre composition, photographic realism, no faces in focus, no text, no writing, no signage, no brand names, no logos, no alcohol."
+  },
+  {
+    "name": "s03_graslei_evening",
+    "asset": "assets/cases/s03/photos/graslei_evening.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "The Graslei waterfront in Ghent at evening, medieval guild house facades lit warm against a darkening sky, reflections on the canal. Ordinary smartphone snapshot, natural available light, casual off-centre composition, photographic realism, no people, no text, no writing, no signage, no brand names, no logos, no alcohol."
+  },
+  {
+    "name": "s03_coupure_bikes",
+    "asset": "assets/cases/s03/photos/coupure_bikes.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "A row of bicycles locked to railings along the Coupure canal in Ghent, overcast daylight, tree branches overhead. Ordinary smartphone snapshot, natural available light, casual off-centre composition, photographic realism, no people, no text, no writing, no signage, no brand names, no logos, no alcohol."
+  },
+  {
+    "name": "s04_foz_lighthouse",
+    "asset": "assets/cases/s04/photos/foz_lighthouse.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "The lighthouse at Foz do Douro in Porto at evening, waves breaking on the rocks below, the sky turning orange over the river mouth. Ordinary smartphone snapshot, natural available light, casual off-centre composition, photographic realism, no people, no text, no writing, no signage, no brand names, no logos, no alcohol."
+  },
+  {
+    "name": "s04_mercado_bolhao_morning",
+    "asset": "assets/cases/s04/photos/mercado_bolhao_morning.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "Fruit and flower stalls at the Mercado do Bolhão in Porto in early morning light, crates of produce, a vendor's silhouette distant and out of focus. Ordinary smartphone snapshot, natural available light, casual off-centre composition, photographic realism, no faces in focus, no text, no writing, no signage, no brand names, no logos, no alcohol."
+  },
+  {
+    "name": "s05_trieste_waterfront",
+    "asset": "assets/cases/s05/photos/trieste_waterfront.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "The waterfront piazza in Trieste at golden hour, the open Adriatic beyond, a few distant figures walking along the promenade out of focus. Ordinary smartphone snapshot, natural available light, casual off-centre composition, photographic realism, no faces in focus, no text, no writing, no signage, no brand names, no logos, no alcohol."
+  },
+  {
+    "name": "s05_carso_stone_path",
+    "asset": "assets/cases/s05/photos/carso_stone_path.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "A dry-stone wall path across the Carso plateau above Trieste, wind-bent scrub pines, pale limestone underfoot. Ordinary smartphone snapshot, natural available light, casual off-centre composition, photographic realism, no people, no text, no writing, no signage, no brand names, no logos, no alcohol."
+  },
+  {
+    "name": "s06_stavanger_harbour",
+    "asset": "assets/cases/s06/photos/stavanger_harbour.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "Colourful wooden warehouse buildings along the harbour in Stavanger, Norway, fishing boats moored below, overcast Nordic light. Ordinary smartphone snapshot, natural available light, casual off-centre composition, photographic realism, no people, no text, no writing, no signage, no brand names, no logos, no alcohol."
+  },
+  {
+    "name": "s06_stavanger_rain_street",
+    "asset": "assets/cases/s06/photos/stavanger_rain_street.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "A narrow cobbled street in old Stavanger in light rain, white wooden houses, reflections pooling on the stones. Ordinary smartphone snapshot, natural available light, casual off-centre composition, photographic realism, no people, no text, no writing, no signage, no brand names, no logos, no alcohol."
+  },
+  {
+    "name": "s07_galway_docks",
+    "asset": "assets/cases/s07/photos/galway_docks.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "Fishing boats moored at the docks in Galway, Ireland, grey Atlantic sky, coiled ropes and lobster pots stacked on the quay. Ordinary smartphone snapshot, natural available light, casual off-centre composition, photographic realism, no people, no text, no writing, no signage, no brand names, no logos, no alcohol."
+  },
+  {
+    "name": "s07_connemara_bog_road",
+    "asset": "assets/cases/s07/photos/connemara_bog_road.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "A single-track bog road through Connemara, Ireland, low mountains in the distance, sheep fencing along the verge, changeable sky. Ordinary smartphone snapshot, natural available light, casual off-centre composition, photographic realism, no people, no text, no writing, no signage, no brand names, no logos, no alcohol."
+  },
+  {
+    "name": "s08_krakow_old_town",
+    "asset": "assets/cases/s08/photos/krakow_old_town.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "A quiet corner of the old town square in Kraków in early evening light, pigeons on the cobbles, a few distant figures out of focus. Ordinary smartphone snapshot, natural available light, casual off-centre composition, photographic realism, no faces in focus, no text, no writing, no signage, no brand names, no logos, no alcohol."
+  },
+  {
+    "name": "s08_whitby_harbour",
+    "asset": "assets/cases/s08/photos/whitby_harbour.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "Whitby harbour at low tide, fishing boats resting on the mud, the abbey ruins visible on the clifftop in the distance under a grey sky. Ordinary smartphone snapshot, natural available light, casual off-centre composition, photographic realism, no people, no text, no writing, no signage, no brand names, no logos, no alcohol."
+  },
+  {
+    "name": "s09_maastricht_vrijthof",
+    "asset": "assets/cases/s09/photos/maastricht_vrijthof.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "The Vrijthof square in Maastricht on a quiet morning, café awnings not yet open, church towers catching early light. Ordinary smartphone snapshot, natural available light, casual off-centre composition, photographic realism, no people, no text, no writing, no signage, no brand names, no logos, no alcohol."
+  },
+  {
+    "name": "s09_maastricht_maas_bridge",
+    "asset": "assets/cases/s09/photos/maastricht_maas_bridge.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "A cyclist crossing a bridge over the Maas river in Maastricht at dusk, city lights beginning to show on the far bank, motion blur on the wheels. Ordinary smartphone snapshot, natural available light, casual off-centre composition, photographic realism, no face in focus, no text, no writing, no signage, no brand names, no logos, no alcohol."
+  },
+  {
+    "name": "s10_bristol_harbourside",
+    "asset": "assets/cases/s10/photos/bristol_harbourside.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "Colourful terraced houses on the hillside above Bristol harbourside, boats moored below, soft overcast light. Ordinary smartphone snapshot, natural available light, casual off-centre composition, photographic realism, no people, no text, no writing, no signage, no brand names, no logos, no alcohol."
+  },
+  {
+    "name": "s10_cardiff_bay",
+    "asset": "assets/cases/s10/photos/cardiff_bay.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "Cardiff Bay waterfront at dusk, still water reflecting the last light, a few gulls on the railing, distant figures walking out of focus. Ordinary smartphone snapshot, natural available light, casual off-centre composition, photographic realism, no faces in focus, no text, no writing, no signage, no brand names, no logos, no alcohol."
+  }
+]

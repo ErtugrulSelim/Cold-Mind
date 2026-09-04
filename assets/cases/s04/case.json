@@ -4955,6 +4955,10 @@
     },
     "photos": {
       "recents": [
+        "ph_050",
+        "ph_051",
+        "ph_048",
+        "ph_049",
         "ph_003",
         "ph_037",
         "ph_002",
@@ -5063,6 +5067,30 @@
       "hidden": [],
       "recently_deleted": [],
       "items": [
+        {
+          "id": "ph_050",
+          "asset": "assets/cases/s04/photos/rua_aleixo_facade.jpg",
+          "taken_at": "2025-05-02T16:50:00",
+          "location": "Rua do Aleixo"
+        },
+        {
+          "id": "ph_051",
+          "asset": "assets/cases/s04/photos/matosinhos_seafront.jpg",
+          "taken_at": "2025-04-14T08:20:00",
+          "location": "Matosinhos"
+        },
+        {
+          "id": "ph_048",
+          "asset": "assets/cases/s04/photos/foz_lighthouse.jpg",
+          "taken_at": "2025-08-19T21:10:00",
+          "location": "Foz do Douro"
+        },
+        {
+          "id": "ph_049",
+          "asset": "assets/cases/s04/photos/mercado_bolhao_morning.jpg",
+          "taken_at": "2025-06-05T09:15:00",
+          "location": "Mercado do Bolhão"
+        },
         {
           "id": "ph_001",
           "asset": "assets/cases/s04/photos/house.jpg",

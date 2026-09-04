@@ -4525,6 +4525,10 @@
     },
     "photos": {
       "recents": [
+        "ph_030",
+        "ph_031",
+        "ph_028",
+        "ph_029",
         "ph_020",
         "ph_021",
         "ph_005",
@@ -4597,6 +4601,30 @@
       "hidden": [],
       "recently_deleted": [],
       "items": [
+        {
+          "id": "ph_030",
+          "asset": "assets/cases/s09/photos/maastricht_bookshop_church.jpg",
+          "taken_at": "2026-03-06T15:30:00",
+          "location": "Maastricht"
+        },
+        {
+          "id": "ph_031",
+          "asset": "assets/cases/s09/photos/maastricht_market_square.jpg",
+          "taken_at": "2026-03-09T08:10:00",
+          "location": "Maastricht"
+        },
+        {
+          "id": "ph_028",
+          "asset": "assets/cases/s09/photos/maastricht_vrijthof.jpg",
+          "taken_at": "2026-03-05T08:20:00",
+          "location": "Maastricht"
+        },
+        {
+          "id": "ph_029",
+          "asset": "assets/cases/s09/photos/maastricht_maas_bridge.jpg",
+          "taken_at": "2026-03-08T19:50:00",
+          "location": "Maastricht"
+        },
         {
           "id": "ph_005",
           "asset": "assets/cases/s09/photos/contact_sheet.jpg",

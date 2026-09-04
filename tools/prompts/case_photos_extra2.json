@@ -1,0 +1,142 @@
+[
+  {
+    "name": "s01_vanalinn_cafe_morning",
+    "asset": "assets/cases/s01/photos/vanalinn_cafe_morning.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "A quiet cobbled inner courtyard in Tallinn's Old Town at dawn, a wooden gate standing open, ivy climbing one stone corner, a single bicycle leaning against the wall, nobody around, plain stone and render walls with no shopfronts, no posters, no signs. Ordinary smartphone snapshot, natural available light, casual off-centre composition, photographic realism, no people, no readable text or lettering anywhere in the frame, no brand names, no logos, no alcohol."
+  },
+  {
+    "name": "s01_pirita_marina_winter",
+    "asset": "assets/cases/s01/photos/pirita_marina_winter.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "A small boat marina at Pirita near Tallinn in winter light, masts bare, a thin skin of ice at the water's edge. Ordinary smartphone snapshot, natural available light, casual off-centre composition, photographic realism, no people, no text, no writing, no signage, no brand names, no logos, no alcohol."
+  },
+  {
+    "name": "s02_neukolln_market_stall",
+    "asset": "assets/cases/s02/photos/neukolln_market_stall.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "A quiet brick courtyard behind an apartment block in Neukölln, Berlin, a row of bicycles chained to a rack, a few potted plants on a windowsill, washing line strung overhead with nothing hanging on it, nobody around, plain brick walls with no posters, no noticeboards, no windows showing an interior. Ordinary smartphone snapshot, natural available light, casual off-centre composition, photographic realism, no people, no readable text or lettering anywhere, no signage, no brand names, no logos, no alcohol."
+  },
+  {
+    "name": "s02_tempelhof_field_kites",
+    "asset": "assets/cases/s02/photos/tempelhof_field_kites.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "The open runway field at Tempelhof in Berlin, kites distant in the sky, wide flat grass and a line of old airport lamps. Ordinary smartphone snapshot, natural available light, casual off-centre composition, photographic realism, no faces in focus, no text, no writing, no signage, no brand names, no logos, no alcohol."
+  },
+  {
+    "name": "s03_ajuinlei_quay_morning",
+    "asset": "assets/cases/s03/photos/ajuinlei_quay_morning.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "The Ajuinlei quay in Ghent in early morning mist, narrow gabled houses along the water, a single moored boat. Ordinary smartphone snapshot, natural available light, casual off-centre composition, photographic realism, no people, no text, no writing, no signage, no brand names, no logos, no alcohol."
+  },
+  {
+    "name": "s03_college_gate_ivy",
+    "asset": "assets/cases/s03/photos/college_gate_ivy.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "An ivy-covered brick gateway outside a Belgian secondary school, bicycles racked along the wall, a noticeboard with no readable text. Ordinary smartphone snapshot, natural available light, casual off-centre composition, photographic realism, no people, no text, no writing, no signage, no brand names, no logos, no alcohol."
+  },
+  {
+    "name": "s04_rua_aleixo_facade",
+    "asset": "assets/cases/s04/photos/rua_aleixo_facade.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "A tiled apartment building facade on a steep street in Porto, azulejo tiles catching the afternoon sun, laundry on a balcony line. Ordinary smartphone snapshot, natural available light, casual off-centre composition, photographic realism, no people, no text, no writing, no signage, no brand names, no logos, no alcohol."
+  },
+  {
+    "name": "s04_matosinhos_seafront",
+    "asset": "assets/cases/s04/photos/matosinhos_seafront.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "The seafront promenade at Matosinhos near Porto at low tide, dark volcanic rocks and Atlantic spray, a distant figure jogging out of focus. Ordinary smartphone snapshot, natural available light, casual off-centre composition, photographic realism, no faces in focus, no text, no writing, no signage, no brand names, no logos, no alcohol."
+  },
+  {
+    "name": "s05_opicina_tram_stop",
+    "asset": "assets/cases/s05/photos/opicina_tram_stop.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "An old tram stop at Opicina above Trieste, a wooden shelter and rail tracks curving into pine trees, hazy view of the sea far below. Ordinary smartphone snapshot, natural available light, casual off-centre composition, photographic realism, no people, no text, no writing, no signage, no brand names, no logos, no alcohol."
+  },
+  {
+    "name": "s05_trieste_canal_evening",
+    "asset": "assets/cases/s05/photos/trieste_canal_evening.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "A short, narrow ornamental canal in central Trieste, Italy, ordinary small motorboats moored along plain stone quays on both sides, a modest neoclassical church with a flat triangular pediment (not a dome, not Byzantine, not Venice) closing the far end of the canal at evening light. Ordinary smartphone snapshot, natural available light, casual off-centre composition, photographic realism, no gondolas, no domes, no people, no text, no writing, no signage, no brand names, no logos, no alcohol."
+  },
+  {
+    "name": "s06_stavanger_ferry_terminal",
+    "asset": "assets/cases/s06/photos/stavanger_ferry_terminal.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "A ferry terminal in Stavanger at dusk, a car ferry docking with lights on, fjord water dark and still around the quay. Ordinary smartphone snapshot, natural available light, casual off-centre composition, photographic realism, no people, no text, no writing, no signage, no brand names, no logos, no alcohol."
+  },
+  {
+    "name": "s06_stavanger_park_autumn",
+    "asset": "assets/cases/s06/photos/stavanger_park_autumn.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "A city park in Stavanger in autumn, a lake with ducks, wet fallen leaves on a gravel path, benches empty. Ordinary smartphone snapshot, natural available light, casual off-centre composition, photographic realism, no people, no text, no writing, no signage, no brand names, no logos, no alcohol."
+  },
+  {
+    "name": "s07_cloghmore_crossroads",
+    "asset": "assets/cases/s07/photos/cloghmore_crossroads.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "A quiet rural crossroads near Cloghmore, Ireland, dry-stone walls on both sides, a single parked car in the far distance, empty road surface, no signpost of any kind at the junction. Ordinary smartphone snapshot, natural available light, casual off-centre composition, photographic realism, no people, no signs, no readable text or lettering anywhere in the frame, no brand names, no logos, no alcohol."
+  },
+  {
+    "name": "s07_galway_latin_quarter",
+    "asset": "assets/cases/s07/photos/galway_latin_quarter.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "A row of brightly painted terraced house front doors in Galway, Ireland, each door a different solid colour with a plain brass letterbox and no house numbers, potted plants on the step, cobbles glistening after rain. Ordinary smartphone snapshot, natural available light, casual off-centre composition, photographic realism, no shopfronts, no people, no readable text, numbers or lettering anywhere, no signage, no brand names, no logos, no alcohol."
+  },
+  {
+    "name": "s08_krakow_vistula_riverbank",
+    "asset": "assets/cases/s08/photos/krakow_vistula_riverbank.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "The Vistula riverbank in Kraków at dusk, the castle hill silhouetted across the water, cyclists blurred with distance on the path. Ordinary smartphone snapshot, natural available light, casual off-centre composition, photographic realism, no faces in focus, no text, no writing, no signage, no brand names, no logos, no alcohol."
+  },
+  {
+    "name": "s08_whitby_199_steps",
+    "asset": "assets/cases/s08/photos/whitby_199_steps.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "The stone steps climbing to Whitby Abbey seen from partway up, worn treads and old handrails, gulls overhead against a grey sky. Ordinary smartphone snapshot, natural available light, casual off-centre composition, photographic realism, no people, no text, no writing, no signage, no brand names, no logos, no alcohol."
+  },
+  {
+    "name": "s09_maastricht_bookshop_church",
+    "asset": "assets/cases/s09/photos/maastricht_bookshop_church.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "The interior of a former Gothic church in Maastricht converted into a bookshop, tall vaulted ceiling above rows of bookshelves, warm reading lamps. Ordinary smartphone snapshot, natural available light, casual off-centre composition, photographic realism, no people, no readable text on spines, no signage, no brand names, no logos, no alcohol."
+  },
+  {
+    "name": "s09_maastricht_market_square",
+    "asset": "assets/cases/s09/photos/maastricht_market_square.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "The market square in Maastricht early on a market morning, empty stalls being assembled, the town hall facade catching first light. Ordinary smartphone snapshot, natural available light, casual off-centre composition, photographic realism, no people, no text, no writing, no signage, no brand names, no logos, no alcohol."
+  },
+  {
+    "name": "s10_clifton_suspension_bridge",
+    "asset": "assets/cases/s10/photos/clifton_suspension_bridge.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "The Clifton Suspension Bridge in Bristol seen from the gorge below, the deep wooded gorge and the Avon river beneath it, hazy morning light. Ordinary smartphone snapshot, natural available light, casual off-centre composition, photographic realism, no people, no text, no writing, no signage, no brand names, no logos, no alcohol."
+  },
+  {
+    "name": "s10_cardiff_castle_wall",
+    "asset": "assets/cases/s10/photos/cardiff_castle_wall.jpg",
+    "model": "mystic",
+    "aspect": "square_1_1",
+    "prompt": "The old stone wall of Cardiff Castle along a city street, autumn trees overhanging, a jogger blurred with distance passing on the pavement. Ordinary smartphone snapshot, natural available light, casual off-centre composition, photographic realism, no faces in focus, no text, no writing, no signage, no brand names, no logos, no alcohol."
+  }
+]

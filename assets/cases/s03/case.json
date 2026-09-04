@@ -5313,6 +5313,10 @@
     },
     "photos": {
       "recents": [
+        "ph_034",
+        "ph_035",
+        "ph_032",
+        "ph_033",
         "ph_016",
         "ph_022",
         "ph_030",
@@ -5413,6 +5417,30 @@
       "hidden": [],
       "recently_deleted": [],
       "items": [
+        {
+          "id": "ph_034",
+          "asset": "assets/cases/s03/photos/ajuinlei_quay_morning.jpg",
+          "taken_at": "2025-03-10T07:15:00",
+          "location": "Ajuinlei"
+        },
+        {
+          "id": "ph_035",
+          "asset": "assets/cases/s03/photos/college_gate_ivy.jpg",
+          "taken_at": "2025-02-18T08:40:00",
+          "location": "Sint-Lievens College"
+        },
+        {
+          "id": "ph_032",
+          "asset": "assets/cases/s03/photos/graslei_evening.jpg",
+          "taken_at": "2025-05-14T21:00:00",
+          "location": "Graslei"
+        },
+        {
+          "id": "ph_033",
+          "asset": "assets/cases/s03/photos/coupure_bikes.jpg",
+          "taken_at": "2025-04-02T14:20:00",
+          "location": "Coupure"
+        },
         {
           "id": "ph_001",
           "asset": "assets/cases/s03/photos/volvo.jpg",

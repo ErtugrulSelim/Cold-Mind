@@ -4199,6 +4199,10 @@
     },
     "photos": {
       "recents": [
+        "ph_032",
+        "ph_033",
+        "ph_030",
+        "ph_031",
         "ph_020",
         "ph_021",
         "ph_005",
@@ -4277,6 +4281,30 @@
       "hidden": [],
       "recently_deleted": [],
       "items": [
+        {
+          "id": "ph_032",
+          "asset": "assets/cases/s07/photos/cloghmore_crossroads.jpg",
+          "taken_at": "2026-01-14T15:20:00",
+          "location": "Cloghmore"
+        },
+        {
+          "id": "ph_033",
+          "asset": "assets/cases/s07/photos/galway_latin_quarter.jpg",
+          "taken_at": "2025-12-28T11:00:00",
+          "location": "Galway"
+        },
+        {
+          "id": "ph_030",
+          "asset": "assets/cases/s07/photos/galway_docks.jpg",
+          "taken_at": "2025-12-19T16:00:00",
+          "location": "Galway"
+        },
+        {
+          "id": "ph_031",
+          "asset": "assets/cases/s07/photos/connemara_bog_road.jpg",
+          "taken_at": "2025-11-30T13:45:00",
+          "location": "Connemara"
+        },
         {
           "id": "ph_001",
           "asset": "assets/cases/s07/photos/safe_count_01.jpg",
