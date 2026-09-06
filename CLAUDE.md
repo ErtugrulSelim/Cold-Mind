@@ -452,6 +452,18 @@ flutter test
 flutter run
 ```
 
+**The generated files are committed**, against the usual Dart convention.
+Ignored, they are invisible to git, so switching between `main` and `android`
+left one branch's generated code sitting under the other's source and the app
+did not compile until somebody remembered the command — a failure that reads
+as "Undefined name" in a file nobody edited. Tracked, a branch switch and a
+fresh clone both simply work.
+
+The cost is the other half of the bargain: **re-run `build_runner` and commit
+its output in the same commit as any change to a `@freezed`, `@JsonSerializable`
+or `@riverpod` source.** A stale generated file that is committed is worse than
+one that is merely missing, because it compiles.
+
 
 ## What the data is guarded against
 
