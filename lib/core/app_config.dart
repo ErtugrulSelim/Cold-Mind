@@ -55,7 +55,18 @@ class AppConfig {
   /// of having two entitlements rather than one.
   static const String revenueCatHintsEntitlementId = 'hints';
 
+  /// Forces the build back onto `UnconfiguredStore` even with a real key
+  /// filled in — `flutter run --dart-define=FAKE_STORE=true`.
+  ///
+  /// The paywall can only draw the plans the store hands it, so until the
+  /// three subscriptions exist in Play Console the real store has nothing to
+  /// return and the screen is a "not available right now" message. This is
+  /// how the layout gets looked at in the meantime, and it defaults to false
+  /// so no shipped build can reach it by accident.
+  static const bool fakeStore = bool.fromEnvironment('FAKE_STORE');
+
   static bool get hasRevenueCatKeys =>
+      !fakeStore &&
       (Platform.isIOS ? revenueCatAppleKey : revenueCatGoogleKey).isNotEmpty;
 
   static bool get hasDownloadLink => downloadUrl.isNotEmpty;

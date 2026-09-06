@@ -117,24 +117,27 @@ class UnconfiguredStore implements Store {
 
   @override
   Future<List<StorePlan>> plans() async => const [
+    // US list prices, and placeholders even so: a real store answers in the
+    // player's own currency, at that country's own price, already formatted
+    // — which is why nothing above this class ever builds a price itself.
     StorePlan(
       id: 'coldmind_yearly',
       titleKey: 'paywall.yearly_title',
-      priceLabel: r'$29.99',
-      perWeekLabel: r'$0.57',
+      priceLabel: r'$24.99',
+      perWeekLabel: r'$0.48',
       recommended: true,
       includesHints: true,
     ),
     StorePlan(
       id: 'coldmind_weekly_hints',
       titleKey: 'paywall.weekly_hints_title',
-      priceLabel: r'$6.99',
+      priceLabel: r'$4.99',
       includesHints: true,
     ),
     StorePlan(
       id: 'coldmind_weekly',
       titleKey: 'paywall.weekly_title',
-      priceLabel: r'$4.99',
+      priceLabel: r'$2.99',
     ),
   ];
 
