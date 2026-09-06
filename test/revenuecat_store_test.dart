@@ -3,9 +3,10 @@ import 'package:coldmind/features/paywall/store.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:purchases_flutter/purchases_flutter.dart' hide Store;
 
-/// The two pieces of [RevenueCatStore] that do not touch `Purchases.*` and
-/// so can be checked without a live store connection: the error mapping and
-/// the per-week price arithmetic.
+/// The pieces of [RevenueCatStore] that do not touch `Purchases.*` and so can
+/// be checked without a live store connection: the error mapping, the
+/// per-week price arithmetic, and which replacement mode a plan change is
+/// sent to Play with — the last of which decides what a player is charged.
 void main() {
   group('RevenueCatStore.failureFor', () {
     test('maps the known error codes to their StoreFailure', () {
@@ -66,6 +67,64 @@ void main() {
       final label = RevenueCatStore.perWeekLabel(product);
       expect(label, isNot(contains(r'$')));
       expect(label, contains('kr'));
+    });
+  });
+
+  group('RevenueCatStore.replacementModeFor', () {
+    StoreReplacementMode? mode(String? from, String to) =>
+        RevenueCatStore.replacementModeFor(
+          currentProductId: from,
+          targetPlanId: to,
+        );
+
+    test('a first purchase carries no change information at all', () {
+      // Passing change information with nothing to change from is how Play
+      // refuses a purchase that should simply have gone through.
+      expect(mode(null, 'coldmind_weekly'), isNull);
+      expect(mode(null, 'coldmind_yearly'), isNull);
+    });
+
+    test('moving up a tier charges the difference and keeps the date', () {
+      expect(
+        mode('coldmind_weekly', 'coldmind_weekly_hints'),
+        StoreReplacementMode.chargeProratedPrice,
+      );
+      expect(
+        mode('coldmind_weekly_hints', 'coldmind_yearly'),
+        StoreReplacementMode.chargeProratedPrice,
+      );
+    });
+
+    test('moving down a tier waits for the period already paid for', () {
+      // The player keeps what they bought until the last day of it, which is
+      // the whole reason a downgrade is never immediate.
+      expect(
+        mode('coldmind_weekly_hints', 'coldmind_weekly'),
+        StoreReplacementMode.deferred,
+      );
+      expect(
+        mode('coldmind_yearly', 'coldmind_weekly'),
+        StoreReplacementMode.deferred,
+      );
+    });
+
+    test('reads a Play identifier with or without its base plan', () {
+      // Google reports `sub_id` from one call and `sub_id:base_plan` from
+      // another; both name the same subscription.
+      expect(
+        mode('coldmind_weekly:weekly', 'coldmind_weekly_hints'),
+        StoreReplacementMode.chargeProratedPrice,
+      );
+      expect(mode('coldmind_weekly:weekly', 'coldmind_weekly'), isNull);
+    });
+
+    test('an unrecognised current plan is still replaced, never duplicated', () {
+      // Leaving an unknown subscription running and selling a second one
+      // beside it is the one outcome worth ruling out.
+      expect(
+        mode('some_retired_product', 'coldmind_yearly'),
+        StoreReplacementMode.withTimeProration,
+      );
     });
   });
 }

@@ -7,9 +7,7 @@ import '../../core/app_config.dart';
 import '../../core/theme/cold_theme.dart';
 import '../../data/l10n/case_strings.dart';
 import '../../data/providers/case_providers.dart';
-import '../../data/providers/hint_providers.dart';
 import '../../data/providers/settings_providers.dart';
-import '../hints/hint_store_screen.dart';
 import '../paywall/paywall_screen.dart';
 import '../paywall/store.dart';
 
@@ -61,9 +59,13 @@ class SettingsScreen extends ConsumerWidget {
         children: [
           _ProCard(strings: strings),
           const SizedBox(height: ColdSpace.xl),
-          _SectionHeader(text: strings?.c('settings.gameplay') ?? 'GAMEPLAY'),
-          _Group(children: [_HintRow(strings: strings)]),
-          const SizedBox(height: ColdSpace.xl),
+          // The whole section, not just its row: a heading standing over an
+          // empty card reads as something that failed to load.
+          if (ref.watch(hintsUnlockedProvider)) ...[
+            _SectionHeader(text: strings?.c('settings.gameplay') ?? 'GAMEPLAY'),
+            _Group(children: [_HintRow(strings: strings)]),
+            const SizedBox(height: ColdSpace.xl),
+          ],
           _SectionHeader(
             text: strings?.c('settings.language_header') ?? 'LANGUAGE',
           ),
@@ -151,11 +153,15 @@ class SettingsScreen extends ConsumerWidget {
   ) async {
     String message;
     try {
-      final restored = await ref.read(storeProvider).restore();
-      message = restored
-          ? strings?.c('settings.restored_ok') ?? 'Purchases restored.'
-          : strings?.c('settings.restored_none') ??
-                'No previous purchases found.';
+      final access = await ref.read(storeProvider).restore();
+      // Applied, not merely announced. This used to report a successful
+      // restore and leave both flags untouched, so the cases stayed locked
+      // until the next launch happened to resync them.
+      final subscribed = ref.read(isSubscribedProvider.notifier);
+      final hints = ref.read(hintsUnlockedProvider.notifier);
+      await (access.pro ? subscribed.grant() : subscribed.revoke());
+      await (access.hints ? hints.grant() : hints.revoke());
+      message = strings?.c('settings.restored_ok') ?? 'Purchases restored.';
     } on StoreException catch (error) {
       message = _storeMessage(error.failure, strings);
     } catch (_) {
@@ -430,11 +436,11 @@ class _Row extends StatelessWidget {
   }
 }
 
-/// The way into [HintStoreScreen], and the current balance at a glance.
+/// Whether a player who bought hints wants to see them.
 ///
-/// A hint used to be a free toggle here — three wrong tries earned an
-/// unlimited 50/50. Now a hint is a token spent from the store, so this row
-/// opens the shop instead of switching anything.
+/// Only ever drawn to somebody whose plan includes hints — see the section
+/// it sits in. A switch for something you do not own is a dead control, and
+/// the sales pitch already lives on the question screen's own button.
 class _HintRow extends ConsumerWidget {
   final CaseStrings? strings;
 
@@ -442,16 +448,77 @@ class _HintRow extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final balance = ref.watch(hintBalanceProvider);
-
-    return _Row(
+    return _Toggle(
       icon: Icons.lightbulb_outline_rounded,
-      label: strings?.c('settings.hints') ?? 'Hints',
-      value: balance.value?.toString(),
-      onTap: () => Navigator.of(context).push(
-        MaterialPageRoute<void>(
-          builder: (_) => const HintStoreScreen(source: 'settings'),
-        ),
+      title: strings?.c('settings.answer_hints') ?? 'Answer hints',
+      subtitle:
+          strings?.c('settings.hints_sub') ??
+          'Show a hint button on questions that have one',
+      value: ref.watch(hintsEnabledProvider),
+      onChanged: (enabled) =>
+          ref.read(hintsEnabledProvider.notifier).set(enabled: enabled),
+    );
+  }
+}
+
+class _Toggle extends StatelessWidget {
+  final IconData icon;
+  final String title;
+  final String subtitle;
+  final bool value;
+  final ValueChanged<bool> onChanged;
+
+  const _Toggle({
+    required this.icon,
+    required this.title,
+    required this.subtitle,
+    required this.value,
+    required this.onChanged,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final device = context.device;
+
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(
+        ColdSpace.lg,
+        ColdSpace.md,
+        ColdSpace.md,
+        ColdSpace.md,
+      ),
+      child: Row(
+        children: [
+          Icon(icon, size: 22, color: device.accent),
+          const SizedBox(width: ColdSpace.lg),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  title,
+                  style: ColdType.body.copyWith(
+                    color: device.textPrimary,
+                    fontSize: 16,
+                  ),
+                ),
+                const SizedBox(height: 2),
+                Text(
+                  subtitle,
+                  style: ColdType.bodySmall.copyWith(
+                    color: device.textSecondary,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Switch(
+            value: value,
+            onChanged: onChanged,
+            activeThumbColor: Colors.white,
+            activeTrackColor: device.accent,
+          ),
+        ],
       ),
     );
   }

@@ -23,12 +23,53 @@ class StorePlan {
   /// True for the plan the screen opens on.
   final bool recommended;
 
+  /// Whether this plan carries the hints entitlement.
+  ///
+  /// A client-side mirror of what the RevenueCat dashboard attaches to each
+  /// product, kept only so the paywall can say what a plan buys *before* it
+  /// is bought. Nothing is ever granted from this: what a purchase actually
+  /// unlocked comes back as [StoreAccess], from RevenueCat.
+  final bool includesHints;
+
+  /// True for the plan this player is already on.
+  final bool owned;
+
   const StorePlan({
     required this.id,
     required this.titleKey,
     required this.priceLabel,
     this.perWeekLabel,
     this.recommended = false,
+    this.includesHints = false,
+    this.owned = false,
+  });
+}
+
+/// What a purchase or a restore actually unlocked.
+///
+/// A bare `true` used to be enough, back when there was one entitlement and
+/// owning it was the only question. With hints sold separately the screen has
+/// to know *which* of the two came back — and it must be told by RevenueCat
+/// rather than inferred from the card that was tapped, because a restore has
+/// no tapped card at all, and a deferred plan change completes without the
+/// new entitlement arriving yet.
+class StoreAccess {
+  /// Every case, on every plan.
+  final bool pro;
+
+  /// The hint reveals, on the plans that sell them.
+  final bool hints;
+
+  /// True when the change was accepted but starts at the end of the period
+  /// already paid for — a downgrade. Everything above still describes what
+  /// the player holds *now*, which is the old plan, so without this the
+  /// screen would close on a purchase that visibly changed nothing.
+  final bool deferred;
+
+  const StoreAccess({
+    required this.pro,
+    required this.hints,
+    this.deferred = false,
   });
 }
 
@@ -54,22 +95,23 @@ abstract class Store {
   /// What is on offer. Throws [StoreException] if the offer cannot be read.
   Future<List<StorePlan>> plans();
 
-  /// Buys [planId]. True when the purchase completed, false when the player
-  /// backed out — a cancellation is not an error.
-  Future<bool> purchase(String planId);
+  /// Buys [planId], or moves an existing subscription onto it. Returns what
+  /// the player now holds, or **null** when they backed out — a cancellation
+  /// is not an error.
+  Future<StoreAccess?> purchase(String planId);
 
   /// Re-applies a purchase this account already made on another device.
   /// Throws [StoreException] with [StoreFailure.nothingToRestore] when there
   /// is nothing to give back.
-  Future<bool> restore();
+  Future<StoreAccess> restore();
 }
 
 /// The store as it stands with no billing SDK wired in.
 ///
 /// It lists the real plans so the screen can be seen, laid out and translated,
-/// and it **refuses to complete a purchase** rather than returning true. A
-/// paywall that quietly hands out access when no payment system is connected is
-/// the one failure here that would ship without anybody noticing.
+/// and it **refuses to complete a purchase** rather than returning access. A
+/// paywall that quietly hands out entitlements when no payment system is
+/// connected is the one failure here that would ship without anybody noticing.
 class UnconfiguredStore implements Store {
   const UnconfiguredStore();
 
@@ -81,6 +123,13 @@ class UnconfiguredStore implements Store {
       priceLabel: r'$29.99',
       perWeekLabel: r'$0.57',
       recommended: true,
+      includesHints: true,
+    ),
+    StorePlan(
+      id: 'coldmind_weekly_hints',
+      titleKey: 'paywall.weekly_hints_title',
+      priceLabel: r'$6.99',
+      includesHints: true,
     ),
     StorePlan(
       id: 'coldmind_weekly',
@@ -90,11 +139,11 @@ class UnconfiguredStore implements Store {
   ];
 
   @override
-  Future<bool> purchase(String planId) async =>
+  Future<StoreAccess?> purchase(String planId) async =>
       throw const StoreException(StoreFailure.unavailable);
 
   @override
-  Future<bool> restore() async =>
+  Future<StoreAccess> restore() async =>
       throw const StoreException(StoreFailure.nothingToRestore);
 }
 

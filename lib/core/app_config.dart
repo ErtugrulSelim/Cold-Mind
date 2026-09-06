@@ -44,18 +44,16 @@ class AppConfig {
   static const String revenueCatAppleKey = '';
   static const String revenueCatGoogleKey = 'goog_LcVOeyqgYRNTHEuvGIXXyYlroUs';
 
-  /// The entitlement identifier configured in the RevenueCat dashboard.
-  /// Every plan (weekly, yearly) grants this same entitlement, so this is
-  /// the one string both `purchase()` and `restore()` check.
+  /// The entitlement every plan grants: the cases themselves. All three
+  /// plans carry it, so this is the one string that answers "is this player
+  /// subscribed at all".
   static const String revenueCatEntitlementId = 'pro';
 
-  /// The `spendHintTokens` Cloud Function — the only thing that ever
-  /// decrements a player's hint balance, since RevenueCat's client SDK can
-  /// read a virtual currency but refuses to let a client spend one. Not a
-  /// secret: it is a public HTTPS endpoint with no key embedded in it, the
-  /// same way a REST API's base URL is not a secret.
-  static const String hintSpendFunctionUrl =
-      'https://us-central1-coldmind-koalacache.cloudfunctions.net/spendHintTokens';
+  /// The entitlement only the paid-for-hints plans grant — the weekly-plus
+  /// tier and the yearly one. A player holding [revenueCatEntitlementId]
+  /// without this one has every case and no hints, which is the entire point
+  /// of having two entitlements rather than one.
+  static const String revenueCatHintsEntitlementId = 'hints';
 
   static bool get hasRevenueCatKeys =>
       (Platform.isIOS ? revenueCatAppleKey : revenueCatGoogleKey).isNotEmpty;
