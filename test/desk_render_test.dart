@@ -51,15 +51,21 @@ void main() {
     prefs = await SharedPreferences.getInstance();
   });
 
-  Widget host(Widget child) => ProviderScope(
-    overrides: [
-      sharedPreferencesProvider.overrideWithValue(prefs),
-      caseIndexProvider.overrideWith((ref) async => index),
-      commonStringsProvider.overrideWith((ref) async => common),
-      caseStringsProvider(sample.id).overrideWith((ref) async => sampleStrings),
-    ],
-    child: MaterialApp(theme: buildColdTheme(), home: child),
-  );
+  Widget host(Widget child, {bool subscribed = false}) {
+    prefs.setBool('is_subscribed', subscribed);
+    return ProviderScope(
+      key: ValueKey('desk-$subscribed'),
+      overrides: [
+        sharedPreferencesProvider.overrideWithValue(prefs),
+        caseIndexProvider.overrideWith((ref) async => index),
+        commonStringsProvider.overrideWith((ref) async => common),
+        caseStringsProvider(
+          sample.id,
+        ).overrideWith((ref) async => sampleStrings),
+      ],
+      child: MaterialApp(theme: buildColdTheme(), home: child),
+    );
+  }
 
   testWidgets('the case index draws every state it has', (tester) async {
     usePhoneSurface(tester);
@@ -117,6 +123,24 @@ void main() {
     );
 
     expect([for (final d in caught) '${d.exception}'].where(_isReal), isEmpty);
+  });
+
+  testWidgets('the deck stops asking once the player has subscribed', (
+    tester,
+  ) async {
+    // The pill is the deck's only ask for money, and a subscriber who keeps
+    // being shown it reads it as the app not knowing they paid.
+    usePhoneSurface(tester);
+
+    await tester.pumpWidget(host(const CaseListScreen(), subscribed: true));
+    await tester.pump(const Duration(milliseconds: 400));
+
+    expect(find.text(common.c('ui.cases.pro')), findsNothing);
+    expect(
+      find.byIcon(Icons.settings_outlined),
+      findsOneWidget,
+      reason: 'the gear shares that row and must survive the pill leaving',
+    );
   });
 
   testWidgets('the paywall draws its plans and the price of each', (

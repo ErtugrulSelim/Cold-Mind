@@ -58,8 +58,13 @@ class SettingsScreen extends ConsumerWidget {
           ColdSpace.xxl,
         ),
         children: [
-          _ProCard(strings: strings),
-          const SizedBox(height: ColdSpace.xl),
+          // The pitch, and only to somebody who has not bought yet. Left in
+          // place it is the first thing a paying player sees every time they
+          // open their own settings, still asking them for money.
+          if (!ref.watch(isSubscribedProvider)) ...[
+            _ProCard(strings: strings),
+            const SizedBox(height: ColdSpace.xl),
+          ],
           // The whole section, not just its row: a heading standing over an
           // empty card reads as something that failed to load.
           if (ref.watch(hintsUnlockedProvider)) ...[
