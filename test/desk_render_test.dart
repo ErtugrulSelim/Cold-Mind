@@ -51,10 +51,15 @@ void main() {
     prefs = await SharedPreferences.getInstance();
   });
 
-  Widget host(Widget child, {bool subscribed = false}) {
+  Widget host(
+    Widget child, {
+    bool subscribed = false,
+    bool hintsUnlocked = false,
+  }) {
     prefs.setBool('is_subscribed', subscribed);
+    prefs.setBool('hints_unlocked', hintsUnlocked);
     return ProviderScope(
-      key: ValueKey('desk-$subscribed'),
+      key: ValueKey('desk-$subscribed-$hintsUnlocked'),
       overrides: [
         sharedPreferencesProvider.overrideWithValue(prefs),
         caseIndexProvider.overrideWith((ref) async => index),
@@ -125,17 +130,45 @@ void main() {
     expect([for (final d in caught) '${d.exception}'].where(_isReal), isEmpty);
   });
 
-  testWidgets('the deck stops asking once the player has subscribed', (
+  testWidgets("the deck's pill offers what the player has not bought yet", (
     tester,
   ) async {
-    // The pill is the deck's only ask for money, and a subscriber who keeps
-    // being shown it reads it as the app not knowing they paid.
+    // Three states, and the middle one is the whole reason this is not a
+    // plain hide-when-subscribed: a player on the cheapest weekly plan owns
+    // every case and no hints, so "GET PRO" names something they already
+    // paid for, and hiding the pill outright would leave the one upgrade
+    // this app sells with nowhere to be found.
     usePhoneSurface(tester);
 
-    await tester.pumpWidget(host(const CaseListScreen(), subscribed: true));
-    await tester.pump(const Duration(milliseconds: 400));
+    Future<void> open({
+      required bool subscribed,
+      required bool hintsUnlocked,
+    }) async {
+      await tester.pumpWidget(
+        host(
+          const CaseListScreen(),
+          subscribed: subscribed,
+          hintsUnlocked: hintsUnlocked,
+        ),
+      );
+      await tester.pump(const Duration(milliseconds: 400));
+    }
 
+    await open(subscribed: false, hintsUnlocked: false);
+    expect(find.text(common.c('ui.cases.pro')), findsOneWidget);
+    expect(find.text(common.c('ui.cases.hints')), findsNothing);
+
+    await open(subscribed: true, hintsUnlocked: false);
     expect(find.text(common.c('ui.cases.pro')), findsNothing);
+    expect(
+      find.text(common.c('ui.cases.hints')),
+      findsOneWidget,
+      reason: 'the cheapest plan has no way left to buy the hints',
+    );
+
+    await open(subscribed: true, hintsUnlocked: true);
+    expect(find.text(common.c('ui.cases.pro')), findsNothing);
+    expect(find.text(common.c('ui.cases.hints')), findsNothing);
     expect(
       find.byIcon(Icons.settings_outlined),
       findsOneWidget,

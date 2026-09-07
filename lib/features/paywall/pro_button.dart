@@ -21,6 +21,14 @@ import 'paywall_screen.dart';
 /// case deck it is the first screen of the game and the only thing on it asking
 /// for money, so it is filled amber and reads at a glance. A single size would
 /// have been either too loud in one place or invisible in the other.
+///
+/// **Three states, because there are three kinds of player.** Somebody with no
+/// subscription is offered the cases; somebody on the cheapest weekly plan
+/// already has every case and no hints, so offering them Pro would name
+/// something they have already bought; somebody whose plan includes hints is
+/// offered nothing at all and the button is not drawn. Getting the middle one
+/// wrong is the expensive mistake — it is the only upgrade this app sells, and
+/// a player who cannot find it simply never buys it.
 class ProButton extends ConsumerWidget {
   final CaseStrings? strings;
 
@@ -39,16 +47,26 @@ class ProButton extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    // Nothing to sell to somebody who has already bought. The check lives
-    // here rather than at each call site so a surface cannot forget it — the
-    // same reason the login gate sits in `app_router` instead of inside each
-    // app. A subscriber who wants a *different* plan still reaches the
-    // paywall: the question screen's hint button opens it, which is where a
-    // player on the cheapest plan meets the hints they do not have.
-    if (ref.watch(isSubscribedProvider)) return const SizedBox.shrink();
+    // Decided here rather than at each call site so a surface cannot forget
+    // it — the same reason the login gate sits in `app_router` instead of
+    // inside each app.
+    final subscribed = ref.watch(isSubscribedProvider);
+    final hints = ref.watch(hintsUnlockedProvider);
+
+    // Everything already bought: there is nothing left to offer.
+    if (subscribed && hints) return const SizedBox.shrink();
 
     final desk = context.desk;
-    final label = strings?.c('ui.cases.pro') ?? 'GET PRO';
+    // A subscriber is not being sold the cases again — they have them. What
+    // the cheapest plan does not carry is the hints, so that is the offer,
+    // and naming it plainly is the whole point: "GET PRO" to somebody who is
+    // already Pro reads as the app having lost track of what they paid for.
+    final label = subscribed
+        ? (strings?.c('ui.cases.hints') ?? 'GET HINTS')
+        : (strings?.c('ui.cases.pro') ?? 'GET PRO');
+    final icon = subscribed
+        ? Icons.lightbulb_outline_rounded
+        : Icons.workspace_premium_rounded;
     const radius = BorderRadius.all(Radius.circular(999));
 
     final button = Material(
@@ -82,7 +100,7 @@ class ProButton extends ConsumerWidget {
             mainAxisSize: MainAxisSize.min,
             children: [
               Icon(
-                Icons.workspace_premium_rounded,
+                icon,
                 size: large ? 19 : 14,
                 color: large ? desk.ink : desk.highlight,
               ),

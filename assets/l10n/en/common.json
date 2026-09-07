@@ -450,6 +450,7 @@
   "ui.app.clock": "Hours",
   "ui.cases.index": "CASE INDEX",
   "ui.cases.pro": "GET PRO",
+  "ui.cases.hints": "GET HINTS",
   "ui.cases.locked": "PRO CASE",
   "ui.cases.available": "{{open}} open · {{closed}} closed",
   "ui.cases.new": "NEW",
