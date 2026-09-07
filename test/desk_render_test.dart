@@ -301,7 +301,7 @@ void main() {
     const store = UnconfiguredStore();
 
     await expectLater(
-      store.purchase('coldmind_yearly'),
+      store.purchase('yearly_premium_coldmind'),
       throwsA(isA<StoreException>()),
     );
     await expectLater(store.restore(), throwsA(isA<StoreException>()));

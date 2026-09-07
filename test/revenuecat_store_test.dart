@@ -41,7 +41,7 @@ void main() {
   group('RevenueCatStore.perWeekLabel', () {
     test('divides the yearly price by 52 and formats it for its currency', () {
       final product = const StoreProduct(
-        'coldmind_yearly',
+        'yearly_premium_coldmind',
         '',
         '',
         29.99,
@@ -57,7 +57,7 @@ void main() {
       // — something the old v1 approach (stripping digits out of
       // priceString) could not have produced correctly.
       final product = const StoreProduct(
-        'coldmind_yearly',
+        'yearly_premium_coldmind',
         '',
         '',
         299.99,
@@ -80,17 +80,17 @@ void main() {
     test('a first purchase carries no change information at all', () {
       // Passing change information with nothing to change from is how Play
       // refuses a purchase that should simply have gone through.
-      expect(mode(null, 'coldmind_weekly'), isNull);
-      expect(mode(null, 'coldmind_yearly'), isNull);
+      expect(mode(null, 'weekly_premium_coldmind'), isNull);
+      expect(mode(null, 'yearly_premium_coldmind'), isNull);
     });
 
     test('moving up a tier charges the difference and keeps the date', () {
       expect(
-        mode('coldmind_weekly', 'coldmind_weekly_hints'),
+        mode('weekly_premium_coldmind', 'weekly_hint_premium_coldmind'),
         StoreReplacementMode.chargeProratedPrice,
       );
       expect(
-        mode('coldmind_weekly_hints', 'coldmind_yearly'),
+        mode('weekly_hint_premium_coldmind', 'yearly_premium_coldmind'),
         StoreReplacementMode.chargeProratedPrice,
       );
     });
@@ -99,11 +99,11 @@ void main() {
       // The player keeps what they bought until the last day of it, which is
       // the whole reason a downgrade is never immediate.
       expect(
-        mode('coldmind_weekly_hints', 'coldmind_weekly'),
+        mode('weekly_hint_premium_coldmind', 'weekly_premium_coldmind'),
         StoreReplacementMode.deferred,
       );
       expect(
-        mode('coldmind_yearly', 'coldmind_weekly'),
+        mode('yearly_premium_coldmind', 'weekly_premium_coldmind'),
         StoreReplacementMode.deferred,
       );
     });
@@ -112,17 +112,17 @@ void main() {
       // Google reports `sub_id` from one call and `sub_id:base_plan` from
       // another; both name the same subscription.
       expect(
-        mode('coldmind_weekly:weekly', 'coldmind_weekly_hints'),
+        mode('weekly_premium_coldmind:weekly', 'weekly_hint_premium_coldmind'),
         StoreReplacementMode.chargeProratedPrice,
       );
-      expect(mode('coldmind_weekly:weekly', 'coldmind_weekly'), isNull);
+      expect(mode('weekly_premium_coldmind:weekly', 'weekly_premium_coldmind'), isNull);
     });
 
     test('an unrecognised current plan is still replaced, never duplicated', () {
       // Leaving an unknown subscription running and selling a second one
       // beside it is the one outcome worth ruling out.
       expect(
-        mode('some_retired_product', 'coldmind_yearly'),
+        mode('some_retired_product', 'yearly_premium_coldmind'),
         StoreReplacementMode.withTimeProration,
       );
     });
