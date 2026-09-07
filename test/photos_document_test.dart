@@ -40,14 +40,19 @@ void main() {
       );
       await tester.pump(const Duration(milliseconds: 300));
 
-      // s01's ph_017 ("whiteboard2.jpg") carries a document_key and is in
-      // Recents. It used to be ph_006 — which is inside the locked album, and
-      // was reachable here only because Recents was drawing every photo on
-      // the phone. This test was quietly standing on that bug.
+      // The app opens on the albums now, so the photograph has to be reached
+      // the way a player reaches it: through the album holding it. s01's
+      // `album_001` is unlocked and carries ph_017.
+      await tester.tap(find.text(strings.t('s01.photos.album_001')));
+      await tester.pumpAndSettle();
+
+      // s01's ph_017 ("whiteboard2.jpg") carries a document_key. It used to be
+      // ph_006 — which is inside the locked album, and was reachable only
+      // because Recents was drawing every photo on the phone. This test was
+      // quietly standing on that bug.
       //
-      // The grid mixes many GestureDetectors (tabs, other tiles), so this
-      // targets the one wrapping that photo's own asset rather than guessing
-      // tree order.
+      // The grid mixes many GestureDetectors, so this targets the one
+      // wrapping that photo's own asset rather than guessing tree order.
       final target = find.byWidgetPredicate((widget) {
         if (widget is! Image) return false;
         final image = widget.image;

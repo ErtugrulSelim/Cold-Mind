@@ -42,10 +42,22 @@ class ColdRadius {
   /// An app icon on the home grid. Squircle-adjacent; iOS-ish without copying.
   static const double appIcon = 15;
 
+  /// A fully rounded end cap. The number is arbitrary and only has to be
+  /// larger than half the height of whatever carries it, which is why it is
+  /// not a real measurement.
+  static const double pill = 999;
+
   static const BorderRadius card = BorderRadius.all(Radius.circular(md));
   static const BorderRadius sheet = BorderRadius.vertical(
     top: Radius.circular(lg),
   );
+
+  /// Something the player presses, as opposed to something they read.
+  ///
+  /// The desk's panels are cards and stay cards; a rounded end is what marks
+  /// the few things on the same surface that are actually buttons — the one
+  /// that takes the money, and the lines the player says back to a client.
+  static const BorderRadius button = BorderRadius.all(Radius.circular(pill));
 }
 
 /// Motion.

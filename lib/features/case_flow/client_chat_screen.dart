@@ -410,17 +410,17 @@ class _Choices extends StatelessWidget {
                 // Amber, because these are the player's own words: the same
                 // colour their side of the conversation is set in above.
                 color: desk.highlight.withValues(alpha: 0.16),
-                borderRadius: const BorderRadius.all(Radius.circular(14)),
+                borderRadius: ColdRadius.button,
                 child: InkWell(
                   onTap: () => onPick(choice),
-                  borderRadius: const BorderRadius.all(Radius.circular(14)),
+                  borderRadius: ColdRadius.button,
                   child: Container(
                     padding: const EdgeInsets.symmetric(
                       horizontal: ColdSpace.lg,
                       vertical: 14,
                     ),
                     decoration: BoxDecoration(
-                      borderRadius: const BorderRadius.all(Radius.circular(14)),
+                      borderRadius: ColdRadius.button,
                       border: Border.all(
                         color: desk.highlight.withValues(alpha: 0.45),
                       ),

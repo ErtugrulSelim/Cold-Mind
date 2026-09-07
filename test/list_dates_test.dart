@@ -98,7 +98,22 @@ void main() {
   }
 
   /// A date with no year on it — "4 Mar", "19 November".
-  final bare = RegExp(r'^\d{1,2} [A-Za-zçğıöşüÇĞİÖŞÜ]+$');
+  ///
+  /// The second word has to be a real month name rather than merely a word.
+  /// Matching any word read the album grid's own subtitle, "11 photos", as an
+  /// undated row and failed nine cases for it.
+  bool isBareDate(String text, CaseStrings strings) {
+    final match = RegExp(r'^(\d{1,2}) (.+)$').firstMatch(text.trim());
+    if (match == null) return false;
+    final word = match.group(2)!;
+    for (var month = 1; month <= 12; month++) {
+      if (word == strings.monthShort(month) ||
+          word == strings.monthLong(month)) {
+        return true;
+      }
+    }
+    return false;
+  }
 
   testWidgets('every list that runs across years says which year', (
     tester,
@@ -144,7 +159,7 @@ void main() {
         final bareDates = <String>{};
         for (final element in find.byType(Text).evaluate()) {
           final data = (element.widget as Text).data;
-          if (data != null && bare.hasMatch(data.trim())) {
+          if (data != null && isBareDate(data, entry.strings)) {
             bareDates.add(data.trim());
           }
         }

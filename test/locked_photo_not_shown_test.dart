@@ -25,8 +25,15 @@ import 'phone_surface.dart';
 /// s07 lost the most: `ph_001` to `ph_004` are the counts, and two of that
 /// case's questions are answered by looking at them.
 ///
-/// So this test does not look at the data. It builds the screen, counts the
-/// images in Recents, and compares against what the case says should be there.
+/// So this test does not look at the data. It builds the screen and compares
+/// what actually reached it against what the case says is behind a passcode.
+///
+/// Recents is gone now and the app opens straight onto the albums, which is a
+/// stronger position than the one this test was written to defend — but only
+/// as long as the grid itself does not leak, so that is what it checks now.
+/// **The one deliberate exception is a locked album's own cover**, drawn
+/// behind a scrim with a lock on it: blanking it would hide that there is
+/// anything to want. Every other locked photograph has to be absent.
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
 
@@ -76,7 +83,24 @@ void main() {
     };
   }
 
-  testWidgets('Recents never shows a photo from a locked album', (
+  /// The cover of every locked album — the one locked photograph the grid is
+  /// allowed to draw, and only scrimmed, behind its lock.
+  Set<String> lockedCoverIds(String caseId) {
+    final photos =
+        ((jsonDecode(File('assets/cases/$caseId/case.json').readAsStringSync())
+                    as Map<String, dynamic>)['apps']
+                as Map<String, dynamic>)['photos']
+            as Map<String, dynamic>?;
+    if (photos == null) return const {};
+
+    return {
+      for (final raw in (photos['albums'] as List? ?? const []))
+        if ((raw as Map)['lock_password'] != null || raw['is_locked'] == true)
+          if (raw['cover_photo_id'] != null) '${raw['cover_photo_id']}',
+    };
+  }
+
+  testWidgets('the albums screen never shows a photo from a locked album', (
     tester,
   ) async {
     usePhoneSurface(tester);
@@ -85,7 +109,11 @@ void main() {
     for (final entry in cases) {
       final locked = lockedIn(entry.file.id);
       if (locked.isEmpty) continue;
-      final hidden = assetsFor(entry.file.id, locked);
+      // Everything behind the passcode except the door itself.
+      final hidden = assetsFor(
+        entry.file.id,
+        locked.difference(lockedCoverIds(entry.file.id)),
+      );
 
       await tester.pumpWidget(const SizedBox.shrink());
       await tester.pumpWidget(
@@ -96,11 +124,10 @@ void main() {
       );
       await tester.pumpAndSettle();
 
-      // Recents is the tab it opens on. The grid builds lazily, so the whole
-      // of it has to be scrolled past — the first version of this test looked
-      // only at what happened to be on screen, and passed against the very
-      // leak it was written for, because the locked photographs were below
-      // the fold.
+      // The grid builds lazily, so the whole of it has to be scrolled past —
+      // the first version of this test looked only at what happened to be on
+      // screen, and passed against the very leak it was written for, because
+      // the locked photographs were below the fold.
       final onScreen = <String>{};
       void collect() {
         for (final element in find.byType(Image).evaluate()) {
@@ -124,8 +151,8 @@ void main() {
       final leaked = onScreen.intersection(hidden);
       if (leaked.isNotEmpty) {
         failures.add(
-          '${entry.file.id}: Recents is showing ${leaked.length} photo(s) that '
-          'sit behind a passcode — ${leaked.join(", ")}',
+          '${entry.file.id}: the albums screen is showing ${leaked.length} '
+          'photo(s) that sit behind a passcode — ${leaked.join(", ")}',
         );
       }
     }
