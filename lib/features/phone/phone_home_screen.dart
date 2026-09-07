@@ -75,10 +75,13 @@ class PhoneHomeScreen extends ConsumerWidget {
         // stay out of the way — which made the one thing on the screen asking
         // for money the least visible thing on it.
         //
-        // `ProButton` hides itself once the player subscribes; the gap before
-        // it has to go with it, or the row keeps a step of padding leading to
-        // nothing.
-        if (!ref.watch(isSubscribedProvider)) ...[
+        // `ProButton` draws nothing once there is nothing left to sell — a
+        // plan with hints — and the gap before it has to go with it, or the
+        // row keeps a step of padding leading to nothing. It has to ask the
+        // same question the button does: a subscriber without hints still
+        // gets a button, offering those.
+        if (!(ref.watch(isSubscribedProvider) &&
+            ref.watch(hintsUnlockedProvider))) ...[
           const SizedBox(width: ColdSpace.sm),
           ProButton(strings: strings, source: 'phone_home', large: true),
         ],
