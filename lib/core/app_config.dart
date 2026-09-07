@@ -9,11 +9,11 @@ import 'package:url_launcher/url_launcher.dart';
 /// build had them scattered as literals down the middle of its settings
 /// screen, which is also how it ended up shipping another product's URLs.
 ///
-/// **Every one of them is empty on purpose.** A row whose destination is not
-/// set is not drawn at all — see [AppConfig.hasLegal] and the rest. That is
-/// the same rule the rest of this screen already follows: a row that does
-/// nothing when tapped is worse than a row that is not there, because the
-/// player reads it as broken rather than as unfinished.
+/// **The ones still empty are empty on purpose**, and a row whose destination
+/// is not set is not drawn at all — see [AppConfig.hasLegal] and the rest. A
+/// row that does nothing when tapped is worse than a row that is not there,
+/// because the player reads it as broken rather than as unfinished. Filling a
+/// value in is therefore how its row ships.
 class AppConfig {
   const AppConfig._();
 
