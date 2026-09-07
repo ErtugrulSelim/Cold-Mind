@@ -35,6 +35,16 @@ ios/Flutter/flutter_export_environment.sh
 # Secrets
 .env
 
+# The Play service account key RevenueCat validates purchases with. Google
+# names the download `<project>-<hash>.json`, which looks like any other
+# config file sitting in a project root — and it is the one file that lets
+# whoever holds it read this app's orders and revenue. Ignored by shape
+# rather than by name, since the name is whatever the browser saved.
+*-service-account*.json
+service-account*.json
+coldmind-koalacache-*.json
+play-store-credentials*.json
+
 # OS
 .DS_Store
 Thumbs.db
