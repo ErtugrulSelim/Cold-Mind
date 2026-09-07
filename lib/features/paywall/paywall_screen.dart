@@ -558,7 +558,7 @@ class _Badge extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 7, vertical: 3),
       decoration: BoxDecoration(
         color: desk.highlight,
-        borderRadius: const BorderRadius.all(Radius.circular(999)),
+        borderRadius: ColdRadius.button,
       ),
       child: Text(text, style: ColdType.micro.copyWith(color: desk.ink)),
     );
@@ -590,7 +590,7 @@ class _Continue extends StatelessWidget {
           backgroundColor: desk.paper,
           foregroundColor: desk.ink,
           disabledBackgroundColor: desk.paper.withValues(alpha: 0.35),
-          shape: const RoundedRectangleBorder(borderRadius: ColdRadius.card),
+          shape: const StadiumBorder(),
         ),
         child: busy
             ? SizedBox(

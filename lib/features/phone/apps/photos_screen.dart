@@ -51,34 +51,13 @@ class _PhotosScreenState extends State<PhotosScreen> {
         if (raw is Map<String, dynamic>) _Album.fromJson(raw, byId),
     ];
 
-    // Recents is its own authored list, not "every photo on the phone".
-    //
-    // This tab used to draw `items`, which is the pool every album is built
-    // out of — so every locked album's contents sat in Recents in plain view.
-    // The passcode still worked, the album still said it was locked, and the
-    // photographs behind it had already been seen. In all ten cases. On s07
-    // that was the four hundred and sixteen counts, which two questions are
-    // answered by.
-    //
-    // The cases author `recents` correctly and always did; nothing read it.
-    // Where a case has none, everything inside a locked album is held back
-    // rather than shown, so a new case cannot leak by omission.
-    final lockedIds = {
-      for (final album in albums)
-        if (!album.isOpen(_unlocked))
-          for (final photo in album.photos) photo.id,
-    };
-    final recentIds = _ids(data['recents']);
-    final recents = recentIds.isEmpty
-        ? [
-            for (final item in items)
-              if (!lockedIds.contains(item.id)) item,
-          ]
-        : [
-            for (final id in recentIds)
-              if (byId[id] case final photo? when !lockedIds.contains(id))
-                photo,
-          ];
+    // `data['recents']` is still authored on all ten cases and is no longer
+    // read. It was a second way in to photographs the albums already hold,
+    // and the reason it is not merely unused but *gone* is that it was also
+    // the way a locked album leaked: the tab drew the whole pool, so the
+    // passcode held while the pictures behind it had already been seen.
+    // Leaving the list in the data costs nothing and keeps the cases intact
+    // if a Recents surface is ever wanted back.
 
     final utilities = [
       _Album(
@@ -95,87 +74,72 @@ class _PhotosScreenState extends State<PhotosScreen> {
       ),
     ];
 
-    return DefaultTabController(
-      length: 2,
-      child: Scaffold(
-        backgroundColor: device.background,
-        appBar: AppBar(
-          title: Text(strings?.c('ui.app.photos') ?? 'Album'),
-          bottom: TabBar(
-            labelColor: device.accent,
-            unselectedLabelColor: device.textSecondary,
-            indicatorColor: device.accent,
-            labelStyle: ColdType.label,
-            tabs: [
-              Tab(text: strings?.c('ui.recents') ?? 'Recents'),
-              Tab(text: strings?.c('ui.albums') ?? 'Albums'),
+    // Albums only. A Recents tab beside them showed the same photographs a
+    // second time, in an order nobody authored, and the tab bar bought that
+    // duplication with the one row of chrome this app has. What the player
+    // is reading here is how somebody kept their pictures — which is the
+    // album grid, not a firehose of everything at once.
+    return Scaffold(
+      backgroundColor: device.background,
+      appBar: AppBar(title: Text(strings?.c('ui.app.photos') ?? 'Album')),
+      body: ListView(
+        padding: const EdgeInsets.fromLTRB(
+          ColdSpace.lg,
+          ColdSpace.lg,
+          ColdSpace.lg,
+          ColdSpace.xxl,
+        ),
+        children: [
+          // Two across, cover-led. An album is recognised by its picture
+          // long before its name is read.
+          GridView.count(
+            crossAxisCount: 2,
+            shrinkWrap: true,
+            physics: const NeverScrollableScrollPhysics(),
+            mainAxisSpacing: ColdSpace.lg,
+            crossAxisSpacing: ColdSpace.md,
+            // The cover is square; the name and count sit under it.
+            childAspectRatio: 0.78,
+            children: [
+              for (final album in albums)
+                _AlbumTile(
+                  album: album,
+                  strings: strings,
+                  isOpen: album.isOpen(_unlocked),
+                  onTap: () => _open(album),
+                ),
             ],
           ),
-        ),
-        body: TabBarView(
-          children: [
-            _Grid(photos: recents, strings: strings),
-            ListView(
-              padding: const EdgeInsets.fromLTRB(
-                ColdSpace.lg,
-                ColdSpace.lg,
-                ColdSpace.lg,
-                ColdSpace.xxl,
-              ),
+          const SizedBox(height: ColdSpace.lg),
+          Text(
+            strings?.c('ui.photos.utilities') ?? 'Utilities',
+            style: ColdType.label.copyWith(color: device.textSecondary),
+          ),
+          const SizedBox(height: ColdSpace.sm),
+          Container(
+            decoration: BoxDecoration(
+              color: device.surfaceRaised,
+              borderRadius: ColdRadius.card,
+            ),
+            child: Column(
               children: [
-                // Two across, cover-led. An album is recognised by its picture
-                // long before its name is read.
-                GridView.count(
-                  crossAxisCount: 2,
-                  shrinkWrap: true,
-                  physics: const NeverScrollableScrollPhysics(),
-                  mainAxisSpacing: ColdSpace.lg,
-                  crossAxisSpacing: ColdSpace.md,
-                  // The cover is square; the name and count sit under it.
-                  childAspectRatio: 0.78,
-                  children: [
-                    for (final album in albums)
-                      _AlbumTile(
-                        album: album,
-                        strings: strings,
-                        isOpen: album.isOpen(_unlocked),
-                        onTap: () => _open(album),
-                      ),
-                  ],
-                ),
-                const SizedBox(height: ColdSpace.lg),
-                Text(
-                  strings?.c('ui.photos.utilities') ?? 'Utilities',
-                  style: ColdType.label.copyWith(color: device.textSecondary),
-                ),
-                const SizedBox(height: ColdSpace.sm),
-                Container(
-                  decoration: BoxDecoration(
-                    color: device.surfaceRaised,
-                    borderRadius: ColdRadius.card,
+                for (var i = 0; i < utilities.length; i++) ...[
+                  if (i > 0)
+                    Divider(
+                      height: 1,
+                      indent: ColdSpace.lg,
+                      color: device.hairline,
+                    ),
+                  _UtilityRow(
+                    album: utilities[i],
+                    strings: strings,
+                    onTap: () => _open(utilities[i]),
                   ),
-                  child: Column(
-                    children: [
-                      for (var i = 0; i < utilities.length; i++) ...[
-                        if (i > 0)
-                          Divider(
-                            height: 1,
-                            indent: ColdSpace.lg,
-                            color: device.hairline,
-                          ),
-                        _UtilityRow(
-                          album: utilities[i],
-                          strings: strings,
-                          onTap: () => _open(utilities[i]),
-                        ),
-                      ],
-                    ],
-                  ),
-                ),
+                ],
               ],
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }
