@@ -19,8 +19,8 @@ import 'paywall_screen.dart';
 /// phone it shares a status row with the clock and the live pill and has to
 /// stay out of the way of a case in progress: outlined, quiet, findable. On the
 /// case deck it is the first screen of the game and the only thing on it asking
-/// for money, so it is filled amber and reads at a glance. A single size would
-/// have been either too loud in one place or invisible in the other.
+/// for money, so it is filled and reads at a glance. A single size would have
+/// been either too loud in one place or invisible in the other.
 ///
 /// **Three states, because there are three kinds of player.** Somebody with no
 /// subscription is offered the cases; somebody on the cheapest weekly plan
@@ -67,16 +67,28 @@ class ProButton extends ConsumerWidget {
     final icon = subscribed
         ? Icons.lightbulb_outline_rounded
         : Icons.workspace_premium_rounded;
+
+    // Two offers, two colours, and the split follows the registers rather
+    // than being decoration. Pro buys the *cases* — the desk's own business,
+    // so it keeps the desk's amber. Hints are a tool used on the phone, so
+    // they take the device's blue, which is already the accent every app
+    // surface is drawn with. A player who has seen one pill go amber and the
+    // other blue reads them as two different things without being told.
+    final tint = subscribed ? context.device.accent : desk.highlight;
+    // What sits *on* that fill when the pill is filled: the desk's ink under
+    // amber, the device's near-black under blue. A single dark for both left
+    // the warm brown looking muddy on a cold cyan.
+    final onTint = subscribed ? context.device.background : desk.ink;
     const radius = BorderRadius.all(Radius.circular(999));
 
     final button = Material(
-      // Amber against the graphite deck; a dark chip on the phone, where it
-      // floats over somebody's wallpaper and must not compete with it. Both
-      // are translucent rather than flat now — see the blur this is wrapped
-      // in below — so whatever is moving underneath still shows through
-      // instead of the button reading as a sticker pasted over the glass.
+      // Filled in its own tint against the graphite deck; a dark chip on the
+      // phone, where it floats over somebody's wallpaper and must not compete
+      // with it. Both are translucent rather than flat — see the blur this is
+      // wrapped in below — so whatever is moving underneath still shows
+      // through instead of the button reading as a sticker on the glass.
       color: large
-          ? desk.highlight.withValues(alpha: 0.82)
+          ? tint.withValues(alpha: 0.82)
           : Colors.black.withValues(alpha: 0.32),
       borderRadius: radius,
       child: InkWell(
@@ -94,27 +106,23 @@ class ProButton extends ConsumerWidget {
             borderRadius: radius,
             border: large
                 ? null
-                : Border.all(color: desk.highlight.withValues(alpha: 0.55)),
+                : Border.all(color: tint.withValues(alpha: 0.55)),
           ),
           child: Row(
             mainAxisSize: MainAxisSize.min,
             children: [
-              Icon(
-                icon,
-                size: large ? 19 : 14,
-                color: large ? desk.ink : desk.highlight,
-              ),
+              Icon(icon, size: large ? 19 : 14, color: large ? onTint : tint),
               SizedBox(width: large ? 8 : 5),
               Text(
                 label,
                 style: large
                     ? ColdType.label.copyWith(
-                        color: desk.ink,
+                        color: onTint,
                         fontSize: 14,
                         letterSpacing: 1.1,
                         fontWeight: FontWeight.w700,
                       )
-                    : ColdType.micro.copyWith(color: desk.highlight),
+                    : ColdType.micro.copyWith(color: tint),
               ),
             ],
           ),
