@@ -598,3 +598,136 @@ abstract class _$ReviewMode extends $Notifier<bool> {
     element.handleCreate(ref, build);
   }
 }
+
+/// Whether the player may open every case, and whether they may use hints.
+///
+/// **These are what the locks ask, and nothing else should.** `IsSubscribed`
+/// and `HintsUnlocked` record what was actually bought; these two answer the
+/// different question of what this build is currently allowed to show, which
+/// is the same thing plus the review-mode free pass.
+///
+/// Keeping the pass in one place per entitlement is the point. It used to be
+/// spelled out at the two case locks and nowhere else, so a reviewer could
+/// open all ten cases and still never reach a hint: the button opened the
+/// paywall at them and the Settings switch was never drawn. A feature a
+/// reviewer cannot exercise is a feature they can only take on trust.
+///
+/// The sales surfaces deliberately do **not** use these — see [ProButton].
+/// A reviewer has to be able to find and open the paywall, so what is offered
+/// for sale follows what was really bought, while what is unlocked follows
+/// these.
+
+@ProviderFor(hasPro)
+final hasProProvider = HasProProvider._();
+
+/// Whether the player may open every case, and whether they may use hints.
+///
+/// **These are what the locks ask, and nothing else should.** `IsSubscribed`
+/// and `HintsUnlocked` record what was actually bought; these two answer the
+/// different question of what this build is currently allowed to show, which
+/// is the same thing plus the review-mode free pass.
+///
+/// Keeping the pass in one place per entitlement is the point. It used to be
+/// spelled out at the two case locks and nowhere else, so a reviewer could
+/// open all ten cases and still never reach a hint: the button opened the
+/// paywall at them and the Settings switch was never drawn. A feature a
+/// reviewer cannot exercise is a feature they can only take on trust.
+///
+/// The sales surfaces deliberately do **not** use these — see [ProButton].
+/// A reviewer has to be able to find and open the paywall, so what is offered
+/// for sale follows what was really bought, while what is unlocked follows
+/// these.
+
+final class HasProProvider extends $FunctionalProvider<bool, bool, bool>
+    with $Provider<bool> {
+  /// Whether the player may open every case, and whether they may use hints.
+  ///
+  /// **These are what the locks ask, and nothing else should.** `IsSubscribed`
+  /// and `HintsUnlocked` record what was actually bought; these two answer the
+  /// different question of what this build is currently allowed to show, which
+  /// is the same thing plus the review-mode free pass.
+  ///
+  /// Keeping the pass in one place per entitlement is the point. It used to be
+  /// spelled out at the two case locks and nowhere else, so a reviewer could
+  /// open all ten cases and still never reach a hint: the button opened the
+  /// paywall at them and the Settings switch was never drawn. A feature a
+  /// reviewer cannot exercise is a feature they can only take on trust.
+  ///
+  /// The sales surfaces deliberately do **not** use these — see [ProButton].
+  /// A reviewer has to be able to find and open the paywall, so what is offered
+  /// for sale follows what was really bought, while what is unlocked follows
+  /// these.
+  HasProProvider._()
+    : super(
+        from: null,
+        argument: null,
+        retry: null,
+        name: r'hasProProvider',
+        isAutoDispose: false,
+        dependencies: null,
+        $allTransitiveDependencies: null,
+      );
+
+  @override
+  String debugGetCreateSourceHash() => _$hasProHash();
+
+  @$internal
+  @override
+  $ProviderElement<bool> $createElement($ProviderPointer pointer) =>
+      $ProviderElement(pointer);
+
+  @override
+  bool create(Ref ref) {
+    return hasPro(ref);
+  }
+
+  /// {@macro riverpod.override_with_value}
+  Override overrideWithValue(bool value) {
+    return $ProviderOverride(
+      origin: this,
+      providerOverride: $SyncValueProvider<bool>(value),
+    );
+  }
+}
+
+String _$hasProHash() => r'73e2e21418272927bab66c764535c9f46a478dba';
+
+@ProviderFor(hasHints)
+final hasHintsProvider = HasHintsProvider._();
+
+final class HasHintsProvider extends $FunctionalProvider<bool, bool, bool>
+    with $Provider<bool> {
+  HasHintsProvider._()
+    : super(
+        from: null,
+        argument: null,
+        retry: null,
+        name: r'hasHintsProvider',
+        isAutoDispose: false,
+        dependencies: null,
+        $allTransitiveDependencies: null,
+      );
+
+  @override
+  String debugGetCreateSourceHash() => _$hasHintsHash();
+
+  @$internal
+  @override
+  $ProviderElement<bool> $createElement($ProviderPointer pointer) =>
+      $ProviderElement(pointer);
+
+  @override
+  bool create(Ref ref) {
+    return hasHints(ref);
+  }
+
+  /// {@macro riverpod.override_with_value}
+  Override overrideWithValue(bool value) {
+    return $ProviderOverride(
+      origin: this,
+      providerOverride: $SyncValueProvider<bool>(value),
+    );
+  }
+}
+
+String _$hasHintsHash() => r'a9672649b5492762527ffa1d6ec37589535d40b9';

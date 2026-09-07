@@ -201,3 +201,28 @@ class ReviewMode extends _$ReviewMode {
 
   void set(bool value) => state = value;
 }
+
+/// Whether the player may open every case, and whether they may use hints.
+///
+/// **These are what the locks ask, and nothing else should.** `IsSubscribed`
+/// and `HintsUnlocked` record what was actually bought; these two answer the
+/// different question of what this build is currently allowed to show, which
+/// is the same thing plus the review-mode free pass.
+///
+/// Keeping the pass in one place per entitlement is the point. It used to be
+/// spelled out at the two case locks and nowhere else, so a reviewer could
+/// open all ten cases and still never reach a hint: the button opened the
+/// paywall at them and the Settings switch was never drawn. A feature a
+/// reviewer cannot exercise is a feature they can only take on trust.
+///
+/// The sales surfaces deliberately do **not** use these — see [ProButton].
+/// A reviewer has to be able to find and open the paywall, so what is offered
+/// for sale follows what was really bought, while what is unlocked follows
+/// these.
+@Riverpod(keepAlive: true)
+bool hasPro(Ref ref) =>
+    ref.watch(isSubscribedProvider) || ref.watch(reviewModeProvider);
+
+@Riverpod(keepAlive: true)
+bool hasHints(Ref ref) =>
+    ref.watch(hintsUnlockedProvider) || ref.watch(reviewModeProvider);

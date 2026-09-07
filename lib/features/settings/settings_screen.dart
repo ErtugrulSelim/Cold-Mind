@@ -67,7 +67,7 @@ class SettingsScreen extends ConsumerWidget {
           ],
           // The whole section, not just its row: a heading standing over an
           // empty card reads as something that failed to load.
-          if (ref.watch(hintsUnlockedProvider)) ...[
+          if (ref.watch(hasHintsProvider)) ...[
             _SectionHeader(text: strings?.c('settings.gameplay') ?? 'GAMEPLAY'),
             _Group(children: [_HintRow(strings: strings)]),
             const SizedBox(height: ColdSpace.xl),

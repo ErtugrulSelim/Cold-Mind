@@ -230,6 +230,7 @@ void main() {
     WidgetTester tester, {
     required bool unlocked,
     required bool enabled,
+    bool reviewMode = false,
   }) async {
     final prefs = await SharedPreferences.getInstance();
     await prefs.setInt('progress.solved.s01', 0);
@@ -238,7 +239,7 @@ void main() {
 
     await tester.pumpWidget(
       ProviderScope(
-        key: ValueKey('hints-$unlocked-$enabled'),
+        key: ValueKey('hints-$unlocked-$enabled-$reviewMode'),
         overrides: [
           sharedPreferencesProvider.overrideWithValue(prefs),
           caseStringsProvider('s01').overrideWith((ref) async => s01Strings),
@@ -257,7 +258,44 @@ void main() {
       ),
     );
     await tester.pump(const Duration(milliseconds: 400));
+
+    if (reviewMode) {
+      // Set the way `main()` sets it — through the notifier, after the first
+      // build — rather than overridden, so what the test drives is the real
+      // provider and not a stand-in for it.
+      ProviderScope.containerOf(
+        tester.element(find.byType(QuestionScreen)),
+      ).read(reviewModeProvider.notifier).set(true);
+      await tester.pump(const Duration(milliseconds: 400));
+    }
   }
+
+  testWidgets('review mode opens the hints, not only the cases', (
+    tester,
+  ) async {
+    // The gap this closes: review mode used to unlock the deck and the third
+    // question and nothing else, so a reviewer could open all ten cases and
+    // still never reach a hint — the button opened the paywall at them. A
+    // feature a reviewer cannot exercise is one they can only take on trust.
+    usePhoneSurface(tester);
+    await pumpHintState(
+      tester,
+      unlocked: false,
+      enabled: true,
+      reviewMode: true,
+    );
+
+    expect(find.text(s01Strings.c('q.use_hint')), findsOneWidget);
+
+    await tester.tap(find.text(s01Strings.c('q.use_hint')));
+    await tester.pump(const Duration(milliseconds: 400));
+
+    expect(
+      find.byType(RevealPair),
+      findsOneWidget,
+      reason: 'review mode still sent the reviewer to the paywall',
+    );
+  });
 
   testWidgets('a bought hint reveals at once, with no wrong tries required', (
     tester,
@@ -374,4 +412,3 @@ void main() {
     await tester.pumpWidget(const SizedBox.shrink());
   });
 }
-

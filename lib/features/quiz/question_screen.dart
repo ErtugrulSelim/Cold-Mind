@@ -309,7 +309,7 @@ class _QuestionScreenState extends ConsumerState<QuestionScreen> {
                   if (!_revealed &&
                       question is FreeTextQuestion &&
                       question.reveal != null &&
-                      (!ref.watch(hintsUnlockedProvider) ||
+                      (!ref.watch(hasHintsProvider) ||
                           ref.watch(hintsEnabledProvider))) ...[
                     const SizedBox(height: ColdSpace.md),
                     _HintButton(
@@ -581,12 +581,11 @@ class _QuestionScreenState extends ConsumerState<QuestionScreen> {
     // The free case's own trial ends here: three questions read for free,
     // then a subscription to keep going. Every other case is already gated
     // shut on the deck (`case_list_screen.dart`), so this only ever fires
-    // for `freeCaseId`. `reviewModeProvider` skips it the same way the
-    // deck's lock does, for the same reason.
-    if (!ref.read(reviewModeProvider) &&
-        solved == 3 &&
+    // for `freeCaseId`. `hasPro` carries the review-mode pass, the same way
+    // the deck's lock does and for the same reason.
+    if (solved == 3 &&
         widget.caseId == freeCaseId &&
-        !ref.read(isSubscribedProvider)) {
+        !ref.read(hasProProvider)) {
       final granted = await Navigator.of(context).push<bool>(
         MaterialPageRoute<bool>(
           builder: (_) => const PaywallScreen(source: 'question_3'),
@@ -696,7 +695,7 @@ class _QuestionScreenState extends ConsumerState<QuestionScreen> {
   /// plan without hints the button is still drawn, because a feature nobody
   /// can see is a feature nobody buys, and it opens the paywall instead.
   Future<void> _useHint() async {
-    if (ref.read(hintsUnlockedProvider)) {
+    if (ref.read(hasHintsProvider)) {
       setState(() => _revealed = true);
       _showFoot();
       return;
