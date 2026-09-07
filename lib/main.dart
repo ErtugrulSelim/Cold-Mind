@@ -12,6 +12,7 @@ import 'core/app_config.dart';
 import 'core/theme/cold_theme.dart';
 import 'data/providers/settings_providers.dart';
 import 'features/cases/case_list_screen.dart';
+import 'features/paywall/debug_store.dart';
 import 'features/paywall/revenuecat_store.dart';
 import 'features/paywall/store.dart';
 import 'firebase_options.dart';
@@ -29,11 +30,18 @@ Future<void> main() async {
   // ProviderScope: the sync below needs to call the real
   // IsSubscribed.grant()/revoke() methods — the same ones PaywallScreen
   // calls — before the first frame, and those only exist on the provider.
+  // `FAKE_STORE` already turns `hasRevenueCatKeys` off, so the two branches
+  // below cannot both fire: with the flag set the real store is skipped and
+  // the debug one takes its place, and without it `DebugStore` is
+  // unreachable — in a release build, even with the flag.
+  final useDebugStore = DebugStore.isAvailable(flagSet: AppConfig.fakeStore);
+
   final container = ProviderContainer(
     overrides: [
       sharedPreferencesProvider.overrideWithValue(prefs),
       if (AppConfig.hasRevenueCatKeys)
         storeProvider.overrideWithValue(const RevenueCatStore()),
+      if (useDebugStore) storeProvider.overrideWithValue(DebugStore(prefs)),
     ],
   );
 
