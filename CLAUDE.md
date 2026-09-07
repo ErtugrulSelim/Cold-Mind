@@ -524,15 +524,51 @@ out, or translated, or screenshotted — without live credentials. Here
 the SDK goes behind `Store` and arrives through `storeProvider`, so wiring a
 real one is an override in `main` and a test can hand the screen a fake.
 
-`UnconfiguredStore` is what ships until a billing SDK is added. It lists the two
-real plans so the screen can be seen, and it **throws rather than returning
-true** on purchase and restore. A paywall that quietly grants access when
-nothing is connected gives every case away for free and looks correct in every
-screenshot — `desk_render_test.dart` holds that line.
+`UnconfiguredStore` is what ships until a billing SDK is added. It lists the
+three real plans so the screen can be seen, and it **throws rather than
+returning access** on purchase and restore. A paywall that quietly grants
+access when nothing is connected gives every case away for free and looks
+correct in every screenshot — `desk_render_test.dart` holds that line.
 
 Prices are **strings the store already formatted**, never numbers this app
 renders: a store returns the currency, separator and position the user's own
 account expects, and rebuilding that here gets it wrong for most of the world.
+
+### Three plans, two entitlements
+
+| plan | period | grants |
+|---|---|---|
+| Weekly | P1W | `pro` |
+| Weekly + hints | P1W | `pro` + `hints` |
+| Yearly | P1Y | `pro` + `hints` |
+
+`pro` is every case; `hints` is the 50/50 reveal. They are two entitlements
+rather than one because the cheapest plan carries every case and no hints at
+all, so "subscribed" and "may use hints" are different questions.
+
+`purchase()` and `restore()` therefore return a **`StoreAccess`**, not a
+bool — the screen has to know *which* of the two came back, and it must be
+told by RevenueCat rather than infer it from the card that was tapped: a
+restore has no tapped card, and a deferred downgrade completes while the old
+entitlements are still the true ones.
+
+**Changing plans is the app's job, not just the store's.** Play needs the old
+subscription named at purchase time or it sells a second one alongside the
+first. `RevenueCatStore.replacementModeFor` decides how, against a tier
+table: moving up charges only the difference and keeps the renewal date;
+moving down is **deferred**, so the player keeps what they paid for until the
+period ends. iOS takes no such parameter — StoreKit handles a switch itself,
+but only if all three products share one subscription group in App Store
+Connect.
+
+### Hints
+
+Unlimited on the plans that include them, revealed by a button on the
+question screen rather than earned by getting three answers wrong, and
+switched off from Settings by anyone who wants the temptation gone. A player
+whose plan has no hints still sees the button — it is where the feature is
+discovered — and tapping it opens the paywall. `question_screen_test` holds
+all three states.
 
 The phone opens it — the GET PRO pill on the status row, beside the gear — and
 so does Settings. A gate on a locked case can push

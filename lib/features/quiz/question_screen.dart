@@ -14,14 +14,10 @@ import '../../data/models/question.dart';
 import '../../data/providers/case_providers.dart';
 import '../../data/providers/progress_providers.dart';
 import '../../data/providers/settings_providers.dart';
-import '../../data/providers/hint_providers.dart';
 import '../board/board_screen.dart';
 import '../case_flow/client_chat_screen.dart';
 import '../case_flow/client_portrait.dart';
-import '../hints/hint_store.dart';
-import '../hints/hint_store_screen.dart';
 import '../paywall/paywall_screen.dart';
-import '../paywall/store.dart';
 import '../phone/app_registry.dart';
 import '../phone/contact_book.dart';
 import 'case_solved_screen.dart';
@@ -78,10 +74,6 @@ class _QuestionScreenState extends ConsumerState<QuestionScreen> {
 
   /// The wrong half of a shown 50/50, if the player has already tried it.
   bool _revealMissed = false;
-
-  /// True while a hint spend is in flight, so the button can't be tapped
-  /// twice and charge for the same reveal.
-  bool _spendingHint = false;
 
   /// True for the second the answer is held on screen, ringed in green, before
   /// the case moves on.
@@ -309,14 +301,20 @@ class _QuestionScreenState extends ConsumerState<QuestionScreen> {
                     ),
                     child: _interaction(question, strings),
                   ),
+                  // Drawn for anyone who has not turned it off: a player
+                  // whose plan has no hints still sees it, because the
+                  // button is where they find out hints exist at all. The
+                  // switch only silences it for someone who owns hints and
+                  // wants them off the screen.
                   if (!_revealed &&
                       question is FreeTextQuestion &&
-                      question.reveal != null) ...[
+                      question.reveal != null &&
+                      (!ref.watch(hintsUnlockedProvider) ||
+                          ref.watch(hintsEnabledProvider))) ...[
                     const SizedBox(height: ColdSpace.md),
                     _HintButton(
                       label: strings?.c('q.use_hint') ?? 'Use a hint',
-                      busy: _spendingHint,
-                      onTap: () => _useHint(question, strings),
+                      onTap: _useHint,
                     ),
                   ],
                   if (_revealed && question is FreeTextQuestion) ...[
@@ -366,7 +364,6 @@ class _QuestionScreenState extends ConsumerState<QuestionScreen> {
     _verdict = null;
     _revealed = false;
     _revealMissed = false;
-    _spendingHint = false;
     _text.clear();
     _order = null;
     _picked = null;
@@ -691,49 +688,25 @@ class _QuestionScreenState extends ConsumerState<QuestionScreen> {
     );
   }
 
-  /// Spends one hint token to reveal a 50/50 on the current question. The
-  /// player asks for this whenever they want — there is no wrong-answer
-  /// count to earn it — so the choices stay off screen until they do.
-  Future<void> _useHint(FreeTextQuestion question, CaseStrings? strings) async {
-    setState(() => _spendingHint = true);
-    try {
-      final spent = await ref.read(hintStoreProvider).spend();
-      if (!mounted) return;
-
-      if (spent) {
-        setState(() => _revealed = true);
-        ref.invalidate(hintBalanceProvider);
-        _showFoot();
-        return;
-      }
-
-      // Not an error — just not enough tokens. Sent straight to the shop
-      // rather than told so in place, since there is nothing else to do
-      // here but buy more.
-      await Navigator.of(context).push(
-        MaterialPageRoute<void>(
-          builder: (_) => const HintStoreScreen(source: 'question_screen'),
-        ),
-      );
-    } on StoreException catch (error) {
-      if (mounted) {
-        final key = switch (error.failure) {
-          StoreFailure.network => 'hints.err_network',
-          StoreFailure.notAllowed => 'hints.err_not_allowed',
-          StoreFailure.unavailable => 'hints.err_unavailable',
-          StoreFailure.nothingToRestore => 'hints.err_generic',
-          StoreFailure.other => 'hints.err_generic',
-        };
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text(strings?.c(key) ?? ''),
-            behavior: SnackBarBehavior.floating,
-          ),
-        );
-      }
-    } finally {
-      if (mounted) setState(() => _spendingHint = false);
+  /// Reveals the 50/50 on the current question — or sells the plan that
+  /// would.
+  ///
+  /// The player asks for this whenever they want: there is no wrong-answer
+  /// count to earn it, so the choices stay off screen until they do. On a
+  /// plan without hints the button is still drawn, because a feature nobody
+  /// can see is a feature nobody buys, and it opens the paywall instead.
+  Future<void> _useHint() async {
+    if (ref.read(hintsUnlockedProvider)) {
+      setState(() => _revealed = true);
+      _showFoot();
+      return;
     }
+
+    await Navigator.of(context).push(
+      MaterialPageRoute<bool>(
+        builder: (_) => const PaywallScreen(source: 'hint_button'),
+      ),
+    );
   }
 }
 
@@ -893,10 +866,9 @@ class _SubmitBar extends StatelessWidget {
 /// is an optional one the player reaches for only when stuck.
 class _HintButton extends StatelessWidget {
   final String label;
-  final bool busy;
   final VoidCallback onTap;
 
-  const _HintButton({required this.label, required this.busy, required this.onTap});
+  const _HintButton({required this.label, required this.onTap});
 
   @override
   Widget build(BuildContext context) {
@@ -905,23 +877,14 @@ class _HintButton extends StatelessWidget {
     return SizedBox(
       width: double.infinity,
       child: OutlinedButton.icon(
-        onPressed: busy ? null : onTap,
+        onPressed: onTap,
         style: OutlinedButton.styleFrom(
           foregroundColor: device.accent,
           side: BorderSide(color: device.accent.withValues(alpha: 0.5)),
           padding: const EdgeInsets.symmetric(vertical: 12),
           shape: const RoundedRectangleBorder(borderRadius: ColdRadius.card),
         ),
-        icon: busy
-            ? SizedBox(
-                width: 16,
-                height: 16,
-                child: CircularProgressIndicator(
-                  strokeWidth: 2,
-                  color: device.accent,
-                ),
-              )
-            : const Icon(Icons.lightbulb_outline_rounded, size: 18),
+        icon: const Icon(Icons.lightbulb_outline_rounded, size: 18),
         label: Text(label, style: ColdType.label.copyWith(fontSize: 14)),
       ),
     );

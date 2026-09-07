@@ -34,14 +34,21 @@ void main() {
     prefs = await SharedPreferences.getInstance();
   });
 
-  Widget host({Store? store}) => ProviderScope(
-    overrides: [
-      sharedPreferencesProvider.overrideWithValue(prefs),
-      commonStringsProvider.overrideWith((ref) async => common),
-      if (store != null) storeProvider.overrideWithValue(store),
-    ],
-    child: MaterialApp(theme: buildColdTheme(), home: const SettingsScreen()),
-  );
+  /// [hintsUnlocked] is written to preferences rather than overridden, because
+  /// that is exactly where `HintsUnlocked` reads it from — the test then
+  /// exercises the real provider instead of a stand-in for it.
+  Widget host({Store? store, bool hintsUnlocked = true}) {
+    prefs.setBool('hints_unlocked', hintsUnlocked);
+    return ProviderScope(
+      key: ValueKey('settings-$hintsUnlocked-${store.runtimeType}'),
+      overrides: [
+        sharedPreferencesProvider.overrideWithValue(prefs),
+        commonStringsProvider.overrideWith((ref) async => common),
+        if (store != null) storeProvider.overrideWithValue(store),
+      ],
+      child: MaterialApp(theme: buildColdTheme(), home: const SettingsScreen()),
+    );
+  }
 
   testWidgets('every section and the rows that have somewhere to go', (
     tester,
@@ -61,7 +68,7 @@ void main() {
     }
 
     for (final key in [
-      'settings.hints',
+      'settings.answer_hints',
       'settings.language',
       'settings.faq',
       'settings.restore',
@@ -69,6 +76,25 @@ void main() {
     ]) {
       expect(find.text(common.c(key)), findsWidgets, reason: '$key missing');
     }
+  });
+
+  testWidgets('the hints switch is not drawn to a plan that has none', (
+    tester,
+  ) async {
+    // Not merely disabled: a switch for something the player does not own is
+    // a dead control, and the sales pitch for it lives on the question
+    // screen's own button instead.
+    usePhoneSurface(tester);
+
+    await tester.pumpWidget(host(hintsUnlocked: false));
+    await tester.pump(const Duration(milliseconds: 400));
+
+    expect(find.text(common.c('settings.answer_hints')), findsNothing);
+    expect(
+      find.text(common.c('settings.gameplay')),
+      findsNothing,
+      reason: 'a heading over an empty card reads as something that broke',
+    );
   });
 
   testWidgets('a row with no destination is not drawn at all', (tester) async {

@@ -127,3 +127,54 @@ class IsSubscribed extends _$IsSubscribed {
     state = false;
   }
 }
+
+/// Whether this player's plan includes hints.
+///
+/// Deliberately separate from [IsSubscribed] rather than derived from it:
+/// the cheapest weekly plan carries every case and no hints at all, so
+/// "subscribed" and "may use hints" are two different questions with two
+/// different answers. Kept in the same shape as [IsSubscribed] — persisted,
+/// granted at the moment of purchase, revoked when RevenueCat says the
+/// entitlement has lapsed — because the reasoning is identical: the answer
+/// has to survive an offline launch.
+@Riverpod(keepAlive: true)
+class HintsUnlocked extends _$HintsUnlocked {
+  static const String _key = 'hints_unlocked';
+
+  @override
+  bool build() => ref.watch(sharedPreferencesProvider).getBool(_key) ?? false;
+
+  Future<void> grant() async {
+    await ref.read(sharedPreferencesProvider).setBool(_key, true);
+    state = true;
+  }
+
+  Future<void> revoke() async {
+    await ref.read(sharedPreferencesProvider).setBool(_key, false);
+    state = false;
+  }
+}
+
+/// Whether a player who *has* hints wants to be shown them.
+///
+/// Defaults to **on**: this only ever matters to somebody who paid for
+/// hints, and starting a bought feature switched off hides it from the
+/// person who bought it. The switch exists for the opposite case — a player
+/// who wants the temptation off the screen entirely — which is why turning
+/// it off removes the button rather than merely dimming it.
+///
+/// A plain bool, not the three-state offer the pre-token build used: that
+/// existed to ask consent for something free, and there is nothing to
+/// consent to once it has been paid for.
+@Riverpod(keepAlive: true)
+class HintsEnabled extends _$HintsEnabled {
+  static const String _key = 'hints_enabled';
+
+  @override
+  bool build() => ref.watch(sharedPreferencesProvider).getBool(_key) ?? true;
+
+  Future<void> set({required bool enabled}) async {
+    await ref.read(sharedPreferencesProvider).setBool(_key, enabled);
+    state = enabled;
+  }
+}

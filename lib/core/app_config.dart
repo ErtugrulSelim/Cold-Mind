@@ -55,19 +55,29 @@ class AppConfig {
   static const String revenueCatAppleKey = '';
   static const String revenueCatGoogleKey = 'goog_LcVOeyqgYRNTHEuvGIXXyYlroUs';
 
-  /// The entitlement identifier configured in the RevenueCat dashboard.
-  /// Every plan (weekly, yearly) grants this same entitlement, so this is
-  /// the one string both `purchase()` and `restore()` check.
+  /// The entitlement every plan grants: the cases themselves. All three
+  /// plans carry it, so this is the one string that answers "is this player
+  /// subscribed at all".
   static const String revenueCatEntitlementId = 'pro';
 
-  /// The backend that spends a hint token — the only thing that ever
-  /// decrements a player's balance, since RevenueCat's client SDK can read a
-  /// virtual currency but refuses to let a client spend one. Empty until
-  /// that backend is wired up: [HintStore.spend] fails closed on an empty
-  /// URL exactly the way [hasRevenueCatKeys] fails closed on an empty key.
-  static const String hintSpendFunctionUrl = '';
+  /// The entitlement only the paid-for-hints plans grant — the weekly-plus
+  /// tier and the yearly one. A player holding [revenueCatEntitlementId]
+  /// without this one has every case and no hints, which is the entire point
+  /// of having two entitlements rather than one.
+  static const String revenueCatHintsEntitlementId = 'hints';
+
+  /// Forces the build back onto `UnconfiguredStore` even with a real key
+  /// filled in — `flutter run --dart-define=FAKE_STORE=true`.
+  ///
+  /// The paywall can only draw the plans the store hands it, so until the
+  /// three subscriptions exist in the store the real one has nothing to
+  /// return and the screen is a "not available right now" message. This is
+  /// how the layout gets looked at in the meantime, and it defaults to false
+  /// so no shipped build can reach it by accident.
+  static const bool fakeStore = bool.fromEnvironment('FAKE_STORE');
 
   static bool get hasRevenueCatKeys =>
+      !fakeStore &&
       (Platform.isIOS ? revenueCatAppleKey : revenueCatGoogleKey).isNotEmpty;
 
   static bool get hasDownloadLink => downloadUrl.isNotEmpty;

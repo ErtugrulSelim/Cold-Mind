@@ -13,7 +13,6 @@ import 'app_router.dart';
 import 'contact_book.dart';
 import '../board/board_screen.dart';
 import '../quiz/question_screen.dart';
-import '../hints/hint_balance_pill.dart';
 import '../paywall/pro_button.dart';
 import '../settings/settings_screen.dart';
 import 'widgets/app_pager.dart';
@@ -76,8 +75,6 @@ class PhoneHomeScreen extends ConsumerWidget {
         // stay out of the way — which made the one thing on the screen asking
         // for money the least visible thing on it.
         ProButton(strings: strings, source: 'phone_home', large: true),
-        const SizedBox(width: ColdSpace.sm),
-        const HintBalancePill(),
       ],
     );
 

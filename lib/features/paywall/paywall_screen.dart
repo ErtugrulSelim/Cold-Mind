@@ -60,9 +60,15 @@ class _PaywallScreenState extends ConsumerState<PaywallScreen> {
       if (!mounted) return;
       setState(() {
         _plans = plans;
-        _selected = plans
-            .firstWhere((p) => p.recommended, orElse: () => plans.first)
-            .id;
+        // Never the plan they are already on: opening a paywall with the
+        // current subscription pre-selected offers to sell it to them
+        // again.
+        final selectable = plans.where((p) => !p.owned).toList();
+        _selected = selectable.isEmpty
+            ? null
+            : selectable
+                  .firstWhere((p) => p.recommended, orElse: () => selectable.first)
+                  .id;
       });
     } on StoreException catch (error) {
       if (mounted) setState(() => _failure = error.failure);
@@ -73,25 +79,47 @@ class _PaywallScreenState extends ConsumerState<PaywallScreen> {
     }
   }
 
-  Future<void> _run(Future<bool> Function() action) async {
+  Future<void> _run(Future<StoreAccess?> Function() action) async {
     setState(() {
       _working = true;
       _failure = null;
     });
     try {
-      final granted = await action();
+      final access = await action();
       if (!mounted) return;
-      // False is a cancellation, not a failure: the player closed the store
+      // Null is a cancellation, not a failure: the player closed the store
       // sheet, and telling them something went wrong would be a lie.
-      if (granted) {
-        // Persisted here rather than re-derived from the store on every
-        // launch, because [UnconfiguredStore] has no notion of "already
-        // owns this" to ask — the moment of purchase is the only moment
-        // this app ever learns the answer.
-        await ref.read(isSubscribedProvider.notifier).grant();
-        if (!mounted) return;
-        Navigator.of(context).pop(true);
+      if (access == null) return;
+
+      // Persisted here rather than re-derived from the store on every
+      // launch, because [UnconfiguredStore] has no notion of "already owns
+      // this" to ask — the moment of purchase is the only moment this app
+      // ever learns the answer. Both flags come from what RevenueCat
+      // reported, never from what the tapped card promised: a deferred
+      // downgrade completes while the old entitlements are still the true
+      // ones.
+      final subscribed = ref.read(isSubscribedProvider.notifier);
+      final hints = ref.read(hintsUnlockedProvider.notifier);
+      await (access.pro ? subscribed.grant() : subscribed.revoke());
+      await (access.hints ? hints.grant() : hints.revoke());
+      if (!mounted) return;
+
+      // A downgrade changes nothing today, so closing the screen on silence
+      // would read as a purchase that failed.
+      if (access.deferred) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text(
+              ref.read(commonStringsProvider).value?.c(
+                    'paywall.change_deferred',
+                  ) ??
+                  'Your new plan starts when the current one ends.',
+            ),
+            behavior: SnackBarBehavior.floating,
+          ),
+        );
       }
+      Navigator.of(context).pop(access.pro);
     } on StoreException catch (error) {
       if (mounted) setState(() => _failure = error.failure);
     } catch (_) {
@@ -204,7 +232,13 @@ class _PaywallScreenState extends ConsumerState<PaywallScreen> {
                         ],
                         const SizedBox(height: ColdSpace.md),
                         _Continue(
-                          label: strings?.c('paywall.continue') ?? 'CONTINUE',
+                          // A subscriber is not continuing to anything —
+                          // they are moving between plans, and a button
+                          // that says CONTINUE reads as a first purchase.
+                          label: _plans.any((p) => p.owned)
+                              ? (strings?.c('paywall.switch_plan') ??
+                                    'SWITCH PLAN')
+                              : (strings?.c('paywall.continue') ?? 'CONTINUE'),
                           busy: _working,
                           onTap: _loading || _selected == null
                               ? null
@@ -248,8 +282,18 @@ class _PaywallScreenState extends ConsumerState<PaywallScreen> {
           badge: plan.recommended
               ? (strings?.c('paywall.best_offer') ?? 'BEST OFFER')
               : null,
+          // One line, not two: three cards already fill the block this
+          // sits in, and being told which plan is theirs matters more to a
+          // subscriber than being told again what it includes.
+          note: plan.owned
+              ? (strings?.c('paywall.current_plan') ?? 'Your plan')
+              : plan.includesHints
+              ? (strings?.c('paywall.plan_hints') ?? 'Hints included')
+              : null,
           selected: plan.id == _selected,
-          onTap: _working ? null : () => setState(() => _selected = plan.id),
+          onTap: _working || plan.owned
+              ? null
+              : () => setState(() => _selected = plan.id),
         ),
         if (plan != _plans.last) const SizedBox(height: ColdSpace.sm),
       ],
@@ -348,6 +392,9 @@ class _PlanCard extends StatelessWidget {
   final String? perWeek;
   final String perWeekLabel;
   final String? badge;
+
+  /// One line under the price: which plan is theirs, or what this one adds.
+  final String? note;
   final bool selected;
   final VoidCallback? onTap;
 
@@ -357,6 +404,7 @@ class _PlanCard extends StatelessWidget {
     required this.perWeek,
     required this.perWeekLabel,
     required this.badge,
+    required this.note,
     required this.selected,
     required this.onTap,
   });
@@ -420,6 +468,15 @@ class _PlanCard extends StatelessWidget {
                         color: desk.paper.withValues(alpha: 0.55),
                       ),
                     ),
+                    if (note case final text?) ...[
+                      const SizedBox(height: 2),
+                      Text(
+                        text,
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                        style: ColdType.micro.copyWith(color: desk.highlight),
+                      ),
+                    ],
                   ],
                 ),
               ),

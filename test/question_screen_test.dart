@@ -5,7 +5,6 @@ import 'package:coldmind/data/models/question.dart';
 import 'package:coldmind/data/providers/case_providers.dart';
 import 'package:coldmind/data/providers/settings_providers.dart';
 import 'package:coldmind/data/repository/case_repository.dart';
-import 'package:coldmind/features/hints/hint_store.dart';
 import 'package:coldmind/features/phone/contact_book.dart';
 import 'package:coldmind/features/quiz/question_screen.dart';
 import 'package:coldmind/features/quiz/widgets/reveal_pair.dart';
@@ -224,21 +223,28 @@ void main() {
     expect(find.text(strings.c('eval.wrong')), findsOneWidget);
   });
 
-  testWidgets('a hint can be used any time, no wrong tries required', (
-    tester,
-  ) async {
-    usePhoneSurface(tester);
-
-    final strings = s01Strings;
+  /// The three states a hint can be in, which between them are the whole
+  /// feature: owned and on reveals, owned and off draws nothing, and not
+  /// owned sells the plan that would.
+  Future<void> pumpHintState(
+    WidgetTester tester, {
+    required bool unlocked,
+    required bool enabled,
+  }) async {
     final prefs = await SharedPreferences.getInstance();
     await prefs.setInt('progress.solved.s01', 0);
+    await prefs.setBool('hints_unlocked', unlocked);
+    await prefs.setBool('hints_enabled', enabled);
 
     await tester.pumpWidget(
       ProviderScope(
+        key: ValueKey('hints-$unlocked-$enabled'),
         overrides: [
           sharedPreferencesProvider.overrideWithValue(prefs),
-          caseStringsProvider('s01').overrideWith((ref) async => strings),
-          hintStoreProvider.overrideWithValue(const _AlwaysSpendableHintStore()),
+          caseStringsProvider('s01').overrideWith((ref) async => s01Strings),
+          // PaywallScreen, where the locked case lands, reads its own
+          // strings from this rather than the case-scoped provider above.
+          commonStringsProvider.overrideWith((ref) async => s01Strings),
         ],
         child: MaterialApp(
           theme: buildColdTheme(),
@@ -251,68 +257,66 @@ void main() {
       ),
     );
     await tester.pump(const Duration(milliseconds: 400));
+  }
+
+  testWidgets('a bought hint reveals at once, with no wrong tries required', (
+    tester,
+  ) async {
+    usePhoneSurface(tester);
+    await pumpHintState(tester, unlocked: true, enabled: true);
 
     // No wrong answer was ever submitted — the hint is there from the start.
     expect(find.byType(RevealPair), findsNothing);
-    expect(find.text(strings.c('q.use_hint')), findsOneWidget);
+    expect(find.text(s01Strings.c('q.use_hint')), findsOneWidget);
 
-    await tester.tap(find.text(strings.c('q.use_hint')));
+    await tester.tap(find.text(s01Strings.c('q.use_hint')));
     await tester.pump(const Duration(milliseconds: 400));
 
     expect(find.byType(RevealPair), findsOneWidget);
     expect(
-      find.text(strings.c('q.use_hint')),
+      find.text(s01Strings.c('q.use_hint')),
       findsNothing,
       reason: 'the ask disappears once it has already been granted',
     );
   });
 
-  testWidgets('an empty hint balance sends the player to the shop, not a free reveal', (
+  testWidgets('switching hints off in settings takes the button away', (
     tester,
   ) async {
     usePhoneSurface(tester);
+    await pumpHintState(tester, unlocked: true, enabled: false);
 
-    final strings = s01Strings;
-    final prefs = await SharedPreferences.getInstance();
-    await prefs.setInt('progress.solved.s01', 0);
-
-    await tester.pumpWidget(
-      ProviderScope(
-        overrides: [
-          sharedPreferencesProvider.overrideWithValue(prefs),
-          caseStringsProvider('s01').overrideWith((ref) async => strings),
-          // HintStoreScreen, the fallback this test tap lands on, reads its
-          // own strings from this rather than the case-scoped provider above.
-          commonStringsProvider.overrideWith((ref) async => strings),
-          // Left at its default — UnconfiguredHintStore, whose spend()
-          // reports "not enough" rather than granting a reveal for free.
-        ],
-        child: MaterialApp(
-          theme: buildColdTheme(),
-          home: QuestionScreen(
-            caseId: 's01',
-            file: loaded['s01']!.file,
-            contacts: loaded['s01']!.contacts,
-          ),
-        ),
-      ),
+    expect(
+      find.text(s01Strings.c('q.use_hint')),
+      findsNothing,
+      reason: 'the switch is meant to remove the temptation, not dim it',
     );
-    await tester.pump(const Duration(milliseconds: 400));
+    expect(find.byType(RevealPair), findsNothing);
+  });
 
-    await tester.tap(find.text(strings.c('q.use_hint')));
+  testWidgets('a plan without hints offers the paywall, never a free reveal', (
+    tester,
+  ) async {
+    usePhoneSurface(tester);
+    await pumpHintState(tester, unlocked: false, enabled: true);
+
+    // Still drawn: the button is where a player finds out hints exist.
+    expect(find.text(s01Strings.c('q.use_hint')), findsOneWidget);
+
+    await tester.tap(find.text(s01Strings.c('q.use_hint')));
     // A route push, not just a setState — the transition needs settling,
-    // not a fixed pump, before the shop's own content can be found.
+    // not a fixed pump, before the paywall's own content can be found.
     await tester.pumpAndSettle();
 
     expect(
       find.byType(RevealPair),
       findsNothing,
-      reason: 'a player with no tokens must not get the reveal for free',
+      reason: 'a plan that does not include hints must not hand one over',
     );
     expect(
-      find.text(strings.c('hints.title')),
+      find.text(s01Strings.c('paywall.continue')),
       findsOneWidget,
-      reason: 'an unaffordable hint should offer the shop, not silence',
+      reason: 'the tap should have opened the paywall, not done nothing',
     );
   });
 
@@ -371,21 +375,3 @@ void main() {
   });
 }
 
-/// A [HintStore] that always has a token to spend — the fake behind the
-/// "hint granted" branch of `_useHint`, the same way `UnconfiguredHintStore`
-/// (spend() always false) is the fake behind the "no tokens" branch.
-class _AlwaysSpendableHintStore implements HintStore {
-  const _AlwaysSpendableHintStore();
-
-  @override
-  Future<int> balance() async => 1;
-
-  @override
-  Future<List<HintPackage>> packages() async => const [];
-
-  @override
-  Future<bool> purchase(String packageId) async => false;
-
-  @override
-  Future<bool> spend() async => true;
-}

@@ -10,8 +10,6 @@ import 'core/app_config.dart';
 import 'core/theme/cold_theme.dart';
 import 'data/providers/settings_providers.dart';
 import 'features/cases/case_list_screen.dart';
-import 'features/hints/hint_store.dart';
-import 'features/hints/revenuecat_hint_store.dart';
 import 'features/paywall/revenuecat_store.dart';
 import 'features/paywall/store.dart';
 
@@ -30,10 +28,8 @@ Future<void> main() async {
   final container = ProviderContainer(
     overrides: [
       sharedPreferencesProvider.overrideWithValue(prefs),
-      if (AppConfig.hasRevenueCatKeys) ...[
+      if (AppConfig.hasRevenueCatKeys)
         storeProvider.overrideWithValue(const RevenueCatStore()),
-        hintStoreProvider.overrideWithValue(const RevenueCatHintStore()),
-      ],
     ],
   );
 
@@ -52,16 +48,15 @@ Future<void> main() async {
               : AppConfig.revenueCatGoogleKey,
         ),
       );
-      final info = await Purchases.getCustomerInfo();
-      final active = info.entitlements.active.containsKey(
-        AppConfig.revenueCatEntitlementId,
+      // Both entitlements, together: a plan can carry the cases without the
+      // hints, so one flag cannot stand in for the other.
+      final access = RevenueCatStore.accessFrom(
+        await Purchases.getCustomerInfo(),
       );
-      final notifier = container.read(isSubscribedProvider.notifier);
-      if (active) {
-        await notifier.grant();
-      } else {
-        await notifier.revoke();
-      }
+      final subscribed = container.read(isSubscribedProvider.notifier);
+      final hints = container.read(hintsUnlockedProvider.notifier);
+      await (access.pro ? subscribed.grant() : subscribed.revoke());
+      await (access.hints ? hints.grant() : hints.revoke());
     } catch (_) {
       // Nothing to sync this launch.
     }
