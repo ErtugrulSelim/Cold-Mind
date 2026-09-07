@@ -1,9 +1,11 @@
 import 'dart:ui' show ImageFilter;
 
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../core/theme/cold_theme.dart';
 import '../../data/l10n/case_strings.dart';
+import '../../data/providers/settings_providers.dart';
 import 'paywall_screen.dart';
 
 /// The way into the subscription screen.
@@ -19,7 +21,7 @@ import 'paywall_screen.dart';
 /// case deck it is the first screen of the game and the only thing on it asking
 /// for money, so it is filled amber and reads at a glance. A single size would
 /// have been either too loud in one place or invisible in the other.
-class ProButton extends StatelessWidget {
+class ProButton extends ConsumerWidget {
   final CaseStrings? strings;
 
   /// Where the player was when this opened.
@@ -36,7 +38,15 @@ class ProButton extends StatelessWidget {
   });
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
+    // Nothing to sell to somebody who has already bought. The check lives
+    // here rather than at each call site so a surface cannot forget it — the
+    // same reason the login gate sits in `app_router` instead of inside each
+    // app. A subscriber who wants a *different* plan still reaches the
+    // paywall: the question screen's hint button opens it, which is where a
+    // player on the cheapest plan meets the hints they do not have.
+    if (ref.watch(isSubscribedProvider)) return const SizedBox.shrink();
+
     final desk = context.desk;
     final label = strings?.c('ui.cases.pro') ?? 'GET PRO';
     const radius = BorderRadius.all(Radius.circular(999));

@@ -37,10 +37,15 @@ void main() {
   /// [hintsUnlocked] is written to preferences rather than overridden, because
   /// that is exactly where `HintsUnlocked` reads it from — the test then
   /// exercises the real provider instead of a stand-in for it.
-  Widget host({Store? store, bool hintsUnlocked = true}) {
+  Widget host({
+    Store? store,
+    bool hintsUnlocked = true,
+    bool subscribed = false,
+  }) {
     prefs.setBool('hints_unlocked', hintsUnlocked);
+    prefs.setBool('is_subscribed', subscribed);
     return ProviderScope(
-      key: ValueKey('settings-$hintsUnlocked-${store.runtimeType}'),
+      key: ValueKey('settings-$hintsUnlocked-$subscribed-${store.runtimeType}'),
       overrides: [
         sharedPreferencesProvider.overrideWithValue(prefs),
         commonStringsProvider.overrideWith((ref) async => common),
@@ -95,6 +100,31 @@ void main() {
       findsNothing,
       reason: 'a heading over an empty card reads as something that broke',
     );
+  });
+
+  testWidgets('the Pro pitch is gone once the player has bought', (
+    tester,
+  ) async {
+    // Left in, it is the first thing a paying player sees every time they
+    // open their own settings — still asking them for money.
+    usePhoneSurface(tester);
+
+    await tester.pumpWidget(host(subscribed: true));
+    await tester.pump(const Duration(milliseconds: 400));
+
+    expect(find.text(common.c('settings.pro_cta')), findsNothing);
+    expect(find.text(common.c('ui.cases.pro')), findsNothing);
+  });
+
+  testWidgets('and is drawn to somebody who has not', (tester) async {
+    // Paired with the test above rather than asserted alone: hiding the pitch
+    // from everybody would pass that one perfectly.
+    usePhoneSurface(tester);
+
+    await tester.pumpWidget(host());
+    await tester.pump(const Duration(milliseconds: 400));
+
+    expect(find.text(common.c('settings.pro_cta')), findsOneWidget);
   });
 
   testWidgets('a row with no destination is not drawn at all', (tester) async {

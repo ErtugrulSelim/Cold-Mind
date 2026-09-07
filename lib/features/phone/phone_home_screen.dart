@@ -7,6 +7,7 @@ import '../../core/theme/cold_theme.dart';
 import '../../data/l10n/case_strings.dart';
 import '../../data/models/case_file.dart';
 import '../../data/providers/case_providers.dart';
+import '../../data/providers/settings_providers.dart';
 import '../../data/models/person.dart';
 import 'app_registry.dart';
 import 'app_router.dart';
@@ -69,12 +70,18 @@ class PhoneHomeScreen extends ConsumerWidget {
             size: 21,
           ),
         ),
-        const SizedBox(width: ColdSpace.sm),
         // The same filled pill the deck carries. It shares this row with the
         // clock and the live indicator, so it was drawn small and outlined to
         // stay out of the way — which made the one thing on the screen asking
         // for money the least visible thing on it.
-        ProButton(strings: strings, source: 'phone_home', large: true),
+        //
+        // `ProButton` hides itself once the player subscribes; the gap before
+        // it has to go with it, or the row keeps a step of padding leading to
+        // nothing.
+        if (!ref.watch(isSubscribedProvider)) ...[
+          const SizedBox(width: ColdSpace.sm),
+          ProButton(strings: strings, source: 'phone_home', large: true),
+        ],
       ],
     );
 
