@@ -40,15 +40,16 @@ class AppConfig {
   /// is worse than no share button.
   static const String downloadUrl = '';
 
-  /// Koala Cache LLC's own pages, which cover every app it publishes rather
-  /// than naming one — so these are this app's legal pages, not another
-  /// product's borrowed. Filling them in is also what draws the two rows in
-  /// Settings and makes the paywall's own line tappable; both stores require
-  /// those links to actually open on the screen that takes money, not merely
-  /// to be printed there.
-  static const String termsUrl = 'https://koalacache.games/terms-of-use.html';
-  static const String privacyUrl =
-      'https://koalacache.games/privacy-policy.html';
+  /// The publisher's own legal pages. Empty here on purpose: this branch
+  /// carries no publisher identity at all, and the one that ships fills these
+  /// in.
+  ///
+  /// **A build cannot go to review with them empty.** Filling them in is what
+  /// draws the two rows in Settings and makes the paywall's own line
+  /// tappable, and both stores require those links to actually open from the
+  /// screen that takes money rather than merely to be printed on it.
+  static const String termsUrl = '';
+  static const String privacyUrl = '';
 
   /// RevenueCat's public SDK keys, one per store. These are meant to ship
   /// inside the client binary — RevenueCat does not treat them as secrets —
