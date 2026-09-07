@@ -9,6 +9,7 @@ import '../../data/l10n/case_strings.dart';
 import '../../data/providers/case_providers.dart';
 import '../../data/providers/settings_providers.dart';
 import '../paywall/paywall_screen.dart';
+import '../paywall/debug_store.dart';
 import '../paywall/store.dart';
 
 /// The player's own settings.
@@ -133,7 +134,76 @@ class SettingsScreen extends ConsumerWidget {
                 ),
             ],
           ),
+
+          // Only ever drawn against `DebugStore`, which itself only exists in
+          // a debug build started with the flag — so this is not a row that
+          // is hidden in release, it is a row that cannot be built there.
+          // Testing the three plans means buying each one and playing, and
+          // without a way back to "no subscription" that can be done once.
+          if (ref.watch(storeProvider) case final DebugStore debug) ...[
+            const _SectionHeader(text: 'DEBUG'),
+            _Group(
+              children: [
+                _Row(
+                  icon: Icons.restart_alt_rounded,
+                  label: 'Reset subscription',
+                  chevron: false,
+                  onTap: () => _resetDebugStore(context, ref, debug),
+                ),
+                _Row(
+                  icon: Icons.fast_forward_rounded,
+                  label: 'Skip to renewal',
+                  chevron: false,
+                  onTap: () => _advanceDebugStore(context, ref, debug),
+                ),
+              ],
+            ),
+          ],
         ],
+      ),
+    );
+  }
+
+  /// Puts the fake account back to having bought nothing, so the locked deck,
+  /// the gated third question and the hint button's paywall can all be walked
+  /// again from the beginning.
+  Future<void> _resetDebugStore(
+    BuildContext context,
+    WidgetRef ref,
+    DebugStore store,
+  ) async {
+    await store.reset();
+    await ref.read(isSubscribedProvider.notifier).revoke();
+    await ref.read(hintsUnlockedProvider.notifier).revoke();
+    if (!context.mounted) return;
+    ScaffoldMessenger.of(context).showSnackBar(
+      const SnackBar(
+        content: Text('Subscription cleared.'),
+        behavior: SnackBarBehavior.floating,
+      ),
+    );
+  }
+
+  /// Lands a deferred downgrade that would otherwise wait out the period the
+  /// player already paid for — the one part of the plan-change rules that
+  /// cannot be seen by tapping through in one sitting.
+  Future<void> _advanceDebugStore(
+    BuildContext context,
+    WidgetRef ref,
+    DebugStore store,
+  ) async {
+    await store.advanceToRenewal();
+    final plan = store.currentPlan;
+    if (plan != null) {
+      await ref.read(isSubscribedProvider.notifier).grant();
+      final hints = ref.read(hintsUnlockedProvider.notifier);
+      await (DebugStore.grantsHints(plan) ? hints.grant() : hints.revoke());
+    }
+    if (!context.mounted) return;
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content: Text(plan == null ? 'Nothing pending.' : 'Now on $plan.'),
+        behavior: SnackBarBehavior.floating,
       ),
     );
   }
