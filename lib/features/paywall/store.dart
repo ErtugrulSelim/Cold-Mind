@@ -121,7 +121,7 @@ class UnconfiguredStore implements Store {
     // player's own currency, at that country's own price, already formatted
     // — which is why nothing above this class ever builds a price itself.
     StorePlan(
-      id: 'coldmind_yearly',
+      id: 'yearly_premium_coldmind',
       titleKey: 'paywall.yearly_title',
       priceLabel: r'$24.99',
       perWeekLabel: r'$0.48',
@@ -129,13 +129,13 @@ class UnconfiguredStore implements Store {
       includesHints: true,
     ),
     StorePlan(
-      id: 'coldmind_weekly_hints',
+      id: 'weekly_hint_premium_coldmind',
       titleKey: 'paywall.weekly_hints_title',
       priceLabel: r'$4.99',
       includesHints: true,
     ),
     StorePlan(
-      id: 'coldmind_weekly',
+      id: 'weekly_premium_coldmind',
       titleKey: 'paywall.weekly_title',
       priceLabel: r'$2.99',
     ),

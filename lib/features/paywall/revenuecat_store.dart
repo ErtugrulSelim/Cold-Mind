@@ -61,9 +61,13 @@ class RevenueCatStore implements Store {
 
     return [
       StorePlan(
-        // The same placeholder ids `UnconfiguredStore` already uses, so
-        // nothing above this class needs to know a real store product id.
-        id: 'coldmind_yearly',
+        // Play's own subscription id, minus the base plan `store_identifier`
+        // appends. It is not decoration: `replacementModeFor` compares this
+        // against what `activeSubscriptions` reports, so a plan whose id here
+        // drifts from the one in Play stops being recognised as the thing the
+        // player is already on, and a plan change is sold as a second
+        // subscription beside the first.
+        id: 'yearly_premium_coldmind',
         titleKey: 'paywall.yearly_title',
         priceLabel: yearly.storeProduct.priceString,
         perWeekLabel: RevenueCatStore.perWeekLabel(yearly.storeProduct),
@@ -73,14 +77,14 @@ class RevenueCatStore implements Store {
       ),
       if (weeklyHints != null)
         StorePlan(
-          id: 'coldmind_weekly_hints',
+          id: 'weekly_hint_premium_coldmind',
           titleKey: 'paywall.weekly_hints_title',
           priceLabel: weeklyHints.storeProduct.priceString,
           includesHints: true,
           owned: owns(weeklyHints),
         ),
       StorePlan(
-        id: 'coldmind_weekly',
+        id: 'weekly_premium_coldmind',
         titleKey: 'paywall.weekly_title',
         priceLabel: weekly.storeProduct.priceString,
         owned: owns(weekly),
@@ -109,9 +113,9 @@ class RevenueCatStore implements Store {
   /// Where each plan sits relative to the others, which is the only thing
   /// that decides whether a change is an upgrade or a downgrade.
   static const Map<String, int> _tiers = {
-    'coldmind_weekly': 0,
-    'coldmind_weekly_hints': 1,
-    'coldmind_yearly': 2,
+    'weekly_premium_coldmind': 0,
+    'weekly_hint_premium_coldmind': 1,
+    'yearly_premium_coldmind': 2,
   };
 
   /// How Play should be told to handle a player who already subscribes
@@ -150,9 +154,9 @@ class RevenueCatStore implements Store {
     if (offering == null) throw const StoreException(StoreFailure.unavailable);
 
     final package = switch (planId) {
-      'coldmind_yearly' => offering.annual,
-      'coldmind_weekly' => offering.weekly,
-      'coldmind_weekly_hints' => offering.availablePackages
+      'yearly_premium_coldmind' => offering.annual,
+      'weekly_premium_coldmind' => offering.weekly,
+      'weekly_hint_premium_coldmind' => offering.availablePackages
           .where((p) => p.identifier == _weeklyHintsKey)
           .firstOrNull,
       _ => null,
