@@ -3,6 +3,8 @@ import 'dart:ui' as ui;
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../../core/app_config.dart';
+
 part 'settings_providers.g.dart';
 
 /// A language the player can pick in Settings.
@@ -178,3 +180,47 @@ class HintsEnabled extends _$HintsEnabled {
     state = enabled;
   }
 }
+
+/// Bypasses the paywall for App/Play review builds — the one flag a
+/// reviewer needs, since a reviewer cannot subscribe on `UnconfiguredStore`
+/// any more than a player can. Every lock that would shut a case or stop the
+/// game on question 3 reads it through [hasPro] / [hasHints], so a review
+/// build plays every case straight through with nothing to unlock.
+///
+/// A provider over the constant rather than the constant itself, for two
+/// reasons: it is the seam a build can flip the flag at runtime through
+/// (`set`), and it is what lets a widget test drive review mode instead of
+/// asserting around a compile-time `false`. Not persisted — this describes
+/// the build, not the player.
+@Riverpod(keepAlive: true)
+class ReviewMode extends _$ReviewMode {
+  @override
+  bool build() => AppConfig.reviewMode;
+
+  void set(bool value) => state = value;
+}
+
+/// Whether the player may open every case, and whether they may use hints.
+///
+/// **These are what the locks ask, and nothing else should.** `IsSubscribed`
+/// and `HintsUnlocked` record what was actually bought; these two answer the
+/// different question of what this build is currently allowed to show, which
+/// is the same thing plus the review-mode free pass.
+///
+/// Keeping the pass in one place per entitlement is the point. It used to be
+/// spelled out at the two case locks and nowhere else, so a reviewer could
+/// open all ten cases and still never reach a hint: the button opened the
+/// paywall at them and the Settings switch was never drawn. A feature a
+/// reviewer cannot exercise is a feature they can only take on trust.
+///
+/// The sales surfaces deliberately do **not** use these — see [ProButton].
+/// A reviewer has to be able to find and open the paywall, so what is offered
+/// for sale follows what was really bought, while what is unlocked follows
+/// these.
+@Riverpod(keepAlive: true)
+bool hasPro(Ref ref) =>
+    ref.watch(isSubscribedProvider) || ref.watch(reviewModeProvider);
+
+@Riverpod(keepAlive: true)
+bool hasHints(Ref ref) =>
+    ref.watch(hintsUnlockedProvider) || ref.watch(reviewModeProvider);

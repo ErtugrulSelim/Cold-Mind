@@ -3,7 +3,6 @@ import 'dart:ui' show ImageFilter;
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../core/app_config.dart';
 import '../../core/theme/cold_theme.dart';
 import '../../data/l10n/case_strings.dart';
 import '../../data/models/case_summary.dart';
@@ -130,15 +129,12 @@ class _Deck extends ConsumerWidget {
                 itemBuilder: (context, i) {
                   final summary = cases[i];
                   final progress = ref.watch(caseProgressProvider(summary.id));
-                  // Only the first case is free to open cold. Everything
-                  // after it needs a subscription — see `IsSubscribed` for
-                  // why that stays false on every build shipped so far.
-                  // `AppConfig.reviewMode` is the one exception: a reviewer
-                  // cannot subscribe on an unconfigured store either.
+                  // Only the first case is free to open cold; everything after
+                  // it needs a subscription. `hasPro` is that question plus
+                  // the review-mode pass, in one place — see its own doc for
+                  // why the pass is not spelled out here.
                   final locked =
-                      !AppConfig.reviewMode &&
-                      summary.id != freeCaseId &&
-                      !ref.watch(isSubscribedProvider);
+                      summary.id != freeCaseId && !ref.watch(hasProProvider);
 
                   return _BottomCard(
                     height: cardHeight,

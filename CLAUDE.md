@@ -595,14 +595,33 @@ pushes `PaywallScreen(source: 'question_3')` there, and declining leaves the
 case parked at question three, solved and waiting, rather than losing
 progress.
 
-**`AppConfig.reviewMode`** is the escape hatch for both locks — the one flag
-a reviewer needs, since `UnconfiguredStore` throws on purchase exactly as it
-would for a paying player. Flip it to `true` for the build submitted to
-App/Play review, back to `false` before it ships. **Until a real `Store`
-replaces `UnconfiguredStore`, this is also the *only* way s02–s10 are
-reachable at all** — `purchase()`/`restore()` always throw rather than ever
-returning `true`, so nothing in the current build can actually grant
-`isSubscribedProvider`.
+**Review mode** is the escape hatch, and it reaches the locks through two
+derived providers rather than being spelled out at each one:
+
+| provider | answers |
+|---|---|
+| `hasPro` | `isSubscribed \|\| reviewMode` — may this build open every case |
+| `hasHints` | `hintsUnlocked \|\| reviewMode` — may it reveal a 50/50 |
+
+`IsSubscribed` and `HintsUnlocked` still record what was actually **bought**;
+these two answer the different question of what may currently be **shown**.
+Every lock asks these — the deck, the free case's third question, the hint
+button, the Settings switch — and nothing else should.
+
+Splitting it that way is what fixed the gap: the pass was written out at the
+two case locks and nowhere else, so a reviewer could open all ten cases and
+never once reach a hint. The button opened the paywall at them and the
+Settings switch was never drawn. A feature a reviewer cannot exercise is one
+they can only take on trust.
+
+**The sales surfaces deliberately do not use them.** `ProButton` and Settings'
+Pro card follow what was really bought, so a reviewer still sees GET PRO and
+can open the paywall — which is the screen review most wants to look at.
+Hiding it from them would be the opposite mistake.
+
+On `android` the flag is Firebase Remote Config's `review_mode`, flipped for
+the build under review without a resubmission; on `main` it is the
+`AppConfig.reviewMode` constant.
 
 ## Launch
 
