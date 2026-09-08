@@ -83,7 +83,18 @@ class PhoneHomeScreen extends ConsumerWidget {
         if (!(ref.watch(isSubscribedProvider) &&
             ref.watch(hintsUnlockedProvider))) ...[
           const SizedBox(width: ColdSpace.sm),
-          ProButton(strings: strings, source: 'phone_home', large: true),
+          // Flexible so the pill is what gives way when the row runs out of
+          // width, rather than the gear or the row itself: the label is a
+          // translated phrase and the gear is a fixed square, so the pill is
+          // the only part of this that *can* give. It shrinks its own text
+          // instead of overflowing — see `ProButton`.
+          Flexible(
+            child: ProButton(
+              strings: strings,
+              source: 'phone_home',
+              large: true,
+            ),
+          ),
         ],
       ],
     );

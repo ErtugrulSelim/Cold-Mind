@@ -445,6 +445,7 @@
   "ui.app.clock": "Godziny",
   "ui.cases.index": "INDEKS SPRAW",
   "ui.cases.pro": "UZYSKAJ PRO",
+  "ui.cases.hints": "PODPOWIEDZI",
   "ui.cases.available": "{{open}} otwarte · {{closed}} zamknięte",
   "ui.cases.new": "NOWY",
   "ui.cases.active": "W TRAKCIE",

@@ -445,6 +445,7 @@
   "ui.app.clock": "Часы",
   "ui.cases.index": "ИНДЕКС ДЕЛ",
   "ui.cases.pro": "ПОЛУЧИТЬ PRO",
+  "ui.cases.hints": "ПОДСКАЗКИ",
   "ui.cases.available": "{{open}} открыто · {{closed}} закрыто",
   "ui.cases.new": "НОВОЕ",
   "ui.cases.active": "В ПРОГРЕССЕ",

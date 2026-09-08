@@ -445,6 +445,7 @@
   "ui.app.clock": "Horas",
   "ui.cases.index": "ÍNDICE DE CASOS",
   "ui.cases.pro": "OBTER PRO",
+  "ui.cases.hints": "OBTER DICAS",
   "ui.cases.available": "{{open}} aberto · {{closed}} fechado",
   "ui.cases.new": "NOVO",
   "ui.cases.active": "EM ANDAMENTO",
