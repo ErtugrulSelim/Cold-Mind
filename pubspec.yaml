@@ -55,6 +55,32 @@ dev_dependencies:
   custom_lint: ^0.8.1
   riverpod_lint: ^3.1.0
   flutter_native_splash: ^2.4.8
+  flutter_launcher_icons: ^0.14.4
+
+# The launcher icon, generated into the native project rather than shipped as
+# a Flutter asset — nothing in Dart can reach it. Regenerate with
+# `dart run flutter_launcher_icons` after changing either image.
+#
+# Two images, because Android draws the icon two ways. `image_path` is the
+# legacy square, cropped tight to the artwork so the launcher's own mask
+# rounds the artwork itself. The adaptive pair is what Android 8 and later
+# actually use: the same artwork scaled into the 66% safe zone, over the
+# device register's graphite — the same colour as the artwork's own ground, so
+# whatever shape the launcher masks to, the seam does not show. The generator
+# insets the foreground 16% itself, which is the safe zone — so it is fed the
+# same full-bleed crop rather than a pre-shrunk one, or the two would compound
+# and the artwork would sit at 45% of the canvas.
+#
+# The source `app_logo.jpeg` is a picture *of* an icon, with its own padding
+# and rounded square inside a larger frame. Fed in whole it would have given a
+# rounded square inside a rounded square, and an icon that reads small.
+flutter_launcher_icons:
+  android: "ic_launcher"
+  ios: false
+  image_path: "assets/icons/raw/app_icon.png"
+  adaptive_icon_background: "#0A0C10"
+  adaptive_icon_foreground: "assets/icons/raw/app_icon.png"
+  min_sdk_android: 21
 
 # Generates the native splash Android and iOS show before the Flutter engine
 # has drawn a single frame — the one place a Dart-level splash widget cannot
