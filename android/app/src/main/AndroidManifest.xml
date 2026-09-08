@@ -47,5 +47,23 @@
             <action android:name="android.intent.action.PROCESS_TEXT"/>
             <data android:mimeType="text/plain"/>
         </intent>
+        <!-- Android 11 hides other apps from this one unless they are declared
+             here, and `url_launcher` asks the system which app can open a URL
+             before opening it. Undeclared, that question comes back empty and
+             every outward link **fails silently** — no browser, no error, a
+             tap that does nothing.
+
+             That is four things: Terms of Use and Privacy Policy, on the
+             paywall and in Settings, which both stores require to actually
+             open from the screen that takes money; Rate Us, which goes to the
+             Play listing over https; and the share sheet's download link. -->
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="https"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="http"/>
+        </intent>
     </queries>
 </manifest>
