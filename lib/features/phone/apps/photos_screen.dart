@@ -587,8 +587,7 @@ class _ViewerState extends State<_Viewer> {
                               const SizedBox(height: 4),
                               DocumentBody(
                                 text:
-                                    widget.strings?.t(photo.documentKey!) ??
-                                    '',
+                                    widget.strings?.t(photo.documentKey!) ?? '',
                                 // From the skin, not hardcoded. Photos runs
                                 // the light skin, where `surfaceRaised` is
                                 // white — so white text meant the transcript

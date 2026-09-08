@@ -63,22 +63,30 @@ void main() {
     await tester.pumpWidget(host());
     await tester.pump(const Duration(milliseconds: 400));
 
+    // Scrolled to, in the order they appear, rather than asserted where they
+    // happen to land: the screen is now taller than a phone, and a `ListView`
+    // never builds what is below the fold — so a row that exists and is
+    // simply further down looks exactly like a row that was deleted.
     for (final key in [
       'settings.gameplay',
+      'ui.notifications',
       'settings.language_header',
       'settings.support',
       'settings.about',
     ]) {
+      await _scrollTo(tester, find.text(common.c(key)));
       expect(find.text(common.c(key)), findsOneWidget, reason: '$key missing');
     }
 
     for (final key in [
       'settings.answer_hints',
+      'ui.reminders',
       'settings.language',
       'settings.faq',
       'settings.restore',
       'settings.rate',
     ]) {
+      await _scrollTo(tester, find.text(common.c(key)));
       expect(find.text(common.c(key)), findsWidgets, reason: '$key missing');
     }
   });
@@ -133,16 +141,22 @@ void main() {
     await tester.pumpWidget(host());
     await tester.pump(const Duration(milliseconds: 400));
 
+    // These sit at the bottom of a screen taller than the phone, so each has
+    // to be scrolled to before it can be said to be missing.
+    //
     // Paired with the config, not asserted flat: the moment somebody fills a
     // URL in, this test should expect the row rather than start failing.
+    await _scrollTo(tester, find.text(common.c('settings.terms')));
     expect(
       find.text(common.c('settings.terms')),
       AppConfig.hasTerms ? findsOneWidget : findsNothing,
     );
+    await _scrollTo(tester, find.text(common.c('settings.privacy')));
     expect(
       find.text(common.c('settings.privacy')),
       AppConfig.hasPrivacy ? findsOneWidget : findsNothing,
     );
+    await _scrollTo(tester, find.text(common.c('settings.send_link')));
     expect(
       find.text(common.c('settings.send_link')),
       AppConfig.hasDownloadLink ? findsOneWidget : findsNothing,
@@ -204,4 +218,18 @@ void main() {
       reason: '${last.code} cannot be scrolled to, so it cannot be picked',
     );
   });
+}
+
+/// Brings [target] into view if it is not already there.
+///
+/// Tolerant of both directions and of finding nothing: it is used to prove a
+/// row is present *and*, elsewhere, that one is absent, so failing to reach
+/// something is not itself a failure — the assertion at the call site is.
+Future<void> _scrollTo(WidgetTester tester, Finder target) async {
+  if (target.evaluate().isNotEmpty) return;
+  final list = find.byType(Scrollable).first;
+  for (var step = 0; step < 12 && target.evaluate().isEmpty; step++) {
+    await tester.drag(list, const Offset(0, -160));
+    await tester.pump();
+  }
 }

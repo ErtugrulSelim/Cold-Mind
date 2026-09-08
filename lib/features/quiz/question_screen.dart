@@ -17,6 +17,8 @@ import '../../data/providers/settings_providers.dart';
 import '../board/board_screen.dart';
 import '../case_flow/client_chat_screen.dart';
 import '../case_flow/client_portrait.dart';
+import '../notifications/reminders.dart';
+import '../notifications/schedule_reminders.dart';
 import '../paywall/paywall_screen.dart';
 import '../phone/app_registry.dart';
 import '../phone/contact_book.dart';
@@ -575,6 +577,25 @@ class _QuestionScreenState extends ConsumerState<QuestionScreen> {
       await ref.read(ratingPromptedProvider.notifier).markShown();
       if (!mounted) return;
       await _offerRating(strings);
+      if (!mounted) return;
+    }
+
+    // The same beat, and deliberately behind the rating prompt rather than
+    // beside it: two system dialogs at once read as an app shaking the player
+    // down, and the second one gets dismissed on reflex.
+    //
+    // Two questions in is where this belongs. Android shows the permission
+    // prompt **once** — a refusal is permanent, there is no asking again — so
+    // the single chance is spent on somebody who has played rather than on
+    // somebody who has just opened the app and has no reason yet to say yes.
+    if (solved == 2 && !ref.read(remindersAskedProvider)) {
+      await ref.read(remindersAskedProvider.notifier).markAsked();
+      await ref.read(remindersProvider).requestPermission();
+      if (!mounted) return;
+      // Scheduled here rather than left to the next launch: a player who has
+      // just said yes and then closes the app would otherwise be owed a
+      // reminder that was never written down.
+      await refreshReminders(ProviderScope.containerOf(context));
       if (!mounted) return;
     }
 

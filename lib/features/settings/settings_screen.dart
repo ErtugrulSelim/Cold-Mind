@@ -8,6 +8,7 @@ import '../../core/theme/cold_theme.dart';
 import '../../data/l10n/case_strings.dart';
 import '../../data/providers/case_providers.dart';
 import '../../data/providers/settings_providers.dart';
+import '../notifications/schedule_reminders.dart';
 import '../paywall/paywall_screen.dart';
 import '../paywall/debug_store.dart';
 import '../paywall/store.dart';
@@ -72,6 +73,15 @@ class SettingsScreen extends ConsumerWidget {
             _Group(children: [_HintRow(strings: strings)]),
             const SizedBox(height: ColdSpace.xl),
           ],
+          // Always drawn, unlike the hints switch: this one is not tied to
+          // anything bought, and a reminder the player cannot switch off in
+          // the app gets switched off outside it — for the whole app, and
+          // permanently.
+          _SectionHeader(
+            text: strings?.c('ui.notifications') ?? 'NOTIFICATIONS',
+          ),
+          _Group(children: [_ReminderRow(strings: strings)]),
+          const SizedBox(height: ColdSpace.xl),
           _SectionHeader(
             text: strings?.c('settings.language_header') ?? 'LANGUAGE',
           ),
@@ -533,6 +543,35 @@ class _HintRow extends ConsumerWidget {
       value: ref.watch(hintsEnabledProvider),
       onChanged: (enabled) =>
           ref.read(hintsEnabledProvider.notifier).set(enabled: enabled),
+    );
+  }
+}
+
+/// Whether to be nudged back to a case left unfinished.
+///
+/// Switching it off clears what is already scheduled rather than only
+/// stopping the next write — otherwise a player who turns it off today still
+/// hears from the app in three days, which is exactly the reminder they just
+/// declined.
+class _ReminderRow extends ConsumerWidget {
+  final CaseStrings? strings;
+
+  const _ReminderRow({required this.strings});
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    return _Toggle(
+      icon: Icons.notifications_none_rounded,
+      title: strings?.c('ui.reminders') ?? 'Reminders',
+      subtitle:
+          strings?.c('notif.channel.daily.desc') ??
+          'Daily messages from your active case',
+      value: ref.watch(remindersEnabledProvider),
+      onChanged: (enabled) async {
+        await ref.read(remindersEnabledProvider.notifier).set(enabled: enabled);
+        if (!context.mounted) return;
+        await refreshReminders(ProviderScope.containerOf(context));
+      },
     );
   }
 }

@@ -90,10 +90,8 @@ class _BoardScreenState extends ConsumerState<BoardScreen> {
   }
 
   /// The smallest scale at which the cork still covers the whole viewport.
-  double _coverScale(Size viewport, Size wall) => max(
-    viewport.width / wall.width,
-    viewport.height / wall.height,
-  );
+  double _coverScale(Size viewport, Size wall) =>
+      max(viewport.width / wall.width, viewport.height / wall.height);
 
   /// Pulls the view back inside the wall, whatever put it outside.
   void _clampView() {
@@ -210,7 +208,6 @@ class _BoardScreenState extends ConsumerState<BoardScreen> {
           ..translateByDouble(-centre.dx, -centre.dy, 0, 1));
     _correcting = false;
   }
-
 
   @override
   Widget build(BuildContext context) {

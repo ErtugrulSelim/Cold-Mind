@@ -108,7 +108,8 @@ class RevenueCatStore implements Store {
   /// Google reports a subscription as either `sub_id` or `sub_id:base_plan`
   /// depending on which call it came from, so everything that compares two
   /// of them compares this instead.
-  static String subscriptionId(String identifier) => identifier.split(':').first;
+  static String subscriptionId(String identifier) =>
+      identifier.split(':').first;
 
   /// Where each plan sits relative to the others, which is the only thing
   /// that decides whether a change is an upgrade or a downgrade.
@@ -140,7 +141,8 @@ class RevenueCatStore implements Store {
 
     final from = _tiers[subscriptionId(currentProductId)];
     final to = _tiers[subscriptionId(targetPlanId)];
-    if (from == null || to == null) return StoreReplacementMode.withTimeProration;
+    if (from == null || to == null)
+      return StoreReplacementMode.withTimeProration;
     if (from == to) return null;
 
     return to > from
@@ -156,9 +158,10 @@ class RevenueCatStore implements Store {
     final package = switch (planId) {
       'yearly_premium_coldmind' => offering.annual,
       'weekly_premium_coldmind' => offering.weekly,
-      'weekly_hint_premium_coldmind' => offering.availablePackages
-          .where((p) => p.identifier == _weeklyHintsKey)
-          .firstOrNull,
+      'weekly_hint_premium_coldmind' =>
+        offering.availablePackages
+            .where((p) => p.identifier == _weeklyHintsKey)
+            .firstOrNull,
       _ => null,
     };
     if (package == null) throw const StoreException(StoreFailure.unavailable);
@@ -170,8 +173,8 @@ class RevenueCatStore implements Store {
     String? current;
     if (Platform.isAndroid) {
       try {
-        current = (await Purchases.getCustomerInfo()).activeSubscriptions
-            .firstOrNull;
+        current =
+            (await Purchases.getCustomerInfo()).activeSubscriptions.firstOrNull;
       } catch (_) {
         // Treated as a first purchase — the worst case is Play refusing a
         // change it would have accepted, which surfaces as an error rather
@@ -224,18 +227,16 @@ class RevenueCatStore implements Store {
   /// What RevenueCat says this customer holds right now. The app never
   /// decides this from the plan that was tapped: a deferred downgrade
   /// completes while the old entitlements are still the true ones.
-  static StoreAccess accessFrom(
-    CustomerInfo info, {
-    bool deferred = false,
-  }) => StoreAccess(
-    pro: info.entitlements.active.containsKey(
-      AppConfig.revenueCatEntitlementId,
-    ),
-    hints: info.entitlements.active.containsKey(
-      AppConfig.revenueCatHintsEntitlementId,
-    ),
-    deferred: deferred,
-  );
+  static StoreAccess accessFrom(CustomerInfo info, {bool deferred = false}) =>
+      StoreAccess(
+        pro: info.entitlements.active.containsKey(
+          AppConfig.revenueCatEntitlementId,
+        ),
+        hints: info.entitlements.active.containsKey(
+          AppConfig.revenueCatHintsEntitlementId,
+        ),
+        deferred: deferred,
+      );
 
   Future<Offerings> _offeringOrThrow() async {
     try {
