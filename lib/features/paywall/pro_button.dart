@@ -20,12 +20,11 @@ import 'paywall_screen.dart';
 /// wrong is the expensive mistake — it is the only upgrade this app sells, and
 /// a player who cannot find it simply never buys it.
 ///
-/// The pill is **artwork**, not a styled `Text`. That buys the gradient and
-/// the exact lettering the two offers were drawn with, and costs the label
-/// its translation: the words are pixels now, so every language reads
-/// them in English. The l10n keys are still resolved — as the semantics
-/// label, which is what a screen reader announces and what the tests find it
-/// by — so nothing is silent, but a Turkish player does see "GET PRO".
+/// **The artwork is the ground; the word is drawn on top.** The two PNGs are
+/// gradients with nothing written in them, so the label stays a real string:
+/// it is translated, it is what a screen reader reads, and it is what the
+/// tests find the button by. Lettering baked into the pill would have meant
+/// one image per language — eight of them, redrawn whenever a word changed.
 class ProButton extends ConsumerWidget {
   final CaseStrings? strings;
 
@@ -33,11 +32,11 @@ class ProButton extends ConsumerWidget {
   final String source;
 
   /// Kept so the two call sites read the same as before; both ask for the
-  /// large one, and the artwork has only one size.
+  /// large one, and there is only one size now.
   final bool large;
 
   /// Tall enough to read at a glance beside the gear, short enough not to
-  /// crowd the phone's status row. Width follows the artwork's own ratio.
+  /// crowd the phone's status row.
   static const double _height = 38;
 
   const ProButton({
@@ -69,26 +68,60 @@ class ProButton extends ConsumerWidget {
         ? (strings?.c('ui.cases.hints') ?? 'GET HINTS')
         : (strings?.c('ui.cases.pro') ?? 'GET PRO');
 
-    return Semantics(
-      button: true,
-      label: label,
-      // The words are inside the image, so without this the control is
-      // silent to a screen reader — and untestable, since there is no text
-      // in the tree to find it by.
-      child: InkWell(
-        onTap: () => Navigator.of(context).push(
-          MaterialPageRoute<bool>(
-            builder: (_) => PaywallScreen(source: source),
-          ),
-        ),
-        borderRadius: const BorderRadius.all(Radius.circular(_height / 2)),
-        child: Image.asset(
-          asset,
-          height: _height,
-          fit: BoxFit.contain,
-          // Assets never resolve under `flutter_test`, and a case deck that
-          // throws instead of drawing is worse than one missing its pill.
-          errorBuilder: (_, _, _) => const SizedBox.shrink(),
+    const radius = BorderRadius.all(Radius.circular(_height / 2));
+
+    return InkWell(
+      onTap: () => Navigator.of(context).push(
+        MaterialPageRoute<bool>(builder: (_) => PaywallScreen(source: source)),
+      ),
+      borderRadius: radius,
+      child: ClipRRect(
+        // Flutter draws the pill; the artwork only fills it. The PNG has its
+        // own rounded ends, and this identical clip crops them away — which
+        // is what lets the button be as wide as its word needs without the
+        // end caps stretching into ovals. `BoxFit.fill` then stretches a
+        // plain left-to-right ramp, and a stretched ramp looks exactly like a
+        // wider ramp: the shape stays exact and the gradient has nothing in
+        // it to distort.
+        //
+        // It has to hold at every length. "PRO AL" is six characters and
+        // "UZYSKAJ PODPOWIEDZI" is nineteen, so a fixed-width pill would
+        // either crop the Polish or leave the Turkish swimming in it.
+        borderRadius: radius,
+        child: Stack(
+          alignment: Alignment.center,
+          children: [
+            Positioned.fill(
+              child: Image.asset(
+                asset,
+                fit: BoxFit.fill,
+                // Assets never resolve under `flutter_test`, and chrome that
+                // throws is worse than chrome drawn without its gradient.
+                errorBuilder: (_, _, _) => const SizedBox.shrink(),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 11),
+              child: Text(
+                label,
+                maxLines: 1,
+                style: const TextStyle(
+                  fontFamily: 'Geologica',
+                  // Geologica ships as one variable file, so weight is an axis
+                  // rather than a face: `fontWeight` on its own would leave it
+                  // at the default. Both are set — the variation does the
+                  // drawing, the weight keeps anything reading the style
+                  // honest.
+                  fontVariations: [FontVariation('wght', 700)],
+                  fontWeight: FontWeight.w700,
+                  fontSize: 14,
+                  letterSpacing: 1.1,
+                  height: 1,
+                  color: Colors.white,
+                ),
+              ),
+            ),
+          ],
         ),
       ),
     );

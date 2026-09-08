@@ -172,10 +172,6 @@ void main() {
   ) async {
     usePhoneSurface(tester);
 
-    // The Pro pill's words live inside its artwork, so the semantics label is
-    // the only handle left on it.
-    final semantics = tester.ensureSemantics();
-
     final failures = <String>[];
     final caught = <FlutterErrorDetails>[];
     final previousHandler = FlutterError.onError;
@@ -232,10 +228,7 @@ void main() {
       if (find.byIcon(Icons.settings_outlined).evaluate().isEmpty) {
         failures.add('${entry.id} — no way into settings from the phone');
       }
-      if (find
-          .bySemanticsLabel(entry.strings.c('ui.cases.pro'))
-          .evaluate()
-          .isEmpty) {
+      if (find.text(entry.strings.c('ui.cases.pro')).evaluate().isEmpty) {
         failures.add('${entry.id} — no way into the subscription');
       }
 
@@ -246,7 +239,6 @@ void main() {
     }
 
     FlutterError.onError = previousHandler;
-    semantics.dispose();
     expect(failures, isEmpty, reason: '\n${failures.join('\n')}');
   });
 }
