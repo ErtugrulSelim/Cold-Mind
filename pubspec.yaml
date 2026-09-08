@@ -145,6 +145,12 @@ flutter:
     - assets/stock/video/
 
   fonts:
+    # The Pro / hints pill's lettering. A variable font — one file, and the
+    # weight is picked with `fontVariations` at the call site rather than by
+    # shipping a static cut per weight. OFL, and `OFL.txt` sits beside it.
+    - family: Geologica
+      fonts:
+        - asset: assets/Geologica-font/Geologica.ttf
     - family: Caveat
       fonts:
         - asset: assets/Caveat-font/static/Caveat-Regular.ttf
