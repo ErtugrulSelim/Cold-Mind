@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:io';
 
 import 'package:firebase_core/firebase_core.dart';
@@ -10,10 +11,14 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 import 'core/app_config.dart';
 import 'core/theme/cold_theme.dart';
+import 'data/providers/case_providers.dart';
 import 'data/providers/settings_providers.dart';
 import 'features/cases/case_list_screen.dart';
 import 'features/paywall/debug_store.dart';
 import 'features/paywall/revenuecat_store.dart';
+import 'features/notifications/local_reminders.dart';
+import 'features/notifications/reminders.dart';
+import 'features/notifications/schedule_reminders.dart';
 import 'features/paywall/store.dart';
 import 'firebase_options.dart';
 
@@ -36,14 +41,18 @@ Future<void> main() async {
   // unreachable — in a release build, even with the flag.
   final useDebugStore = DebugStore.isAvailable(flagSet: AppConfig.fakeStore);
 
-  final container = ProviderContainer(
-    overrides: [
-      sharedPreferencesProvider.overrideWithValue(prefs),
-      if (AppConfig.hasRevenueCatKeys)
-        storeProvider.overrideWithValue(const RevenueCatStore()),
-      if (useDebugStore) storeProvider.overrideWithValue(DebugStore(prefs)),
-    ],
-  );
+  // Held in a variable rather than written inline, because the reminders
+  // below add one more to this exact list once the plugin has started —
+  // `updateOverrides` replaces the whole set, so rebuilding it by hand there
+  // is how the store override would quietly go missing.
+  final overrides = [
+    sharedPreferencesProvider.overrideWithValue(prefs),
+    if (AppConfig.hasRevenueCatKeys)
+      storeProvider.overrideWithValue(const RevenueCatStore()),
+    if (useDebugStore) storeProvider.overrideWithValue(DebugStore(prefs)),
+  ];
+
+  final container = ProviderContainer(overrides: overrides);
 
   // Fetched once, here, same as the RevenueCat sync below — a fresh value
   // every launch rather than something read reactively per-screen, and
@@ -93,6 +102,44 @@ Future<void> main() async {
       // Nothing to sync this launch.
     }
   }
+
+  // Reminders last, and never blocking: the plugin is started, and if it
+  // starts, what is pending is rewritten from this moment. Opening the app
+  // *is* the signal that the player is still here, so a launch is exactly
+  // when the next nudge should be pushed further out.
+  //
+  // Unawaited on purpose. Nothing on the first frame depends on it, and a
+  // notification stack that takes its time is not a reason to hold the case
+  // deck back.
+  // A closure rather than a top-level function so it can close over
+  // `overrides`: `flutter_riverpod` does not export the `Override` type, so
+  // that list cannot be passed as a parameter without reaching past it into
+  // `riverpod` itself.
+  //
+  // Everything here is swallowed. It runs on a path the player never asked
+  // for, and the app is entirely usable with no reminders at all — which is
+  // exactly what `UnconfiguredReminders` leaves it as.
+  Future<void> startReminders() async {
+    try {
+      final strings = await container.read(commonStringsProvider.future);
+      final local = await LocalReminders.start(
+        channelName: strings.c('notif.channel.daily.name'),
+        channelDescription: strings.c('notif.channel.daily.desc'),
+      );
+      if (local == null) return;
+
+      container.updateOverrides([
+        ...overrides,
+        remindersProvider.overrideWithValue(local),
+      ]);
+
+      await refreshReminders(container);
+    } catch (_) {
+      // No reminders this launch.
+    }
+  }
+
+  unawaited(startReminders());
 
   runApp(
     UncontrolledProviderScope(container: container, child: const ColdMindApp()),

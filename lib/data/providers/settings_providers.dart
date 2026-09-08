@@ -225,3 +225,39 @@ bool hasPro(Ref ref) =>
 @Riverpod(keepAlive: true)
 bool hasHints(Ref ref) =>
     ref.watch(hintsUnlockedProvider) || ref.watch(reviewModeProvider);
+
+/// Whether the player wants to be reminded about a case they left open.
+///
+/// Defaults to **on**, but that is not the same as being notified: the OS
+/// permission is asked for separately and much later, and nothing is
+/// delivered without it. This switch is the one the player controls, and it
+/// exists because a reminder somebody cannot turn off inside the app gets
+/// turned off outside it, for the whole app, permanently.
+@Riverpod(keepAlive: true)
+class RemindersEnabled extends _$RemindersEnabled {
+  static const String _key = 'reminders_enabled';
+
+  @override
+  bool build() => ref.watch(sharedPreferencesProvider).getBool(_key) ?? true;
+
+  Future<void> set({required bool enabled}) async {
+    await ref.read(sharedPreferencesProvider).setBool(_key, enabled);
+    state = enabled;
+  }
+}
+
+/// Whether the OS permission prompt has been shown. Android only ever shows
+/// it once — a refusal is permanent — so this stops a second attempt that
+/// would do nothing but look broken.
+@Riverpod(keepAlive: true)
+class RemindersAsked extends _$RemindersAsked {
+  static const String _key = 'reminders_asked';
+
+  @override
+  bool build() => ref.watch(sharedPreferencesProvider).getBool(_key) ?? false;
+
+  Future<void> markAsked() async {
+    await ref.read(sharedPreferencesProvider).setBool(_key, true);
+    state = true;
+  }
+}

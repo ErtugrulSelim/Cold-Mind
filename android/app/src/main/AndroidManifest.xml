@@ -5,6 +5,13 @@
          loaded a single tile in a release build. -->
     <uses-permission android:name="android.permission.INTERNET"/>
 
+    <!-- The reminder that brings a player back to an unfinished case.
+         POST_NOTIFICATIONS is asked for at runtime on Android 13 and later;
+         RECEIVE_BOOT_COMPLETED is what lets a reminder scheduled days out
+         survive the phone being restarted, which it otherwise would not. -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
     <application
         android:label="Cold Mind"
         android:name="${applicationName}"
@@ -31,6 +38,24 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <!-- `flutter_local_notifications` delivers a scheduled reminder
+             through the first receiver, and re-registers everything still
+             pending through the second after a reboot or an app update.
+             Without the boot receiver every scheduled reminder is silently
+             dropped the first time the phone restarts. -->
+        <receiver
+            android:exported="false"
+            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver"/>
+        <receiver
+            android:exported="false"
+            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+                <action android:name="android.intent.action.QUICKBOOT_POWERON"/>
+                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON"/>
+            </intent-filter>
+        </receiver>
         <!-- Don't delete the meta-data below.
              This is used by the Flutter tool to generate GeneratedPluginRegistrant.java -->
         <meta-data

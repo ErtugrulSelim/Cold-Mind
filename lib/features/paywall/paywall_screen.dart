@@ -67,7 +67,10 @@ class _PaywallScreenState extends ConsumerState<PaywallScreen> {
         _selected = selectable.isEmpty
             ? null
             : selectable
-                  .firstWhere((p) => p.recommended, orElse: () => selectable.first)
+                  .firstWhere(
+                    (p) => p.recommended,
+                    orElse: () => selectable.first,
+                  )
                   .id;
       });
     } on StoreException catch (error) {
@@ -110,9 +113,10 @@ class _PaywallScreenState extends ConsumerState<PaywallScreen> {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Text(
-              ref.read(commonStringsProvider).value?.c(
-                    'paywall.change_deferred',
-                  ) ??
+              ref
+                      .read(commonStringsProvider)
+                      .value
+                      ?.c('paywall.change_deferred') ??
                   'Your new plan starts when the current one ends.',
             ),
             behavior: SnackBarBehavior.floating,
@@ -668,7 +672,8 @@ class _LegalLink extends StatelessWidget {
     if (url.isEmpty) return Text(label, style: style);
 
     return GestureDetector(
-      onTap: () => launchUrl(Uri.parse(url), mode: LaunchMode.externalApplication),
+      onTap: () =>
+          launchUrl(Uri.parse(url), mode: LaunchMode.externalApplication),
       child: Text(label, style: style),
     );
   }

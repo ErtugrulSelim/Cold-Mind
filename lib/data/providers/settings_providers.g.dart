@@ -731,3 +731,151 @@ final class HasHintsProvider extends $FunctionalProvider<bool, bool, bool>
 }
 
 String _$hasHintsHash() => r'a9672649b5492762527ffa1d6ec37589535d40b9';
+
+/// Whether the player wants to be reminded about a case they left open.
+///
+/// Defaults to **on**, but that is not the same as being notified: the OS
+/// permission is asked for separately and much later, and nothing is
+/// delivered without it. This switch is the one the player controls, and it
+/// exists because a reminder somebody cannot turn off inside the app gets
+/// turned off outside it, for the whole app, permanently.
+
+@ProviderFor(RemindersEnabled)
+final remindersEnabledProvider = RemindersEnabledProvider._();
+
+/// Whether the player wants to be reminded about a case they left open.
+///
+/// Defaults to **on**, but that is not the same as being notified: the OS
+/// permission is asked for separately and much later, and nothing is
+/// delivered without it. This switch is the one the player controls, and it
+/// exists because a reminder somebody cannot turn off inside the app gets
+/// turned off outside it, for the whole app, permanently.
+final class RemindersEnabledProvider
+    extends $NotifierProvider<RemindersEnabled, bool> {
+  /// Whether the player wants to be reminded about a case they left open.
+  ///
+  /// Defaults to **on**, but that is not the same as being notified: the OS
+  /// permission is asked for separately and much later, and nothing is
+  /// delivered without it. This switch is the one the player controls, and it
+  /// exists because a reminder somebody cannot turn off inside the app gets
+  /// turned off outside it, for the whole app, permanently.
+  RemindersEnabledProvider._()
+    : super(
+        from: null,
+        argument: null,
+        retry: null,
+        name: r'remindersEnabledProvider',
+        isAutoDispose: false,
+        dependencies: null,
+        $allTransitiveDependencies: null,
+      );
+
+  @override
+  String debugGetCreateSourceHash() => _$remindersEnabledHash();
+
+  @$internal
+  @override
+  RemindersEnabled create() => RemindersEnabled();
+
+  /// {@macro riverpod.override_with_value}
+  Override overrideWithValue(bool value) {
+    return $ProviderOverride(
+      origin: this,
+      providerOverride: $SyncValueProvider<bool>(value),
+    );
+  }
+}
+
+String _$remindersEnabledHash() => r'07dc02c05d4af8139a0817e96ba2ccef771b07dd';
+
+/// Whether the player wants to be reminded about a case they left open.
+///
+/// Defaults to **on**, but that is not the same as being notified: the OS
+/// permission is asked for separately and much later, and nothing is
+/// delivered without it. This switch is the one the player controls, and it
+/// exists because a reminder somebody cannot turn off inside the app gets
+/// turned off outside it, for the whole app, permanently.
+
+abstract class _$RemindersEnabled extends $Notifier<bool> {
+  bool build();
+  @$mustCallSuper
+  @override
+  void runBuild() {
+    final ref = this.ref as $Ref<bool, bool>;
+    final element =
+        ref.element
+            as $ClassProviderElement<
+              AnyNotifier<bool, bool>,
+              bool,
+              Object?,
+              Object?
+            >;
+    element.handleCreate(ref, build);
+  }
+}
+
+/// Whether the OS permission prompt has been shown. Android only ever shows
+/// it once — a refusal is permanent — so this stops a second attempt that
+/// would do nothing but look broken.
+
+@ProviderFor(RemindersAsked)
+final remindersAskedProvider = RemindersAskedProvider._();
+
+/// Whether the OS permission prompt has been shown. Android only ever shows
+/// it once — a refusal is permanent — so this stops a second attempt that
+/// would do nothing but look broken.
+final class RemindersAskedProvider
+    extends $NotifierProvider<RemindersAsked, bool> {
+  /// Whether the OS permission prompt has been shown. Android only ever shows
+  /// it once — a refusal is permanent — so this stops a second attempt that
+  /// would do nothing but look broken.
+  RemindersAskedProvider._()
+    : super(
+        from: null,
+        argument: null,
+        retry: null,
+        name: r'remindersAskedProvider',
+        isAutoDispose: false,
+        dependencies: null,
+        $allTransitiveDependencies: null,
+      );
+
+  @override
+  String debugGetCreateSourceHash() => _$remindersAskedHash();
+
+  @$internal
+  @override
+  RemindersAsked create() => RemindersAsked();
+
+  /// {@macro riverpod.override_with_value}
+  Override overrideWithValue(bool value) {
+    return $ProviderOverride(
+      origin: this,
+      providerOverride: $SyncValueProvider<bool>(value),
+    );
+  }
+}
+
+String _$remindersAskedHash() => r'd17d7163d6dace76335893dec3351947b984ca1b';
+
+/// Whether the OS permission prompt has been shown. Android only ever shows
+/// it once — a refusal is permanent — so this stops a second attempt that
+/// would do nothing but look broken.
+
+abstract class _$RemindersAsked extends $Notifier<bool> {
+  bool build();
+  @$mustCallSuper
+  @override
+  void runBuild() {
+    final ref = this.ref as $Ref<bool, bool>;
+    final element =
+        ref.element
+            as $ClassProviderElement<
+              AnyNotifier<bool, bool>,
+              bool,
+              Object?,
+              Object?
+            >;
+    element.handleCreate(ref, build);
+  }
+}

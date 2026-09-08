@@ -134,9 +134,7 @@ class _GroundPainter extends CustomPainter {
     // Meridians.
     final firstLng = (topLeft.longitude / step).floor() * step;
     for (var lng = firstLng; lng <= bottomRight.longitude; lng += step) {
-      final x = camera
-          .latLngToScreenOffset(LatLng(topLeft.latitude, lng))
-          .dx;
+      final x = camera.latLngToScreenOffset(LatLng(topLeft.latitude, lng)).dx;
       if (x.isNaN || x < -50 || x > size.width + 50) continue;
       // A whole degree is drawn heavier than a subdivision, so the eye can
       // tell how far apart the lines actually are.
@@ -151,9 +149,7 @@ class _GroundPainter extends CustomPainter {
     // Parallels.
     final firstLat = (bottomRight.latitude / step).floor() * step;
     for (var lat = firstLat; lat <= topLeft.latitude; lat += step) {
-      final y = camera
-          .latLngToScreenOffset(LatLng(lat, topLeft.longitude))
-          .dy;
+      final y = camera.latLngToScreenOffset(LatLng(lat, topLeft.longitude)).dy;
       if (y.isNaN || y < -50 || y > size.height + 50) continue;
       canvas.drawLine(
         Offset(0, y),

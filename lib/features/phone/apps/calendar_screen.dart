@@ -223,8 +223,10 @@ class _Event {
       isDeleted: json['is_deleted'] == true,
       start: start,
       recurrence: switch (json['recurrence']) {
-        'daily' || 'weekly' || 'monthly' || 'yearly' =>
-          json['recurrence'] as String,
+        'daily' ||
+        'weekly' ||
+        'monthly' ||
+        'yearly' => json['recurrence'] as String,
         _ => null,
       },
     );

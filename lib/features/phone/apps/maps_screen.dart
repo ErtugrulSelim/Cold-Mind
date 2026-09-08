@@ -445,11 +445,7 @@ class _Row extends StatelessWidget {
   final CaseStrings? strings;
   final VoidCallback onTap;
 
-  const _Row({
-    required this.visit,
-    required this.strings,
-    required this.onTap,
-  });
+  const _Row({required this.visit, required this.strings, required this.onTap});
 
   @override
   Widget build(BuildContext context) {

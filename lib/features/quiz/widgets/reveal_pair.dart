@@ -107,10 +107,8 @@ class _RevealPairState extends State<RevealPair> {
           Padding(
             padding: const EdgeInsets.only(bottom: ColdSpace.sm),
             child: InkWell(
-              onTap: () => widget.onPick(
-                option.isAnswer,
-                strings?.t(option.key) ?? '',
-              ),
+              onTap: () =>
+                  widget.onPick(option.isAnswer, strings?.t(option.key) ?? ''),
               borderRadius: ColdRadius.option,
               child: Container(
                 width: double.infinity,
