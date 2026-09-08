@@ -58,6 +58,15 @@ class ColdRadius {
   /// the few things on the same surface that are actually buttons — the one
   /// that takes the money, and the lines the player says back to a client.
   static const BorderRadius button = BorderRadius.all(Radius.circular(pill));
+
+  /// An answer the player picks: the 50/50 pair, and the lettered options a
+  /// contradiction or a multi-select is answered from.
+  ///
+  /// Rounder than [card], because these are controls rather than panels — but
+  /// deliberately not [button]. They carry transcript lines that wrap to two
+  /// and three rows, and a stadium end on a tall box stops reading as a
+  /// button and starts reading as a lozenge.
+  static const BorderRadius option = BorderRadius.all(Radius.circular(lg));
 }
 
 /// Motion.

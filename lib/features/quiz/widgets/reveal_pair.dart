@@ -111,13 +111,13 @@ class _RevealPairState extends State<RevealPair> {
                 option.isAnswer,
                 strings?.t(option.key) ?? '',
               ),
-              borderRadius: ColdRadius.card,
+              borderRadius: ColdRadius.option,
               child: Container(
                 width: double.infinity,
                 padding: const EdgeInsets.all(ColdSpace.md),
                 decoration: BoxDecoration(
                   color: device.surfaceInput,
-                  borderRadius: ColdRadius.card,
+                  borderRadius: ColdRadius.option,
                   border: Border.all(color: device.hairline),
                 ),
                 child: Text(

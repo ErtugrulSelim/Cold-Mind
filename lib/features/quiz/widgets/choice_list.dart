@@ -51,7 +51,7 @@ class ChoiceList extends StatelessWidget {
             padding: const EdgeInsets.only(bottom: ColdSpace.sm),
             child: InkWell(
               onTap: () => onTap(i),
-              borderRadius: ColdRadius.card,
+              borderRadius: ColdRadius.option,
               child: Container(
                 width: double.infinity,
                 padding: const EdgeInsets.all(ColdSpace.md),
@@ -61,7 +61,7 @@ class ChoiceList extends StatelessWidget {
                   color: selected.contains(i)
                       ? device.accentDim
                       : device.surfaceInput,
-                  borderRadius: ColdRadius.card,
+                  borderRadius: ColdRadius.option,
                   border: Border.all(
                     color: selected.contains(i)
                         ? device.warning

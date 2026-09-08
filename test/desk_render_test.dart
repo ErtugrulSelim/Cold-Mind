@@ -75,6 +75,10 @@ void main() {
   testWidgets('the case index draws every state it has', (tester) async {
     usePhoneSurface(tester);
 
+    // The Pro pill's words are inside its artwork, so its semantics label is
+    // the only thing left to find it by.
+    final semantics = tester.ensureSemantics();
+
     final caught = <FlutterErrorDetails>[];
     final previous = FlutterError.onError;
     FlutterError.onError = caught.add;
@@ -122,11 +126,12 @@ void main() {
       reason: 'no way into settings from the deck',
     );
     expect(
-      find.text(common.c('ui.cases.pro')),
+      find.bySemanticsLabel(common.c('ui.cases.pro')),
       findsOneWidget,
       reason: 'no way into the subscription from the deck',
     );
 
+    semantics.dispose();
     expect([for (final d in caught) '${d.exception}'].where(_isReal), isEmpty);
   });
 
@@ -139,6 +144,11 @@ void main() {
     // paid for, and hiding the pill outright would leave the one upgrade
     // this app sells with nowhere to be found.
     usePhoneSurface(tester);
+
+    // The pill is artwork with its words baked in, so there is no `Text` to
+    // find it by — the semantics label is both what a screen reader
+    // announces and the only handle left on it.
+    final semantics = tester.ensureSemantics();
 
     Future<void> open({
       required bool subscribed,
@@ -155,25 +165,26 @@ void main() {
     }
 
     await open(subscribed: false, hintsUnlocked: false);
-    expect(find.text(common.c('ui.cases.pro')), findsOneWidget);
-    expect(find.text(common.c('ui.cases.hints')), findsNothing);
+    expect(find.bySemanticsLabel(common.c('ui.cases.pro')), findsOneWidget);
+    expect(find.bySemanticsLabel(common.c('ui.cases.hints')), findsNothing);
 
     await open(subscribed: true, hintsUnlocked: false);
-    expect(find.text(common.c('ui.cases.pro')), findsNothing);
+    expect(find.bySemanticsLabel(common.c('ui.cases.pro')), findsNothing);
     expect(
-      find.text(common.c('ui.cases.hints')),
+      find.bySemanticsLabel(common.c('ui.cases.hints')),
       findsOneWidget,
       reason: 'the cheapest plan has no way left to buy the hints',
     );
 
     await open(subscribed: true, hintsUnlocked: true);
-    expect(find.text(common.c('ui.cases.pro')), findsNothing);
-    expect(find.text(common.c('ui.cases.hints')), findsNothing);
+    expect(find.bySemanticsLabel(common.c('ui.cases.pro')), findsNothing);
+    expect(find.bySemanticsLabel(common.c('ui.cases.hints')), findsNothing);
     expect(
       find.byIcon(Icons.settings_outlined),
       findsOneWidget,
       reason: 'the gear shares that row and must survive the pill leaving',
     );
+    semantics.dispose();
   });
 
   testWidgets('the paywall draws its plans and the price of each', (
