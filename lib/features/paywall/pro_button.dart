@@ -22,7 +22,7 @@ import 'paywall_screen.dart';
 ///
 /// The pill is **artwork**, not a styled `Text`. That buys the gradient and
 /// the exact lettering the two offers were drawn with, and costs the label
-/// its translation: the words are pixels now, so all eighteen languages read
+/// its translation: the words are pixels now, so every language reads
 /// them in English. The l10n keys are still resolved — as the semantics
 /// label, which is what a screen reader announces and what the tests find it
 /// by — so nothing is silent, but a Turkish player does see "GET PRO".

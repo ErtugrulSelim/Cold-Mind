@@ -67,15 +67,20 @@ void main() {
   });
 
   test('an untranslated pack falls back to English key by key', () async {
-    // German ships common.json only, so the case strings come back in English
-    // while the shared UI strings come back translated. This used to be
-    // Turkish, which was true of every language and is now true of most: tr
-    // ships a case pack, and the merge is the mechanism that lets a language
-    // land one at a time rather than all ten at once.
-    final de = await repo.loadStrings('s01', 'de');
+    // Spanish translates `common.json` and ships s02–s10, but not s01 — so
+    // this case's own strings come back in English while the shared UI comes
+    // back translated, which is the merge doing its job.
+    //
+    // It used to be German, which shipped no case at all and has since been
+    // dropped from the picker along with nine others. What is left is a
+    // narrower and more awkward gap: s01 is `freeCaseId`, the one case every
+    // player opens first, so six of the eight languages currently open on
+    // English and only turn Spanish, French, Italian, Portuguese, Polish or
+    // Russian from the second case on. This test is where that shows.
+    final es = await repo.loadStrings('s01', 'es');
     final en = await repo.loadStrings('s01', 'en');
-    expect(de.t('s01.meta.title'), en.t('s01.meta.title'));
-    expect(de.c('ui.months_short'), isNot(en.c('ui.months_short')));
+    expect(es.t('s01.meta.title'), en.t('s01.meta.title'));
+    expect(es.c('ui.months_short'), isNot(en.c('ui.months_short')));
   });
 
   test('a translated pack overrides English key by key', () async {

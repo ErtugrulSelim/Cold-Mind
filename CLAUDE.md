@@ -70,7 +70,7 @@ lib/
 assets/
   cases/index.json     generated case list
   cases/sNN/           case.json + photos/ + audio/
-  l10n/<lang>/         common.json + sNN.json (18 language folders)
+  l10n/<lang>/         common.json + sNN.json (8 language folders)
   people/              people_sNN.json (cast + posts)
   stock/               shared filler for the feed grid
   textures/            the cork the board is pinned to
@@ -89,7 +89,7 @@ test/
   desk_render_test       the screens that are not the phone: the case deck,
                          the paywall, the handover
   settings_screen_test   which rows exist, that restore never quietly grants
-                         access, and that all 18 languages can be reached
+                         access, and that every offered language is reachable
   home_widget_test       every case's home widgets fit across a phone
   phone_surface.dart     the 390pt surface itself. `setSurfaceSize` does not
                          resize anything — the whole suite was measuring
@@ -359,15 +359,26 @@ before the player has chosen again.
 
 ## Localization
 
-18 language folders. English is the source of truth and the fallback, and packs
-are merged per key (`{...en, ...overlay}`) — a partial translation degrades key
-by key instead of breaking.
+Eight language folders — en, tr, es, fr, it, br, pl, ru. English is the source
+of truth and the fallback, and packs are merged per key
+(`{...en, ...overlay}`) — a partial translation degrades key by key instead of
+breaking.
 
-**Case packs land one language and one case at a time.** English is complete;
-`tr` ships s01. Every other folder still holds `common.json` alone and reads the
-cases in English. Seven languages are in scope — es, it, fr, br, pl, ru, tr —
-and the merge is what makes a partial pack safe: an untranslated key falls back
-rather than breaking.
+**A language is only offered once the cases are in it.** Ten more packs used
+to ship and be listed in the picker — cn, cz, de, in, jp, kr, nl, sa, se, ua —
+carrying about seventy per cent of `common.json` and **no case packs at all**.
+Choosing one gave a player translated menus wrapped around ten cases of
+English: every message, every email, every note, and every accepted answer.
+The per-key merge is what makes a partial *pack* safe; it does nothing for a
+missing case, and the result reads as a broken translation rather than an
+honest gap — the worse failure, since the player only finds out after
+choosing. They were removed rather than finished, and adding one back means
+adding its `sNN.json` files, not just its menus.
+
+`en` and `tr` carry all ten cases. The other six are missing **`s01.json`
+only** — which is `freeCaseId`, the one case every player opens first and the
+only one they can open without paying, so it is the gap worth closing before
+any other.
 
 `tools/build_pack.dart` assembles a pack from flat `key<TAB>value` files, so a
 translator never hand-escapes JSON. **A pack translates `*.answers` too** — it
@@ -510,7 +521,7 @@ With no billing wired in the store throws, and that reaches the player as a
 message; `settings_screen_test` holds the line that it can never quietly
 report success.
 
-The language sheet is height-capped and scrolls. Eighteen languages are taller
+The language sheet is height-capped and scrolls. A long list is taller
 than a default bottom sheet, and a shrink-wrapped list inside one is simply cut
 off — the languages at the bottom could not be picked at all.
 

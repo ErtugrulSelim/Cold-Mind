@@ -177,7 +177,7 @@ void main() {
   });
 
   testWidgets('every language can be reached in the picker', (tester) async {
-    // Eighteen languages are taller than a default sheet. A shrink-wrap list
+    // A long list is taller than a default sheet. A shrink-wrap list
     // inside one does not scroll — it is cut off, and the languages at the
     // bottom simply cannot be chosen.
     usePhoneSurface(tester);

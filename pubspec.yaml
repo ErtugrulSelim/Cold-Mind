@@ -132,20 +132,10 @@ flutter:
     - assets/l10n/tr/
     - assets/l10n/es/
     - assets/l10n/fr/
-    - assets/l10n/de/
     - assets/l10n/it/
     - assets/l10n/br/
     - assets/l10n/ru/
-    - assets/l10n/jp/
-    - assets/l10n/kr/
-    - assets/l10n/cn/
-    - assets/l10n/sa/
-    - assets/l10n/in/
-    - assets/l10n/nl/
     - assets/l10n/pl/
-    - assets/l10n/se/
-    - assets/l10n/cz/
-    - assets/l10n/ua/
 
     # Shared, case-agnostic surfaces.
     - assets/textures/
