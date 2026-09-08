@@ -18,28 +18,27 @@ class AppLanguage {
 /// The languages offered in the picker. Each needs a matching
 /// `assets/l10n/<code>/` folder, registered in pubspec.yaml.
 ///
-/// Only `en` currently ships case packs; every other folder holds `common.json`
-/// alone, so the cases themselves still read in English. That is an outstanding
-/// task, not a finished one.
+/// **Only languages the cases are actually written in.** Ten more packs once
+/// stood here — cn, cz, de, in, jp, kr, nl, sa, se, ua — with about seventy
+/// per cent of the menus translated and **no case packs at all**. Picking one
+/// gave a player translated buttons around ten cases of untranslated English:
+/// every message, every email, every note, and every accepted answer. That
+/// reads as a broken translation rather than as an honest gap, and it is
+/// worse than not offering the language, because the player only finds out
+/// after choosing.
+///
+/// The eight left each ship the cases themselves. `en` and `tr` carry all
+/// ten; the other six are missing `s01.json` only — the free case, which is
+/// the first one every player opens, so it is the gap most worth closing.
 const List<AppLanguage> supportedLanguages = [
   AppLanguage('en', 'English'),
   AppLanguage('tr', 'Türkçe'),
   AppLanguage('es', 'Español'),
   AppLanguage('fr', 'Français'),
-  AppLanguage('de', 'Deutsch'),
   AppLanguage('it', 'Italiano'),
   AppLanguage('br', 'Português (BR)'),
-  AppLanguage('ru', 'Русский'),
-  AppLanguage('jp', '日本語'),
-  AppLanguage('kr', '한국어'),
-  AppLanguage('cn', '简体中文'),
-  AppLanguage('sa', 'العربية'),
-  AppLanguage('in', 'हिन्दी'),
-  AppLanguage('nl', 'Nederlands'),
   AppLanguage('pl', 'Polski'),
-  AppLanguage('se', 'Svenska'),
-  AppLanguage('cz', 'Čeština'),
-  AppLanguage('ua', 'Українська'),
+  AppLanguage('ru', 'Русский'),
 ];
 
 const String fallbackLanguageCode = 'en';

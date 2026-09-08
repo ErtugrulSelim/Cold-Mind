@@ -314,9 +314,10 @@ class SettingsScreen extends ConsumerWidget {
       context: context,
       backgroundColor: device.surface,
       shape: const RoundedRectangleBorder(borderRadius: ColdRadius.sheet),
-      // Eighteen languages are taller than a default sheet, and a shrink-wrap
-      // list inside one does not scroll — it is simply cut off, and the
-      // languages at the bottom of the alphabet cannot be chosen at all.
+      // A shrink-wrapped list inside a sheet does not scroll — it is simply
+      // cut off, and the languages at the bottom cannot be chosen at all.
+      // The list was eighteen long when that was found; it is eight now, and
+      // still long enough to reach the bottom of a short phone.
       isScrollControlled: true,
       builder: (sheetContext) => SafeArea(
         child: ConstrainedBox(
@@ -756,7 +757,7 @@ class _ProCard extends ConsumerWidget {
                 Row(
                   children: [
                     // Flexible, because this line is a full sentence in most
-                    // of the eighteen languages and the card is 326pt wide on
+                    // of the languages offered and the card is 326pt wide on
                     // a 390pt phone. It overflowed by eight pixels in English
                     // — nothing had ever drawn this screen at phone width, so
                     // nothing caught it.
