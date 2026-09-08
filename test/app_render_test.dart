@@ -53,6 +53,11 @@ void main() {
 
   late SharedPreferences prefs;
 
+  /// The first case's strings in every language the picker offers, for the
+  /// status-row test below. Loaded here for the same reason everything else
+  /// is: a bundle read inside a `testWidgets` body never completes.
+  final byLanguage = <String, CaseStrings>{};
+
   setUpAll(() async {
     final logins = <String, Object>{};
 
@@ -74,6 +79,13 @@ void main() {
         strings: strings,
         people: people,
       ));
+    }
+
+    for (final language in supportedLanguages) {
+      byLanguage[language.code] = await repo.loadStrings(
+        loaded.first.id,
+        language.code,
+      );
     }
 
     SharedPreferences.setMockInitialValues(logins);
@@ -239,6 +251,79 @@ void main() {
     }
 
     FlutterError.onError = previousHandler;
+    expect(failures, isEmpty, reason: '\n${failures.join('\n')}');
+  });
+
+  testWidgets('the Pro pill fits the status row in every language', (
+    tester,
+  ) async {
+    // The pill shares that row with the clock and the LIVE indicator, and its
+    // label is a phrase rather than a word: "GET HINTS" is nine characters,
+    // "OBTENIR DES INDICES" is nineteen, "UZYSKAJ PODPOWIEDZI" the same. The
+    // row has no give in it, so a label fitting in English says nothing about
+    // the language the player actually reads — and this only became a real
+    // risk when the word stopped being baked into the artwork.
+    //
+    // Both states are checked, because the hints label is the longer one in
+    // every language and is the one a subscriber sees.
+    usePhoneSurface(tester);
+
+    final entry = loaded.first;
+    final failures = <String>[];
+
+    for (final language in supportedLanguages) {
+      final strings = byLanguage[language.code]!;
+
+      for (final subscribed in [false, true]) {
+        SharedPreferences.setMockInitialValues({
+          'progress.logins.${entry.id}': entry.file.apps.keys.toList(),
+          'is_subscribed': subscribed,
+          'hints_unlocked': false,
+        });
+        final scoped = await SharedPreferences.getInstance();
+
+        final caught = <FlutterErrorDetails>[];
+        final previous = FlutterError.onError;
+        FlutterError.onError = caught.add;
+
+        await tester.pumpWidget(const SizedBox.shrink());
+        await tester.pumpWidget(
+          ProviderScope(
+            key: ValueKey('${language.code}-$subscribed'),
+            overrides: [
+              sharedPreferencesProvider.overrideWithValue(scoped),
+              caseStringsProvider(
+                entry.id,
+              ).overrideWith((ref) async => strings),
+              peopleProvider(
+                entry.id,
+              ).overrideWith((ref) async => entry.people),
+            ],
+            child: MaterialApp(
+              theme: buildColdTheme(),
+              home: PhoneHomeScreen(
+                caseId: entry.id,
+                file: entry.file,
+                onLeave: () {},
+              ),
+            ),
+          ),
+        );
+        await tester.pump(const Duration(milliseconds: 400));
+
+        FlutterError.onError = previous;
+
+        final label = strings.c(subscribed ? 'ui.cases.hints' : 'ui.cases.pro');
+        if (find.text(label).evaluate().isEmpty) {
+          failures.add('${language.code}: "$label" never reached the row');
+        }
+        for (final details in caught) {
+          if (_isMissingAsset(details.exception)) continue;
+          failures.add('${language.code}/"$label" — ${details.exception}');
+        }
+      }
+    }
+
     expect(failures, isEmpty, reason: '\n${failures.join('\n')}');
   });
 }

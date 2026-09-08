@@ -102,22 +102,31 @@ class ProButton extends ConsumerWidget {
             ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 11),
-              child: Text(
-                label,
-                maxLines: 1,
-                style: const TextStyle(
-                  fontFamily: 'Geologica',
-                  // Geologica ships as one variable file, so weight is an axis
-                  // rather than a face: `fontWeight` on its own would leave it
-                  // at the default. Both are set — the variation does the
-                  // drawing, the weight keeps anything reading the style
-                  // honest.
-                  fontVariations: [FontVariation('wght', 700)],
-                  fontWeight: FontWeight.w700,
-                  fontSize: 14,
-                  letterSpacing: 1.1,
-                  height: 1,
-                  color: Colors.white,
+              // Shrinks only when it has to. The phone's status row shares its
+              // width with the clock and the LIVE badge, and the label is a
+              // translated phrase — "GET PRO" against "UZYSKAJ PODPOWIEDZI".
+              // `scaleDown` leaves every label that fits at its full size and
+              // takes a point or two off the ones that do not, which is worth
+              // more than an ellipsis eating the word the button is named for.
+              child: FittedBox(
+                fit: BoxFit.scaleDown,
+                child: Text(
+                  label,
+                  maxLines: 1,
+                  style: const TextStyle(
+                    fontFamily: 'Geologica',
+                    // Geologica ships as one variable file, so weight is an
+                    // axis rather than a face: `fontWeight` on its own would
+                    // leave it at the default. Both are set — the variation
+                    // does the drawing, the weight keeps anything reading the
+                    // style honest.
+                    fontVariations: [FontVariation('wght', 700)],
+                    fontWeight: FontWeight.w700,
+                    fontSize: 14,
+                    letterSpacing: 1.1,
+                    height: 1,
+                    color: Colors.white,
+                  ),
                 ),
               ),
             ),

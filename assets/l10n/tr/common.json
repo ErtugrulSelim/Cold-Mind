@@ -445,6 +445,7 @@
   "ui.app.clock": "Saat",
   "ui.cases.index": "DOSYA DİZİNİ",
   "ui.cases.pro": "PRO AL",
+  "ui.cases.hints": "İPUCU AL",
   "ui.cases.available": "{{open}} açık · {{closed}} kapalı",
   "ui.cases.new": "YENİ",
   "ui.cases.active": "DEVAM EDEN",

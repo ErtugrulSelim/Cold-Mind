@@ -64,7 +64,12 @@ class PhoneStatusBar extends StatelessWidget {
                 ],
               ),
             ),
-          ?leading,
+          // Flexible, not a bare child: the chrome carries a translated
+          // label, and a row of fixed-size children overflows rather than
+          // giving way. French's "OBTENIR PRO" ran seventeen pixels past the
+          // edge here for as long as the pill has existed, and the longer
+          // hint labels ran past it by a hundred and more.
+          if (leading case final chrome?) Flexible(child: chrome),
           const Spacer(),
           _LiveBadge(label: liveLabel, color: context.device.live),
         ],
