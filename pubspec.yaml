@@ -59,44 +59,56 @@ dev_dependencies:
   riverpod_lint: ^3.1.0
   flutter_native_splash: ^2.4.8
   flutter_launcher_icons: ^0.14.4
+  # Declared for `tools/gen_icon.dart`, which reads the logo and writes the
+  # two launcher sources below. It arrives as one of flutter_launcher_icons'
+  # own dependencies either way; naming it here is what keeps the tool
+  # compiling if that ever stops being true.
+  image: ^4.5.4
 
 # The launcher icon, generated into the native project rather than shipped as
 # a Flutter asset — nothing in Dart can reach it. Regenerate with
 # `dart run flutter_launcher_icons` after changing either image.
 #
-# Two images, because Android draws the icon two ways. `image_path` is the
-# legacy square, cropped tight to the artwork so the launcher's own mask
-# rounds the artwork itself. The adaptive pair is what Android 8 and later
-# actually use: the same artwork scaled into the 66% safe zone, over the
-# device register's graphite — the same colour as the artwork's own ground, so
-# whatever shape the launcher masks to, the seam does not show. The generator
-# insets the foreground 16% itself, which is the safe zone — so it is fed the
-# same full-bleed crop rather than a pre-shrunk one, or the two would compound
-# and the artwork would sit at 45% of the canvas.
+# Two source images, because Android draws the icon two ways and the two want
+# different framings. Both are written by `tools/gen_icon.dart` from
+# `assets/icons/app_logo.png` — run that first, then this.
 #
-# The source `app_logo.jpeg` is a picture *of* an icon, with its own padding
-# and rounded square inside a larger frame. Fed in whole it would have given a
-# rounded square inside a rounded square, and an icon that reads small.
+# `image_path` is the legacy square: a centre crop, because the logo carries
+# margin of its own and a legacy icon is only lightly rounded.
+#
+# The adaptive foreground is what Android 8 and later actually use, and it is
+# the whole logo scaled down instead — an adaptive icon is 108dp with only the
+# middle 72dp guaranteed, so a round mask cuts away everything outside a circle
+# of that diameter. **The generator insets neither image**: it scales what it
+# is handed to fill the whole canvas, so the safe-zone margin has to be baked
+# into the file. Given the crop, the top of the phone and the base of the
+# wordmark are clipped on every launcher that masks to a circle.
+#
+# The background is the logo's own corner tone rather than the device
+# register's graphite, because a rounded-square mask reaches past the
+# foreground's artwork at the corners and the two have to meet without a seam.
 flutter_launcher_icons:
   android: "ic_launcher"
   ios: false
   image_path: "assets/icons/raw/app_icon.png"
-  adaptive_icon_background: "#0A0C10"
-  adaptive_icon_foreground: "assets/icons/raw/app_icon.png"
+  adaptive_icon_background: "#12151D"
+  adaptive_icon_foreground: "assets/icons/raw/app_icon_foreground.png"
   min_sdk_android: 21
 
 # Generates the native splash Android and iOS show before the Flutter engine
 # has drawn a single frame — the one place a Dart-level splash widget cannot
-# reach. The background is the device register's own graphite
-# (`palette.dart`'s `background: Color(0xFF0A0C10)`), so the logo's own dark
-# ground meets it without a seam. Regenerate with
+# reach. The background is the logo's own corner tone, not the device
+# register's graphite (`palette.dart`'s `Color(0xFF0A0C10)`): the splash draws
+# the logo centred on a flat colour, and anything but its own ground leaves a
+# visible square around it. The two are close enough that the handover to the
+# first Flutter frame is not a step anybody sees. Regenerate with
 # `dart run flutter_native_splash:create` after changing either.
 flutter_native_splash:
-  color: "0A0C10"
-  image: assets/icons/app_logo.jpeg
+  color: "12151D"
+  image: assets/icons/app_logo.png
   android_12:
-    color: "0A0C10"
-    image: assets/icons/app_logo.jpeg
+    color: "12151D"
+    image: assets/icons/app_logo.png
 
 flutter:
   uses-material-design: true
