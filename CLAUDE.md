@@ -613,10 +613,25 @@ resets, even across a replay. "Yes" goes straight to
 without a subscription — every other case is locked shut on the deck itself
 (`_LockableCard` in `case_list_screen.dart`), and tapping one pushes
 `PaywallScreen(source: 'case_lock')` instead of opening it. Inside the free
-case, the trial ends after its own third question: `question_screen.dart`
-pushes `PaywallScreen(source: 'question_3')` there, and declining leaves the
-case parked at question three, solved and waiting, rather than losing
-progress.
+case the trial runs `freeCaseQuestions` (3) deep, and **`question_screen.dart`
+holds that line in `build`, not on the way out of an answer**: past the third
+question it draws `_TrialEnded` in place of the question, so there is nothing
+underneath to answer. Progress is kept — a purchase redraws straight into
+question four.
+
+Enforcing it only at the moment the third answer landed was the bug it is
+shaped around. That check was `solved == 3`, it fired once, and it bounced the
+player to the deck — where reopening the case drew question four with nothing
+in front of it, and the count never equalled three again. Twelve questions of
+a paid case, free, behind one back button. `question_screen_test`'s
+*the free case stops where the trial does* group holds all of it: the wall at
+four and at every question after it, the first three still free, and both
+passes — a subscriber and a reviewer — going straight through.
+
+`PaywallScreen(source: 'question_3')` is still pushed the moment the third
+answer lands, but it is the **offer**, not the lock: it asks while the answer
+is still on screen instead of leaving the player to work out why the case
+stopped. Declining just leaves them on the wall.
 
 **Review mode** is the escape hatch, and it reaches the locks through two
 derived providers rather than being spelled out at each one:

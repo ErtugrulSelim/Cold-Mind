@@ -134,6 +134,33 @@ class _QuestionScreenState extends ConsumerState<QuestionScreen> {
       );
     }
 
+    // The free case's trial, held at the door of the next question rather
+    // than only at the moment the third one was solved.
+    //
+    // That moment used to be the whole of it — a `solved == 3` check on the
+    // way out of an answer — and it left the case open behind it: the player
+    // declined, landed back on the deck, reopened the case, and the screen
+    // drew question four for them with nothing to pass. The count only ever
+    // equals three once, so the offer never came back and every remaining
+    // question was free. Asked here, on the way *in*, there is no fourth
+    // question to answer without a subscription.
+    //
+    // `hasPro` carries the review-mode pass, the same way the deck's lock
+    // does and for the same reason.
+    if (widget.caseId == freeCaseId &&
+        progress.solved >= freeCaseQuestions &&
+        !ref.watch(hasProProvider)) {
+      return _TrialEnded(
+        strings: strings,
+        onUnlock: () => Navigator.of(context).push(
+          MaterialPageRoute<bool>(
+            builder: (_) => const PaywallScreen(source: 'question_3'),
+          ),
+        ),
+        onClose: () => Navigator.of(context).popUntil((route) => route.isFirst),
+      );
+    }
+
     final question = questions[progress.solved];
     _resetIfNewQuestion(question.index);
 
@@ -602,9 +629,14 @@ class _QuestionScreenState extends ConsumerState<QuestionScreen> {
     // The free case's own trial ends here: three questions read for free,
     // then a subscription to keep going. Every other case is already gated
     // shut on the deck (`case_list_screen.dart`), so this only ever fires
-    // for `freeCaseId`. `hasPro` carries the review-mode pass, the same way
-    // the deck's lock does and for the same reason.
-    if (solved == 3 &&
+    // for `freeCaseId`.
+    //
+    // The offer, not the lock — `build` is what actually holds the line, and
+    // it is already drawing the locked card underneath this. What this adds
+    // is the moment: asking here, while the third answer is still on screen,
+    // rather than making the player work out why the next question never
+    // arrived. Declining just leaves them on that card.
+    if (solved == freeCaseQuestions &&
         widget.caseId == freeCaseId &&
         !ref.read(hasProProvider)) {
       final granted = await Navigator.of(context).push<bool>(
@@ -612,14 +644,7 @@ class _QuestionScreenState extends ConsumerState<QuestionScreen> {
           builder: (_) => const PaywallScreen(source: 'question_3'),
         ),
       );
-      if (!mounted) return;
-      if (granted != true) {
-        // Declined: the case stays exactly at question three, solved and
-        // waiting — reopening it from the deck lands right back here rather
-        // than repeating the first three questions.
-        Navigator.of(context).popUntil((route) => route.isFirst);
-        return;
-      }
+      if (!mounted || granted != true) return;
     }
 
     if (solved >= widget.file.questions.length) {
@@ -950,6 +975,84 @@ class _RatingOffer extends StatelessWidget {
 }
 
 /// Every question is answered, but the client has not had their last word.
+/// Where the free case stops.
+///
+/// Drawn in place of the question the player has not paid for, so the trial
+/// ending is a wall they can see and act on rather than a case that quietly
+/// refuses to go on. It says how far they got, and the only way past it is
+/// the paywall.
+///
+/// Built like [_AllDone] rather than like a question card, because it is the
+/// same kind of moment — the case stopping, with somewhere to go next — and
+/// dressing it as a question would promise one underneath.
+class _TrialEnded extends StatelessWidget {
+  final CaseStrings? strings;
+
+  /// Opens the paywall. Nothing is passed back: the screen is watching
+  /// `hasPro`, so a purchase redraws it into the next question by itself.
+  final VoidCallback onUnlock;
+
+  final VoidCallback onClose;
+
+  const _TrialEnded({
+    required this.strings,
+    required this.onUnlock,
+    required this.onClose,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final device = context.device;
+
+    return Scaffold(
+      backgroundColor: device.background,
+      body: SafeArea(
+        child: Center(
+          child: Padding(
+            padding: const EdgeInsets.all(ColdSpace.xl),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Text(
+                  strings?.c('q.locked_title') ?? 'Continue the investigation',
+                  textAlign: TextAlign.center,
+                  style: ColdType.handNote.copyWith(color: device.surface),
+                ),
+                const SizedBox(height: ColdSpace.md),
+                Text(
+                  strings?.c('q.locked_body') ??
+                      "You've cracked the first clues. Unlock Premium to "
+                          'keep answering and solve the rest of the case.',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(color: device.textSecondary, height: 1.4),
+                ),
+                const SizedBox(height: ColdSpace.xl),
+                FilledButton(
+                  onPressed: onUnlock,
+                  style: FilledButton.styleFrom(
+                    backgroundColor: device.surface,
+                    foregroundColor: device.textPrimary,
+                  ),
+                  child: Text(
+                    strings?.c('q.unlock_premium') ?? 'Unlock Premium',
+                  ),
+                ),
+                TextButton(
+                  onPressed: onClose,
+                  child: Text(
+                    strings?.c('ui.back') ?? 'Back',
+                    style: TextStyle(color: device.accent),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
 class _AllDone extends StatelessWidget {
   final CaseStrings? strings;
 

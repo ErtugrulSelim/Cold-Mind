@@ -64,10 +64,22 @@ void main() {
 
   /// Drives the screen to the question at [solved], which is the position the
   /// progress cursor puts it at.
-  Future<void> pumpAt(WidgetTester tester, String caseId, int solved) async {
+  ///
+  /// Subscribed unless a test says otherwise: past its third question the free
+  /// case draws the trial wall instead of a question, so a sweep meant to prove
+  /// every question lays out would otherwise be measuring the paywall twelve
+  /// times over for s01. [subscribed] is false only where the wall itself is
+  /// what is being tested.
+  Future<void> pumpAt(
+    WidgetTester tester,
+    String caseId,
+    int solved, {
+    bool subscribed = true,
+  }) async {
     final entry = loaded[caseId]!;
     final prefs = await SharedPreferences.getInstance();
     await prefs.setInt('progress.solved.$caseId', solved);
+    await prefs.setBool('is_subscribed', subscribed);
 
     await tester.pumpWidget(
       ProviderScope(
@@ -75,7 +87,7 @@ void main() {
         // reuses the ProviderScope element, the container survives, and the
         // keepAlive progress provider keeps its first value — so a sweep meant
         // to draw every question silently redraws the first one fifteen times.
-        key: ValueKey('$caseId-$solved'),
+        key: ValueKey('$caseId-$solved-$subscribed'),
         overrides: [
           sharedPreferencesProvider.overrideWithValue(prefs),
           // The screen reads its strings from an async provider that loads
@@ -410,5 +422,109 @@ void main() {
 
     // Leaves nothing ticking behind.
     await tester.pumpWidget(const SizedBox.shrink());
+  });
+
+  /// Where the free case stops.
+  ///
+  /// The trial used to be enforced only on the way *out* of the third answer,
+  /// on a `solved == 3` check — so a player who declined and reopened the case
+  /// from the deck was handed question four, and the count never equalled three
+  /// again. Twelve questions of a paid case, free, behind one back button.
+  group('the free case stops where the trial does', () {
+    testWidgets('question four is not drawn to a player who has not paid', (
+      tester,
+    ) async {
+      usePhoneSurface(tester);
+
+      await pumpAt(tester, freeCaseId, freeCaseQuestions, subscribed: false);
+
+      expect(
+        find.text(s01Strings.c('q.locked_title')),
+        findsOneWidget,
+        reason: 'the trial wall was never drawn',
+      );
+      // The wall standing is not the same as the question being gone: it is
+      // drawn *instead of* the question, so nothing is answerable behind it.
+      expect(
+        find.byType(TextField),
+        findsNothing,
+        reason: 'question four is still answerable past the trial',
+      );
+      expect(find.text(s01Strings.c('q.submit')), findsNothing);
+    });
+
+    testWidgets('and neither is any question after it', (tester) async {
+      // The hole was never about question four alone — a player parked deeper
+      // in the case, or one whose subscription lapsed, arrives at five or ten.
+      usePhoneSurface(tester);
+
+      for (final solved in [freeCaseQuestions + 1, 7, 12]) {
+        await pumpAt(tester, freeCaseId, solved, subscribed: false);
+        expect(
+          find.text(s01Strings.c('q.locked_title')),
+          findsOneWidget,
+          reason: 'question ${solved + 1} was drawn without a subscription',
+        );
+      }
+    });
+
+    testWidgets('a subscriber is asked question four as normal', (
+      tester,
+    ) async {
+      // Paired with the tests above rather than asserted alone: a wall drawn
+      // to everybody would pass both of them perfectly, and lock the case for
+      // the people who paid for it.
+      usePhoneSurface(tester);
+
+      await pumpAt(tester, freeCaseId, freeCaseQuestions, subscribed: true);
+
+      expect(find.text(s01Strings.c('q.locked_title')), findsNothing);
+      expect(
+        find.text(
+          s01Strings.cp('q.question_n_total', {
+            'n': '${freeCaseQuestions + 1}',
+            'total': '${loaded[freeCaseId]!.file.questions.length}',
+          }),
+        ),
+        findsOneWidget,
+        reason: 'a paying player was not asked the next question',
+      );
+    });
+
+    testWidgets('and so is a reviewer', (tester) async {
+      // Review mode is the one pass that has to reach every lock; a reviewer
+      // stopped three questions into the only case they can open cannot see
+      // the game they are reviewing.
+      usePhoneSurface(tester);
+
+      await pumpAt(tester, freeCaseId, freeCaseQuestions, subscribed: false);
+      expect(find.text(s01Strings.c('q.locked_title')), findsOneWidget);
+
+      ProviderScope.containerOf(
+        tester.element(find.byType(QuestionScreen)),
+      ).read(reviewModeProvider.notifier).set(true);
+      await tester.pump(const Duration(milliseconds: 400));
+
+      expect(
+        find.text(s01Strings.c('q.locked_title')),
+        findsNothing,
+        reason: 'review mode did not open the free case past its trial',
+      );
+    });
+
+    testWidgets('the first three questions are still free', (tester) async {
+      // The other half of the promise. A wall that also covered the trial
+      // would pass every test above and give the player nothing to try.
+      usePhoneSurface(tester);
+
+      for (var solved = 0; solved < freeCaseQuestions; solved++) {
+        await pumpAt(tester, freeCaseId, solved, subscribed: false);
+        expect(
+          find.text(s01Strings.c('q.locked_title')),
+          findsNothing,
+          reason: 'question ${solved + 1} was locked inside the free trial',
+        );
+      }
+    });
   });
 }
