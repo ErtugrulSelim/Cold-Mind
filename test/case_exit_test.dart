@@ -65,6 +65,9 @@ void main() {
     final total = file.questions.length;
     SharedPreferences.setMockInitialValues({
       'progress.solved.$caseId': total - 1,
+      // Past the free case's third question there is no way forward without a
+      // subscription, and the way out of a finished case is what this tests.
+      'is_subscribed': true,
     });
     final prefs = await SharedPreferences.getInstance();
 

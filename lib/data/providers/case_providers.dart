@@ -17,6 +17,13 @@ part 'case_providers.g.dart';
 /// of the id.
 const String freeCaseId = 's01';
 
+/// How far into [freeCaseId] the trial runs.
+///
+/// Three questions are free; the fourth is where the subscription starts. It
+/// is a count of *solved* questions, so the player answers three and is then
+/// held at the door of the next one.
+const int freeCaseQuestions = 3;
+
 /// Asset access. Overridden in tests with a repository over a fake bundle.
 @Riverpod(keepAlive: true)
 CaseRepository caseRepository(Ref ref) => CaseRepository();

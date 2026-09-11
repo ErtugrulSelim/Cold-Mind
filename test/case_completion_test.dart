@@ -60,6 +60,10 @@ void main() {
         // One question short of done, so the test plays the moment that matters
         // rather than fifteen that are already covered elsewhere.
         'progress.solved.$caseId': total - 1,
+        // Nobody reaches the last question of the free case without paying —
+        // the trial wall stands in front of everything past the third — and
+        // what is being tested here is the ending, not the paywall.
+        'is_subscribed': true,
       });
       final prefs = await SharedPreferences.getInstance();
 
