@@ -3,6 +3,7 @@ import 'dart:io';
 
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_remote_config/firebase_remote_config.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -63,7 +64,15 @@ Future<void> main() async {
     await remoteConfig.setConfigSettings(
       RemoteConfigSettings(
         fetchTimeout: const Duration(seconds: 10),
-        minimumFetchInterval: const Duration(hours: 1),
+        // Remote Config serves the copy already on disk until this has
+        // elapsed, and reports success either way — so with an hour here,
+        // flipping `review_mode` in the console and relaunching changes
+        // nothing for an hour, and the only way to see the new value is to
+        // uninstall. That is exactly the flag somebody is trying to check
+        // when they reach for it, so debug builds always ask.
+        minimumFetchInterval: kDebugMode
+            ? Duration.zero
+            : const Duration(hours: 1),
       ),
     );
     await remoteConfig.fetchAndActivate();
